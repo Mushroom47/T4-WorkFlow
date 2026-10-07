@@ -6,6 +6,7 @@ Agenthon 2026 第四赛道 T4 Explainability 的规则资料与本地实验准�
 
 - 已完成官方公开规则、输入输出契约、评分机制、运行环境、数据与模型政策的研究和中文文档整理。
 - 已建立参赛要求检查清单和 Linear 阶段规划。
+- 已公开发布到 [Mushroom47/T4-WorkFlow](https://github.com/Mushroom47/T4-WorkFlow)，匿名克隆的114项测试与507份清单文件核对通过；旧历史保留私有归档。
 - 用户已确认整体方案并启用 goal 持续执行。公开11题/78实体输入已冻结；参考集0.2.0：77 verified/1 provisional；事实维度74 verified/4 bounded_verified，114项测试与11题本地结构链通过。
 - 已向官方发出 [诊断评测问询 #26](https://github.com/Agenthon-2026/track4-analysis-public/issues/26)；真实官方分数尚未取得。
 

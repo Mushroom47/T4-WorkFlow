@@ -1,0 +1,149 @@
+{
+  "recorded_at": "2026-10-07T13:59:17.489846+00:00",
+  "repository": "https://github.com/Mushroom47/T4-WorkFlow",
+  "repository_node_id": "R_kgDOU_m1Ow",
+  "is_private": false,
+  "default_branch": "main",
+  "verified_snapshot_commit": "1afb3b8118f3c7255ac3131dd643fb9ff88592c2",
+  "reference_version": "0.2.0",
+  "reference_sha256": "9e5e94a3adabda35568f05168aaab308df194729126876790fb10f8b7500e326",
+  "history_strategy": "公开仓库采用新Git对象库；原仓库保留私有归档与本地恢复备份",
+  "anonymous_access": {
+    "authentication": "none",
+    "checks": [
+      {
+        "check": "public_repo",
+        "status": 200,
+        "passed": true
+      },
+      {
+        "check": "public_web",
+        "status": 200,
+        "passed": true
+      },
+      {
+        "check": "public_reference",
+        "status": 200,
+        "passed": true
+      },
+      {
+        "check": "old_commit_absent",
+        "status": 422,
+        "passed": true
+      },
+      {
+        "check": "old_commit_raw_absent",
+        "status": 404,
+        "passed": true
+      },
+      {
+        "check": "private_archive",
+        "status": 404,
+        "passed": true
+      }
+    ],
+    "initial_probe_note": "旧提交API首次按404断言失败；实际422明确No commit found for SHA，另用匿名raw404确认不存在。"
+  },
+  "anonymous_clone": {
+    "head": "1afb3b8118f3c7255ac3131dd643fb9ff88592c2",
+    "expected_head_matches": true,
+    "reachable_commits": 1,
+    "git_status_clean": true,
+    "csv_jsonl": {
+      "jsonl_rows": 78,
+      "jsonl_unique_keys": 78,
+      "csv_rows": 78,
+      "csv_unique_keys": 78,
+      "same_keys": true,
+      "differences": []
+    },
+    "manifest": {
+      "declared_files": 507,
+      "observed_entries": 507,
+      "unique_paths": 507,
+      "checked_files": 507,
+      "failures": [],
+      "reference_hash_matches": true
+    },
+    "catalog": {
+      "entries": 223,
+      "unique_paths": 223,
+      "all_local_only": true,
+      "catalog_originals_present": []
+    },
+    "cache_directories": [],
+    "AMGN": {
+      "status": "provisional",
+      "included_by_default": false,
+      "task_alignment": "ambiguous",
+      "default_fixture_refused": true,
+      "mixed_task_default_included": 5,
+      "mixed_task_entities": 6
+    },
+    "wall_seconds": 0.18307162495329976,
+    "private_cache_accessed": false,
+    "network_fetch_performed": false,
+    "passed": true,
+    "additional_check_method": "只读Python逐字段比较CSV/JSONL、回读507声明文件hash/bytes、223原件缺失、默认AMGN行为及Git状态",
+    "additional_check_script_sha256": "a563806ac26ac7843ca403c0e9fd13196682e97e6e2f9e02098f092405313d8d"
+  },
+  "commands": [
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v",
+      "exit_code": 0,
+      "wall_seconds": 1.04188125
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 tools/reference_suite.py audit",
+      "exit_code": 0,
+      "wall_seconds": 0.007709666
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 datasets/agenthon-t4-reference/sources/postearn-resolution/verify.py",
+      "exit_code": 0,
+      "wall_seconds": 7.917e-06
+    }
+  ],
+  "unit_tests": {
+    "run": 114,
+    "passed": 114,
+    "failed": 0,
+    "duration_seconds": 0.996
+  },
+  "postearn_derived_checks": {
+    "run": 64,
+    "passed": 64
+  },
+  "gitleaks_fresh_history": {
+    "commits_scanned": 1,
+    "bytes_scanned": 16037054,
+    "findings": 0,
+    "redacted": true
+  },
+  "official_questions": {
+    "checked_at": "2026-10-07T13:54:00Z",
+    "issues": [
+      {
+        "url": "https://github.com/Agenthon-2026/track4-analysis-public/issues/26",
+        "state": "OPEN",
+        "comments": 0
+      },
+      {
+        "url": "https://github.com/Agenthon-2026/track4-analysis-public/issues/27",
+        "state": "OPEN",
+        "comments": 0
+      }
+    ]
+  },
+  "official_score": null,
+  "submission_id": null,
+  "notice": "验证公开快照的访问、结构、公式和文件一致性；不代表官方评分。随后文档提交不改变本参考数据hash。",
+  "collaboration_sync": {
+    "verified": true,
+    "phase_3": "Done",
+    "phase_4": "In Progress",
+    "phase_5": "In Progress",
+    "project": "In Progress",
+    "documents_updated": true
+  }
+}

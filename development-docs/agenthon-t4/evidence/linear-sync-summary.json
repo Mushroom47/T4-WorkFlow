@@ -1,25 +1,36 @@
 {
-  "scope": "公开版只保留内部阶段编号；Workspace/Team UUID、私有卡片链接和详细协作记录仅本地保存。",
+  "updated_at": "2026-10-07",
+  "scope": "公开版保留内部阶段编号与已回读状态；Workspace/Team UUID、私有卡片链接和详细协作记录仅本地保存。",
   "phases": [
     {
       "phase": 1,
-      "issue": "CHE-949"
+      "issue": "CHE-949",
+      "status": "Done"
     },
     {
       "phase": 2,
-      "issue": "CHE-950"
+      "issue": "CHE-950",
+      "status": "Done"
     },
     {
       "phase": 3,
-      "issue": "CHE-951"
+      "issue": "CHE-951",
+      "status": "Done"
     },
     {
       "phase": 4,
-      "issue": "CHE-952"
+      "issue": "CHE-952",
+      "status": "In Progress"
     },
     {
       "phase": 5,
-      "issue": "CHE-953"
+      "issue": "CHE-953",
+      "status": "In Progress"
     }
-  ]
+  ],
+  "project_status": "In Progress",
+  "implementation_document_updated": true,
+  "release_comments_read_back": true,
+  "official_score": null,
+  "submission_id": null
 }
