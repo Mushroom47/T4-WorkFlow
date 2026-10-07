@@ -1,0 +1,12 @@
+{
+  "entity_id": "IBM",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000051143/us-gaap/EarningsPerShareDiluted.json",
+  "source_sha256": "7b81dcc0a49349da6e8b4aee646ed9e5189d2e7d33dee9ba6beacd62dcc9dcc7",
+  "retrieved_at": "2026-10-07T08:14:22.652140+00:00",
+  "bytes": 33379,
+  "raw_path": "sec-eps-IBM-concept.raw.json",
+  "tag": "EarningsPerShareDiluted",
+  "taxonomy": "us-gaap",
+  "unit": "USD/shares",
+  "observation_count": 228
+}

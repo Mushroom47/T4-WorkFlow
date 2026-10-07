@@ -1,0 +1,212 @@
+{
+  "task_id": "t4-cotpos-202411-us10",
+  "schema_version": "3",
+  "target_type": "ranking",
+  "entity_predictions": [
+    {
+      "entity_id": "CORN_CBT",
+      "interval": {
+        "level": 0.9,
+        "lo": 6.242607798814084,
+        "hi": 8.242607798814085
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 118,
+          "span_end": 153,
+          "claim": "输入表字段 net_noncommercial_20241022 的值为 17840。"
+        }
+      ],
+      "point_forecast": 7.242607798814084
+    },
+    {
+      "entity_id": "ES_SP500",
+      "interval": {
+        "level": 0.9,
+        "lo": -5.658876491640775,
+        "hi": -3.6588764916407754
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 444,
+          "span_end": 479,
+          "claim": "输入表字段 net_noncommercial_20241022 的值为 22981。"
+        }
+      ],
+      "point_forecast": -4.658876491640775
+    },
+    {
+      "entity_id": "EURO_FX",
+      "interval": {
+        "level": 0.9,
+        "lo": -5.223529755255018,
+        "hi": -3.2235297552550177
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 758,
+          "span_end": 794,
+          "claim": "输入表字段 net_noncommercial_20241022 的值为 -28524。"
+        }
+      ],
+      "point_forecast": -4.223529755255018
+    },
+    {
+      "entity_id": "GOLD_CMX",
+      "interval": {
+        "level": 0.9,
+        "lo": -8.993934746235361,
+        "hi": -6.99393474623536
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 1075,
+          "span_end": 1111,
+          "claim": "输入表字段 net_noncommercial_20241022 的值为 296204。"
+        }
+      ],
+      "point_forecast": -7.99393474623536
+    },
+    {
+      "entity_id": "JPY_CME",
+      "interval": {
+        "level": 0.9,
+        "lo": -18.07549990836219,
+        "hi": -16.07549990836219
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 1396,
+          "span_end": 1431,
+          "claim": "输入表字段 net_noncommercial_20241022 的值为 12771。"
+        }
+      ],
+      "point_forecast": -17.07549990836219
+    },
+    {
+      "entity_id": "NATGAS_NYMEX",
+      "interval": {
+        "level": 0.9,
+        "lo": -0.2222532950731968,
+        "hi": 1.7777467049268032
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 1735,
+          "span_end": 1772,
+          "claim": "输入表字段 net_noncommercial_20241022 的值为 -166185。"
+        }
+      ],
+      "point_forecast": 0.7777467049268032
+    },
+    {
+      "entity_id": "SILVER_CMX",
+      "interval": {
+        "level": 0.9,
+        "lo": -15.988808627530776,
+        "hi": -13.988808627530776
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 2058,
+          "span_end": 2093,
+          "claim": "输入表字段 net_noncommercial_20241022 的值为 66355。"
+        }
+      ],
+      "point_forecast": -14.988808627530776
+    },
+    {
+      "entity_id": "UST_10Y",
+      "interval": {
+        "level": 0.9,
+        "lo": -2.6823244793101466,
+        "hi": -0.6823244793101466
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 2389,
+          "span_end": 2426,
+          "claim": "输入表字段 net_noncommercial_20241022 的值为 -848191。"
+        }
+      ],
+      "point_forecast": -1.6823244793101466
+    },
+    {
+      "entity_id": "UST_2Y",
+      "interval": {
+        "level": 0.9,
+        "lo": 2.2181708809485357,
+        "hi": 4.218170880948536
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 2720,
+          "span_end": 2758,
+          "claim": "输入表字段 net_noncommercial_20241022 的值为 -1380910。"
+        }
+      ],
+      "point_forecast": 3.2181708809485357
+    },
+    {
+      "entity_id": "WTI_NYMEX",
+      "interval": {
+        "level": 0.9,
+        "lo": 0.61777833841138,
+        "hi": 2.61777833841138
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 3073,
+          "span_end": 3109,
+          "claim": "输入表字段 net_noncommercial_20241022 的值为 173731。"
+        }
+      ],
+      "point_forecast": 1.61777833841138
+    }
+  ],
+  "submitted_reasons": [
+    {
+      "reason_id": "local_structure_fixture",
+      "premise": "CFTC Commitments of Traders (legacy report, futures only): Corn futures — Chicago Board of Trade.\nWeekly noncommercial positioning, reports as of Tuesday 2024-04-30 through Tuesday 2024-10-22 (the latest report published as of this document",
+      "mechanism": "该段历史资料提供输入上下文，本夹具只测试字段与引用解析。",
+      "answer_implication": "本地测试记录 CORN_CBT 的历史参考结果；该引用不用于推出事后结果。",
+      "scope": {
+        "entities": [
+          "CORN_CBT"
+        ]
+      },
+      "citations": [
+        {
+          "doc_id": "COT_CORN_CBT_20241025",
+          "span_start": 0,
+          "span_end": 240
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "research_fixture": true,
+    "synthetic_interval": true,
+    "interval_method": "数值结果中心左右加减固定 half_width；无数值真值或信用事件概率任务使用 [0,1]。这是结构测试区间，未经过校准。",
+    "synthetic_point_entities": [],
+    "synthetic_point_method": "上述实体的 point_forecast=0.5 是结构测试占位；事后 0/1 事件不被当作概率真值。",
+    "half_width": 1.0,
+    "reference_status_counts": {
+      "verified": 10
+    },
+    "task_canonical_sha256": "1639d559e7cd1d058a31b52ee5ee19e4b9b0ade4d1182a8758d768cc4933cd2b",
+    "faithfulness": "not_evaluated",
+    "reasoning": "not_evaluated",
+    "purpose": "输入事实 claims 不声称支持历史结果；本夹具仅供离线研究。"
+  }
+}

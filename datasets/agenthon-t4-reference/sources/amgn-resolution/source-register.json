@@ -1,0 +1,539 @@
+{
+  "sources": [
+    {
+      "path": "official-repo.raw.json",
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public",
+      "retrieved_at": "2026-10-07T13:06:51.475814+00:00",
+      "command": [
+        "gh",
+        "api",
+        "repos/Agenthon-2026/track4-analysis-public"
+      ],
+      "status": "downloaded",
+      "published_at": null,
+      "locator": "完整公开 GitHub REST API 响应，不含私有资料",
+      "sha256": "90cd69719877caa97d4c6592ebb4f64856c57f6f8fc34d682a622a6e1bf14ffe",
+      "bytes": 7144
+    },
+    {
+      "path": "official-tree.raw.json",
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/git/trees/HEAD?recursive=1",
+      "retrieved_at": "2026-10-07T13:06:51.476420+00:00",
+      "command": [
+        "gh",
+        "api",
+        "repos/Agenthon-2026/track4-analysis-public/git/trees/HEAD?recursive=1"
+      ],
+      "status": "downloaded",
+      "published_at": null,
+      "locator": "完整公开 GitHub REST API 响应，不含私有资料",
+      "sha256": "b133508c5cdaa3e7838dd57af5324b90b3f08dca27bf1e96a6a29ac7b5c52d4e",
+      "bytes": 81171
+    },
+    {
+      "path": "official-issues.raw.json",
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues?state=all&per_page=100",
+      "retrieved_at": "2026-10-07T13:06:51.476488+00:00",
+      "command": [
+        "gh",
+        "api",
+        "repos/Agenthon-2026/track4-analysis-public/issues?state=all&per_page=100"
+      ],
+      "status": "downloaded",
+      "published_at": null,
+      "locator": "完整公开 GitHub REST API 响应，不含私有资料",
+      "sha256": "ac578ecebf646eb01047dbbb85f41450285a56f16e64d865fe3dcff4c28c9c4f",
+      "bytes": 119622
+    },
+    {
+      "path": "issue-3.raw.json",
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/3",
+      "retrieved_at": "2026-10-07T13:06:51.479012+00:00",
+      "command": [
+        "gh",
+        "api",
+        "repos/Agenthon-2026/track4-analysis-public/issues/3"
+      ],
+      "status": "downloaded",
+      "published_at": null,
+      "locator": "完整公开 GitHub REST API 响应，不含私有资料",
+      "sha256": "1b99107f3fc7f625d05da6b7c68574b92232c7c33255ee66b182590303505564",
+      "bytes": 5872
+    },
+    {
+      "path": "issue-3-comments.raw.json",
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/3/comments?per_page=100",
+      "retrieved_at": "2026-10-07T13:06:51.479429+00:00",
+      "command": [
+        "gh",
+        "api",
+        "repos/Agenthon-2026/track4-analysis-public/issues/3/comments?per_page=100"
+      ],
+      "status": "downloaded",
+      "published_at": null,
+      "locator": "完整公开 GitHub REST API 响应，不含私有资料",
+      "sha256": "900222a986b11ae89af0d51482c212d417813dffcc6e2af97ba5658d18c8e133",
+      "bytes": 6987
+    },
+    {
+      "path": "issue-23.raw.json",
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/23",
+      "retrieved_at": "2026-10-07T13:06:51.481499+00:00",
+      "command": [
+        "gh",
+        "api",
+        "repos/Agenthon-2026/track4-analysis-public/issues/23"
+      ],
+      "status": "downloaded",
+      "published_at": null,
+      "locator": "完整公开 GitHub REST API 响应，不含私有资料",
+      "sha256": "abb590da92928867e444829b28c7f24b649ceed69d75f6d6b56db0b5915039f9",
+      "bytes": 4634
+    },
+    {
+      "path": "issue-23-comments.raw.json",
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/23/comments?per_page=100",
+      "retrieved_at": "2026-10-07T13:06:52.597971+00:00",
+      "command": [
+        "gh",
+        "api",
+        "repos/Agenthon-2026/track4-analysis-public/issues/23/comments?per_page=100"
+      ],
+      "status": "downloaded",
+      "published_at": null,
+      "locator": "完整公开 GitHub REST API 响应，不含私有资料",
+      "sha256": "438fd28ef85ac9bab4c376ab4651cda1a3b5a301fc5ce57c1355c2ea9e50fe8e",
+      "bytes": 3855
+    },
+    {
+      "path": "issue-24.raw.json",
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/24",
+      "retrieved_at": "2026-10-07T13:06:52.630275+00:00",
+      "command": [
+        "gh",
+        "api",
+        "repos/Agenthon-2026/track4-analysis-public/issues/24"
+      ],
+      "status": "downloaded",
+      "published_at": null,
+      "locator": "完整公开 GitHub REST API 响应，不含私有资料",
+      "sha256": "43d6bf75b029d2f4219fd18db5d411801337c5dda63b0e4130ac6c29c45f3a92",
+      "bytes": 4483
+    },
+    {
+      "path": "issue-24-comments.raw.json",
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/24/comments?per_page=100",
+      "retrieved_at": "2026-10-07T13:06:52.682113+00:00",
+      "command": [
+        "gh",
+        "api",
+        "repos/Agenthon-2026/track4-analysis-public/issues/24/comments?per_page=100"
+      ],
+      "status": "downloaded",
+      "published_at": null,
+      "locator": "完整公开 GitHub REST API 响应，不含私有资料",
+      "sha256": "def8f1546d52148d3c80a279f628a525b21d1b62b2b3b2101c75bbc0731bf5ba",
+      "bytes": 9446
+    },
+    {
+      "path": "issue-25.raw.json",
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/25",
+      "retrieved_at": "2026-10-07T13:06:52.738407+00:00",
+      "command": [
+        "gh",
+        "api",
+        "repos/Agenthon-2026/track4-analysis-public/issues/25"
+      ],
+      "status": "downloaded",
+      "published_at": null,
+      "locator": "完整公开 GitHub REST API 响应，不含私有资料",
+      "sha256": "8c7afa6ccebcb41e171d6141c4a244cadd43eb77b4a3d560a7a447df3744b1d6",
+      "bytes": 4456
+    },
+    {
+      "path": "issue-25-comments.raw.json",
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/25/comments?per_page=100",
+      "retrieved_at": "2026-10-07T13:06:52.890305+00:00",
+      "command": [
+        "gh",
+        "api",
+        "repos/Agenthon-2026/track4-analysis-public/issues/25/comments?per_page=100"
+      ],
+      "status": "downloaded",
+      "published_at": null,
+      "locator": "完整公开 GitHub REST API 响应，不含私有资料",
+      "sha256": "d85fffbd48547829f17ee04446d76eeaf0fcfd4fbd6e48168d4c0524389035c4",
+      "bytes": 5854
+    },
+    {
+      "path": "issue-26.raw.json",
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/26",
+      "retrieved_at": "2026-10-07T13:06:52.928451+00:00",
+      "command": [
+        "gh",
+        "api",
+        "repos/Agenthon-2026/track4-analysis-public/issues/26"
+      ],
+      "status": "downloaded",
+      "published_at": null,
+      "locator": "完整公开 GitHub REST API 响应，不含私有资料",
+      "sha256": "2b5992afc5891a2d178f1f05f30b75a661ab26f6a673832fe85c8fc91f6b0626",
+      "bytes": 4153
+    },
+    {
+      "path": "issue-26-comments.raw.json",
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/26/comments?per_page=100",
+      "retrieved_at": "2026-10-07T13:06:53.939129+00:00",
+      "command": [
+        "gh",
+        "api",
+        "repos/Agenthon-2026/track4-analysis-public/issues/26/comments?per_page=100"
+      ],
+      "status": "downloaded",
+      "published_at": null,
+      "locator": "完整公开 GitHub REST API 响应，不含私有资料",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2
+    },
+    {
+      "path": "official-README.md.txt",
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/contents/README.md?ref=1c744e1d6725340643a533f436517d72b53ca0e1",
+      "retrieved_at": "2026-10-07T13:08:04.449453+00:00",
+      "status": "downloaded",
+      "locator": "官方 GitHub raw 文件响应；原路径 README.md",
+      "published_at": null,
+      "command": [
+        "gh",
+        "api",
+        "repos/Agenthon-2026/track4-analysis-public/contents/README.md?ref=1c744e1d6725340643a533f436517d72b53ca0e1",
+        "-H",
+        "Accept: application/vnd.github.raw+json"
+      ],
+      "sha256": "f2741146415815e88871099d2b156c43293d987d76cb853ce6b199f9e67ad640",
+      "bytes": 37016
+    },
+    {
+      "path": "official-DATA-LICENSE.md.txt",
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/contents/DATA-LICENSE.md?ref=1c744e1d6725340643a533f436517d72b53ca0e1",
+      "retrieved_at": "2026-10-07T13:08:04.346381+00:00",
+      "status": "downloaded",
+      "locator": "官方 GitHub raw 文件响应；原路径 DATA-LICENSE.md",
+      "published_at": null,
+      "command": [
+        "gh",
+        "api",
+        "repos/Agenthon-2026/track4-analysis-public/contents/DATA-LICENSE.md?ref=1c744e1d6725340643a533f436517d72b53ca0e1",
+        "-H",
+        "Accept: application/vnd.github.raw+json"
+      ],
+      "sha256": "34e11e3e26a0f198f91d09633528f0de1e0d093aa231715917ae035908eca945",
+      "bytes": 819
+    },
+    {
+      "path": "official-LICENSE",
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/contents/LICENSE?ref=1c744e1d6725340643a533f436517d72b53ca0e1",
+      "retrieved_at": "2026-10-07T13:08:04.280452+00:00",
+      "status": "downloaded",
+      "locator": "官方 GitHub raw 文件响应；原路径 LICENSE",
+      "published_at": null,
+      "command": [
+        "gh",
+        "api",
+        "repos/Agenthon-2026/track4-analysis-public/contents/LICENSE?ref=1c744e1d6725340643a533f436517d72b53ca0e1",
+        "-H",
+        "Accept: application/vnd.github.raw+json"
+      ],
+      "sha256": "508a77d2e7b51d98adeed32648ad124b7b30241a8e70b2e72c99f92d8e5874d1",
+      "bytes": 1036
+    },
+    {
+      "path": "official-THIRD-PARTY-NOTICES.md",
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/contents/THIRD-PARTY-NOTICES.md?ref=1c744e1d6725340643a533f436517d72b53ca0e1",
+      "retrieved_at": "2026-10-07T13:08:04.289013+00:00",
+      "status": "downloaded",
+      "locator": "官方 GitHub raw 文件响应；原路径 THIRD-PARTY-NOTICES.md",
+      "published_at": null,
+      "command": [
+        "gh",
+        "api",
+        "repos/Agenthon-2026/track4-analysis-public/contents/THIRD-PARTY-NOTICES.md?ref=1c744e1d6725340643a533f436517d72b53ca0e1",
+        "-H",
+        "Accept: application/vnd.github.raw+json"
+      ],
+      "sha256": "8c844c8989f2849c9798d538870dab3f677d7350925575360287b9b2e87b1b7b",
+      "bytes": 3514
+    },
+    {
+      "path": "official-docs--TRAINING-POLICY.md.txt",
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/contents/docs/TRAINING-POLICY.md?ref=1c744e1d6725340643a533f436517d72b53ca0e1",
+      "retrieved_at": "2026-10-07T13:08:04.349597+00:00",
+      "status": "downloaded",
+      "locator": "官方 GitHub raw 文件响应；原路径 docs/TRAINING-POLICY.md",
+      "published_at": null,
+      "command": [
+        "gh",
+        "api",
+        "repos/Agenthon-2026/track4-analysis-public/contents/docs/TRAINING-POLICY.md?ref=1c744e1d6725340643a533f436517d72b53ca0e1",
+        "-H",
+        "Accept: application/vnd.github.raw+json"
+      ],
+      "sha256": "e84005de6c6fab7950ff6116a429190c85c49f57b5ede1b95933641431e1f992",
+      "bytes": 3631
+    },
+    {
+      "path": "official-docs--ARTIFACT-POLICY.md",
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/contents/docs/ARTIFACT-POLICY.md?ref=1c744e1d6725340643a533f436517d72b53ca0e1",
+      "retrieved_at": "2026-10-07T13:08:05.334693+00:00",
+      "status": "downloaded",
+      "locator": "官方 GitHub raw 文件响应；原路径 docs/ARTIFACT-POLICY.md",
+      "published_at": null,
+      "command": [
+        "gh",
+        "api",
+        "repos/Agenthon-2026/track4-analysis-public/contents/docs/ARTIFACT-POLICY.md?ref=1c744e1d6725340643a533f436517d72b53ca0e1",
+        "-H",
+        "Accept: application/vnd.github.raw+json"
+      ],
+      "sha256": "ddb292d371325473d02da5e70418f10ad0ecbefab9d1b67463f51b3ea68e62e9",
+      "bytes": 4190
+    },
+    {
+      "path": "official-units--t4-eps-yoy-2023Q2-mixed--task.json",
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/contents/units/t4-eps-yoy-2023Q2-mixed/task.json?ref=1c744e1d6725340643a533f436517d72b53ca0e1",
+      "retrieved_at": "2026-10-07T13:08:05.382502+00:00",
+      "status": "downloaded",
+      "locator": "官方 GitHub raw 文件响应；原路径 units/t4-eps-yoy-2023Q2-mixed/task.json",
+      "published_at": null,
+      "command": [
+        "gh",
+        "api",
+        "repos/Agenthon-2026/track4-analysis-public/contents/units/t4-eps-yoy-2023Q2-mixed/task.json?ref=1c744e1d6725340643a533f436517d72b53ca0e1",
+        "-H",
+        "Accept: application/vnd.github.raw+json"
+      ],
+      "sha256": "e3ae05a738bbab934d0d0cc9b206fe8112bcdbd18aff1f92b4eb81a8a50b3d12",
+      "bytes": 4902
+    },
+    {
+      "path": "official-units--t4-eps-yoy-2023Q2-mixed--card.toml",
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/contents/units/t4-eps-yoy-2023Q2-mixed/card.toml?ref=1c744e1d6725340643a533f436517d72b53ca0e1",
+      "retrieved_at": "2026-10-07T13:08:05.411551+00:00",
+      "status": "downloaded",
+      "locator": "官方 GitHub raw 文件响应；原路径 units/t4-eps-yoy-2023Q2-mixed/card.toml",
+      "published_at": null,
+      "command": [
+        "gh",
+        "api",
+        "repos/Agenthon-2026/track4-analysis-public/contents/units/t4-eps-yoy-2023Q2-mixed/card.toml?ref=1c744e1d6725340643a533f436517d72b53ca0e1",
+        "-H",
+        "Accept: application/vnd.github.raw+json"
+      ],
+      "sha256": "d05b23bda9408bb0babf05027d5e8acaa908d220ce9cffcff1790d099c599384",
+      "bytes": 4121
+    },
+    {
+      "path": "global-submission-descriptor.md.txt",
+      "url": "https://api.github.com/repos/Agenthon-2026/Agenthon2026-public/contents/starter-packs/track4/SUBMISSION-DESCRIPTOR.md?ref=main",
+      "retrieved_at": "2026-10-07T13:08:05.436382+00:00",
+      "status": "downloaded",
+      "locator": "官方 GitHub raw 文件响应；原路径 starter-packs/track4/SUBMISSION-DESCRIPTOR.md",
+      "published_at": null,
+      "command": [
+        "gh",
+        "api",
+        "repos/Agenthon-2026/Agenthon2026-public/contents/starter-packs/track4/SUBMISSION-DESCRIPTOR.md?ref=main",
+        "-H",
+        "Accept: application/vnd.github.raw+json"
+      ],
+      "sha256": "ccf0120c193f0df48713cf9a9af4060d6034b616867281557ac154bc0bf4b1b3",
+      "bytes": 11575
+    },
+    {
+      "path": "amgn-actual-release.raw.html",
+      "url": "https://www.amgen.com/newsroom/press-releases/2023/08/amgen-reports-second-quarter-financial-results",
+      "retrieved_at": "2026-10-07T08:44:28.665571+00:00",
+      "copied_at": "2026-10-07T13:08:05.436982+00:00",
+      "status": "copied_existing_original",
+      "published_at": "2023-08-03",
+      "locator": "复核并复制已有保存原件；上游本地路径 sources/amgn-supplement/actual-release.raw.html",
+      "sha256": "8ca813159e53968b635e6d98d614c1582aa7ecb83f587e57c6add6c84441ffec",
+      "bytes": 943779,
+      "byte_form": "已有HTTP公开原件的逐字节复制；copied_at与retrieved_at分开"
+    },
+    {
+      "path": "amgn-scheduled-release.raw.html",
+      "url": "https://www.amgen.com/newsroom/press-releases/2023/07/amgen-announces-webcast-of-2023-second-quarter-financial-results",
+      "retrieved_at": "2026-10-07T08:44:28.664960+00:00",
+      "copied_at": "2026-10-07T13:08:05.438507+00:00",
+      "status": "copied_existing_original",
+      "published_at": "2023-07-31",
+      "locator": "复核并复制已有保存原件；上游本地路径 sources/amgn-supplement/scheduled-release.raw.html",
+      "sha256": "4c0eff6170456273256897f9409478929c8ad54cea0a59ea105a2d6c773ba114",
+      "bytes": 153274,
+      "byte_form": "已有HTTP公开原件的逐字节复制；copied_at与retrieved_at分开"
+    },
+    {
+      "path": "sec-eps-AMGN-concept.raw.json",
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000318154/us-gaap/EarningsPerShareDiluted.json",
+      "retrieved_at": "2026-10-07T08:14:25.557018+00:00",
+      "copied_at": "2026-10-07T13:08:05.438998+00:00",
+      "status": "copied_existing_original",
+      "published_at": null,
+      "locator": "复核并复制已有保存原件；上游本地路径 sources/earnings-credit/sec-eps-AMGN-concept.raw.json",
+      "sha256": "44fda87915cfe7d797eb3d600fde86258fb8098832c87d395397cf4126600c60",
+      "bytes": 46812,
+      "byte_form": "已有HTTP公开原件的逐字节复制；copied_at与retrieved_at分开"
+    },
+    {
+      "path": "sec-eps-AMGN-concept.metadata.json",
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000318154/us-gaap/EarningsPerShareDiluted.json",
+      "retrieved_at": null,
+      "copied_at": "2026-10-07T13:08:05.439459+00:00",
+      "status": "copied_existing_original",
+      "published_at": null,
+      "locator": "复核并复制已有保存原件；上游本地路径 sources/earnings-credit/sec-eps-AMGN-concept.metadata.json",
+      "sha256": "fa26dcc9515f062be2446e41a30ef083fb29fe7ba352a446273ecb4fe9750a5d",
+      "bytes": 453,
+      "byte_form": "已有HTTP公开原件的逐字节复制；copied_at与retrieved_at分开"
+    },
+    {
+      "path": "official-rules.raw.html",
+      "url": "https://www.agenthon.net/rules/",
+      "retrieved_at": "2026-10-07T13:10:30.503843+00:00",
+      "published_at": null,
+      "status": "downloaded",
+      "locator": "公开HTTP响应保存字节",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--max-time",
+        "20",
+        "--silent",
+        "--show-error",
+        "https://www.agenthon.net/rules/"
+      ],
+      "bytes": 22590,
+      "sha256": "273ef5440aa43218e7a3b5423b8263276d6cece487d951e98b0929ec2c4d4e09"
+    },
+    {
+      "path": "official-licensing.raw.html",
+      "url": "https://www.agenthon.net/licensing/",
+      "retrieved_at": "2026-10-07T13:10:30.499808+00:00",
+      "published_at": null,
+      "status": "downloaded",
+      "locator": "公开HTTP响应保存字节",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--max-time",
+        "20",
+        "--silent",
+        "--show-error",
+        "https://www.agenthon.net/licensing/"
+      ],
+      "bytes": 17454,
+      "sha256": "d342983a262696f40408a44c1e70a28e3046180f02c0e17ab502f8653ea96cca"
+    },
+    {
+      "path": "official-terms.raw.html",
+      "url": "https://www.agenthon.net/terms/",
+      "retrieved_at": "2026-10-07T13:10:30.499550+00:00",
+      "published_at": null,
+      "status": "downloaded",
+      "locator": "公开HTTP响应保存字节",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--max-time",
+        "20",
+        "--silent",
+        "--show-error",
+        "https://www.agenthon.net/terms/"
+      ],
+      "bytes": 19111,
+      "sha256": "386f81882b49cdaaed2c1ae3cbd85688c28c5d96db4ea7ecbc0ddfa4863cf984"
+    },
+    {
+      "path": "sec-privacy-information.raw.html",
+      "url": "https://www.sec.gov/about/privacy-information",
+      "retrieved_at": "2026-10-07T13:10:29.942559+00:00",
+      "published_at": null,
+      "status": "download_failed",
+      "locator": "公开HTTP响应保存字节",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--max-time",
+        "20",
+        "--silent",
+        "--show-error",
+        "https://www.sec.gov/about/privacy-information"
+      ],
+      "error": "curl: (56) The requested URL returned error: 403\n",
+      "exit_code": 56
+    },
+    {
+      "path": "amgen-terms-of-use.raw.html",
+      "url": "https://www.amgen.com/terms-of-use",
+      "retrieved_at": "2026-10-07T13:10:31.031493+00:00",
+      "published_at": null,
+      "status": "downloaded",
+      "locator": "公开HTTP响应保存字节",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--max-time",
+        "20",
+        "--silent",
+        "--show-error",
+        "https://www.amgen.com/terms-of-use"
+      ],
+      "bytes": 248719,
+      "sha256": "e39fb04f58627fd6c2f918f1cde3af39dd07994ce2df85827f6c7d2350ccb827"
+    },
+    {
+      "path": "sec-amgn-20230630.raw.html",
+      "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815423000053/amgn-20230630.htm",
+      "retrieved_at": "2026-10-07T13:10:29.941694+00:00",
+      "published_at": null,
+      "status": "download_failed",
+      "locator": "公开HTTP响应保存字节",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--max-time",
+        "20",
+        "--silent",
+        "--show-error",
+        "https://www.sec.gov/Archives/edgar/data/318154/000031815423000053/amgn-20230630.htm"
+      ],
+      "error": "curl: (56) The requested URL returned error: 403\n",
+      "exit_code": 56
+    },
+    {
+      "path": "official-unit-manifest.raw.json",
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/contents/units/t4-eps-yoy-2023Q2-mixed/manifest.json?ref=1c744e1d6725340643a533f436517d72b53ca0e1",
+      "retrieved_at": "2026-10-07T13:10:32.209251+00:00",
+      "published_at": null,
+      "status": "downloaded",
+      "locator": "逐文件license优先；task/card CC-BY-4.0；SEC public-record条款",
+      "bytes": 4200,
+      "sha256": "4c651ee0e38397b5baa2a9e4859d9e7eef65a6def508daff9a5a21455467744b"
+    },
+    {
+      "path": "sec-AMGN-submissions.raw.json",
+      "url": "https://data.sec.gov/submissions/CIK0000318154.json",
+      "retrieved_at": "2026-10-07T13:12:16.469087+00:00",
+      "status": "download_failed",
+      "published_at": null,
+      "locator": "filings.recent 按 accession 0000318154-23-000049/0000318154-23-000053 核对reportDate/filingDate/form",
+      "error": "curl: (56) The requested URL returned error: 403\n"
+    }
+  ]
+}

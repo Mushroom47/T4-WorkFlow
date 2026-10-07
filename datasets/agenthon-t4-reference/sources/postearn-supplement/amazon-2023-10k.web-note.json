@@ -1,0 +1,14 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000008/amzn-20231231.htm",
+  "retrieved_at": "2026-10-07T08:54:25.766149+00:00",
+  "artifact_kind": "translated_evidence_note_not_original_response",
+  "retrieval_method": "web.run open/find parsed body",
+  "published_at": "2024-02-02",
+  "locator": "Note1 / Common Stock Split；官方SEC索引0001018724-24-000008 filing2024-02-02，accepted2024-02-01 18:48:30",
+  "facts": [
+    "Amazon 2023 Form10-K 的 Common Stock Split 段记载2022-05-27 effected20-for-1，并说明年报每股数据追溯调整。",
+    "此记录证实该历史拆股发生于2022年；不自动构成目标窗口完整公司行动台账。"
+  ],
+  "original_raw_download_status": "HTTP403；未本地归档原始响应，见fetch-page-index.json",
+  "limit": "这些备注是已见公开来源的中文释义；本文件 hash 仅对应备注，不代表原网页字节或首次发布版本。"
+}

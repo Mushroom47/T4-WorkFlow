@@ -1,0 +1,1466 @@
+{
+  "schema_version": "0.1.0",
+  "group": "treasury",
+  "records": [
+    {
+      "task_id": "t4-auction-btc-202411-us7",
+      "entity_id": "AUC_10Y_20241105",
+      "target_type": "regression",
+      "reference_label": null,
+      "reference_value": 2.58,
+      "unit": "bid_to_cover_ratio",
+      "status": "verified",
+      "method": "按 task 的 auction_date、tenor、new_or_reopening=new 匹配 TreasuryDirect 官方结果，并以 CUSIP 与 FiscalData 交叉核对；reference_value 使用原始 Treasury Auction Results PDF 和两份 API 一致的两位小数 bid-to-cover ratio。以 PDF Subtotal 口径（含 FIMA，排除 SOMA）的 tendered/accepted 复算并四舍五入至两位小数。",
+      "inputs": [
+        {
+          "name": "auction_date",
+          "value": "2024-11-05",
+          "date": "2024-11-05",
+          "unit": "date"
+        },
+        {
+          "name": "CUSIP",
+          "value": "91282CLW9",
+          "date": "2024-11-05",
+          "unit": "identifier"
+        },
+        {
+          "name": "securityTerm",
+          "value": "10-Year",
+          "date": "2024-11-05",
+          "unit": "term"
+        },
+        {
+          "name": "reopening",
+          "value": "No",
+          "date": "2024-11-05",
+          "unit": "enum"
+        },
+        {
+          "name": "offeringAmount",
+          "value": 42000000000,
+          "date": "2024-11-05",
+          "unit": "USD"
+        },
+        {
+          "name": "subtotal_tendered_excluding_SOMA",
+          "value": 108400632500,
+          "date": "2024-11-05",
+          "unit": "USD"
+        },
+        {
+          "name": "subtotal_accepted_excluding_SOMA",
+          "value": 42000015800,
+          "date": "2024-11-05",
+          "unit": "USD"
+        },
+        {
+          "name": "official_bidToCoverRatio",
+          "value": 2.58,
+          "date": "2024-11-05",
+          "unit": "ratio"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.treasurydirect.gov/instit/annceresult/press/preanre/2024/R_20241105_2.pdf",
+          "title": "美国财政部 Treasury Auction Results — 2024-11-05 10-Year Note",
+          "published_at": "2024-11-05",
+          "locator": "第 1 页 Term and Type of Security、CUSIP Number=91282CLW9；脚注 4 Bid-to-Cover Ratio: $108,400,632,500/$42,000,015,800 = 2.58；原始证据 sources/treasury/R_20241105_2.pdf。"
+        },
+        {
+          "url": "https://www.treasurydirect.gov/TA_WS/securities/search?format=json&auctionDate=2024-11-05",
+          "title": "TreasuryDirect Securities Search API — 2024-11-05",
+          "published_at": null,
+          "locator": "auctionDate=2024-11-05、securityTerm=10-Year、cusip=91282CLW9、reopening=No、bidToCoverRatio=2.580000；本地证据 sources/treasury/auction_treasurydirect_2024-11-05.json。"
+        },
+        {
+          "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/od/auctions_query?filter=auction_date:gte:2024-11-01,auction_date:lte:2024-11-30&page%5Bsize%5D=100",
+          "title": "FiscalData Treasury Securities Auctions Data — 2024 年 11 月",
+          "published_at": null,
+          "locator": "data 中 auction_date=2024-11-05、cusip=91282CLW9、security_term=10-Year、reopening=No、bid_to_cover_ratio=2.580000；本地证据 sources/treasury/auction_fiscaldata_202411.json。"
+        },
+        {
+          "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/units/t4-auction-btc-202411-us7/task.json",
+          "title": "t4-auction-btc-202411-us7 官方 task.json",
+          "published_at": null,
+          "locator": "entities 中 entity_id=AUC_10Y_20241105 的 auction_date、tenor、new_or_reopening。"
+        }
+      ],
+      "notes": [
+        "7 个目标均为 nominal coupon 新发拍卖；使用 auction_date，而非 issueDate 或 datedDate 匹配。",
+        "官方 bid-to-cover 不是 API totalTendered/totalAccepted 的直接比值；SOMA 从分子分母排除，FIMA 留在 Subtotal 中。",
+        "reference_value 保留官方公布两位小数精度；reference_label 为 null，因为本题是回归。",
+        "本地参考结果不是主办方私有 outcome；不重建预测区间。"
+      ]
+    },
+    {
+      "task_id": "t4-auction-btc-202411-us7",
+      "entity_id": "AUC_20Y_20241120",
+      "target_type": "regression",
+      "reference_label": null,
+      "reference_value": 2.34,
+      "unit": "bid_to_cover_ratio",
+      "status": "verified",
+      "method": "按 task 的 auction_date、tenor、new_or_reopening=new 匹配 TreasuryDirect 官方结果，并以 CUSIP 与 FiscalData 交叉核对；reference_value 使用原始 Treasury Auction Results PDF 和两份 API 一致的两位小数 bid-to-cover ratio。以 PDF Subtotal 口径（含 FIMA，排除 SOMA）的 tendered/accepted 复算并四舍五入至两位小数。",
+      "inputs": [
+        {
+          "name": "auction_date",
+          "value": "2024-11-20",
+          "date": "2024-11-20",
+          "unit": "date"
+        },
+        {
+          "name": "CUSIP",
+          "value": "912810UF3",
+          "date": "2024-11-20",
+          "unit": "identifier"
+        },
+        {
+          "name": "securityTerm",
+          "value": "20-Year",
+          "date": "2024-11-20",
+          "unit": "term"
+        },
+        {
+          "name": "reopening",
+          "value": "No",
+          "date": "2024-11-20",
+          "unit": "enum"
+        },
+        {
+          "name": "offeringAmount",
+          "value": 16000000000,
+          "date": "2024-11-20",
+          "unit": "USD"
+        },
+        {
+          "name": "subtotal_tendered_excluding_SOMA",
+          "value": 37414422000,
+          "date": "2024-11-20",
+          "unit": "USD"
+        },
+        {
+          "name": "subtotal_accepted_excluding_SOMA",
+          "value": 16000027500,
+          "date": "2024-11-20",
+          "unit": "USD"
+        },
+        {
+          "name": "official_bidToCoverRatio",
+          "value": 2.34,
+          "date": "2024-11-20",
+          "unit": "ratio"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.treasurydirect.gov/instit/annceresult/press/preanre/2024/R_20241120_3.pdf",
+          "title": "美国财政部 Treasury Auction Results — 2024-11-20 20-Year Bond",
+          "published_at": "2024-11-20",
+          "locator": "第 1 页 Term and Type of Security、CUSIP Number=912810UF3；脚注 4 Bid-to-Cover Ratio: $37,414,422,000/$16,000,027,500 = 2.34；原始证据 sources/treasury/R_20241120_3.pdf。"
+        },
+        {
+          "url": "https://www.treasurydirect.gov/TA_WS/securities/search?format=json&auctionDate=2024-11-20",
+          "title": "TreasuryDirect Securities Search API — 2024-11-20",
+          "published_at": null,
+          "locator": "auctionDate=2024-11-20、securityTerm=20-Year、cusip=912810UF3、reopening=No、bidToCoverRatio=2.340000；本地证据 sources/treasury/auction_treasurydirect_2024-11-20.json。"
+        },
+        {
+          "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/od/auctions_query?filter=auction_date:gte:2024-11-01,auction_date:lte:2024-11-30&page%5Bsize%5D=100",
+          "title": "FiscalData Treasury Securities Auctions Data — 2024 年 11 月",
+          "published_at": null,
+          "locator": "data 中 auction_date=2024-11-20、cusip=912810UF3、security_term=20-Year、reopening=No、bid_to_cover_ratio=2.340000；本地证据 sources/treasury/auction_fiscaldata_202411.json。"
+        },
+        {
+          "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/units/t4-auction-btc-202411-us7/task.json",
+          "title": "t4-auction-btc-202411-us7 官方 task.json",
+          "published_at": null,
+          "locator": "entities 中 entity_id=AUC_20Y_20241120 的 auction_date、tenor、new_or_reopening。"
+        }
+      ],
+      "notes": [
+        "7 个目标均为 nominal coupon 新发拍卖；使用 auction_date，而非 issueDate 或 datedDate 匹配。",
+        "官方 bid-to-cover 不是 API totalTendered/totalAccepted 的直接比值；SOMA 从分子分母排除，FIMA 留在 Subtotal 中。",
+        "reference_value 保留官方公布两位小数精度；reference_label 为 null，因为本题是回归。",
+        "本地参考结果不是主办方私有 outcome；不重建预测区间。"
+      ]
+    },
+    {
+      "task_id": "t4-auction-btc-202411-us7",
+      "entity_id": "AUC_2Y_20241125",
+      "target_type": "regression",
+      "reference_label": null,
+      "reference_value": 2.77,
+      "unit": "bid_to_cover_ratio",
+      "status": "verified",
+      "method": "按 task 的 auction_date、tenor、new_or_reopening=new 匹配 TreasuryDirect 官方结果，并以 CUSIP 与 FiscalData 交叉核对；reference_value 使用原始 Treasury Auction Results PDF 和两份 API 一致的两位小数 bid-to-cover ratio。以 PDF Subtotal 口径（含 FIMA，排除 SOMA）的 tendered/accepted 复算并四舍五入至两位小数。",
+      "inputs": [
+        {
+          "name": "auction_date",
+          "value": "2024-11-25",
+          "date": "2024-11-25",
+          "unit": "date"
+        },
+        {
+          "name": "CUSIP",
+          "value": "91282CLY5",
+          "date": "2024-11-25",
+          "unit": "identifier"
+        },
+        {
+          "name": "securityTerm",
+          "value": "2-Year",
+          "date": "2024-11-25",
+          "unit": "term"
+        },
+        {
+          "name": "reopening",
+          "value": "No",
+          "date": "2024-11-25",
+          "unit": "enum"
+        },
+        {
+          "name": "offeringAmount",
+          "value": 69000000000,
+          "date": "2024-11-25",
+          "unit": "USD"
+        },
+        {
+          "name": "subtotal_tendered_excluding_SOMA",
+          "value": 191460533600,
+          "date": "2024-11-25",
+          "unit": "USD"
+        },
+        {
+          "name": "subtotal_accepted_excluding_SOMA",
+          "value": 69000148600,
+          "date": "2024-11-25",
+          "unit": "USD"
+        },
+        {
+          "name": "official_bidToCoverRatio",
+          "value": 2.77,
+          "date": "2024-11-25",
+          "unit": "ratio"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.treasurydirect.gov/instit/annceresult/press/preanre/2024/R_20241125_3.pdf",
+          "title": "美国财政部 Treasury Auction Results — 2024-11-25 2-Year Note",
+          "published_at": "2024-11-25",
+          "locator": "第 1 页 Term and Type of Security、CUSIP Number=91282CLY5；脚注 4 Bid-to-Cover Ratio: $191,460,533,600/$69,000,148,600 = 2.77；原始证据 sources/treasury/R_20241125_3.pdf。"
+        },
+        {
+          "url": "https://www.treasurydirect.gov/TA_WS/securities/search?format=json&auctionDate=2024-11-25",
+          "title": "TreasuryDirect Securities Search API — 2024-11-25",
+          "published_at": null,
+          "locator": "auctionDate=2024-11-25、securityTerm=2-Year、cusip=91282CLY5、reopening=No、bidToCoverRatio=2.770000；本地证据 sources/treasury/auction_treasurydirect_2024-11-25.json。"
+        },
+        {
+          "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/od/auctions_query?filter=auction_date:gte:2024-11-01,auction_date:lte:2024-11-30&page%5Bsize%5D=100",
+          "title": "FiscalData Treasury Securities Auctions Data — 2024 年 11 月",
+          "published_at": null,
+          "locator": "data 中 auction_date=2024-11-25、cusip=91282CLY5、security_term=2-Year、reopening=No、bid_to_cover_ratio=2.770000；本地证据 sources/treasury/auction_fiscaldata_202411.json。"
+        },
+        {
+          "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/units/t4-auction-btc-202411-us7/task.json",
+          "title": "t4-auction-btc-202411-us7 官方 task.json",
+          "published_at": null,
+          "locator": "entities 中 entity_id=AUC_2Y_20241125 的 auction_date、tenor、new_or_reopening。"
+        }
+      ],
+      "notes": [
+        "7 个目标均为 nominal coupon 新发拍卖；使用 auction_date，而非 issueDate 或 datedDate 匹配。",
+        "官方 bid-to-cover 不是 API totalTendered/totalAccepted 的直接比值；SOMA 从分子分母排除，FIMA 留在 Subtotal 中。",
+        "reference_value 保留官方公布两位小数精度；reference_label 为 null，因为本题是回归。",
+        "本地参考结果不是主办方私有 outcome；不重建预测区间。"
+      ]
+    },
+    {
+      "task_id": "t4-auction-btc-202411-us7",
+      "entity_id": "AUC_30Y_20241106",
+      "target_type": "regression",
+      "reference_label": null,
+      "reference_value": 2.64,
+      "unit": "bid_to_cover_ratio",
+      "status": "verified",
+      "method": "按 task 的 auction_date、tenor、new_or_reopening=new 匹配 TreasuryDirect 官方结果，并以 CUSIP 与 FiscalData 交叉核对；reference_value 使用原始 Treasury Auction Results PDF 和两份 API 一致的两位小数 bid-to-cover ratio。以 PDF Subtotal 口径（含 FIMA，排除 SOMA）的 tendered/accepted 复算并四舍五入至两位小数。",
+      "inputs": [
+        {
+          "name": "auction_date",
+          "value": "2024-11-06",
+          "date": "2024-11-06",
+          "unit": "date"
+        },
+        {
+          "name": "CUSIP",
+          "value": "912810UE6",
+          "date": "2024-11-06",
+          "unit": "identifier"
+        },
+        {
+          "name": "securityTerm",
+          "value": "30-Year",
+          "date": "2024-11-06",
+          "unit": "term"
+        },
+        {
+          "name": "reopening",
+          "value": "No",
+          "date": "2024-11-06",
+          "unit": "enum"
+        },
+        {
+          "name": "offeringAmount",
+          "value": 25000000000,
+          "date": "2024-11-06",
+          "unit": "USD"
+        },
+        {
+          "name": "subtotal_tendered_excluding_SOMA",
+          "value": 66042813700,
+          "date": "2024-11-06",
+          "unit": "USD"
+        },
+        {
+          "name": "subtotal_accepted_excluding_SOMA",
+          "value": 25000064500,
+          "date": "2024-11-06",
+          "unit": "USD"
+        },
+        {
+          "name": "official_bidToCoverRatio",
+          "value": 2.64,
+          "date": "2024-11-06",
+          "unit": "ratio"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.treasurydirect.gov/instit/annceresult/press/preanre/2024/R_20241106_2.pdf",
+          "title": "美国财政部 Treasury Auction Results — 2024-11-06 30-Year Bond",
+          "published_at": "2024-11-06",
+          "locator": "第 1 页 Term and Type of Security、CUSIP Number=912810UE6；脚注 4 Bid-to-Cover Ratio: $66,042,813,700/$25,000,064,500 = 2.64；原始证据 sources/treasury/R_20241106_2.pdf。"
+        },
+        {
+          "url": "https://www.treasurydirect.gov/TA_WS/securities/search?format=json&auctionDate=2024-11-06",
+          "title": "TreasuryDirect Securities Search API — 2024-11-06",
+          "published_at": null,
+          "locator": "auctionDate=2024-11-06、securityTerm=30-Year、cusip=912810UE6、reopening=No、bidToCoverRatio=2.640000；本地证据 sources/treasury/auction_treasurydirect_2024-11-06.json。"
+        },
+        {
+          "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/od/auctions_query?filter=auction_date:gte:2024-11-01,auction_date:lte:2024-11-30&page%5Bsize%5D=100",
+          "title": "FiscalData Treasury Securities Auctions Data — 2024 年 11 月",
+          "published_at": null,
+          "locator": "data 中 auction_date=2024-11-06、cusip=912810UE6、security_term=30-Year、reopening=No、bid_to_cover_ratio=2.640000；本地证据 sources/treasury/auction_fiscaldata_202411.json。"
+        },
+        {
+          "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/units/t4-auction-btc-202411-us7/task.json",
+          "title": "t4-auction-btc-202411-us7 官方 task.json",
+          "published_at": null,
+          "locator": "entities 中 entity_id=AUC_30Y_20241106 的 auction_date、tenor、new_or_reopening。"
+        }
+      ],
+      "notes": [
+        "7 个目标均为 nominal coupon 新发拍卖；使用 auction_date，而非 issueDate 或 datedDate 匹配。",
+        "官方 bid-to-cover 不是 API totalTendered/totalAccepted 的直接比值；SOMA 从分子分母排除，FIMA 留在 Subtotal 中。",
+        "reference_value 保留官方公布两位小数精度；reference_label 为 null，因为本题是回归。",
+        "本地参考结果不是主办方私有 outcome；不重建预测区间。"
+      ]
+    },
+    {
+      "task_id": "t4-auction-btc-202411-us7",
+      "entity_id": "AUC_3Y_20241104",
+      "target_type": "regression",
+      "reference_label": null,
+      "reference_value": 2.6,
+      "unit": "bid_to_cover_ratio",
+      "status": "verified",
+      "method": "按 task 的 auction_date、tenor、new_or_reopening=new 匹配 TreasuryDirect 官方结果，并以 CUSIP 与 FiscalData 交叉核对；reference_value 使用原始 Treasury Auction Results PDF 和两份 API 一致的两位小数 bid-to-cover ratio。以 PDF Subtotal 口径（含 FIMA，排除 SOMA）的 tendered/accepted 复算并四舍五入至两位小数。",
+      "inputs": [
+        {
+          "name": "auction_date",
+          "value": "2024-11-04",
+          "date": "2024-11-04",
+          "unit": "date"
+        },
+        {
+          "name": "CUSIP",
+          "value": "91282CLX7",
+          "date": "2024-11-04",
+          "unit": "identifier"
+        },
+        {
+          "name": "securityTerm",
+          "value": "3-Year",
+          "date": "2024-11-04",
+          "unit": "term"
+        },
+        {
+          "name": "reopening",
+          "value": "No",
+          "date": "2024-11-04",
+          "unit": "enum"
+        },
+        {
+          "name": "offeringAmount",
+          "value": 58000000000,
+          "date": "2024-11-04",
+          "unit": "USD"
+        },
+        {
+          "name": "subtotal_tendered_excluding_SOMA",
+          "value": 150953589800,
+          "date": "2024-11-04",
+          "unit": "USD"
+        },
+        {
+          "name": "subtotal_accepted_excluding_SOMA",
+          "value": 58000041300,
+          "date": "2024-11-04",
+          "unit": "USD"
+        },
+        {
+          "name": "official_bidToCoverRatio",
+          "value": 2.6,
+          "date": "2024-11-04",
+          "unit": "ratio"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.treasurydirect.gov/instit/annceresult/press/preanre/2024/R_20241104_3.pdf",
+          "title": "美国财政部 Treasury Auction Results — 2024-11-04 3-Year Note",
+          "published_at": "2024-11-04",
+          "locator": "第 1 页 Term and Type of Security、CUSIP Number=91282CLX7；脚注 4 Bid-to-Cover Ratio: $150,953,589,800/$58,000,041,300 = 2.60；原始证据 sources/treasury/R_20241104_3.pdf。"
+        },
+        {
+          "url": "https://www.treasurydirect.gov/TA_WS/securities/search?format=json&auctionDate=2024-11-04",
+          "title": "TreasuryDirect Securities Search API — 2024-11-04",
+          "published_at": null,
+          "locator": "auctionDate=2024-11-04、securityTerm=3-Year、cusip=91282CLX7、reopening=No、bidToCoverRatio=2.600000；本地证据 sources/treasury/auction_treasurydirect_2024-11-04.json。"
+        },
+        {
+          "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/od/auctions_query?filter=auction_date:gte:2024-11-01,auction_date:lte:2024-11-30&page%5Bsize%5D=100",
+          "title": "FiscalData Treasury Securities Auctions Data — 2024 年 11 月",
+          "published_at": null,
+          "locator": "data 中 auction_date=2024-11-04、cusip=91282CLX7、security_term=3-Year、reopening=No、bid_to_cover_ratio=2.600000；本地证据 sources/treasury/auction_fiscaldata_202411.json。"
+        },
+        {
+          "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/units/t4-auction-btc-202411-us7/task.json",
+          "title": "t4-auction-btc-202411-us7 官方 task.json",
+          "published_at": null,
+          "locator": "entities 中 entity_id=AUC_3Y_20241104 的 auction_date、tenor、new_or_reopening。"
+        }
+      ],
+      "notes": [
+        "7 个目标均为 nominal coupon 新发拍卖；使用 auction_date，而非 issueDate 或 datedDate 匹配。",
+        "官方 bid-to-cover 不是 API totalTendered/totalAccepted 的直接比值；SOMA 从分子分母排除，FIMA 留在 Subtotal 中。",
+        "reference_value 保留官方公布两位小数精度；reference_label 为 null，因为本题是回归。",
+        "本地参考结果不是主办方私有 outcome；不重建预测区间。"
+      ]
+    },
+    {
+      "task_id": "t4-auction-btc-202411-us7",
+      "entity_id": "AUC_5Y_20241126",
+      "target_type": "regression",
+      "reference_label": null,
+      "reference_value": 2.43,
+      "unit": "bid_to_cover_ratio",
+      "status": "verified",
+      "method": "按 task 的 auction_date、tenor、new_or_reopening=new 匹配 TreasuryDirect 官方结果，并以 CUSIP 与 FiscalData 交叉核对；reference_value 使用原始 Treasury Auction Results PDF 和两份 API 一致的两位小数 bid-to-cover ratio。以 PDF Subtotal 口径（含 FIMA，排除 SOMA）的 tendered/accepted 复算并四舍五入至两位小数。",
+      "inputs": [
+        {
+          "name": "auction_date",
+          "value": "2024-11-26",
+          "date": "2024-11-26",
+          "unit": "date"
+        },
+        {
+          "name": "CUSIP",
+          "value": "91282CMA6",
+          "date": "2024-11-26",
+          "unit": "identifier"
+        },
+        {
+          "name": "securityTerm",
+          "value": "5-Year",
+          "date": "2024-11-26",
+          "unit": "term"
+        },
+        {
+          "name": "reopening",
+          "value": "No",
+          "date": "2024-11-26",
+          "unit": "enum"
+        },
+        {
+          "name": "offeringAmount",
+          "value": 70000000000,
+          "date": "2024-11-26",
+          "unit": "USD"
+        },
+        {
+          "name": "subtotal_tendered_excluding_SOMA",
+          "value": 170192044400,
+          "date": "2024-11-26",
+          "unit": "USD"
+        },
+        {
+          "name": "subtotal_accepted_excluding_SOMA",
+          "value": 70000107900,
+          "date": "2024-11-26",
+          "unit": "USD"
+        },
+        {
+          "name": "official_bidToCoverRatio",
+          "value": 2.43,
+          "date": "2024-11-26",
+          "unit": "ratio"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.treasurydirect.gov/instit/annceresult/press/preanre/2024/R_20241126_4.pdf",
+          "title": "美国财政部 Treasury Auction Results — 2024-11-26 5-Year Note",
+          "published_at": "2024-11-26",
+          "locator": "第 1 页 Term and Type of Security、CUSIP Number=91282CMA6；脚注 4 Bid-to-Cover Ratio: $170,192,044,400/$70,000,107,900 = 2.43；原始证据 sources/treasury/R_20241126_4.pdf。"
+        },
+        {
+          "url": "https://www.treasurydirect.gov/TA_WS/securities/search?format=json&auctionDate=2024-11-26",
+          "title": "TreasuryDirect Securities Search API — 2024-11-26",
+          "published_at": null,
+          "locator": "auctionDate=2024-11-26、securityTerm=5-Year、cusip=91282CMA6、reopening=No、bidToCoverRatio=2.430000；本地证据 sources/treasury/auction_treasurydirect_2024-11-26.json。"
+        },
+        {
+          "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/od/auctions_query?filter=auction_date:gte:2024-11-01,auction_date:lte:2024-11-30&page%5Bsize%5D=100",
+          "title": "FiscalData Treasury Securities Auctions Data — 2024 年 11 月",
+          "published_at": null,
+          "locator": "data 中 auction_date=2024-11-26、cusip=91282CMA6、security_term=5-Year、reopening=No、bid_to_cover_ratio=2.430000；本地证据 sources/treasury/auction_fiscaldata_202411.json。"
+        },
+        {
+          "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/units/t4-auction-btc-202411-us7/task.json",
+          "title": "t4-auction-btc-202411-us7 官方 task.json",
+          "published_at": null,
+          "locator": "entities 中 entity_id=AUC_5Y_20241126 的 auction_date、tenor、new_or_reopening。"
+        }
+      ],
+      "notes": [
+        "7 个目标均为 nominal coupon 新发拍卖；使用 auction_date，而非 issueDate 或 datedDate 匹配。",
+        "官方 bid-to-cover 不是 API totalTendered/totalAccepted 的直接比值；SOMA 从分子分母排除，FIMA 留在 Subtotal 中。",
+        "reference_value 保留官方公布两位小数精度；reference_label 为 null，因为本题是回归。",
+        "本地参考结果不是主办方私有 outcome；不重建预测区间。"
+      ]
+    },
+    {
+      "task_id": "t4-auction-btc-202411-us7",
+      "entity_id": "AUC_7Y_20241127",
+      "target_type": "regression",
+      "reference_label": null,
+      "reference_value": 2.71,
+      "unit": "bid_to_cover_ratio",
+      "status": "verified",
+      "method": "按 task 的 auction_date、tenor、new_or_reopening=new 匹配 TreasuryDirect 官方结果，并以 CUSIP 与 FiscalData 交叉核对；reference_value 使用原始 Treasury Auction Results PDF 和两份 API 一致的两位小数 bid-to-cover ratio。以 PDF Subtotal 口径（含 FIMA，排除 SOMA）的 tendered/accepted 复算并四舍五入至两位小数。",
+      "inputs": [
+        {
+          "name": "auction_date",
+          "value": "2024-11-27",
+          "date": "2024-11-27",
+          "unit": "date"
+        },
+        {
+          "name": "CUSIP",
+          "value": "91282CLZ2",
+          "date": "2024-11-27",
+          "unit": "identifier"
+        },
+        {
+          "name": "securityTerm",
+          "value": "7-Year",
+          "date": "2024-11-27",
+          "unit": "term"
+        },
+        {
+          "name": "reopening",
+          "value": "No",
+          "date": "2024-11-27",
+          "unit": "enum"
+        },
+        {
+          "name": "offeringAmount",
+          "value": 44000000000,
+          "date": "2024-11-27",
+          "unit": "USD"
+        },
+        {
+          "name": "subtotal_tendered_excluding_SOMA",
+          "value": 119184182200,
+          "date": "2024-11-27",
+          "unit": "USD"
+        },
+        {
+          "name": "subtotal_accepted_excluding_SOMA",
+          "value": 44000008200,
+          "date": "2024-11-27",
+          "unit": "USD"
+        },
+        {
+          "name": "official_bidToCoverRatio",
+          "value": 2.71,
+          "date": "2024-11-27",
+          "unit": "ratio"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.treasurydirect.gov/instit/annceresult/press/preanre/2024/R_20241127_3.pdf",
+          "title": "美国财政部 Treasury Auction Results — 2024-11-27 7-Year Note",
+          "published_at": "2024-11-27",
+          "locator": "第 1 页 Term and Type of Security、CUSIP Number=91282CLZ2；脚注 4 Bid-to-Cover Ratio: $119,184,182,200/$44,000,008,200 = 2.71；原始证据 sources/treasury/R_20241127_3.pdf。"
+        },
+        {
+          "url": "https://www.treasurydirect.gov/TA_WS/securities/search?format=json&auctionDate=2024-11-27",
+          "title": "TreasuryDirect Securities Search API — 2024-11-27",
+          "published_at": null,
+          "locator": "auctionDate=2024-11-27、securityTerm=7-Year、cusip=91282CLZ2、reopening=No、bidToCoverRatio=2.710000；本地证据 sources/treasury/auction_treasurydirect_2024-11-27.json。"
+        },
+        {
+          "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/od/auctions_query?filter=auction_date:gte:2024-11-01,auction_date:lte:2024-11-30&page%5Bsize%5D=100",
+          "title": "FiscalData Treasury Securities Auctions Data — 2024 年 11 月",
+          "published_at": null,
+          "locator": "data 中 auction_date=2024-11-27、cusip=91282CLZ2、security_term=7-Year、reopening=No、bid_to_cover_ratio=2.710000；本地证据 sources/treasury/auction_fiscaldata_202411.json。"
+        },
+        {
+          "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/units/t4-auction-btc-202411-us7/task.json",
+          "title": "t4-auction-btc-202411-us7 官方 task.json",
+          "published_at": null,
+          "locator": "entities 中 entity_id=AUC_7Y_20241127 的 auction_date、tenor、new_or_reopening。"
+        }
+      ],
+      "notes": [
+        "7 个目标均为 nominal coupon 新发拍卖；使用 auction_date，而非 issueDate 或 datedDate 匹配。",
+        "官方 bid-to-cover 不是 API totalTendered/totalAccepted 的直接比值；SOMA 从分子分母排除，FIMA 留在 Subtotal 中。",
+        "reference_value 保留官方公布两位小数精度；reference_label 为 null，因为本题是回归。",
+        "本地参考结果不是主办方私有 outcome；不重建预测区间。"
+      ]
+    },
+    {
+      "task_id": "t4-fomc-curve-20220728",
+      "entity_id": "UST10Y",
+      "target_type": "regression",
+      "reference_label": null,
+      "reference_value": 89.0,
+      "unit": "bps_change",
+      "status": "verified",
+      "method": "从美国财政部 Daily Treasury Par Yield Curve Rates XML 读取指定期限的终点 CMT 收益率，以 (official_end_yield_pct - task.start_yield_pct) × 100 计算基点变化；另核对财政部同日起值与 task 起值一致。",
+      "inputs": [
+        {
+          "name": "task.start_yield_pct",
+          "value": 2.68,
+          "date": "2022-07-28",
+          "unit": "percent"
+        },
+        {
+          "name": "official_start_yield_pct",
+          "value": 2.68,
+          "date": "2022-07-28",
+          "unit": "percent"
+        },
+        {
+          "name": "official_end_yield_pct",
+          "value": 3.57,
+          "date": "2022-09-20",
+          "unit": "percent"
+        },
+        {
+          "name": "maturity_years",
+          "value": 10,
+          "date": null,
+          "unit": "year"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2022",
+          "title": "美国财政部 Daily Treasury Par Yield Curve Rates — 2022 年 XML",
+          "published_at": null,
+          "locator": "NEW_DATE=2022-07-28 和 2022-09-20，字段 BC_10YEAR，分别为 2.68% 与 3.57%；本地证据 sources/treasury/yield_curve_2022.xml。"
+        },
+        {
+          "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/units/t4-fomc-curve-20220728/task.json",
+          "title": "t4-fomc-curve-20220728 官方 task.json",
+          "published_at": null,
+          "locator": "entities 中 entity_id=UST10Y 的 start_yield_pct=2.68；prompt 窗口为 2022-07-28 至 2022-09-20。"
+        },
+        {
+          "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS10&cosd=2022-07-21&coed=2022-07-28&vintage_date=2022-07-29",
+          "title": "ALFRED DGS10 历史vintage原始CSV",
+          "published_at": null,
+          "locator": "observation_date=2022-07-28；vintage=2022-07-29；值2.68 percent；本地sources/yield-vintages/DGS10_window-2022-07-21_2022-07-28_vintage-2022-07-29.csv。"
+        },
+        {
+          "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS10&cosd=2022-09-13&coed=2022-09-20&vintage_date=2022-09-21",
+          "title": "ALFRED DGS10 历史vintage原始CSV",
+          "published_at": null,
+          "locator": "observation_date=2022-09-20；vintage=2022-09-21；值3.57 percent；本地sources/yield-vintages/DGS10_window-2022-09-13_2022-09-20_vintage-2022-09-21.csv。"
+        }
+      ],
+      "notes": [
+        "官方起值与任务起值一致；reference_label 为 null，因为本题是回归。",
+        "采用财政部官方名义 CMT/par yield 口径，不使用真实收益率、票息、国债价格收益或拟合零息曲线。",
+        "本地参考结果不是主办方私有 outcome；不重建预测区间。",
+        "补证逐端点实际检查ALFRED观察日前一日、当日、次日vintage；前两者缺目标观察日，次日出现且起止值与task/XML一致。ALFRED最早测试可见日不等于Treasury全球首次发布日期；global_source_first_publication_proven=false。"
+      ]
+    },
+    {
+      "task_id": "t4-fomc-curve-20220728",
+      "entity_id": "UST2Y",
+      "target_type": "regression",
+      "reference_label": null,
+      "reference_value": 111.0,
+      "unit": "bps_change",
+      "status": "verified",
+      "method": "从美国财政部 Daily Treasury Par Yield Curve Rates XML 读取指定期限的终点 CMT 收益率，以 (official_end_yield_pct - task.start_yield_pct) × 100 计算基点变化；另核对财政部同日起值与 task 起值一致。",
+      "inputs": [
+        {
+          "name": "task.start_yield_pct",
+          "value": 2.85,
+          "date": "2022-07-28",
+          "unit": "percent"
+        },
+        {
+          "name": "official_start_yield_pct",
+          "value": 2.85,
+          "date": "2022-07-28",
+          "unit": "percent"
+        },
+        {
+          "name": "official_end_yield_pct",
+          "value": 3.96,
+          "date": "2022-09-20",
+          "unit": "percent"
+        },
+        {
+          "name": "maturity_years",
+          "value": 2,
+          "date": null,
+          "unit": "year"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2022",
+          "title": "美国财政部 Daily Treasury Par Yield Curve Rates — 2022 年 XML",
+          "published_at": null,
+          "locator": "NEW_DATE=2022-07-28 和 2022-09-20，字段 BC_2YEAR，分别为 2.85% 与 3.96%；本地证据 sources/treasury/yield_curve_2022.xml。"
+        },
+        {
+          "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/units/t4-fomc-curve-20220728/task.json",
+          "title": "t4-fomc-curve-20220728 官方 task.json",
+          "published_at": null,
+          "locator": "entities 中 entity_id=UST2Y 的 start_yield_pct=2.85；prompt 窗口为 2022-07-28 至 2022-09-20。"
+        },
+        {
+          "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2022-07-21&coed=2022-07-28&vintage_date=2022-07-29",
+          "title": "ALFRED DGS2 历史vintage原始CSV",
+          "published_at": null,
+          "locator": "observation_date=2022-07-28；vintage=2022-07-29；值2.85 percent；本地sources/yield-vintages/DGS2_window-2022-07-21_2022-07-28_vintage-2022-07-29.csv。"
+        },
+        {
+          "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2022-09-13&coed=2022-09-20&vintage_date=2022-09-21",
+          "title": "ALFRED DGS2 历史vintage原始CSV",
+          "published_at": null,
+          "locator": "observation_date=2022-09-20；vintage=2022-09-21；值3.96 percent；本地sources/yield-vintages/DGS2_window-2022-09-13_2022-09-20_vintage-2022-09-21.csv。"
+        }
+      ],
+      "notes": [
+        "官方起值与任务起值一致；reference_label 为 null，因为本题是回归。",
+        "采用财政部官方名义 CMT/par yield 口径，不使用真实收益率、票息、国债价格收益或拟合零息曲线。",
+        "本地参考结果不是主办方私有 outcome；不重建预测区间。",
+        "补证逐端点实际检查ALFRED观察日前一日、当日、次日vintage；前两者缺目标观察日，次日出现且起止值与task/XML一致。ALFRED最早测试可见日不等于Treasury全球首次发布日期；global_source_first_publication_proven=false。"
+      ]
+    },
+    {
+      "task_id": "t4-fomc-curve-20220728",
+      "entity_id": "UST30Y",
+      "target_type": "regression",
+      "reference_label": null,
+      "reference_value": 57.0,
+      "unit": "bps_change",
+      "status": "verified",
+      "method": "从美国财政部 Daily Treasury Par Yield Curve Rates XML 读取指定期限的终点 CMT 收益率，以 (official_end_yield_pct - task.start_yield_pct) × 100 计算基点变化；另核对财政部同日起值与 task 起值一致。",
+      "inputs": [
+        {
+          "name": "task.start_yield_pct",
+          "value": 3.02,
+          "date": "2022-07-28",
+          "unit": "percent"
+        },
+        {
+          "name": "official_start_yield_pct",
+          "value": 3.02,
+          "date": "2022-07-28",
+          "unit": "percent"
+        },
+        {
+          "name": "official_end_yield_pct",
+          "value": 3.59,
+          "date": "2022-09-20",
+          "unit": "percent"
+        },
+        {
+          "name": "maturity_years",
+          "value": 30,
+          "date": null,
+          "unit": "year"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2022",
+          "title": "美国财政部 Daily Treasury Par Yield Curve Rates — 2022 年 XML",
+          "published_at": null,
+          "locator": "NEW_DATE=2022-07-28 和 2022-09-20，字段 BC_30YEAR，分别为 3.02% 与 3.59%；本地证据 sources/treasury/yield_curve_2022.xml。"
+        },
+        {
+          "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/units/t4-fomc-curve-20220728/task.json",
+          "title": "t4-fomc-curve-20220728 官方 task.json",
+          "published_at": null,
+          "locator": "entities 中 entity_id=UST30Y 的 start_yield_pct=3.02；prompt 窗口为 2022-07-28 至 2022-09-20。"
+        },
+        {
+          "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS30&cosd=2022-07-21&coed=2022-07-28&vintage_date=2022-07-29",
+          "title": "ALFRED DGS30 历史vintage原始CSV",
+          "published_at": null,
+          "locator": "observation_date=2022-07-28；vintage=2022-07-29；值3.02 percent；本地sources/yield-vintages/DGS30_window-2022-07-21_2022-07-28_vintage-2022-07-29.csv。"
+        },
+        {
+          "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS30&cosd=2022-09-13&coed=2022-09-20&vintage_date=2022-09-21",
+          "title": "ALFRED DGS30 历史vintage原始CSV",
+          "published_at": null,
+          "locator": "observation_date=2022-09-20；vintage=2022-09-21；值3.59 percent；本地sources/yield-vintages/DGS30_window-2022-09-13_2022-09-20_vintage-2022-09-21.csv。"
+        }
+      ],
+      "notes": [
+        "官方起值与任务起值一致；reference_label 为 null，因为本题是回归。",
+        "采用财政部官方名义 CMT/par yield 口径，不使用真实收益率、票息、国债价格收益或拟合零息曲线。",
+        "本地参考结果不是主办方私有 outcome；不重建预测区间。",
+        "补证逐端点实际检查ALFRED观察日前一日、当日、次日vintage；前两者缺目标观察日，次日出现且起止值与task/XML一致。ALFRED最早测试可见日不等于Treasury全球首次发布日期；global_source_first_publication_proven=false。"
+      ]
+    },
+    {
+      "task_id": "t4-fomc-curve-20220728",
+      "entity_id": "UST3Y",
+      "target_type": "regression",
+      "reference_label": null,
+      "reference_value": 113.0,
+      "unit": "bps_change",
+      "status": "verified",
+      "method": "从美国财政部 Daily Treasury Par Yield Curve Rates XML 读取指定期限的终点 CMT 收益率，以 (official_end_yield_pct - task.start_yield_pct) × 100 计算基点变化；另核对财政部同日起值与 task 起值一致。",
+      "inputs": [
+        {
+          "name": "task.start_yield_pct",
+          "value": 2.81,
+          "date": "2022-07-28",
+          "unit": "percent"
+        },
+        {
+          "name": "official_start_yield_pct",
+          "value": 2.81,
+          "date": "2022-07-28",
+          "unit": "percent"
+        },
+        {
+          "name": "official_end_yield_pct",
+          "value": 3.94,
+          "date": "2022-09-20",
+          "unit": "percent"
+        },
+        {
+          "name": "maturity_years",
+          "value": 3,
+          "date": null,
+          "unit": "year"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2022",
+          "title": "美国财政部 Daily Treasury Par Yield Curve Rates — 2022 年 XML",
+          "published_at": null,
+          "locator": "NEW_DATE=2022-07-28 和 2022-09-20，字段 BC_3YEAR，分别为 2.81% 与 3.94%；本地证据 sources/treasury/yield_curve_2022.xml。"
+        },
+        {
+          "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/units/t4-fomc-curve-20220728/task.json",
+          "title": "t4-fomc-curve-20220728 官方 task.json",
+          "published_at": null,
+          "locator": "entities 中 entity_id=UST3Y 的 start_yield_pct=2.81；prompt 窗口为 2022-07-28 至 2022-09-20。"
+        },
+        {
+          "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS3&cosd=2022-07-21&coed=2022-07-28&vintage_date=2022-07-29",
+          "title": "ALFRED DGS3 历史vintage原始CSV",
+          "published_at": null,
+          "locator": "observation_date=2022-07-28；vintage=2022-07-29；值2.81 percent；本地sources/yield-vintages/DGS3_window-2022-07-21_2022-07-28_vintage-2022-07-29.csv。"
+        },
+        {
+          "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS3&cosd=2022-09-13&coed=2022-09-20&vintage_date=2022-09-21",
+          "title": "ALFRED DGS3 历史vintage原始CSV",
+          "published_at": null,
+          "locator": "observation_date=2022-09-20；vintage=2022-09-21；值3.94 percent；本地sources/yield-vintages/DGS3_window-2022-09-13_2022-09-20_vintage-2022-09-21.csv。"
+        }
+      ],
+      "notes": [
+        "官方起值与任务起值一致；reference_label 为 null，因为本题是回归。",
+        "采用财政部官方名义 CMT/par yield 口径，不使用真实收益率、票息、国债价格收益或拟合零息曲线。",
+        "本地参考结果不是主办方私有 outcome；不重建预测区间。",
+        "补证逐端点实际检查ALFRED观察日前一日、当日、次日vintage；前两者缺目标观察日，次日出现且起止值与task/XML一致。ALFRED最早测试可见日不等于Treasury全球首次发布日期；global_source_first_publication_proven=false。"
+      ]
+    },
+    {
+      "task_id": "t4-fomc-curve-20220728",
+      "entity_id": "UST5Y",
+      "target_type": "regression",
+      "reference_label": null,
+      "reference_value": 106.0,
+      "unit": "bps_change",
+      "status": "verified",
+      "method": "从美国财政部 Daily Treasury Par Yield Curve Rates XML 读取指定期限的终点 CMT 收益率，以 (official_end_yield_pct - task.start_yield_pct) × 100 计算基点变化；另核对财政部同日起值与 task 起值一致。",
+      "inputs": [
+        {
+          "name": "task.start_yield_pct",
+          "value": 2.69,
+          "date": "2022-07-28",
+          "unit": "percent"
+        },
+        {
+          "name": "official_start_yield_pct",
+          "value": 2.69,
+          "date": "2022-07-28",
+          "unit": "percent"
+        },
+        {
+          "name": "official_end_yield_pct",
+          "value": 3.75,
+          "date": "2022-09-20",
+          "unit": "percent"
+        },
+        {
+          "name": "maturity_years",
+          "value": 5,
+          "date": null,
+          "unit": "year"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2022",
+          "title": "美国财政部 Daily Treasury Par Yield Curve Rates — 2022 年 XML",
+          "published_at": null,
+          "locator": "NEW_DATE=2022-07-28 和 2022-09-20，字段 BC_5YEAR，分别为 2.69% 与 3.75%；本地证据 sources/treasury/yield_curve_2022.xml。"
+        },
+        {
+          "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/units/t4-fomc-curve-20220728/task.json",
+          "title": "t4-fomc-curve-20220728 官方 task.json",
+          "published_at": null,
+          "locator": "entities 中 entity_id=UST5Y 的 start_yield_pct=2.69；prompt 窗口为 2022-07-28 至 2022-09-20。"
+        },
+        {
+          "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS5&cosd=2022-07-21&coed=2022-07-28&vintage_date=2022-07-29",
+          "title": "ALFRED DGS5 历史vintage原始CSV",
+          "published_at": null,
+          "locator": "observation_date=2022-07-28；vintage=2022-07-29；值2.69 percent；本地sources/yield-vintages/DGS5_window-2022-07-21_2022-07-28_vintage-2022-07-29.csv。"
+        },
+        {
+          "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS5&cosd=2022-09-13&coed=2022-09-20&vintage_date=2022-09-21",
+          "title": "ALFRED DGS5 历史vintage原始CSV",
+          "published_at": null,
+          "locator": "observation_date=2022-09-20；vintage=2022-09-21；值3.75 percent；本地sources/yield-vintages/DGS5_window-2022-09-13_2022-09-20_vintage-2022-09-21.csv。"
+        }
+      ],
+      "notes": [
+        "官方起值与任务起值一致；reference_label 为 null，因为本题是回归。",
+        "采用财政部官方名义 CMT/par yield 口径，不使用真实收益率、票息、国债价格收益或拟合零息曲线。",
+        "本地参考结果不是主办方私有 outcome；不重建预测区间。",
+        "补证逐端点实际检查ALFRED观察日前一日、当日、次日vintage；前两者缺目标观察日，次日出现且起止值与task/XML一致。ALFRED最早测试可见日不等于Treasury全球首次发布日期；global_source_first_publication_proven=false。"
+      ]
+    },
+    {
+      "task_id": "t4-fomc-curve-20220728",
+      "entity_id": "UST7Y",
+      "target_type": "regression",
+      "reference_label": null,
+      "reference_value": 100.0,
+      "unit": "bps_change",
+      "status": "verified",
+      "method": "从美国财政部 Daily Treasury Par Yield Curve Rates XML 读取指定期限的终点 CMT 收益率，以 (official_end_yield_pct - task.start_yield_pct) × 100 计算基点变化；另核对财政部同日起值与 task 起值一致。",
+      "inputs": [
+        {
+          "name": "task.start_yield_pct",
+          "value": 2.69,
+          "date": "2022-07-28",
+          "unit": "percent"
+        },
+        {
+          "name": "official_start_yield_pct",
+          "value": 2.69,
+          "date": "2022-07-28",
+          "unit": "percent"
+        },
+        {
+          "name": "official_end_yield_pct",
+          "value": 3.69,
+          "date": "2022-09-20",
+          "unit": "percent"
+        },
+        {
+          "name": "maturity_years",
+          "value": 7,
+          "date": null,
+          "unit": "year"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2022",
+          "title": "美国财政部 Daily Treasury Par Yield Curve Rates — 2022 年 XML",
+          "published_at": null,
+          "locator": "NEW_DATE=2022-07-28 和 2022-09-20，字段 BC_7YEAR，分别为 2.69% 与 3.69%；本地证据 sources/treasury/yield_curve_2022.xml。"
+        },
+        {
+          "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/units/t4-fomc-curve-20220728/task.json",
+          "title": "t4-fomc-curve-20220728 官方 task.json",
+          "published_at": null,
+          "locator": "entities 中 entity_id=UST7Y 的 start_yield_pct=2.69；prompt 窗口为 2022-07-28 至 2022-09-20。"
+        },
+        {
+          "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS7&cosd=2022-07-21&coed=2022-07-28&vintage_date=2022-07-29",
+          "title": "ALFRED DGS7 历史vintage原始CSV",
+          "published_at": null,
+          "locator": "observation_date=2022-07-28；vintage=2022-07-29；值2.69 percent；本地sources/yield-vintages/DGS7_window-2022-07-21_2022-07-28_vintage-2022-07-29.csv。"
+        },
+        {
+          "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS7&cosd=2022-09-13&coed=2022-09-20&vintage_date=2022-09-21",
+          "title": "ALFRED DGS7 历史vintage原始CSV",
+          "published_at": null,
+          "locator": "observation_date=2022-09-20；vintage=2022-09-21；值3.69 percent；本地sources/yield-vintages/DGS7_window-2022-09-13_2022-09-20_vintage-2022-09-21.csv。"
+        }
+      ],
+      "notes": [
+        "官方起值与任务起值一致；reference_label 为 null，因为本题是回归。",
+        "采用财政部官方名义 CMT/par yield 口径，不使用真实收益率、票息、国债价格收益或拟合零息曲线。",
+        "本地参考结果不是主办方私有 outcome；不重建预测区间。",
+        "补证逐端点实际检查ALFRED观察日前一日、当日、次日vintage；前两者缺目标观察日，次日出现且起止值与task/XML一致。ALFRED最早测试可见日不等于Treasury全球首次发布日期；global_source_first_publication_proven=false。"
+      ]
+    },
+    {
+      "task_id": "t4-fomc-curve-20240918",
+      "entity_id": "UST10Y",
+      "target_type": "regression",
+      "reference_label": null,
+      "reference_value": 69.0,
+      "unit": "bps_change",
+      "status": "verified",
+      "method": "从美国财政部 Daily Treasury Par Yield Curve Rates XML 读取指定期限的终点 CMT 收益率，以 (official_end_yield_pct - task.start_yield_pct) × 100 计算基点变化；另核对财政部同日起值与 task 起值一致。",
+      "inputs": [
+        {
+          "name": "task.start_yield_pct",
+          "value": 3.73,
+          "date": "2024-09-19",
+          "unit": "percent"
+        },
+        {
+          "name": "official_start_yield_pct",
+          "value": 3.73,
+          "date": "2024-09-19",
+          "unit": "percent"
+        },
+        {
+          "name": "official_end_yield_pct",
+          "value": 4.42,
+          "date": "2024-11-06",
+          "unit": "percent"
+        },
+        {
+          "name": "maturity_years",
+          "value": 10,
+          "date": null,
+          "unit": "year"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2024",
+          "title": "美国财政部 Daily Treasury Par Yield Curve Rates — 2024 年 XML",
+          "published_at": null,
+          "locator": "NEW_DATE=2024-09-19 和 2024-11-06，字段 BC_10YEAR，分别为 3.73% 与 4.42%；本地证据 sources/treasury/yield_curve_2024.xml。"
+        },
+        {
+          "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/units/t4-fomc-curve-20240918/task.json",
+          "title": "t4-fomc-curve-20240918 官方 task.json",
+          "published_at": null,
+          "locator": "entities 中 entity_id=UST10Y 的 start_yield_pct=3.73；prompt 窗口为 2024-09-19 至 2024-11-06。"
+        },
+        {
+          "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS10&cosd=2024-09-12&coed=2024-09-19&vintage_date=2024-09-20",
+          "title": "ALFRED DGS10 历史vintage原始CSV",
+          "published_at": null,
+          "locator": "observation_date=2024-09-19；vintage=2024-09-20；值3.73 percent；本地sources/yield-vintages/DGS10_window-2024-09-12_2024-09-19_vintage-2024-09-20.csv。"
+        },
+        {
+          "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS10&cosd=2024-10-30&coed=2024-11-06&vintage_date=2024-11-07",
+          "title": "ALFRED DGS10 历史vintage原始CSV",
+          "published_at": null,
+          "locator": "observation_date=2024-11-06；vintage=2024-11-07；值4.42 percent；本地sources/yield-vintages/DGS10_window-2024-10-30_2024-11-06_vintage-2024-11-07.csv。"
+        }
+      ],
+      "notes": [
+        "官方起值与任务起值一致；reference_label 为 null，因为本题是回归。",
+        "采用财政部官方名义 CMT/par yield 口径，不使用真实收益率、票息、国债价格收益或拟合零息曲线。",
+        "本地参考结果不是主办方私有 outcome；不重建预测区间。",
+        "补证逐端点实际检查ALFRED观察日前一日、当日、次日vintage；前两者缺目标观察日，次日出现且起止值与task/XML一致。ALFRED最早测试可见日不等于Treasury全球首次发布日期；global_source_first_publication_proven=false。"
+      ]
+    },
+    {
+      "task_id": "t4-fomc-curve-20240918",
+      "entity_id": "UST2Y",
+      "target_type": "regression",
+      "reference_label": null,
+      "reference_value": 68.0,
+      "unit": "bps_change",
+      "status": "verified",
+      "method": "从美国财政部 Daily Treasury Par Yield Curve Rates XML 读取指定期限的终点 CMT 收益率，以 (official_end_yield_pct - task.start_yield_pct) × 100 计算基点变化；另核对财政部同日起值与 task 起值一致。",
+      "inputs": [
+        {
+          "name": "task.start_yield_pct",
+          "value": 3.59,
+          "date": "2024-09-19",
+          "unit": "percent"
+        },
+        {
+          "name": "official_start_yield_pct",
+          "value": 3.59,
+          "date": "2024-09-19",
+          "unit": "percent"
+        },
+        {
+          "name": "official_end_yield_pct",
+          "value": 4.27,
+          "date": "2024-11-06",
+          "unit": "percent"
+        },
+        {
+          "name": "maturity_years",
+          "value": 2,
+          "date": null,
+          "unit": "year"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2024",
+          "title": "美国财政部 Daily Treasury Par Yield Curve Rates — 2024 年 XML",
+          "published_at": null,
+          "locator": "NEW_DATE=2024-09-19 和 2024-11-06，字段 BC_2YEAR，分别为 3.59% 与 4.27%；本地证据 sources/treasury/yield_curve_2024.xml。"
+        },
+        {
+          "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/units/t4-fomc-curve-20240918/task.json",
+          "title": "t4-fomc-curve-20240918 官方 task.json",
+          "published_at": null,
+          "locator": "entities 中 entity_id=UST2Y 的 start_yield_pct=3.59；prompt 窗口为 2024-09-19 至 2024-11-06。"
+        },
+        {
+          "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2024-09-12&coed=2024-09-19&vintage_date=2024-09-20",
+          "title": "ALFRED DGS2 历史vintage原始CSV",
+          "published_at": null,
+          "locator": "observation_date=2024-09-19；vintage=2024-09-20；值3.59 percent；本地sources/yield-vintages/DGS2_window-2024-09-12_2024-09-19_vintage-2024-09-20.csv。"
+        },
+        {
+          "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2024-10-30&coed=2024-11-06&vintage_date=2024-11-07",
+          "title": "ALFRED DGS2 历史vintage原始CSV",
+          "published_at": null,
+          "locator": "observation_date=2024-11-06；vintage=2024-11-07；值4.27 percent；本地sources/yield-vintages/DGS2_window-2024-10-30_2024-11-06_vintage-2024-11-07.csv。"
+        }
+      ],
+      "notes": [
+        "官方起值与任务起值一致；reference_label 为 null，因为本题是回归。",
+        "采用财政部官方名义 CMT/par yield 口径，不使用真实收益率、票息、国债价格收益或拟合零息曲线。",
+        "本地参考结果不是主办方私有 outcome；不重建预测区间。",
+        "补证逐端点实际检查ALFRED观察日前一日、当日、次日vintage；前两者缺目标观察日，次日出现且起止值与task/XML一致。ALFRED最早测试可见日不等于Treasury全球首次发布日期；global_source_first_publication_proven=false。"
+      ]
+    },
+    {
+      "task_id": "t4-fomc-curve-20240918",
+      "entity_id": "UST30Y",
+      "target_type": "regression",
+      "reference_label": null,
+      "reference_value": 54.0,
+      "unit": "bps_change",
+      "status": "verified",
+      "method": "从美国财政部 Daily Treasury Par Yield Curve Rates XML 读取指定期限的终点 CMT 收益率，以 (official_end_yield_pct - task.start_yield_pct) × 100 计算基点变化；另核对财政部同日起值与 task 起值一致。",
+      "inputs": [
+        {
+          "name": "task.start_yield_pct",
+          "value": 4.06,
+          "date": "2024-09-19",
+          "unit": "percent"
+        },
+        {
+          "name": "official_start_yield_pct",
+          "value": 4.06,
+          "date": "2024-09-19",
+          "unit": "percent"
+        },
+        {
+          "name": "official_end_yield_pct",
+          "value": 4.6,
+          "date": "2024-11-06",
+          "unit": "percent"
+        },
+        {
+          "name": "maturity_years",
+          "value": 30,
+          "date": null,
+          "unit": "year"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2024",
+          "title": "美国财政部 Daily Treasury Par Yield Curve Rates — 2024 年 XML",
+          "published_at": null,
+          "locator": "NEW_DATE=2024-09-19 和 2024-11-06，字段 BC_30YEAR，分别为 4.06% 与 4.60%；本地证据 sources/treasury/yield_curve_2024.xml。"
+        },
+        {
+          "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/units/t4-fomc-curve-20240918/task.json",
+          "title": "t4-fomc-curve-20240918 官方 task.json",
+          "published_at": null,
+          "locator": "entities 中 entity_id=UST30Y 的 start_yield_pct=4.06；prompt 窗口为 2024-09-19 至 2024-11-06。"
+        },
+        {
+          "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS30&cosd=2024-09-12&coed=2024-09-19&vintage_date=2024-09-20",
+          "title": "ALFRED DGS30 历史vintage原始CSV",
+          "published_at": null,
+          "locator": "observation_date=2024-09-19；vintage=2024-09-20；值4.06 percent；本地sources/yield-vintages/DGS30_window-2024-09-12_2024-09-19_vintage-2024-09-20.csv。"
+        },
+        {
+          "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS30&cosd=2024-10-30&coed=2024-11-06&vintage_date=2024-11-07",
+          "title": "ALFRED DGS30 历史vintage原始CSV",
+          "published_at": null,
+          "locator": "observation_date=2024-11-06；vintage=2024-11-07；值4.6 percent；本地sources/yield-vintages/DGS30_window-2024-10-30_2024-11-06_vintage-2024-11-07.csv。"
+        }
+      ],
+      "notes": [
+        "官方起值与任务起值一致；reference_label 为 null，因为本题是回归。",
+        "采用财政部官方名义 CMT/par yield 口径，不使用真实收益率、票息、国债价格收益或拟合零息曲线。",
+        "本地参考结果不是主办方私有 outcome；不重建预测区间。",
+        "补证逐端点实际检查ALFRED观察日前一日、当日、次日vintage；前两者缺目标观察日，次日出现且起止值与task/XML一致。ALFRED最早测试可见日不等于Treasury全球首次发布日期；global_source_first_publication_proven=false。"
+      ]
+    },
+    {
+      "task_id": "t4-fomc-curve-20240918",
+      "entity_id": "UST3Y",
+      "target_type": "regression",
+      "reference_label": null,
+      "reference_value": 73.0,
+      "unit": "bps_change",
+      "status": "verified",
+      "method": "从美国财政部 Daily Treasury Par Yield Curve Rates XML 读取指定期限的终点 CMT 收益率，以 (official_end_yield_pct - task.start_yield_pct) × 100 计算基点变化；另核对财政部同日起值与 task 起值一致。",
+      "inputs": [
+        {
+          "name": "task.start_yield_pct",
+          "value": 3.47,
+          "date": "2024-09-19",
+          "unit": "percent"
+        },
+        {
+          "name": "official_start_yield_pct",
+          "value": 3.47,
+          "date": "2024-09-19",
+          "unit": "percent"
+        },
+        {
+          "name": "official_end_yield_pct",
+          "value": 4.2,
+          "date": "2024-11-06",
+          "unit": "percent"
+        },
+        {
+          "name": "maturity_years",
+          "value": 3,
+          "date": null,
+          "unit": "year"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2024",
+          "title": "美国财政部 Daily Treasury Par Yield Curve Rates — 2024 年 XML",
+          "published_at": null,
+          "locator": "NEW_DATE=2024-09-19 和 2024-11-06，字段 BC_3YEAR，分别为 3.47% 与 4.20%；本地证据 sources/treasury/yield_curve_2024.xml。"
+        },
+        {
+          "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/units/t4-fomc-curve-20240918/task.json",
+          "title": "t4-fomc-curve-20240918 官方 task.json",
+          "published_at": null,
+          "locator": "entities 中 entity_id=UST3Y 的 start_yield_pct=3.47；prompt 窗口为 2024-09-19 至 2024-11-06。"
+        },
+        {
+          "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS3&cosd=2024-09-12&coed=2024-09-19&vintage_date=2024-09-20",
+          "title": "ALFRED DGS3 历史vintage原始CSV",
+          "published_at": null,
+          "locator": "observation_date=2024-09-19；vintage=2024-09-20；值3.47 percent；本地sources/yield-vintages/DGS3_window-2024-09-12_2024-09-19_vintage-2024-09-20.csv。"
+        },
+        {
+          "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS3&cosd=2024-10-30&coed=2024-11-06&vintage_date=2024-11-07",
+          "title": "ALFRED DGS3 历史vintage原始CSV",
+          "published_at": null,
+          "locator": "observation_date=2024-11-06；vintage=2024-11-07；值4.2 percent；本地sources/yield-vintages/DGS3_window-2024-10-30_2024-11-06_vintage-2024-11-07.csv。"
+        }
+      ],
+      "notes": [
+        "官方起值与任务起值一致；reference_label 为 null，因为本题是回归。",
+        "采用财政部官方名义 CMT/par yield 口径，不使用真实收益率、票息、国债价格收益或拟合零息曲线。",
+        "本地参考结果不是主办方私有 outcome；不重建预测区间。",
+        "补证逐端点实际检查ALFRED观察日前一日、当日、次日vintage；前两者缺目标观察日，次日出现且起止值与task/XML一致。ALFRED最早测试可见日不等于Treasury全球首次发布日期；global_source_first_publication_proven=false。"
+      ]
+    },
+    {
+      "task_id": "t4-fomc-curve-20240918",
+      "entity_id": "UST5Y",
+      "target_type": "regression",
+      "reference_label": null,
+      "reference_value": 78.0,
+      "unit": "bps_change",
+      "status": "verified",
+      "method": "从美国财政部 Daily Treasury Par Yield Curve Rates XML 读取指定期限的终点 CMT 收益率，以 (official_end_yield_pct - task.start_yield_pct) × 100 计算基点变化；另核对财政部同日起值与 task 起值一致。",
+      "inputs": [
+        {
+          "name": "task.start_yield_pct",
+          "value": 3.49,
+          "date": "2024-09-19",
+          "unit": "percent"
+        },
+        {
+          "name": "official_start_yield_pct",
+          "value": 3.49,
+          "date": "2024-09-19",
+          "unit": "percent"
+        },
+        {
+          "name": "official_end_yield_pct",
+          "value": 4.27,
+          "date": "2024-11-06",
+          "unit": "percent"
+        },
+        {
+          "name": "maturity_years",
+          "value": 5,
+          "date": null,
+          "unit": "year"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2024",
+          "title": "美国财政部 Daily Treasury Par Yield Curve Rates — 2024 年 XML",
+          "published_at": null,
+          "locator": "NEW_DATE=2024-09-19 和 2024-11-06，字段 BC_5YEAR，分别为 3.49% 与 4.27%；本地证据 sources/treasury/yield_curve_2024.xml。"
+        },
+        {
+          "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/units/t4-fomc-curve-20240918/task.json",
+          "title": "t4-fomc-curve-20240918 官方 task.json",
+          "published_at": null,
+          "locator": "entities 中 entity_id=UST5Y 的 start_yield_pct=3.49；prompt 窗口为 2024-09-19 至 2024-11-06。"
+        },
+        {
+          "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS5&cosd=2024-09-12&coed=2024-09-19&vintage_date=2024-09-20",
+          "title": "ALFRED DGS5 历史vintage原始CSV",
+          "published_at": null,
+          "locator": "observation_date=2024-09-19；vintage=2024-09-20；值3.49 percent；本地sources/yield-vintages/DGS5_window-2024-09-12_2024-09-19_vintage-2024-09-20.csv。"
+        },
+        {
+          "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS5&cosd=2024-10-30&coed=2024-11-06&vintage_date=2024-11-07",
+          "title": "ALFRED DGS5 历史vintage原始CSV",
+          "published_at": null,
+          "locator": "observation_date=2024-11-06；vintage=2024-11-07；值4.27 percent；本地sources/yield-vintages/DGS5_window-2024-10-30_2024-11-06_vintage-2024-11-07.csv。"
+        }
+      ],
+      "notes": [
+        "官方起值与任务起值一致；reference_label 为 null，因为本题是回归。",
+        "采用财政部官方名义 CMT/par yield 口径，不使用真实收益率、票息、国债价格收益或拟合零息曲线。",
+        "本地参考结果不是主办方私有 outcome；不重建预测区间。",
+        "补证逐端点实际检查ALFRED观察日前一日、当日、次日vintage；前两者缺目标观察日，次日出现且起止值与task/XML一致。ALFRED最早测试可见日不等于Treasury全球首次发布日期；global_source_first_publication_proven=false。"
+      ]
+    },
+    {
+      "task_id": "t4-fomc-curve-20240918",
+      "entity_id": "UST7Y",
+      "target_type": "regression",
+      "reference_label": null,
+      "reference_value": 77.0,
+      "unit": "bps_change",
+      "status": "verified",
+      "method": "从美国财政部 Daily Treasury Par Yield Curve Rates XML 读取指定期限的终点 CMT 收益率，以 (official_end_yield_pct - task.start_yield_pct) × 100 计算基点变化；另核对财政部同日起值与 task 起值一致。",
+      "inputs": [
+        {
+          "name": "task.start_yield_pct",
+          "value": 3.6,
+          "date": "2024-09-19",
+          "unit": "percent"
+        },
+        {
+          "name": "official_start_yield_pct",
+          "value": 3.6,
+          "date": "2024-09-19",
+          "unit": "percent"
+        },
+        {
+          "name": "official_end_yield_pct",
+          "value": 4.37,
+          "date": "2024-11-06",
+          "unit": "percent"
+        },
+        {
+          "name": "maturity_years",
+          "value": 7,
+          "date": null,
+          "unit": "year"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2024",
+          "title": "美国财政部 Daily Treasury Par Yield Curve Rates — 2024 年 XML",
+          "published_at": null,
+          "locator": "NEW_DATE=2024-09-19 和 2024-11-06，字段 BC_7YEAR，分别为 3.60% 与 4.37%；本地证据 sources/treasury/yield_curve_2024.xml。"
+        },
+        {
+          "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/units/t4-fomc-curve-20240918/task.json",
+          "title": "t4-fomc-curve-20240918 官方 task.json",
+          "published_at": null,
+          "locator": "entities 中 entity_id=UST7Y 的 start_yield_pct=3.6；prompt 窗口为 2024-09-19 至 2024-11-06。"
+        },
+        {
+          "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS7&cosd=2024-09-12&coed=2024-09-19&vintage_date=2024-09-20",
+          "title": "ALFRED DGS7 历史vintage原始CSV",
+          "published_at": null,
+          "locator": "observation_date=2024-09-19；vintage=2024-09-20；值3.6 percent；本地sources/yield-vintages/DGS7_window-2024-09-12_2024-09-19_vintage-2024-09-20.csv。"
+        },
+        {
+          "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS7&cosd=2024-10-30&coed=2024-11-06&vintage_date=2024-11-07",
+          "title": "ALFRED DGS7 历史vintage原始CSV",
+          "published_at": null,
+          "locator": "observation_date=2024-11-06；vintage=2024-11-07；值4.37 percent；本地sources/yield-vintages/DGS7_window-2024-10-30_2024-11-06_vintage-2024-11-07.csv。"
+        }
+      ],
+      "notes": [
+        "官方起值与任务起值一致；reference_label 为 null，因为本题是回归。",
+        "采用财政部官方名义 CMT/par yield 口径，不使用真实收益率、票息、国债价格收益或拟合零息曲线。",
+        "本地参考结果不是主办方私有 outcome；不重建预测区间。",
+        "补证逐端点实际检查ALFRED观察日前一日、当日、次日vintage；前两者缺目标观察日，次日出现且起止值与task/XML一致。ALFRED最早测试可见日不等于Treasury全球首次发布日期；global_source_first_publication_proven=false。"
+      ]
+    }
+  ]
+}

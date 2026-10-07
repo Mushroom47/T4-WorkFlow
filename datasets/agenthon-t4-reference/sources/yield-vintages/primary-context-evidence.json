@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.1.0",
+  "retrieved_at": "2026-10-07T08:50:51.901125+00:00",
+  "kind": "web_browsed_primary_context_excerpt",
+  "is_original_http_response": false,
+  "sources": [
+    {
+      "url": "https://alfred.stlouisfed.org/help",
+      "title": "ALFRED Help",
+      "published_at": null,
+      "locator": "How does the Research Division determine when to add...; How are Release Dates determined?",
+      "facts": [
+        "新观察和修订通常在发布后一个工作日内加入ALFRED。",
+        "release_date优先使用原始源给定日期；不可得时使用provider日期；两者均不可得时使用FRED首次可用日期。",
+        "因此vintage日期不自动证明原始财政部网页的最早发布时间。"
+      ]
+    },
+    {
+      "url": "https://alfred.stlouisfed.org/help/downloaddata",
+      "title": "ALFRED Download Data Help",
+      "published_at": null,
+      "locator": "Vintage Dates; Observations by Vintage Date, All Observations; Observations, Initial Release Only",
+      "facts": [
+        "vintage是用于重建某过去日期实际可用数据的历史日期。",
+        "该官方下载表单还提供Initial Release Only格式，其realtime_start_date表示初值公开日期；本次已实际取回graph vintage CSV，未取得该格式。"
+      ]
+    },
+    {
+      "url": "https://www.federalreserve.gov/releases/h15/default.htm",
+      "title": "Federal Reserve H.15 Current Release",
+      "published_at": null,
+      "locator": "页面开头发布时间说明；本次当前page release date=2026-10-06",
+      "facts": [
+        "当前官方说明H.15于周一至周五4:15pm发布，假日或Board关闭时不发布。",
+        "此处给出的当前发布时间规则不能替代2022/2024目标日历史release原稿或精确更新时间。"
+      ]
+    },
+    {
+      "url": "https://www.federalreserve.gov/releases/h15/about.htm",
+      "title": "Federal Reserve H.15 About",
+      "published_at": null,
+      "locator": "About paragraph; Last Update: January 3, 2017",
+      "facts": [
+        "H.15包含日频利率，除假日外每个工作日发布。"
+      ]
+    },
+    {
+      "url": "https://fred.stlouisfed.org/series/DGS10",
+      "title": "FRED DGS10 series attributes",
+      "published_at": null,
+      "locator": "Source/Release/Units/Frequency；H.15 Selected Interest Rates",
+      "facts": [
+        "DGS10为日频、非季调、百分数，源为Board of Governors，release为H.15；Treasury CMT由每日收益率曲线在固定期限处读取。"
+      ]
+    }
+  ],
+  "historical_release_url_attempts": [
+    {
+      "url": "https://www.federalreserve.gov/releases/h15/20220729/",
+      "status": "not_accessible_via_web_tool"
+    },
+    {
+      "url": "https://www.federalreserve.gov/releases/h15/20220921/",
+      "status": "not_accessible_via_web_tool"
+    },
+    {
+      "url": "https://www.federalreserve.gov/releases/h15/20241107/",
+      "status": "not_accessible_via_web_tool"
+    }
+  ],
+  "limitations": [
+    "此JSON保存的是已浏览官方说明的摘录与定位，不是HTTP原始网页字节，不能用其SHA冒充官方原件SHA。",
+    "没有精确历史盘中timestamp，没有原始Treasury同日首发网页存档，没有完整realtime-period/Initial Release Only导出。"
+  ]
+}

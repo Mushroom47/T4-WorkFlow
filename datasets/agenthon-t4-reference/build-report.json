@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.2.0",
+  "reference_version": "0.2.0",
+  "source_commit": "1c744e1d6725340643a533f436517d72b53ca0e1",
+  "tasks": 11,
+  "entities": 78,
+  "statuses": {
+    "verified": 77,
+    "provisional": 1,
+    "unresolved": 0
+  },
+  "quality_counts": {
+    "fact_status": {
+      "bounded_verified": 4,
+      "verified": 74
+    },
+    "task_alignment": {
+      "aligned": 77,
+      "ambiguous": 1
+    },
+    "first_publication_status": {
+      "not_applicable": 4,
+      "unconfirmed": 74
+    },
+    "official_outcome_status": {
+      "unconfirmed": 78
+    }
+  },
+  "reference_sha256": "9e5e94a3adabda35568f05168aaab308df194729126876790fb10f8b7500e326",
+  "official_evaluation": null,
+  "official_score": null
+}

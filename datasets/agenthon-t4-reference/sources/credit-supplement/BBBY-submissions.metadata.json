@@ -1,0 +1,9 @@
+{
+  "entity_id": "BBBY",
+  "url": "https://data.sec.gov/submissions/CIK0000886158.json",
+  "source_sha256": "0806d5536534dd303e3143774d7e9201a54c1d0d6b9193098ff7e098cae26f92",
+  "retrieved_at": "2026-10-07T08:43:57.727358+00:00",
+  "raw_path": "BBBY-submissions.raw.json",
+  "name": "20230930-DK-Butterfly-1, Inc.",
+  "cik": "0000886158"
+}

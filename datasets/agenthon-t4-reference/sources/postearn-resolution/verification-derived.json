@@ -1,0 +1,533 @@
+{
+  "task_id": "t4-postearn-20240201-megacap",
+  "generated_at": "2026-10-07T13:41:39.315950+00:00",
+  "verification_mode": "derived_values_only",
+  "passed": true,
+  "check_count": 64,
+  "failed_count": 0,
+  "checks": [
+    {
+      "check": "官方题卡指定 Yahoo 日收盘",
+      "pass": true,
+      "actual": "Yahoo Finance (daily closes for outcome resolution)",
+      "expected": "Yahoo Finance (daily closes for outcome resolution)"
+    },
+    {
+      "check": "目标日期",
+      "pass": true,
+      "actual": [
+        "2024-02-01",
+        "2024-02-02"
+      ],
+      "expected": [
+        "2024-02-01",
+        "2024-02-02"
+      ]
+    },
+    {
+      "check": "公司收益口径",
+      "pass": true,
+      "actual": "total_return",
+      "expected": "total_return"
+    },
+    {
+      "check": "AAPL 标的",
+      "pass": true,
+      "actual": "AAPL",
+      "expected": "AAPL"
+    },
+    {
+      "check": "AAPL 币种",
+      "pass": true,
+      "actual": "USD",
+      "expected": "USD"
+    },
+    {
+      "check": "AAPL 历史日期",
+      "pass": true,
+      "actual": [
+        "2024-02-01",
+        "2024-02-02"
+      ],
+      "expected": [
+        "2024-02-01",
+        "2024-02-02"
+      ]
+    },
+    {
+      "check": "AAPL 证券类型",
+      "pass": true,
+      "actual": "EQUITY",
+      "expected": "EQUITY"
+    },
+    {
+      "check": "AAPL priceHint",
+      "pass": true,
+      "actual": 2,
+      "expected": 2
+    },
+    {
+      "check": "AAPL 美分规范化",
+      "pass": true,
+      "actual": [
+        "186.86",
+        "185.85"
+      ],
+      "expected": [
+        "186.86",
+        "185.85"
+      ]
+    },
+    {
+      "check": "AAPL 有限正价格",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "AAPL Yahoo 事件列表",
+      "pass": true,
+      "actual": {},
+      "expected": {}
+    },
+    {
+      "check": "AAPL Q4 美分旁证",
+      "pass": true,
+      "actual": [
+        "186.86",
+        "185.85"
+      ],
+      "expected": [
+        "186.86",
+        "185.85"
+      ]
+    },
+    {
+      "check": "AAPL 两日分配调整因子无实质阶跃",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "AMZN 标的",
+      "pass": true,
+      "actual": "AMZN",
+      "expected": "AMZN"
+    },
+    {
+      "check": "AMZN 币种",
+      "pass": true,
+      "actual": "USD",
+      "expected": "USD"
+    },
+    {
+      "check": "AMZN 历史日期",
+      "pass": true,
+      "actual": [
+        "2024-02-01",
+        "2024-02-02"
+      ],
+      "expected": [
+        "2024-02-01",
+        "2024-02-02"
+      ]
+    },
+    {
+      "check": "AMZN 证券类型",
+      "pass": true,
+      "actual": "EQUITY",
+      "expected": "EQUITY"
+    },
+    {
+      "check": "AMZN priceHint",
+      "pass": true,
+      "actual": 2,
+      "expected": 2
+    },
+    {
+      "check": "AMZN 美分规范化",
+      "pass": true,
+      "actual": [
+        "159.28",
+        "171.81"
+      ],
+      "expected": [
+        "159.28",
+        "171.81"
+      ]
+    },
+    {
+      "check": "AMZN 有限正价格",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "AMZN Yahoo 事件列表",
+      "pass": true,
+      "actual": {},
+      "expected": {}
+    },
+    {
+      "check": "AMZN Q4 美分旁证",
+      "pass": true,
+      "actual": [
+        "159.28",
+        "171.81"
+      ],
+      "expected": [
+        "159.28",
+        "171.81"
+      ]
+    },
+    {
+      "check": "AMZN 两日分配调整因子无实质阶跃",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "META 标的",
+      "pass": true,
+      "actual": "META",
+      "expected": "META"
+    },
+    {
+      "check": "META 币种",
+      "pass": true,
+      "actual": "USD",
+      "expected": "USD"
+    },
+    {
+      "check": "META 历史日期",
+      "pass": true,
+      "actual": [
+        "2024-02-01",
+        "2024-02-02"
+      ],
+      "expected": [
+        "2024-02-01",
+        "2024-02-02"
+      ]
+    },
+    {
+      "check": "META 证券类型",
+      "pass": true,
+      "actual": "EQUITY",
+      "expected": "EQUITY"
+    },
+    {
+      "check": "META priceHint",
+      "pass": true,
+      "actual": 2,
+      "expected": 2
+    },
+    {
+      "check": "META 美分规范化",
+      "pass": true,
+      "actual": [
+        "394.78",
+        "474.99"
+      ],
+      "expected": [
+        "394.78",
+        "474.99"
+      ]
+    },
+    {
+      "check": "META 有限正价格",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "META Yahoo 事件列表",
+      "pass": true,
+      "actual": {},
+      "expected": {}
+    },
+    {
+      "check": "META Q4 美分旁证",
+      "pass": true,
+      "actual": [
+        "394.78",
+        "474.99"
+      ],
+      "expected": [
+        "394.78",
+        "474.99"
+      ]
+    },
+    {
+      "check": "META 两日分配调整因子无实质阶跃",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "SPY 标的",
+      "pass": true,
+      "actual": "SPY",
+      "expected": "SPY"
+    },
+    {
+      "check": "SPY 币种",
+      "pass": true,
+      "actual": "USD",
+      "expected": "USD"
+    },
+    {
+      "check": "SPY 历史日期",
+      "pass": true,
+      "actual": [
+        "2024-02-01",
+        "2024-02-02"
+      ],
+      "expected": [
+        "2024-02-01",
+        "2024-02-02"
+      ]
+    },
+    {
+      "check": "SPY 证券类型",
+      "pass": true,
+      "actual": "ETF",
+      "expected": "ETF"
+    },
+    {
+      "check": "SPY priceHint",
+      "pass": true,
+      "actual": 2,
+      "expected": 2
+    },
+    {
+      "check": "SPY 美分规范化",
+      "pass": true,
+      "actual": [
+        "489.20",
+        "494.35"
+      ],
+      "expected": [
+        "489.20",
+        "494.35"
+      ]
+    },
+    {
+      "check": "SPY 有限正价格",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "SPY Yahoo 事件列表",
+      "pass": true,
+      "actual": {},
+      "expected": {}
+    },
+    {
+      "check": "SPY Q4 美分旁证",
+      "pass": true,
+      "actual": [
+        "489.20",
+        "494.35"
+      ],
+      "expected": [
+        "489.20",
+        "494.35"
+      ]
+    },
+    {
+      "check": "SPY 两日分配调整因子无实质阶跃",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "AAPL 对应除息日",
+      "pass": true,
+      "actual": "2024-02-09",
+      "expected": "2024-02-09"
+    },
+    {
+      "check": "META 首次除息日",
+      "pass": true,
+      "actual": "2024-02-21",
+      "expected": "2024-02-21"
+    },
+    {
+      "check": "AAPL/META 窗口现金分配",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "AMZN 发行人从未现金分红陈述",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "AMZN 发行人列示的最近拆股在窗口外",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "SPY 全分配表窗口匹配数",
+      "pass": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "check": "AAPL 美分有理数重算",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "AAPL 分类阈值",
+      "pass": true,
+      "actual": "negative_reaction",
+      "expected": "negative_reaction"
+    },
+    {
+      "check": "AAPL raw float 与美分口径差异",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "AAPL adjclose 与美分口径差异",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "AAPL adjclose 标签",
+      "pass": true,
+      "actual": "negative_reaction",
+      "expected": "negative_reaction"
+    },
+    {
+      "check": "AMZN 美分有理数重算",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "AMZN 分类阈值",
+      "pass": true,
+      "actual": "positive_reaction",
+      "expected": "positive_reaction"
+    },
+    {
+      "check": "AMZN raw float 与美分口径差异",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "AMZN adjclose 与美分口径差异",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "AMZN adjclose 标签",
+      "pass": true,
+      "actual": "positive_reaction",
+      "expected": "positive_reaction"
+    },
+    {
+      "check": "META 美分有理数重算",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "META 分类阈值",
+      "pass": true,
+      "actual": "positive_reaction",
+      "expected": "positive_reaction"
+    },
+    {
+      "check": "META raw float 与美分口径差异",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "META adjclose 与美分口径差异",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "META adjclose 标签",
+      "pass": true,
+      "actual": "positive_reaction",
+      "expected": "positive_reaction"
+    }
+  ],
+  "original_files_read": [],
+  "returns": {
+    "AAPL": {
+      "company_return_percent": -0.5405116129722787,
+      "spy_return_percent": 1.052739165985282,
+      "abnormal_return_percent": -1.5932507789575607,
+      "exact_fraction_percentage_points": "-36410525/22852978",
+      "reference_label": "negative_reaction",
+      "raw_float_abnormal_return_percent": -1.5932465635488668,
+      "adjclose_abnormal_return_percent": -1.5932471529511938,
+      "proposed_local_status": "verified",
+      "quality": {
+        "fact_status": "verified",
+        "task_alignment": "aligned",
+        "first_publication_status": "unconfirmed",
+        "official_outcome_status": "unconfirmed"
+      }
+    },
+    "AMZN": {
+      "company_return_percent": 7.866649924660974,
+      "spy_return_percent": 1.052739165985282,
+      "abnormal_return_percent": 6.813910758675692,
+      "exact_fraction_percentage_points": "16591825/2434993",
+      "reference_label": "positive_reaction",
+      "raw_float_abnormal_return_percent": 6.813911326498001,
+      "adjclose_abnormal_return_percent": 6.813921071306939,
+      "proposed_local_status": "verified",
+      "quality": {
+        "fact_status": "verified",
+        "task_alignment": "aligned",
+        "first_publication_status": "unconfirmed",
+        "official_outcome_status": "unconfirmed"
+      }
+    },
+    "META": {
+      "company_return_percent": 20.31764527078373,
+      "spy_return_percent": 1.052739165985282,
+      "abnormal_return_percent": 19.264906104798445,
+      "exact_fraction_percentage_points": "930140375/48281594",
+      "reference_label": "positive_reaction",
+      "raw_float_abnormal_return_percent": 19.264905277067392,
+      "adjclose_abnormal_return_percent": 19.264908919294577,
+      "proposed_local_status": "verified",
+      "quality": {
+        "fact_status": "verified",
+        "task_alignment": "aligned",
+        "first_publication_status": "unconfirmed",
+        "official_outcome_status": "unconfirmed"
+      }
+    }
+  },
+  "limitations": [
+    "local_verified是当前公开历史资料与固定题目口径的有限窗口复核，不是组织者私有outcome确认。",
+    "价格首发版本及修订链未知；当前下载的regularMarket/currentTradingPeriod字段不是2024历史交易状态。",
+    "公司行动检查使用指定Yahoo事件、现金分配primary记录及两日调整因子交叉核查；不声称掌握所有交易所公司行动记录。",
+    "AMZN当前FAQ为主站索引解析，原始全文HTTP字节未取得；中文事实记录不能充当原始HTTP归档。",
+    "close/adjclose来自同一供应商；Q4不同展示渠道的底层数据独立性未确认。",
+    "Yahoo close已按拆股调整；不存在窗口分配时close比值可用于本地总回报估计；后续共同调整因子在比值中抵消。",
+    "当前adjustedclose重算有小量浮点/历史调整残差，报告分别保留，既不混用字段也不声称得到2024首发total-return版本。",
+    "来源公开可访问不代表上游全文、JSON、XLSX或大规模历史数据具有开放再分发许可；上游原件默认local_only。"
+  ]
+}

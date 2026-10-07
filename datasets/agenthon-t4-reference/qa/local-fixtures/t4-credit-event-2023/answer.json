@@ -1,0 +1,195 @@
+{
+  "task_id": "t4-credit-event-2023",
+  "schema_version": "3",
+  "target_type": "classification",
+  "entity_predictions": [
+    {
+      "entity_id": "BBBY",
+      "interval": {
+        "level": 0.9,
+        "lo": 0.0,
+        "hi": 1.0
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 56,
+          "span_end": 111,
+          "claim": "输入表字段 industry 的值为 \"Consumer Discretionary (specialty retail)\"。"
+        }
+      ],
+      "point_forecast": 0.5,
+      "label": "credit_event"
+    },
+    {
+      "entity_id": "BBY",
+      "interval": {
+        "level": 0.9,
+        "lo": 0.0,
+        "hi": 1.0
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 210,
+          "span_end": 267,
+          "claim": "输入表字段 industry 的值为 \"Consumer Discretionary (electronics retail)\"。"
+        }
+      ],
+      "point_forecast": 0.5,
+      "label": "no_event"
+    },
+    {
+      "entity_id": "M",
+      "interval": {
+        "level": 0.9,
+        "lo": 0.0,
+        "hi": 1.0
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 358,
+          "span_end": 414,
+          "claim": "输入表字段 industry 的值为 \"Consumer Discretionary (department stores)\"。"
+        }
+      ],
+      "point_forecast": 0.5,
+      "label": "no_event"
+    },
+    {
+      "entity_id": "ODFL",
+      "interval": {
+        "level": 0.9,
+        "lo": 0.0,
+        "hi": 1.0
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 527,
+          "span_end": 583,
+          "claim": "输入表字段 industry 的值为 \"Industrials (less-than-truckload trucking)\"。"
+        }
+      ],
+      "point_forecast": 0.5,
+      "label": "no_event"
+    },
+    {
+      "entity_id": "RAD",
+      "interval": {
+        "level": 0.9,
+        "lo": 0.0,
+        "hi": 1.0
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 684,
+          "span_end": 728,
+          "claim": "输入表字段 industry 的值为 \"Consumer Staples (drug retail)\"。"
+        }
+      ],
+      "point_forecast": 0.5,
+      "label": "credit_event"
+    },
+    {
+      "entity_id": "WBA",
+      "interval": {
+        "level": 0.9,
+        "lo": 0.0,
+        "hi": 1.0
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 839,
+          "span_end": 883,
+          "claim": "输入表字段 industry 的值为 \"Consumer Staples (drug retail)\"。"
+        }
+      ],
+      "point_forecast": 0.5,
+      "label": "no_event"
+    },
+    {
+      "entity_id": "WE",
+      "interval": {
+        "level": 0.9,
+        "lo": 0.0,
+        "hi": 1.0
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 974,
+          "span_end": 1020,
+          "claim": "输入表字段 industry 的值为 \"Real Estate (flexible workspace)\"。"
+        }
+      ],
+      "point_forecast": 0.5,
+      "label": "credit_event"
+    },
+    {
+      "entity_id": "YELL",
+      "interval": {
+        "level": 0.9,
+        "lo": 0.0,
+        "hi": 1.0
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 1120,
+          "span_end": 1176,
+          "claim": "输入表字段 industry 的值为 \"Industrials (less-than-truckload trucking)\"。"
+        }
+      ],
+      "point_forecast": 0.5,
+      "label": "credit_event"
+    }
+  ],
+  "submitted_reasons": [
+    {
+      "reason_id": "local_structure_fixture",
+      "premise": "bbby-20221126 Table of Contents UNITED STATES SECURITIES AND EXCHANGE COMMISSION Washington, D.C. 20549 ______________________    FORM  10-Q ☒ QUARTERLY REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934 For the q",
+      "mechanism": "该段历史资料提供输入上下文，本夹具只测试字段与引用解析。",
+      "answer_implication": "本地测试记录 BBBY 的历史参考结果；该引用不用于推出事后结果。",
+      "scope": {
+        "entities": [
+          "BBBY"
+        ]
+      },
+      "citations": [
+        {
+          "doc_id": "EDGAR_0000886158_10Q_20230126",
+          "span_start": 0,
+          "span_end": 240
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "research_fixture": true,
+    "synthetic_interval": true,
+    "interval_method": "数值结果中心左右加减固定 half_width；无数值真值或信用事件概率任务使用 [0,1]。这是结构测试区间，未经过校准。",
+    "synthetic_point_entities": [
+      "BBBY",
+      "BBY",
+      "M",
+      "ODFL",
+      "RAD",
+      "WBA",
+      "WE",
+      "YELL"
+    ],
+    "synthetic_point_method": "上述实体的 point_forecast=0.5 是结构测试占位；事后 0/1 事件不被当作概率真值。",
+    "half_width": 1.0,
+    "reference_status_counts": {
+      "verified": 8
+    },
+    "task_canonical_sha256": "a20440e2cab7ba1fdbd165b261219cf01f3697abc2d74c0660731f77fd192498",
+    "faithfulness": "not_evaluated",
+    "reasoning": "not_evaluated",
+    "purpose": "输入事实 claims 不声称支持历史结果；本夹具仅供离线研究。"
+  }
+}

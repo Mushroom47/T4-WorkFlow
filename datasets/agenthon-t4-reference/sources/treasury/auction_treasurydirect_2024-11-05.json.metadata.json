@@ -1,0 +1,9 @@
+{
+  "url": "https://www.treasurydirect.gov/TA_WS/securities/search?format=json&auctionDate=2024-11-05",
+  "fetched_at": "2026-10-07T07:56:09.836507+00:00",
+  "status": 200,
+  "content_type": "application/json",
+  "sha256": "e02a547957d4ea093c686846c5c526125299231ae02bfdc28a9c8e9ee926fc1e",
+  "bytes": 7039,
+  "evidence_file": "auction_treasurydirect_2024-11-05.json"
+}

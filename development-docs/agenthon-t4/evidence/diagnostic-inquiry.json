@@ -1,0 +1,22 @@
+{
+  "author": {
+    "id": "MDQ6VXNlcjgxMTI4NDkw",
+    "is_bot": false,
+    "login": "Mushroom47",
+    "name": "陈庚"
+  },
+  "body": "主办方您好。我们正在为 T4 已公开的十个 Development 练习题及一个 EXAMPLE 建立历史结果参考集，用于本地实验、结构检查和开发验证。参考结果来自公开历史资料，并逐项记录口径、来源、抓取日期和已知歧义。我们已阅读 #23、#24、#25，理解 Development 属于练习，私有 outcome/naive 不公开，且官方分数仍受预测、区间、事实引用和当期评分版本影响。\n\n我们希望用官方评分核验这份参考集的数值口径，但不会将固定回放结果描述为样本外预测能力。想请确认：\n\n1. #24 的练习题样本内例外，是否也允许仅针对已公开的十个练习题，按完整 task 输入匹配并回放已重建历史值的 Development 诊断提交？还是例外仅允许调参/设计选择，仍禁止存储 task→答案映射？我们会明确标记其用途，也不会将这份映射用于 Final。\n2. 如果固定回放不能通过正常 Development 提交，是否有不参与排名的诊断评测或数值口径核验方式？如果没有，我们将使用符合公开规则的预测程序进行 Development 评测；请明确确认没有单独的诊断入口。\n3. EXAMPLE 是否与十个练习题适用相同的上述诊断许可？若可进行诊断，应提交怎样的材料、通过哪个入口，是否消耗团队次数、成绩是否进入公开 leaderboard，以及如何注明样本内用途？\n\n不请求任何隐藏题目、私有真值、naive answers 或内部日志。需要时可以按指定的私密渠道提供参考集的计算方法与来源。谢谢。\n",
+  "comments": [],
+  "createdAt": "2026-10-07T08:06:49Z",
+  "number": 26,
+  "state": "OPEN",
+  "title": "T4公开练习题历史参考集：固定输出的非排名诊断评测路径",
+  "url": "https://github.com/Agenthon-2026/track4-analysis-public/issues/26",
+  "last_readback": {
+    "checked_at": "2026-10-07T09:31:20.462539+00:00",
+    "state": "OPEN",
+    "comment_count": 0,
+    "updated_at": "2026-10-07T08:06:49Z",
+    "official_reply_received": false
+  }
+}

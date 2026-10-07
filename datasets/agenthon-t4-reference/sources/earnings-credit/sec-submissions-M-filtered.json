@@ -1,0 +1,158 @@
+{
+  "url": "https://data.sec.gov/submissions/CIK0000794367.json",
+  "retrieved_at": "2026-10-07",
+  "cik": "0000794367",
+  "name": "Macy's, Inc.",
+  "source_hashes": [
+    {
+      "url": "https://data.sec.gov/submissions/CIK0000794367.json",
+      "sha256": "deb5f449a39b1010a9479252f2e4914abc1ec2a7a91d96faab670192ecc6de63"
+    }
+  ],
+  "selected_filings": [
+    {
+      "accessionNumber": "0001628280-24-025853",
+      "filingDate": "2024-05-30",
+      "reportDate": "2024-05-04",
+      "form": "10-Q",
+      "items": "",
+      "primaryDocument": "m-20240504.htm"
+    },
+    {
+      "accessionNumber": "0001628280-24-024437",
+      "filingDate": "2024-05-21",
+      "reportDate": "2024-05-21",
+      "form": "8-K",
+      "items": "2.02,9.01",
+      "primaryDocument": "n-20240521.htm"
+    },
+    {
+      "accessionNumber": "0000794367-24-000146",
+      "filingDate": "2024-05-20",
+      "reportDate": "2024-05-17",
+      "form": "8-K",
+      "items": "5.02,5.07",
+      "primaryDocument": "n-20240517.htm"
+    },
+    {
+      "accessionNumber": "0001104659-24-045589",
+      "filingDate": "2024-04-10",
+      "reportDate": "2024-04-10",
+      "form": "8-K",
+      "items": "1.01,5.02,7.01,9.01",
+      "primaryDocument": "tm2411449d1_8k.htm"
+    },
+    {
+      "accessionNumber": "0001628280-24-012734",
+      "filingDate": "2024-03-22",
+      "reportDate": "2024-02-03",
+      "form": "10-K",
+      "items": "",
+      "primaryDocument": "m-20240203.htm"
+    },
+    {
+      "accessionNumber": "0000794367-24-000013",
+      "filingDate": "2024-03-01",
+      "reportDate": "2024-02-29",
+      "form": "8-K",
+      "items": "8.01",
+      "primaryDocument": "n-20240229.htm"
+    },
+    {
+      "accessionNumber": "0001628280-24-007023",
+      "filingDate": "2024-02-27",
+      "reportDate": "2024-02-27",
+      "form": "8-K",
+      "items": "2.02,2.05,2.06,7.01",
+      "primaryDocument": "m-20240227.htm"
+    },
+    {
+      "accessionNumber": "0000794367-24-000010",
+      "filingDate": "2024-02-02",
+      "reportDate": "2024-02-02",
+      "form": "8-K",
+      "items": "5.02,7.01,9.01",
+      "primaryDocument": "n-20240202.htm"
+    },
+    {
+      "accessionNumber": "0000794367-24-000007",
+      "filingDate": "2024-01-22",
+      "reportDate": "2024-01-21",
+      "form": "8-K",
+      "items": "7.01,9.01",
+      "primaryDocument": "n-20240121.htm"
+    },
+    {
+      "accessionNumber": "0001628280-23-040057",
+      "filingDate": "2023-11-28",
+      "reportDate": "2023-10-28",
+      "form": "10-Q",
+      "items": "",
+      "primaryDocument": "m-20231028.htm"
+    },
+    {
+      "accessionNumber": "0001628280-23-039210",
+      "filingDate": "2023-11-16",
+      "reportDate": "2023-11-16",
+      "form": "8-K",
+      "items": "2.02,9.01",
+      "primaryDocument": "n-20231116.htm"
+    },
+    {
+      "accessionNumber": "0000794367-23-000084",
+      "filingDate": "2023-10-31",
+      "reportDate": "2023-10-31",
+      "form": "8-K",
+      "items": "5.02",
+      "primaryDocument": "n-20231031.htm"
+    },
+    {
+      "accessionNumber": "0001628280-23-030657",
+      "filingDate": "2023-08-25",
+      "reportDate": "2023-07-29",
+      "form": "10-Q",
+      "items": "",
+      "primaryDocument": "m-20230729.htm"
+    },
+    {
+      "accessionNumber": "0001628280-23-030169",
+      "filingDate": "2023-08-22",
+      "reportDate": "2023-08-22",
+      "form": "8-K",
+      "items": "2.02,9.01",
+      "primaryDocument": "n-20230822.htm"
+    },
+    {
+      "accessionNumber": "0001628280-23-021104",
+      "filingDate": "2023-06-06",
+      "reportDate": "2023-04-29",
+      "form": "10-Q",
+      "items": "",
+      "primaryDocument": "m-20230429.htm"
+    },
+    {
+      "accessionNumber": "0001628280-23-020415",
+      "filingDate": "2023-06-01",
+      "reportDate": "2023-06-01",
+      "form": "8-K",
+      "items": "2.02,9.01",
+      "primaryDocument": "n-20230601.htm"
+    },
+    {
+      "accessionNumber": "0000794367-23-000061",
+      "filingDate": "2023-05-26",
+      "reportDate": "2023-05-25",
+      "form": "8-K",
+      "items": "5.02",
+      "primaryDocument": "n-20230525.htm"
+    },
+    {
+      "accessionNumber": "0000794367-23-000055",
+      "filingDate": "2023-05-23",
+      "reportDate": "2023-05-19",
+      "form": "8-K",
+      "items": "5.07",
+      "primaryDocument": "n-20230519.htm"
+    }
+  ]
+}

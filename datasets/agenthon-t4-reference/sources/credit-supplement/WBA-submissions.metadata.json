@@ -1,0 +1,19 @@
+{
+  "entity_id": "WBA",
+  "url": "https://data.sec.gov/submissions/CIK0001618921.json",
+  "source_sha256": "6c8d6ee0a1c37dc7e7a94b4c6b3540c0d2a80cbe3bd37f36588142bf6a5fd54b",
+  "retrieved_at": "2026-10-07T08:17:28.630478+00:00",
+  "bytes": 163138,
+  "raw_path": "WBA-submissions.raw.json",
+  "archive_files": [
+    {
+      "name": "CIK0001618921-submissions-001.json",
+      "filingCount": 98,
+      "filingFrom": "2014-09-16",
+      "filingTo": "2015-04-30"
+    }
+  ],
+  "recent_oldest_date": "2015-05-01",
+  "copied_from": "./datasets/agenthon-t4-reference/sources/earnings-credit/sec-submissions-WBA.raw.json",
+  "copied_at": "2026-10-07T08:45:41.529323+00:00"
+}

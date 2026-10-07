@@ -1,0 +1,147 @@
+{
+  "downloaded_at": "2026-10-07",
+  "cpi": {
+    "url": "https://www.bls.gov/news.release/archives/cpi_11132024.htm",
+    "published_at": "2024-11-13",
+    "locator": "Table A / Table 1 当月季调环比列；Medical care 正文和 Table 1",
+    "rounded_mom_pct": {
+      "CPI_ALLITEMS": 0.2,
+      "CPI_APPAREL": -1.5,
+      "CPI_CORE": 0.3,
+      "CPI_ENERGY": 0.0,
+      "CPI_FOOD": 0.2,
+      "CPI_GASOLINE": -0.9,
+      "CPI_MEDICAL": 0.3,
+      "CPI_NEWVEH": 0.0,
+      "CPI_SHELTER": 0.4,
+      "CPI_TRANSPSVC": 0.4,
+      "CPI_USEDCARS": 2.7
+    }
+  },
+  "macro_release_levels": [
+    {
+      "entity_id": "DGORDER_2024-07_20241025",
+      "reference_month": "2024-07",
+      "resolving_release_date": "2024-10-25",
+      "unit": "millions of dollars, SA",
+      "official_url": "https://www.census.gov/manufacturing/m3/historical_data/pressreleases/adv/2024/sep24adv.pdf",
+      "locator": "PDF 第 6 页（零基页 5），Table 1，DURABLE GOODS Total: New Orders，Seasonally Adjusted，July / August 2024 列，单位百万美元",
+      "alfred_resolving_vintage_level": 289419.0,
+      "official_display_value": 289419.0
+    },
+    {
+      "entity_id": "DGORDER_2024-08_20241025",
+      "reference_month": "2024-08",
+      "resolving_release_date": "2024-10-25",
+      "unit": "millions of dollars, SA",
+      "official_url": "https://www.census.gov/manufacturing/m3/historical_data/pressreleases/adv/2024/sep24adv.pdf",
+      "locator": "PDF 第 6 页（零基页 5），Table 1，DURABLE GOODS Total: New Orders，Seasonally Adjusted，July / August 2024 列，单位百万美元",
+      "alfred_resolving_vintage_level": 287018.0,
+      "official_display_value": 287018.0
+    },
+    {
+      "entity_id": "HOUST_2024-07_20241018",
+      "reference_month": "2024-07",
+      "resolving_release_date": "2024-10-18",
+      "unit": "thousands of units, SAAR",
+      "official_url": "https://www.census.gov/construction/nrc/pdf/newresconst_202409.pdf",
+      "locator": "PDF 第 5 页（零基页 4），Table 3a，United States Total，July (r) 行，季调年率，单位千套",
+      "alfred_resolving_vintage_level": 1262.0,
+      "official_display_value": 1262.0
+    },
+    {
+      "entity_id": "INDPRO_2024-07_20241017",
+      "reference_month": "2024-07",
+      "resolving_release_date": "2024-10-17",
+      "unit": "index 2017=100, SA",
+      "official_url": "https://www.federalreserve.gov/releases/g17/20241017/default.htm",
+      "locator": "Summary，Seasonally adjusted，Total index 与 Previous estimates 行，July / August 2024 列；发布稿指数仅一位小数，ALFRED 同日 CSV 为四位小数",
+      "alfred_resolving_vintage_level": 102.5863,
+      "official_display_value": 102.6
+    },
+    {
+      "entity_id": "INDPRO_2024-08_20241017",
+      "reference_month": "2024-08",
+      "resolving_release_date": "2024-10-17",
+      "unit": "index 2017=100, SA",
+      "official_url": "https://www.federalreserve.gov/releases/g17/20241017/default.htm",
+      "locator": "Summary，Seasonally adjusted，Total index 与 Previous estimates 行，July / August 2024 列；发布稿指数仅一位小数，ALFRED 同日 CSV 为四位小数",
+      "alfred_resolving_vintage_level": 102.9329,
+      "official_display_value": 102.9
+    },
+    {
+      "entity_id": "PAYEMS_2024-07_20241004",
+      "reference_month": "2024-07",
+      "resolving_release_date": "2024-10-04",
+      "unit": "thousands of persons, SA",
+      "official_url": "https://www.bls.gov/news.release/archives/empsit_10042024.htm",
+      "locator": "Table B-1，Total nonfarm 行，Seasonally adjusted，July / August 2024 列，单位千人",
+      "alfred_resolving_vintage_level": 158692.0,
+      "official_display_value": 158692.0
+    },
+    {
+      "entity_id": "PAYEMS_2024-08_20241004",
+      "reference_month": "2024-08",
+      "resolving_release_date": "2024-10-04",
+      "unit": "thousands of persons, SA",
+      "official_url": "https://www.bls.gov/news.release/archives/empsit_10042024.htm",
+      "locator": "Table B-1，Total nonfarm 行，Seasonally adjusted，July / August 2024 列，单位千人",
+      "alfred_resolving_vintage_level": 158851.0,
+      "official_display_value": 158851.0
+    },
+    {
+      "entity_id": "PAYEMS_2024-08_20241101",
+      "reference_month": "2024-08",
+      "resolving_release_date": "2024-11-01",
+      "unit": "thousands of persons, SA",
+      "official_url": "https://www.bls.gov/news.release/archives/empsit_11012024.htm",
+      "locator": "Table B-1，Total nonfarm 行，Seasonally adjusted，August 2024 列，单位千人",
+      "alfred_resolving_vintage_level": 158770.0,
+      "official_display_value": 158770.0
+    },
+    {
+      "entity_id": "PI_2024-07_20241031",
+      "reference_month": "2024-07",
+      "resolving_release_date": "2024-10-31",
+      "unit": "billions of dollars, SAAR",
+      "official_url": "https://www.bea.gov/sites/default/files/2024-10/pi0924.xlsx",
+      "locator": "Table 1，Personal income（Line 1），July r 列；xl/worksheets/sheet2.xml 的 H7=24819.3；表头 H6=July r；单位十亿美元，SAAR",
+      "alfred_resolving_vintage_level": 24819.3,
+      "official_display_value": 24819.3
+    },
+    {
+      "entity_id": "PI_2024-08_20241127",
+      "reference_month": "2024-08",
+      "resolving_release_date": "2024-11-27",
+      "unit": "billions of dollars, SAAR",
+      "official_url": "https://www.bea.gov/sites/default/files/2024-11/pi1024.xlsx",
+      "locator": "Table 1，Personal income（Line 1），Aug. r 列；xl/worksheets/sheet2.xml 的 H7=24740.2；表头 H6=Aug. r；单位十亿美元，SAAR",
+      "alfred_resolving_vintage_level": 24740.2,
+      "official_display_value": 24740.2
+    },
+    {
+      "entity_id": "RSAFS_2024-07_20241017",
+      "reference_month": "2024-07",
+      "resolving_release_date": "2024-10-17",
+      "unit": "millions of dollars, SA",
+      "official_url": "https://www2.census.gov/retail/releases/historical/marts/adv2409.pdf",
+      "locator": "PDF 第 5 页（零基页 4），Table 1，Retail & food services, total，Adjusted，Jul. 2024 (r) 列=710851；单位百万美元",
+      "alfred_resolving_vintage_level": 710851.0,
+      "official_display_value": 710851.0
+    },
+    {
+      "entity_id": "RSAFS_2024-08_20241115",
+      "reference_month": "2024-08",
+      "resolving_release_date": "2024-11-15",
+      "unit": "millions of dollars, SA",
+      "official_url": "https://www2.census.gov/retail/releases/historical/marts/adv2410.pdf",
+      "locator": "PDF 第 5 页（零基页 4），Table 1，Retail & food services, total，Adjusted，Aug. 2024 (r) 列=710038；单位百万美元",
+      "alfred_resolving_vintage_level": 710038.0,
+      "official_display_value": 710038.0
+    }
+  ],
+  "notes": [
+    "BLS archive 网页已由 web 浏览读取，stdlib 的原始 HTML 下载返回 HTTP 403；此限制没有影响公开 ALFRED CSV 数值取回。",
+    "INDPRO official release 的精度为一位小数，四位小数来自 ALFRED 指定 vintage；其他 macro 项的 agency 当期表格精度与 ALFRED 一致。"
+  ]
+}

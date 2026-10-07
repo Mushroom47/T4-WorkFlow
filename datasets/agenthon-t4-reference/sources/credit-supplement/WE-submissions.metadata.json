@@ -1,0 +1,9 @@
+{
+  "entity_id": "WE",
+  "url": "https://data.sec.gov/submissions/CIK0001813756.json",
+  "source_sha256": "f48c473623f91b8674e8ddb03f0419154605c9d7391bcb1a1d9836f95d483b3b",
+  "retrieved_at": "2026-10-07T08:43:59.192909+00:00",
+  "raw_path": "WE-submissions.raw.json",
+  "name": "WeWork Inc.",
+  "cik": "0001813756"
+}

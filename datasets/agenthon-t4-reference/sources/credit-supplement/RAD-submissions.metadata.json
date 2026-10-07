@@ -1,0 +1,9 @@
+{
+  "entity_id": "RAD",
+  "url": "https://data.sec.gov/submissions/CIK0000084129.json",
+  "source_sha256": "7087f577d23dd94a95b186dac65a3922e2ae16a8bad7dc0795e36afd2825e7e8",
+  "retrieved_at": "2026-10-07T08:43:57.707524+00:00",
+  "raw_path": "RAD-submissions.raw.json",
+  "name": "NEW RITE AID, LLC",
+  "cik": "0000084129"
+}

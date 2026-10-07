@@ -1,0 +1,96 @@
+{
+  "task_id": "t4-postearn-20240201-megacap",
+  "schema_version": "3",
+  "target_type": "classification",
+  "entity_predictions": [
+    {
+      "entity_id": "AAPL",
+      "interval": {
+        "level": 0.9,
+        "lo": -2.593250778957561,
+        "hi": -0.5932507789575607
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 222,
+          "span_end": 260,
+          "claim": "输入表字段 pre_earnings_close_2024_01_31 的值为 184.4。"
+        }
+      ],
+      "point_forecast": -1.5932507789575607,
+      "label": "negative_reaction"
+    },
+    {
+      "entity_id": "AMZN",
+      "interval": {
+        "level": 0.9,
+        "lo": 5.813910758675692,
+        "hi": 7.813910758675692
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 546,
+          "span_end": 584,
+          "claim": "输入表字段 pre_earnings_close_2024_01_31 的值为 155.2。"
+        }
+      ],
+      "point_forecast": 6.813910758675692,
+      "label": "positive_reaction"
+    },
+    {
+      "entity_id": "META",
+      "interval": {
+        "level": 0.9,
+        "lo": 18.264906104798445,
+        "hi": 20.264906104798445
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 874,
+          "span_end": 913,
+          "claim": "输入表字段 pre_earnings_close_2024_01_31 的值为 390.14。"
+        }
+      ],
+      "point_forecast": 19.264906104798445,
+      "label": "positive_reaction"
+    }
+  ],
+  "submitted_reasons": [
+    {
+      "reason_id": "local_structure_fixture",
+      "premise": "aapl-20230930 UNITED STATES SECURITIES AND EXCHANGE COMMISSION Washington, D.C. 20549 FORM 10-K (Mark One) ☒ ANNUAL REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934 For the fiscal year ended September 30 , 2023 ",
+      "mechanism": "该段历史资料提供输入上下文，本夹具只测试字段与引用解析。",
+      "answer_implication": "本地测试记录 AAPL 的历史参考结果；该引用不用于推出事后结果。",
+      "scope": {
+        "entities": [
+          "AAPL"
+        ]
+      },
+      "citations": [
+        {
+          "doc_id": "EDGAR_0000320193_10K_20231103",
+          "span_start": 0,
+          "span_end": 240
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "research_fixture": true,
+    "synthetic_interval": true,
+    "interval_method": "数值结果中心左右加减固定 half_width；无数值真值或信用事件概率任务使用 [0,1]。这是结构测试区间，未经过校准。",
+    "synthetic_point_entities": [],
+    "synthetic_point_method": "上述实体的 point_forecast=0.5 是结构测试占位；事后 0/1 事件不被当作概率真值。",
+    "half_width": 1.0,
+    "reference_status_counts": {
+      "verified": 3
+    },
+    "task_canonical_sha256": "db8b94311f31cf4d4799cf76cfaaaa2863518529a9c3e5dc88ce3a93a376dbd2",
+    "faithfulness": "not_evaluated",
+    "reasoning": "not_evaluated",
+    "purpose": "输入事实 claims 不声称支持历史结果；本夹具仅供离线研究。"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "entity_id": "ODFL",
+  "url": "https://data.sec.gov/submissions/CIK0000878927.json",
+  "source_sha256": "90c51efb21b8e7e464d132dea2492c25c1e4c01b6c024a2ac7c2807540442ffa",
+  "retrieved_at": "2026-10-07T08:17:28.621797+00:00",
+  "bytes": 154361,
+  "raw_path": "ODFL-submissions.raw.json",
+  "archive_files": [
+    {
+      "name": "CIK0000878927-submissions-001.json",
+      "filingCount": 611,
+      "filingFrom": "1996-02-07",
+      "filingTo": "2012-02-05"
+    }
+  ],
+  "recent_oldest_date": "2012-02-06",
+  "copied_from": "./datasets/agenthon-t4-reference/sources/earnings-credit/sec-submissions-ODFL.raw.json",
+  "copied_at": "2026-10-07T08:45:41.528974+00:00"
+}

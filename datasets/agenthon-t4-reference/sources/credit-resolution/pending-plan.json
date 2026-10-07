@@ -1,0 +1,29 @@
+[
+  {
+    "id": "M-2020-06-09-index",
+    "url": "https://www.sec.gov/Archives/edgar/data/794367/000110465920071418/0001104659-20-071418-index.html",
+    "path": "local-raw/M/2020-06-09-index.html",
+    "title": "M债务契约/修订原始索引",
+    "published_at": "2020-06-09",
+    "locator": "存续债务发行主体、担保、违约/宽限条款",
+    "kind": "sec_filing_index"
+  },
+  {
+    "id": "M-2020-06-09-index",
+    "url": "https://www.sec.gov/Archives/edgar/data/794367/000079436720000078/0000794367-20-000078-index.html",
+    "path": "local-raw/M/2020-06-09-index.html",
+    "title": "M债务契约/修订原始索引",
+    "published_at": "2020-06-09",
+    "locator": "存续债务发行主体、担保、违约/宽限条款",
+    "kind": "sec_filing_index"
+  },
+  {
+    "id": "M-2022-03-03-index",
+    "url": "https://www.sec.gov/Archives/edgar/data/794367/000156459022008536/0001564590-22-008536-index.html",
+    "path": "local-raw/M/2022-03-03-index.html",
+    "title": "M债务契约/修订原始索引",
+    "published_at": "2022-03-03",
+    "locator": "存续债务发行主体、担保、违约/宽限条款",
+    "kind": "sec_filing_index"
+  }
+]

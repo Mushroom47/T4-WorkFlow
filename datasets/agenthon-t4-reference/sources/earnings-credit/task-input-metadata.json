@@ -1,0 +1,73 @@
+[
+  {
+    "task_id": "t4-EXAMPLE-eps-beat",
+    "path": "/tmp/agenthon-t4-research-20261007/units/t4-EXAMPLE-eps-beat/task.json",
+    "sha256": "ae33b39262e1af55c1c9eb63b8ab83aadcc55492b1be0a47b6d4fdad0383b97e",
+    "cutoff_date": "2024-03-15",
+    "resolution_date": "2024-05-05",
+    "entities": [
+      "AAPL"
+    ]
+  },
+  {
+    "task_id": "t4-eps-yoy-2023Q2-mixed",
+    "path": "/tmp/agenthon-t4-research-20261007/units/t4-eps-yoy-2023Q2-mixed/task.json",
+    "sha256": "e3ae05a738bbab934d0d0cc9b206fe8112bcdbd18aff1f92b4eb81a8a50b3d12",
+    "cutoff_date": "2023-07-14",
+    "resolution_date": "2023-08-02",
+    "entities": [
+      "AMD",
+      "AMGN",
+      "DOW",
+      "HON",
+      "IBM",
+      "TMO"
+    ]
+  },
+  {
+    "task_id": "t4-eps-growth-2024Q3-banks",
+    "path": "/tmp/agenthon-t4-research-20261007/units/t4-eps-growth-2024Q3-banks/task.json",
+    "sha256": "7352decb68e25dd314b053582684633d76aee88fd693057a1d4b3f04cb3f8ce2",
+    "cutoff_date": "2024-10-10",
+    "resolution_date": "2024-10-24",
+    "entities": [
+      "BAC",
+      "C",
+      "GS",
+      "JPM",
+      "MS",
+      "PNC",
+      "USB",
+      "WFC"
+    ]
+  },
+  {
+    "task_id": "t4-credit-event-2023",
+    "path": "/tmp/agenthon-t4-research-20261007/units/t4-credit-event-2023/task.json",
+    "sha256": "670bdd187ffab6e5396685b4d9c0884f61b470c884cc5efe6a3daba1c6459310",
+    "cutoff_date": "2023-03-31",
+    "resolution_date": "2024-03-31",
+    "entities": [
+      "BBBY",
+      "BBY",
+      "M",
+      "ODFL",
+      "RAD",
+      "WBA",
+      "WE",
+      "YELL"
+    ]
+  },
+  {
+    "task_id": "t4-postearn-20240201-megacap",
+    "path": "/tmp/agenthon-t4-research-20261007/units/t4-postearn-20240201-megacap/task.json",
+    "sha256": "d9d422dba05d6e7e5e343f44b91bb39915b771f1859b595dddd636815b376461",
+    "cutoff_date": "2024-01-31",
+    "resolution_date": "2024-02-02",
+    "entities": [
+      "AAPL",
+      "AMZN",
+      "META"
+    ]
+  }
+]

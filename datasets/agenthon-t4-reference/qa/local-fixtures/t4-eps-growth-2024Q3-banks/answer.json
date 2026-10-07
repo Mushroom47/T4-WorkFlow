@@ -1,0 +1,178 @@
+{
+  "task_id": "t4-eps-growth-2024Q3-banks",
+  "schema_version": "3",
+  "target_type": "regression",
+  "entity_predictions": [
+    {
+      "entity_id": "BAC",
+      "interval": {
+        "level": 0.9,
+        "lo": -11.0,
+        "hi": -9.0
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 213,
+          "span_end": 236,
+          "claim": "输入表字段 prior_year_q_eps 的值为 0.9。"
+        }
+      ],
+      "point_forecast": -10.0
+    },
+    {
+      "entity_id": "C",
+      "interval": {
+        "level": 0.9,
+        "lo": -8.36196319018405,
+        "hi": -6.361963190184049
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 524,
+          "span_end": 548,
+          "claim": "输入表字段 prior_year_q_eps 的值为 1.63。"
+        }
+      ],
+      "point_forecast": -7.361963190184049
+    },
+    {
+      "entity_id": "GS",
+      "interval": {
+        "level": 0.9,
+        "lo": 52.56489945155393,
+        "hi": 54.56489945155393
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 852,
+          "span_end": 876,
+          "claim": "输入表字段 prior_year_q_eps 的值为 5.47。"
+        }
+      ],
+      "point_forecast": 53.56489945155393
+    },
+    {
+      "entity_id": "JPM",
+      "interval": {
+        "level": 0.9,
+        "lo": -0.07621247113163976,
+        "hi": 1.9237875288683601
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 1172,
+          "span_end": 1196,
+          "claim": "输入表字段 prior_year_q_eps 的值为 4.33。"
+        }
+      ],
+      "point_forecast": 0.9237875288683602
+    },
+    {
+      "entity_id": "MS",
+      "interval": {
+        "level": 0.9,
+        "lo": 35.231884057971016,
+        "hi": 37.231884057971016
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 1485,
+          "span_end": 1509,
+          "claim": "输入表字段 prior_year_q_eps 的值为 1.38。"
+        }
+      ],
+      "point_forecast": 36.231884057971016
+    },
+    {
+      "entity_id": "PNC",
+      "interval": {
+        "level": 0.9,
+        "lo": -4.055555555555555,
+        "hi": -2.0555555555555554
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 1823,
+          "span_end": 1846,
+          "claim": "输入表字段 prior_year_q_eps 的值为 3.6。"
+        }
+      ],
+      "point_forecast": -3.0555555555555554
+    },
+    {
+      "entity_id": "USB",
+      "interval": {
+        "level": 0.9,
+        "lo": 12.186813186813186,
+        "hi": 14.186813186813186
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 2134,
+          "span_end": 2158,
+          "claim": "输入表字段 prior_year_q_eps 的值为 0.91。"
+        }
+      ],
+      "point_forecast": 13.186813186813186
+    },
+    {
+      "entity_id": "WFC",
+      "interval": {
+        "level": 0.9,
+        "lo": -5.054054054054054,
+        "hi": -3.0540540540540544
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 2455,
+          "span_end": 2479,
+          "claim": "输入表字段 prior_year_q_eps 的值为 1.48。"
+        }
+      ],
+      "point_forecast": -4.054054054054054
+    }
+  ],
+  "submitted_reasons": [
+    {
+      "reason_id": "local_structure_fixture",
+      "premise": "bac-20240630 UNITED STATES SECURITIES AND EXCHANGE COMMISSION Washington, D.C. 20549 FORM 10-Q (Mark One) ☑ QUARTERLY REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934 For the Quarterly Period Ended June 30, 2024",
+      "mechanism": "该段历史资料提供输入上下文，本夹具只测试字段与引用解析。",
+      "answer_implication": "本地测试记录 BAC 的历史参考结果；该引用不用于推出事后结果。",
+      "scope": {
+        "entities": [
+          "BAC"
+        ]
+      },
+      "citations": [
+        {
+          "doc_id": "EDGAR_0000070858_10Q_20240730",
+          "span_start": 0,
+          "span_end": 240
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "research_fixture": true,
+    "synthetic_interval": true,
+    "interval_method": "数值结果中心左右加减固定 half_width；无数值真值或信用事件概率任务使用 [0,1]。这是结构测试区间，未经过校准。",
+    "synthetic_point_entities": [],
+    "synthetic_point_method": "上述实体的 point_forecast=0.5 是结构测试占位；事后 0/1 事件不被当作概率真值。",
+    "half_width": 1.0,
+    "reference_status_counts": {
+      "verified": 8
+    },
+    "task_canonical_sha256": "722a45aa2f5ef844e438af3cb8252863a4ec8afbce45e0444d90144c55dd94d3",
+    "faithfulness": "not_evaluated",
+    "reasoning": "not_evaluated",
+    "purpose": "输入事实 claims 不声称支持历史结果；本夹具仅供离线研究。"
+  }
+}

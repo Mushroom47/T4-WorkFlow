@@ -1,0 +1,79 @@
+task_id,entity_id,target_type,reference_label,reference_value,reference_rank,unit,status,fact_status,task_alignment,first_publication_status,official_outcome_status
+t4-EXAMPLE-eps-beat,AAPL,classification,inline,1.53,,USD/share,verified,verified,aligned,unconfirmed,unconfirmed
+t4-auction-btc-202411-us7,AUC_10Y_20241105,regression,,2.58,,bid_to_cover_ratio,verified,verified,aligned,unconfirmed,unconfirmed
+t4-auction-btc-202411-us7,AUC_20Y_20241120,regression,,2.34,,bid_to_cover_ratio,verified,verified,aligned,unconfirmed,unconfirmed
+t4-auction-btc-202411-us7,AUC_2Y_20241125,regression,,2.77,,bid_to_cover_ratio,verified,verified,aligned,unconfirmed,unconfirmed
+t4-auction-btc-202411-us7,AUC_30Y_20241106,regression,,2.64,,bid_to_cover_ratio,verified,verified,aligned,unconfirmed,unconfirmed
+t4-auction-btc-202411-us7,AUC_3Y_20241104,regression,,2.6,,bid_to_cover_ratio,verified,verified,aligned,unconfirmed,unconfirmed
+t4-auction-btc-202411-us7,AUC_5Y_20241126,regression,,2.43,,bid_to_cover_ratio,verified,verified,aligned,unconfirmed,unconfirmed
+t4-auction-btc-202411-us7,AUC_7Y_20241127,regression,,2.71,,bid_to_cover_ratio,verified,verified,aligned,unconfirmed,unconfirmed
+t4-cotpos-202411-us10,CORN_CBT,ranking,,7.242607798814084,1,pct_of_open_interest,verified,verified,aligned,unconfirmed,unconfirmed
+t4-cotpos-202411-us10,ES_SP500,ranking,,-4.658876491640775,7,pct_of_open_interest,verified,verified,aligned,unconfirmed,unconfirmed
+t4-cotpos-202411-us10,EURO_FX,ranking,,-4.223529755255018,6,pct_of_open_interest,verified,verified,aligned,unconfirmed,unconfirmed
+t4-cotpos-202411-us10,GOLD_CMX,ranking,,-7.99393474623536,8,pct_of_open_interest,verified,verified,aligned,unconfirmed,unconfirmed
+t4-cotpos-202411-us10,JPY_CME,ranking,,-17.07549990836219,10,pct_of_open_interest,verified,verified,aligned,unconfirmed,unconfirmed
+t4-cotpos-202411-us10,NATGAS_NYMEX,ranking,,0.7777467049268032,4,pct_of_open_interest,verified,verified,aligned,unconfirmed,unconfirmed
+t4-cotpos-202411-us10,SILVER_CMX,ranking,,-14.988808627530776,9,pct_of_open_interest,verified,verified,aligned,unconfirmed,unconfirmed
+t4-cotpos-202411-us10,UST_10Y,ranking,,-1.6823244793101466,5,pct_of_open_interest,verified,verified,aligned,unconfirmed,unconfirmed
+t4-cotpos-202411-us10,UST_2Y,ranking,,3.2181708809485357,2,pct_of_open_interest,verified,verified,aligned,unconfirmed,unconfirmed
+t4-cotpos-202411-us10,WTI_NYMEX,ranking,,1.61777833841138,3,pct_of_open_interest,verified,verified,aligned,unconfirmed,unconfirmed
+t4-cpicomp-202410-us11,CPI_ALLITEMS,regression,,0.24405280184056488,,mom_pct_change_sa,verified,verified,aligned,unconfirmed,unconfirmed
+t4-cpicomp-202410-us11,CPI_APPAREL,regression,,-1.4570678665166854,,mom_pct_change_sa,verified,verified,aligned,unconfirmed,unconfirmed
+t4-cpicomp-202410-us11,CPI_CORE,regression,,0.2802657380590896,,mom_pct_change_sa,verified,verified,aligned,unconfirmed,unconfirmed
+t4-cpicomp-202410-us11,CPI_ENERGY,regression,,-0.020978789339830623,,mom_pct_change_sa,verified,verified,aligned,unconfirmed,unconfirmed
+t4-cpicomp-202410-us11,CPI_FOOD,regression,,0.1585521715016036,,mom_pct_change_sa,verified,verified,aligned,unconfirmed,unconfirmed
+t4-cpicomp-202410-us11,CPI_GASOLINE,regression,,-0.8727988936251907,,mom_pct_change_sa,verified,verified,aligned,unconfirmed,unconfirmed
+t4-cpicomp-202410-us11,CPI_MEDICAL,regression,,0.2832235540227286,,mom_pct_change_sa,verified,verified,aligned,unconfirmed,unconfirmed
+t4-cpicomp-202410-us11,CPI_NEWVEH,regression,,-0.04800876583583261,,mom_pct_change_sa,verified,verified,aligned,unconfirmed,unconfirmed
+t4-cpicomp-202410-us11,CPI_SHELTER,regression,,0.3823831503916643,,mom_pct_change_sa,verified,verified,aligned,unconfirmed,unconfirmed
+t4-cpicomp-202410-us11,CPI_TRANSPSVC,regression,,0.4408645223550405,,mom_pct_change_sa,verified,verified,aligned,unconfirmed,unconfirmed
+t4-cpicomp-202410-us11,CPI_USEDCARS,regression,,2.7217312146388117,,mom_pct_change_sa,verified,verified,aligned,unconfirmed,unconfirmed
+t4-credit-event-2023,BBBY,classification,credit_event,,,label,verified,verified,aligned,unconfirmed,unconfirmed
+t4-credit-event-2023,BBY,classification,no_event,,,label,verified,bounded_verified,aligned,not_applicable,unconfirmed
+t4-credit-event-2023,M,classification,no_event,,,label,verified,bounded_verified,aligned,not_applicable,unconfirmed
+t4-credit-event-2023,ODFL,classification,no_event,,,label,verified,bounded_verified,aligned,not_applicable,unconfirmed
+t4-credit-event-2023,RAD,classification,credit_event,,,label,verified,verified,aligned,unconfirmed,unconfirmed
+t4-credit-event-2023,WBA,classification,no_event,,,label,verified,bounded_verified,aligned,not_applicable,unconfirmed
+t4-credit-event-2023,WE,classification,credit_event,,,label,verified,verified,aligned,unconfirmed,unconfirmed
+t4-credit-event-2023,YELL,classification,credit_event,,,label,verified,verified,aligned,unconfirmed,unconfirmed
+t4-eps-growth-2024Q3-banks,BAC,regression,,-10.0,,percent,verified,verified,aligned,unconfirmed,unconfirmed
+t4-eps-growth-2024Q3-banks,C,regression,,-7.361963190184049,,percent,verified,verified,aligned,unconfirmed,unconfirmed
+t4-eps-growth-2024Q3-banks,GS,regression,,53.56489945155393,,percent,verified,verified,aligned,unconfirmed,unconfirmed
+t4-eps-growth-2024Q3-banks,JPM,regression,,0.9237875288683602,,percent,verified,verified,aligned,unconfirmed,unconfirmed
+t4-eps-growth-2024Q3-banks,MS,regression,,36.231884057971016,,percent,verified,verified,aligned,unconfirmed,unconfirmed
+t4-eps-growth-2024Q3-banks,PNC,regression,,-3.0555555555555554,,percent,verified,verified,aligned,unconfirmed,unconfirmed
+t4-eps-growth-2024Q3-banks,USB,regression,,13.186813186813186,,percent,verified,verified,aligned,unconfirmed,unconfirmed
+t4-eps-growth-2024Q3-banks,WFC,regression,,-4.054054054054054,,percent,verified,verified,aligned,unconfirmed,unconfirmed
+t4-eps-yoy-2023Q2-mixed,AMD,classification,down,0.02,,USD/share,verified,verified,aligned,unconfirmed,unconfirmed
+t4-eps-yoy-2023Q2-mixed,AMGN,classification,up,2.57,,USD/share,provisional,verified,ambiguous,unconfirmed,unconfirmed
+t4-eps-yoy-2023Q2-mixed,DOW,classification,down,0.68,,USD/share,verified,verified,aligned,unconfirmed,unconfirmed
+t4-eps-yoy-2023Q2-mixed,HON,classification,up,2.22,,USD/share,verified,verified,aligned,unconfirmed,unconfirmed
+t4-eps-yoy-2023Q2-mixed,IBM,classification,up,1.72,,USD/share,verified,verified,aligned,unconfirmed,unconfirmed
+t4-eps-yoy-2023Q2-mixed,TMO,classification,down,3.51,,USD/share,verified,verified,aligned,unconfirmed,unconfirmed
+t4-fomc-curve-20220728,UST10Y,regression,,89.0,,bps_change,verified,verified,aligned,unconfirmed,unconfirmed
+t4-fomc-curve-20220728,UST2Y,regression,,111.0,,bps_change,verified,verified,aligned,unconfirmed,unconfirmed
+t4-fomc-curve-20220728,UST30Y,regression,,57.0,,bps_change,verified,verified,aligned,unconfirmed,unconfirmed
+t4-fomc-curve-20220728,UST3Y,regression,,113.0,,bps_change,verified,verified,aligned,unconfirmed,unconfirmed
+t4-fomc-curve-20220728,UST5Y,regression,,106.0,,bps_change,verified,verified,aligned,unconfirmed,unconfirmed
+t4-fomc-curve-20220728,UST7Y,regression,,100.0,,bps_change,verified,verified,aligned,unconfirmed,unconfirmed
+t4-fomc-curve-20240918,UST10Y,regression,,69.0,,bps_change,verified,verified,aligned,unconfirmed,unconfirmed
+t4-fomc-curve-20240918,UST2Y,regression,,68.0,,bps_change,verified,verified,aligned,unconfirmed,unconfirmed
+t4-fomc-curve-20240918,UST30Y,regression,,54.0,,bps_change,verified,verified,aligned,unconfirmed,unconfirmed
+t4-fomc-curve-20240918,UST3Y,regression,,73.0,,bps_change,verified,verified,aligned,unconfirmed,unconfirmed
+t4-fomc-curve-20240918,UST5Y,regression,,78.0,,bps_change,verified,verified,aligned,unconfirmed,unconfirmed
+t4-fomc-curve-20240918,UST7Y,regression,,77.0,,bps_change,verified,verified,aligned,unconfirmed,unconfirmed
+t4-macrorev-20240930-us6,DGORDER_2024-07_20241025,classification,down,289419.0,,"millions of dollars, SA",verified,verified,aligned,unconfirmed,unconfirmed
+t4-macrorev-20240930-us6,DGORDER_2024-08_20241025,classification,down,287018.0,,"millions of dollars, SA",verified,verified,aligned,unconfirmed,unconfirmed
+t4-macrorev-20240930-us6,HOUST_2024-07_20241018,classification,up,1262.0,,"thousands of units, SAAR",verified,verified,aligned,unconfirmed,unconfirmed
+t4-macrorev-20240930-us6,INDPRO_2024-07_20241017,classification,up,102.5863,,"index 2017=100, SA",verified,verified,aligned,unconfirmed,unconfirmed
+t4-macrorev-20240930-us6,INDPRO_2024-08_20241017,classification,down,102.9329,,"index 2017=100, SA",verified,verified,aligned,unconfirmed,unconfirmed
+t4-macrorev-20240930-us6,PAYEMS_2024-07_20241004,classification,up,158692.0,,"thousands of persons, SA",verified,verified,aligned,unconfirmed,unconfirmed
+t4-macrorev-20240930-us6,PAYEMS_2024-08_20241004,classification,up,158851.0,,"thousands of persons, SA",verified,verified,aligned,unconfirmed,unconfirmed
+t4-macrorev-20240930-us6,PAYEMS_2024-08_20241101,classification,down,158770.0,,"thousands of persons, SA",verified,verified,aligned,unconfirmed,unconfirmed
+t4-macrorev-20240930-us6,PI_2024-07_20241031,classification,up,24819.3,,"billions of dollars, SAAR",verified,verified,aligned,unconfirmed,unconfirmed
+t4-macrorev-20240930-us6,PI_2024-08_20241127,classification,down,24740.2,,"billions of dollars, SAAR",verified,verified,aligned,unconfirmed,unconfirmed
+t4-macrorev-20240930-us6,RSAFS_2024-07_20241017,classification,up,710851.0,,"millions of dollars, SA",verified,verified,aligned,unconfirmed,unconfirmed
+t4-macrorev-20240930-us6,RSAFS_2024-08_20241115,classification,down,710038.0,,"millions of dollars, SA",verified,verified,aligned,unconfirmed,unconfirmed
+t4-postearn-20240201-megacap,AAPL,classification,negative_reaction,-1.5932507789575607,,percent,verified,verified,aligned,unconfirmed,unconfirmed
+t4-postearn-20240201-megacap,AMZN,classification,positive_reaction,6.813910758675692,,percent,verified,verified,aligned,unconfirmed,unconfirmed
+t4-postearn-20240201-megacap,META,classification,positive_reaction,19.264906104798445,,percent,verified,verified,aligned,unconfirmed,unconfirmed

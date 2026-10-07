@@ -1,0 +1,961 @@
+{
+  "url": "https://data.sec.gov/submissions/CIK0000878927.json",
+  "sha256": "90c51efb21b8e7e464d132dea2492c25c1e4c01b6c024a2ac7c2807540442ffa",
+  "retrieved_at": "2026-10-07",
+  "cik": "0000878927",
+  "name": "OLD DOMINION FREIGHT LINE, INC.",
+  "selected_filings": [
+    {
+      "accessionNumber": "0000950170-24-075510",
+      "filingDate": "2024-06-20",
+      "reportDate": "2023-12-31",
+      "form": "11-K",
+      "items": "",
+      "primaryDocument": "odfl-11k-2024.htm"
+    },
+    {
+      "accessionNumber": "0000950170-24-069338",
+      "filingDate": "2024-06-05",
+      "reportDate": "2024-06-05",
+      "form": "8-K",
+      "items": "7.01,9.01",
+      "primaryDocument": "odfl-20240605.htm"
+    },
+    {
+      "accessionNumber": "0001977249-24-000065",
+      "filingDate": "2024-06-04",
+      "reportDate": "2024-06-03",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000057",
+      "filingDate": "2024-05-20",
+      "reportDate": "2024-05-17",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0000950170-24-062139",
+      "filingDate": "2024-05-20",
+      "reportDate": "2024-05-15",
+      "form": "8-K",
+      "items": "5.02,5.07,8.01,9.01",
+      "primaryDocument": "odfl-20240515.htm"
+    },
+    {
+      "accessionNumber": "0001977249-24-000056",
+      "filingDate": "2024-05-17",
+      "reportDate": "2024-05-15",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000055",
+      "filingDate": "2024-05-17",
+      "reportDate": "2024-05-15",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000054",
+      "filingDate": "2024-05-17",
+      "reportDate": "2024-05-15",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000053",
+      "filingDate": "2024-05-17",
+      "reportDate": "2024-05-15",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000052",
+      "filingDate": "2024-05-17",
+      "reportDate": "2024-05-15",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000051",
+      "filingDate": "2024-05-17",
+      "reportDate": "2024-05-15",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000050",
+      "filingDate": "2024-05-17",
+      "reportDate": "2024-05-15",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000049",
+      "filingDate": "2024-05-17",
+      "reportDate": "2024-05-15",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000048",
+      "filingDate": "2024-05-17",
+      "reportDate": "2024-05-15",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000047",
+      "filingDate": "2024-05-17",
+      "reportDate": "2024-05-15",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000046",
+      "filingDate": "2024-05-17",
+      "reportDate": "2024-05-15",
+      "form": "3",
+      "items": "",
+      "primaryDocument": "xslF345X02/form3.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000037",
+      "filingDate": "2024-05-08",
+      "reportDate": "2024-05-07",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0000950170-24-054284",
+      "filingDate": "2024-05-07",
+      "reportDate": "2024-03-31",
+      "form": "10-Q",
+      "items": "",
+      "primaryDocument": "odfl-20240331.htm"
+    },
+    {
+      "accessionNumber": "0001977249-24-000036",
+      "filingDate": "2024-05-02",
+      "reportDate": "2024-05-01",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0000950170-24-047274",
+      "filingDate": "2024-04-24",
+      "reportDate": "2024-04-24",
+      "form": "8-K",
+      "items": "2.02,9.01",
+      "primaryDocument": "odfl-20240424.htm"
+    },
+    {
+      "accessionNumber": "0001214659-24-007271",
+      "filingDate": "2024-04-22",
+      "reportDate": "",
+      "form": "PX14A6G",
+      "items": "",
+      "primaryDocument": "o422244px14a6g.htm"
+    },
+    {
+      "accessionNumber": "0000950170-24-044332",
+      "filingDate": "2024-04-15",
+      "reportDate": "2023-12-31",
+      "form": "ARS",
+      "items": "",
+      "primaryDocument": "odfl_2023_annual_report.pdf"
+    },
+    {
+      "accessionNumber": "0000950170-24-044327",
+      "filingDate": "2024-04-15",
+      "reportDate": "2024-05-15",
+      "form": "DEF 14A",
+      "items": "",
+      "primaryDocument": "odfl-20240415.htm"
+    },
+    {
+      "accessionNumber": "0001977249-24-000035",
+      "filingDate": "2024-04-02",
+      "reportDate": "2024-04-01",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0000950170-24-040017",
+      "filingDate": "2024-04-02",
+      "reportDate": "2024-05-15",
+      "form": "PRE 14A",
+      "items": "",
+      "primaryDocument": "odfl-20240402.htm"
+    },
+    {
+      "accessionNumber": "0000950170-24-033550",
+      "filingDate": "2024-03-19",
+      "reportDate": "2024-03-19",
+      "form": "8-K",
+      "items": "5.02",
+      "primaryDocument": "odfl-20240319.htm"
+    },
+    {
+      "accessionNumber": "0001104659-24-032820",
+      "filingDate": "2024-03-11",
+      "reportDate": "",
+      "form": "SC 13G/A",
+      "items": "",
+      "primaryDocument": "tv0021-olddominionfreightlin.htm"
+    },
+    {
+      "accessionNumber": "0000950170-24-025450",
+      "filingDate": "2024-03-05",
+      "reportDate": "2024-03-05",
+      "form": "8-K",
+      "items": "7.01,9.01",
+      "primaryDocument": "odfl-20240305.htm"
+    },
+    {
+      "accessionNumber": "0001977249-24-000033",
+      "filingDate": "2024-03-04",
+      "reportDate": "2024-03-01",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000032",
+      "filingDate": "2024-02-29",
+      "reportDate": "2024-02-28",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000031",
+      "filingDate": "2024-02-28",
+      "reportDate": "2024-02-27",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000030",
+      "filingDate": "2024-02-28",
+      "reportDate": "2024-02-27",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0002007317-24-000222",
+      "filingDate": "2024-02-27",
+      "reportDate": "",
+      "form": "144",
+      "items": "",
+      "primaryDocument": "xsl144X01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000029",
+      "filingDate": "2024-02-27",
+      "reportDate": "2024-02-23",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0000950170-24-020176",
+      "filingDate": "2024-02-26",
+      "reportDate": "2023-12-31",
+      "form": "10-K",
+      "items": "",
+      "primaryDocument": "odfl-20231231.htm"
+    },
+    {
+      "accessionNumber": "0002006941-24-000001",
+      "filingDate": "2024-02-23",
+      "reportDate": "",
+      "form": "144",
+      "items": "",
+      "primaryDocument": "xsl144X01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "0000950170-24-016210",
+      "filingDate": "2024-02-16",
+      "reportDate": "2024-02-16",
+      "form": "8-K",
+      "items": "8.01,9.01",
+      "primaryDocument": "odfl-20240216.htm"
+    },
+    {
+      "accessionNumber": "0000080255-24-000665",
+      "filingDate": "2024-02-14",
+      "reportDate": "",
+      "form": "SC 13G",
+      "items": "",
+      "primaryDocument": "odfl13gdec23.txt"
+    },
+    {
+      "accessionNumber": "0001104659-24-021608",
+      "filingDate": "2024-02-13",
+      "reportDate": "",
+      "form": "SC 13G/A",
+      "items": "",
+      "primaryDocument": "tv01597-olddominionfreightli.htm"
+    },
+    {
+      "accessionNumber": "0001193125-24-032243",
+      "filingDate": "2024-02-12",
+      "reportDate": "",
+      "form": "SC 13G/A",
+      "items": "",
+      "primaryDocument": "d684799dsc13ga.htm"
+    },
+    {
+      "accessionNumber": "0001977249-24-000025",
+      "filingDate": "2024-02-12",
+      "reportDate": "2023-12-31",
+      "form": "5",
+      "items": "",
+      "primaryDocument": "xslF345X05/form5.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000024",
+      "filingDate": "2024-02-12",
+      "reportDate": "2024-02-11",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000021",
+      "filingDate": "2024-02-12",
+      "reportDate": "2024-02-11",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000020",
+      "filingDate": "2024-02-12",
+      "reportDate": "2024-02-08",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000019",
+      "filingDate": "2024-02-12",
+      "reportDate": "2024-02-08",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000018",
+      "filingDate": "2024-02-12",
+      "reportDate": "2024-02-08",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000017",
+      "filingDate": "2024-02-12",
+      "reportDate": "2024-02-08",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000016",
+      "filingDate": "2024-02-12",
+      "reportDate": "2024-02-08",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000015",
+      "filingDate": "2024-02-12",
+      "reportDate": "2024-02-08",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000014",
+      "filingDate": "2024-02-12",
+      "reportDate": "2024-02-08",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000013",
+      "filingDate": "2024-02-12",
+      "reportDate": "2024-02-08",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000012",
+      "filingDate": "2024-02-12",
+      "reportDate": "2024-02-08",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001422848-24-000078",
+      "filingDate": "2024-02-09",
+      "reportDate": "",
+      "form": "SC 13G/A",
+      "items": "",
+      "primaryDocument": "SEC13G_Filing.htm"
+    },
+    {
+      "accessionNumber": "0001977249-24-000011",
+      "filingDate": "2024-02-09",
+      "reportDate": "2024-02-07",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000010",
+      "filingDate": "2024-02-09",
+      "reportDate": "2024-02-07",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000009",
+      "filingDate": "2024-02-09",
+      "reportDate": "2024-02-07",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000008",
+      "filingDate": "2024-02-09",
+      "reportDate": "2024-02-07",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000007",
+      "filingDate": "2024-02-09",
+      "reportDate": "2024-02-07",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000006",
+      "filingDate": "2024-02-09",
+      "reportDate": "2024-02-07",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000005",
+      "filingDate": "2024-02-09",
+      "reportDate": "2024-02-07",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000004",
+      "filingDate": "2024-02-09",
+      "reportDate": "2024-02-07",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000003",
+      "filingDate": "2024-02-09",
+      "reportDate": "2024-02-07",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-24-000002",
+      "filingDate": "2024-02-02",
+      "reportDate": "2024-02-01",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0000950170-24-009181",
+      "filingDate": "2024-01-31",
+      "reportDate": "2024-01-31",
+      "form": "8-K",
+      "items": "2.02,9.01",
+      "primaryDocument": "odfl-20240131.htm"
+    },
+    {
+      "accessionNumber": "0001086364-24-003697",
+      "filingDate": "2024-01-25",
+      "reportDate": "",
+      "form": "SC 13G/A",
+      "items": "",
+      "primaryDocument": "us6795801009_012524.txt"
+    },
+    {
+      "accessionNumber": "0001977249-24-000001",
+      "filingDate": "2024-01-17",
+      "reportDate": "2024-01-02",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0000950170-23-068262",
+      "filingDate": "2023-12-05",
+      "reportDate": "2023-12-05",
+      "form": "8-K",
+      "items": "7.01,9.01",
+      "primaryDocument": "odfl-20231205.htm"
+    },
+    {
+      "accessionNumber": "0001977249-23-000078",
+      "filingDate": "2023-11-28",
+      "reportDate": "2023-11-27",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001972481-23-000140",
+      "filingDate": "2023-11-28",
+      "reportDate": "",
+      "form": "144/A",
+      "items": "",
+      "primaryDocument": "xsl144X01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "0001977249-23-000076",
+      "filingDate": "2023-11-27",
+      "reportDate": "2023-11-22",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001972481-23-000139",
+      "filingDate": "2023-11-27",
+      "reportDate": "",
+      "form": "144",
+      "items": "",
+      "primaryDocument": "xsl144X01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "0001977249-23-000075",
+      "filingDate": "2023-11-22",
+      "reportDate": "2023-11-21",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-23-000074",
+      "filingDate": "2023-11-22",
+      "reportDate": "2023-11-21",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-23-000073",
+      "filingDate": "2023-11-17",
+      "reportDate": "2023-11-16",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-23-000071",
+      "filingDate": "2023-11-13",
+      "reportDate": "2023-11-08",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0000048966-23-000021",
+      "filingDate": "2023-11-13",
+      "reportDate": "",
+      "form": "144",
+      "items": "",
+      "primaryDocument": "xsl144X01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "0000048966-23-000020",
+      "filingDate": "2023-11-09",
+      "reportDate": "",
+      "form": "144",
+      "items": "",
+      "primaryDocument": "xsl144X01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "0000048966-23-000019",
+      "filingDate": "2023-11-08",
+      "reportDate": "",
+      "form": "144",
+      "items": "",
+      "primaryDocument": "xsl144X01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "0000950170-23-059408",
+      "filingDate": "2023-11-06",
+      "reportDate": "2023-09-30",
+      "form": "10-Q",
+      "items": "",
+      "primaryDocument": "odfl-20230930.htm"
+    },
+    {
+      "accessionNumber": "0000950170-23-055015",
+      "filingDate": "2023-10-25",
+      "reportDate": "2023-10-25",
+      "form": "8-K",
+      "items": "2.02,9.01",
+      "primaryDocument": "odfl-20231025.htm"
+    },
+    {
+      "accessionNumber": "0000950170-23-054038",
+      "filingDate": "2023-10-19",
+      "reportDate": "2023-10-19",
+      "form": "8-K",
+      "items": "8.01,9.01",
+      "primaryDocument": "odfl-20231019.htm"
+    },
+    {
+      "accessionNumber": "0000950170-23-046789",
+      "filingDate": "2023-09-06",
+      "reportDate": "2023-09-06",
+      "form": "8-K",
+      "items": "7.01,9.01",
+      "primaryDocument": "odfl-20230906.htm"
+    },
+    {
+      "accessionNumber": "0001977249-23-000049",
+      "filingDate": "2023-08-14",
+      "reportDate": "2023-08-11",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-23-000048",
+      "filingDate": "2023-08-14",
+      "reportDate": "2023-08-10",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0000048966-23-000014",
+      "filingDate": "2023-08-11",
+      "reportDate": "",
+      "form": "144/A",
+      "items": "",
+      "primaryDocument": "xsl144X01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "0001949846-23-000270",
+      "filingDate": "2023-08-11",
+      "reportDate": "",
+      "form": "144",
+      "items": "",
+      "primaryDocument": "xsl144X01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "0000048966-23-000013",
+      "filingDate": "2023-08-10",
+      "reportDate": "",
+      "form": "144",
+      "items": "",
+      "primaryDocument": "xsl144X01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "0001977249-23-000033",
+      "filingDate": "2023-08-04",
+      "reportDate": "2023-08-02",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0000950170-23-038553",
+      "filingDate": "2023-08-04",
+      "reportDate": "2023-06-30",
+      "form": "10-Q",
+      "items": "",
+      "primaryDocument": "odfl-20230630.htm"
+    },
+    {
+      "accessionNumber": "0001977249-23-000032",
+      "filingDate": "2023-08-03",
+      "reportDate": "2023-08-01",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X05/form4.xml"
+    },
+    {
+      "accessionNumber": "0000950170-23-034576",
+      "filingDate": "2023-07-26",
+      "reportDate": "2023-07-26",
+      "form": "8-K",
+      "items": "2.02,9.01",
+      "primaryDocument": "odfl-20230726.htm"
+    },
+    {
+      "accessionNumber": "0000950170-23-033690",
+      "filingDate": "2023-07-20",
+      "reportDate": "2023-07-20",
+      "form": "8-K",
+      "items": "8.01,9.01",
+      "primaryDocument": "odfl-20230720.htm"
+    },
+    {
+      "accessionNumber": "0001977249-23-000029",
+      "filingDate": "2023-07-03",
+      "reportDate": "2023-07-03",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X04/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-23-000028",
+      "filingDate": "2023-07-03",
+      "reportDate": "2023-07-01",
+      "form": "3",
+      "items": "",
+      "primaryDocument": "xslF345X02/form3.xml"
+    },
+    {
+      "accessionNumber": "0001977249-23-000027",
+      "filingDate": "2023-06-27",
+      "reportDate": "2023-06-26",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X04/form4.xml"
+    },
+    {
+      "accessionNumber": "0000950170-23-029863",
+      "filingDate": "2023-06-26",
+      "reportDate": "2023-06-22",
+      "form": "8-K",
+      "items": "5.02",
+      "primaryDocument": "odfl-20230622.htm"
+    },
+    {
+      "accessionNumber": "0000950170-23-028886",
+      "filingDate": "2023-06-20",
+      "reportDate": "2022-12-31",
+      "form": "11-K",
+      "items": "",
+      "primaryDocument": "odfl-11k-2023.htm"
+    },
+    {
+      "accessionNumber": "0000950170-23-026441",
+      "filingDate": "2023-06-05",
+      "reportDate": "2023-06-05",
+      "form": "8-K",
+      "items": "7.01,9.01",
+      "primaryDocument": "odfl-20230605.htm"
+    },
+    {
+      "accessionNumber": "0001977249-23-000024",
+      "filingDate": "2023-05-25",
+      "reportDate": "2023-05-24",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X04/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-23-000020",
+      "filingDate": "2023-05-18",
+      "reportDate": "2023-05-17",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X04/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-23-000018",
+      "filingDate": "2023-05-18",
+      "reportDate": "2023-05-17",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X04/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-23-000017",
+      "filingDate": "2023-05-18",
+      "reportDate": "2023-05-17",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X04/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-23-000016",
+      "filingDate": "2023-05-18",
+      "reportDate": "2023-05-17",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X04/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-23-000015",
+      "filingDate": "2023-05-18",
+      "reportDate": "2023-05-17",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X04/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-23-000014",
+      "filingDate": "2023-05-18",
+      "reportDate": "2023-05-17",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X04/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-23-000013",
+      "filingDate": "2023-05-18",
+      "reportDate": "2023-05-17",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X04/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-23-000012",
+      "filingDate": "2023-05-18",
+      "reportDate": "2023-05-17",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X04/form4.xml"
+    },
+    {
+      "accessionNumber": "0001977249-23-000010",
+      "filingDate": "2023-05-18",
+      "reportDate": "2023-05-17",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X04/form4.xml"
+    },
+    {
+      "accessionNumber": "0001567619-23-006135",
+      "filingDate": "2023-05-18",
+      "reportDate": "2023-05-17",
+      "form": "3",
+      "items": "",
+      "primaryDocument": "xslF345X02/doc1.xml"
+    },
+    {
+      "accessionNumber": "0000950170-23-022917",
+      "filingDate": "2023-05-18",
+      "reportDate": "2023-05-17",
+      "form": "8-K",
+      "items": "5.02",
+      "primaryDocument": "odfl-20230517.htm"
+    },
+    {
+      "accessionNumber": "0000950170-23-022911",
+      "filingDate": "2023-05-18",
+      "reportDate": "2023-02-28",
+      "form": "8-K/A",
+      "items": "5.02",
+      "primaryDocument": "odfl-20230228.htm"
+    },
+    {
+      "accessionNumber": "0000950170-23-022909",
+      "filingDate": "2023-05-18",
+      "reportDate": "2023-01-25",
+      "form": "8-K/A",
+      "items": "5.02",
+      "primaryDocument": "odfl-20230125.htm"
+    },
+    {
+      "accessionNumber": "0000950170-23-022904",
+      "filingDate": "2023-05-18",
+      "reportDate": "2023-05-17",
+      "form": "8-K",
+      "items": "5.07,8.01,9.01",
+      "primaryDocument": "odfl-20230517.htm"
+    },
+    {
+      "accessionNumber": "0001567619-23-005938",
+      "filingDate": "2023-05-08",
+      "reportDate": "2023-05-01",
+      "form": "3",
+      "items": "",
+      "primaryDocument": "xslF345X02/doc1.xml"
+    },
+    {
+      "accessionNumber": "0000950170-23-018765",
+      "filingDate": "2023-05-08",
+      "reportDate": "2023-03-31",
+      "form": "10-Q",
+      "items": "",
+      "primaryDocument": "odfl-20230331.htm"
+    },
+    {
+      "accessionNumber": "0000950170-23-014592",
+      "filingDate": "2023-04-26",
+      "reportDate": "2023-04-26",
+      "form": "8-K",
+      "items": "2.02,9.01",
+      "primaryDocument": "odfl-20230426.htm"
+    },
+    {
+      "accessionNumber": "0000950170-23-013010",
+      "filingDate": "2023-04-17",
+      "reportDate": "2022-12-31",
+      "form": "ARS",
+      "items": "",
+      "primaryDocument": "odfl_2022_annual_report.pdf"
+    },
+    {
+      "accessionNumber": "0000950170-23-013009",
+      "filingDate": "2023-04-17",
+      "reportDate": "",
+      "form": "DEF 14A",
+      "items": "",
+      "primaryDocument": "odfl-20230417.htm"
+    }
+  ],
+  "archive_files": [
+    {
+      "name": "CIK0000878927-submissions-001.json",
+      "filingCount": 611,
+      "filingFrom": "1996-02-07",
+      "filingTo": "2012-02-05"
+    }
+  ]
+}

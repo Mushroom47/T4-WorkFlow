@@ -1,0 +1,12 @@
+{
+  "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS10&cosd=2022-09-20&coed=2022-09-20&vintage_date=2022-09-21",
+  "series_id": "DGS10",
+  "observation_date": "2022-09-20",
+  "requested_vintage_date": "2022-09-21",
+  "retrieved_at": "2026-10-07T08:44:15.175974+00:00",
+  "path": "DGS10_obs-2022-09-20_vintage-2022-09-21.csv",
+  "sha256": "907781166d564c30fa49a9b259da52986e38e5d1d3d050ca55321aa83ef444ae",
+  "http_status": 200,
+  "content_type": "application/csv",
+  "bytes": 48
+}

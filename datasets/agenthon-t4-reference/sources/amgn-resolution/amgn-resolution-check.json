@@ -1,0 +1,274 @@
+{
+  "schema_version": "0.1.0",
+  "checked_at": "2026-10-07T13:14:07.982018+00:00",
+  "task_id": "t4-eps-yoy-2023Q2-mixed",
+  "entity_id": "AMGN",
+  "official_repository_head": "1c744e1d6725340643a533f436517d72b53ca0e1",
+  "task_dates": {
+    "cutoff_date": "2023-07-14",
+    "resolution_date": "2023-08-02",
+    "expected_report_date": "2023-08-01"
+  },
+  "actual_quarter": {
+    "all_matching_observations": [
+      {
+        "start": "2023-04-01",
+        "end": "2023-06-30",
+        "val": 2.57,
+        "accn": "0000318154-23-000053",
+        "fy": 2023,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2023-08-04"
+      },
+      {
+        "start": "2023-04-01",
+        "end": "2023-06-30",
+        "val": 2.57,
+        "accn": "0000318154-24-000035",
+        "fy": 2024,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2024-08-07",
+        "frame": "CY2023Q2"
+      }
+    ],
+    "earliest_saved_SEC_observation": {
+      "start": "2023-04-01",
+      "end": "2023-06-30",
+      "val": 2.57,
+      "accn": "0000318154-23-000053",
+      "fy": 2023,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2023-08-04"
+    },
+    "duration_days": 90
+  },
+  "prior_quarter": {
+    "all_matching_observations": [
+      {
+        "start": "2022-04-01",
+        "end": "2022-06-30",
+        "val": 2.45,
+        "accn": "0000318154-22-000041",
+        "fy": 2022,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2022-08-05"
+      },
+      {
+        "start": "2022-04-01",
+        "end": "2022-06-30",
+        "val": 2.45,
+        "accn": "0000318154-23-000053",
+        "fy": 2023,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2023-08-04",
+        "frame": "CY2022Q2"
+      }
+    ],
+    "earliest_saved_SEC_observation": {
+      "start": "2022-04-01",
+      "end": "2022-06-30",
+      "val": 2.45,
+      "accn": "0000318154-22-000041",
+      "fy": 2022,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2022-08-05"
+    },
+    "duration_days": 90
+  },
+  "value": 2.57,
+  "unit": "USD/share",
+  "task_prior_value": 2.45,
+  "label": "up",
+  "EPS_difference": "0.12",
+  "YoY_percent": "4.897959183673469387755102000",
+  "schedule_notice_date": "2023-07-31",
+  "scheduled_and_actual_release_date": "2023-08-03",
+  "facts_status": "verified",
+  "official_task_date_contract_status": "awaiting_organizer_clarification",
+  "official_outcome_compared": false,
+  "checks": {
+    "official_HEAD_matches_frozen_baseline": true,
+    "official_task_bytes_match_frozen": true,
+    "official_card_bytes_match_frozen": true,
+    "SEC_company_and_tag_match": true,
+    "single_quarter_periods": true,
+    "prior_matches_public_task_baseline": true,
+    "dated_actual_release_and_GAAP_values": true,
+    "notice_is_July31_for_August3_after_close": true,
+    "release_after_task_resolution": true,
+    "schedule_notice_before_resolution": true,
+    "amgen_terms_reserve_public_use_and_automated_collection": true,
+    "all_preserved_source_hashes_and_bytes_match": true,
+    "issue26_has_no_comments_at_retrieval": true
+  },
+  "source_hash_checks": [
+    {
+      "path": "official-repo.raw.json",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "official-tree.raw.json",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "official-issues.raw.json",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "issue-3.raw.json",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "issue-3-comments.raw.json",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "issue-23.raw.json",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "issue-23-comments.raw.json",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "issue-24.raw.json",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "issue-24-comments.raw.json",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "issue-25.raw.json",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "issue-25-comments.raw.json",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "issue-26.raw.json",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "issue-26-comments.raw.json",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "official-README.md.txt",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "official-DATA-LICENSE.md.txt",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "official-LICENSE",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "official-THIRD-PARTY-NOTICES.md",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "official-docs--TRAINING-POLICY.md.txt",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "official-docs--ARTIFACT-POLICY.md",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "official-units--t4-eps-yoy-2023Q2-mixed--task.json",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "official-units--t4-eps-yoy-2023Q2-mixed--card.toml",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "global-submission-descriptor.md.txt",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "amgn-actual-release.raw.html",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "amgn-scheduled-release.raw.html",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "sec-eps-AMGN-concept.raw.json",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "sec-eps-AMGN-concept.metadata.json",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "official-rules.raw.html",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "official-licensing.raw.html",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "official-terms.raw.html",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "amgen-terms-of-use.raw.html",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "official-unit-manifest.raw.json",
+      "sha256_match": true,
+      "bytes_match": true
+    }
+  ],
+  "limitations": [
+    "已存当前issuer原始URL正文和earliest saved SEC observation支持历史事实，但本次并未取得当年HTTP字节快照；不能把完整修订链或全球最早公开时点称为已证明。",
+    "task prompt与label assertions明确June季度而没有明写before resolution；该事实不能替主办方决定resolution字段是否是硬截止。",
+    "只回读3/23/24/25/26相关issue完整评论及全部公开issue正文；没有声称逐条检查所有issue评论。",
+    "下载SEC10-Q正文、SEC网站说明与新submissions均HTTP403；10-Q正文只由web阅读确认，没有伪造保存字节哈希。",
+    "Amgen网站§3有公共使用和自动采集限制；该目录原始issuer材料不能因为公开可读或顶层MIT就直接进入公开包。"
+  ]
+}

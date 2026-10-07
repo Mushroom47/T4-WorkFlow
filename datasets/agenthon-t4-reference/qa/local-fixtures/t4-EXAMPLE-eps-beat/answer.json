@@ -1,0 +1,60 @@
+{
+  "task_id": "t4-EXAMPLE-eps-beat",
+  "schema_version": "3",
+  "target_type": "classification",
+  "entity_predictions": [
+    {
+      "entity_id": "AAPL",
+      "interval": {
+        "level": 0.9,
+        "lo": 0.53,
+        "hi": 2.5300000000000002
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 80,
+          "span_end": 99,
+          "claim": "输入表字段 mktcap_bn 的值为 2650.0。"
+        }
+      ],
+      "point_forecast": 1.53,
+      "label": "inline"
+    }
+  ],
+  "submitted_reasons": [
+    {
+      "reason_id": "local_structure_fixture",
+      "premise": "Apple Inc. reports net sales of $119.6 billion for the three months ended December 30, 2023, compared to $117.2 billion for the three months ended December 31, 2022, an increase of approximately 2%. Diluted earnings per share were $2.18, co",
+      "mechanism": "该段历史资料提供输入上下文，本夹具只测试字段与引用解析。",
+      "answer_implication": "本地测试记录 AAPL 的历史参考结果；该引用不用于推出事后结果。",
+      "scope": {
+        "entities": [
+          "AAPL"
+        ]
+      },
+      "citations": [
+        {
+          "doc_id": "EDGAR_0000320193_10Q_20240202",
+          "span_start": 0,
+          "span_end": 240
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "research_fixture": true,
+    "synthetic_interval": true,
+    "interval_method": "数值结果中心左右加减固定 half_width；无数值真值或信用事件概率任务使用 [0,1]。这是结构测试区间，未经过校准。",
+    "synthetic_point_entities": [],
+    "synthetic_point_method": "上述实体的 point_forecast=0.5 是结构测试占位；事后 0/1 事件不被当作概率真值。",
+    "half_width": 1.0,
+    "reference_status_counts": {
+      "verified": 1
+    },
+    "task_canonical_sha256": "edec54e3296316092c802344e41ab8f1523a62569c09bc14952624f10d068067",
+    "faithfulness": "not_evaluated",
+    "reasoning": "not_evaluated",
+    "purpose": "输入事实 claims 不声称支持历史结果；本夹具仅供离线研究。"
+  }
+}

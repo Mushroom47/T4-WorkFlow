@@ -1,0 +1,90 @@
+[
+  {
+    "filename": "bls-cpi-20241113.html",
+    "url": "https://www.bls.gov/news.release/archives/cpi_11132024.htm",
+    "published_at": "2024-11-13",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "filename": "bls-ces-20241004.html",
+    "url": "https://www.bls.gov/news.release/archives/empsit_10042024.htm",
+    "published_at": "2024-10-04",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "filename": "bls-ces-20241101.html",
+    "url": "https://www.bls.gov/news.release/archives/empsit_11012024.htm",
+    "published_at": "2024-11-01",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "filename": "fed-g17-20241017.html",
+    "url": "https://www.federalreserve.gov/releases/g17/20241017/default.htm",
+    "published_at": "2024-10-17",
+    "sha256": "1a0251d357e39a928b360c213bdc9dd0177ccbf896641a2cf460616076f8aedd",
+    "size_bytes": 113762,
+    "downloaded_at": "2026-10-07",
+    "http_status": 200,
+    "content_type": "text/html"
+  },
+  {
+    "filename": "census-houst-20241018.pdf",
+    "url": "https://www.census.gov/construction/nrc/pdf/newresconst_202409.pdf",
+    "published_at": "2024-10-18",
+    "sha256": "3a60666d774e2f47cb448941c40be02bcf36d88311838398fd4f8496e8de874f",
+    "size_bytes": 256182,
+    "downloaded_at": "2026-10-07",
+    "http_status": 200,
+    "content_type": "application/pdf"
+  },
+  {
+    "filename": "census-dgorder-20241025.pdf",
+    "url": "https://www.census.gov/manufacturing/m3/historical_data/pressreleases/adv/2024/sep24adv.pdf",
+    "published_at": "2024-10-25",
+    "sha256": "fd4b7e9e1a504e1274f5ee514277b717aa6b031b14cc5105a91baf1778f4cbf9",
+    "size_bytes": 253443,
+    "downloaded_at": "2026-10-07",
+    "http_status": 200,
+    "content_type": "application/pdf"
+  },
+  {
+    "filename": "census-rsafs-20241017.pdf",
+    "url": "https://www2.census.gov/retail/releases/historical/marts/adv2409.pdf",
+    "published_at": "2024-10-17",
+    "sha256": "2a1e0b6a27540343763304c3fab4ab446630668855c7f78a776422cf15e22b45",
+    "size_bytes": 1591229,
+    "downloaded_at": "2026-10-07",
+    "http_status": 200,
+    "content_type": "application/pdf"
+  },
+  {
+    "filename": "census-rsafs-20241115.pdf",
+    "url": "https://www2.census.gov/retail/releases/historical/marts/adv2410.pdf",
+    "published_at": "2024-11-15",
+    "sha256": "debba0f7730f4835e3cf00a34bf07d1abb045730abd40aa3a96889972e23bd4a",
+    "size_bytes": 278891,
+    "downloaded_at": "2026-10-07",
+    "http_status": 200,
+    "content_type": "application/pdf"
+  },
+  {
+    "filename": "bea-pi-20241031.xlsx",
+    "url": "https://www.bea.gov/sites/default/files/2024-10/pi0924.xlsx",
+    "published_at": "2024-10-31",
+    "sha256": "7371e94808dbcf0aa9dd642032f4b10524817d92e80c7d9a183acc8e1c1e9106",
+    "size_bytes": 46039,
+    "downloaded_at": "2026-10-07",
+    "http_status": 200,
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+  },
+  {
+    "filename": "bea-pi-20241127.xlsx",
+    "url": "https://www.bea.gov/sites/default/files/2024-11/pi1024.xlsx",
+    "published_at": "2024-11-27",
+    "sha256": "956060c841385c8ca238bd99894b44f06194f81710316085e6b380e18fa82287",
+    "size_bytes": 46190,
+    "downloaded_at": "2026-10-07",
+    "http_status": 200,
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+  }
+]

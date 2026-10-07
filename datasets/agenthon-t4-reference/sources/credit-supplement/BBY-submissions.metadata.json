@@ -1,0 +1,19 @@
+{
+  "entity_id": "BBY",
+  "url": "https://data.sec.gov/submissions/CIK0000764478.json",
+  "source_sha256": "b3e56d79c1462e4bd1848ee8716887ffbbd37b47ba8938d7a093988ceffab33a",
+  "retrieved_at": "2026-10-07T08:17:27.003649+00:00",
+  "bytes": 146495,
+  "raw_path": "BBY-submissions.raw.json",
+  "archive_files": [
+    {
+      "name": "CIK0000764478-submissions-001.json",
+      "filingCount": 1931,
+      "filingFrom": "1994-01-06",
+      "filingTo": "2017-02-09"
+    }
+  ],
+  "recent_oldest_date": "2017-02-10",
+  "copied_from": "./datasets/agenthon-t4-reference/sources/earnings-credit/sec-submissions-BBY.raw.json",
+  "copied_at": "2026-10-07T08:45:41.527968+00:00"
+}

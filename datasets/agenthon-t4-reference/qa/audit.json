@@ -1,0 +1,30 @@
+{
+  "ok": true,
+  "records": 78,
+  "tasks": 11,
+  "status_counts": {
+    "verified": 77,
+    "provisional": 1
+  },
+  "quality_counts": {
+    "fact_status": {
+      "verified": 74,
+      "bounded_verified": 4
+    },
+    "task_alignment": {
+      "aligned": 77,
+      "ambiguous": 1
+    },
+    "first_publication_status": {
+      "unconfirmed": 74,
+      "not_applicable": 4
+    },
+    "official_outcome_status": {
+      "unconfirmed": 78
+    }
+  },
+  "input_hashes": "verified",
+  "reference_task_hashes": "verified",
+  "reference_schema": "verified",
+  "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+}

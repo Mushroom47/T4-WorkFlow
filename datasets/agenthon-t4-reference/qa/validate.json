@@ -1,0 +1,143 @@
+{
+  "ok": true,
+  "complete": true,
+  "tasks": [
+    {
+      "ok": true,
+      "task_id": "t4-EXAMPLE-eps-beat",
+      "entity_count": 1,
+      "task_canonical_sha256": "edec54e3296316092c802344e41ab8f1523a62569c09bc14952624f10d068067",
+      "validation_scope": "冻结官方 JSON Schema 结构与本地引用语义检查",
+      "faithfulness": "not_evaluated",
+      "reasoning": "not_evaluated",
+      "reason_policy_scope": "仅检查引用、结构、已知拒绝短语及原文预算；不复刻官方 URI 遮蔽与理由评审",
+      "reason_warnings": [],
+      "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+    },
+    {
+      "ok": true,
+      "task_id": "t4-auction-btc-202411-us7",
+      "entity_count": 7,
+      "task_canonical_sha256": "4167418c67850ce37ec94162c4e144bd6cbf8542de110feabdd90fb8238f51bf",
+      "validation_scope": "冻结官方 JSON Schema 结构与本地引用语义检查",
+      "faithfulness": "not_evaluated",
+      "reasoning": "not_evaluated",
+      "reason_policy_scope": "仅检查引用、结构、已知拒绝短语及原文预算；不复刻官方 URI 遮蔽与理由评审",
+      "reason_warnings": [],
+      "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+    },
+    {
+      "ok": true,
+      "task_id": "t4-cotpos-202411-us10",
+      "entity_count": 10,
+      "task_canonical_sha256": "1639d559e7cd1d058a31b52ee5ee19e4b9b0ade4d1182a8758d768cc4933cd2b",
+      "validation_scope": "冻结官方 JSON Schema 结构与本地引用语义检查",
+      "faithfulness": "not_evaluated",
+      "reasoning": "not_evaluated",
+      "reason_policy_scope": "仅检查引用、结构、已知拒绝短语及原文预算；不复刻官方 URI 遮蔽与理由评审",
+      "reason_warnings": [],
+      "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+    },
+    {
+      "ok": true,
+      "task_id": "t4-cpicomp-202410-us11",
+      "entity_count": 11,
+      "task_canonical_sha256": "44e9351eb2e32532eb7b9c352c8921ed6a2c14ba9532d9fd8e8404e3cbe8a855",
+      "validation_scope": "冻结官方 JSON Schema 结构与本地引用语义检查",
+      "faithfulness": "not_evaluated",
+      "reasoning": "not_evaluated",
+      "reason_policy_scope": "仅检查引用、结构、已知拒绝短语及原文预算；不复刻官方 URI 遮蔽与理由评审",
+      "reason_warnings": [],
+      "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+    },
+    {
+      "ok": true,
+      "task_id": "t4-credit-event-2023",
+      "entity_count": 8,
+      "task_canonical_sha256": "a20440e2cab7ba1fdbd165b261219cf01f3697abc2d74c0660731f77fd192498",
+      "validation_scope": "冻结官方 JSON Schema 结构与本地引用语义检查",
+      "faithfulness": "not_evaluated",
+      "reasoning": "not_evaluated",
+      "reason_policy_scope": "仅检查引用、结构、已知拒绝短语及原文预算；不复刻官方 URI 遮蔽与理由评审",
+      "reason_warnings": [],
+      "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+    },
+    {
+      "ok": true,
+      "task_id": "t4-eps-growth-2024Q3-banks",
+      "entity_count": 8,
+      "task_canonical_sha256": "722a45aa2f5ef844e438af3cb8252863a4ec8afbce45e0444d90144c55dd94d3",
+      "validation_scope": "冻结官方 JSON Schema 结构与本地引用语义检查",
+      "faithfulness": "not_evaluated",
+      "reasoning": "not_evaluated",
+      "reason_policy_scope": "仅检查引用、结构、已知拒绝短语及原文预算；不复刻官方 URI 遮蔽与理由评审",
+      "reason_warnings": [],
+      "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+    },
+    {
+      "ok": true,
+      "task_id": "t4-eps-yoy-2023Q2-mixed",
+      "entity_count": 6,
+      "task_canonical_sha256": "300a064ce17c42367db59687a2dc82970d082f13c2bdccdc25361cdfe2273fd1",
+      "validation_scope": "冻结官方 JSON Schema 结构与本地引用语义检查",
+      "faithfulness": "not_evaluated",
+      "reasoning": "not_evaluated",
+      "reason_policy_scope": "仅检查引用、结构、已知拒绝短语及原文预算；不复刻官方 URI 遮蔽与理由评审",
+      "reason_warnings": [],
+      "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+    },
+    {
+      "ok": true,
+      "task_id": "t4-fomc-curve-20220728",
+      "entity_count": 6,
+      "task_canonical_sha256": "5a1d9a4ec484edcf471aa440953ac2ad4e8d5b2e62e9d418d6c8ae7d67ec6eb3",
+      "validation_scope": "冻结官方 JSON Schema 结构与本地引用语义检查",
+      "faithfulness": "not_evaluated",
+      "reasoning": "not_evaluated",
+      "reason_policy_scope": "仅检查引用、结构、已知拒绝短语及原文预算；不复刻官方 URI 遮蔽与理由评审",
+      "reason_warnings": [],
+      "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+    },
+    {
+      "ok": true,
+      "task_id": "t4-fomc-curve-20240918",
+      "entity_count": 6,
+      "task_canonical_sha256": "26d836f11aa84a0d9355f13d774bce54b4519b40436b39f373c2f9091d509237",
+      "validation_scope": "冻结官方 JSON Schema 结构与本地引用语义检查",
+      "faithfulness": "not_evaluated",
+      "reasoning": "not_evaluated",
+      "reason_policy_scope": "仅检查引用、结构、已知拒绝短语及原文预算；不复刻官方 URI 遮蔽与理由评审",
+      "reason_warnings": [],
+      "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+    },
+    {
+      "ok": true,
+      "task_id": "t4-macrorev-20240930-us6",
+      "entity_count": 12,
+      "task_canonical_sha256": "5ecdb42cc1f21c185b8a4c3c53210d3cd7ed8d1edf9f684e54211e93ba963eee",
+      "validation_scope": "冻结官方 JSON Schema 结构与本地引用语义检查",
+      "faithfulness": "not_evaluated",
+      "reasoning": "not_evaluated",
+      "reason_policy_scope": "仅检查引用、结构、已知拒绝短语及原文预算；不复刻官方 URI 遮蔽与理由评审",
+      "reason_warnings": [],
+      "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+    },
+    {
+      "ok": true,
+      "task_id": "t4-postearn-20240201-megacap",
+      "entity_count": 3,
+      "task_canonical_sha256": "db8b94311f31cf4d4799cf76cfaaaa2863518529a9c3e5dc88ce3a93a376dbd2",
+      "validation_scope": "冻结官方 JSON Schema 结构与本地引用语义检查",
+      "faithfulness": "not_evaluated",
+      "reasoning": "not_evaluated",
+      "reason_policy_scope": "仅检查引用、结构、已知拒绝短语及原文预算；不复刻官方 URI 遮蔽与理由评审",
+      "reason_warnings": [],
+      "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+    }
+  ],
+  "task_count": 11,
+  "expected_task_count": 11,
+  "missing_tasks": [],
+  "reference_version": "0.2.0",
+  "reference_sha256": "9e5e94a3adabda35568f05168aaab308df194729126876790fb10f8b7500e326"
+}

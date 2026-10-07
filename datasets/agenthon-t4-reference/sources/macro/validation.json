@@ -1,0 +1,23 @@
+{
+  "validated_at": "2026-10-07",
+  "status_counts": {
+    "verified": 23,
+    "provisional": 0,
+    "unresolved": 0
+  },
+  "checks": {
+    "roster": 23,
+    "cpi_mom": 11,
+    "macro_baseline": 12,
+    "macro_level_and_label": 12,
+    "hashes": 33,
+    "bea_xlsx": 2
+  },
+  "checks_detail": [
+    "两个 task roster 逐实体覆盖且无重复。",
+    "11 个 CPI 环比由已保存同一 vintage 指数独立回算，四舍五入至一位小数与官方发布稿全部一致。",
+    "12 个 macro baseline 与 task 给定值、发布日期匹配，所有差额与方向重新计算。",
+    "26 份 ALFRED CSV 以及 7 份官方原件回读 SHA256；BLS 3 个原件下载的 HTTP 403 单独记录。",
+    "BEA 2 行从原始 XLSX 表头与 H7 单元格独立复核。"
+  ]
+}

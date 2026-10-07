@@ -1,0 +1,161 @@
+{
+  "task_id": "t4-auction-btc-202411-us7",
+  "schema_version": "3",
+  "target_type": "regression",
+  "entity_predictions": [
+    {
+      "entity_id": "AUC_10Y_20241105",
+      "interval": {
+        "level": 0.9,
+        "lo": 1.58,
+        "hi": 3.58
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 155,
+          "span_end": 185,
+          "claim": "输入表字段 offering_amount_usd_bn 的值为 42.0。"
+        }
+      ],
+      "point_forecast": 2.58
+    },
+    {
+      "entity_id": "AUC_20Y_20241120",
+      "interval": {
+        "level": 0.9,
+        "lo": 1.3399999999999999,
+        "hi": 3.34
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 362,
+          "span_end": 380,
+          "claim": "输入表字段 tenor 的值为 \"20-Year\"。"
+        }
+      ],
+      "point_forecast": 2.34
+    },
+    {
+      "entity_id": "AUC_2Y_20241125",
+      "interval": {
+        "level": 0.9,
+        "lo": 1.77,
+        "hi": 3.77
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 645,
+          "span_end": 662,
+          "claim": "输入表字段 tenor 的值为 \"2-Year\"。"
+        }
+      ],
+      "point_forecast": 2.77
+    },
+    {
+      "entity_id": "AUC_30Y_20241106",
+      "interval": {
+        "level": 0.9,
+        "lo": 1.6400000000000001,
+        "hi": 3.64
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 998,
+          "span_end": 1028,
+          "claim": "输入表字段 offering_amount_usd_bn 的值为 25.0。"
+        }
+      ],
+      "point_forecast": 2.64
+    },
+    {
+      "entity_id": "AUC_3Y_20241104",
+      "interval": {
+        "level": 0.9,
+        "lo": 1.6,
+        "hi": 3.6
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 1271,
+          "span_end": 1301,
+          "claim": "输入表字段 offering_amount_usd_bn 的值为 58.0。"
+        }
+      ],
+      "point_forecast": 2.6
+    },
+    {
+      "entity_id": "AUC_5Y_20241126",
+      "interval": {
+        "level": 0.9,
+        "lo": 1.4300000000000002,
+        "hi": 3.43
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 1476,
+          "span_end": 1493,
+          "claim": "输入表字段 tenor 的值为 \"5-Year\"。"
+        }
+      ],
+      "point_forecast": 2.43
+    },
+    {
+      "entity_id": "AUC_7Y_20241127",
+      "interval": {
+        "level": 0.9,
+        "lo": 1.71,
+        "hi": 3.71
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 1758,
+          "span_end": 1775,
+          "claim": "输入表字段 tenor 的值为 \"7-Year\"。"
+        }
+      ],
+      "point_forecast": 2.71
+    }
+  ],
+  "submitted_reasons": [
+    {
+      "reason_id": "local_structure_fixture",
+      "premise": "U.S. Treasury 10-Year Note (new issues and reopenings) auctions — results from October 2023 through October 2024.\nSource: TreasuryDirect auction results API (www.treasurydirect.gov/TA_WS/securities/search), U.S. Department of the Treasury, ",
+      "mechanism": "该段历史资料提供输入上下文，本夹具只测试字段与引用解析。",
+      "answer_implication": "本地测试记录 AUC_10Y_20241105 的历史参考结果；该引用不用于推出事后结果。",
+      "scope": {
+        "entities": [
+          "AUC_10Y_20241105"
+        ]
+      },
+      "citations": [
+        {
+          "doc_id": "TDIRECT_AUCTIONS_10Y_20241031",
+          "span_start": 0,
+          "span_end": 240
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "research_fixture": true,
+    "synthetic_interval": true,
+    "interval_method": "数值结果中心左右加减固定 half_width；无数值真值或信用事件概率任务使用 [0,1]。这是结构测试区间，未经过校准。",
+    "synthetic_point_entities": [],
+    "synthetic_point_method": "上述实体的 point_forecast=0.5 是结构测试占位；事后 0/1 事件不被当作概率真值。",
+    "half_width": 1.0,
+    "reference_status_counts": {
+      "verified": 7
+    },
+    "task_canonical_sha256": "4167418c67850ce37ec94162c4e144bd6cbf8542de110feabdd90fb8238f51bf",
+    "faithfulness": "not_evaluated",
+    "reasoning": "not_evaluated",
+    "purpose": "输入事实 claims 不声称支持历史结果；本夹具仅供离线研究。"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "entity_id": "BAC",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000070858/us-gaap/EarningsPerShareDiluted.json",
+  "source_sha256": "2133ba4c4365fb48817dd9557c0244519a99aced91693b3e6372c39f706da786",
+  "retrieved_at": "2026-10-07T08:14:19.836692+00:00",
+  "bytes": 34567,
+  "raw_path": "sec-eps-BAC-concept.raw.json",
+  "tag": "EarningsPerShareDiluted",
+  "taxonomy": "us-gaap",
+  "unit": "USD/shares",
+  "observation_count": 237
+}

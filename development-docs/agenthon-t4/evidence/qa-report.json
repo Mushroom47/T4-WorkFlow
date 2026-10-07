@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-07",
+  "timezone": "Asia/Hong_Kong",
+  "scope": "仅文档/来源/示例语法静态检查；非参赛程序或官方评测",
+  "status": "passed",
+  "counts": {
+    "markdown_files": 20,
+    "local_links": 50,
+    "json_examples": 4,
+    "python_examples": 7,
+    "github_source_links": 54,
+    "source_hashes": 37
+  },
+  "time_conversions": {
+    "registration_development_close": "2026-10-13 19:59",
+    "last_development_start": "2026-10-13 04:00",
+    "final_close": "2026-10-26 19:59"
+  },
+  "formula_examples": {
+    "one_entity_false_claim_factor": 0.75,
+    "seven_entities_false_claim_factor": 0.95,
+    "anchored_classification_example": 0.75,
+    "interval_inside": 4,
+    "interval_missed_by_one": 24,
+    "final_maximum": 1.25
+  },
+  "errors": [],
+  "not_executed": [
+    "依赖安装",
+    "Agent运行",
+    "容器构建或运行",
+    "House请求",
+    "NLI模型检查",
+    "官方打包/上传",
+    "准确率或Final得分验证"
+  ]
+}

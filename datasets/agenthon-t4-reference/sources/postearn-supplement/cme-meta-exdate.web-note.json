@@ -1,0 +1,13 @@
+{
+  "url": "https://www.cmegroup.com/articles/2024/trading-dividend-uncertainty.html",
+  "retrieved_at": "2026-10-07T08:54:25.766149+00:00",
+  "artifact_kind": "translated_evidence_note_not_original_response",
+  "retrieval_method": "web.run open parsed body",
+  "published_at": null,
+  "locator": "Surprise Meta dividend announcement 段；网页解析行42–46",
+  "facts": [
+    "CME 正文记录 Meta 2/1/2024 收盘后公告首次季度股息0.50美元，除息日期2/21/2024。"
+  ],
+  "original_raw_download_status": "HTTP403；未本地归档原始响应，见fetch-page-index.json",
+  "limit": "这些备注是已见公开来源的中文释义；本文件 hash 仅对应备注，不代表原网页字节或首次发布版本。"
+}

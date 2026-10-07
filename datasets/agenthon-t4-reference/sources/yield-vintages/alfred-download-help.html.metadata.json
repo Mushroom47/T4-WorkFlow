@@ -1,0 +1,10 @@
+{
+  "path": "alfred-download-help.html",
+  "url": "https://alfred.stlouisfed.org/help/downloaddata",
+  "retrieved_at": "2026-10-07T08:49:03.607480+00:00",
+  "locator": "Vintage Dates / Observations, Initial Release Only：vintage与first-release格式定义",
+  "published_at": null,
+  "byte_form": "原始HTML响应；当前说明，不是目标日历史公告",
+  "status": "download_failed",
+  "error": "RemoteDisconnected: Remote end closed connection without response"
+}

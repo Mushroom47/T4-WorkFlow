@@ -1,0 +1,5 @@
+# 冻结输入、原件和审计快照按原始字节保存，避免行尾转换破坏 SHA-256。
+datasets/agenthon-t4-reference/** -text
+# 官方原始资料保持原文空白，项目维护的源码/文档仍执行空白检查。
+datasets/agenthon-t4-reference/inputs/** -whitespace
+datasets/agenthon-t4-reference/sources/** -whitespace

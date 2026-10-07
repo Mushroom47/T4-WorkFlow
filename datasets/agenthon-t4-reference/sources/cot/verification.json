@@ -1,0 +1,77 @@
+{
+  "checks": [
+    {
+      "entity_id": "CORN_CBT",
+      "contract_code": "002602",
+      "baseline_matches_task": true,
+      "annual_api_equal": true,
+      "reference_value": 7.242607798814084
+    },
+    {
+      "entity_id": "ES_SP500",
+      "contract_code": "13874A",
+      "baseline_matches_task": true,
+      "annual_api_equal": true,
+      "reference_value": -4.658876491640775
+    },
+    {
+      "entity_id": "EURO_FX",
+      "contract_code": "099741",
+      "baseline_matches_task": true,
+      "annual_api_equal": true,
+      "reference_value": -4.223529755255018
+    },
+    {
+      "entity_id": "GOLD_CMX",
+      "contract_code": "088691",
+      "baseline_matches_task": true,
+      "annual_api_equal": true,
+      "reference_value": -7.99393474623536
+    },
+    {
+      "entity_id": "JPY_CME",
+      "contract_code": "097741",
+      "baseline_matches_task": true,
+      "annual_api_equal": true,
+      "reference_value": -17.07549990836219
+    },
+    {
+      "entity_id": "NATGAS_NYMEX",
+      "contract_code": "023651",
+      "baseline_matches_task": true,
+      "annual_api_equal": true,
+      "reference_value": 0.7777467049268032
+    },
+    {
+      "entity_id": "SILVER_CMX",
+      "contract_code": "084691",
+      "baseline_matches_task": true,
+      "annual_api_equal": true,
+      "reference_value": -14.988808627530776
+    },
+    {
+      "entity_id": "UST_10Y",
+      "contract_code": "043602",
+      "baseline_matches_task": true,
+      "annual_api_equal": true,
+      "reference_value": -1.6823244793101466
+    },
+    {
+      "entity_id": "UST_2Y",
+      "contract_code": "042601",
+      "baseline_matches_task": true,
+      "annual_api_equal": true,
+      "reference_value": 3.2181708809485357
+    },
+    {
+      "entity_id": "WTI_NYMEX",
+      "contract_code": "067651",
+      "baseline_matches_task": true,
+      "annual_api_equal": true,
+      "reference_value": 1.61777833841138
+    }
+  ],
+  "rows": 10,
+  "api_annual_comparisons": 20,
+  "first_published_vintage_verified": false
+}

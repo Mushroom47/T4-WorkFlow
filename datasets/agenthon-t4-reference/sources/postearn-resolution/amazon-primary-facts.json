@@ -1,0 +1,16 @@
+{
+  "path": "amazon-primary-facts.json",
+  "url": "https://ir.aboutamazon.com/faqs/default.aspx",
+  "retrieval_method": "web.run search indexed body; open只返回标题和导航",
+  "retrieved_at": "2026-10-07T13:10:22.338891+00:00",
+  "published_at": null,
+  "artifact_kind": "original_chinese_fact_note_not_HTTP_response",
+  "locator": "Does Amazon distribute dividends? / When did Amazon stock split?",
+  "facts": [
+    "发行人当前FAQ声明普通股从未宣告或支付现金股息。",
+    "发行人列示4次拆股，最近一次为20-for-1，宣布2022-03-09、股权登记2022-05-27、effective2022-06-03；均在目标窗口之前。"
+  ],
+  "direct_full_page_archived": false,
+  "first_release_version_obtained": false,
+  "original_redistribution_permission": "unconfirmed; no full upstream body distributed"
+}

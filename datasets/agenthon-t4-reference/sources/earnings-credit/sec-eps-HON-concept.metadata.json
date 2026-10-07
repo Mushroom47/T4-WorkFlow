@@ -1,0 +1,12 @@
+{
+  "entity_id": "HON",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000773840/us-gaap/EarningsPerShareDiluted.json",
+  "source_sha256": "91667ff55623f86cc5718b4d45147e694a9cd3ee0815d4b04e573acc0876cf71",
+  "retrieved_at": "2026-10-07T08:14:22.729797+00:00",
+  "bytes": 46843,
+  "raw_path": "sec-eps-HON-concept.raw.json",
+  "tag": "EarningsPerShareDiluted",
+  "taxonomy": "us-gaap",
+  "unit": "USD/shares",
+  "observation_count": 324
+}

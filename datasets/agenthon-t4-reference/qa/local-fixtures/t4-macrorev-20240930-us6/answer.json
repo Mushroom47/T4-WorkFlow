@@ -1,0 +1,258 @@
+{
+  "task_id": "t4-macrorev-20240930-us6",
+  "schema_version": "3",
+  "target_type": "classification",
+  "entity_predictions": [
+    {
+      "entity_id": "DGORDER_2024-07_20241025",
+      "interval": {
+        "level": 0.9,
+        "lo": 289418.0,
+        "hi": 289420.0
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 209,
+          "span_end": 246,
+          "claim": "输入表字段 latest_precutoff_estimate 的值为 289587.0。"
+        }
+      ],
+      "point_forecast": 289419.0,
+      "label": "down"
+    },
+    {
+      "entity_id": "DGORDER_2024-08_20241025",
+      "interval": {
+        "level": 0.9,
+        "lo": 287017.0,
+        "hi": 287019.0
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 599,
+          "span_end": 636,
+          "claim": "输入表字段 latest_precutoff_estimate 的值为 289720.0。"
+        }
+      ],
+      "point_forecast": 287018.0,
+      "label": "down"
+    },
+    {
+      "entity_id": "HOUST_2024-07_20241018",
+      "interval": {
+        "level": 0.9,
+        "lo": 1261.0,
+        "hi": 1263.0
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 983,
+          "span_end": 1018,
+          "claim": "输入表字段 latest_precutoff_estimate 的值为 1237.0。"
+        }
+      ],
+      "point_forecast": 1262.0,
+      "label": "up"
+    },
+    {
+      "entity_id": "INDPRO_2024-07_20241017",
+      "interval": {
+        "level": 0.9,
+        "lo": 101.5863,
+        "hi": 103.5863
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 1372,
+          "span_end": 1409,
+          "claim": "输入表字段 latest_precutoff_estimate 的值为 102.3058。"
+        }
+      ],
+      "point_forecast": 102.5863,
+      "label": "up"
+    },
+    {
+      "entity_id": "INDPRO_2024-08_20241017",
+      "interval": {
+        "level": 0.9,
+        "lo": 101.9329,
+        "hi": 103.9329
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 1753,
+          "span_end": 1790,
+          "claim": "输入表字段 latest_precutoff_estimate 的值为 103.1389。"
+        }
+      ],
+      "point_forecast": 102.9329,
+      "label": "down"
+    },
+    {
+      "entity_id": "PAYEMS_2024-07_20241004",
+      "interval": {
+        "level": 0.9,
+        "lo": 158691.0,
+        "hi": 158693.0
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 2125,
+          "span_end": 2162,
+          "claim": "输入表字段 latest_precutoff_estimate 的值为 158637.0。"
+        }
+      ],
+      "point_forecast": 158692.0,
+      "label": "up"
+    },
+    {
+      "entity_id": "PAYEMS_2024-08_20241004",
+      "interval": {
+        "level": 0.9,
+        "lo": 158850.0,
+        "hi": 158852.0
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 2502,
+          "span_end": 2539,
+          "claim": "输入表字段 latest_precutoff_estimate 的值为 158779.0。"
+        }
+      ],
+      "point_forecast": 158851.0,
+      "label": "up"
+    },
+    {
+      "entity_id": "PAYEMS_2024-08_20241101",
+      "interval": {
+        "level": 0.9,
+        "lo": 158769.0,
+        "hi": 158771.0
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 2879,
+          "span_end": 2916,
+          "claim": "输入表字段 latest_precutoff_estimate 的值为 158779.0。"
+        }
+      ],
+      "point_forecast": 158770.0,
+      "label": "down"
+    },
+    {
+      "entity_id": "PI_2024-07_20241031",
+      "interval": {
+        "level": 0.9,
+        "lo": 24818.3,
+        "hi": 24820.3
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 3226,
+          "span_end": 3262,
+          "claim": "输入表字段 latest_precutoff_estimate 的值为 24803.2。"
+        }
+      ],
+      "point_forecast": 24819.3,
+      "label": "up"
+    },
+    {
+      "entity_id": "PI_2024-08_20241127",
+      "interval": {
+        "level": 0.9,
+        "lo": 24739.2,
+        "hi": 24741.2
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 3580,
+          "span_end": 3616,
+          "claim": "输入表字段 latest_precutoff_estimate 的值为 24853.7。"
+        }
+      ],
+      "point_forecast": 24740.2,
+      "label": "down"
+    },
+    {
+      "entity_id": "RSAFS_2024-07_20241017",
+      "interval": {
+        "level": 0.9,
+        "lo": 710850.0,
+        "hi": 710852.0
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 3986,
+          "span_end": 4023,
+          "claim": "输入表字段 latest_precutoff_estimate 的值为 710409.0。"
+        }
+      ],
+      "point_forecast": 710851.0,
+      "label": "up"
+    },
+    {
+      "entity_id": "RSAFS_2024-08_20241115",
+      "interval": {
+        "level": 0.9,
+        "lo": 710037.0,
+        "hi": 710039.0
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 4388,
+          "span_end": 4425,
+          "claim": "输入表字段 latest_precutoff_estimate 的值为 710773.0。"
+        }
+      ],
+      "point_forecast": 710038.0,
+      "label": "down"
+    }
+  ],
+  "submitted_reasons": [
+    {
+      "reason_id": "local_structure_fixture",
+      "premise": "DGORDER — Manufacturers New Orders: Durable Goods\nSource: ALFRED (Federal Reserve Bank of St. Louis archival FRED), series DGORDER. Underlying data: U.S. Census Bureau (M3). Units: millions of dollars, seasonally adjusted.\nRevision schedule",
+      "mechanism": "该段历史资料提供输入上下文，本夹具只测试字段与引用解析。",
+      "answer_implication": "本地测试记录 DGORDER_2024-07_20241025 的历史参考结果；该引用不用于推出事后结果。",
+      "scope": {
+        "entities": [
+          "DGORDER_2024-07_20241025"
+        ]
+      },
+      "citations": [
+        {
+          "doc_id": "ALFRED_DGORDER_VINTAGES_20240930",
+          "span_start": 0,
+          "span_end": 240
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "research_fixture": true,
+    "synthetic_interval": true,
+    "interval_method": "数值结果中心左右加减固定 half_width；无数值真值或信用事件概率任务使用 [0,1]。这是结构测试区间，未经过校准。",
+    "synthetic_point_entities": [],
+    "synthetic_point_method": "上述实体的 point_forecast=0.5 是结构测试占位；事后 0/1 事件不被当作概率真值。",
+    "half_width": 1.0,
+    "reference_status_counts": {
+      "verified": 12
+    },
+    "task_canonical_sha256": "5ecdb42cc1f21c185b8a4c3c53210d3cd7ed8d1edf9f684e54211e93ba963eee",
+    "faithfulness": "not_evaluated",
+    "reasoning": "not_evaluated",
+    "purpose": "输入事实 claims 不声称支持历史结果；本夹具仅供离线研究。"
+  }
+}

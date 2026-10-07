@@ -1,0 +1,681 @@
+{
+  "schema_version": "0.1.0",
+  "group": "earnings-credit",
+  "created_at": "2026-10-07",
+  "storage_policy": "完整 raw 仅保存公开结构化数值/申报元数据；公司公告/财报正文仅存下载 hash、URL 与定位，不保存大篇全文。",
+  "raw_structured_sources": [
+    {
+      "raw_path": "sec-eps-AAPL-concept.raw.json",
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/EarningsPerShareDiluted.json",
+      "source_sha256": "d58cd0fce2baed8be20b7b6587917b03bb46c08fc0b527d53a4867cab9317acf",
+      "bytes": 48741,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:14:19.836532+00:00"
+    },
+    {
+      "raw_path": "sec-eps-AMD-concept.raw.json",
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000002488/us-gaap/EarningsPerShareDiluted.json",
+      "source_sha256": "15436f232b8f49ef33d8cebf6ba7c4696048ef093290ef5f68ef48cb65e5c53a",
+      "bytes": 42412,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:14:25.229272+00:00"
+    },
+    {
+      "raw_path": "sec-eps-AMGN-concept.raw.json",
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000318154/us-gaap/EarningsPerShareDiluted.json",
+      "source_sha256": "44fda87915cfe7d797eb3d600fde86258fb8098832c87d395397cf4126600c60",
+      "bytes": 46812,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:14:25.557018+00:00"
+    },
+    {
+      "raw_path": "sec-eps-BAC-concept.raw.json",
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000070858/us-gaap/EarningsPerShareDiluted.json",
+      "source_sha256": "2133ba4c4365fb48817dd9557c0244519a99aced91693b3e6372c39f706da786",
+      "bytes": 34567,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:14:19.836692+00:00"
+    },
+    {
+      "raw_path": "sec-eps-C-concept.raw.json",
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000831001/us-gaap/EarningsPerShareDiluted.json",
+      "source_sha256": "23820b28db5ee74137fd4703a7baa9ec4e2d51065391919d7da75d35651add13",
+      "bytes": 52500,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:14:21.172582+00:00"
+    },
+    {
+      "raw_path": "sec-eps-DOW-concept.raw.json",
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001751788/us-gaap/EarningsPerShareDiluted.json",
+      "source_sha256": "a30ac9e0fba86bc51b2b43d386bbb5e23e4091c175514318ca03cf59c99b35a3",
+      "bytes": 14117,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:14:22.677945+00:00"
+    },
+    {
+      "raw_path": "sec-eps-GS-concept.raw.json",
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000886982/us-gaap/EarningsPerShareDiluted.json",
+      "source_sha256": "b8c3d05e883361ebd8543b3dfce7c0f40fda35a90cb1f604416f352a871b64db",
+      "bytes": 33737,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:14:24.042838+00:00"
+    },
+    {
+      "raw_path": "sec-eps-HON-concept.raw.json",
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000773840/us-gaap/EarningsPerShareDiluted.json",
+      "source_sha256": "91667ff55623f86cc5718b4d45147e694a9cd3ee0815d4b04e573acc0876cf71",
+      "bytes": 46843,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:14:22.729797+00:00"
+    },
+    {
+      "raw_path": "sec-eps-IBM-concept.raw.json",
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000051143/us-gaap/EarningsPerShareDiluted.json",
+      "source_sha256": "7b81dcc0a49349da6e8b4aee646ed9e5189d2e7d33dee9ba6beacd62dcc9dcc7",
+      "bytes": 33379,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:14:22.652140+00:00"
+    },
+    {
+      "raw_path": "sec-eps-JPM-concept.raw.json",
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000019617/us-gaap/EarningsPerShareDiluted.json",
+      "source_sha256": "39a48e8fed3c70d6a3adf5fd6f4fa529e10d1849dc918cfee2650b0d69cb7fc8",
+      "bytes": 34440,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:14:24.043083+00:00"
+    },
+    {
+      "raw_path": "sec-eps-MS-concept.raw.json",
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000895421/us-gaap/EarningsPerShareDiluted.json",
+      "source_sha256": "ed8de86db84b91eca61826bfd35604582ccd31ef5be4b51eac9dd24f69249358",
+      "bytes": 45580,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:14:24.084755+00:00"
+    },
+    {
+      "raw_path": "sec-eps-PNC-concept.raw.json",
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000713676/us-gaap/EarningsPerShareDiluted.json",
+      "source_sha256": "f92fe3a631659ab0423319adcdd8fb7fb4fe26cce69b93758012a4e370683375",
+      "bytes": 33776,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:14:21.181859+00:00"
+    },
+    {
+      "raw_path": "sec-eps-TMO-concept.raw.json",
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000097745/us-gaap/EarningsPerShareDiluted.json",
+      "source_sha256": "447eae05d7460d87c66be24b882e5194361c822d539ddd1ec86aa8e64eb08d96",
+      "bytes": 51743,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:14:21.363388+00:00"
+    },
+    {
+      "raw_path": "sec-eps-USB-concept.raw.json",
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000036104/us-gaap/EarningsPerShareDiluted.json",
+      "source_sha256": "562214f55ce0ec284e2d94246314b6a35b853f0d8fe75e520c6bf003e028ede1",
+      "bytes": 32908,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:14:25.378190+00:00"
+    },
+    {
+      "raw_path": "sec-eps-WFC-concept.raw.json",
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000072971/us-gaap/EarningsPerShareDiluted.json",
+      "source_sha256": "1e20e27e2c96f370b20dabf8d8cc6e1af5ec2904899c9b627fbe47866b92eaa6",
+      "bytes": 33302,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:14:19.866041+00:00"
+    },
+    {
+      "raw_path": "sec-submissions-BBY.raw.json",
+      "url": "https://data.sec.gov/submissions/CIK0000764478.json",
+      "source_sha256": "b3e56d79c1462e4bd1848ee8716887ffbbd37b47ba8938d7a093988ceffab33a",
+      "bytes": 146495,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:17:27.003649+00:00"
+    },
+    {
+      "raw_path": "sec-submissions-M.raw.json",
+      "url": "https://data.sec.gov/submissions/CIK0000794367.json",
+      "source_sha256": "deb5f449a39b1010a9479252f2e4914abc1ec2a7a91d96faab670192ecc6de63",
+      "bytes": 163571,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:17:26.966457+00:00"
+    },
+    {
+      "raw_path": "sec-submissions-ODFL.raw.json",
+      "url": "https://data.sec.gov/submissions/CIK0000878927.json",
+      "source_sha256": "90c51efb21b8e7e464d132dea2492c25c1e4c01b6c024a2ac7c2807540442ffa",
+      "bytes": 154361,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:17:28.621797+00:00"
+    },
+    {
+      "raw_path": "sec-submissions-WBA.raw.json",
+      "url": "https://data.sec.gov/submissions/CIK0001618921.json",
+      "source_sha256": "6c8d6ee0a1c37dc7e7a94b4c6b3540c0d2a80cbe3bd37f36588142bf6a5fd54b",
+      "bytes": 163138,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:17:28.630478+00:00"
+    },
+    {
+      "raw_path": "yahoo-AAPL-20240201-20240202.raw.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "source_sha256": "32ef6a4d56f606cbb1ff076161071e90028f03f5dc8a445133887e0a2a73233d",
+      "bytes": 1399,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:08:41.954470+00:00"
+    },
+    {
+      "raw_path": "yahoo-AMZN-20240201-20240202.raw.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "source_sha256": "1bbc2f7451ba73c1e84a21344d94eb2bf24d2b2529541dae1b93bc55bd8dcf60",
+      "bytes": 1408,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:08:43.288284+00:00"
+    },
+    {
+      "raw_path": "yahoo-META-20240201-20240202.raw.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/META?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "source_sha256": "c6277669914f4c4cadaabc208632d44ae051f0e8dec13ddc7d8efb89f56946a0",
+      "bytes": 1413,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:08:44.258322+00:00"
+    },
+    {
+      "raw_path": "yahoo-SPY-20240201-20240202.raw.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "source_sha256": "f5b806d21349f916e114273a5740c5e5c222043e656e73f2977a48534f62961d",
+      "bytes": 1448,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:08:45.392493+00:00"
+    }
+  ],
+  "primary_documents": [
+    {
+      "url": "https://www.apple.com/newsroom/2024/05/apple-reports-second-quarter-results/",
+      "title": "Apple reports second quarter results",
+      "published_at": "2024-05-02",
+      "locator": "正文首段：FY2024 Q2、财季截至 2024-03-30、diluted EPS 1.53；不要用 FY2024 Q1 的 2.18。",
+      "retrieved_at": "2026-10-07T08:16:08.487442+00:00",
+      "source_sha256": "c3194d348111955ba003f2bc9769d440cad106a88c31a5bced5415d205c0654d",
+      "bytes": 143505,
+      "http_status": 200,
+      "raw_saved": false,
+      "storage_note": "仅存 URL、下载 bytes hash、定位与独立事实摘录；未保存公告/财报全文。"
+    },
+    {
+      "url": "https://www.amd.com/en/newsroom/press-releases/2023-8-1-amd-reports-second-quarter-2023-financial-results.html",
+      "title": "AMD Reports Second Quarter 2023 Financial Results",
+      "published_at": "2023-08-01",
+      "locator": "GAAP Quarterly Financial Results 表，Q2 2023 / Q2 2022，Diluted earnings per share：0.02 / 0.27；non-GAAP 0.58 不适用。",
+      "retrieved_at": "2026-10-07T08:16:21.228859+00:00",
+      "source_sha256": null,
+      "error": "Remote end closed connection without response",
+      "raw_saved": false,
+      "storage_note": "web 已阅读原文，标准库抓取失败；不伪造 hash。"
+    },
+    {
+      "url": "https://www.amgen.com/newsroom/press-releases/2023/08/amgen-reports-second-quarter-financial-results",
+      "title": "AMGEN REPORTS SECOND QUARTER FINANCIAL RESULTS",
+      "published_at": "2023-08-03",
+      "locator": "发布时间 2023-08-03；GAAP EPS 首段及 GAAP/Non-GAAP reconciliation，Three Months Ended June 30：2.57 / 2.45；六个月 7.86 不适用。",
+      "retrieved_at": "2026-10-07T08:16:10.563797+00:00",
+      "source_sha256": "8ca813159e53968b635e6d98d614c1582aa7ecb83f587e57c6add6c84441ffec",
+      "bytes": 943779,
+      "http_status": 200,
+      "raw_saved": false,
+      "storage_note": "仅存 URL、下载 bytes hash、定位与独立事实摘录；未保存公告/财报全文。"
+    },
+    {
+      "url": "https://investors.dow.com/en/news/news-details/2023/Dow-reports-second-quarter-2023-results/default.aspx",
+      "title": "Dow reports second quarter 2023 results",
+      "published_at": "2023-07-25",
+      "locator": "Consolidated Statements of Income，Three Months Ended June 30 2023/2022，Earnings per common share — diluted：0.68 / 2.26；operating EPS 0.75 不适用。",
+      "retrieved_at": "2026-10-07T08:16:11.065013+00:00",
+      "source_sha256": "58e00e36b5abf14343c0718a099150b7bad4c2790dfb91936d22d5c36d7454c7",
+      "bytes": 379434,
+      "http_status": 200,
+      "raw_saved": false,
+      "storage_note": "仅存 URL、下载 bytes hash、定位与独立事实摘录；未保存公告/财报全文。"
+    },
+    {
+      "url": "https://www.honeywell.com/us/en/news/press-releases/2023/07/honeywell-delivers-strong-second-quarter-results-and-raises-full-year-sales-segment-margin-and-adjusted-eps-guidance",
+      "title": "Honeywell Delivers Strong Second Quarter Results And Raises Full Year Sales, Segment Margin, And Adjusted EPS Guidance",
+      "published_at": "2023-07-27",
+      "locator": "Summary Financial Results：GAAP Earnings Per Share 2.22 / 1.84；adjusted EPS 2.23 / 2.10 不适用。Diluted 属性另由 SEC 原始季度 XBRL 核对。",
+      "retrieved_at": "2026-10-07T08:16:12.043253+00:00",
+      "source_sha256": "50cb83ead0383f584fdba647e604f1fbd019c934dc995bb969ecffdbb56ffb45",
+      "bytes": 148918,
+      "http_status": 200,
+      "raw_saved": false,
+      "storage_note": "仅存 URL、下载 bytes hash、定位与独立事实摘录；未保存公告/财报全文。"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/51143/000005114323000021/ibm-20230630.htm",
+      "title": "IBM Form 10-Q, quarter ended June 30, 2023",
+      "published_at": "2023-07-25",
+      "locator": "Note 7 — Earnings Per Share of Common Stock，第 19 页；For the three months ended June 30，Assuming dilution — Total：2023 1.72 / 2022 1.53；2022 continuing operations 1.61 不能替代题面基准。",
+      "retrieved_at": "2026-10-07T08:16:13.351518+00:00",
+      "source_sha256": "79f82c9b45d77ad0fc25a170c2317b11ca9d72f4ad99dbaff20b6d5f0dfe1424",
+      "bytes": 3956592,
+      "http_status": 200,
+      "raw_saved": false,
+      "storage_note": "仅存 URL、下载 bytes hash、定位与独立事实摘录；未保存公告/财报全文。"
+    },
+    {
+      "url": "https://ir.thermofisher.com/investors/news-events/news/news-details/2023/Thermo-Fisher-Scientific-Reports-Second-Quarter-2023-Results/",
+      "title": "Thermo Fisher Scientific Reports Second Quarter 2023 Results",
+      "published_at": "2023-07-26",
+      "locator": "GAAP Earnings Results 和 Condensed Consolidated Statement of Income：Diluted EPS 3.51 / 4.22，季度实际截至 2023-07-01；adjusted 5.15 不适用。",
+      "retrieved_at": "2026-10-07T08:16:13.796137+00:00",
+      "source_sha256": "57ce4a1a4cea5c1b31c9dd71aa3ab23399a6560df0543558eeaa325856dd2797",
+      "bytes": 544321,
+      "http_status": 200,
+      "raw_saved": false,
+      "storage_note": "仅存 URL、下载 bytes hash、定位与独立事实摘录；未保存公告/财报全文。"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/70858/000007085824000266/bac09302024ex992.htm",
+      "title": "Bank of America 3Q24 earnings presentation, Exhibit 99.2",
+      "published_at": "2024-10-15",
+      "locator": "第 2 页 / Summary Income Statement，3Q24 / 3Q23，Diluted earnings per share：0.81 / 0.90。",
+      "retrieved_at": "2026-10-07T08:16:14.746447+00:00",
+      "source_sha256": "ecb26b854c26dc3767642f64886b530afb4160b7e3ce36e258d2df759fd9b4cb",
+      "bytes": 78941,
+      "http_status": 200,
+      "raw_saved": false,
+      "storage_note": "仅存 URL、下载 bytes hash、定位与独立事实摘录；未保存公告/财报全文。"
+    },
+    {
+      "url": "https://www.citigroup.com/rcs/citigpa/storage/public/Earnings/Q32024/2024pr-qtr3rslt.pdf",
+      "title": "Citigroup Reports Third Quarter 2024 Results",
+      "published_at": "2024-10-15",
+      "locator": "PDF 第 1 页，2024-10-15，EPS 1.51 对比 3Q23 1.63；Diluted 属性由 SEC 原始季度 XBRL 核对。",
+      "retrieved_at": "2026-10-07T08:16:15.437100+00:00",
+      "source_sha256": "c5baaedc2403d8b24db6b0bdcc85e259a1295d881bf5dfbb5d72dadb3a5f4a18",
+      "bytes": 250605,
+      "http_status": 200,
+      "raw_saved": false,
+      "storage_note": "仅存 URL、下载 bytes hash、定位与独立事实摘录；未保存公告/财报全文。"
+    },
+    {
+      "url": "https://www.goldmansachs.com/pressroom/press-releases/2024/2024-10-15-q3-results",
+      "title": "Goldman Sachs Reports 2024 Third Quarter Earnings Results",
+      "published_at": "2024-10-15",
+      "locator": "公告首段，quarter ended September 30, 2024，diluted EPS 8.40；同期 earnings PDF 第 1 页对照 3Q23 5.47。",
+      "retrieved_at": "2026-10-07T08:16:15.660340+00:00",
+      "source_sha256": null,
+      "error": "HTTP Error 403: Forbidden",
+      "raw_saved": false,
+      "storage_note": "web 已阅读原文，标准库抓取失败；不伪造 hash。"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961724000555/a3q24erfexhibit991narrative.htm",
+      "title": "JPMorgan Chase Reports Third-Quarter 2024 Financial Results",
+      "published_at": "2024-10-11",
+      "locator": "2024-10-11 Exhibit 99.1，NET INCOME OF $12.9 BILLION / $4.37 PER SHARE；Diluted 属性与 SEC XBRL 以及 earnings supplement Diluted EPS 行核对。",
+      "retrieved_at": "2026-10-07T08:16:20.441252+00:00",
+      "source_sha256": null,
+      "error": "<urlopen error [Errno 54] Connection reset by peer>",
+      "raw_saved": false,
+      "storage_note": "web 已阅读原文，标准库抓取失败；不伪造 hash。"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/895421/000089542124000484/a3q24msearningsrelease.htm",
+      "title": "Morgan Stanley Reports Third Quarter 2024",
+      "published_at": "2024-10-16",
+      "locator": "首段及 Financial Summary：diluted EPS 1.88 对比 1.38，Three Months Ended September 30 2024/2023。",
+      "retrieved_at": "2026-10-07T08:16:17.314861+00:00",
+      "source_sha256": "54b5c012d4b7732d83413abc17d2dfe9c65ef0caa96dd459b4ff7637ec55fcb0",
+      "bytes": 341418,
+      "http_status": 200,
+      "raw_saved": false,
+      "storage_note": "仅存 URL、下载 bytes hash、定位与独立事实摘录；未保存公告/财报全文。"
+    },
+    {
+      "url": "https://investor.pnc.com/news-events/financial-press-releases/detail/639/pnc-reports-third-quarter-2024-net-income-of-1-5-billion-3-49-diluted-eps",
+      "title": "PNC Reports Third Quarter 2024 Net Income of $1.5 Billion, $3.49 Diluted EPS",
+      "published_at": "2024-10-15",
+      "locator": "Financial Results Summary，列 3Q24 / 2Q24 / 3Q23，Diluted earnings per common share：3.49 / 3.39 / 3.60；基准使用 3Q23。",
+      "retrieved_at": "2026-10-07T08:16:17.967633+00:00",
+      "source_sha256": null,
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)>",
+      "raw_saved": false,
+      "storage_note": "web 已阅读原文，标准库抓取失败；不伪造 hash。"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/36104/000003610424000062/a3q24earningsrelease.htm",
+      "title": "U.S. Bancorp Reports Third Quarter 2024 Results",
+      "published_at": "2024-10-16",
+      "locator": "GAAP diluted EPS 行，3Q24 1.03 / 3Q23 0.91；剔除 notable items 后的 3Q23 1.05 不适用。",
+      "retrieved_at": "2026-10-07T08:16:19.967930+00:00",
+      "source_sha256": "791faf32080428b43f69f315aa66446b9036c3d36089a008020278e7ae146ae1",
+      "bytes": 1156117,
+      "http_status": 200,
+      "raw_saved": false,
+      "storage_note": "仅存 URL、下载 bytes hash、定位与独立事实摘录；未保存公告/财报全文。"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/72971/000007297124000218/wfc3qer10-11x24ex991xrelea.htm",
+      "title": "Wells Fargo Reports Third Quarter 2024 Financial Results",
+      "published_at": "2024-10-11",
+      "locator": "Financial Results，Quarter ended Sept 30 2024/2023，Diluted earnings per common share：1.42 / 1.48。",
+      "retrieved_at": "2026-10-07T08:16:21.531628+00:00",
+      "source_sha256": "501caa05498b1e8d3132cbf9c64e411640823c6605fab4b1375eb9bf1c6b1eb8",
+      "bytes": 395713,
+      "http_status": 200,
+      "raw_saved": false,
+      "storage_note": "仅存 URL、下载 bytes hash、定位与独立事实摘录；未保存公告/财报全文。"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/886158/000119312523111754/d465247dex991.htm",
+      "title": "Bed Bath & Beyond Inc. Files Voluntary Chapter 11 Petitions",
+      "published_at": "2023-04-23",
+      "locator": "Exhibit 99.1 公告首段：2023-04-23，公司与部分子公司在美国新泽西州破产法院自愿申请 Chapter 11。",
+      "retrieved_at": "2026-10-07T08:16:21.128595+00:00",
+      "source_sha256": null,
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)>",
+      "raw_saved": false,
+      "storage_note": "web 已阅读原文，标准库抓取失败；不伪造 hash。"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/764478/000076447824000010/bby-20240203x10k.htm",
+      "title": "Best Buy Form 10-K, fiscal year ended February 3, 2024",
+      "published_at": "2024-03-15",
+      "locator": "MD&A — Sources of Liquidity / debt facility and credit ratings：2024-02-03 所有 financial covenants 合规；截至 2024-03-13 信用评级与上一年相同，S&P BBB+/Stable、Moody's A3/Stable；Note 8 — Debt 列示 2028/2030 notes。",
+      "retrieved_at": "2026-10-07T08:16:23.369967+00:00",
+      "source_sha256": "81a416bf4daefb5ed079f35facbdb31a1564530a5b29eb300e5e9633cf985999",
+      "bytes": 7128268,
+      "http_status": 200,
+      "raw_saved": false,
+      "storage_note": "仅存 URL、下载 bytes hash、定位与独立事实摘录；未保存公告/财报全文。"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/764478/000076447824000022/bby-20240504x10q.htm",
+      "title": "Best Buy Form 10-Q, quarter ended May 4, 2024",
+      "published_at": "2024-06-07",
+      "locator": "Note 6 — Debt：截至 2024-05-04、2024-02-03、2023-04-29 五年循环授信未提款；2028/2030 notes 500/650 百万美元本金持续列示；该季度覆盖信用窗口尾部 2024-02-04 至 2024-03-31。",
+      "retrieved_at": "2026-10-07T08:16:23.352033+00:00",
+      "source_sha256": "80a325083142a1ca35c89bd9447f3a112436ec44022523081699ec0d89f209e5",
+      "bytes": 3596656,
+      "http_status": 200,
+      "raw_saved": false,
+      "storage_note": "仅存 URL、下载 bytes hash、定位与独立事实摘录；未保存公告/财报全文。"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/794367/000162828024012734/m-20240203.htm",
+      "title": "Macy's Form 10-K, fiscal year ended February 3, 2024",
+      "published_at": "2024-03-22",
+      "locator": "Note 6 — Financing Activities，第 58 页 / 2023 Debt Financing Activities：除 ABL 借款外，FY2023 未发生其他重大债务融资活动；截至 2024-02-03 senior notes/debentures 继续列示。 第 29 页 Credit rating and outlook：截至 2024-02-03 Moody's Ba1、S&P BB+、Fitch BBB-，三者均 Stable；现金流补充信息列 FY2023 实付利息 157 百万美元。",
+      "retrieved_at": "2026-10-07T08:16:24.305767+00:00",
+      "source_sha256": "3448473d7eb3ad9a8f3720f563c31ce83147552c06ac2d6891b1e8af7fe55118",
+      "bytes": 2198731,
+      "http_status": 200,
+      "raw_saved": false,
+      "storage_note": "仅存 URL、下载 bytes hash、定位与独立事实摘录；未保存公告/财报全文。"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/794367/000162828024025853/m-20240504.htm",
+      "title": "Macy's Form 10-Q, quarter ended May 4, 2024",
+      "published_at": "2024-05-30",
+      "locator": "Note 4 — Financing Activities：截至 2024-05-04 的 13 周，除资本租赁外未借入或偿还债务；Debt Transactions：senior unsecured notes/debentures 本金在 2024-02-03 和 2024-05-04 均为 3,007 百万美元。季度涵盖 2024-03-31。",
+      "retrieved_at": "2026-10-07T08:16:25.315258+00:00",
+      "source_sha256": "84ed4a50d8a740f47aaf7dfec1449737427ea0cbb3662bb2c2f64131601c801d",
+      "bytes": 689144,
+      "http_status": 200,
+      "raw_saved": false,
+      "storage_note": "仅存 URL、下载 bytes hash、定位与独立事实摘录；未保存公告/财报全文。"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/878927/000095017024020176/odfl-20231231.htm",
+      "title": "Old Dominion Freight Line Form 10-K, year ended December 31, 2023",
+      "published_at": "2024-02-26",
+      "locator": "MD&A — General Debt Provisions：截至 2023-12-31 期间所有债务 covenants 合规；Long-Term Debt：2023-05-04 按期偿还 20 百万美元 Series B notes 本金，余 80 百万美元。 现金流补充表列 FY2023 实付利息 3.484 百万美元，债务本金付款 20 百万美元。",
+      "retrieved_at": "2026-10-07T08:16:25.763329+00:00",
+      "source_sha256": "831582b00692b3b958b5ac666e10f88a35784322f37c0db7f1581b800c20e31b",
+      "bytes": 1927010,
+      "http_status": 200,
+      "raw_saved": false,
+      "storage_note": "仅存 URL、下载 bytes hash、定位与独立事实摘录；未保存公告/财报全文。"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/878927/000095017024054284/odfl-20240331.htm",
+      "title": "Old Dominion Freight Line Form 10-Q, quarter ended March 31, 2024",
+      "published_at": "2024-05-07",
+      "locator": "MD&A — General Debt Provisions，第 14 页：截至 2024-03-31 期间所有 outstanding debt instruments covenants 合规；Series B notes 余 80 百万美元，循环授信未提款。该季期末恰为完整窗口终点。",
+      "retrieved_at": "2026-10-07T08:16:26.282589+00:00",
+      "source_sha256": "57860825d844e7da1a249edd42483e8c9af8a19eecd2bf506849115b2a27ae2d",
+      "bytes": 914469,
+      "http_status": 200,
+      "raw_saved": false,
+      "storage_note": "仅存 URL、下载 bytes hash、定位与独立事实摘录；未保存公告/财报全文。"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/84129/000110465923109413/tm2328535d1_8ka.htm",
+      "title": "Rite Aid Corporation Form 8-K/A, report date October 15, 2023",
+      "published_at": "2023-10-16",
+      "locator": "Item 1.03 Bankruptcy or Receivership：2023-10-15 公司与指定子公司向美国新泽西州破产法院提交 Chapter 11 petitions。该 8-K/A 于 10-16 提交，修订附件不改变事件日期。",
+      "retrieved_at": "2026-10-07T08:16:26.675991+00:00",
+      "source_sha256": "822212fd09ac396b718f646ea7e95d5314129f499f238652f8ddf54b5255d387",
+      "bytes": 91807,
+      "http_status": 200,
+      "raw_saved": false,
+      "storage_note": "仅存 URL、下载 bytes hash、定位与独立事实摘录；未保存公告/财报全文。"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1618921/000161892123000062/wba-20230831.htm",
+      "title": "Walgreens Boots Alliance Form 10-K, year ended August 31, 2023",
+      "published_at": "2023-10-12",
+      "locator": "Note 8 — Debt / Debt covenants、MD&A Liquidity：截至 2023-08-31 所有 applicable financial covenants 合规，并列示 FY2023 借款、偿债、授信；完整年度覆盖信用窗口前半段。",
+      "retrieved_at": "2026-10-07T08:16:27.974670+00:00",
+      "source_sha256": "96584a1ebad86e8be2344148751e221ac88a9a03786e81305035a917e6507057",
+      "bytes": 3831256,
+      "http_status": 200,
+      "raw_saved": false,
+      "storage_note": "仅存 URL、下载 bytes hash、定位与独立事实摘录；未保存公告/财报全文。"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1618921/000161892124000035/wba-20240229.htm",
+      "title": "Walgreens Boots Alliance Form 10-Q, quarter ended February 29, 2024",
+      "published_at": "2024-03-28",
+      "locator": "Note 7 — Debt / Debt covenants：截至 2024-02-29 财务 covenants 合规；Credit ratings 披露 October 2023 S&P 降至 BBB-、December 2023 Moody's 降至 Ba2。评级下调本身不属于题面信用事件。 截至 2024-02-29 六个月实付利息 301 百万美元。",
+      "retrieved_at": "2026-10-07T08:16:28.418797+00:00",
+      "source_sha256": "728f6f4cd503f08e016243b52c595ae9814390550d8b21f13fd3008098a1db6b",
+      "bytes": 2550151,
+      "http_status": 200,
+      "raw_saved": false,
+      "storage_note": "仅存 URL、下载 bytes hash、定位与独立事实摘录；未保存公告/财报全文。"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1618921/000161892124000065/wba-20240531.htm",
+      "title": "Walgreens Boots Alliance Form 10-Q, quarter ended May 31, 2024",
+      "published_at": "2024-06-27",
+      "locator": "Note 7 — Debt / Debt covenants：截至 2024-05-31 所有 applicable financial covenants 合规；Interest：截至该日九个月实际支付利息 460 百万美元；Credit ratings 为 S&P BBB-/Negative、Moody's Ba2/Stable。该季覆盖 2024-03-31 窗口尾部。",
+      "retrieved_at": "2026-10-07T08:16:29.010993+00:00",
+      "source_sha256": "4e1cc7117cee958afb81370c5026027f6b76916725dd2fd9ba92d9b64f634471",
+      "bytes": 2573306,
+      "http_status": 200,
+      "raw_saved": false,
+      "storage_note": "仅存 URL、下载 bytes hash、定位与独立事实摘录；未保存公告/财报全文。"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1813756/000119312523271902/d522028d8k.htm",
+      "title": "WeWork Inc. Form 8-K, report date November 6, 2023",
+      "published_at": "2023-11-07",
+      "locator": "Item 1.03 Bankruptcy or Receivership：2023-11-06 公司与若干直接/间接子公司在美国新泽西州破产法院申请 Chapter 11。",
+      "retrieved_at": "2026-10-07T08:16:29.335580+00:00",
+      "source_sha256": "3e12e2ef58276847376a12294e44bfbb4695f506b466b388bcfb0433b8323dce",
+      "bytes": 67251,
+      "http_status": 200,
+      "raw_saved": false,
+      "storage_note": "仅存 URL、下载 bytes hash、定位与独立事实摘录；未保存公告/财报全文。"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/716006/000119312523204370/d483482d8k.htm",
+      "title": "Yellow Corporation Form 8-K, report date August 6, 2023",
+      "published_at": "2023-08-07",
+      "locator": "Item 1.03 Bankruptcy or Receivership：2023-08-06 公司与若干子公司在美国特拉华州破产法院申请 Chapter 11。Item 2.04 另披露由破产导致的债务违约/加速。",
+      "retrieved_at": "2026-10-07T08:16:29.585676+00:00",
+      "source_sha256": "ba3bcd37b07b8653d4d6570daf63d1901bdd6b4ab2b92c3e244f3f691f455885",
+      "bytes": 46443,
+      "http_status": 200,
+      "raw_saved": false,
+      "storage_note": "仅存 URL、下载 bytes hash、定位与独立事实摘录；未保存公告/财报全文。"
+    },
+    {
+      "url": "https://www.apple.com/newsroom/2024/02/apple-reports-first-quarter-results/",
+      "title": "Apple reports first quarter results",
+      "published_at": "2024-02-01",
+      "locator": "股息段：现金股息 0.24，record date 2024-02-12，payable 2024-02-15；公告日即 2 月 1 日不表示当天除息。",
+      "retrieved_at": "2026-10-07T08:16:30.596934+00:00",
+      "source_sha256": "71d88b72c0b016071497fd073597e4553b8188667a3a7902254a1550ddf17837",
+      "bytes": 143273,
+      "http_status": 200,
+      "raw_saved": false,
+      "storage_note": "仅存 URL、下载 bytes hash、定位与独立事实摘录；未保存公告/财报全文。"
+    },
+    {
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2024/Meta-Reports-Fourth-Quarter-and-Full-Year-2023-Results-Initiates-Quarterly-Dividend/default.aspx",
+      "title": "Meta Reports Fourth Quarter and Full Year 2023 Results; Initiates Quarterly Dividend",
+      "published_at": "2024-02-01",
+      "locator": "Meta Initiates Quarterly Dividend：首次季度股息 0.50，record date 2024-02-22，payable 2024-03-26；宣告股息不表示 2 月 2 日除息。",
+      "retrieved_at": "2026-10-07T08:16:30.993787+00:00",
+      "source_sha256": "09e67907b34835315208b00db1635b1c46a2d62d89a33a9f98d663e794765bf5",
+      "bytes": 276384,
+      "http_status": 200,
+      "raw_saved": false,
+      "storage_note": "仅存 URL、下载 bytes hash、定位与独立事实摘录；未保存公告/财报全文。"
+    }
+  ],
+  "reference_files": [
+    {
+      "path": "research/earnings-credit.json",
+      "sha256": "1d335d6051ff86359f646912dd12829022b975afcc6193b5264061e346c2158c"
+    },
+    {
+      "path": "research/earnings-credit.md",
+      "sha256": "ba6e7b8c4e4c6b60ac2415355528d6ca310d62722ff7bfb80b2ceac57a15fb69"
+    }
+  ],
+  "additional_filtered_captures": [
+    {
+      "path": "sec-eps-AAPL-filtered.json",
+      "local_artifact_sha256": "75a870159d1beb613c9d7faa54a3beca03c1787fdb1cc2bf16460e1650761bfa",
+      "role": "先前检索的最小观察值/失败响应；其 source hash 若未留 raw，不能通过此过滤文件验证原始 blob。"
+    },
+    {
+      "path": "sec-eps-AMD-filtered.json",
+      "local_artifact_sha256": "e1fcdc50314f7165face8a92d87778b886137b141ddb6fc1635ccd64a9614149",
+      "role": "先前检索的最小观察值/失败响应；其 source hash 若未留 raw，不能通过此过滤文件验证原始 blob。"
+    },
+    {
+      "path": "sec-eps-AMGN-filtered.json",
+      "local_artifact_sha256": "9ec846090802f6f6839714bddeff2b0a2c1e0e8bea2200f8c330027b680c5426",
+      "role": "先前检索的最小观察值/失败响应；其 source hash 若未留 raw，不能通过此过滤文件验证原始 blob。"
+    },
+    {
+      "path": "sec-eps-BAC-filtered.json",
+      "local_artifact_sha256": "aa9293c0f390c8075b13ae5062ffffeb556460a096c22a0962fa1b2c342057ef",
+      "role": "先前检索的最小观察值/失败响应；其 source hash 若未留 raw，不能通过此过滤文件验证原始 blob。"
+    },
+    {
+      "path": "sec-eps-C-filtered.json",
+      "local_artifact_sha256": "a16cce527ec278b0b2e2e04fce5b0475bdd0fcc8c5f955b0660b6e37ef686670",
+      "role": "先前检索的最小观察值/失败响应；其 source hash 若未留 raw，不能通过此过滤文件验证原始 blob。"
+    },
+    {
+      "path": "sec-eps-DOW-filtered.json",
+      "local_artifact_sha256": "3c43ab2a53dc8b46fe3455fd9d5e94c216f54da40989831b6c346eeee4c900e5",
+      "role": "先前检索的最小观察值/失败响应；其 source hash 若未留 raw，不能通过此过滤文件验证原始 blob。"
+    },
+    {
+      "path": "sec-eps-GS-filtered.json",
+      "local_artifact_sha256": "0f91f8e60ed5e374d471bd8d884dea7a9de15638f63de3bd1c42b51a39b92c67",
+      "role": "先前检索的最小观察值/失败响应；其 source hash 若未留 raw，不能通过此过滤文件验证原始 blob。"
+    },
+    {
+      "path": "sec-eps-HON-filtered.json",
+      "local_artifact_sha256": "bf642e893bf2bb732ef43fd52978bf3f41b5f42a5dfbeae976ea556fd3f2b096",
+      "role": "先前检索的最小观察值/失败响应；其 source hash 若未留 raw，不能通过此过滤文件验证原始 blob。"
+    },
+    {
+      "path": "sec-eps-IBM-filtered.json",
+      "local_artifact_sha256": "77e539987cdd3b913658b9d8ddaea8f7ad5be752107ccb065ef88379fbf62b47",
+      "role": "先前检索的最小观察值/失败响应；其 source hash 若未留 raw，不能通过此过滤文件验证原始 blob。"
+    },
+    {
+      "path": "sec-eps-JPM-filtered.json",
+      "local_artifact_sha256": "392e0d7c0f25764f0b2161c565b8f289762744b212133a77428ac26aaa8a78e8",
+      "role": "先前检索的最小观察值/失败响应；其 source hash 若未留 raw，不能通过此过滤文件验证原始 blob。"
+    },
+    {
+      "path": "sec-eps-MS-filtered.json",
+      "local_artifact_sha256": "9423f2e10047703edf198aa20f8b35060be7ebaec8a5ec040a68be20a1113a44",
+      "role": "先前检索的最小观察值/失败响应；其 source hash 若未留 raw，不能通过此过滤文件验证原始 blob。"
+    },
+    {
+      "path": "sec-eps-PNC-filtered.json",
+      "local_artifact_sha256": "e2d3239bd9749d65bc90e6fbc6c8513593c19bb2ad392972a3ab46d6f2cca53b",
+      "role": "先前检索的最小观察值/失败响应；其 source hash 若未留 raw，不能通过此过滤文件验证原始 blob。"
+    },
+    {
+      "path": "sec-eps-TMO-filtered.json",
+      "local_artifact_sha256": "9d72b634427cbf914c41596f874f829857bed4cb4d1be567d3f4e9946a128f4a",
+      "role": "先前检索的最小观察值/失败响应；其 source hash 若未留 raw，不能通过此过滤文件验证原始 blob。"
+    },
+    {
+      "path": "sec-eps-USB-filtered.json",
+      "local_artifact_sha256": "29faa9c970b5b99c224895a679cd8b3d58d3b0c998bf154edc2ff5c24836f4f8",
+      "role": "先前检索的最小观察值/失败响应；其 source hash 若未留 raw，不能通过此过滤文件验证原始 blob。"
+    },
+    {
+      "path": "sec-eps-WFC-filtered.json",
+      "local_artifact_sha256": "fbac55e912e6403d96ca0992e0e551954141377501f0377ccfcd64d41f70a7f6",
+      "role": "先前检索的最小观察值/失败响应；其 source hash 若未留 raw，不能通过此过滤文件验证原始 blob。"
+    },
+    {
+      "path": "sec-submissions-BBY-filtered.json",
+      "local_artifact_sha256": "4b085a0e7f773435151268b4e4b6b862773321142052aa2817108f1c351cf8e7",
+      "role": "先前检索的最小观察值/失败响应；其 source hash 若未留 raw，不能通过此过滤文件验证原始 blob。"
+    },
+    {
+      "path": "sec-submissions-M-filtered.json",
+      "local_artifact_sha256": "c39adc986bedbb1bdbc8e813157c60833106ac7b286363b62142242d9508d37f",
+      "role": "先前检索的最小观察值/失败响应；其 source hash 若未留 raw，不能通过此过滤文件验证原始 blob。"
+    },
+    {
+      "path": "sec-submissions-ODFL-filtered.json",
+      "local_artifact_sha256": "1037a82f096e465bbc1e24687b1ee54753d76bf18122b9836fd4772521795ec8",
+      "role": "先前检索的最小观察值/失败响应；其 source hash 若未留 raw，不能通过此过滤文件验证原始 blob。"
+    },
+    {
+      "path": "sec-submissions-WBA-filtered.json",
+      "local_artifact_sha256": "037981a322d45f3e2cc2fc71844513027f55dcbe40a1883c28ee51e51b322220",
+      "role": "先前检索的最小观察值/失败响应；其 source hash 若未留 raw，不能通过此过滤文件验证原始 blob。"
+    },
+    {
+      "path": "nasdaq-AAPL-20240201-20240202.json",
+      "local_artifact_sha256": "0d9a6e7aff0c9174e18f07d14e87c10c969378703268eba986c7c9fef02d8aab",
+      "role": "Nasdaq 返回 HTTP 200 / totalRecords=0 的检索失败证据，不构成价格。"
+    },
+    {
+      "path": "nasdaq-AMZN-20240201-20240202.json",
+      "local_artifact_sha256": "bcdd1e2e6cbd372e791683fea5d34d143827195637293aee0668f653228162da",
+      "role": "Nasdaq 返回 HTTP 200 / totalRecords=0 的检索失败证据，不构成价格。"
+    },
+    {
+      "path": "nasdaq-META-20240201-20240202.json",
+      "local_artifact_sha256": "9f2caf4fc743fa013825b09d9d2127f510f8556d0222e1e263ad75199731d4d1",
+      "role": "Nasdaq 返回 HTTP 200 / totalRecords=0 的检索失败证据，不构成价格。"
+    },
+    {
+      "path": "nasdaq-SPY-20240201-20240202.json",
+      "local_artifact_sha256": "80fd866a2b2002cb44045a640921b59910b742b3b7bc243ea69550fede897c04",
+      "role": "Nasdaq 返回 HTTP 200 / totalRecords=0 的检索失败证据，不构成价格。"
+    }
+  ],
+  "source_limits": [
+    "当前公开 vendor 历史版本无法证实首次发布时点。",
+    "信用 no_event 事件核查未穷尽，均 provisional。",
+    "正文 document hash 未留同一 raw，需重新请求源 URL 校验；hash 不替代数值原文定位。"
+  ]
+}

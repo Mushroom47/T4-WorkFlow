@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.1.0",
+  "task_id": "t4-eps-yoy-2023Q2-mixed",
+  "entity_id": "AMGN",
+  "sources": [
+    {
+      "path": "scheduled-release.raw.html",
+      "url": "https://www.amgen.com/newsroom/press-releases/2023/07/amgen-announces-webcast-of-2023-second-quarter-financial-results",
+      "published_at": "2023-07-31",
+      "retrieved_at": "2026-10-07T08:44:28.664960+00:00",
+      "byte_form": "HTTP公开响应原始字节",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://www.amgen.com/newsroom/press-releases/2023/07/amgen-announces-webcast-of-2023-second-quarter-financial-results",
+      "bytes": 153274,
+      "sha256": "4c0eff6170456273256897f9409478929c8ad54cea0a59ea105a2d6c773ba114",
+      "locator": "正文首段；发布时间July 31, 2023；报告安排August 3, 2023，after the close。"
+    },
+    {
+      "path": "actual-release.raw.html",
+      "url": "https://www.amgen.com/newsroom/press-releases/2023/08/amgen-reports-second-quarter-financial-results",
+      "published_at": "2023-08-03",
+      "retrieved_at": "2026-10-07T08:44:28.665571+00:00",
+      "byte_form": "HTTP公开响应原始字节",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://www.amgen.com/newsroom/press-releases/2023/08/amgen-reports-second-quarter-financial-results",
+      "bytes": 943779,
+      "sha256": "8ca813159e53968b635e6d98d614c1582aa7ecb83f587e57c6add6c84441ffec",
+      "locator": "正文首段Aug. 3, 2023；GAAP EPS重点项目2.57/2.45。"
+    },
+    {
+      "path": "scheduled-release.raw.pdf",
+      "url": "https://investors.amgen.com/node/34291/pdf",
+      "published_at": "2023-07-31",
+      "retrieved_at": "2026-10-07T08:44:28.665805+00:00",
+      "byte_form": "HTTP公开响应原始字节",
+      "status": "unavailable",
+      "error": "The read operation timed out",
+      "http_status": null
+    },
+    {
+      "path": "sec-event.raw.html",
+      "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815423000049/amgn-20230803.htm",
+      "published_at": "2023-08-03",
+      "retrieved_at": "2026-10-07T08:44:28.665999+00:00",
+      "byte_form": "HTTP公开响应原始字节",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden",
+      "http_status": 403
+    }
+  ],
+  "checks": {
+    "scheduled_notice_is_July_31_2023": true,
+    "scheduled_report_after_task_resolution": true,
+    "actual_release_is_August_3_2023": true,
+    "actual_GAAP_EPS_2_57_from_2_45": true,
+    "task_expected_report_date_conflicts": true,
+    "reference_stays_provisional": true,
+    "release_after_resolution": true
+  },
+  "task_dates": {
+    "cutoff_date": "2023-07-14",
+    "resolution_date": "2023-08-02",
+    "expected_report_date": "2023-08-01"
+  },
+  "actual_release_date": "2023-08-03",
+  "recommended_reference_status": "provisional",
+  "official_evaluation": null,
+  "limitations": [
+    "当前issuer网页正文支持实际披露及预告日期；本次存档获取于2026-10-07，不是当年网页快照。",
+    "官方resolution如何映射实际延后的披露仍未知，未与私有outcome比较。",
+    "SEC事件正文HTTP403，PDF超时，不计入保存成功。"
+  ]
+}

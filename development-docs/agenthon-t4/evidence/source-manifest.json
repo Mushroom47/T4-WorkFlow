@@ -1,0 +1,318 @@
+{
+  "date": "2026-10-07",
+  "timezone": "Asia/Hong_Kong",
+  "purpose": "公开官方来源静态研究；未改原仓库或运行参赛Agent",
+  "repositories": [
+    {
+      "name": "track4-analysis-public",
+      "commit": "1c744e1d6725340643a533f436517d72b53ca0e1",
+      "research_checkout": "/tmp/agenthon-t4-research-20261007"
+    },
+    {
+      "name": "Agenthon2026-public",
+      "commit": "50fb2dc2b39c70f4cf81fcd269943782eddfaed0",
+      "tag": "v2.5.1",
+      "current_main": "bd01548e34d21fd660d88fd06157078fb25ece4e",
+      "current_tag": "v2.6.0",
+      "research_checkout": "/tmp/agenthon-toolkit-research-20261007"
+    }
+  ],
+  "files": [
+    {
+      "repository": "Agenthon2026-public",
+      "revision": "50fb2dc2b39c70f4cf81fcd269943782eddfaed0",
+      "path": "README.md",
+      "bytes": 7347,
+      "sha256": "79cc5106d7988a2b8c795b8e8e6798b2f2c6d312728351492d5f6780d7520709",
+      "url": "https://github.com/Agenthon-2026/Agenthon2026-public/blob/50fb2dc2b39c70f4cf81fcd269943782eddfaed0/README.md"
+    },
+    {
+      "repository": "Agenthon2026-public",
+      "revision": "50fb2dc2b39c70f4cf81fcd269943782eddfaed0",
+      "path": "common/pyproject.toml",
+      "bytes": 6845,
+      "sha256": "7ab8bec0370b58c404c280ba237e588b62b8e5df99be63fcfd55a153d8471164",
+      "url": "https://github.com/Agenthon-2026/Agenthon2026-public/blob/50fb2dc2b39c70f4cf81fcd269943782eddfaed0/common/pyproject.toml"
+    },
+    {
+      "repository": "Agenthon2026-public",
+      "revision": "50fb2dc2b39c70f4cf81fcd269943782eddfaed0",
+      "path": "common/qfbench2_common/contracts/artifact_tree.py",
+      "bytes": 23062,
+      "sha256": "f467d6f08802f743d8b267199fd762adb7b0ce0f26c7c7d9dedade7ded41b0d8",
+      "url": "https://github.com/Agenthon-2026/Agenthon2026-public/blob/50fb2dc2b39c70f4cf81fcd269943782eddfaed0/common/qfbench2_common/contracts/artifact_tree.py"
+    },
+    {
+      "repository": "Agenthon2026-public",
+      "revision": "50fb2dc2b39c70f4cf81fcd269943782eddfaed0",
+      "path": "common/qfbench2_common/contracts/descriptor.py",
+      "bytes": 11538,
+      "sha256": "43781fbd78794766da005e1845646853907d3691acae2ce86838191ee0b32d97",
+      "url": "https://github.com/Agenthon-2026/Agenthon2026-public/blob/50fb2dc2b39c70f4cf81fcd269943782eddfaed0/common/qfbench2_common/contracts/descriptor.py"
+    },
+    {
+      "repository": "Agenthon2026-public",
+      "revision": "50fb2dc2b39c70f4cf81fcd269943782eddfaed0",
+      "path": "common/qfbench2_common/contracts/result.py",
+      "bytes": 22758,
+      "sha256": "ab89a227ce369d80577fa1b880ae28b8417e152728b29521d0ffce0a4f0e465f",
+      "url": "https://github.com/Agenthon-2026/Agenthon2026-public/blob/50fb2dc2b39c70f4cf81fcd269943782eddfaed0/common/qfbench2_common/contracts/result.py"
+    },
+    {
+      "repository": "Agenthon2026-public",
+      "revision": "50fb2dc2b39c70f4cf81fcd269943782eddfaed0",
+      "path": "common/qfbench2_common/sanitize.py",
+      "bytes": 31159,
+      "sha256": "4ed949ea5a6f69e8214a47c6b38b0ebdd2e39e830b5699bde64f1e1b3609b09c",
+      "url": "https://github.com/Agenthon-2026/Agenthon2026-public/blob/50fb2dc2b39c70f4cf81fcd269943782eddfaed0/common/qfbench2_common/sanitize.py"
+    },
+    {
+      "repository": "Agenthon2026-public",
+      "revision": "50fb2dc2b39c70f4cf81fcd269943782eddfaed0",
+      "path": "common/qfbench2_common/schemas/analysis.schema.json",
+      "bytes": 6946,
+      "sha256": "8a997f21a929f09596db805430839b281548ad0babab29bd1f3daa8456d38049",
+      "url": "https://github.com/Agenthon-2026/Agenthon2026-public/blob/50fb2dc2b39c70f4cf81fcd269943782eddfaed0/common/qfbench2_common/schemas/analysis.schema.json"
+    },
+    {
+      "repository": "Agenthon2026-public",
+      "revision": "50fb2dc2b39c70f4cf81fcd269943782eddfaed0",
+      "path": "common/qfbench2_common/schemas/submission.schema.json",
+      "bytes": 3655,
+      "sha256": "66c97b08ee7b3262d3ecdf471e93fa1a4d2143dd72d173dec3eb0b7c77257904",
+      "url": "https://github.com/Agenthon-2026/Agenthon2026-public/blob/50fb2dc2b39c70f4cf81fcd269943782eddfaed0/common/qfbench2_common/schemas/submission.schema.json"
+    },
+    {
+      "repository": "Agenthon2026-public",
+      "revision": "50fb2dc2b39c70f4cf81fcd269943782eddfaed0",
+      "path": "common/qfbench2_common/scoring/faithfulness.py",
+      "bytes": 28041,
+      "sha256": "3e683dbb91c93f9dec50bcf19e7c43ec51cf30c80cdb0d9129c215d2fb768e5d",
+      "url": "https://github.com/Agenthon-2026/Agenthon2026-public/blob/50fb2dc2b39c70f4cf81fcd269943782eddfaed0/common/qfbench2_common/scoring/faithfulness.py"
+    },
+    {
+      "repository": "Agenthon2026-public",
+      "revision": "50fb2dc2b39c70f4cf81fcd269943782eddfaed0",
+      "path": "common/qfbench2_common/smoke.py",
+      "bytes": 9116,
+      "sha256": "71e5298b0c7d11b12c9db638bd8201902161db711840875f462027903119076e",
+      "url": "https://github.com/Agenthon-2026/Agenthon2026-public/blob/50fb2dc2b39c70f4cf81fcd269943782eddfaed0/common/qfbench2_common/smoke.py"
+    },
+    {
+      "repository": "Agenthon2026-public",
+      "revision": "50fb2dc2b39c70f4cf81fcd269943782eddfaed0",
+      "path": "common/qfbench2_common/team_claim.py",
+      "bytes": 13899,
+      "sha256": "37789a05aefda1e68be1c0859f1b10750962c3c4e9f0a898a876a12088bc3510",
+      "url": "https://github.com/Agenthon-2026/Agenthon2026-public/blob/50fb2dc2b39c70f4cf81fcd269943782eddfaed0/common/qfbench2_common/team_claim.py"
+    },
+    {
+      "repository": "Agenthon2026-public",
+      "revision": "50fb2dc2b39c70f4cf81fcd269943782eddfaed0",
+      "path": "docs/DEVELOPMENT-RUNTIME.md",
+      "bytes": 13533,
+      "sha256": "c682438a26d9e73a4066f185852148c8c0d6cc5a6868758c910bc49d492e17ec",
+      "url": "https://github.com/Agenthon-2026/Agenthon2026-public/blob/50fb2dc2b39c70f4cf81fcd269943782eddfaed0/docs/DEVELOPMENT-RUNTIME.md"
+    },
+    {
+      "repository": "Agenthon2026-public",
+      "revision": "50fb2dc2b39c70f4cf81fcd269943782eddfaed0",
+      "path": "docs/HOUSE-MODEL.md",
+      "bytes": 7289,
+      "sha256": "d909d1ca2030f8618b803a855d3798201ccddc7ab9b57d531cd3ae153a44e61b",
+      "url": "https://github.com/Agenthon-2026/Agenthon2026-public/blob/50fb2dc2b39c70f4cf81fcd269943782eddfaed0/docs/HOUSE-MODEL.md"
+    },
+    {
+      "repository": "Agenthon2026-public",
+      "revision": "50fb2dc2b39c70f4cf81fcd269943782eddfaed0",
+      "path": "docs/IMAGE-SUBMISSIONS.md",
+      "bytes": 3618,
+      "sha256": "cac4de75dfe0b75686ebd2c45bd86e4cf659554d8603af849b30cb9627ed30ca",
+      "url": "https://github.com/Agenthon-2026/Agenthon2026-public/blob/50fb2dc2b39c70f4cf81fcd269943782eddfaed0/docs/IMAGE-SUBMISSIONS.md"
+    },
+    {
+      "repository": "Agenthon2026-public",
+      "revision": "50fb2dc2b39c70f4cf81fcd269943782eddfaed0",
+      "path": "starter-packs/track4/RUNTIME-ENVIRONMENT.md",
+      "bytes": 4941,
+      "sha256": "6af4eab6509a775bd1ce9261ea91c7518cf7d77096609482ab26dcaea0fd9887",
+      "url": "https://github.com/Agenthon-2026/Agenthon2026-public/blob/50fb2dc2b39c70f4cf81fcd269943782eddfaed0/starter-packs/track4/RUNTIME-ENVIRONMENT.md"
+    },
+    {
+      "repository": "Agenthon2026-public",
+      "revision": "50fb2dc2b39c70f4cf81fcd269943782eddfaed0",
+      "path": "starter-packs/track4/SUBMISSION-DESCRIPTOR.md",
+      "bytes": 11575,
+      "sha256": "ccf0120c193f0df48713cf9a9af4060d6034b616867281557ac154bc0bf4b1b3",
+      "url": "https://github.com/Agenthon-2026/Agenthon2026-public/blob/50fb2dc2b39c70f4cf81fcd269943782eddfaed0/starter-packs/track4/SUBMISSION-DESCRIPTOR.md"
+    },
+    {
+      "repository": "Agenthon2026-public",
+      "revision": "50fb2dc2b39c70f4cf81fcd269943782eddfaed0",
+      "path": "starter-packs/track4/TEAM-CLAIM.md",
+      "bytes": 7163,
+      "sha256": "6882ceaf7a17dfe391003b061b16f4be123840bf8d45e2ee1cec674f0b8412eb",
+      "url": "https://github.com/Agenthon-2026/Agenthon2026-public/blob/50fb2dc2b39c70f4cf81fcd269943782eddfaed0/starter-packs/track4/TEAM-CLAIM.md"
+    },
+    {
+      "repository": "Agenthon2026-public",
+      "revision": "bd01548e34d21fd660d88fd06157078fb25ece4e",
+      "path": "starter-packs/CHANGELOG.md",
+      "bytes": 43102,
+      "sha256": "b5b573a4dd763c618ecd61c288693e54f4fd4b6ff63366d33a0c2aa01bd0df59",
+      "url": "https://github.com/Agenthon-2026/Agenthon2026-public/blob/bd01548e34d21fd660d88fd06157078fb25ece4e/starter-packs/CHANGELOG.md"
+    },
+    {
+      "repository": "track4-analysis-public",
+      "revision": "1c744e1d6725340643a533f436517d72b53ca0e1",
+      "path": "DATA-LICENSE.md",
+      "bytes": 819,
+      "sha256": "34e11e3e26a0f198f91d09633528f0de1e0d093aa231715917ae035908eca945",
+      "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/DATA-LICENSE.md"
+    },
+    {
+      "repository": "track4-analysis-public",
+      "revision": "1c744e1d6725340643a533f436517d72b53ca0e1",
+      "path": "README.md",
+      "bytes": 37016,
+      "sha256": "f2741146415815e88871099d2b156c43293d987d76cb853ce6b199f9e67ad640",
+      "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/README.md"
+    },
+    {
+      "repository": "track4-analysis-public",
+      "revision": "1c744e1d6725340643a533f436517d72b53ca0e1",
+      "path": "SUBMISSION_CLI.md",
+      "bytes": 41149,
+      "sha256": "13c5ecd51a21b33f22c04611a4b63bc6b031295e09445d0fbda3173445d5001d",
+      "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/SUBMISSION_CLI.md"
+    },
+    {
+      "repository": "track4-analysis-public",
+      "revision": "1c744e1d6725340643a533f436517d72b53ca0e1",
+      "path": "THIRD-PARTY-NOTICES.md",
+      "bytes": 3514,
+      "sha256": "8c844c8989f2849c9798d538870dab3f677d7350925575360287b9b2e87b1b7b",
+      "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/THIRD-PARTY-NOTICES.md"
+    },
+    {
+      "repository": "track4-analysis-public",
+      "revision": "1c744e1d6725340643a533f436517d72b53ca0e1",
+      "path": "baselines/README.md",
+      "bytes": 18569,
+      "sha256": "9ba5cf8e05d49f092b5c3f5be1fff653cc87da83cb36352139bd6e3c78a5c349",
+      "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/baselines/README.md"
+    },
+    {
+      "repository": "track4-analysis-public",
+      "revision": "1c744e1d6725340643a533f436517d72b53ca0e1",
+      "path": "baselines/guardrails_example/citation_rail.py",
+      "bytes": 42642,
+      "sha256": "e5b3b515e2824e7671d5223b4ccb2175aa27e0969da0f7e6854cfd6b735021a3",
+      "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/baselines/guardrails_example/citation_rail.py"
+    },
+    {
+      "repository": "track4-analysis-public",
+      "revision": "1c744e1d6725340643a533f436517d72b53ca0e1",
+      "path": "baselines/strong_rag_baseline/README.md",
+      "bytes": 7798,
+      "sha256": "a3310e6e16771409c94da9ebdf87c669ecdfc31ae644be57b692e3359708c4ab",
+      "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/baselines/strong_rag_baseline/README.md"
+    },
+    {
+      "repository": "track4-analysis-public",
+      "revision": "1c744e1d6725340643a533f436517d72b53ca0e1",
+      "path": "docs/ARTIFACT-POLICY.md",
+      "bytes": 4190,
+      "sha256": "ddb292d371325473d02da5e70418f10ad0ecbefab9d1b67463f51b3ea68e62e9",
+      "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/docs/ARTIFACT-POLICY.md"
+    },
+    {
+      "repository": "track4-analysis-public",
+      "revision": "1c744e1d6725340643a533f436517d72b53ca0e1",
+      "path": "docs/AUTHORING-GUIDE.md",
+      "bytes": 25344,
+      "sha256": "f9fd668303440e300189c355eea9be5ca867a107d277c4f0e9239b7bb6e7461d",
+      "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/docs/AUTHORING-GUIDE.md"
+    },
+    {
+      "repository": "track4-analysis-public",
+      "revision": "1c744e1d6725340643a533f436517d72b53ca0e1",
+      "path": "docs/CATEGORIES.md",
+      "bytes": 11799,
+      "sha256": "2650e4b4dc48f1fdc2038882e782011e66f5aff60a731e5191fb9d9bc90ba11e",
+      "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/docs/CATEGORIES.md"
+    },
+    {
+      "repository": "track4-analysis-public",
+      "revision": "1c744e1d6725340643a533f436517d72b53ca0e1",
+      "path": "docs/CONCEPTS.md",
+      "bytes": 36015,
+      "sha256": "bb7a1929bd564a55e7412aeaf70d368d7ed027ddfa1f779aa75bc0def2d5755a",
+      "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/docs/CONCEPTS.md"
+    },
+    {
+      "repository": "track4-analysis-public",
+      "revision": "1c744e1d6725340643a533f436517d72b53ca0e1",
+      "path": "docs/TRAINING-POLICY.md",
+      "bytes": 3631,
+      "sha256": "e84005de6c6fab7950ff6116a429190c85c49f57b5ede1b95933641431e1f992",
+      "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/docs/TRAINING-POLICY.md"
+    },
+    {
+      "repository": "track4-analysis-public",
+      "revision": "1c744e1d6725340643a533f436517d72b53ca0e1",
+      "path": "pyproject.toml",
+      "bytes": 3391,
+      "sha256": "8dbc75237f90e726657c4dc8473556622c3a27d49276a45fde6c36b6e2527372",
+      "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/pyproject.toml"
+    },
+    {
+      "repository": "track4-analysis-public",
+      "revision": "1c744e1d6725340643a533f436517d72b53ca0e1",
+      "path": "qfbench2_track_analysis/alignment.py",
+      "bytes": 22113,
+      "sha256": "0131dd2857f713198f63f53b04121c4dbaaebf4eca7c3abc80b9c665be128811",
+      "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/qfbench2_track_analysis/alignment.py"
+    },
+    {
+      "repository": "track4-analysis-public",
+      "revision": "1c744e1d6725340643a533f436517d72b53ca0e1",
+      "path": "qfbench2_track_analysis/codes.py",
+      "bytes": 9910,
+      "sha256": "a992fb551935ae9f7366c68d15a93f5b99dbcf72d9e577977917d07a97f6bee8",
+      "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/qfbench2_track_analysis/codes.py"
+    },
+    {
+      "repository": "track4-analysis-public",
+      "revision": "1c744e1d6725340643a533f436517d72b53ca0e1",
+      "path": "qfbench2_track_analysis/corpus.py",
+      "bytes": 24917,
+      "sha256": "30208a9d71276b8afb37bb953fedceaacc6a5d734324d380ead8c46cf921cd74",
+      "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/qfbench2_track_analysis/corpus.py"
+    },
+    {
+      "repository": "track4-analysis-public",
+      "revision": "1c744e1d6725340643a533f436517d72b53ca0e1",
+      "path": "qfbench2_track_analysis/judge_factory.py",
+      "bytes": 17463,
+      "sha256": "25c3f79d268210444e26797cf2a413775f8af14aae4e2687c0d72c232c83c9ba",
+      "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/qfbench2_track_analysis/judge_factory.py"
+    },
+    {
+      "repository": "track4-analysis-public",
+      "revision": "1c744e1d6725340643a533f436517d72b53ca0e1",
+      "path": "qfbench2_track_analysis/scoring.py",
+      "bytes": 110558,
+      "sha256": "2fb01cceb9dfb4f77d0dc8e59fb4fc81157cb1d751fa67860b37e515cc799f47",
+      "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/qfbench2_track_analysis/scoring.py"
+    },
+    {
+      "repository": "track4-analysis-public",
+      "revision": "1c744e1d6725340643a533f436517d72b53ca0e1",
+      "path": "templates/answer.example.json",
+      "bytes": 2802,
+      "sha256": "24037139bdecafd538707d93c1c2252e8a331c07440874c76861e29638792c1c",
+      "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/1c744e1d6725340643a533f436517d72b53ca0e1/templates/answer.example.json"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "corpus_manifest": "corpus/manifest.json",
+  "cutoff_date": "2022-07-28",
+  "entities": [
+    {
+      "as_of": "2022-07-28",
+      "corpus_ref": "corpus/",
+      "entity_id": "UST10Y",
+      "maturity_years": 10,
+      "name": "10-Year U.S. Treasury constant-maturity yield",
+      "series_fred": "DGS10",
+      "start_yield_pct": 2.68,
+      "unit": "bps_change"
+    },
+    {
+      "as_of": "2022-07-28",
+      "corpus_ref": "corpus/",
+      "entity_id": "UST2Y",
+      "maturity_years": 2,
+      "name": "2-Year U.S. Treasury constant-maturity yield",
+      "series_fred": "DGS2",
+      "start_yield_pct": 2.85,
+      "unit": "bps_change"
+    },
+    {
+      "as_of": "2022-07-28",
+      "corpus_ref": "corpus/",
+      "entity_id": "UST30Y",
+      "maturity_years": 30,
+      "name": "30-Year U.S. Treasury constant-maturity yield",
+      "series_fred": "DGS30",
+      "start_yield_pct": 3.02,
+      "unit": "bps_change"
+    },
+    {
+      "as_of": "2022-07-28",
+      "corpus_ref": "corpus/",
+      "entity_id": "UST3Y",
+      "maturity_years": 3,
+      "name": "3-Year U.S. Treasury constant-maturity yield",
+      "series_fred": "DGS3",
+      "start_yield_pct": 2.81,
+      "unit": "bps_change"
+    },
+    {
+      "as_of": "2022-07-28",
+      "corpus_ref": "corpus/",
+      "entity_id": "UST5Y",
+      "maturity_years": 5,
+      "name": "5-Year U.S. Treasury constant-maturity yield",
+      "series_fred": "DGS5",
+      "start_yield_pct": 2.69,
+      "unit": "bps_change"
+    },
+    {
+      "as_of": "2022-07-28",
+      "corpus_ref": "corpus/",
+      "entity_id": "UST7Y",
+      "maturity_years": 7,
+      "name": "7-Year U.S. Treasury constant-maturity yield",
+      "series_fred": "DGS7",
+      "start_yield_pct": 2.69,
+      "unit": "bps_change"
+    }
+  ],
+  "faithfulness_rubric": "Every claim must cite a passage from a corpus/ document whose doc_date <= 2022-07-28 (embargo). A roster entity's prediction counts as supported when some cited span entails it above tau_citation = 0.5; the unit is admissible when at least faithfulness_threshold = 0.80 of the ROSTER's predictions are supported -- the denominator is the roster, not the number of claims written. Claims must not assert yield levels or changes observed after the 2022-07-28 cutoff (post-cutoff, absent by design). Failure codes: T4_UNFAITHFUL_CITATION, T4_STALE_EVIDENCE.",
+  "family": "rate_curve_cross_section",
+  "interval_level": 0.9,
+  "notes": "Development practice unit. This unit was retired from the Track 4 held-out set because it is memorization-exposed (its outcome resolves on or before the approximate training cutoff of the models under evaluation), which is what makes it safe to publish. It is provided so you can exercise the unit format, the frozen-corpus discipline and the citation/faithfulness requirements end-to-end. No resolved outcome is shipped with it: the organizers hold the outcome and score this unit on the Development leaderboard. Author-facing design commentary has been removed from this field.",
+  "prompt": "Using ONLY the frozen evidence corpus (the July 27, 2022 FOMC statement and a compiled rates/macro snapshot as of the 2022-07-28 cutoff), predict for each U.S. Treasury maturity in the table the CHANGE in its constant-maturity yield, in basis points, from the 2022-07-28 cutoff close to the 2022-09-20 resolution close (the trading day before the next FOMC meeting). Each maturity's starting yield (start_yield_pct) is given. For each maturity provide a point_forecast of the yield change in bps and a 90% interval around it. Reason from the pre-cutoff regime: the policy stance sets the direction of the move, while position on the maturity curve sets its magnitude (front-end yields are most sensitive to the expected path of the policy rate; long-end yields are anchored more by long-run growth and inflation expectations). Support every claim with citations to passages in the frozen corpus. Do NOT rely on any post-cutoff yield data; it is absent by design.",
+  "resolution_date": "2022-09-20",
+  "schema_version": "3",
+  "target": {
+    "name": "yield_change_bps_intermeeting",
+    "type": "regression"
+  },
+  "task_id": "t4-fomc-curve-20220728"
+}

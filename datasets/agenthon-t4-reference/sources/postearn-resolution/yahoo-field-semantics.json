@@ -1,0 +1,16 @@
+{
+  "path": "yahoo-field-semantics.json",
+  "url": "https://finance.yahoo.com/quote/AMZN/history/?p=AMZN",
+  "retrieval_method": "web.run search indexed primary Yahoo history table",
+  "retrieved_at": "2026-10-07T13:10:22.338891+00:00",
+  "published_at": null,
+  "artifact_kind": "original_chinese_fact_note_not_HTTP_response",
+  "locator": "Historical Prices表头Close及Adj Close解释",
+  "facts": [
+    "Yahoo Close按拆股调整；Adj Close按拆股、股息及资本利得分配调整。",
+    "Yahoo Chart API close不能笼统称为完全未调整的名义历史价格。"
+  ],
+  "direct_full_page_archived": false,
+  "first_release_version_obtained": false,
+  "original_redistribution_permission": "unconfirmed; no full upstream table distributed"
+}

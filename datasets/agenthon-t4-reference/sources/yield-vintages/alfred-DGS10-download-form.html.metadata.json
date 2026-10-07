@@ -1,0 +1,10 @@
+{
+  "path": "alfred-DGS10-download-form.html",
+  "url": "https://alfred.stlouisfed.org/series/downloaddata?seid=DGS10",
+  "retrieved_at": "2026-10-07T08:49:18.084075+00:00",
+  "locator": "公开下载表单，仅用于确认输出格式支持",
+  "published_at": null,
+  "byte_form": "原始HTML响应；当前说明，不是目标日历史公告",
+  "status": "download_failed",
+  "error": "TimeoutError: The read operation timed out"
+}

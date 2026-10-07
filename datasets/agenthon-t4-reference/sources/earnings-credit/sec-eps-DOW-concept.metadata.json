@@ -1,0 +1,12 @@
+{
+  "entity_id": "DOW",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001751788/us-gaap/EarningsPerShareDiluted.json",
+  "source_sha256": "a30ac9e0fba86bc51b2b43d386bbb5e23e4091c175514318ca03cf59c99b35a3",
+  "retrieved_at": "2026-10-07T08:14:22.677945+00:00",
+  "bytes": 14117,
+  "raw_path": "sec-eps-DOW-concept.raw.json",
+  "tag": "EarningsPerShareDiluted",
+  "taxonomy": "us-gaap",
+  "unit": "USD/shares",
+  "observation_count": 94
+}

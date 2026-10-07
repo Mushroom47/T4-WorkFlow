@@ -1,0 +1,12 @@
+{
+  "entity_id": "MS",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000895421/us-gaap/EarningsPerShareDiluted.json",
+  "source_sha256": "ed8de86db84b91eca61826bfd35604582ccd31ef5be4b51eac9dd24f69249358",
+  "retrieved_at": "2026-10-07T08:14:24.084755+00:00",
+  "bytes": 45580,
+  "raw_path": "sec-eps-MS-concept.raw.json",
+  "tag": "EarningsPerShareDiluted",
+  "taxonomy": "us-gaap",
+  "unit": "USD/shares",
+  "observation_count": 315
+}

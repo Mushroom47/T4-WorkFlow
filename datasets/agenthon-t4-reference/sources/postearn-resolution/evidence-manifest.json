@@ -1,0 +1,1443 @@
+{
+  "sources": [
+    {
+      "path": "amazon-primary-facts.json",
+      "url": "https://ir.aboutamazon.com/faqs/default.aspx",
+      "sha256": "190e0a3c45d5f72a0b564aa40fb283ec21d50456c38d24fa6d4d6ae7973854b9",
+      "bytes": 828,
+      "retrieved_at": "2026-10-07T13:10:22.338891+00:00",
+      "status": "generated_fact_note",
+      "locator": "Does Amazon distribute dividends? / When did Amazon stock split?",
+      "published_at": null,
+      "artifact_kind": "original_chinese_fact_note_not_HTTP_response",
+      "original_HTTP_archived": false,
+      "redistribution_note": "原创中文短事实释义与来源标识；未附上游完整原件，不继承上游开放许可"
+    },
+    {
+      "path": "amazon-10k-primary-facts.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000008/amzn-20231231.htm",
+      "sha256": "24d2dd0a92d801b9fe6daa30798d8bb94563ebe5ae057680a86170f45fb2bb0e",
+      "bytes": 933,
+      "retrieved_at": "2026-10-07T13:10:22.338891+00:00",
+      "status": "generated_fact_note",
+      "locator": "Note 1 / Common Stock Split，网页解析1411–1413行；Item 5 Market Information，673行",
+      "published_at": "2024-02-02",
+      "artifact_kind": "original_chinese_fact_note_not_HTTP_response",
+      "original_HTTP_archived": false,
+      "redistribution_note": "原创中文短事实释义与来源标识；未附上游完整原件，不继承上游开放许可"
+    },
+    {
+      "path": "yahoo-field-semantics.json",
+      "url": "https://finance.yahoo.com/quote/AMZN/history/?p=AMZN",
+      "sha256": "944a9cdcecc811352860b65e5148b46ec7c9b07d5b51b8f7656a1493cae659c9",
+      "bytes": 761,
+      "retrieved_at": "2026-10-07T13:10:22.338891+00:00",
+      "status": "generated_fact_note",
+      "locator": "Historical Prices表头Close及Adj Close解释",
+      "published_at": null,
+      "artifact_kind": "original_chinese_fact_note_not_HTTP_response",
+      "original_HTTP_archived": false,
+      "redistribution_note": "原创中文短事实释义与来源标识；未附上游完整原件，不继承上游开放许可"
+    }
+  ],
+  "external_evidence": [
+    {
+      "path": "sources/earnings-credit/yahoo-AAPL-20240201-20240202.raw.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "sha256": "32ef6a4d56f606cbb1ff076161071e90028f03f5dc8a445133887e0a2a73233d",
+      "bytes": 1399,
+      "retrieved_at": "2026-10-07T08:08:41.954470+00:00",
+      "published_at": null,
+      "artifact_kind": "unmodified_HTTP_response",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/earnings-credit/yahoo-AAPL-20240201-20240202.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "sha256": "7511831250ffa19118f559966db09e2343eed2ea2f2b823721d39e345d1ff4e4",
+      "bytes": 3374,
+      "retrieved_at": "2026-10-07T08:08:41.954470+00:00",
+      "published_at": null,
+      "artifact_kind": "metadata_wrapper_not_HTTP_response",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/earnings-credit/yahoo-AMZN-20240201-20240202.raw.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "sha256": "1bbc2f7451ba73c1e84a21344d94eb2bf24d2b2529541dae1b93bc55bd8dcf60",
+      "bytes": 1408,
+      "retrieved_at": "2026-10-07T08:08:43.288284+00:00",
+      "published_at": null,
+      "artifact_kind": "unmodified_HTTP_response",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/earnings-credit/yahoo-AMZN-20240201-20240202.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "sha256": "8988ea4959f9fc3b69f894605eb25169248447ee7d388baedefb541caf8fda2b",
+      "bytes": 3383,
+      "retrieved_at": "2026-10-07T08:08:43.288284+00:00",
+      "published_at": null,
+      "artifact_kind": "metadata_wrapper_not_HTTP_response",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/earnings-credit/yahoo-META-20240201-20240202.raw.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/META?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "sha256": "c6277669914f4c4cadaabc208632d44ae051f0e8dec13ddc7d8efb89f56946a0",
+      "bytes": 1413,
+      "retrieved_at": "2026-10-07T08:08:44.258322+00:00",
+      "published_at": null,
+      "artifact_kind": "unmodified_HTTP_response",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/earnings-credit/yahoo-META-20240201-20240202.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/META?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "sha256": "09b67ff5feebdbc9090d18a920be82788d9ea11bcf15534e4cc05d3a307f0383",
+      "bytes": 3388,
+      "retrieved_at": "2026-10-07T08:08:44.258322+00:00",
+      "published_at": null,
+      "artifact_kind": "metadata_wrapper_not_HTTP_response",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/earnings-credit/yahoo-SPY-20240201-20240202.raw.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "sha256": "f5b806d21349f916e114273a5740c5e5c222043e656e73f2977a48534f62961d",
+      "bytes": 1448,
+      "retrieved_at": "2026-10-07T08:08:45.392493+00:00",
+      "published_at": null,
+      "artifact_kind": "unmodified_HTTP_response",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/earnings-credit/yahoo-SPY-20240201-20240202.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "sha256": "645db52c6fde926eb0dcdccbe086ff348730acc064a88fbaa5411a998b270ae7",
+      "bytes": 3421,
+      "retrieved_at": "2026-10-07T08:08:45.392493+00:00",
+      "published_at": null,
+      "artifact_kind": "metadata_wrapper_not_HTTP_response",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/postearn-supplement/apple-nasdaq-dividend.json",
+      "url": "https://api.nasdaq.com/api/quote/AAPL/dividends?assetclass=stocks",
+      "sha256": "21c36a00312494a67684ca1d51aff41ba5b31c31abd869e465f5137c0133114d",
+      "bytes": 13587,
+      "retrieved_at": "2026-10-07T08:49:29.477229+00:00",
+      "published_at": null,
+      "artifact_kind": "downloaded_response",
+      "hash_basis": "saved_unmodified_downloaded_response_bytes",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/postearn-supplement/meta-nasdaq-dividend.json",
+      "url": "https://api.nasdaq.com/api/quote/META/dividends?assetclass=stocks",
+      "sha256": "d9e82fa631bbfd0ec58c56f63183b12ebfaab437b12a7cf67fc64cf227493366",
+      "bytes": 2405,
+      "retrieved_at": "2026-10-07T08:51:23.317670+00:00",
+      "published_at": null,
+      "artifact_kind": "downloaded_response",
+      "hash_basis": "saved_unmodified_downloaded_response_bytes",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/postearn-supplement/spy-ssga-distributions.xlsx",
+      "url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/spdr-etf-historical-distributions.xlsx",
+      "sha256": "b162dd17027d1128f2209e312b0f634960daa78319dafe0ab821ab0b7e77ce23",
+      "bytes": 581242,
+      "retrieved_at": "2026-10-07T08:45:50.586222+00:00",
+      "published_at": null,
+      "artifact_kind": "downloaded_response",
+      "hash_basis": "saved_unmodified_downloaded_response_bytes",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/postearn-supplement/apple-dividend-page.html",
+      "url": "https://investor.apple.com/dividend-history/default.aspx",
+      "sha256": "9b98898072d9282c94aed8fc85ed3c07c40e0ee78e8a1436d8d5c83e5fbbae87",
+      "bytes": 203613,
+      "retrieved_at": "2026-10-07T08:44:12.876231+00:00",
+      "published_at": null,
+      "artifact_kind": "sanitized_downloaded_response",
+      "hash_basis": "saved_sanitized_file_bytes",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/postearn-supplement/apple-ir-history.json",
+      "url": "https://investor.apple.com/feed/StockQuote.svc/GetStockQuoteHistoricalList?exchange=NASD&symbol=AAPL&pageSize=10&startDate=Feb-01-2024&endDate=Feb-02-2024",
+      "sha256": "5b0e240829bb64da3ee0ded4cf17b180349196a3cf7032193f2e84a748f9fbeb",
+      "bytes": 288,
+      "retrieved_at": "2026-10-07T08:45:49.986962+00:00",
+      "published_at": null,
+      "artifact_kind": "downloaded_response",
+      "hash_basis": "saved_unmodified_downloaded_response_bytes",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/postearn-supplement/amazon-ir-feed.json",
+      "url": "https://ir.aboutamazon.com/feed/StockQuote.svc/GetStockQuoteHistoricalList?exchange=NASD&symbol=AMZN&pageSize=10&startDate=Feb-01-2024&endDate=Feb-02-2024",
+      "sha256": "7710f32cfb1b6e6c754c6fa9f30957f5ab7eb48f9f65bd294d549da3f57ede86",
+      "bytes": 271,
+      "retrieved_at": "2026-10-07T08:49:28.530013+00:00",
+      "published_at": null,
+      "artifact_kind": "downloaded_response",
+      "hash_basis": "saved_unmodified_downloaded_response_bytes",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/postearn-supplement/meta-ir-history.json",
+      "url": "https://investor.atmeta.com/feed/StockQuote.svc/GetStockQuoteHistoricalList?exchange=NASD&symbol=META&pageSize=10&startDate=Feb-01-2024&endDate=Feb-02-2024",
+      "sha256": "3c0ec64d78055fcaaae2f617df290d03455535c741cdacfffdf3669e05fa0444",
+      "bytes": 269,
+      "retrieved_at": "2026-10-07T08:45:50.033798+00:00",
+      "published_at": null,
+      "artifact_kind": "downloaded_response",
+      "hash_basis": "saved_unmodified_downloaded_response_bytes",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/postearn-supplement/spy-tickertech-proxy.json",
+      "url": "https://investor.apple.com/feed/StockQuote.svc/GetStockQuoteHistoricalList?exchange=AMEX&symbol=SPY&pageSize=10&startDate=Feb-01-2024&endDate=Feb-02-2024",
+      "sha256": "6b7b49589b9a57b39f277e1c30ff9d862d6e3bc7b7bb02b865e94c0861d13af9",
+      "bytes": 268,
+      "retrieved_at": "2026-10-07T08:51:23.316927+00:00",
+      "published_at": null,
+      "artifact_kind": "downloaded_response",
+      "hash_basis": "saved_unmodified_downloaded_response_bytes",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "inputs/units/t4-postearn-20240201-megacap/card.toml",
+      "url": "https://github.com/Agenthon-2026/track4-analysis-public/tree/1c744e1d6725340643a533f436517d72b53ca0e1",
+      "sha256": "483da130b5fc309cfbd24df11a686b76ed5841ffa25a8c355c6d27ec9878ba44",
+      "bytes": 3994,
+      "artifact_kind": "official_frozen_task_input",
+      "redistribution_permission": "CC-BY-4.0 per card; retain attribution",
+      "publish_original": true
+    },
+    {
+      "path": "inputs/units/t4-postearn-20240201-megacap/task.json",
+      "url": "https://github.com/Agenthon-2026/track4-analysis-public/tree/1c744e1d6725340643a533f436517d72b53ca0e1",
+      "sha256": "d9d422dba05d6e7e5e343f44b91bb39915b771f1859b595dddd636815b376461",
+      "bytes": 3836,
+      "artifact_kind": "official_frozen_task_input",
+      "redistribution_permission": "CC-BY-4.0 per card; retain attribution",
+      "publish_original": true
+    }
+  ],
+  "checks": [
+    {
+      "check": "官方题卡指定 Yahoo 日收盘",
+      "pass": true,
+      "actual": "Yahoo Finance (daily closes for outcome resolution)",
+      "expected": "Yahoo Finance (daily closes for outcome resolution)"
+    },
+    {
+      "check": "目标日期",
+      "pass": true,
+      "actual": [
+        "2024-02-01",
+        "2024-02-02"
+      ],
+      "expected": [
+        "2024-02-01",
+        "2024-02-02"
+      ]
+    },
+    {
+      "check": "公司收益口径",
+      "pass": true,
+      "actual": "total_return",
+      "expected": "total_return"
+    },
+    {
+      "check": "AAPL 标的",
+      "pass": true,
+      "actual": "AAPL",
+      "expected": "AAPL"
+    },
+    {
+      "check": "AAPL 币种",
+      "pass": true,
+      "actual": "USD",
+      "expected": "USD"
+    },
+    {
+      "check": "AAPL 历史日期",
+      "pass": true,
+      "actual": [
+        "2024-02-01",
+        "2024-02-02"
+      ],
+      "expected": [
+        "2024-02-01",
+        "2024-02-02"
+      ]
+    },
+    {
+      "check": "AAPL 证券类型",
+      "pass": true,
+      "actual": "EQUITY",
+      "expected": "EQUITY"
+    },
+    {
+      "check": "AAPL priceHint",
+      "pass": true,
+      "actual": 2,
+      "expected": 2
+    },
+    {
+      "check": "AAPL 美分规范化",
+      "pass": true,
+      "actual": [
+        "186.86",
+        "185.85"
+      ],
+      "expected": [
+        "186.86",
+        "185.85"
+      ]
+    },
+    {
+      "check": "AAPL 有限正价格",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "AAPL Yahoo 事件列表",
+      "pass": true,
+      "actual": {},
+      "expected": {}
+    },
+    {
+      "check": "AAPL Q4 美分旁证",
+      "pass": true,
+      "actual": [
+        "186.86",
+        "185.85"
+      ],
+      "expected": [
+        "186.86",
+        "185.85"
+      ]
+    },
+    {
+      "check": "AAPL 两日分配调整因子无实质阶跃",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "AMZN 标的",
+      "pass": true,
+      "actual": "AMZN",
+      "expected": "AMZN"
+    },
+    {
+      "check": "AMZN 币种",
+      "pass": true,
+      "actual": "USD",
+      "expected": "USD"
+    },
+    {
+      "check": "AMZN 历史日期",
+      "pass": true,
+      "actual": [
+        "2024-02-01",
+        "2024-02-02"
+      ],
+      "expected": [
+        "2024-02-01",
+        "2024-02-02"
+      ]
+    },
+    {
+      "check": "AMZN 证券类型",
+      "pass": true,
+      "actual": "EQUITY",
+      "expected": "EQUITY"
+    },
+    {
+      "check": "AMZN priceHint",
+      "pass": true,
+      "actual": 2,
+      "expected": 2
+    },
+    {
+      "check": "AMZN 美分规范化",
+      "pass": true,
+      "actual": [
+        "159.28",
+        "171.81"
+      ],
+      "expected": [
+        "159.28",
+        "171.81"
+      ]
+    },
+    {
+      "check": "AMZN 有限正价格",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "AMZN Yahoo 事件列表",
+      "pass": true,
+      "actual": {},
+      "expected": {}
+    },
+    {
+      "check": "AMZN Q4 美分旁证",
+      "pass": true,
+      "actual": [
+        "159.28",
+        "171.81"
+      ],
+      "expected": [
+        "159.28",
+        "171.81"
+      ]
+    },
+    {
+      "check": "AMZN 两日分配调整因子无实质阶跃",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "META 标的",
+      "pass": true,
+      "actual": "META",
+      "expected": "META"
+    },
+    {
+      "check": "META 币种",
+      "pass": true,
+      "actual": "USD",
+      "expected": "USD"
+    },
+    {
+      "check": "META 历史日期",
+      "pass": true,
+      "actual": [
+        "2024-02-01",
+        "2024-02-02"
+      ],
+      "expected": [
+        "2024-02-01",
+        "2024-02-02"
+      ]
+    },
+    {
+      "check": "META 证券类型",
+      "pass": true,
+      "actual": "EQUITY",
+      "expected": "EQUITY"
+    },
+    {
+      "check": "META priceHint",
+      "pass": true,
+      "actual": 2,
+      "expected": 2
+    },
+    {
+      "check": "META 美分规范化",
+      "pass": true,
+      "actual": [
+        "394.78",
+        "474.99"
+      ],
+      "expected": [
+        "394.78",
+        "474.99"
+      ]
+    },
+    {
+      "check": "META 有限正价格",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "META Yahoo 事件列表",
+      "pass": true,
+      "actual": {},
+      "expected": {}
+    },
+    {
+      "check": "META Q4 美分旁证",
+      "pass": true,
+      "actual": [
+        "394.78",
+        "474.99"
+      ],
+      "expected": [
+        "394.78",
+        "474.99"
+      ]
+    },
+    {
+      "check": "META 两日分配调整因子无实质阶跃",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "SPY 标的",
+      "pass": true,
+      "actual": "SPY",
+      "expected": "SPY"
+    },
+    {
+      "check": "SPY 币种",
+      "pass": true,
+      "actual": "USD",
+      "expected": "USD"
+    },
+    {
+      "check": "SPY 历史日期",
+      "pass": true,
+      "actual": [
+        "2024-02-01",
+        "2024-02-02"
+      ],
+      "expected": [
+        "2024-02-01",
+        "2024-02-02"
+      ]
+    },
+    {
+      "check": "SPY 证券类型",
+      "pass": true,
+      "actual": "ETF",
+      "expected": "ETF"
+    },
+    {
+      "check": "SPY priceHint",
+      "pass": true,
+      "actual": 2,
+      "expected": 2
+    },
+    {
+      "check": "SPY 美分规范化",
+      "pass": true,
+      "actual": [
+        "489.20",
+        "494.35"
+      ],
+      "expected": [
+        "489.20",
+        "494.35"
+      ]
+    },
+    {
+      "check": "SPY 有限正价格",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "SPY Yahoo 事件列表",
+      "pass": true,
+      "actual": {},
+      "expected": {}
+    },
+    {
+      "check": "SPY Q4 美分旁证",
+      "pass": true,
+      "actual": [
+        "489.20",
+        "494.35"
+      ],
+      "expected": [
+        "489.20",
+        "494.35"
+      ]
+    },
+    {
+      "check": "SPY 两日分配调整因子无实质阶跃",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "AAPL 对应除息日",
+      "pass": true,
+      "actual": "2024-02-09",
+      "expected": "2024-02-09"
+    },
+    {
+      "check": "META 首次除息日",
+      "pass": true,
+      "actual": "2024-02-21",
+      "expected": "2024-02-21"
+    },
+    {
+      "check": "AAPL/META 窗口现金分配",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "AMZN 发行人从未现金分红陈述",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "AMZN 发行人列示的最近拆股在窗口外",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "SPY 全分配表窗口匹配数",
+      "pass": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "check": "原件 hash sources/earnings-credit/yahoo-AAPL-20240201-20240202.raw.json",
+      "pass": true,
+      "actual": "32ef6a4d56f606cbb1ff076161071e90028f03f5dc8a445133887e0a2a73233d",
+      "expected": "32ef6a4d56f606cbb1ff076161071e90028f03f5dc8a445133887e0a2a73233d"
+    },
+    {
+      "check": "原件 bytes sources/earnings-credit/yahoo-AAPL-20240201-20240202.raw.json",
+      "pass": true,
+      "actual": 1399,
+      "expected": 1399
+    },
+    {
+      "check": "原件 hash sources/earnings-credit/yahoo-AAPL-20240201-20240202.json",
+      "pass": true,
+      "actual": "7511831250ffa19118f559966db09e2343eed2ea2f2b823721d39e345d1ff4e4",
+      "expected": "7511831250ffa19118f559966db09e2343eed2ea2f2b823721d39e345d1ff4e4"
+    },
+    {
+      "check": "原件 bytes sources/earnings-credit/yahoo-AAPL-20240201-20240202.json",
+      "pass": true,
+      "actual": 3374,
+      "expected": 3374
+    },
+    {
+      "check": "原件 hash sources/earnings-credit/yahoo-AMZN-20240201-20240202.raw.json",
+      "pass": true,
+      "actual": "1bbc2f7451ba73c1e84a21344d94eb2bf24d2b2529541dae1b93bc55bd8dcf60",
+      "expected": "1bbc2f7451ba73c1e84a21344d94eb2bf24d2b2529541dae1b93bc55bd8dcf60"
+    },
+    {
+      "check": "原件 bytes sources/earnings-credit/yahoo-AMZN-20240201-20240202.raw.json",
+      "pass": true,
+      "actual": 1408,
+      "expected": 1408
+    },
+    {
+      "check": "原件 hash sources/earnings-credit/yahoo-AMZN-20240201-20240202.json",
+      "pass": true,
+      "actual": "8988ea4959f9fc3b69f894605eb25169248447ee7d388baedefb541caf8fda2b",
+      "expected": "8988ea4959f9fc3b69f894605eb25169248447ee7d388baedefb541caf8fda2b"
+    },
+    {
+      "check": "原件 bytes sources/earnings-credit/yahoo-AMZN-20240201-20240202.json",
+      "pass": true,
+      "actual": 3383,
+      "expected": 3383
+    },
+    {
+      "check": "原件 hash sources/earnings-credit/yahoo-META-20240201-20240202.raw.json",
+      "pass": true,
+      "actual": "c6277669914f4c4cadaabc208632d44ae051f0e8dec13ddc7d8efb89f56946a0",
+      "expected": "c6277669914f4c4cadaabc208632d44ae051f0e8dec13ddc7d8efb89f56946a0"
+    },
+    {
+      "check": "原件 bytes sources/earnings-credit/yahoo-META-20240201-20240202.raw.json",
+      "pass": true,
+      "actual": 1413,
+      "expected": 1413
+    },
+    {
+      "check": "原件 hash sources/earnings-credit/yahoo-META-20240201-20240202.json",
+      "pass": true,
+      "actual": "09b67ff5feebdbc9090d18a920be82788d9ea11bcf15534e4cc05d3a307f0383",
+      "expected": "09b67ff5feebdbc9090d18a920be82788d9ea11bcf15534e4cc05d3a307f0383"
+    },
+    {
+      "check": "原件 bytes sources/earnings-credit/yahoo-META-20240201-20240202.json",
+      "pass": true,
+      "actual": 3388,
+      "expected": 3388
+    },
+    {
+      "check": "原件 hash sources/earnings-credit/yahoo-SPY-20240201-20240202.raw.json",
+      "pass": true,
+      "actual": "f5b806d21349f916e114273a5740c5e5c222043e656e73f2977a48534f62961d",
+      "expected": "f5b806d21349f916e114273a5740c5e5c222043e656e73f2977a48534f62961d"
+    },
+    {
+      "check": "原件 bytes sources/earnings-credit/yahoo-SPY-20240201-20240202.raw.json",
+      "pass": true,
+      "actual": 1448,
+      "expected": 1448
+    },
+    {
+      "check": "原件 hash sources/earnings-credit/yahoo-SPY-20240201-20240202.json",
+      "pass": true,
+      "actual": "645db52c6fde926eb0dcdccbe086ff348730acc064a88fbaa5411a998b270ae7",
+      "expected": "645db52c6fde926eb0dcdccbe086ff348730acc064a88fbaa5411a998b270ae7"
+    },
+    {
+      "check": "原件 bytes sources/earnings-credit/yahoo-SPY-20240201-20240202.json",
+      "pass": true,
+      "actual": 3421,
+      "expected": 3421
+    },
+    {
+      "check": "原件 hash sources/postearn-supplement/apple-nasdaq-dividend.json",
+      "pass": true,
+      "actual": "21c36a00312494a67684ca1d51aff41ba5b31c31abd869e465f5137c0133114d",
+      "expected": "21c36a00312494a67684ca1d51aff41ba5b31c31abd869e465f5137c0133114d"
+    },
+    {
+      "check": "原件 bytes sources/postearn-supplement/apple-nasdaq-dividend.json",
+      "pass": true,
+      "actual": 13587,
+      "expected": 13587
+    },
+    {
+      "check": "原件 hash sources/postearn-supplement/meta-nasdaq-dividend.json",
+      "pass": true,
+      "actual": "d9e82fa631bbfd0ec58c56f63183b12ebfaab437b12a7cf67fc64cf227493366",
+      "expected": "d9e82fa631bbfd0ec58c56f63183b12ebfaab437b12a7cf67fc64cf227493366"
+    },
+    {
+      "check": "原件 bytes sources/postearn-supplement/meta-nasdaq-dividend.json",
+      "pass": true,
+      "actual": 2405,
+      "expected": 2405
+    },
+    {
+      "check": "原件 hash sources/postearn-supplement/spy-ssga-distributions.xlsx",
+      "pass": true,
+      "actual": "b162dd17027d1128f2209e312b0f634960daa78319dafe0ab821ab0b7e77ce23",
+      "expected": "b162dd17027d1128f2209e312b0f634960daa78319dafe0ab821ab0b7e77ce23"
+    },
+    {
+      "check": "原件 bytes sources/postearn-supplement/spy-ssga-distributions.xlsx",
+      "pass": true,
+      "actual": 581242,
+      "expected": 581242
+    },
+    {
+      "check": "原件 hash sources/postearn-supplement/apple-dividend-page.html",
+      "pass": true,
+      "actual": "9b98898072d9282c94aed8fc85ed3c07c40e0ee78e8a1436d8d5c83e5fbbae87",
+      "expected": "9b98898072d9282c94aed8fc85ed3c07c40e0ee78e8a1436d8d5c83e5fbbae87"
+    },
+    {
+      "check": "原件 bytes sources/postearn-supplement/apple-dividend-page.html",
+      "pass": true,
+      "actual": 203613,
+      "expected": 203613
+    },
+    {
+      "check": "原件 hash sources/postearn-supplement/apple-ir-history.json",
+      "pass": true,
+      "actual": "5b0e240829bb64da3ee0ded4cf17b180349196a3cf7032193f2e84a748f9fbeb",
+      "expected": "5b0e240829bb64da3ee0ded4cf17b180349196a3cf7032193f2e84a748f9fbeb"
+    },
+    {
+      "check": "原件 bytes sources/postearn-supplement/apple-ir-history.json",
+      "pass": true,
+      "actual": 288,
+      "expected": 288
+    },
+    {
+      "check": "原件 hash sources/postearn-supplement/amazon-ir-feed.json",
+      "pass": true,
+      "actual": "7710f32cfb1b6e6c754c6fa9f30957f5ab7eb48f9f65bd294d549da3f57ede86",
+      "expected": "7710f32cfb1b6e6c754c6fa9f30957f5ab7eb48f9f65bd294d549da3f57ede86"
+    },
+    {
+      "check": "原件 bytes sources/postearn-supplement/amazon-ir-feed.json",
+      "pass": true,
+      "actual": 271,
+      "expected": 271
+    },
+    {
+      "check": "原件 hash sources/postearn-supplement/meta-ir-history.json",
+      "pass": true,
+      "actual": "3c0ec64d78055fcaaae2f617df290d03455535c741cdacfffdf3669e05fa0444",
+      "expected": "3c0ec64d78055fcaaae2f617df290d03455535c741cdacfffdf3669e05fa0444"
+    },
+    {
+      "check": "原件 bytes sources/postearn-supplement/meta-ir-history.json",
+      "pass": true,
+      "actual": 269,
+      "expected": 269
+    },
+    {
+      "check": "原件 hash sources/postearn-supplement/spy-tickertech-proxy.json",
+      "pass": true,
+      "actual": "6b7b49589b9a57b39f277e1c30ff9d862d6e3bc7b7bb02b865e94c0861d13af9",
+      "expected": "6b7b49589b9a57b39f277e1c30ff9d862d6e3bc7b7bb02b865e94c0861d13af9"
+    },
+    {
+      "check": "原件 bytes sources/postearn-supplement/spy-tickertech-proxy.json",
+      "pass": true,
+      "actual": 268,
+      "expected": 268
+    },
+    {
+      "check": "原件 hash inputs/units/t4-postearn-20240201-megacap/card.toml",
+      "pass": true,
+      "actual": "483da130b5fc309cfbd24df11a686b76ed5841ffa25a8c355c6d27ec9878ba44",
+      "expected": "483da130b5fc309cfbd24df11a686b76ed5841ffa25a8c355c6d27ec9878ba44"
+    },
+    {
+      "check": "原件 bytes inputs/units/t4-postearn-20240201-megacap/card.toml",
+      "pass": true,
+      "actual": 3994,
+      "expected": 3994
+    },
+    {
+      "check": "原件 hash inputs/units/t4-postearn-20240201-megacap/task.json",
+      "pass": true,
+      "actual": "d9d422dba05d6e7e5e343f44b91bb39915b771f1859b595dddd636815b376461",
+      "expected": "d9d422dba05d6e7e5e343f44b91bb39915b771f1859b595dddd636815b376461"
+    },
+    {
+      "check": "原件 bytes inputs/units/t4-postearn-20240201-megacap/task.json",
+      "pass": true,
+      "actual": 3836,
+      "expected": 3836
+    },
+    {
+      "check": "原始题卡指定 Yahoo",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "原始题卡 forecast cutoff",
+      "pass": true,
+      "actual": "2024-01-31",
+      "expected": "2024-01-31"
+    },
+    {
+      "check": "原始 task_id",
+      "pass": true,
+      "actual": "t4-postearn-20240201-megacap",
+      "expected": "t4-postearn-20240201-megacap"
+    },
+    {
+      "check": "原始题面 total return 窗口",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "AAPL 原件元数据 symbol",
+      "pass": true,
+      "actual": "AAPL",
+      "expected": "AAPL"
+    },
+    {
+      "check": "AAPL 原件元数据 currency",
+      "pass": true,
+      "actual": "USD",
+      "expected": "USD"
+    },
+    {
+      "check": "AAPL 原件元数据 instrumentType",
+      "pass": true,
+      "actual": "EQUITY",
+      "expected": "EQUITY"
+    },
+    {
+      "check": "AAPL 原件元数据 exchangeTimezoneName",
+      "pass": true,
+      "actual": "America/New_York",
+      "expected": "America/New_York"
+    },
+    {
+      "check": "AAPL 原件元数据 fullExchangeName",
+      "pass": true,
+      "actual": "NasdaqGS",
+      "expected": "NasdaqGS"
+    },
+    {
+      "check": "AAPL 原件元数据 priceHint",
+      "pass": true,
+      "actual": 2,
+      "expected": 2
+    },
+    {
+      "check": "AAPL 原件历史日期",
+      "pass": true,
+      "actual": [
+        "2024-02-01",
+        "2024-02-02"
+      ],
+      "expected": [
+        "2024-02-01",
+        "2024-02-02"
+      ]
+    },
+    {
+      "check": "AAPL 原件 close",
+      "pass": true,
+      "actual": [
+        186.86000061035156,
+        185.85000610351562
+      ],
+      "expected": [
+        186.86000061035156,
+        185.85000610351562
+      ]
+    },
+    {
+      "check": "AAPL 原件 adjclose",
+      "pass": true,
+      "actual": [
+        184.6093292236328,
+        183.61148071289062
+      ],
+      "expected": [
+        184.6093292236328,
+        183.61148071289062
+      ]
+    },
+    {
+      "check": "AAPL 原件事件",
+      "pass": true,
+      "actual": {},
+      "expected": {}
+    },
+    {
+      "check": "AMZN 原件元数据 symbol",
+      "pass": true,
+      "actual": "AMZN",
+      "expected": "AMZN"
+    },
+    {
+      "check": "AMZN 原件元数据 currency",
+      "pass": true,
+      "actual": "USD",
+      "expected": "USD"
+    },
+    {
+      "check": "AMZN 原件元数据 instrumentType",
+      "pass": true,
+      "actual": "EQUITY",
+      "expected": "EQUITY"
+    },
+    {
+      "check": "AMZN 原件元数据 exchangeTimezoneName",
+      "pass": true,
+      "actual": "America/New_York",
+      "expected": "America/New_York"
+    },
+    {
+      "check": "AMZN 原件元数据 fullExchangeName",
+      "pass": true,
+      "actual": "NasdaqGS",
+      "expected": "NasdaqGS"
+    },
+    {
+      "check": "AMZN 原件元数据 priceHint",
+      "pass": true,
+      "actual": 2,
+      "expected": 2
+    },
+    {
+      "check": "AMZN 原件历史日期",
+      "pass": true,
+      "actual": [
+        "2024-02-01",
+        "2024-02-02"
+      ],
+      "expected": [
+        "2024-02-01",
+        "2024-02-02"
+      ]
+    },
+    {
+      "check": "AMZN 原件 close",
+      "pass": true,
+      "actual": [
+        159.27999877929688,
+        171.80999755859375
+      ],
+      "expected": [
+        159.27999877929688,
+        171.80999755859375
+      ]
+    },
+    {
+      "check": "AMZN 原件 adjclose",
+      "pass": true,
+      "actual": [
+        159.27999877929688,
+        171.80999755859375
+      ],
+      "expected": [
+        159.27999877929688,
+        171.80999755859375
+      ]
+    },
+    {
+      "check": "AMZN 原件事件",
+      "pass": true,
+      "actual": {},
+      "expected": {}
+    },
+    {
+      "check": "META 原件元数据 symbol",
+      "pass": true,
+      "actual": "META",
+      "expected": "META"
+    },
+    {
+      "check": "META 原件元数据 currency",
+      "pass": true,
+      "actual": "USD",
+      "expected": "USD"
+    },
+    {
+      "check": "META 原件元数据 instrumentType",
+      "pass": true,
+      "actual": "EQUITY",
+      "expected": "EQUITY"
+    },
+    {
+      "check": "META 原件元数据 exchangeTimezoneName",
+      "pass": true,
+      "actual": "America/New_York",
+      "expected": "America/New_York"
+    },
+    {
+      "check": "META 原件元数据 fullExchangeName",
+      "pass": true,
+      "actual": "NasdaqGS",
+      "expected": "NasdaqGS"
+    },
+    {
+      "check": "META 原件元数据 priceHint",
+      "pass": true,
+      "actual": 2,
+      "expected": 2
+    },
+    {
+      "check": "META 原件历史日期",
+      "pass": true,
+      "actual": [
+        "2024-02-01",
+        "2024-02-02"
+      ],
+      "expected": [
+        "2024-02-01",
+        "2024-02-02"
+      ]
+    },
+    {
+      "check": "META 原件 close",
+      "pass": true,
+      "actual": [
+        394.7799987792969,
+        474.989990234375
+      ],
+      "expected": [
+        394.7799987792969,
+        474.989990234375
+      ]
+    },
+    {
+      "check": "META 原件 adjclose",
+      "pass": true,
+      "actual": [
+        391.0348205566406,
+        470.4838562011719
+      ],
+      "expected": [
+        391.0348205566406,
+        470.4838562011719
+      ]
+    },
+    {
+      "check": "META 原件事件",
+      "pass": true,
+      "actual": {},
+      "expected": {}
+    },
+    {
+      "check": "SPY 原件元数据 symbol",
+      "pass": true,
+      "actual": "SPY",
+      "expected": "SPY"
+    },
+    {
+      "check": "SPY 原件元数据 currency",
+      "pass": true,
+      "actual": "USD",
+      "expected": "USD"
+    },
+    {
+      "check": "SPY 原件元数据 instrumentType",
+      "pass": true,
+      "actual": "ETF",
+      "expected": "ETF"
+    },
+    {
+      "check": "SPY 原件元数据 exchangeTimezoneName",
+      "pass": true,
+      "actual": "America/New_York",
+      "expected": "America/New_York"
+    },
+    {
+      "check": "SPY 原件元数据 fullExchangeName",
+      "pass": true,
+      "actual": "NYSEArca",
+      "expected": "NYSEArca"
+    },
+    {
+      "check": "SPY 原件元数据 priceHint",
+      "pass": true,
+      "actual": 2,
+      "expected": 2
+    },
+    {
+      "check": "SPY 原件历史日期",
+      "pass": true,
+      "actual": [
+        "2024-02-01",
+        "2024-02-02"
+      ],
+      "expected": [
+        "2024-02-01",
+        "2024-02-02"
+      ]
+    },
+    {
+      "check": "SPY 原件 close",
+      "pass": true,
+      "actual": [
+        489.20001220703125,
+        494.3500061035156
+      ],
+      "expected": [
+        489.20001220703125,
+        494.3500061035156
+      ]
+    },
+    {
+      "check": "SPY 原件 adjclose",
+      "pass": true,
+      "actual": [
+        473.69830322265625,
+        478.68505859375
+      ],
+      "expected": [
+        473.69830322265625,
+        478.68505859375
+      ]
+    },
+    {
+      "check": "SPY 原件事件",
+      "pass": true,
+      "actual": {},
+      "expected": {}
+    },
+    {
+      "check": "AAPL 原始除息记录命中数",
+      "pass": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "check": "AAPL 原始分红表窗口匹配数",
+      "pass": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "check": "META 原始除息记录命中数",
+      "pass": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "check": "META 原始分红表窗口匹配数",
+      "pass": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "check": "原始 SSGA SPY 行数",
+      "pass": true,
+      "actual": 136,
+      "expected": 136
+    },
+    {
+      "check": "原始 SSGA SPY CUSIP",
+      "pass": true,
+      "actual": [
+        "78462F103"
+      ],
+      "expected": [
+        "78462F103"
+      ]
+    },
+    {
+      "check": "原始 SSGA 分配窗口匹配",
+      "pass": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "check": "AAPL 美分有理数重算",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "AAPL 分类阈值",
+      "pass": true,
+      "actual": "negative_reaction",
+      "expected": "negative_reaction"
+    },
+    {
+      "check": "AAPL raw float 与美分口径差异",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "AAPL adjclose 与美分口径差异",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "AAPL adjclose 标签",
+      "pass": true,
+      "actual": "negative_reaction",
+      "expected": "negative_reaction"
+    },
+    {
+      "check": "AAPL 共享参考值",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "AAPL 共享参考标签",
+      "pass": true,
+      "actual": "negative_reaction",
+      "expected": "negative_reaction"
+    },
+    {
+      "check": "AMZN 美分有理数重算",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "AMZN 分类阈值",
+      "pass": true,
+      "actual": "positive_reaction",
+      "expected": "positive_reaction"
+    },
+    {
+      "check": "AMZN raw float 与美分口径差异",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "AMZN adjclose 与美分口径差异",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "AMZN adjclose 标签",
+      "pass": true,
+      "actual": "positive_reaction",
+      "expected": "positive_reaction"
+    },
+    {
+      "check": "AMZN 共享参考值",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "AMZN 共享参考标签",
+      "pass": true,
+      "actual": "positive_reaction",
+      "expected": "positive_reaction"
+    },
+    {
+      "check": "META 美分有理数重算",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "META 分类阈值",
+      "pass": true,
+      "actual": "positive_reaction",
+      "expected": "positive_reaction"
+    },
+    {
+      "check": "META raw float 与美分口径差异",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "META adjclose 与美分口径差异",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "META adjclose 标签",
+      "pass": true,
+      "actual": "positive_reaction",
+      "expected": "positive_reaction"
+    },
+    {
+      "check": "META 共享参考值",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "check": "META 共享参考标签",
+      "pass": true,
+      "actual": "positive_reaction",
+      "expected": "positive_reaction"
+    }
+  ],
+  "limitations": [
+    "local_verified是当前公开历史资料与固定题目口径的有限窗口复核，不是组织者私有outcome确认。",
+    "价格首发版本及修订链未知；当前下载的regularMarket/currentTradingPeriod字段不是2024历史交易状态。",
+    "公司行动检查使用指定Yahoo事件、现金分配primary记录及两日调整因子交叉核查；不声称掌握所有交易所公司行动记录。",
+    "AMZN当前FAQ为主站索引解析，原始全文HTTP字节未取得；中文事实记录不能充当原始HTTP归档。",
+    "close/adjclose来自同一供应商；Q4不同展示渠道的底层数据独立性未确认。",
+    "Yahoo close已按拆股调整；不存在窗口分配时close比值可用于本地总回报估计；后续共同调整因子在比值中抵消。",
+    "当前adjustedclose重算有小量浮点/历史调整残差，报告分别保留，既不混用字段也不声称得到2024首发total-return版本。",
+    "来源公开可访问不代表上游全文、JSON、XLSX或大规模历史数据具有开放再分发许可；上游原件默认local_only。"
+  ],
+  "generated_at": "2026-10-07T13:21:46.836669+00:00",
+  "verification": {
+    "generated_at": "2026-10-07T13:21:46.783856+00:00",
+    "verification_mode": "local_originals_and_derived_values",
+    "passed": true,
+    "check_count": 157,
+    "failed_count": 0
+  },
+  "retrieval_attempts": [
+    {
+      "url": "https://ir.aboutamazon.com/faqs/default.aspx",
+      "status": "parsed_open_body_incomplete",
+      "note": "open仅标题导航；主站搜索索引取得FAQ相关正文，生成中文事实备注。"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000008/amzn-20231231.htm",
+      "status": "primary_body_parsed_by_web_tool",
+      "note": "保存中文事实备注，不保留原始HTTP全文。"
+    },
+    {
+      "url": "https://finance.yahoo.com/quote/AMZN/history/",
+      "status": "web_open_HTTP429",
+      "note": "未保存原始响应；字段定义另由官方主站搜索索引核对。"
+    },
+    {
+      "url": "https://help.yahoo.com/kb/SLN28256.html",
+      "status": "web_open_HTTP429",
+      "note": "未取得原始响应，不作为该字段定义来源。"
+    }
+  ],
+  "derived_artifacts": [
+    {
+      "path": "README.md",
+      "sha256": "7dbd61b5982e5dadc2b6a1156cffc660864d425f29770ddac6051d212f4e78da",
+      "bytes": 10928,
+      "status": "generated",
+      "artifact_kind": "original_local_report_script_or_derived_evidence"
+    },
+    {
+      "path": "normalized-evidence.json",
+      "sha256": "cc6dc7c34275c32c1beb977dd65ef72e2813f6ca4a4e9c77bf12964e2b8743ae",
+      "bytes": 18284,
+      "status": "generated",
+      "artifact_kind": "original_local_report_script_or_derived_evidence"
+    },
+    {
+      "path": "publication-boundary.json",
+      "sha256": "0fa93c3b5c58451460bb61c9845819d4b088a4d43c02a44a8911bf16254a5883",
+      "bytes": 12698,
+      "status": "generated",
+      "artifact_kind": "original_local_report_script_or_derived_evidence"
+    },
+    {
+      "path": "verification-derived.json",
+      "sha256": "21cc20fbe25f2379e2f37ed75f5d1c9e62921818408920939b49e19018ce390b",
+      "bytes": 12396,
+      "status": "generated",
+      "artifact_kind": "original_local_report_script_or_derived_evidence"
+    },
+    {
+      "path": "verification-originals.json",
+      "sha256": "26ee2819c87d3b25503efd533a6f24d166c89c9dea74ac75136799d504cd2c39",
+      "bytes": 30410,
+      "status": "generated",
+      "artifact_kind": "original_local_report_script_or_derived_evidence"
+    },
+    {
+      "path": "verify.py",
+      "sha256": "f49a08b29cc2d8e7229cd6b8cb04a0b94a16a2c31a2cc998fe1e80954d70930b",
+      "bytes": 12685,
+      "status": "generated",
+      "artifact_kind": "original_local_report_script_or_derived_evidence"
+    }
+  ],
+  "counts": {
+    "new_fact_note_files": 3,
+    "new_upstream_original_files": 0,
+    "existing_external_evidence_files": 18,
+    "derived_artifact_files": 6,
+    "directory_files_including_manifest": 10
+  },
+  "artifact_checks": [
+    {
+      "check": "新目录完整性",
+      "pass": true
+    }
+  ],
+  "manifest_self_hash_policy": "不在自身内容保存自指hash；由上层发布清单统一记录。"
+}

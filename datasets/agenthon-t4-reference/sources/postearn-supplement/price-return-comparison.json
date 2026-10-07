@@ -1,0 +1,252 @@
+{
+  "task_id": "t4-postearn-20240201-megacap",
+  "official_template_alias": "postearn_20240201_a",
+  "window": "2024-02-01 regular close to 2024-02-02 regular close",
+  "checked_at": "2026-10-07T08:54:25.766149+00:00",
+  "price_checks": [
+    {
+      "entity_id": "AAPL",
+      "dates": [
+        "2024-02-01",
+        "2024-02-02"
+      ],
+      "supplement_file": "apple-ir-history.json",
+      "supplement_rows": [
+        {
+          "High": 186.95,
+          "HistoricalDate": "02/01/2024 00:00:00",
+          "Last": 186.86,
+          "Low": 183.82,
+          "Open": 183.99,
+          "Volume": 64046900
+        },
+        {
+          "High": 187.33,
+          "HistoricalDate": "02/02/2024 00:00:00",
+          "Last": 185.85,
+          "Low": 179.25,
+          "Open": 179.86,
+          "Volume": 102518000
+        }
+      ],
+      "yahoo_source_path": "datasets/agenthon-t4-reference/sources/earnings-credit/yahoo-aapl-20240201-20240202.json",
+      "yahoo_raw_closes": [
+        186.86000061035156,
+        185.85000610351562
+      ],
+      "close_cent_equal": [
+        true,
+        true
+      ],
+      "yahoo_volume": [
+        64885400,
+        102551700
+      ],
+      "provider_volume": [
+        64046900,
+        102518000
+      ],
+      "volume_equal": [
+        false,
+        false
+      ],
+      "yahoo_window_event_records": {},
+      "response_entity_metadata_present": false
+    },
+    {
+      "entity_id": "AMZN",
+      "dates": [
+        "2024-02-01",
+        "2024-02-02"
+      ],
+      "supplement_file": "amazon-ir-feed.json",
+      "supplement_rows": [
+        {
+          "High": 159.76,
+          "HistoricalDate": "02/01/2024 06:00:00",
+          "Last": 159.28,
+          "Low": 155.62,
+          "Open": 155.87,
+          "Volume": 76542419
+        },
+        {
+          "High": 172.5,
+          "HistoricalDate": "02/02/2024 06:00:00",
+          "Last": 171.81,
+          "Low": 167.33,
+          "Open": 169.19,
+          "Volume": 117218313
+        }
+      ],
+      "yahoo_source_path": "datasets/agenthon-t4-reference/sources/earnings-credit/yahoo-amzn-20240201-20240202.json",
+      "yahoo_raw_closes": [
+        159.27999877929688,
+        171.80999755859375
+      ],
+      "close_cent_equal": [
+        true,
+        true
+      ],
+      "yahoo_volume": [
+        76542400,
+        117218300
+      ],
+      "provider_volume": [
+        76542419,
+        117218313
+      ],
+      "volume_equal": [
+        false,
+        false
+      ],
+      "yahoo_window_event_records": {},
+      "response_entity_metadata_present": false
+    },
+    {
+      "entity_id": "META",
+      "dates": [
+        "2024-02-01",
+        "2024-02-02"
+      ],
+      "supplement_file": "meta-ir-history.json",
+      "supplement_rows": [
+        {
+          "High": 400.5,
+          "HistoricalDate": "02/01/2024 06:00:00",
+          "Last": 394.78,
+          "Low": 393.05,
+          "Open": 393.94,
+          "Volume": 25122855
+        },
+        {
+          "High": 485.96,
+          "HistoricalDate": "02/02/2024 06:00:00",
+          "Last": 474.99,
+          "Low": 453.01,
+          "Open": 459.6,
+          "Volume": 84707646
+        }
+      ],
+      "yahoo_source_path": "datasets/agenthon-t4-reference/sources/earnings-credit/yahoo-meta-20240201-20240202.json",
+      "yahoo_raw_closes": [
+        394.7799987792969,
+        474.989990234375
+      ],
+      "close_cent_equal": [
+        true,
+        true
+      ],
+      "yahoo_volume": [
+        29727100,
+        84707600
+      ],
+      "provider_volume": [
+        25122855,
+        84707646
+      ],
+      "volume_equal": [
+        false,
+        false
+      ],
+      "yahoo_window_event_records": {},
+      "response_entity_metadata_present": false
+    },
+    {
+      "entity_id": "SPY",
+      "dates": [
+        "2024-02-01",
+        "2024-02-02"
+      ],
+      "supplement_file": "spy-tickertech-proxy.json",
+      "supplement_rows": [
+        {
+          "High": 489.23,
+          "HistoricalDate": "02/01/2024 06:00:00",
+          "Last": 489.2,
+          "Low": 483.8,
+          "Open": 484.63,
+          "Volume": 89593545
+        },
+        {
+          "High": 496.05,
+          "HistoricalDate": "02/02/2024 06:00:00",
+          "Last": 494.35,
+          "Low": 489.3,
+          "Open": 489.65,
+          "Volume": 99228192
+        }
+      ],
+      "yahoo_source_path": "datasets/agenthon-t4-reference/sources/earnings-credit/yahoo-spy-20240201-20240202.json",
+      "yahoo_raw_closes": [
+        489.20001220703125,
+        494.3500061035156
+      ],
+      "close_cent_equal": [
+        true,
+        true
+      ],
+      "yahoo_volume": [
+        91891600,
+        99228200
+      ],
+      "provider_volume": [
+        89593545,
+        99228192
+      ],
+      "volume_equal": [
+        false,
+        false
+      ],
+      "yahoo_window_event_records": {},
+      "response_entity_metadata_present": false
+    }
+  ],
+  "calculations": [
+    {
+      "entity_id": "AAPL",
+      "close_based_company_return_percent": -0.5405116129722942,
+      "close_based_spy_return_percent": 1.0527391659852947,
+      "close_based_abnormal_return_percent": -1.593250778957589,
+      "yahoo_same_source_adjclose_abnormal_return_percent": -1.5932471529511938,
+      "adjclose_minus_close_percentage_points": 3.6260063951409904e-06,
+      "reference_value_readonly": -1.5932507789575607,
+      "matches_reference_value": true,
+      "label": "negative_reaction",
+      "reference_label_matches": true,
+      "recommendation_status": "provisional"
+    },
+    {
+      "entity_id": "AMZN",
+      "close_based_company_return_percent": 7.866649924660973,
+      "close_based_spy_return_percent": 1.0527391659852947,
+      "close_based_abnormal_return_percent": 6.813910758675679,
+      "yahoo_same_source_adjclose_abnormal_return_percent": 6.813921071306939,
+      "adjclose_minus_close_percentage_points": 1.0312631260056548e-05,
+      "reference_value_readonly": 6.813910758675692,
+      "matches_reference_value": true,
+      "label": "positive_reaction",
+      "reference_label_matches": true,
+      "recommendation_status": "provisional"
+    },
+    {
+      "entity_id": "META",
+      "close_based_company_return_percent": 20.317645270783746,
+      "close_based_spy_return_percent": 1.0527391659852947,
+      "close_based_abnormal_return_percent": 19.264906104798452,
+      "yahoo_same_source_adjclose_abnormal_return_percent": 19.264908919294577,
+      "adjclose_minus_close_percentage_points": 2.8144961241594046e-06,
+      "reference_value_readonly": 19.264906104798445,
+      "matches_reference_value": true,
+      "label": "positive_reaction",
+      "reference_label_matches": true,
+      "recommendation_status": "provisional"
+    }
+  ],
+  "method": "(company_end/company_start - SPY_end/SPY_start)*100; quote Last treated as historical daily price candidate; reference unchanged",
+  "limitations": [
+    "历史接口不返回 symbol/security ID，标的关联来自请求参数；SPY via Apple代理不是SPY发行人或交易所核证。",
+    "Q4/TickerTech 和 Yahoo 底层行情是否独立未证实；同一 Yahoo close/adjclose 只是同源序列一致性检查。",
+    "价格在两个展示渠道按美分相符；成交量并不全相符，因此没有通过整条行情记录核证。",
+    "尚无当日官方首次发布收盘记录、完整拆股台账和组织者 outcome；维持 provisional。"
+  ]
+}

@@ -1,0 +1,461 @@
+{
+  "contract": {
+    "task_id": "t4-postearn-20240201-megacap",
+    "alias": "postearn_20240201_a",
+    "price_source": "Yahoo Finance (daily closes for outcome resolution)",
+    "dates": [
+      "2024-02-01",
+      "2024-02-02"
+    ],
+    "window": "2024-02-01 close -> 2024-02-02 close",
+    "company_return_type": "total_return",
+    "benchmark": "SPY",
+    "abnormal_return": "company_return - SPY_return",
+    "units": "percentage points",
+    "classification": "strict > +1% positive; strict < -1% negative; otherwise flat",
+    "forecast_cutoff": "2024-01-31; post-cutoff outcomes are evaluation-only, not frozen input evidence"
+  },
+  "prices": {
+    "AAPL": {
+      "meta": {
+        "symbol": "AAPL",
+        "currency": "USD",
+        "instrumentType": "EQUITY",
+        "exchangeTimezoneName": "America/New_York",
+        "fullExchangeName": "NasdaqGS",
+        "priceHint": 2
+      },
+      "dates": [
+        "2024-02-01",
+        "2024-02-02"
+      ],
+      "timestamps": [
+        1706797800,
+        1706884200
+      ],
+      "timestamp_meaning": "daily-bar label; not asserted to be16:00 market close timestamp",
+      "close_float": [
+        186.86000061035156,
+        185.85000610351562
+      ],
+      "close_cents": [
+        "186.86",
+        "185.85"
+      ],
+      "adjclose_float": [
+        184.6093292236328,
+        183.61148071289062
+      ],
+      "events": {},
+      "q4_close_cents": [
+        "186.86",
+        "185.85"
+      ],
+      "q4_role": "optional corroboration; upstream independence unconfirmed; SPY response has no security meta"
+    },
+    "AMZN": {
+      "meta": {
+        "symbol": "AMZN",
+        "currency": "USD",
+        "instrumentType": "EQUITY",
+        "exchangeTimezoneName": "America/New_York",
+        "fullExchangeName": "NasdaqGS",
+        "priceHint": 2
+      },
+      "dates": [
+        "2024-02-01",
+        "2024-02-02"
+      ],
+      "timestamps": [
+        1706797800,
+        1706884200
+      ],
+      "timestamp_meaning": "daily-bar label; not asserted to be16:00 market close timestamp",
+      "close_float": [
+        159.27999877929688,
+        171.80999755859375
+      ],
+      "close_cents": [
+        "159.28",
+        "171.81"
+      ],
+      "adjclose_float": [
+        159.27999877929688,
+        171.80999755859375
+      ],
+      "events": {},
+      "q4_close_cents": [
+        "159.28",
+        "171.81"
+      ],
+      "q4_role": "optional corroboration; upstream independence unconfirmed; SPY response has no security meta"
+    },
+    "META": {
+      "meta": {
+        "symbol": "META",
+        "currency": "USD",
+        "instrumentType": "EQUITY",
+        "exchangeTimezoneName": "America/New_York",
+        "fullExchangeName": "NasdaqGS",
+        "priceHint": 2
+      },
+      "dates": [
+        "2024-02-01",
+        "2024-02-02"
+      ],
+      "timestamps": [
+        1706797800,
+        1706884200
+      ],
+      "timestamp_meaning": "daily-bar label; not asserted to be16:00 market close timestamp",
+      "close_float": [
+        394.7799987792969,
+        474.989990234375
+      ],
+      "close_cents": [
+        "394.78",
+        "474.99"
+      ],
+      "adjclose_float": [
+        391.0348205566406,
+        470.4838562011719
+      ],
+      "events": {},
+      "q4_close_cents": [
+        "394.78",
+        "474.99"
+      ],
+      "q4_role": "optional corroboration; upstream independence unconfirmed; SPY response has no security meta"
+    },
+    "SPY": {
+      "meta": {
+        "symbol": "SPY",
+        "currency": "USD",
+        "instrumentType": "ETF",
+        "exchangeTimezoneName": "America/New_York",
+        "fullExchangeName": "NYSEArca",
+        "priceHint": 2
+      },
+      "dates": [
+        "2024-02-01",
+        "2024-02-02"
+      ],
+      "timestamps": [
+        1706797800,
+        1706884200
+      ],
+      "timestamp_meaning": "daily-bar label; not asserted to be16:00 market close timestamp",
+      "close_float": [
+        489.20001220703125,
+        494.3500061035156
+      ],
+      "close_cents": [
+        "489.20",
+        "494.35"
+      ],
+      "adjclose_float": [
+        473.69830322265625,
+        478.68505859375
+      ],
+      "events": {},
+      "q4_close_cents": [
+        "489.20",
+        "494.35"
+      ],
+      "q4_role": "optional corroboration; upstream independence unconfirmed; SPY response has no security meta"
+    }
+  },
+  "corporate_actions": {
+    "AAPL": {
+      "ex_date": "2024-02-09",
+      "cash_dividend_usd": ".24",
+      "declaration_date": "2024-02-01",
+      "record_date": "2024-02-12",
+      "payable_date": "2024-02-15",
+      "source": "Nasdaq dividends + Apple issuer dividend history",
+      "window_ex_date_match_count": 0,
+      "issuer_last_split_year": 2020
+    },
+    "META": {
+      "ex_date": "2024-02-21",
+      "cash_dividend_usd": ".50",
+      "declaration_date": "2024-02-01",
+      "record_date": "2024-02-22",
+      "payable_date": "2024-03-26",
+      "source": "Nasdaq dividends + Meta2024-02-01 filing (prior archived translated note)",
+      "window_ex_date_match_count": 0
+    },
+    "AMZN": {
+      "issuer_states_never_paid_cash_dividends": true,
+      "last_split_effective_date": "2022-06-03",
+      "issuer_split_list_dates": [
+        "1998-06-02",
+        "1999-01-05",
+        "1999-09-01",
+        "2022-06-03"
+      ],
+      "source": "Amazon IR current FAQ primary indexed body; 2023 10-K Note1 for historical split",
+      "window_yahoo_events_empty": true
+    },
+    "SPY": {
+      "cusip": "78462F103",
+      "full_table_spy_row_count": 136,
+      "window_ex_date_match_count": 0,
+      "adjacent_ex_dates": [
+        "2023-12-15",
+        "2024-03-15"
+      ],
+      "prior_distribution_payable_date": "2024-01-31",
+      "source": "SSGA workbook dividend!B9129:B9264; A9139:J9140"
+    }
+  },
+  "resolution": {
+    "AAPL": {
+      "reference_value": -1.5932507789575607,
+      "reference_label": "negative_reaction",
+      "proposed_local_status": "verified",
+      "quality": {
+        "fact_status": "verified",
+        "task_alignment": "aligned",
+        "first_publication_status": "unconfirmed",
+        "official_outcome_status": "unconfirmed"
+      }
+    },
+    "AMZN": {
+      "reference_value": 6.813910758675692,
+      "reference_label": "positive_reaction",
+      "proposed_local_status": "verified",
+      "quality": {
+        "fact_status": "verified",
+        "task_alignment": "aligned",
+        "first_publication_status": "unconfirmed",
+        "official_outcome_status": "unconfirmed"
+      }
+    },
+    "META": {
+      "reference_value": 19.264906104798445,
+      "reference_label": "positive_reaction",
+      "proposed_local_status": "verified",
+      "quality": {
+        "fact_status": "verified",
+        "task_alignment": "aligned",
+        "first_publication_status": "unconfirmed",
+        "official_outcome_status": "unconfirmed"
+      }
+    }
+  },
+  "local_originals": [
+    {
+      "path": "sources/earnings-credit/yahoo-AAPL-20240201-20240202.raw.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "sha256": "32ef6a4d56f606cbb1ff076161071e90028f03f5dc8a445133887e0a2a73233d",
+      "bytes": 1399,
+      "retrieved_at": "2026-10-07T08:08:41.954470+00:00",
+      "published_at": null,
+      "artifact_kind": "unmodified_HTTP_response",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/earnings-credit/yahoo-AAPL-20240201-20240202.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "sha256": "7511831250ffa19118f559966db09e2343eed2ea2f2b823721d39e345d1ff4e4",
+      "bytes": 3374,
+      "retrieved_at": "2026-10-07T08:08:41.954470+00:00",
+      "published_at": null,
+      "artifact_kind": "metadata_wrapper_not_HTTP_response",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/earnings-credit/yahoo-AMZN-20240201-20240202.raw.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "sha256": "1bbc2f7451ba73c1e84a21344d94eb2bf24d2b2529541dae1b93bc55bd8dcf60",
+      "bytes": 1408,
+      "retrieved_at": "2026-10-07T08:08:43.288284+00:00",
+      "published_at": null,
+      "artifact_kind": "unmodified_HTTP_response",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/earnings-credit/yahoo-AMZN-20240201-20240202.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "sha256": "8988ea4959f9fc3b69f894605eb25169248447ee7d388baedefb541caf8fda2b",
+      "bytes": 3383,
+      "retrieved_at": "2026-10-07T08:08:43.288284+00:00",
+      "published_at": null,
+      "artifact_kind": "metadata_wrapper_not_HTTP_response",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/earnings-credit/yahoo-META-20240201-20240202.raw.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/META?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "sha256": "c6277669914f4c4cadaabc208632d44ae051f0e8dec13ddc7d8efb89f56946a0",
+      "bytes": 1413,
+      "retrieved_at": "2026-10-07T08:08:44.258322+00:00",
+      "published_at": null,
+      "artifact_kind": "unmodified_HTTP_response",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/earnings-credit/yahoo-META-20240201-20240202.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/META?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "sha256": "09b67ff5feebdbc9090d18a920be82788d9ea11bcf15534e4cc05d3a307f0383",
+      "bytes": 3388,
+      "retrieved_at": "2026-10-07T08:08:44.258322+00:00",
+      "published_at": null,
+      "artifact_kind": "metadata_wrapper_not_HTTP_response",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/earnings-credit/yahoo-SPY-20240201-20240202.raw.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "sha256": "f5b806d21349f916e114273a5740c5e5c222043e656e73f2977a48534f62961d",
+      "bytes": 1448,
+      "retrieved_at": "2026-10-07T08:08:45.392493+00:00",
+      "published_at": null,
+      "artifact_kind": "unmodified_HTTP_response",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/earnings-credit/yahoo-SPY-20240201-20240202.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "sha256": "645db52c6fde926eb0dcdccbe086ff348730acc064a88fbaa5411a998b270ae7",
+      "bytes": 3421,
+      "retrieved_at": "2026-10-07T08:08:45.392493+00:00",
+      "published_at": null,
+      "artifact_kind": "metadata_wrapper_not_HTTP_response",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/postearn-supplement/apple-nasdaq-dividend.json",
+      "url": "https://api.nasdaq.com/api/quote/AAPL/dividends?assetclass=stocks",
+      "sha256": "21c36a00312494a67684ca1d51aff41ba5b31c31abd869e465f5137c0133114d",
+      "bytes": 13587,
+      "retrieved_at": "2026-10-07T08:49:29.477229+00:00",
+      "published_at": null,
+      "artifact_kind": "downloaded_response",
+      "hash_basis": "saved_unmodified_downloaded_response_bytes",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/postearn-supplement/meta-nasdaq-dividend.json",
+      "url": "https://api.nasdaq.com/api/quote/META/dividends?assetclass=stocks",
+      "sha256": "d9e82fa631bbfd0ec58c56f63183b12ebfaab437b12a7cf67fc64cf227493366",
+      "bytes": 2405,
+      "retrieved_at": "2026-10-07T08:51:23.317670+00:00",
+      "published_at": null,
+      "artifact_kind": "downloaded_response",
+      "hash_basis": "saved_unmodified_downloaded_response_bytes",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/postearn-supplement/spy-ssga-distributions.xlsx",
+      "url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/spdr-etf-historical-distributions.xlsx",
+      "sha256": "b162dd17027d1128f2209e312b0f634960daa78319dafe0ab821ab0b7e77ce23",
+      "bytes": 581242,
+      "retrieved_at": "2026-10-07T08:45:50.586222+00:00",
+      "published_at": null,
+      "artifact_kind": "downloaded_response",
+      "hash_basis": "saved_unmodified_downloaded_response_bytes",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/postearn-supplement/apple-dividend-page.html",
+      "url": "https://investor.apple.com/dividend-history/default.aspx",
+      "sha256": "9b98898072d9282c94aed8fc85ed3c07c40e0ee78e8a1436d8d5c83e5fbbae87",
+      "bytes": 203613,
+      "retrieved_at": "2026-10-07T08:44:12.876231+00:00",
+      "published_at": null,
+      "artifact_kind": "sanitized_downloaded_response",
+      "hash_basis": "saved_sanitized_file_bytes",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/postearn-supplement/apple-ir-history.json",
+      "url": "https://investor.apple.com/feed/StockQuote.svc/GetStockQuoteHistoricalList?exchange=NASD&symbol=AAPL&pageSize=10&startDate=Feb-01-2024&endDate=Feb-02-2024",
+      "sha256": "5b0e240829bb64da3ee0ded4cf17b180349196a3cf7032193f2e84a748f9fbeb",
+      "bytes": 288,
+      "retrieved_at": "2026-10-07T08:45:49.986962+00:00",
+      "published_at": null,
+      "artifact_kind": "downloaded_response",
+      "hash_basis": "saved_unmodified_downloaded_response_bytes",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/postearn-supplement/amazon-ir-feed.json",
+      "url": "https://ir.aboutamazon.com/feed/StockQuote.svc/GetStockQuoteHistoricalList?exchange=NASD&symbol=AMZN&pageSize=10&startDate=Feb-01-2024&endDate=Feb-02-2024",
+      "sha256": "7710f32cfb1b6e6c754c6fa9f30957f5ab7eb48f9f65bd294d549da3f57ede86",
+      "bytes": 271,
+      "retrieved_at": "2026-10-07T08:49:28.530013+00:00",
+      "published_at": null,
+      "artifact_kind": "downloaded_response",
+      "hash_basis": "saved_unmodified_downloaded_response_bytes",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/postearn-supplement/meta-ir-history.json",
+      "url": "https://investor.atmeta.com/feed/StockQuote.svc/GetStockQuoteHistoricalList?exchange=NASD&symbol=META&pageSize=10&startDate=Feb-01-2024&endDate=Feb-02-2024",
+      "sha256": "3c0ec64d78055fcaaae2f617df290d03455535c741cdacfffdf3669e05fa0444",
+      "bytes": 269,
+      "retrieved_at": "2026-10-07T08:45:50.033798+00:00",
+      "published_at": null,
+      "artifact_kind": "downloaded_response",
+      "hash_basis": "saved_unmodified_downloaded_response_bytes",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/postearn-supplement/spy-tickertech-proxy.json",
+      "url": "https://investor.apple.com/feed/StockQuote.svc/GetStockQuoteHistoricalList?exchange=AMEX&symbol=SPY&pageSize=10&startDate=Feb-01-2024&endDate=Feb-02-2024",
+      "sha256": "6b7b49589b9a57b39f277e1c30ff9d862d6e3bc7b7bb02b865e94c0861d13af9",
+      "bytes": 268,
+      "retrieved_at": "2026-10-07T08:51:23.316927+00:00",
+      "published_at": null,
+      "artifact_kind": "downloaded_response",
+      "hash_basis": "saved_unmodified_downloaded_response_bytes",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "inputs/units/t4-postearn-20240201-megacap/card.toml",
+      "url": "https://github.com/Agenthon-2026/track4-analysis-public/tree/1c744e1d6725340643a533f436517d72b53ca0e1",
+      "sha256": "483da130b5fc309cfbd24df11a686b76ed5841ffa25a8c355c6d27ec9878ba44",
+      "bytes": 3994,
+      "artifact_kind": "official_frozen_task_input",
+      "redistribution_permission": "CC-BY-4.0 per card; retain attribution",
+      "publish_original": true
+    },
+    {
+      "path": "inputs/units/t4-postearn-20240201-megacap/task.json",
+      "url": "https://github.com/Agenthon-2026/track4-analysis-public/tree/1c744e1d6725340643a533f436517d72b53ca0e1",
+      "sha256": "d9d422dba05d6e7e5e343f44b91bb39915b771f1859b595dddd636815b376461",
+      "bytes": 3836,
+      "artifact_kind": "official_frozen_task_input",
+      "redistribution_permission": "CC-BY-4.0 per card; retain attribution",
+      "publish_original": true
+    }
+  ],
+  "limitations": [
+    "local_verified是当前公开历史资料与固定题目口径的有限窗口复核，不是组织者私有outcome确认。",
+    "价格首发版本及修订链未知；当前下载的regularMarket/currentTradingPeriod字段不是2024历史交易状态。",
+    "公司行动检查使用指定Yahoo事件、现金分配primary记录及两日调整因子交叉核查；不声称掌握所有交易所公司行动记录。",
+    "AMZN当前FAQ为主站索引解析，原始全文HTTP字节未取得；中文事实记录不能充当原始HTTP归档。",
+    "close/adjclose来自同一供应商；Q4不同展示渠道的底层数据独立性未确认。",
+    "Yahoo close已按拆股调整；不存在窗口分配时close比值可用于本地总回报估计；后续共同调整因子在比值中抵消。",
+    "当前adjustedclose重算有小量浮点/历史调整残差，报告分别保留，既不混用字段也不声称得到2024首发total-return版本。",
+    "来源公开可访问不代表上游全文、JSON、XLSX或大规模历史数据具有开放再分发许可；上游原件默认local_only。"
+  ]
+}

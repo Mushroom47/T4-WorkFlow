@@ -1,0 +1,9 @@
+{
+  "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2022",
+  "fetched_at": "2026-10-07T07:55:38.004816+00:00",
+  "status": 200,
+  "content_type": "text/xml; charset=UTF-8",
+  "sha256": "921bbfbba14d830dc830da44b57bfeef0dce248617215251946573469997eab4",
+  "bytes": 343983,
+  "evidence_file": "yield_curve_2022.xml"
+}

@@ -1,0 +1,229 @@
+{
+  "task_id": "t4-cpicomp-202410-us11",
+  "schema_version": "3",
+  "target_type": "regression",
+  "entity_predictions": [
+    {
+      "entity_id": "CPI_ALLITEMS",
+      "interval": {
+        "level": 0.9,
+        "lo": -0.7559471981594351,
+        "hi": 1.244052801840565
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 117,
+          "span_end": 149,
+          "claim": "输入表字段 latest_published_mom_pct 的值为 0.18。"
+        }
+      ],
+      "point_forecast": 0.24405280184056488
+    },
+    {
+      "entity_id": "CPI_APPAREL",
+      "interval": {
+        "level": 0.9,
+        "lo": -2.4570678665166854,
+        "hi": -0.4570678665166854
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 375,
+          "span_end": 407,
+          "claim": "输入表字段 latest_published_mom_pct 的值为 1.14。"
+        }
+      ],
+      "point_forecast": -1.4570678665166854
+    },
+    {
+      "entity_id": "CPI_CORE",
+      "interval": {
+        "level": 0.9,
+        "lo": -0.7197342619409104,
+        "hi": 1.2802657380590896
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 664,
+          "span_end": 696,
+          "claim": "输入表字段 latest_published_mom_pct 的值为 0.31。"
+        }
+      ],
+      "point_forecast": 0.2802657380590896
+    },
+    {
+      "entity_id": "CPI_ENERGY",
+      "interval": {
+        "level": 0.9,
+        "lo": -1.0209787893398306,
+        "hi": 0.9790212106601693
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 920,
+          "span_end": 953,
+          "claim": "输入表字段 latest_published_mom_pct 的值为 -1.85。"
+        }
+      ],
+      "point_forecast": -0.020978789339830623
+    },
+    {
+      "entity_id": "CPI_FOOD",
+      "interval": {
+        "level": 0.9,
+        "lo": -0.8414478284983964,
+        "hi": 1.1585521715016036
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 1173,
+          "span_end": 1204,
+          "claim": "输入表字段 latest_published_mom_pct 的值为 0.4。"
+        }
+      ],
+      "point_forecast": 0.1585521715016036
+    },
+    {
+      "entity_id": "CPI_GASOLINE",
+      "interval": {
+        "level": 0.9,
+        "lo": -1.8727988936251907,
+        "hi": 0.1272011063748093
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 1450,
+          "span_end": 1482,
+          "claim": "输入表字段 latest_published_mom_pct 的值为 -4.1。"
+        }
+      ],
+      "point_forecast": -0.8727988936251907
+    },
+    {
+      "entity_id": "CPI_MEDICAL",
+      "interval": {
+        "level": 0.9,
+        "lo": -0.7167764459772714,
+        "hi": 1.2832235540227286
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 1713,
+          "span_end": 1745,
+          "claim": "输入表字段 latest_published_mom_pct 的值为 0.41。"
+        }
+      ],
+      "point_forecast": 0.2832235540227286
+    },
+    {
+      "entity_id": "CPI_NEWVEH",
+      "interval": {
+        "level": 0.9,
+        "lo": -1.0480087658358326,
+        "hi": 0.9519912341641674
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 1981,
+          "span_end": 2013,
+          "claim": "输入表字段 latest_published_mom_pct 的值为 0.15。"
+        }
+      ],
+      "point_forecast": -0.04800876583583261
+    },
+    {
+      "entity_id": "CPI_SHELTER",
+      "interval": {
+        "level": 0.9,
+        "lo": -0.6176168496083356,
+        "hi": 1.3823831503916644
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 2243,
+          "span_end": 2275,
+          "claim": "输入表字段 latest_published_mom_pct 的值为 0.22。"
+        }
+      ],
+      "point_forecast": 0.3823831503916643
+    },
+    {
+      "entity_id": "CPI_TRANSPSVC",
+      "interval": {
+        "level": 0.9,
+        "lo": -0.5591354776449595,
+        "hi": 1.4408645223550405
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 2523,
+          "span_end": 2555,
+          "claim": "输入表字段 latest_published_mom_pct 的值为 1.35。"
+        }
+      ],
+      "point_forecast": 0.4408645223550405
+    },
+    {
+      "entity_id": "CPI_USEDCARS",
+      "interval": {
+        "level": 0.9,
+        "lo": 1.7217312146388117,
+        "hi": 3.7217312146388117
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 2801,
+          "span_end": 2833,
+          "claim": "输入表字段 latest_published_mom_pct 的值为 0.31。"
+        }
+      ],
+      "point_forecast": 2.7217312146388117
+    }
+  ],
+  "submitted_reasons": [
+    {
+      "reason_id": "local_structure_fixture",
+      "premise": "U.S. CPI-U components — seasonally adjusted month-over-month percent changes, January through September 2024, exactly as published as of 2024-10-31 (ALFRED real-time vintage; the September figures are the first prints from the 2024-10-10 re",
+      "mechanism": "该段历史资料提供输入上下文，本夹具只测试字段与引用解析。",
+      "answer_implication": "本地测试记录 CPI_ALLITEMS 的历史参考结果；该引用不用于推出事后结果。",
+      "scope": {
+        "entities": [
+          "CPI_ALLITEMS"
+        ]
+      },
+      "citations": [
+        {
+          "doc_id": "ALFRED_CPI_COMPONENTS_20241031",
+          "span_start": 0,
+          "span_end": 240
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "research_fixture": true,
+    "synthetic_interval": true,
+    "interval_method": "数值结果中心左右加减固定 half_width；无数值真值或信用事件概率任务使用 [0,1]。这是结构测试区间，未经过校准。",
+    "synthetic_point_entities": [],
+    "synthetic_point_method": "上述实体的 point_forecast=0.5 是结构测试占位；事后 0/1 事件不被当作概率真值。",
+    "half_width": 1.0,
+    "reference_status_counts": {
+      "verified": 11
+    },
+    "task_canonical_sha256": "44e9351eb2e32532eb7b9c352c8921ed6a2c14ba9532d9fd8e8404e3cbe8a855",
+    "faithfulness": "not_evaluated",
+    "reasoning": "not_evaluated",
+    "purpose": "输入事实 claims 不声称支持历史结果；本夹具仅供离线研究。"
+  }
+}

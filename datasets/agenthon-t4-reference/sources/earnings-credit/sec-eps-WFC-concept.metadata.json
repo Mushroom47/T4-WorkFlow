@@ -1,0 +1,12 @@
+{
+  "entity_id": "WFC",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000072971/us-gaap/EarningsPerShareDiluted.json",
+  "source_sha256": "1e20e27e2c96f370b20dabf8d8cc6e1af5ec2904899c9b627fbe47866b92eaa6",
+  "retrieved_at": "2026-10-07T08:14:19.866041+00:00",
+  "bytes": 33302,
+  "raw_path": "sec-eps-WFC-concept.raw.json",
+  "tag": "EarningsPerShareDiluted",
+  "taxonomy": "us-gaap",
+  "unit": "USD/shares",
+  "observation_count": 228
+}

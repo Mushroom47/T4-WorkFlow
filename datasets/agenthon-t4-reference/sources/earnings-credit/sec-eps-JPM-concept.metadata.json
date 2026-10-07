@@ -1,0 +1,12 @@
+{
+  "entity_id": "JPM",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000019617/us-gaap/EarningsPerShareDiluted.json",
+  "source_sha256": "39a48e8fed3c70d6a3adf5fd6f4fa529e10d1849dc918cfee2650b0d69cb7fc8",
+  "retrieved_at": "2026-10-07T08:14:24.043083+00:00",
+  "bytes": 34440,
+  "raw_path": "sec-eps-JPM-concept.raw.json",
+  "tag": "EarningsPerShareDiluted",
+  "taxonomy": "us-gaap",
+  "unit": "USD/shares",
+  "observation_count": 236
+}

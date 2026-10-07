@@ -1,0 +1,516 @@
+{
+  "schema_version": "0.1.0",
+  "group": "cot",
+  "records": [
+    {
+      "task_id": "t4-cotpos-202411-us10",
+      "entity_id": "CORN_CBT",
+      "target_type": "ranking",
+      "reference_label": null,
+      "reference_value": 7.242607798814084,
+      "unit": "pct_of_open_interest",
+      "status": "verified",
+      "method": "100 × (11月26日非商业多头减空头 − 10月22日非商业多头减空头) / 10月22日open interest；按值降序排序。",
+      "inputs": [
+        {
+          "name": "start_net",
+          "value": 17840,
+          "date": "2024-10-22",
+          "unit": "contracts"
+        },
+        {
+          "name": "end_net",
+          "value": 136869,
+          "date": "2024-11-26",
+          "unit": "contracts"
+        },
+        {
+          "name": "start_open_interest",
+          "value": 1643455,
+          "date": "2024-10-22",
+          "unit": "contracts"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://publicreporting.cftc.gov/resource/6dca-aqww.json?%24select=market_and_exchange_names%2Creport_date_as_yyyy_mm_dd%2Ccftc_contract_market_code%2Copen_interest_all%2Cnoncomm_positions_long_all%2Cnoncomm_positions_short_all&%24where=report_date_as_yyyy_mm_dd+in+%28%272024-10-22T00%3A00%3A00%27%2C%272024-11-26T00%3A00%3A00%27%29&%24limit=2000",
+          "title": "CFTC Legacy Futures Only 两期报告 API",
+          "published_at": null,
+          "locator": "CFTC contract market code=002602; report_date=2024-10-22/2024-11-26; noncomm_positions_long_all/short_all/open_interest_all"
+        },
+        {
+          "url": "https://www.cftc.gov/files/dea/history/deacot2024.zip",
+          "title": "CFTC 2024 Legacy Futures Only 年度历史压缩数据",
+          "published_at": null,
+          "locator": "annual.txt; CFTC Contract Market Code=002602; As of Date=2024-10-22/2024-11-26"
+        }
+      ],
+      "notes": [
+        "市场代码002602，名称CORN - CHICAGO BOARD OF TRADE；Legacy futures only，不含options、不采用TFF或disaggregated分类。",
+        "20个市场日期行的open interest、noncommercial long、short在官方API与年度历史文件一致；10个task基期net/OI均一致。",
+        "使用报告as-of日期，非下载日；年度文件与当前API未提供本次行的历史修订链，因此尚未证明这两份数据均等于当时首次发布版本。",
+        "verified表示公开资料复核完成，不表示与主办方私有outcome比对一致。"
+      ],
+      "reference_rank": 1
+    },
+    {
+      "task_id": "t4-cotpos-202411-us10",
+      "entity_id": "ES_SP500",
+      "target_type": "ranking",
+      "reference_label": null,
+      "reference_value": -4.658876491640775,
+      "unit": "pct_of_open_interest",
+      "status": "verified",
+      "method": "100 × (11月26日非商业多头减空头 − 10月22日非商业多头减空头) / 10月22日open interest；按值降序排序。",
+      "inputs": [
+        {
+          "name": "start_net",
+          "value": 22981,
+          "date": "2024-10-22",
+          "unit": "contracts"
+        },
+        {
+          "name": "end_net",
+          "value": -78894,
+          "date": "2024-11-26",
+          "unit": "contracts"
+        },
+        {
+          "name": "start_open_interest",
+          "value": 2186686,
+          "date": "2024-10-22",
+          "unit": "contracts"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://publicreporting.cftc.gov/resource/6dca-aqww.json?%24select=market_and_exchange_names%2Creport_date_as_yyyy_mm_dd%2Ccftc_contract_market_code%2Copen_interest_all%2Cnoncomm_positions_long_all%2Cnoncomm_positions_short_all&%24where=report_date_as_yyyy_mm_dd+in+%28%272024-10-22T00%3A00%3A00%27%2C%272024-11-26T00%3A00%3A00%27%29&%24limit=2000",
+          "title": "CFTC Legacy Futures Only 两期报告 API",
+          "published_at": null,
+          "locator": "CFTC contract market code=13874A; report_date=2024-10-22/2024-11-26; noncomm_positions_long_all/short_all/open_interest_all"
+        },
+        {
+          "url": "https://www.cftc.gov/files/dea/history/deacot2024.zip",
+          "title": "CFTC 2024 Legacy Futures Only 年度历史压缩数据",
+          "published_at": null,
+          "locator": "annual.txt; CFTC Contract Market Code=13874A; As of Date=2024-10-22/2024-11-26"
+        }
+      ],
+      "notes": [
+        "市场代码13874A，名称E-MINI S&P 500 - CHICAGO MERCANTILE EXCHANGE；Legacy futures only，不含options、不采用TFF或disaggregated分类。",
+        "20个市场日期行的open interest、noncommercial long、short在官方API与年度历史文件一致；10个task基期net/OI均一致。",
+        "使用报告as-of日期，非下载日；年度文件与当前API未提供本次行的历史修订链，因此尚未证明这两份数据均等于当时首次发布版本。",
+        "verified表示公开资料复核完成，不表示与主办方私有outcome比对一致。"
+      ],
+      "reference_rank": 7
+    },
+    {
+      "task_id": "t4-cotpos-202411-us10",
+      "entity_id": "EURO_FX",
+      "target_type": "ranking",
+      "reference_label": null,
+      "reference_value": -4.223529755255018,
+      "unit": "pct_of_open_interest",
+      "status": "verified",
+      "method": "100 × (11月26日非商业多头减空头 − 10月22日非商业多头减空头) / 10月22日open interest；按值降序排序。",
+      "inputs": [
+        {
+          "name": "start_net",
+          "value": -28524,
+          "date": "2024-10-22",
+          "unit": "contracts"
+        },
+        {
+          "name": "end_net",
+          "value": -56009,
+          "date": "2024-11-26",
+          "unit": "contracts"
+        },
+        {
+          "name": "start_open_interest",
+          "value": 650759,
+          "date": "2024-10-22",
+          "unit": "contracts"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://publicreporting.cftc.gov/resource/6dca-aqww.json?%24select=market_and_exchange_names%2Creport_date_as_yyyy_mm_dd%2Ccftc_contract_market_code%2Copen_interest_all%2Cnoncomm_positions_long_all%2Cnoncomm_positions_short_all&%24where=report_date_as_yyyy_mm_dd+in+%28%272024-10-22T00%3A00%3A00%27%2C%272024-11-26T00%3A00%3A00%27%29&%24limit=2000",
+          "title": "CFTC Legacy Futures Only 两期报告 API",
+          "published_at": null,
+          "locator": "CFTC contract market code=099741; report_date=2024-10-22/2024-11-26; noncomm_positions_long_all/short_all/open_interest_all"
+        },
+        {
+          "url": "https://www.cftc.gov/files/dea/history/deacot2024.zip",
+          "title": "CFTC 2024 Legacy Futures Only 年度历史压缩数据",
+          "published_at": null,
+          "locator": "annual.txt; CFTC Contract Market Code=099741; As of Date=2024-10-22/2024-11-26"
+        }
+      ],
+      "notes": [
+        "市场代码099741，名称EURO FX - CHICAGO MERCANTILE EXCHANGE；Legacy futures only，不含options、不采用TFF或disaggregated分类。",
+        "20个市场日期行的open interest、noncommercial long、short在官方API与年度历史文件一致；10个task基期net/OI均一致。",
+        "使用报告as-of日期，非下载日；年度文件与当前API未提供本次行的历史修订链，因此尚未证明这两份数据均等于当时首次发布版本。",
+        "verified表示公开资料复核完成，不表示与主办方私有outcome比对一致。"
+      ],
+      "reference_rank": 6
+    },
+    {
+      "task_id": "t4-cotpos-202411-us10",
+      "entity_id": "GOLD_CMX",
+      "target_type": "ranking",
+      "reference_label": null,
+      "reference_value": -7.99393474623536,
+      "unit": "pct_of_open_interest",
+      "status": "verified",
+      "method": "100 × (11月26日非商业多头减空头 − 10月22日非商业多头减空头) / 10月22日open interest；按值降序排序。",
+      "inputs": [
+        {
+          "name": "start_net",
+          "value": 296204,
+          "date": "2024-10-22",
+          "unit": "contracts"
+        },
+        {
+          "name": "end_net",
+          "value": 250338,
+          "date": "2024-11-26",
+          "unit": "contracts"
+        },
+        {
+          "name": "start_open_interest",
+          "value": 573760,
+          "date": "2024-10-22",
+          "unit": "contracts"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://publicreporting.cftc.gov/resource/6dca-aqww.json?%24select=market_and_exchange_names%2Creport_date_as_yyyy_mm_dd%2Ccftc_contract_market_code%2Copen_interest_all%2Cnoncomm_positions_long_all%2Cnoncomm_positions_short_all&%24where=report_date_as_yyyy_mm_dd+in+%28%272024-10-22T00%3A00%3A00%27%2C%272024-11-26T00%3A00%3A00%27%29&%24limit=2000",
+          "title": "CFTC Legacy Futures Only 两期报告 API",
+          "published_at": null,
+          "locator": "CFTC contract market code=088691; report_date=2024-10-22/2024-11-26; noncomm_positions_long_all/short_all/open_interest_all"
+        },
+        {
+          "url": "https://www.cftc.gov/files/dea/history/deacot2024.zip",
+          "title": "CFTC 2024 Legacy Futures Only 年度历史压缩数据",
+          "published_at": null,
+          "locator": "annual.txt; CFTC Contract Market Code=088691; As of Date=2024-10-22/2024-11-26"
+        }
+      ],
+      "notes": [
+        "市场代码088691，名称GOLD - COMMODITY EXCHANGE INC.；Legacy futures only，不含options、不采用TFF或disaggregated分类。",
+        "20个市场日期行的open interest、noncommercial long、short在官方API与年度历史文件一致；10个task基期net/OI均一致。",
+        "使用报告as-of日期，非下载日；年度文件与当前API未提供本次行的历史修订链，因此尚未证明这两份数据均等于当时首次发布版本。",
+        "verified表示公开资料复核完成，不表示与主办方私有outcome比对一致。"
+      ],
+      "reference_rank": 8
+    },
+    {
+      "task_id": "t4-cotpos-202411-us10",
+      "entity_id": "JPY_CME",
+      "target_type": "ranking",
+      "reference_label": null,
+      "reference_value": -17.07549990836219,
+      "unit": "pct_of_open_interest",
+      "status": "verified",
+      "method": "100 × (11月26日非商业多头减空头 − 10月22日非商业多头减空头) / 10月22日open interest；按值降序排序。",
+      "inputs": [
+        {
+          "name": "start_net",
+          "value": 12771,
+          "date": "2024-10-22",
+          "unit": "contracts"
+        },
+        {
+          "name": "end_net",
+          "value": -22633,
+          "date": "2024-11-26",
+          "unit": "contracts"
+        },
+        {
+          "name": "start_open_interest",
+          "value": 207338,
+          "date": "2024-10-22",
+          "unit": "contracts"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://publicreporting.cftc.gov/resource/6dca-aqww.json?%24select=market_and_exchange_names%2Creport_date_as_yyyy_mm_dd%2Ccftc_contract_market_code%2Copen_interest_all%2Cnoncomm_positions_long_all%2Cnoncomm_positions_short_all&%24where=report_date_as_yyyy_mm_dd+in+%28%272024-10-22T00%3A00%3A00%27%2C%272024-11-26T00%3A00%3A00%27%29&%24limit=2000",
+          "title": "CFTC Legacy Futures Only 两期报告 API",
+          "published_at": null,
+          "locator": "CFTC contract market code=097741; report_date=2024-10-22/2024-11-26; noncomm_positions_long_all/short_all/open_interest_all"
+        },
+        {
+          "url": "https://www.cftc.gov/files/dea/history/deacot2024.zip",
+          "title": "CFTC 2024 Legacy Futures Only 年度历史压缩数据",
+          "published_at": null,
+          "locator": "annual.txt; CFTC Contract Market Code=097741; As of Date=2024-10-22/2024-11-26"
+        }
+      ],
+      "notes": [
+        "市场代码097741，名称JAPANESE YEN - CHICAGO MERCANTILE EXCHANGE；Legacy futures only，不含options、不采用TFF或disaggregated分类。",
+        "20个市场日期行的open interest、noncommercial long、short在官方API与年度历史文件一致；10个task基期net/OI均一致。",
+        "使用报告as-of日期，非下载日；年度文件与当前API未提供本次行的历史修订链，因此尚未证明这两份数据均等于当时首次发布版本。",
+        "verified表示公开资料复核完成，不表示与主办方私有outcome比对一致。"
+      ],
+      "reference_rank": 10
+    },
+    {
+      "task_id": "t4-cotpos-202411-us10",
+      "entity_id": "NATGAS_NYMEX",
+      "target_type": "ranking",
+      "reference_label": null,
+      "reference_value": 0.7777467049268032,
+      "unit": "pct_of_open_interest",
+      "status": "verified",
+      "method": "100 × (11月26日非商业多头减空头 − 10月22日非商业多头减空头) / 10月22日open interest；按值降序排序。",
+      "inputs": [
+        {
+          "name": "start_net",
+          "value": -166185,
+          "date": "2024-10-22",
+          "unit": "contracts"
+        },
+        {
+          "name": "end_net",
+          "value": -153392,
+          "date": "2024-11-26",
+          "unit": "contracts"
+        },
+        {
+          "name": "start_open_interest",
+          "value": 1644880,
+          "date": "2024-10-22",
+          "unit": "contracts"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://publicreporting.cftc.gov/resource/6dca-aqww.json?%24select=market_and_exchange_names%2Creport_date_as_yyyy_mm_dd%2Ccftc_contract_market_code%2Copen_interest_all%2Cnoncomm_positions_long_all%2Cnoncomm_positions_short_all&%24where=report_date_as_yyyy_mm_dd+in+%28%272024-10-22T00%3A00%3A00%27%2C%272024-11-26T00%3A00%3A00%27%29&%24limit=2000",
+          "title": "CFTC Legacy Futures Only 两期报告 API",
+          "published_at": null,
+          "locator": "CFTC contract market code=023651; report_date=2024-10-22/2024-11-26; noncomm_positions_long_all/short_all/open_interest_all"
+        },
+        {
+          "url": "https://www.cftc.gov/files/dea/history/deacot2024.zip",
+          "title": "CFTC 2024 Legacy Futures Only 年度历史压缩数据",
+          "published_at": null,
+          "locator": "annual.txt; CFTC Contract Market Code=023651; As of Date=2024-10-22/2024-11-26"
+        }
+      ],
+      "notes": [
+        "市场代码023651，名称NAT GAS NYME - NEW YORK MERCANTILE EXCHANGE；Legacy futures only，不含options、不采用TFF或disaggregated分类。",
+        "20个市场日期行的open interest、noncommercial long、short在官方API与年度历史文件一致；10个task基期net/OI均一致。",
+        "使用报告as-of日期，非下载日；年度文件与当前API未提供本次行的历史修订链，因此尚未证明这两份数据均等于当时首次发布版本。",
+        "verified表示公开资料复核完成，不表示与主办方私有outcome比对一致。"
+      ],
+      "reference_rank": 4
+    },
+    {
+      "task_id": "t4-cotpos-202411-us10",
+      "entity_id": "SILVER_CMX",
+      "target_type": "ranking",
+      "reference_label": null,
+      "reference_value": -14.988808627530776,
+      "unit": "pct_of_open_interest",
+      "status": "verified",
+      "method": "100 × (11月26日非商业多头减空头 − 10月22日非商业多头减空头) / 10月22日open interest；按值降序排序。",
+      "inputs": [
+        {
+          "name": "start_net",
+          "value": 66355,
+          "date": "2024-10-22",
+          "unit": "contracts"
+        },
+        {
+          "name": "end_net",
+          "value": 42783,
+          "date": "2024-11-26",
+          "unit": "contracts"
+        },
+        {
+          "name": "start_open_interest",
+          "value": 157264,
+          "date": "2024-10-22",
+          "unit": "contracts"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://publicreporting.cftc.gov/resource/6dca-aqww.json?%24select=market_and_exchange_names%2Creport_date_as_yyyy_mm_dd%2Ccftc_contract_market_code%2Copen_interest_all%2Cnoncomm_positions_long_all%2Cnoncomm_positions_short_all&%24where=report_date_as_yyyy_mm_dd+in+%28%272024-10-22T00%3A00%3A00%27%2C%272024-11-26T00%3A00%3A00%27%29&%24limit=2000",
+          "title": "CFTC Legacy Futures Only 两期报告 API",
+          "published_at": null,
+          "locator": "CFTC contract market code=084691; report_date=2024-10-22/2024-11-26; noncomm_positions_long_all/short_all/open_interest_all"
+        },
+        {
+          "url": "https://www.cftc.gov/files/dea/history/deacot2024.zip",
+          "title": "CFTC 2024 Legacy Futures Only 年度历史压缩数据",
+          "published_at": null,
+          "locator": "annual.txt; CFTC Contract Market Code=084691; As of Date=2024-10-22/2024-11-26"
+        }
+      ],
+      "notes": [
+        "市场代码084691，名称SILVER - COMMODITY EXCHANGE INC.；Legacy futures only，不含options、不采用TFF或disaggregated分类。",
+        "20个市场日期行的open interest、noncommercial long、short在官方API与年度历史文件一致；10个task基期net/OI均一致。",
+        "使用报告as-of日期，非下载日；年度文件与当前API未提供本次行的历史修订链，因此尚未证明这两份数据均等于当时首次发布版本。",
+        "verified表示公开资料复核完成，不表示与主办方私有outcome比对一致。"
+      ],
+      "reference_rank": 9
+    },
+    {
+      "task_id": "t4-cotpos-202411-us10",
+      "entity_id": "UST_10Y",
+      "target_type": "ranking",
+      "reference_label": null,
+      "reference_value": -1.6823244793101466,
+      "unit": "pct_of_open_interest",
+      "status": "verified",
+      "method": "100 × (11月26日非商业多头减空头 − 10月22日非商业多头减空头) / 10月22日open interest；按值降序排序。",
+      "inputs": [
+        {
+          "name": "start_net",
+          "value": -848191,
+          "date": "2024-10-22",
+          "unit": "contracts"
+        },
+        {
+          "name": "end_net",
+          "value": -926603,
+          "date": "2024-11-26",
+          "unit": "contracts"
+        },
+        {
+          "name": "start_open_interest",
+          "value": 4660932,
+          "date": "2024-10-22",
+          "unit": "contracts"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://publicreporting.cftc.gov/resource/6dca-aqww.json?%24select=market_and_exchange_names%2Creport_date_as_yyyy_mm_dd%2Ccftc_contract_market_code%2Copen_interest_all%2Cnoncomm_positions_long_all%2Cnoncomm_positions_short_all&%24where=report_date_as_yyyy_mm_dd+in+%28%272024-10-22T00%3A00%3A00%27%2C%272024-11-26T00%3A00%3A00%27%29&%24limit=2000",
+          "title": "CFTC Legacy Futures Only 两期报告 API",
+          "published_at": null,
+          "locator": "CFTC contract market code=043602; report_date=2024-10-22/2024-11-26; noncomm_positions_long_all/short_all/open_interest_all"
+        },
+        {
+          "url": "https://www.cftc.gov/files/dea/history/deacot2024.zip",
+          "title": "CFTC 2024 Legacy Futures Only 年度历史压缩数据",
+          "published_at": null,
+          "locator": "annual.txt; CFTC Contract Market Code=043602; As of Date=2024-10-22/2024-11-26"
+        }
+      ],
+      "notes": [
+        "市场代码043602，名称UST 10Y NOTE - CHICAGO BOARD OF TRADE；Legacy futures only，不含options、不采用TFF或disaggregated分类。",
+        "20个市场日期行的open interest、noncommercial long、short在官方API与年度历史文件一致；10个task基期net/OI均一致。",
+        "使用报告as-of日期，非下载日；年度文件与当前API未提供本次行的历史修订链，因此尚未证明这两份数据均等于当时首次发布版本。",
+        "verified表示公开资料复核完成，不表示与主办方私有outcome比对一致。"
+      ],
+      "reference_rank": 5
+    },
+    {
+      "task_id": "t4-cotpos-202411-us10",
+      "entity_id": "UST_2Y",
+      "target_type": "ranking",
+      "reference_label": null,
+      "reference_value": 3.2181708809485357,
+      "unit": "pct_of_open_interest",
+      "status": "verified",
+      "method": "100 × (11月26日非商业多头减空头 − 10月22日非商业多头减空头) / 10月22日open interest；按值降序排序。",
+      "inputs": [
+        {
+          "name": "start_net",
+          "value": -1380910,
+          "date": "2024-10-22",
+          "unit": "contracts"
+        },
+        {
+          "name": "end_net",
+          "value": -1234646,
+          "date": "2024-11-26",
+          "unit": "contracts"
+        },
+        {
+          "name": "start_open_interest",
+          "value": 4544942,
+          "date": "2024-10-22",
+          "unit": "contracts"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://publicreporting.cftc.gov/resource/6dca-aqww.json?%24select=market_and_exchange_names%2Creport_date_as_yyyy_mm_dd%2Ccftc_contract_market_code%2Copen_interest_all%2Cnoncomm_positions_long_all%2Cnoncomm_positions_short_all&%24where=report_date_as_yyyy_mm_dd+in+%28%272024-10-22T00%3A00%3A00%27%2C%272024-11-26T00%3A00%3A00%27%29&%24limit=2000",
+          "title": "CFTC Legacy Futures Only 两期报告 API",
+          "published_at": null,
+          "locator": "CFTC contract market code=042601; report_date=2024-10-22/2024-11-26; noncomm_positions_long_all/short_all/open_interest_all"
+        },
+        {
+          "url": "https://www.cftc.gov/files/dea/history/deacot2024.zip",
+          "title": "CFTC 2024 Legacy Futures Only 年度历史压缩数据",
+          "published_at": null,
+          "locator": "annual.txt; CFTC Contract Market Code=042601; As of Date=2024-10-22/2024-11-26"
+        }
+      ],
+      "notes": [
+        "市场代码042601，名称UST 2Y NOTE - CHICAGO BOARD OF TRADE；Legacy futures only，不含options、不采用TFF或disaggregated分类。",
+        "20个市场日期行的open interest、noncommercial long、short在官方API与年度历史文件一致；10个task基期net/OI均一致。",
+        "使用报告as-of日期，非下载日；年度文件与当前API未提供本次行的历史修订链，因此尚未证明这两份数据均等于当时首次发布版本。",
+        "verified表示公开资料复核完成，不表示与主办方私有outcome比对一致。"
+      ],
+      "reference_rank": 2
+    },
+    {
+      "task_id": "t4-cotpos-202411-us10",
+      "entity_id": "WTI_NYMEX",
+      "target_type": "ranking",
+      "reference_label": null,
+      "reference_value": 1.61777833841138,
+      "unit": "pct_of_open_interest",
+      "status": "verified",
+      "method": "100 × (11月26日非商业多头减空头 − 10月22日非商业多头减空头) / 10月22日open interest；按值降序排序。",
+      "inputs": [
+        {
+          "name": "start_net",
+          "value": 173731,
+          "date": "2024-10-22",
+          "unit": "contracts"
+        },
+        {
+          "name": "end_net",
+          "value": 200407,
+          "date": "2024-11-26",
+          "unit": "contracts"
+        },
+        {
+          "name": "start_open_interest",
+          "value": 1648928,
+          "date": "2024-10-22",
+          "unit": "contracts"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://publicreporting.cftc.gov/resource/6dca-aqww.json?%24select=market_and_exchange_names%2Creport_date_as_yyyy_mm_dd%2Ccftc_contract_market_code%2Copen_interest_all%2Cnoncomm_positions_long_all%2Cnoncomm_positions_short_all&%24where=report_date_as_yyyy_mm_dd+in+%28%272024-10-22T00%3A00%3A00%27%2C%272024-11-26T00%3A00%3A00%27%29&%24limit=2000",
+          "title": "CFTC Legacy Futures Only 两期报告 API",
+          "published_at": null,
+          "locator": "CFTC contract market code=067651; report_date=2024-10-22/2024-11-26; noncomm_positions_long_all/short_all/open_interest_all"
+        },
+        {
+          "url": "https://www.cftc.gov/files/dea/history/deacot2024.zip",
+          "title": "CFTC 2024 Legacy Futures Only 年度历史压缩数据",
+          "published_at": null,
+          "locator": "annual.txt; CFTC Contract Market Code=067651; As of Date=2024-10-22/2024-11-26"
+        }
+      ],
+      "notes": [
+        "市场代码067651，名称WTI-PHYSICAL - NEW YORK MERCANTILE EXCHANGE；Legacy futures only，不含options、不采用TFF或disaggregated分类。",
+        "20个市场日期行的open interest、noncommercial long、short在官方API与年度历史文件一致；10个task基期net/OI均一致。",
+        "使用报告as-of日期，非下载日；年度文件与当前API未提供本次行的历史修订链，因此尚未证明这两份数据均等于当时首次发布版本。",
+        "verified表示公开资料复核完成，不表示与主办方私有outcome比对一致。"
+      ],
+      "reference_rank": 3
+    }
+  ]
+}

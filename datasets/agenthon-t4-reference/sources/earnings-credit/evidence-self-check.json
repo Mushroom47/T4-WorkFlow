@@ -1,0 +1,1453 @@
+{
+  "schema_version": "0.1.0",
+  "group": "earnings-credit",
+  "checked_at": "2026-10-07",
+  "counts": {
+    "verified": 18,
+    "provisional": 8
+  },
+  "total_records": 26,
+  "roster_exact_match": true,
+  "unique_task_entity_keys": true,
+  "finite_numeric_values": true,
+  "null_reference_values": 8,
+  "eps_original_quarter_checks": [
+    {
+      "entity_id": "AAPL",
+      "task_id": "t4-EXAMPLE-eps-beat",
+      "expected_actual_eps": 1.53,
+      "selected_original_xbrl": {
+        "start": "2023-12-31",
+        "end": "2024-03-30",
+        "val": 1.53,
+        "accn": "0000320193-24-000069",
+        "fy": 2024,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2024-05-03"
+      },
+      "value_matches": true,
+      "evidence_path": "sec-eps-AAPL-concept.raw.json",
+      "original_companyfacts_download_sha256": "73a86c6aedc31f77cac2ea4df5f80f0b3bd7e6eb58bb4e01444fbedf3afb9c43",
+      "source_sha256": "d58cd0fce2baed8be20b7b6587917b03bb46c08fc0b527d53a4867cab9317acf",
+      "raw_source_hash_rechecked": true,
+      "baseline_source": "task consensus_eps 1.50, not financial-statement EPS"
+    },
+    {
+      "entity_id": "AMD",
+      "task_id": "t4-eps-yoy-2023Q2-mixed",
+      "expected_actual_eps": 0.02,
+      "selected_original_xbrl": {
+        "start": "2023-04-02",
+        "end": "2023-07-01",
+        "val": 0.02,
+        "accn": "0000002488-23-000139",
+        "fy": 2023,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2023-08-02"
+      },
+      "value_matches": true,
+      "evidence_path": "sec-eps-AMD-concept.raw.json",
+      "original_companyfacts_download_sha256": "21a29c75076d90fced568785d855fc427a15c7458bc0bb153a9dedd88ad3349e",
+      "source_sha256": "15436f232b8f49ef33d8cebf6ba7c4696048ef093290ef5f68ef48cb65e5c53a",
+      "raw_source_hash_rechecked": true,
+      "baseline_original_xbrl": {
+        "start": "2022-03-27",
+        "end": "2022-06-25",
+        "val": 0.27,
+        "accn": "0000002488-22-000123",
+        "fy": 2022,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2022-08-03"
+      },
+      "baseline_matches_task": true
+    },
+    {
+      "entity_id": "AMGN",
+      "task_id": "t4-eps-yoy-2023Q2-mixed",
+      "expected_actual_eps": 2.57,
+      "selected_original_xbrl": {
+        "start": "2023-04-01",
+        "end": "2023-06-30",
+        "val": 2.57,
+        "accn": "0000318154-23-000053",
+        "fy": 2023,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2023-08-04"
+      },
+      "value_matches": true,
+      "evidence_path": "sec-eps-AMGN-concept.raw.json",
+      "original_companyfacts_download_sha256": "fdf5906752dbed7151b14f5e765db25e75393cedef4a2582d976623b49e2e4c7",
+      "source_sha256": "44fda87915cfe7d797eb3d600fde86258fb8098832c87d395397cf4126600c60",
+      "raw_source_hash_rechecked": true,
+      "baseline_original_xbrl": {
+        "start": "2022-04-01",
+        "end": "2022-06-30",
+        "val": 2.45,
+        "accn": "0000318154-22-000041",
+        "fy": 2022,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2022-08-05"
+      },
+      "baseline_matches_task": true
+    },
+    {
+      "entity_id": "DOW",
+      "task_id": "t4-eps-yoy-2023Q2-mixed",
+      "expected_actual_eps": 0.68,
+      "selected_original_xbrl": {
+        "start": "2023-04-01",
+        "end": "2023-06-30",
+        "val": 0.68,
+        "accn": "0001751788-23-000128",
+        "fy": 2023,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2023-07-26"
+      },
+      "value_matches": true,
+      "evidence_path": "sec-eps-DOW-concept.raw.json",
+      "original_companyfacts_download_sha256": "ff212d1e276fc1525ccac4101dadeadea5bb44ba5237a584a53d06d89535b823",
+      "source_sha256": "a30ac9e0fba86bc51b2b43d386bbb5e23e4091c175514318ca03cf59c99b35a3",
+      "raw_source_hash_rechecked": true,
+      "baseline_original_xbrl": {
+        "start": "2022-04-01",
+        "end": "2022-06-30",
+        "val": 2.26,
+        "accn": "0001751788-22-000123",
+        "fy": 2022,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2022-07-22"
+      },
+      "baseline_matches_task": true
+    },
+    {
+      "entity_id": "HON",
+      "task_id": "t4-eps-yoy-2023Q2-mixed",
+      "expected_actual_eps": 2.22,
+      "selected_original_xbrl": {
+        "start": "2023-04-01",
+        "end": "2023-06-30",
+        "val": 2.22,
+        "accn": "0000773840-23-000073",
+        "fy": 2023,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2023-07-27"
+      },
+      "value_matches": true,
+      "evidence_path": "sec-eps-HON-concept.raw.json",
+      "original_companyfacts_download_sha256": "3ec36b94bcfb6c163227a5568ea524a2d714baae79e205929933cdb69ae3bcf7",
+      "source_sha256": "91667ff55623f86cc5718b4d45147e694a9cd3ee0815d4b04e573acc0876cf71",
+      "raw_source_hash_rechecked": true,
+      "baseline_original_xbrl": {
+        "start": "2022-04-01",
+        "end": "2022-06-30",
+        "val": 1.84,
+        "accn": "0000773840-22-000054",
+        "fy": 2022,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2022-07-28"
+      },
+      "baseline_matches_task": true
+    },
+    {
+      "entity_id": "IBM",
+      "task_id": "t4-eps-yoy-2023Q2-mixed",
+      "expected_actual_eps": 1.72,
+      "selected_original_xbrl": {
+        "start": "2023-04-01",
+        "end": "2023-06-30",
+        "val": 1.72,
+        "accn": "0000051143-23-000021",
+        "fy": 2023,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2023-07-25"
+      },
+      "value_matches": true,
+      "evidence_path": "sec-eps-IBM-concept.raw.json",
+      "original_companyfacts_download_sha256": "1660477fa5713e5749c3038cf22b3c776414acfc6e1e721d1772c91101dc5e5c",
+      "source_sha256": "7b81dcc0a49349da6e8b4aee646ed9e5189d2e7d33dee9ba6beacd62dcc9dcc7",
+      "raw_source_hash_rechecked": true,
+      "baseline_original_xbrl": {
+        "start": "2022-04-01",
+        "end": "2022-06-30",
+        "val": 1.53,
+        "accn": "0001558370-22-010985",
+        "fy": 2022,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2022-07-25"
+      },
+      "baseline_matches_task": true
+    },
+    {
+      "entity_id": "TMO",
+      "task_id": "t4-eps-yoy-2023Q2-mixed",
+      "expected_actual_eps": 3.51,
+      "selected_original_xbrl": {
+        "start": "2023-04-02",
+        "end": "2023-07-01",
+        "val": 3.51,
+        "accn": "0000097745-23-000059",
+        "fy": 2023,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2023-08-04"
+      },
+      "value_matches": true,
+      "evidence_path": "sec-eps-TMO-concept.raw.json",
+      "original_companyfacts_download_sha256": "4d98ebd4c91521f5d90f032834b8dec04f78b30758a214be33e6cbba68fa766a",
+      "source_sha256": "447eae05d7460d87c66be24b882e5194361c822d539ddd1ec86aa8e64eb08d96",
+      "raw_source_hash_rechecked": true,
+      "baseline_original_xbrl": {
+        "start": "2022-04-03",
+        "end": "2022-07-02",
+        "val": 4.22,
+        "accn": "0000097745-22-000047",
+        "fy": 2022,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2022-08-05"
+      },
+      "baseline_matches_task": true
+    },
+    {
+      "entity_id": "BAC",
+      "task_id": "t4-eps-growth-2024Q3-banks",
+      "expected_actual_eps": 0.81,
+      "selected_original_xbrl": {
+        "start": "2024-07-01",
+        "end": "2024-09-30",
+        "val": 0.81,
+        "accn": "0000070858-24-000280",
+        "fy": 2024,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2024-10-29"
+      },
+      "value_matches": true,
+      "evidence_path": "sec-eps-BAC-concept.raw.json",
+      "original_companyfacts_download_sha256": "5476f5a3efc60a99e369f3e56ae02f5d31b216654a3d31612ead62afde6e4be3",
+      "source_sha256": "2133ba4c4365fb48817dd9557c0244519a99aced91693b3e6372c39f706da786",
+      "raw_source_hash_rechecked": true,
+      "baseline_original_xbrl": {
+        "start": "2023-07-01",
+        "end": "2023-09-30",
+        "val": 0.9,
+        "accn": "0000070858-23-000272",
+        "fy": 2023,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2023-10-31"
+      },
+      "baseline_matches_task": true
+    },
+    {
+      "entity_id": "C",
+      "task_id": "t4-eps-growth-2024Q3-banks",
+      "expected_actual_eps": 1.51,
+      "selected_original_xbrl": {
+        "start": "2024-07-01",
+        "end": "2024-09-30",
+        "val": 1.51,
+        "accn": "0000831001-24-000134",
+        "fy": 2024,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2024-11-07"
+      },
+      "value_matches": true,
+      "evidence_path": "sec-eps-C-concept.raw.json",
+      "original_companyfacts_download_sha256": "6b5429ca0164880b7533555526a046febb36b7e6079eb30aef7fb81ce20dc21d",
+      "source_sha256": "23820b28db5ee74137fd4703a7baa9ec4e2d51065391919d7da75d35651add13",
+      "raw_source_hash_rechecked": true,
+      "baseline_original_xbrl": {
+        "start": "2023-07-01",
+        "end": "2023-09-30",
+        "val": 1.63,
+        "accn": "0000831001-23-000132",
+        "fy": 2023,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2023-11-03"
+      },
+      "baseline_matches_task": true
+    },
+    {
+      "entity_id": "GS",
+      "task_id": "t4-eps-growth-2024Q3-banks",
+      "expected_actual_eps": 8.4,
+      "selected_original_xbrl": {
+        "start": "2024-07-01",
+        "end": "2024-09-30",
+        "val": 8.4,
+        "accn": "0000886982-24-000025",
+        "fy": 2024,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2024-11-04"
+      },
+      "value_matches": true,
+      "evidence_path": "sec-eps-GS-concept.raw.json",
+      "original_companyfacts_download_sha256": "d6efbeb803e9db2c4c04b37e8f35ac46224928c54a712fb78bb076edc909d0de",
+      "source_sha256": "b8c3d05e883361ebd8543b3dfce7c0f40fda35a90cb1f604416f352a871b64db",
+      "raw_source_hash_rechecked": true,
+      "baseline_original_xbrl": {
+        "start": "2023-07-01",
+        "end": "2023-09-30",
+        "val": 5.47,
+        "accn": "0000886982-23-000011",
+        "fy": 2023,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2023-11-03"
+      },
+      "baseline_matches_task": true
+    },
+    {
+      "entity_id": "JPM",
+      "task_id": "t4-eps-growth-2024Q3-banks",
+      "expected_actual_eps": 4.37,
+      "selected_original_xbrl": {
+        "start": "2024-07-01",
+        "end": "2024-09-30",
+        "val": 4.37,
+        "accn": "0000019617-24-000611",
+        "fy": 2024,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2024-10-30"
+      },
+      "value_matches": true,
+      "evidence_path": "sec-eps-JPM-concept.raw.json",
+      "original_companyfacts_download_sha256": "7209988fb0c915dce42da88b4c66b7ee45b73e2d20219773665e20654aa91786",
+      "source_sha256": "39a48e8fed3c70d6a3adf5fd6f4fa529e10d1849dc918cfee2650b0d69cb7fc8",
+      "raw_source_hash_rechecked": true,
+      "baseline_original_xbrl": {
+        "start": "2023-07-01",
+        "end": "2023-09-30",
+        "val": 4.33,
+        "accn": "0000019617-23-000524",
+        "fy": 2023,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2023-11-01"
+      },
+      "baseline_matches_task": true
+    },
+    {
+      "entity_id": "MS",
+      "task_id": "t4-eps-growth-2024Q3-banks",
+      "expected_actual_eps": 1.88,
+      "selected_original_xbrl": {
+        "start": "2024-07-01",
+        "end": "2024-09-30",
+        "val": 1.88,
+        "accn": "0000895421-24-000491",
+        "fy": 2024,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2024-11-04"
+      },
+      "value_matches": true,
+      "evidence_path": "sec-eps-MS-concept.raw.json",
+      "original_companyfacts_download_sha256": "7ace84f17d17a3a85e095db33b779fa7caee76ce2f25488e7d5265b63cb6ad0a",
+      "source_sha256": "ed8de86db84b91eca61826bfd35604582ccd31ef5be4b51eac9dd24f69249358",
+      "raw_source_hash_rechecked": true,
+      "baseline_original_xbrl": {
+        "start": "2023-07-01",
+        "end": "2023-09-30",
+        "val": 1.38,
+        "accn": "0000895421-23-000441",
+        "fy": 2023,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2023-11-03"
+      },
+      "baseline_matches_task": true
+    },
+    {
+      "entity_id": "PNC",
+      "task_id": "t4-eps-growth-2024Q3-banks",
+      "expected_actual_eps": 3.49,
+      "selected_original_xbrl": {
+        "start": "2024-07-01",
+        "end": "2024-09-30",
+        "val": 3.49,
+        "accn": "0000713676-24-000081",
+        "fy": 2024,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2024-11-01"
+      },
+      "value_matches": true,
+      "evidence_path": "sec-eps-PNC-concept.raw.json",
+      "original_companyfacts_download_sha256": "205911d91e33a9827fb38f4594458e2aedab34d097c919c41925f4e4ab88ea55",
+      "source_sha256": "f92fe3a631659ab0423319adcdd8fb7fb4fe26cce69b93758012a4e370683375",
+      "raw_source_hash_rechecked": true,
+      "baseline_original_xbrl": {
+        "start": "2023-07-01",
+        "end": "2023-09-30",
+        "val": 3.6,
+        "accn": "0000713676-23-000079",
+        "fy": 2023,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2023-11-02"
+      },
+      "baseline_matches_task": true
+    },
+    {
+      "entity_id": "USB",
+      "task_id": "t4-eps-growth-2024Q3-banks",
+      "expected_actual_eps": 1.03,
+      "selected_original_xbrl": {
+        "start": "2024-07-01",
+        "end": "2024-09-30",
+        "val": 1.03,
+        "accn": "0000036104-24-000072",
+        "fy": 2024,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2024-11-05"
+      },
+      "value_matches": true,
+      "evidence_path": "sec-eps-USB-concept.raw.json",
+      "original_companyfacts_download_sha256": "4b9bb34f9bc7bf6555705d2ea24fb1faa71a595d2f55f79c58548425e4e32564",
+      "source_sha256": "562214f55ce0ec284e2d94246314b6a35b853f0d8fe75e520c6bf003e028ede1",
+      "raw_source_hash_rechecked": true,
+      "baseline_original_xbrl": {
+        "start": "2023-07-01",
+        "end": "2023-09-30",
+        "val": 0.91,
+        "accn": "0001193125-23-268341",
+        "fy": 2023,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2023-11-01"
+      },
+      "baseline_matches_task": true
+    },
+    {
+      "entity_id": "WFC",
+      "task_id": "t4-eps-growth-2024Q3-banks",
+      "expected_actual_eps": 1.42,
+      "selected_original_xbrl": {
+        "start": "2024-07-01",
+        "end": "2024-09-30",
+        "val": 1.42,
+        "accn": "0000072971-24-000243",
+        "fy": 2024,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2024-10-31"
+      },
+      "value_matches": true,
+      "evidence_path": "sec-eps-WFC-concept.raw.json",
+      "original_companyfacts_download_sha256": "4be5d0543ceddbf622cc5a18da7910501c5f93cecb4ee85fa5bf8da3ef3228ca",
+      "source_sha256": "1e20e27e2c96f370b20dabf8d8cc6e1af5ec2904899c9b627fbe47866b92eaa6",
+      "raw_source_hash_rechecked": true,
+      "baseline_original_xbrl": {
+        "start": "2023-07-01",
+        "end": "2023-09-30",
+        "val": 1.48,
+        "accn": "0000072971-23-000170",
+        "fy": 2023,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2023-10-31"
+      },
+      "baseline_matches_task": true
+    }
+  ],
+  "credit_negative_window_checks": [
+    {
+      "entity_id": "BBY",
+      "window": "(2023-03-31,2024-03-31]",
+      "window_relevant_filings": [
+        {
+          "accessionNumber": "0000764478-23-000012",
+          "filingDate": "2023-04-13",
+          "reportDate": "2023-04-12",
+          "form": "8-K",
+          "items": "1.01,1.02,9.01",
+          "primaryDocument": "bby-20230412x8k.htm"
+        },
+        {
+          "accessionNumber": "0000764478-23-000016",
+          "filingDate": "2023-04-27",
+          "reportDate": "2023-04-24",
+          "form": "8-K",
+          "items": "5.02",
+          "primaryDocument": "bby-20230424x8k.htm"
+        },
+        {
+          "accessionNumber": "0000764478-23-000019",
+          "filingDate": "2023-05-25",
+          "reportDate": "2023-05-25",
+          "form": "8-K",
+          "items": "2.02,9.01",
+          "primaryDocument": "bby-20230525x8k.htm"
+        },
+        {
+          "accessionNumber": "0000764478-23-000025",
+          "filingDate": "2023-06-02",
+          "reportDate": "2023-04-29",
+          "form": "10-Q",
+          "items": "",
+          "primaryDocument": "bby-20230429x10q.htm"
+        },
+        {
+          "accessionNumber": "0000764478-23-000027",
+          "filingDate": "2023-06-16",
+          "reportDate": "2023-06-14",
+          "form": "8-K",
+          "items": "5.07",
+          "primaryDocument": "bby-20230614x8k.htm"
+        },
+        {
+          "accessionNumber": "0000764478-23-000035",
+          "filingDate": "2023-08-01",
+          "reportDate": "2023-07-28",
+          "form": "8-K",
+          "items": "5.02",
+          "primaryDocument": "bby-20230728x8k.htm"
+        },
+        {
+          "accessionNumber": "0000764478-23-000038",
+          "filingDate": "2023-08-29",
+          "reportDate": "2023-08-29",
+          "form": "8-K",
+          "items": "2.02,9.01",
+          "primaryDocument": "bby-20230829x8k.htm"
+        },
+        {
+          "accessionNumber": "0000764478-23-000041",
+          "filingDate": "2023-09-01",
+          "reportDate": "2023-07-29",
+          "form": "10-Q",
+          "items": "",
+          "primaryDocument": "bby-20230729x10q.htm"
+        },
+        {
+          "accessionNumber": "0000764478-23-000046",
+          "filingDate": "2023-09-12",
+          "reportDate": "2023-07-28",
+          "form": "8-K/A",
+          "items": "5.02",
+          "primaryDocument": "bby-20230728x8ka.htm"
+        },
+        {
+          "accessionNumber": "0000764478-23-000049",
+          "filingDate": "2023-11-21",
+          "reportDate": "2023-11-21",
+          "form": "8-K",
+          "items": "2.02,9.01",
+          "primaryDocument": "bby-20231121x8k.htm"
+        },
+        {
+          "accessionNumber": "0000764478-23-000053",
+          "filingDate": "2023-12-01",
+          "reportDate": "2023-10-28",
+          "form": "10-Q",
+          "items": "",
+          "primaryDocument": "bby-20231028x10q.htm"
+        },
+        {
+          "accessionNumber": "0000764478-23-000056",
+          "filingDate": "2023-12-13",
+          "reportDate": "2023-03-28",
+          "form": "8-K/A",
+          "items": "5.02",
+          "primaryDocument": "bby-20230328x8ka.htm"
+        },
+        {
+          "accessionNumber": "0000764478-24-000003",
+          "filingDate": "2024-02-29",
+          "reportDate": "2024-02-29",
+          "form": "8-K",
+          "items": "2.02,9.01",
+          "primaryDocument": "bby-20240229x8k.htm"
+        },
+        {
+          "accessionNumber": "0000764478-24-000006",
+          "filingDate": "2024-03-07",
+          "reportDate": "2024-03-05",
+          "form": "8-K",
+          "items": "5.02",
+          "primaryDocument": "bby-20240305x8k.htm"
+        },
+        {
+          "accessionNumber": "0000764478-24-000010",
+          "filingDate": "2024-03-15",
+          "reportDate": "2024-02-03",
+          "form": "10-K",
+          "items": "",
+          "primaryDocument": "bby-20240203x10k.htm"
+        }
+      ],
+      "post_window_relevant_filings": [
+        {
+          "accessionNumber": "0000764478-24-000024",
+          "filingDate": "2024-06-14",
+          "reportDate": "2024-06-12",
+          "form": "8-K",
+          "items": "5.07",
+          "primaryDocument": "bby-20240612x8k.htm"
+        },
+        {
+          "accessionNumber": "0000764478-24-000022",
+          "filingDate": "2024-06-07",
+          "reportDate": "2024-05-04",
+          "form": "10-Q",
+          "items": "",
+          "primaryDocument": "bby-20240504x10q.htm"
+        },
+        {
+          "accessionNumber": "0000764478-24-000015",
+          "filingDate": "2024-05-30",
+          "reportDate": "2024-05-30",
+          "form": "8-K",
+          "items": "2.02,9.01",
+          "primaryDocument": "bby-20240530x8k.htm"
+        }
+      ],
+      "no_item_1_03_or_2_04": true,
+      "scope_limit": "已核对 SEC submissions 元数据，阅读年度和窗口尾部季度债务披露；不是完整法院案卷或评级事件台账。",
+      "source_metadata_path": "sec-submissions-BBY-filtered.json",
+      "raw_path": "sec-submissions-BBY.raw.json",
+      "source_sha256": "b3e56d79c1462e4bd1848ee8716887ffbbd37b47ba8938d7a093988ceffab33a",
+      "raw_source_hash_rechecked": true,
+      "metadata_full_window_coverage_verified": true,
+      "archive_files_all_outside_window": true
+    },
+    {
+      "entity_id": "M",
+      "window": "(2023-03-31,2024-03-31]",
+      "window_relevant_filings": [
+        {
+          "accessionNumber": "0000794367-23-000055",
+          "filingDate": "2023-05-23",
+          "reportDate": "2023-05-19",
+          "form": "8-K",
+          "items": "5.07",
+          "primaryDocument": "n-20230519.htm"
+        },
+        {
+          "accessionNumber": "0000794367-23-000061",
+          "filingDate": "2023-05-26",
+          "reportDate": "2023-05-25",
+          "form": "8-K",
+          "items": "5.02",
+          "primaryDocument": "n-20230525.htm"
+        },
+        {
+          "accessionNumber": "0001628280-23-020415",
+          "filingDate": "2023-06-01",
+          "reportDate": "2023-06-01",
+          "form": "8-K",
+          "items": "2.02,9.01",
+          "primaryDocument": "n-20230601.htm"
+        },
+        {
+          "accessionNumber": "0001628280-23-021104",
+          "filingDate": "2023-06-06",
+          "reportDate": "2023-04-29",
+          "form": "10-Q",
+          "items": "",
+          "primaryDocument": "m-20230429.htm"
+        },
+        {
+          "accessionNumber": "0001628280-23-030169",
+          "filingDate": "2023-08-22",
+          "reportDate": "2023-08-22",
+          "form": "8-K",
+          "items": "2.02,9.01",
+          "primaryDocument": "n-20230822.htm"
+        },
+        {
+          "accessionNumber": "0001628280-23-030657",
+          "filingDate": "2023-08-25",
+          "reportDate": "2023-07-29",
+          "form": "10-Q",
+          "items": "",
+          "primaryDocument": "m-20230729.htm"
+        },
+        {
+          "accessionNumber": "0000794367-23-000084",
+          "filingDate": "2023-10-31",
+          "reportDate": "2023-10-31",
+          "form": "8-K",
+          "items": "5.02",
+          "primaryDocument": "n-20231031.htm"
+        },
+        {
+          "accessionNumber": "0001628280-23-039210",
+          "filingDate": "2023-11-16",
+          "reportDate": "2023-11-16",
+          "form": "8-K",
+          "items": "2.02,9.01",
+          "primaryDocument": "n-20231116.htm"
+        },
+        {
+          "accessionNumber": "0001628280-23-040057",
+          "filingDate": "2023-11-28",
+          "reportDate": "2023-10-28",
+          "form": "10-Q",
+          "items": "",
+          "primaryDocument": "m-20231028.htm"
+        },
+        {
+          "accessionNumber": "0000794367-24-000007",
+          "filingDate": "2024-01-22",
+          "reportDate": "2024-01-21",
+          "form": "8-K",
+          "items": "7.01,9.01",
+          "primaryDocument": "n-20240121.htm"
+        },
+        {
+          "accessionNumber": "0000794367-24-000010",
+          "filingDate": "2024-02-02",
+          "reportDate": "2024-02-02",
+          "form": "8-K",
+          "items": "5.02,7.01,9.01",
+          "primaryDocument": "n-20240202.htm"
+        },
+        {
+          "accessionNumber": "0001628280-24-007023",
+          "filingDate": "2024-02-27",
+          "reportDate": "2024-02-27",
+          "form": "8-K",
+          "items": "2.02,2.05,2.06,7.01",
+          "primaryDocument": "m-20240227.htm"
+        },
+        {
+          "accessionNumber": "0000794367-24-000013",
+          "filingDate": "2024-03-01",
+          "reportDate": "2024-02-29",
+          "form": "8-K",
+          "items": "8.01",
+          "primaryDocument": "n-20240229.htm"
+        },
+        {
+          "accessionNumber": "0001628280-24-012734",
+          "filingDate": "2024-03-22",
+          "reportDate": "2024-02-03",
+          "form": "10-K",
+          "items": "",
+          "primaryDocument": "m-20240203.htm"
+        }
+      ],
+      "post_window_relevant_filings": [
+        {
+          "accessionNumber": "0001628280-24-025853",
+          "filingDate": "2024-05-30",
+          "reportDate": "2024-05-04",
+          "form": "10-Q",
+          "items": "",
+          "primaryDocument": "m-20240504.htm"
+        },
+        {
+          "accessionNumber": "0001628280-24-024437",
+          "filingDate": "2024-05-21",
+          "reportDate": "2024-05-21",
+          "form": "8-K",
+          "items": "2.02,9.01",
+          "primaryDocument": "n-20240521.htm"
+        },
+        {
+          "accessionNumber": "0000794367-24-000146",
+          "filingDate": "2024-05-20",
+          "reportDate": "2024-05-17",
+          "form": "8-K",
+          "items": "5.02,5.07",
+          "primaryDocument": "n-20240517.htm"
+        },
+        {
+          "accessionNumber": "0001104659-24-045589",
+          "filingDate": "2024-04-10",
+          "reportDate": "2024-04-10",
+          "form": "8-K",
+          "items": "1.01,5.02,7.01,9.01",
+          "primaryDocument": "tm2411449d1_8k.htm"
+        }
+      ],
+      "no_item_1_03_or_2_04": true,
+      "scope_limit": "已核对 SEC submissions 元数据，阅读年度和窗口尾部季度债务披露；不是完整法院案卷或评级事件台账。",
+      "source_metadata_path": "sec-submissions-M-filtered.json",
+      "raw_path": "sec-submissions-M.raw.json",
+      "source_sha256": "deb5f449a39b1010a9479252f2e4914abc1ec2a7a91d96faab670192ecc6de63",
+      "raw_source_hash_rechecked": true,
+      "metadata_full_window_coverage_verified": true,
+      "archive_files_all_outside_window": true
+    },
+    {
+      "entity_id": "ODFL",
+      "window": "(2023-03-31,2024-03-31]",
+      "window_relevant_filings": [
+        {
+          "accessionNumber": "0000950170-23-014592",
+          "filingDate": "2023-04-26",
+          "reportDate": "2023-04-26",
+          "form": "8-K",
+          "items": "2.02,9.01",
+          "primaryDocument": "odfl-20230426.htm"
+        },
+        {
+          "accessionNumber": "0000950170-23-018765",
+          "filingDate": "2023-05-08",
+          "reportDate": "2023-03-31",
+          "form": "10-Q",
+          "items": "",
+          "primaryDocument": "odfl-20230331.htm"
+        },
+        {
+          "accessionNumber": "0000950170-23-022917",
+          "filingDate": "2023-05-18",
+          "reportDate": "2023-05-17",
+          "form": "8-K",
+          "items": "5.02",
+          "primaryDocument": "odfl-20230517.htm"
+        },
+        {
+          "accessionNumber": "0000950170-23-022911",
+          "filingDate": "2023-05-18",
+          "reportDate": "2023-02-28",
+          "form": "8-K/A",
+          "items": "5.02",
+          "primaryDocument": "odfl-20230228.htm"
+        },
+        {
+          "accessionNumber": "0000950170-23-022909",
+          "filingDate": "2023-05-18",
+          "reportDate": "2023-01-25",
+          "form": "8-K/A",
+          "items": "5.02",
+          "primaryDocument": "odfl-20230125.htm"
+        },
+        {
+          "accessionNumber": "0000950170-23-022904",
+          "filingDate": "2023-05-18",
+          "reportDate": "2023-05-17",
+          "form": "8-K",
+          "items": "5.07,8.01,9.01",
+          "primaryDocument": "odfl-20230517.htm"
+        },
+        {
+          "accessionNumber": "0000950170-23-026441",
+          "filingDate": "2023-06-05",
+          "reportDate": "2023-06-05",
+          "form": "8-K",
+          "items": "7.01,9.01",
+          "primaryDocument": "odfl-20230605.htm"
+        },
+        {
+          "accessionNumber": "0000950170-23-029863",
+          "filingDate": "2023-06-26",
+          "reportDate": "2023-06-22",
+          "form": "8-K",
+          "items": "5.02",
+          "primaryDocument": "odfl-20230622.htm"
+        },
+        {
+          "accessionNumber": "0000950170-23-033690",
+          "filingDate": "2023-07-20",
+          "reportDate": "2023-07-20",
+          "form": "8-K",
+          "items": "8.01,9.01",
+          "primaryDocument": "odfl-20230720.htm"
+        },
+        {
+          "accessionNumber": "0000950170-23-034576",
+          "filingDate": "2023-07-26",
+          "reportDate": "2023-07-26",
+          "form": "8-K",
+          "items": "2.02,9.01",
+          "primaryDocument": "odfl-20230726.htm"
+        },
+        {
+          "accessionNumber": "0000950170-23-038553",
+          "filingDate": "2023-08-04",
+          "reportDate": "2023-06-30",
+          "form": "10-Q",
+          "items": "",
+          "primaryDocument": "odfl-20230630.htm"
+        },
+        {
+          "accessionNumber": "0000950170-23-046789",
+          "filingDate": "2023-09-06",
+          "reportDate": "2023-09-06",
+          "form": "8-K",
+          "items": "7.01,9.01",
+          "primaryDocument": "odfl-20230906.htm"
+        },
+        {
+          "accessionNumber": "0000950170-23-054038",
+          "filingDate": "2023-10-19",
+          "reportDate": "2023-10-19",
+          "form": "8-K",
+          "items": "8.01,9.01",
+          "primaryDocument": "odfl-20231019.htm"
+        },
+        {
+          "accessionNumber": "0000950170-23-055015",
+          "filingDate": "2023-10-25",
+          "reportDate": "2023-10-25",
+          "form": "8-K",
+          "items": "2.02,9.01",
+          "primaryDocument": "odfl-20231025.htm"
+        },
+        {
+          "accessionNumber": "0000950170-23-059408",
+          "filingDate": "2023-11-06",
+          "reportDate": "2023-09-30",
+          "form": "10-Q",
+          "items": "",
+          "primaryDocument": "odfl-20230930.htm"
+        },
+        {
+          "accessionNumber": "0000950170-23-068262",
+          "filingDate": "2023-12-05",
+          "reportDate": "2023-12-05",
+          "form": "8-K",
+          "items": "7.01,9.01",
+          "primaryDocument": "odfl-20231205.htm"
+        },
+        {
+          "accessionNumber": "0000950170-24-009181",
+          "filingDate": "2024-01-31",
+          "reportDate": "2024-01-31",
+          "form": "8-K",
+          "items": "2.02,9.01",
+          "primaryDocument": "odfl-20240131.htm"
+        },
+        {
+          "accessionNumber": "0000950170-24-016210",
+          "filingDate": "2024-02-16",
+          "reportDate": "2024-02-16",
+          "form": "8-K",
+          "items": "8.01,9.01",
+          "primaryDocument": "odfl-20240216.htm"
+        },
+        {
+          "accessionNumber": "0000950170-24-020176",
+          "filingDate": "2024-02-26",
+          "reportDate": "2023-12-31",
+          "form": "10-K",
+          "items": "",
+          "primaryDocument": "odfl-20231231.htm"
+        },
+        {
+          "accessionNumber": "0000950170-24-025450",
+          "filingDate": "2024-03-05",
+          "reportDate": "2024-03-05",
+          "form": "8-K",
+          "items": "7.01,9.01",
+          "primaryDocument": "odfl-20240305.htm"
+        },
+        {
+          "accessionNumber": "0000950170-24-033550",
+          "filingDate": "2024-03-19",
+          "reportDate": "2024-03-19",
+          "form": "8-K",
+          "items": "5.02",
+          "primaryDocument": "odfl-20240319.htm"
+        }
+      ],
+      "post_window_relevant_filings": [
+        {
+          "accessionNumber": "0000950170-24-069338",
+          "filingDate": "2024-06-05",
+          "reportDate": "2024-06-05",
+          "form": "8-K",
+          "items": "7.01,9.01",
+          "primaryDocument": "odfl-20240605.htm"
+        },
+        {
+          "accessionNumber": "0000950170-24-062139",
+          "filingDate": "2024-05-20",
+          "reportDate": "2024-05-15",
+          "form": "8-K",
+          "items": "5.02,5.07,8.01,9.01",
+          "primaryDocument": "odfl-20240515.htm"
+        },
+        {
+          "accessionNumber": "0000950170-24-054284",
+          "filingDate": "2024-05-07",
+          "reportDate": "2024-03-31",
+          "form": "10-Q",
+          "items": "",
+          "primaryDocument": "odfl-20240331.htm"
+        },
+        {
+          "accessionNumber": "0000950170-24-047274",
+          "filingDate": "2024-04-24",
+          "reportDate": "2024-04-24",
+          "form": "8-K",
+          "items": "2.02,9.01",
+          "primaryDocument": "odfl-20240424.htm"
+        }
+      ],
+      "no_item_1_03_or_2_04": true,
+      "scope_limit": "已核对 SEC submissions 元数据，阅读年度和窗口尾部季度债务披露；不是完整法院案卷或评级事件台账。",
+      "source_metadata_path": "sec-submissions-ODFL-filtered.json",
+      "raw_path": "sec-submissions-ODFL.raw.json",
+      "source_sha256": "90c51efb21b8e7e464d132dea2492c25c1e4c01b6c024a2ac7c2807540442ffa",
+      "raw_source_hash_rechecked": true,
+      "metadata_full_window_coverage_verified": true,
+      "archive_files_all_outside_window": true
+    },
+    {
+      "entity_id": "WBA",
+      "window": "(2023-03-31,2024-03-31]",
+      "window_relevant_filings": [
+        {
+          "accessionNumber": "0001193125-23-155537",
+          "filingDate": "2023-05-26",
+          "reportDate": "2023-05-26",
+          "form": "8-K",
+          "items": "7.01,9.01",
+          "primaryDocument": "d468351d8k.htm"
+        },
+        {
+          "accessionNumber": "0001618921-23-000043",
+          "filingDate": "2023-06-27",
+          "reportDate": "2023-05-31",
+          "form": "10-Q",
+          "items": "",
+          "primaryDocument": "wba-20230531.htm"
+        },
+        {
+          "accessionNumber": "0001193125-23-175558",
+          "filingDate": "2023-06-27",
+          "reportDate": "2023-06-27",
+          "form": "8-K",
+          "items": "2.02,7.01,9.01",
+          "primaryDocument": "d504570d8k.htm"
+        },
+        {
+          "accessionNumber": "0001193125-23-187329",
+          "filingDate": "2023-07-14",
+          "reportDate": "2023-07-11",
+          "form": "8-K",
+          "items": "5.02,8.01,9.01",
+          "primaryDocument": "d506413d8k.htm"
+        },
+        {
+          "accessionNumber": "0001193125-23-196159",
+          "filingDate": "2023-07-27",
+          "reportDate": "2023-07-21",
+          "form": "8-K",
+          "items": "5.02,7.01,9.01",
+          "primaryDocument": "d532458d8k.htm"
+        },
+        {
+          "accessionNumber": "0001193125-23-207773",
+          "filingDate": "2023-08-10",
+          "reportDate": "2023-08-09",
+          "form": "8-K",
+          "items": "1.01,2.03,9.01",
+          "primaryDocument": "d542330d8k.htm"
+        },
+        {
+          "accessionNumber": "0001193125-23-226884",
+          "filingDate": "2023-09-01",
+          "reportDate": "2023-08-31",
+          "form": "8-K",
+          "items": "5.02,7.01,9.01",
+          "primaryDocument": "d497068d8k.htm"
+        },
+        {
+          "accessionNumber": "0001193125-23-240570",
+          "filingDate": "2023-09-22",
+          "reportDate": "2023-08-31",
+          "form": "8-K/A",
+          "items": "5.02",
+          "primaryDocument": "d331934d8ka.htm"
+        },
+        {
+          "accessionNumber": "0001193125-23-253805",
+          "filingDate": "2023-10-11",
+          "reportDate": "2023-10-10",
+          "form": "8-K",
+          "items": "5.02,7.01,9.01",
+          "primaryDocument": "d559360d8k.htm"
+        },
+        {
+          "accessionNumber": "0001618921-23-000062",
+          "filingDate": "2023-10-12",
+          "reportDate": "2023-08-31",
+          "form": "10-K",
+          "items": "",
+          "primaryDocument": "wba-20230831.htm"
+        },
+        {
+          "accessionNumber": "0001193125-23-254615",
+          "filingDate": "2023-10-12",
+          "reportDate": "2023-10-12",
+          "form": "8-K",
+          "items": "2.02,7.01,9.01",
+          "primaryDocument": "d558457d8k.htm"
+        },
+        {
+          "accessionNumber": "0001193125-23-265359",
+          "filingDate": "2023-10-30",
+          "reportDate": "2023-07-27",
+          "form": "8-K/A",
+          "items": "5.02,9.01",
+          "primaryDocument": "d535453d8ka.htm"
+        },
+        {
+          "accessionNumber": "0001193125-23-282616",
+          "filingDate": "2023-11-24",
+          "reportDate": "2023-11-24",
+          "form": "8-K",
+          "items": "7.01,9.01",
+          "primaryDocument": "d545705d8k.htm"
+        },
+        {
+          "accessionNumber": "0001618921-24-000004",
+          "filingDate": "2024-01-04",
+          "reportDate": "2023-11-30",
+          "form": "10-Q",
+          "items": "",
+          "primaryDocument": "wba-20231130.htm"
+        },
+        {
+          "accessionNumber": "0001193125-24-001901",
+          "filingDate": "2024-01-04",
+          "reportDate": "2024-01-04",
+          "form": "8-K",
+          "items": "2.02,7.01,9.01",
+          "primaryDocument": "d605513d8k.htm"
+        },
+        {
+          "accessionNumber": "0001193125-24-021052",
+          "filingDate": "2024-01-31",
+          "reportDate": "2024-01-25",
+          "form": "8-K",
+          "items": "5.07",
+          "primaryDocument": "d701412d8k.htm"
+        },
+        {
+          "accessionNumber": "0001193125-24-028508",
+          "filingDate": "2024-02-08",
+          "reportDate": "2024-02-06",
+          "form": "8-K",
+          "items": "5.02,7.01,9.01",
+          "primaryDocument": "d751581d8k.htm"
+        },
+        {
+          "accessionNumber": "0001193125-24-080799",
+          "filingDate": "2024-03-28",
+          "reportDate": "2024-03-27",
+          "form": "8-K",
+          "items": "5.02,9.01",
+          "primaryDocument": "d797051d8k.htm"
+        },
+        {
+          "accessionNumber": "0001618921-24-000035",
+          "filingDate": "2024-03-28",
+          "reportDate": "2024-02-29",
+          "form": "10-Q",
+          "items": "",
+          "primaryDocument": "wba-20240229.htm"
+        },
+        {
+          "accessionNumber": "0001193125-24-079608",
+          "filingDate": "2024-03-28",
+          "reportDate": "2024-03-28",
+          "form": "8-K",
+          "items": "2.02,7.01,9.01",
+          "primaryDocument": "d817592d8k.htm"
+        }
+      ],
+      "post_window_relevant_filings": [
+        {
+          "accessionNumber": "0001618921-24-000065",
+          "filingDate": "2024-06-27",
+          "reportDate": "2024-05-31",
+          "form": "10-Q",
+          "items": "",
+          "primaryDocument": "wba-20240531.htm"
+        },
+        {
+          "accessionNumber": "0001193125-24-169687",
+          "filingDate": "2024-06-27",
+          "reportDate": "2024-06-27",
+          "form": "8-K",
+          "items": "2.02,7.01,9.01",
+          "primaryDocument": "d787007d8k.htm"
+        },
+        {
+          "accessionNumber": "0001193125-24-127601",
+          "filingDate": "2024-05-01",
+          "reportDate": "2024-05-01",
+          "form": "8-K",
+          "items": "7.01,9.01",
+          "primaryDocument": "d821017d8k.htm"
+        }
+      ],
+      "no_item_1_03_or_2_04": true,
+      "scope_limit": "已核对 SEC submissions 元数据，阅读年度和窗口尾部季度债务披露；不是完整法院案卷或评级事件台账。",
+      "source_metadata_path": "sec-submissions-WBA-filtered.json",
+      "raw_path": "sec-submissions-WBA.raw.json",
+      "source_sha256": "6c8d6ee0a1c37dc7e7a94b4c6b3540c0d2a80cbe3bd37f36588142bf6a5fd54b",
+      "raw_source_hash_rechecked": true,
+      "metadata_full_window_coverage_verified": true,
+      "archive_files_all_outside_window": true
+    }
+  ],
+  "price_recalculations": [
+    {
+      "entity_id": "AAPL",
+      "session_dates": [
+        "2024-02-01",
+        "2024-02-02"
+      ],
+      "company_close_return_pct": -0.5405116129722787,
+      "spy_close_return_pct": 1.052739165985282,
+      "abnormal_close_return_pct": -1.5932507789575607,
+      "abnormal_adjclose_return_pct": -1.5932471529511913,
+      "difference_percentage_points": 3.626006369350055e-06,
+      "label": "negative_reaction",
+      "vendor_events_empty": true,
+      "evidence_path": "yahoo-AAPL-20240201-20240202.raw.json",
+      "source_sha256": "32ef6a4d56f606cbb1ff076161071e90028f03f5dc8a445133887e0a2a73233d"
+    },
+    {
+      "entity_id": "AMZN",
+      "session_dates": [
+        "2024-02-01",
+        "2024-02-02"
+      ],
+      "company_close_return_pct": 7.866649924660974,
+      "spy_close_return_pct": 1.052739165985282,
+      "abnormal_close_return_pct": 6.813910758675692,
+      "abnormal_adjclose_return_pct": 6.813921071306946,
+      "difference_percentage_points": 1.031263125370362e-05,
+      "label": "positive_reaction",
+      "vendor_events_empty": true,
+      "evidence_path": "yahoo-AMZN-20240201-20240202.raw.json",
+      "source_sha256": "1bbc2f7451ba73c1e84a21344d94eb2bf24d2b2529541dae1b93bc55bd8dcf60"
+    },
+    {
+      "entity_id": "META",
+      "session_dates": [
+        "2024-02-01",
+        "2024-02-02"
+      ],
+      "company_close_return_pct": 20.31764527078373,
+      "spy_close_return_pct": 1.052739165985282,
+      "abnormal_close_return_pct": 19.264906104798445,
+      "abnormal_adjclose_return_pct": 19.264908919294594,
+      "difference_percentage_points": 2.814496149321138e-06,
+      "label": "positive_reaction",
+      "vendor_events_empty": true,
+      "evidence_path": "yahoo-META-20240201-20240202.raw.json",
+      "source_sha256": "c6277669914f4c4cadaabc208632d44ae051f0e8dec13ddc7d8efb89f56946a0"
+    }
+  ],
+  "limits": [
+    "AMGN 公告在 resolution_date 后，保留 provisional task 映射。",
+    "信用 no_event 仅 provisional；目录和连续披露不等于穷尽法院/评级历史。",
+    "行情为当前 vendor 历史快照，未知首次发布时间；total return 由窗口事件与调整后价交叉核对，未完成独立交易所数据核对。"
+  ],
+  "eps_baseline_original_concept_checks": 14,
+  "all_eps_concept_raw_hashes_rechecked": true,
+  "raw_source_hash_checks": [
+    {
+      "raw_path": "sec-eps-AAPL-concept.raw.json",
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/EarningsPerShareDiluted.json",
+      "source_sha256": "d58cd0fce2baed8be20b7b6587917b03bb46c08fc0b527d53a4867cab9317acf",
+      "bytes": 48741,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:14:19.836532+00:00"
+    },
+    {
+      "raw_path": "sec-eps-AMD-concept.raw.json",
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000002488/us-gaap/EarningsPerShareDiluted.json",
+      "source_sha256": "15436f232b8f49ef33d8cebf6ba7c4696048ef093290ef5f68ef48cb65e5c53a",
+      "bytes": 42412,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:14:25.229272+00:00"
+    },
+    {
+      "raw_path": "sec-eps-AMGN-concept.raw.json",
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000318154/us-gaap/EarningsPerShareDiluted.json",
+      "source_sha256": "44fda87915cfe7d797eb3d600fde86258fb8098832c87d395397cf4126600c60",
+      "bytes": 46812,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:14:25.557018+00:00"
+    },
+    {
+      "raw_path": "sec-eps-BAC-concept.raw.json",
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000070858/us-gaap/EarningsPerShareDiluted.json",
+      "source_sha256": "2133ba4c4365fb48817dd9557c0244519a99aced91693b3e6372c39f706da786",
+      "bytes": 34567,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:14:19.836692+00:00"
+    },
+    {
+      "raw_path": "sec-eps-C-concept.raw.json",
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000831001/us-gaap/EarningsPerShareDiluted.json",
+      "source_sha256": "23820b28db5ee74137fd4703a7baa9ec4e2d51065391919d7da75d35651add13",
+      "bytes": 52500,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:14:21.172582+00:00"
+    },
+    {
+      "raw_path": "sec-eps-DOW-concept.raw.json",
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001751788/us-gaap/EarningsPerShareDiluted.json",
+      "source_sha256": "a30ac9e0fba86bc51b2b43d386bbb5e23e4091c175514318ca03cf59c99b35a3",
+      "bytes": 14117,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:14:22.677945+00:00"
+    },
+    {
+      "raw_path": "sec-eps-GS-concept.raw.json",
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000886982/us-gaap/EarningsPerShareDiluted.json",
+      "source_sha256": "b8c3d05e883361ebd8543b3dfce7c0f40fda35a90cb1f604416f352a871b64db",
+      "bytes": 33737,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:14:24.042838+00:00"
+    },
+    {
+      "raw_path": "sec-eps-HON-concept.raw.json",
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000773840/us-gaap/EarningsPerShareDiluted.json",
+      "source_sha256": "91667ff55623f86cc5718b4d45147e694a9cd3ee0815d4b04e573acc0876cf71",
+      "bytes": 46843,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:14:22.729797+00:00"
+    },
+    {
+      "raw_path": "sec-eps-IBM-concept.raw.json",
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000051143/us-gaap/EarningsPerShareDiluted.json",
+      "source_sha256": "7b81dcc0a49349da6e8b4aee646ed9e5189d2e7d33dee9ba6beacd62dcc9dcc7",
+      "bytes": 33379,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:14:22.652140+00:00"
+    },
+    {
+      "raw_path": "sec-eps-JPM-concept.raw.json",
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000019617/us-gaap/EarningsPerShareDiluted.json",
+      "source_sha256": "39a48e8fed3c70d6a3adf5fd6f4fa529e10d1849dc918cfee2650b0d69cb7fc8",
+      "bytes": 34440,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:14:24.043083+00:00"
+    },
+    {
+      "raw_path": "sec-eps-MS-concept.raw.json",
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000895421/us-gaap/EarningsPerShareDiluted.json",
+      "source_sha256": "ed8de86db84b91eca61826bfd35604582ccd31ef5be4b51eac9dd24f69249358",
+      "bytes": 45580,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:14:24.084755+00:00"
+    },
+    {
+      "raw_path": "sec-eps-PNC-concept.raw.json",
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000713676/us-gaap/EarningsPerShareDiluted.json",
+      "source_sha256": "f92fe3a631659ab0423319adcdd8fb7fb4fe26cce69b93758012a4e370683375",
+      "bytes": 33776,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:14:21.181859+00:00"
+    },
+    {
+      "raw_path": "sec-eps-TMO-concept.raw.json",
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000097745/us-gaap/EarningsPerShareDiluted.json",
+      "source_sha256": "447eae05d7460d87c66be24b882e5194361c822d539ddd1ec86aa8e64eb08d96",
+      "bytes": 51743,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:14:21.363388+00:00"
+    },
+    {
+      "raw_path": "sec-eps-USB-concept.raw.json",
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000036104/us-gaap/EarningsPerShareDiluted.json",
+      "source_sha256": "562214f55ce0ec284e2d94246314b6a35b853f0d8fe75e520c6bf003e028ede1",
+      "bytes": 32908,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:14:25.378190+00:00"
+    },
+    {
+      "raw_path": "sec-eps-WFC-concept.raw.json",
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000072971/us-gaap/EarningsPerShareDiluted.json",
+      "source_sha256": "1e20e27e2c96f370b20dabf8d8cc6e1af5ec2904899c9b627fbe47866b92eaa6",
+      "bytes": 33302,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:14:19.866041+00:00"
+    },
+    {
+      "raw_path": "sec-submissions-BBY.raw.json",
+      "url": "https://data.sec.gov/submissions/CIK0000764478.json",
+      "source_sha256": "b3e56d79c1462e4bd1848ee8716887ffbbd37b47ba8938d7a093988ceffab33a",
+      "bytes": 146495,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:17:27.003649+00:00"
+    },
+    {
+      "raw_path": "sec-submissions-M.raw.json",
+      "url": "https://data.sec.gov/submissions/CIK0000794367.json",
+      "source_sha256": "deb5f449a39b1010a9479252f2e4914abc1ec2a7a91d96faab670192ecc6de63",
+      "bytes": 163571,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:17:26.966457+00:00"
+    },
+    {
+      "raw_path": "sec-submissions-ODFL.raw.json",
+      "url": "https://data.sec.gov/submissions/CIK0000878927.json",
+      "source_sha256": "90c51efb21b8e7e464d132dea2492c25c1e4c01b6c024a2ac7c2807540442ffa",
+      "bytes": 154361,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:17:28.621797+00:00"
+    },
+    {
+      "raw_path": "sec-submissions-WBA.raw.json",
+      "url": "https://data.sec.gov/submissions/CIK0001618921.json",
+      "source_sha256": "6c8d6ee0a1c37dc7e7a94b4c6b3540c0d2a80cbe3bd37f36588142bf6a5fd54b",
+      "bytes": 163138,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:17:28.630478+00:00"
+    },
+    {
+      "raw_path": "yahoo-AAPL-20240201-20240202.raw.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "source_sha256": "32ef6a4d56f606cbb1ff076161071e90028f03f5dc8a445133887e0a2a73233d",
+      "bytes": 1399,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:08:41.954470+00:00"
+    },
+    {
+      "raw_path": "yahoo-AMZN-20240201-20240202.raw.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "source_sha256": "1bbc2f7451ba73c1e84a21344d94eb2bf24d2b2529541dae1b93bc55bd8dcf60",
+      "bytes": 1408,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:08:43.288284+00:00"
+    },
+    {
+      "raw_path": "yahoo-META-20240201-20240202.raw.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/META?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "source_sha256": "c6277669914f4c4cadaabc208632d44ae051f0e8dec13ddc7d8efb89f56946a0",
+      "bytes": 1413,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:08:44.258322+00:00"
+    },
+    {
+      "raw_path": "yahoo-SPY-20240201-20240202.raw.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "source_sha256": "f5b806d21349f916e114273a5740c5e5c222043e656e73f2977a48534f62961d",
+      "bytes": 1448,
+      "hash_matches": true,
+      "retrieved_at": "2026-10-07T08:08:45.392493+00:00"
+    }
+  ],
+  "numeric_recalculations_passed": true
+}

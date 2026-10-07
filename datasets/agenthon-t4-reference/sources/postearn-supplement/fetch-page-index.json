@@ -1,0 +1,241 @@
+[
+  {
+    "name": "apple-stock-page",
+    "requested_url": "https://investor.apple.com/stock-price/default.aspx",
+    "resolved_url": "https://investor.apple.com/stock-price/default.aspx",
+    "status": 200,
+    "retrieved_at": "2026-10-07T08:44:08.186225+00:00",
+    "sha256": "fd2412c875b2da71e8b9741b9b3f8ae23c094b2ec2eff8ec577d81f3014dceab",
+    "bytes": 179352,
+    "content_type": "text/html; charset=utf-8",
+    "archive_sha256": "47f1694492cd1c62c89cdcee2915300d4d796f632e47143ec105bb3d831d7dff",
+    "archive_bytes": 177157,
+    "archive_sanitization": "公开页面 apiKey/Q4ApiKey 的非空值已替换为占位符；原始下载 hash 仅留摘要，不保留该标识符。"
+  },
+  {
+    "name": "meta-stock-page",
+    "requested_url": "https://investor.atmeta.com/stock-info/default.aspx",
+    "resolved_url": "https://investor.atmeta.com/stock-info/default.aspx",
+    "status": 200,
+    "retrieved_at": "2026-10-07T08:44:09.674616+00:00",
+    "sha256": "385e1d18ce6737a2c6955ffb0cbf4f8d60ec05fbbdce67fdeab089ae6e0cb6a2",
+    "bytes": 67460,
+    "content_type": "text/html; charset=utf-8",
+    "archive_sha256": "93ddffd803b29b2aa214885d9083ac56ae78af97b2ba51afa930a97d7866b4d3",
+    "archive_bytes": 66284,
+    "archive_sanitization": "公开页面 apiKey/Q4ApiKey 的非空值已替换为占位符；原始下载 hash 仅留摘要，不保留该标识符。"
+  },
+  {
+    "name": "amazon-stock-page",
+    "requested_url": "https://ir.aboutamazon.com/stock-information/historical-lookup/default.aspx",
+    "retrieved_at": "2026-10-07T08:44:11.245787+00:00",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "name": "apple-dividend-page",
+    "requested_url": "https://investor.apple.com/dividend-history/default.aspx",
+    "resolved_url": "https://investor.apple.com/dividend-history/default.aspx",
+    "status": 200,
+    "retrieved_at": "2026-10-07T08:44:12.876231+00:00",
+    "sha256": "91bd3b8ca2e03d6ff03a9debaa52f98229dab54b6dc031ac91085735abeb7c60",
+    "bytes": 206335,
+    "content_type": "text/html; charset=utf-8",
+    "archive_sha256": "9b98898072d9282c94aed8fc85ed3c07c40e0ee78e8a1436d8d5c83e5fbbae87",
+    "archive_bytes": 203613,
+    "archive_sanitization": "公开页面 apiKey/Q4ApiKey 的非空值已替换为占位符；原始下载 hash 仅留摘要，不保留该标识符。"
+  },
+  {
+    "name": "spy-product-page",
+    "requested_url": "https://www.ssga.com/us/en/individual/etfs/spdr-sp-500-etf-trust-spy",
+    "resolved_url": "https://www.ssga.com/us/en/individual/etfs/state-street-spdr-sp-500-etf-trust-spy",
+    "status": 200,
+    "retrieved_at": "2026-10-07T08:44:15.494479+00:00",
+    "sha256": "61c89970fdc68562cdcbfbe783ce9ecbb0cf586fbf1822e7d993f7181e3626da",
+    "bytes": 233841,
+    "content_type": "text/html;charset=utf-8"
+  },
+  {
+    "name": "q4-historical-widget",
+    "requested_url": "https://widgets.q4app.com/widgets/q4.historical-range.2.2.1.min.js",
+    "resolved_url": "https://widgets.q4app.com/widgets/q4.historical-range.2.2.1.min.js",
+    "status": 200,
+    "retrieved_at": "2026-10-07T08:44:52.409602+00:00",
+    "sha256": "0aa0a4ba4c3ad2c1f7fd84d0ff017e8f70ed4d36815cafe9c50724053a195f88",
+    "bytes": 11591,
+    "content_type": "application/javascript"
+  },
+  {
+    "name": "q4-api-widget",
+    "requested_url": "https://widgets.q4app.com/widgets/q4.api.1.12.18.min.js",
+    "resolved_url": "https://widgets.q4app.com/widgets/q4.api.1.12.18.min.js",
+    "status": 200,
+    "retrieved_at": "2026-10-07T08:44:53.467448+00:00",
+    "sha256": "4ccb465f9caa6de36da953c16274e2a2ce530b51163c82a66f0237d4e28421b8",
+    "bytes": 18349,
+    "content_type": "application/javascript"
+  },
+  {
+    "name": "ssga-distributions-page",
+    "requested_url": "https://www.ssga.com/us/en/individual/resources/documents/etf-dividend-distributions",
+    "resolved_url": "https://www.ssga.com/us/en/individual/resources/documents/etf-dividend-distributions",
+    "status": 200,
+    "retrieved_at": "2026-10-07T08:44:54.960484+00:00",
+    "sha256": "a9cf30699d6800d2b55a4e6a3baa67bbaab0654e444f4e6db3111f7d6bc0b48f",
+    "bytes": 79216,
+    "content_type": "text/html; charset=UTF-8"
+  },
+  {
+    "name": "amazon-ir-home",
+    "requested_url": "https://ir.aboutamazon.com/",
+    "retrieved_at": "2026-10-07T08:44:55.809534+00:00",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "amazon-ir-faq",
+    "requested_url": "https://ir.aboutamazon.com/faqs/default.aspx",
+    "retrieved_at": "2026-10-07T08:44:56.857592+00:00",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "apple-ir-history",
+    "requested_url": "https://investor.apple.com/feed/StockQuote.svc/GetStockQuoteHistoricalList?exchange=NASD&symbol=AAPL&pageSize=10&startDate=Feb-01-2024&endDate=Feb-02-2024",
+    "resolved_url": "https://investor.apple.com/feed/StockQuote.svc/GetStockQuoteHistoricalList?exchange=NASD&symbol=AAPL&pageSize=10&startDate=Feb-01-2024&endDate=Feb-02-2024",
+    "status": 200,
+    "retrieved_at": "2026-10-07T08:45:49.986962+00:00",
+    "sha256": "5b0e240829bb64da3ee0ded4cf17b180349196a3cf7032193f2e84a748f9fbeb",
+    "bytes": 288,
+    "content_type": "application/json; charset=utf-8"
+  },
+  {
+    "name": "meta-ir-history",
+    "requested_url": "https://investor.atmeta.com/feed/StockQuote.svc/GetStockQuoteHistoricalList?exchange=NASD&symbol=META&pageSize=10&startDate=Feb-01-2024&endDate=Feb-02-2024",
+    "resolved_url": "https://investor.atmeta.com/feed/StockQuote.svc/GetStockQuoteHistoricalList?exchange=NASD&symbol=META&pageSize=10&startDate=Feb-01-2024&endDate=Feb-02-2024",
+    "status": 200,
+    "retrieved_at": "2026-10-07T08:45:50.033798+00:00",
+    "sha256": "3c0ec64d78055fcaaae2f617df290d03455535c741cdacfffdf3669e05fa0444",
+    "bytes": 269,
+    "content_type": "application/json; charset=utf-8"
+  },
+  {
+    "name": "spy-ssga-distributions",
+    "requested_url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/spdr-etf-historical-distributions.xlsx",
+    "resolved_url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/spdr-etf-historical-distributions.xlsx",
+    "status": 200,
+    "retrieved_at": "2026-10-07T08:45:50.586222+00:00",
+    "sha256": "b162dd17027d1128f2209e312b0f634960daa78319dafe0ab821ab0b7e77ce23",
+    "bytes": 581242,
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+  },
+  {
+    "name": "apple-nasdaq-usdates",
+    "requested_url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=02%2F01%2F2024&todate=02%2F02%2F2024&limit=5000",
+    "resolved_url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=02%2F01%2F2024&todate=02%2F02%2F2024&limit=5000",
+    "status": 200,
+    "retrieved_at": "2026-10-07T08:45:50.981429+00:00",
+    "sha256": "6e2f2e9c39fbb5df0048f3056a97b5e8aeec5909858b299dc6f474b8f81853d2",
+    "bytes": 165,
+    "content_type": "application/json; charset=utf-8"
+  },
+  {
+    "name": "amazon-ir-feed",
+    "requested_url": "https://ir.aboutamazon.com/feed/StockQuote.svc/GetStockQuoteHistoricalList?exchange=NASD&symbol=AMZN&pageSize=10&startDate=Feb-01-2024&endDate=Feb-02-2024",
+    "retrieved_at": "2026-10-07T08:49:28.530013+00:00",
+    "resolved_url": "https://ir.aboutamazon.com/feed/StockQuote.svc/GetStockQuoteHistoricalList?exchange=NASD&symbol=AMZN&pageSize=10&startDate=Feb-01-2024&endDate=Feb-02-2024",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "sha256": "7710f32cfb1b6e6c754c6fa9f30957f5ab7eb48f9f65bd294d549da3f57ede86",
+    "bytes": 271
+  },
+  {
+    "name": "amazon-ir-overview",
+    "requested_url": "https://ir.aboutamazon.com/overview/default.aspx",
+    "retrieved_at": "2026-10-07T08:49:28.530952+00:00",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "amazon-2023-10k",
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000008/amzn-20231231.htm",
+    "retrieved_at": "2026-10-07T08:49:28.531157+00:00",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "cme-meta-dividend",
+    "requested_url": "https://www.cmegroup.com/articles/2024/trading-dividend-uncertainty.html",
+    "retrieved_at": "2026-10-07T08:49:28.531332+00:00",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "spy-ssga-price-nav-history",
+    "requested_url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/navhist-us-en-spy.xlsx",
+    "retrieved_at": "2026-10-07T08:49:28.531500+00:00",
+    "resolved_url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/navhist-us-en-spy.xlsx",
+    "status": 200,
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "sha256": "7c8fe7c18144aa4eb961d6fb4bb5da5e2bf31762fd87a82fb20626f1cfe64729",
+    "bytes": 277619
+  },
+  {
+    "name": "spy-ssga-premium-discount-history",
+    "requested_url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/pdhist-us-en-spy.xlsx",
+    "retrieved_at": "2026-10-07T08:49:28.531671+00:00",
+    "resolved_url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/pdhist-us-en-spy.xlsx",
+    "status": 200,
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "sha256": "95af267485df5a0f93964ba9a7e35a91ca5d03128f3030e593cb9feecb725625",
+    "bytes": 30580
+  },
+  {
+    "name": "apple-nasdaq-dividend",
+    "requested_url": "https://api.nasdaq.com/api/quote/AAPL/dividends?assetclass=stocks",
+    "retrieved_at": "2026-10-07T08:49:29.477229+00:00",
+    "resolved_url": "https://api.nasdaq.com/api/quote/AAPL/dividends?assetclass=stocks",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "sha256": "21c36a00312494a67684ca1d51aff41ba5b31c31abd869e465f5137c0133114d",
+    "bytes": 13587
+  },
+  {
+    "name": "meta-issuer-first-dividend",
+    "requested_url": "https://investor.atmeta.com/investor-news/press-release-details/2024/Meta-Reports-Fourth-Quarter-and-Full-Year-2023-Results-Initiates-Quarterly-Dividend/default.aspx",
+    "retrieved_at": "2026-10-07T08:49:29.478258+00:00",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "spy-tickertech-proxy",
+    "requested_url": "https://investor.apple.com/feed/StockQuote.svc/GetStockQuoteHistoricalList?exchange=AMEX&symbol=SPY&pageSize=10&startDate=Feb-01-2024&endDate=Feb-02-2024",
+    "retrieved_at": "2026-10-07T08:51:23.316927+00:00",
+    "resolved_url": "https://investor.apple.com/feed/StockQuote.svc/GetStockQuoteHistoricalList?exchange=AMEX&symbol=SPY&pageSize=10&startDate=Feb-01-2024&endDate=Feb-02-2024",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "sha256": "6b7b49589b9a57b39f277e1c30ff9d862d6e3bc7b7bb02b865e94c0861d13af9",
+    "bytes": 268
+  },
+  {
+    "name": "meta-nasdaq-dividend",
+    "requested_url": "https://api.nasdaq.com/api/quote/META/dividends?assetclass=stocks",
+    "retrieved_at": "2026-10-07T08:51:23.317670+00:00",
+    "resolved_url": "https://api.nasdaq.com/api/quote/META/dividends?assetclass=stocks",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "sha256": "d9e82fa631bbfd0ec58c56f63183b12ebfaab437b12a7cf67fc64cf227493366",
+    "bytes": 2405
+  },
+  {
+    "name": "amazon-ir-faq-retry",
+    "requested_url": "https://ir.aboutamazon.com/faqs/default.aspx?year=2024",
+    "retrieved_at": "2026-10-07T08:51:23.317902+00:00",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "meta-sec-20240201",
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000010/meta-20240201.htm",
+    "retrieved_at": "2026-10-07T08:51:23.318105+00:00",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  }
+]

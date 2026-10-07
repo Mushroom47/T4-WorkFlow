@@ -1,0 +1,1642 @@
+{
+  "schema_version": "0.1.0",
+  "checked_at": "2026-10-07T08:52:36.344146+00:00",
+  "environment": {
+    "python_version": "3.14.4 (main, Apr  7 2026, 13:13:20) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "script_sha256": "e5c4e721b3eeedc0a2028c9ee5458d0452a78ad9bc6b8f7d5e2ca022dd51e1a9",
+    "command": "python3 datasets/agenthon-t4-reference/sources/yield-vintages/collect_yield_vintages.py audit"
+  },
+  "reference_snapshot": {
+    "path": "reference.jsonl",
+    "sha256": "08f02eb3bb69902e4fb0eddf9ebacdb2af94dab33b4c1652a2f78174ad42544b"
+  },
+  "summary": {
+    "task_count": 2,
+    "entity_count": 12,
+    "endpoint_count": 24,
+    "requested_csvs": 72,
+    "downloaded_csvs": 72,
+    "endpoint_historical_vintage_available": 24,
+    "reference_value_differences": 0,
+    "entities_passed": 12,
+    "all_entity_checks_pass": true,
+    "global_source_first_publication_proven": false
+  },
+  "records": [
+    {
+      "task_id": "t4-fomc-curve-20220728",
+      "entity_id": "UST10Y",
+      "series_id": "DGS10",
+      "unit": "bps_change",
+      "start_observation_date": "2022-07-28",
+      "end_observation_date": "2022-09-20",
+      "task_start_yield_pct": 2.68,
+      "existing_reference_value_bps": 89.0,
+      "endpoint_evidence": {
+        "start": {
+          "observation_date": "2022-07-28",
+          "probes": [
+            {
+              "path": "DGS10_window-2022-07-21_2022-07-28_vintage-2022-07-27.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS10&cosd=2022-07-21&coed=2022-07-28&vintage_date=2022-07-27",
+              "requested_vintage_date": "2022-07-27",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2022-07-21",
+              "returned_end": "2022-07-26"
+            },
+            {
+              "path": "DGS10_window-2022-07-21_2022-07-28_vintage-2022-07-28.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS10&cosd=2022-07-21&coed=2022-07-28&vintage_date=2022-07-28",
+              "requested_vintage_date": "2022-07-28",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2022-07-21",
+              "returned_end": "2022-07-27"
+            },
+            {
+              "path": "DGS10_window-2022-07-21_2022-07-28_vintage-2022-07-29.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS10&cosd=2022-07-21&coed=2022-07-28&vintage_date=2022-07-29",
+              "requested_vintage_date": "2022-07-29",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": true,
+              "independent_value": 2.68,
+              "returned_start": "2022-07-21",
+              "returned_end": "2022-07-28"
+            }
+          ],
+          "earliest_tested_available_vintage": "2022-07-29",
+          "earliest_tested_available_value_pct": 2.68,
+          "current_Treasury_XML_value_pct": 2.68,
+          "prior_tested_vintages_target_absent": true,
+          "global_source_first_publication_proven": false,
+          "source_first_publication_date": null,
+          "ALFRED_release_date_basis": "CSV 的 as-of vintage 日期；未取得本次具体行的原始源发布时间或 realtime_start API 字段"
+        },
+        "end": {
+          "observation_date": "2022-09-20",
+          "probes": [
+            {
+              "path": "DGS10_window-2022-09-13_2022-09-20_vintage-2022-09-19.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS10&cosd=2022-09-13&coed=2022-09-20&vintage_date=2022-09-19",
+              "requested_vintage_date": "2022-09-19",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2022-09-13",
+              "returned_end": "2022-09-16"
+            },
+            {
+              "path": "DGS10_window-2022-09-13_2022-09-20_vintage-2022-09-20.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS10&cosd=2022-09-13&coed=2022-09-20&vintage_date=2022-09-20",
+              "requested_vintage_date": "2022-09-20",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2022-09-13",
+              "returned_end": "2022-09-19"
+            },
+            {
+              "path": "DGS10_window-2022-09-13_2022-09-20_vintage-2022-09-21.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS10&cosd=2022-09-13&coed=2022-09-20&vintage_date=2022-09-21",
+              "requested_vintage_date": "2022-09-21",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": true,
+              "independent_value": 3.57,
+              "returned_start": "2022-09-13",
+              "returned_end": "2022-09-20"
+            }
+          ],
+          "earliest_tested_available_vintage": "2022-09-21",
+          "earliest_tested_available_value_pct": 3.57,
+          "current_Treasury_XML_value_pct": 3.57,
+          "prior_tested_vintages_target_absent": true,
+          "global_source_first_publication_proven": false,
+          "source_first_publication_date": null,
+          "ALFRED_release_date_basis": "CSV 的 as-of vintage 日期；未取得本次具体行的原始源发布时间或 realtime_start API 字段"
+        }
+      },
+      "checks": {
+        "start_historical_csv_available": true,
+        "start_all_downloaded_hashes_and_columns_match": true,
+        "start_previous_vintages_target_absent": true,
+        "start_historical_value_equals_current_XML": true,
+        "start_latest_observation_not_future_of_vintage": true,
+        "end_historical_csv_available": true,
+        "end_all_downloaded_hashes_and_columns_match": true,
+        "end_previous_vintages_target_absent": true,
+        "end_historical_value_equals_current_XML": true,
+        "end_latest_observation_not_future_of_vintage": true,
+        "historical_start_equals_frozen_task": true,
+        "historical_bps_equals_existing_reference": true
+      },
+      "findings": [
+        "最早可见日仅指所查询前一日/当日/次日 ALFRED vintage 的转变；不是全球首发或 Treasury 同日网页首发证明。",
+        "起点任务值为 observation day close 的冻结已给定数字；ALFRED 收录日在次日不撤销题面已给定 baseline。"
+      ],
+      "historical_start_pct": 2.68,
+      "historical_end_pct": 3.57,
+      "recomputed_bps": 89.0,
+      "difference_vs_existing_reference_bps": 0.0,
+      "formula": "100 * (earliest_tested_end_vintage_yield_pct - task.start_yield_pct)",
+      "pass_flag": true,
+      "status": "historical_vintage_verified"
+    },
+    {
+      "task_id": "t4-fomc-curve-20220728",
+      "entity_id": "UST2Y",
+      "series_id": "DGS2",
+      "unit": "bps_change",
+      "start_observation_date": "2022-07-28",
+      "end_observation_date": "2022-09-20",
+      "task_start_yield_pct": 2.85,
+      "existing_reference_value_bps": 111.0,
+      "endpoint_evidence": {
+        "start": {
+          "observation_date": "2022-07-28",
+          "probes": [
+            {
+              "path": "DGS2_window-2022-07-21_2022-07-28_vintage-2022-07-27.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2022-07-21&coed=2022-07-28&vintage_date=2022-07-27",
+              "requested_vintage_date": "2022-07-27",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2022-07-21",
+              "returned_end": "2022-07-26"
+            },
+            {
+              "path": "DGS2_window-2022-07-21_2022-07-28_vintage-2022-07-28.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2022-07-21&coed=2022-07-28&vintage_date=2022-07-28",
+              "requested_vintage_date": "2022-07-28",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2022-07-21",
+              "returned_end": "2022-07-27"
+            },
+            {
+              "path": "DGS2_window-2022-07-21_2022-07-28_vintage-2022-07-29.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2022-07-21&coed=2022-07-28&vintage_date=2022-07-29",
+              "requested_vintage_date": "2022-07-29",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": true,
+              "independent_value": 2.85,
+              "returned_start": "2022-07-21",
+              "returned_end": "2022-07-28"
+            }
+          ],
+          "earliest_tested_available_vintage": "2022-07-29",
+          "earliest_tested_available_value_pct": 2.85,
+          "current_Treasury_XML_value_pct": 2.85,
+          "prior_tested_vintages_target_absent": true,
+          "global_source_first_publication_proven": false,
+          "source_first_publication_date": null,
+          "ALFRED_release_date_basis": "CSV 的 as-of vintage 日期；未取得本次具体行的原始源发布时间或 realtime_start API 字段"
+        },
+        "end": {
+          "observation_date": "2022-09-20",
+          "probes": [
+            {
+              "path": "DGS2_window-2022-09-13_2022-09-20_vintage-2022-09-19.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2022-09-13&coed=2022-09-20&vintage_date=2022-09-19",
+              "requested_vintage_date": "2022-09-19",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2022-09-13",
+              "returned_end": "2022-09-16"
+            },
+            {
+              "path": "DGS2_window-2022-09-13_2022-09-20_vintage-2022-09-20.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2022-09-13&coed=2022-09-20&vintage_date=2022-09-20",
+              "requested_vintage_date": "2022-09-20",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2022-09-13",
+              "returned_end": "2022-09-19"
+            },
+            {
+              "path": "DGS2_window-2022-09-13_2022-09-20_vintage-2022-09-21.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2022-09-13&coed=2022-09-20&vintage_date=2022-09-21",
+              "requested_vintage_date": "2022-09-21",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": true,
+              "independent_value": 3.96,
+              "returned_start": "2022-09-13",
+              "returned_end": "2022-09-20"
+            }
+          ],
+          "earliest_tested_available_vintage": "2022-09-21",
+          "earliest_tested_available_value_pct": 3.96,
+          "current_Treasury_XML_value_pct": 3.96,
+          "prior_tested_vintages_target_absent": true,
+          "global_source_first_publication_proven": false,
+          "source_first_publication_date": null,
+          "ALFRED_release_date_basis": "CSV 的 as-of vintage 日期；未取得本次具体行的原始源发布时间或 realtime_start API 字段"
+        }
+      },
+      "checks": {
+        "start_historical_csv_available": true,
+        "start_all_downloaded_hashes_and_columns_match": true,
+        "start_previous_vintages_target_absent": true,
+        "start_historical_value_equals_current_XML": true,
+        "start_latest_observation_not_future_of_vintage": true,
+        "end_historical_csv_available": true,
+        "end_all_downloaded_hashes_and_columns_match": true,
+        "end_previous_vintages_target_absent": true,
+        "end_historical_value_equals_current_XML": true,
+        "end_latest_observation_not_future_of_vintage": true,
+        "historical_start_equals_frozen_task": true,
+        "historical_bps_equals_existing_reference": true
+      },
+      "findings": [
+        "最早可见日仅指所查询前一日/当日/次日 ALFRED vintage 的转变；不是全球首发或 Treasury 同日网页首发证明。",
+        "起点任务值为 observation day close 的冻结已给定数字；ALFRED 收录日在次日不撤销题面已给定 baseline。"
+      ],
+      "historical_start_pct": 2.85,
+      "historical_end_pct": 3.96,
+      "recomputed_bps": 111.0,
+      "difference_vs_existing_reference_bps": 0.0,
+      "formula": "100 * (earliest_tested_end_vintage_yield_pct - task.start_yield_pct)",
+      "pass_flag": true,
+      "status": "historical_vintage_verified"
+    },
+    {
+      "task_id": "t4-fomc-curve-20220728",
+      "entity_id": "UST30Y",
+      "series_id": "DGS30",
+      "unit": "bps_change",
+      "start_observation_date": "2022-07-28",
+      "end_observation_date": "2022-09-20",
+      "task_start_yield_pct": 3.02,
+      "existing_reference_value_bps": 57.0,
+      "endpoint_evidence": {
+        "start": {
+          "observation_date": "2022-07-28",
+          "probes": [
+            {
+              "path": "DGS30_window-2022-07-21_2022-07-28_vintage-2022-07-27.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS30&cosd=2022-07-21&coed=2022-07-28&vintage_date=2022-07-27",
+              "requested_vintage_date": "2022-07-27",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2022-07-21",
+              "returned_end": "2022-07-26"
+            },
+            {
+              "path": "DGS30_window-2022-07-21_2022-07-28_vintage-2022-07-28.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS30&cosd=2022-07-21&coed=2022-07-28&vintage_date=2022-07-28",
+              "requested_vintage_date": "2022-07-28",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2022-07-21",
+              "returned_end": "2022-07-27"
+            },
+            {
+              "path": "DGS30_window-2022-07-21_2022-07-28_vintage-2022-07-29.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS30&cosd=2022-07-21&coed=2022-07-28&vintage_date=2022-07-29",
+              "requested_vintage_date": "2022-07-29",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": true,
+              "independent_value": 3.02,
+              "returned_start": "2022-07-21",
+              "returned_end": "2022-07-28"
+            }
+          ],
+          "earliest_tested_available_vintage": "2022-07-29",
+          "earliest_tested_available_value_pct": 3.02,
+          "current_Treasury_XML_value_pct": 3.02,
+          "prior_tested_vintages_target_absent": true,
+          "global_source_first_publication_proven": false,
+          "source_first_publication_date": null,
+          "ALFRED_release_date_basis": "CSV 的 as-of vintage 日期；未取得本次具体行的原始源发布时间或 realtime_start API 字段"
+        },
+        "end": {
+          "observation_date": "2022-09-20",
+          "probes": [
+            {
+              "path": "DGS30_window-2022-09-13_2022-09-20_vintage-2022-09-19.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS30&cosd=2022-09-13&coed=2022-09-20&vintage_date=2022-09-19",
+              "requested_vintage_date": "2022-09-19",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2022-09-13",
+              "returned_end": "2022-09-16"
+            },
+            {
+              "path": "DGS30_window-2022-09-13_2022-09-20_vintage-2022-09-20.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS30&cosd=2022-09-13&coed=2022-09-20&vintage_date=2022-09-20",
+              "requested_vintage_date": "2022-09-20",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2022-09-13",
+              "returned_end": "2022-09-19"
+            },
+            {
+              "path": "DGS30_window-2022-09-13_2022-09-20_vintage-2022-09-21.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS30&cosd=2022-09-13&coed=2022-09-20&vintage_date=2022-09-21",
+              "requested_vintage_date": "2022-09-21",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": true,
+              "independent_value": 3.59,
+              "returned_start": "2022-09-13",
+              "returned_end": "2022-09-20"
+            }
+          ],
+          "earliest_tested_available_vintage": "2022-09-21",
+          "earliest_tested_available_value_pct": 3.59,
+          "current_Treasury_XML_value_pct": 3.59,
+          "prior_tested_vintages_target_absent": true,
+          "global_source_first_publication_proven": false,
+          "source_first_publication_date": null,
+          "ALFRED_release_date_basis": "CSV 的 as-of vintage 日期；未取得本次具体行的原始源发布时间或 realtime_start API 字段"
+        }
+      },
+      "checks": {
+        "start_historical_csv_available": true,
+        "start_all_downloaded_hashes_and_columns_match": true,
+        "start_previous_vintages_target_absent": true,
+        "start_historical_value_equals_current_XML": true,
+        "start_latest_observation_not_future_of_vintage": true,
+        "end_historical_csv_available": true,
+        "end_all_downloaded_hashes_and_columns_match": true,
+        "end_previous_vintages_target_absent": true,
+        "end_historical_value_equals_current_XML": true,
+        "end_latest_observation_not_future_of_vintage": true,
+        "historical_start_equals_frozen_task": true,
+        "historical_bps_equals_existing_reference": true
+      },
+      "findings": [
+        "最早可见日仅指所查询前一日/当日/次日 ALFRED vintage 的转变；不是全球首发或 Treasury 同日网页首发证明。",
+        "起点任务值为 observation day close 的冻结已给定数字；ALFRED 收录日在次日不撤销题面已给定 baseline。"
+      ],
+      "historical_start_pct": 3.02,
+      "historical_end_pct": 3.59,
+      "recomputed_bps": 57.0,
+      "difference_vs_existing_reference_bps": 0.0,
+      "formula": "100 * (earliest_tested_end_vintage_yield_pct - task.start_yield_pct)",
+      "pass_flag": true,
+      "status": "historical_vintage_verified"
+    },
+    {
+      "task_id": "t4-fomc-curve-20220728",
+      "entity_id": "UST3Y",
+      "series_id": "DGS3",
+      "unit": "bps_change",
+      "start_observation_date": "2022-07-28",
+      "end_observation_date": "2022-09-20",
+      "task_start_yield_pct": 2.81,
+      "existing_reference_value_bps": 113.0,
+      "endpoint_evidence": {
+        "start": {
+          "observation_date": "2022-07-28",
+          "probes": [
+            {
+              "path": "DGS3_window-2022-07-21_2022-07-28_vintage-2022-07-27.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS3&cosd=2022-07-21&coed=2022-07-28&vintage_date=2022-07-27",
+              "requested_vintage_date": "2022-07-27",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2022-07-21",
+              "returned_end": "2022-07-26"
+            },
+            {
+              "path": "DGS3_window-2022-07-21_2022-07-28_vintage-2022-07-28.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS3&cosd=2022-07-21&coed=2022-07-28&vintage_date=2022-07-28",
+              "requested_vintage_date": "2022-07-28",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2022-07-21",
+              "returned_end": "2022-07-27"
+            },
+            {
+              "path": "DGS3_window-2022-07-21_2022-07-28_vintage-2022-07-29.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS3&cosd=2022-07-21&coed=2022-07-28&vintage_date=2022-07-29",
+              "requested_vintage_date": "2022-07-29",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": true,
+              "independent_value": 2.81,
+              "returned_start": "2022-07-21",
+              "returned_end": "2022-07-28"
+            }
+          ],
+          "earliest_tested_available_vintage": "2022-07-29",
+          "earliest_tested_available_value_pct": 2.81,
+          "current_Treasury_XML_value_pct": 2.81,
+          "prior_tested_vintages_target_absent": true,
+          "global_source_first_publication_proven": false,
+          "source_first_publication_date": null,
+          "ALFRED_release_date_basis": "CSV 的 as-of vintage 日期；未取得本次具体行的原始源发布时间或 realtime_start API 字段"
+        },
+        "end": {
+          "observation_date": "2022-09-20",
+          "probes": [
+            {
+              "path": "DGS3_window-2022-09-13_2022-09-20_vintage-2022-09-19.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS3&cosd=2022-09-13&coed=2022-09-20&vintage_date=2022-09-19",
+              "requested_vintage_date": "2022-09-19",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2022-09-13",
+              "returned_end": "2022-09-16"
+            },
+            {
+              "path": "DGS3_window-2022-09-13_2022-09-20_vintage-2022-09-20.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS3&cosd=2022-09-13&coed=2022-09-20&vintage_date=2022-09-20",
+              "requested_vintage_date": "2022-09-20",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2022-09-13",
+              "returned_end": "2022-09-19"
+            },
+            {
+              "path": "DGS3_window-2022-09-13_2022-09-20_vintage-2022-09-21.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS3&cosd=2022-09-13&coed=2022-09-20&vintage_date=2022-09-21",
+              "requested_vintage_date": "2022-09-21",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": true,
+              "independent_value": 3.94,
+              "returned_start": "2022-09-13",
+              "returned_end": "2022-09-20"
+            }
+          ],
+          "earliest_tested_available_vintage": "2022-09-21",
+          "earliest_tested_available_value_pct": 3.94,
+          "current_Treasury_XML_value_pct": 3.94,
+          "prior_tested_vintages_target_absent": true,
+          "global_source_first_publication_proven": false,
+          "source_first_publication_date": null,
+          "ALFRED_release_date_basis": "CSV 的 as-of vintage 日期；未取得本次具体行的原始源发布时间或 realtime_start API 字段"
+        }
+      },
+      "checks": {
+        "start_historical_csv_available": true,
+        "start_all_downloaded_hashes_and_columns_match": true,
+        "start_previous_vintages_target_absent": true,
+        "start_historical_value_equals_current_XML": true,
+        "start_latest_observation_not_future_of_vintage": true,
+        "end_historical_csv_available": true,
+        "end_all_downloaded_hashes_and_columns_match": true,
+        "end_previous_vintages_target_absent": true,
+        "end_historical_value_equals_current_XML": true,
+        "end_latest_observation_not_future_of_vintage": true,
+        "historical_start_equals_frozen_task": true,
+        "historical_bps_equals_existing_reference": true
+      },
+      "findings": [
+        "最早可见日仅指所查询前一日/当日/次日 ALFRED vintage 的转变；不是全球首发或 Treasury 同日网页首发证明。",
+        "起点任务值为 observation day close 的冻结已给定数字；ALFRED 收录日在次日不撤销题面已给定 baseline。"
+      ],
+      "historical_start_pct": 2.81,
+      "historical_end_pct": 3.94,
+      "recomputed_bps": 113.0,
+      "difference_vs_existing_reference_bps": 0.0,
+      "formula": "100 * (earliest_tested_end_vintage_yield_pct - task.start_yield_pct)",
+      "pass_flag": true,
+      "status": "historical_vintage_verified"
+    },
+    {
+      "task_id": "t4-fomc-curve-20220728",
+      "entity_id": "UST5Y",
+      "series_id": "DGS5",
+      "unit": "bps_change",
+      "start_observation_date": "2022-07-28",
+      "end_observation_date": "2022-09-20",
+      "task_start_yield_pct": 2.69,
+      "existing_reference_value_bps": 106.0,
+      "endpoint_evidence": {
+        "start": {
+          "observation_date": "2022-07-28",
+          "probes": [
+            {
+              "path": "DGS5_window-2022-07-21_2022-07-28_vintage-2022-07-27.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS5&cosd=2022-07-21&coed=2022-07-28&vintage_date=2022-07-27",
+              "requested_vintage_date": "2022-07-27",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2022-07-21",
+              "returned_end": "2022-07-26"
+            },
+            {
+              "path": "DGS5_window-2022-07-21_2022-07-28_vintage-2022-07-28.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS5&cosd=2022-07-21&coed=2022-07-28&vintage_date=2022-07-28",
+              "requested_vintage_date": "2022-07-28",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2022-07-21",
+              "returned_end": "2022-07-27"
+            },
+            {
+              "path": "DGS5_window-2022-07-21_2022-07-28_vintage-2022-07-29.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS5&cosd=2022-07-21&coed=2022-07-28&vintage_date=2022-07-29",
+              "requested_vintage_date": "2022-07-29",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": true,
+              "independent_value": 2.69,
+              "returned_start": "2022-07-21",
+              "returned_end": "2022-07-28"
+            }
+          ],
+          "earliest_tested_available_vintage": "2022-07-29",
+          "earliest_tested_available_value_pct": 2.69,
+          "current_Treasury_XML_value_pct": 2.69,
+          "prior_tested_vintages_target_absent": true,
+          "global_source_first_publication_proven": false,
+          "source_first_publication_date": null,
+          "ALFRED_release_date_basis": "CSV 的 as-of vintage 日期；未取得本次具体行的原始源发布时间或 realtime_start API 字段"
+        },
+        "end": {
+          "observation_date": "2022-09-20",
+          "probes": [
+            {
+              "path": "DGS5_window-2022-09-13_2022-09-20_vintage-2022-09-19.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS5&cosd=2022-09-13&coed=2022-09-20&vintage_date=2022-09-19",
+              "requested_vintage_date": "2022-09-19",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2022-09-13",
+              "returned_end": "2022-09-16"
+            },
+            {
+              "path": "DGS5_window-2022-09-13_2022-09-20_vintage-2022-09-20.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS5&cosd=2022-09-13&coed=2022-09-20&vintage_date=2022-09-20",
+              "requested_vintage_date": "2022-09-20",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2022-09-13",
+              "returned_end": "2022-09-19"
+            },
+            {
+              "path": "DGS5_window-2022-09-13_2022-09-20_vintage-2022-09-21.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS5&cosd=2022-09-13&coed=2022-09-20&vintage_date=2022-09-21",
+              "requested_vintage_date": "2022-09-21",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": true,
+              "independent_value": 3.75,
+              "returned_start": "2022-09-13",
+              "returned_end": "2022-09-20"
+            }
+          ],
+          "earliest_tested_available_vintage": "2022-09-21",
+          "earliest_tested_available_value_pct": 3.75,
+          "current_Treasury_XML_value_pct": 3.75,
+          "prior_tested_vintages_target_absent": true,
+          "global_source_first_publication_proven": false,
+          "source_first_publication_date": null,
+          "ALFRED_release_date_basis": "CSV 的 as-of vintage 日期；未取得本次具体行的原始源发布时间或 realtime_start API 字段"
+        }
+      },
+      "checks": {
+        "start_historical_csv_available": true,
+        "start_all_downloaded_hashes_and_columns_match": true,
+        "start_previous_vintages_target_absent": true,
+        "start_historical_value_equals_current_XML": true,
+        "start_latest_observation_not_future_of_vintage": true,
+        "end_historical_csv_available": true,
+        "end_all_downloaded_hashes_and_columns_match": true,
+        "end_previous_vintages_target_absent": true,
+        "end_historical_value_equals_current_XML": true,
+        "end_latest_observation_not_future_of_vintage": true,
+        "historical_start_equals_frozen_task": true,
+        "historical_bps_equals_existing_reference": true
+      },
+      "findings": [
+        "最早可见日仅指所查询前一日/当日/次日 ALFRED vintage 的转变；不是全球首发或 Treasury 同日网页首发证明。",
+        "起点任务值为 observation day close 的冻结已给定数字；ALFRED 收录日在次日不撤销题面已给定 baseline。"
+      ],
+      "historical_start_pct": 2.69,
+      "historical_end_pct": 3.75,
+      "recomputed_bps": 106.0,
+      "difference_vs_existing_reference_bps": 0.0,
+      "formula": "100 * (earliest_tested_end_vintage_yield_pct - task.start_yield_pct)",
+      "pass_flag": true,
+      "status": "historical_vintage_verified"
+    },
+    {
+      "task_id": "t4-fomc-curve-20220728",
+      "entity_id": "UST7Y",
+      "series_id": "DGS7",
+      "unit": "bps_change",
+      "start_observation_date": "2022-07-28",
+      "end_observation_date": "2022-09-20",
+      "task_start_yield_pct": 2.69,
+      "existing_reference_value_bps": 100.0,
+      "endpoint_evidence": {
+        "start": {
+          "observation_date": "2022-07-28",
+          "probes": [
+            {
+              "path": "DGS7_window-2022-07-21_2022-07-28_vintage-2022-07-27.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS7&cosd=2022-07-21&coed=2022-07-28&vintage_date=2022-07-27",
+              "requested_vintage_date": "2022-07-27",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2022-07-21",
+              "returned_end": "2022-07-26"
+            },
+            {
+              "path": "DGS7_window-2022-07-21_2022-07-28_vintage-2022-07-28.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS7&cosd=2022-07-21&coed=2022-07-28&vintage_date=2022-07-28",
+              "requested_vintage_date": "2022-07-28",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2022-07-21",
+              "returned_end": "2022-07-27"
+            },
+            {
+              "path": "DGS7_window-2022-07-21_2022-07-28_vintage-2022-07-29.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS7&cosd=2022-07-21&coed=2022-07-28&vintage_date=2022-07-29",
+              "requested_vintage_date": "2022-07-29",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": true,
+              "independent_value": 2.69,
+              "returned_start": "2022-07-21",
+              "returned_end": "2022-07-28"
+            }
+          ],
+          "earliest_tested_available_vintage": "2022-07-29",
+          "earliest_tested_available_value_pct": 2.69,
+          "current_Treasury_XML_value_pct": 2.69,
+          "prior_tested_vintages_target_absent": true,
+          "global_source_first_publication_proven": false,
+          "source_first_publication_date": null,
+          "ALFRED_release_date_basis": "CSV 的 as-of vintage 日期；未取得本次具体行的原始源发布时间或 realtime_start API 字段"
+        },
+        "end": {
+          "observation_date": "2022-09-20",
+          "probes": [
+            {
+              "path": "DGS7_window-2022-09-13_2022-09-20_vintage-2022-09-19.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS7&cosd=2022-09-13&coed=2022-09-20&vintage_date=2022-09-19",
+              "requested_vintage_date": "2022-09-19",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2022-09-13",
+              "returned_end": "2022-09-16"
+            },
+            {
+              "path": "DGS7_window-2022-09-13_2022-09-20_vintage-2022-09-20.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS7&cosd=2022-09-13&coed=2022-09-20&vintage_date=2022-09-20",
+              "requested_vintage_date": "2022-09-20",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2022-09-13",
+              "returned_end": "2022-09-19"
+            },
+            {
+              "path": "DGS7_window-2022-09-13_2022-09-20_vintage-2022-09-21.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS7&cosd=2022-09-13&coed=2022-09-20&vintage_date=2022-09-21",
+              "requested_vintage_date": "2022-09-21",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": true,
+              "independent_value": 3.69,
+              "returned_start": "2022-09-13",
+              "returned_end": "2022-09-20"
+            }
+          ],
+          "earliest_tested_available_vintage": "2022-09-21",
+          "earliest_tested_available_value_pct": 3.69,
+          "current_Treasury_XML_value_pct": 3.69,
+          "prior_tested_vintages_target_absent": true,
+          "global_source_first_publication_proven": false,
+          "source_first_publication_date": null,
+          "ALFRED_release_date_basis": "CSV 的 as-of vintage 日期；未取得本次具体行的原始源发布时间或 realtime_start API 字段"
+        }
+      },
+      "checks": {
+        "start_historical_csv_available": true,
+        "start_all_downloaded_hashes_and_columns_match": true,
+        "start_previous_vintages_target_absent": true,
+        "start_historical_value_equals_current_XML": true,
+        "start_latest_observation_not_future_of_vintage": true,
+        "end_historical_csv_available": true,
+        "end_all_downloaded_hashes_and_columns_match": true,
+        "end_previous_vintages_target_absent": true,
+        "end_historical_value_equals_current_XML": true,
+        "end_latest_observation_not_future_of_vintage": true,
+        "historical_start_equals_frozen_task": true,
+        "historical_bps_equals_existing_reference": true
+      },
+      "findings": [
+        "最早可见日仅指所查询前一日/当日/次日 ALFRED vintage 的转变；不是全球首发或 Treasury 同日网页首发证明。",
+        "起点任务值为 observation day close 的冻结已给定数字；ALFRED 收录日在次日不撤销题面已给定 baseline。"
+      ],
+      "historical_start_pct": 2.69,
+      "historical_end_pct": 3.69,
+      "recomputed_bps": 100.0,
+      "difference_vs_existing_reference_bps": 0.0,
+      "formula": "100 * (earliest_tested_end_vintage_yield_pct - task.start_yield_pct)",
+      "pass_flag": true,
+      "status": "historical_vintage_verified"
+    },
+    {
+      "task_id": "t4-fomc-curve-20240918",
+      "entity_id": "UST10Y",
+      "series_id": "DGS10",
+      "unit": "bps_change",
+      "start_observation_date": "2024-09-19",
+      "end_observation_date": "2024-11-06",
+      "task_start_yield_pct": 3.73,
+      "existing_reference_value_bps": 69.0,
+      "endpoint_evidence": {
+        "start": {
+          "observation_date": "2024-09-19",
+          "probes": [
+            {
+              "path": "DGS10_window-2024-09-12_2024-09-19_vintage-2024-09-18.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS10&cosd=2024-09-12&coed=2024-09-19&vintage_date=2024-09-18",
+              "requested_vintage_date": "2024-09-18",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2024-09-12",
+              "returned_end": "2024-09-17"
+            },
+            {
+              "path": "DGS10_window-2024-09-12_2024-09-19_vintage-2024-09-19.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS10&cosd=2024-09-12&coed=2024-09-19&vintage_date=2024-09-19",
+              "requested_vintage_date": "2024-09-19",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2024-09-12",
+              "returned_end": "2024-09-18"
+            },
+            {
+              "path": "DGS10_window-2024-09-12_2024-09-19_vintage-2024-09-20.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS10&cosd=2024-09-12&coed=2024-09-19&vintage_date=2024-09-20",
+              "requested_vintage_date": "2024-09-20",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": true,
+              "independent_value": 3.73,
+              "returned_start": "2024-09-12",
+              "returned_end": "2024-09-19"
+            }
+          ],
+          "earliest_tested_available_vintage": "2024-09-20",
+          "earliest_tested_available_value_pct": 3.73,
+          "current_Treasury_XML_value_pct": 3.73,
+          "prior_tested_vintages_target_absent": true,
+          "global_source_first_publication_proven": false,
+          "source_first_publication_date": null,
+          "ALFRED_release_date_basis": "CSV 的 as-of vintage 日期；未取得本次具体行的原始源发布时间或 realtime_start API 字段"
+        },
+        "end": {
+          "observation_date": "2024-11-06",
+          "probes": [
+            {
+              "path": "DGS10_window-2024-10-30_2024-11-06_vintage-2024-11-05.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS10&cosd=2024-10-30&coed=2024-11-06&vintage_date=2024-11-05",
+              "requested_vintage_date": "2024-11-05",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2024-10-30",
+              "returned_end": "2024-11-04"
+            },
+            {
+              "path": "DGS10_window-2024-10-30_2024-11-06_vintage-2024-11-06.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS10&cosd=2024-10-30&coed=2024-11-06&vintage_date=2024-11-06",
+              "requested_vintage_date": "2024-11-06",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2024-10-30",
+              "returned_end": "2024-11-05"
+            },
+            {
+              "path": "DGS10_window-2024-10-30_2024-11-06_vintage-2024-11-07.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS10&cosd=2024-10-30&coed=2024-11-06&vintage_date=2024-11-07",
+              "requested_vintage_date": "2024-11-07",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": true,
+              "independent_value": 4.42,
+              "returned_start": "2024-10-30",
+              "returned_end": "2024-11-06"
+            }
+          ],
+          "earliest_tested_available_vintage": "2024-11-07",
+          "earliest_tested_available_value_pct": 4.42,
+          "current_Treasury_XML_value_pct": 4.42,
+          "prior_tested_vintages_target_absent": true,
+          "global_source_first_publication_proven": false,
+          "source_first_publication_date": null,
+          "ALFRED_release_date_basis": "CSV 的 as-of vintage 日期；未取得本次具体行的原始源发布时间或 realtime_start API 字段"
+        }
+      },
+      "checks": {
+        "start_historical_csv_available": true,
+        "start_all_downloaded_hashes_and_columns_match": true,
+        "start_previous_vintages_target_absent": true,
+        "start_historical_value_equals_current_XML": true,
+        "start_latest_observation_not_future_of_vintage": true,
+        "end_historical_csv_available": true,
+        "end_all_downloaded_hashes_and_columns_match": true,
+        "end_previous_vintages_target_absent": true,
+        "end_historical_value_equals_current_XML": true,
+        "end_latest_observation_not_future_of_vintage": true,
+        "historical_start_equals_frozen_task": true,
+        "historical_bps_equals_existing_reference": true
+      },
+      "findings": [
+        "最早可见日仅指所查询前一日/当日/次日 ALFRED vintage 的转变；不是全球首发或 Treasury 同日网页首发证明。",
+        "起点任务值为 observation day close 的冻结已给定数字；ALFRED 收录日在次日不撤销题面已给定 baseline。"
+      ],
+      "historical_start_pct": 3.73,
+      "historical_end_pct": 4.42,
+      "recomputed_bps": 69.0,
+      "difference_vs_existing_reference_bps": 0.0,
+      "formula": "100 * (earliest_tested_end_vintage_yield_pct - task.start_yield_pct)",
+      "pass_flag": true,
+      "status": "historical_vintage_verified"
+    },
+    {
+      "task_id": "t4-fomc-curve-20240918",
+      "entity_id": "UST2Y",
+      "series_id": "DGS2",
+      "unit": "bps_change",
+      "start_observation_date": "2024-09-19",
+      "end_observation_date": "2024-11-06",
+      "task_start_yield_pct": 3.59,
+      "existing_reference_value_bps": 68.0,
+      "endpoint_evidence": {
+        "start": {
+          "observation_date": "2024-09-19",
+          "probes": [
+            {
+              "path": "DGS2_window-2024-09-12_2024-09-19_vintage-2024-09-18.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2024-09-12&coed=2024-09-19&vintage_date=2024-09-18",
+              "requested_vintage_date": "2024-09-18",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2024-09-12",
+              "returned_end": "2024-09-17"
+            },
+            {
+              "path": "DGS2_window-2024-09-12_2024-09-19_vintage-2024-09-19.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2024-09-12&coed=2024-09-19&vintage_date=2024-09-19",
+              "requested_vintage_date": "2024-09-19",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2024-09-12",
+              "returned_end": "2024-09-18"
+            },
+            {
+              "path": "DGS2_window-2024-09-12_2024-09-19_vintage-2024-09-20.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2024-09-12&coed=2024-09-19&vintage_date=2024-09-20",
+              "requested_vintage_date": "2024-09-20",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": true,
+              "independent_value": 3.59,
+              "returned_start": "2024-09-12",
+              "returned_end": "2024-09-19"
+            }
+          ],
+          "earliest_tested_available_vintage": "2024-09-20",
+          "earliest_tested_available_value_pct": 3.59,
+          "current_Treasury_XML_value_pct": 3.59,
+          "prior_tested_vintages_target_absent": true,
+          "global_source_first_publication_proven": false,
+          "source_first_publication_date": null,
+          "ALFRED_release_date_basis": "CSV 的 as-of vintage 日期；未取得本次具体行的原始源发布时间或 realtime_start API 字段"
+        },
+        "end": {
+          "observation_date": "2024-11-06",
+          "probes": [
+            {
+              "path": "DGS2_window-2024-10-30_2024-11-06_vintage-2024-11-05.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2024-10-30&coed=2024-11-06&vintage_date=2024-11-05",
+              "requested_vintage_date": "2024-11-05",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2024-10-30",
+              "returned_end": "2024-11-04"
+            },
+            {
+              "path": "DGS2_window-2024-10-30_2024-11-06_vintage-2024-11-06.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2024-10-30&coed=2024-11-06&vintage_date=2024-11-06",
+              "requested_vintage_date": "2024-11-06",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2024-10-30",
+              "returned_end": "2024-11-05"
+            },
+            {
+              "path": "DGS2_window-2024-10-30_2024-11-06_vintage-2024-11-07.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2024-10-30&coed=2024-11-06&vintage_date=2024-11-07",
+              "requested_vintage_date": "2024-11-07",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": true,
+              "independent_value": 4.27,
+              "returned_start": "2024-10-30",
+              "returned_end": "2024-11-06"
+            }
+          ],
+          "earliest_tested_available_vintage": "2024-11-07",
+          "earliest_tested_available_value_pct": 4.27,
+          "current_Treasury_XML_value_pct": 4.27,
+          "prior_tested_vintages_target_absent": true,
+          "global_source_first_publication_proven": false,
+          "source_first_publication_date": null,
+          "ALFRED_release_date_basis": "CSV 的 as-of vintage 日期；未取得本次具体行的原始源发布时间或 realtime_start API 字段"
+        }
+      },
+      "checks": {
+        "start_historical_csv_available": true,
+        "start_all_downloaded_hashes_and_columns_match": true,
+        "start_previous_vintages_target_absent": true,
+        "start_historical_value_equals_current_XML": true,
+        "start_latest_observation_not_future_of_vintage": true,
+        "end_historical_csv_available": true,
+        "end_all_downloaded_hashes_and_columns_match": true,
+        "end_previous_vintages_target_absent": true,
+        "end_historical_value_equals_current_XML": true,
+        "end_latest_observation_not_future_of_vintage": true,
+        "historical_start_equals_frozen_task": true,
+        "historical_bps_equals_existing_reference": true
+      },
+      "findings": [
+        "最早可见日仅指所查询前一日/当日/次日 ALFRED vintage 的转变；不是全球首发或 Treasury 同日网页首发证明。",
+        "起点任务值为 observation day close 的冻结已给定数字；ALFRED 收录日在次日不撤销题面已给定 baseline。"
+      ],
+      "historical_start_pct": 3.59,
+      "historical_end_pct": 4.27,
+      "recomputed_bps": 68.0,
+      "difference_vs_existing_reference_bps": 0.0,
+      "formula": "100 * (earliest_tested_end_vintage_yield_pct - task.start_yield_pct)",
+      "pass_flag": true,
+      "status": "historical_vintage_verified"
+    },
+    {
+      "task_id": "t4-fomc-curve-20240918",
+      "entity_id": "UST30Y",
+      "series_id": "DGS30",
+      "unit": "bps_change",
+      "start_observation_date": "2024-09-19",
+      "end_observation_date": "2024-11-06",
+      "task_start_yield_pct": 4.06,
+      "existing_reference_value_bps": 54.0,
+      "endpoint_evidence": {
+        "start": {
+          "observation_date": "2024-09-19",
+          "probes": [
+            {
+              "path": "DGS30_window-2024-09-12_2024-09-19_vintage-2024-09-18.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS30&cosd=2024-09-12&coed=2024-09-19&vintage_date=2024-09-18",
+              "requested_vintage_date": "2024-09-18",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2024-09-12",
+              "returned_end": "2024-09-17"
+            },
+            {
+              "path": "DGS30_window-2024-09-12_2024-09-19_vintage-2024-09-19.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS30&cosd=2024-09-12&coed=2024-09-19&vintage_date=2024-09-19",
+              "requested_vintage_date": "2024-09-19",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2024-09-12",
+              "returned_end": "2024-09-18"
+            },
+            {
+              "path": "DGS30_window-2024-09-12_2024-09-19_vintage-2024-09-20.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS30&cosd=2024-09-12&coed=2024-09-19&vintage_date=2024-09-20",
+              "requested_vintage_date": "2024-09-20",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": true,
+              "independent_value": 4.06,
+              "returned_start": "2024-09-12",
+              "returned_end": "2024-09-19"
+            }
+          ],
+          "earliest_tested_available_vintage": "2024-09-20",
+          "earliest_tested_available_value_pct": 4.06,
+          "current_Treasury_XML_value_pct": 4.06,
+          "prior_tested_vintages_target_absent": true,
+          "global_source_first_publication_proven": false,
+          "source_first_publication_date": null,
+          "ALFRED_release_date_basis": "CSV 的 as-of vintage 日期；未取得本次具体行的原始源发布时间或 realtime_start API 字段"
+        },
+        "end": {
+          "observation_date": "2024-11-06",
+          "probes": [
+            {
+              "path": "DGS30_window-2024-10-30_2024-11-06_vintage-2024-11-05.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS30&cosd=2024-10-30&coed=2024-11-06&vintage_date=2024-11-05",
+              "requested_vintage_date": "2024-11-05",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2024-10-30",
+              "returned_end": "2024-11-04"
+            },
+            {
+              "path": "DGS30_window-2024-10-30_2024-11-06_vintage-2024-11-06.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS30&cosd=2024-10-30&coed=2024-11-06&vintage_date=2024-11-06",
+              "requested_vintage_date": "2024-11-06",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2024-10-30",
+              "returned_end": "2024-11-05"
+            },
+            {
+              "path": "DGS30_window-2024-10-30_2024-11-06_vintage-2024-11-07.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS30&cosd=2024-10-30&coed=2024-11-06&vintage_date=2024-11-07",
+              "requested_vintage_date": "2024-11-07",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": true,
+              "independent_value": 4.6,
+              "returned_start": "2024-10-30",
+              "returned_end": "2024-11-06"
+            }
+          ],
+          "earliest_tested_available_vintage": "2024-11-07",
+          "earliest_tested_available_value_pct": 4.6,
+          "current_Treasury_XML_value_pct": 4.6,
+          "prior_tested_vintages_target_absent": true,
+          "global_source_first_publication_proven": false,
+          "source_first_publication_date": null,
+          "ALFRED_release_date_basis": "CSV 的 as-of vintage 日期；未取得本次具体行的原始源发布时间或 realtime_start API 字段"
+        }
+      },
+      "checks": {
+        "start_historical_csv_available": true,
+        "start_all_downloaded_hashes_and_columns_match": true,
+        "start_previous_vintages_target_absent": true,
+        "start_historical_value_equals_current_XML": true,
+        "start_latest_observation_not_future_of_vintage": true,
+        "end_historical_csv_available": true,
+        "end_all_downloaded_hashes_and_columns_match": true,
+        "end_previous_vintages_target_absent": true,
+        "end_historical_value_equals_current_XML": true,
+        "end_latest_observation_not_future_of_vintage": true,
+        "historical_start_equals_frozen_task": true,
+        "historical_bps_equals_existing_reference": true
+      },
+      "findings": [
+        "最早可见日仅指所查询前一日/当日/次日 ALFRED vintage 的转变；不是全球首发或 Treasury 同日网页首发证明。",
+        "起点任务值为 observation day close 的冻结已给定数字；ALFRED 收录日在次日不撤销题面已给定 baseline。"
+      ],
+      "historical_start_pct": 4.06,
+      "historical_end_pct": 4.6,
+      "recomputed_bps": 54.0,
+      "difference_vs_existing_reference_bps": 0.0,
+      "formula": "100 * (earliest_tested_end_vintage_yield_pct - task.start_yield_pct)",
+      "pass_flag": true,
+      "status": "historical_vintage_verified"
+    },
+    {
+      "task_id": "t4-fomc-curve-20240918",
+      "entity_id": "UST3Y",
+      "series_id": "DGS3",
+      "unit": "bps_change",
+      "start_observation_date": "2024-09-19",
+      "end_observation_date": "2024-11-06",
+      "task_start_yield_pct": 3.47,
+      "existing_reference_value_bps": 73.0,
+      "endpoint_evidence": {
+        "start": {
+          "observation_date": "2024-09-19",
+          "probes": [
+            {
+              "path": "DGS3_window-2024-09-12_2024-09-19_vintage-2024-09-18.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS3&cosd=2024-09-12&coed=2024-09-19&vintage_date=2024-09-18",
+              "requested_vintage_date": "2024-09-18",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2024-09-12",
+              "returned_end": "2024-09-17"
+            },
+            {
+              "path": "DGS3_window-2024-09-12_2024-09-19_vintage-2024-09-19.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS3&cosd=2024-09-12&coed=2024-09-19&vintage_date=2024-09-19",
+              "requested_vintage_date": "2024-09-19",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2024-09-12",
+              "returned_end": "2024-09-18"
+            },
+            {
+              "path": "DGS3_window-2024-09-12_2024-09-19_vintage-2024-09-20.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS3&cosd=2024-09-12&coed=2024-09-19&vintage_date=2024-09-20",
+              "requested_vintage_date": "2024-09-20",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": true,
+              "independent_value": 3.47,
+              "returned_start": "2024-09-12",
+              "returned_end": "2024-09-19"
+            }
+          ],
+          "earliest_tested_available_vintage": "2024-09-20",
+          "earliest_tested_available_value_pct": 3.47,
+          "current_Treasury_XML_value_pct": 3.47,
+          "prior_tested_vintages_target_absent": true,
+          "global_source_first_publication_proven": false,
+          "source_first_publication_date": null,
+          "ALFRED_release_date_basis": "CSV 的 as-of vintage 日期；未取得本次具体行的原始源发布时间或 realtime_start API 字段"
+        },
+        "end": {
+          "observation_date": "2024-11-06",
+          "probes": [
+            {
+              "path": "DGS3_window-2024-10-30_2024-11-06_vintage-2024-11-05.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS3&cosd=2024-10-30&coed=2024-11-06&vintage_date=2024-11-05",
+              "requested_vintage_date": "2024-11-05",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2024-10-30",
+              "returned_end": "2024-11-04"
+            },
+            {
+              "path": "DGS3_window-2024-10-30_2024-11-06_vintage-2024-11-06.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS3&cosd=2024-10-30&coed=2024-11-06&vintage_date=2024-11-06",
+              "requested_vintage_date": "2024-11-06",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2024-10-30",
+              "returned_end": "2024-11-05"
+            },
+            {
+              "path": "DGS3_window-2024-10-30_2024-11-06_vintage-2024-11-07.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS3&cosd=2024-10-30&coed=2024-11-06&vintage_date=2024-11-07",
+              "requested_vintage_date": "2024-11-07",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": true,
+              "independent_value": 4.2,
+              "returned_start": "2024-10-30",
+              "returned_end": "2024-11-06"
+            }
+          ],
+          "earliest_tested_available_vintage": "2024-11-07",
+          "earliest_tested_available_value_pct": 4.2,
+          "current_Treasury_XML_value_pct": 4.2,
+          "prior_tested_vintages_target_absent": true,
+          "global_source_first_publication_proven": false,
+          "source_first_publication_date": null,
+          "ALFRED_release_date_basis": "CSV 的 as-of vintage 日期；未取得本次具体行的原始源发布时间或 realtime_start API 字段"
+        }
+      },
+      "checks": {
+        "start_historical_csv_available": true,
+        "start_all_downloaded_hashes_and_columns_match": true,
+        "start_previous_vintages_target_absent": true,
+        "start_historical_value_equals_current_XML": true,
+        "start_latest_observation_not_future_of_vintage": true,
+        "end_historical_csv_available": true,
+        "end_all_downloaded_hashes_and_columns_match": true,
+        "end_previous_vintages_target_absent": true,
+        "end_historical_value_equals_current_XML": true,
+        "end_latest_observation_not_future_of_vintage": true,
+        "historical_start_equals_frozen_task": true,
+        "historical_bps_equals_existing_reference": true
+      },
+      "findings": [
+        "最早可见日仅指所查询前一日/当日/次日 ALFRED vintage 的转变；不是全球首发或 Treasury 同日网页首发证明。",
+        "起点任务值为 observation day close 的冻结已给定数字；ALFRED 收录日在次日不撤销题面已给定 baseline。"
+      ],
+      "historical_start_pct": 3.47,
+      "historical_end_pct": 4.2,
+      "recomputed_bps": 73.0,
+      "difference_vs_existing_reference_bps": 0.0,
+      "formula": "100 * (earliest_tested_end_vintage_yield_pct - task.start_yield_pct)",
+      "pass_flag": true,
+      "status": "historical_vintage_verified"
+    },
+    {
+      "task_id": "t4-fomc-curve-20240918",
+      "entity_id": "UST5Y",
+      "series_id": "DGS5",
+      "unit": "bps_change",
+      "start_observation_date": "2024-09-19",
+      "end_observation_date": "2024-11-06",
+      "task_start_yield_pct": 3.49,
+      "existing_reference_value_bps": 78.0,
+      "endpoint_evidence": {
+        "start": {
+          "observation_date": "2024-09-19",
+          "probes": [
+            {
+              "path": "DGS5_window-2024-09-12_2024-09-19_vintage-2024-09-18.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS5&cosd=2024-09-12&coed=2024-09-19&vintage_date=2024-09-18",
+              "requested_vintage_date": "2024-09-18",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2024-09-12",
+              "returned_end": "2024-09-17"
+            },
+            {
+              "path": "DGS5_window-2024-09-12_2024-09-19_vintage-2024-09-19.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS5&cosd=2024-09-12&coed=2024-09-19&vintage_date=2024-09-19",
+              "requested_vintage_date": "2024-09-19",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2024-09-12",
+              "returned_end": "2024-09-18"
+            },
+            {
+              "path": "DGS5_window-2024-09-12_2024-09-19_vintage-2024-09-20.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS5&cosd=2024-09-12&coed=2024-09-19&vintage_date=2024-09-20",
+              "requested_vintage_date": "2024-09-20",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": true,
+              "independent_value": 3.49,
+              "returned_start": "2024-09-12",
+              "returned_end": "2024-09-19"
+            }
+          ],
+          "earliest_tested_available_vintage": "2024-09-20",
+          "earliest_tested_available_value_pct": 3.49,
+          "current_Treasury_XML_value_pct": 3.49,
+          "prior_tested_vintages_target_absent": true,
+          "global_source_first_publication_proven": false,
+          "source_first_publication_date": null,
+          "ALFRED_release_date_basis": "CSV 的 as-of vintage 日期；未取得本次具体行的原始源发布时间或 realtime_start API 字段"
+        },
+        "end": {
+          "observation_date": "2024-11-06",
+          "probes": [
+            {
+              "path": "DGS5_window-2024-10-30_2024-11-06_vintage-2024-11-05.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS5&cosd=2024-10-30&coed=2024-11-06&vintage_date=2024-11-05",
+              "requested_vintage_date": "2024-11-05",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2024-10-30",
+              "returned_end": "2024-11-04"
+            },
+            {
+              "path": "DGS5_window-2024-10-30_2024-11-06_vintage-2024-11-06.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS5&cosd=2024-10-30&coed=2024-11-06&vintage_date=2024-11-06",
+              "requested_vintage_date": "2024-11-06",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2024-10-30",
+              "returned_end": "2024-11-05"
+            },
+            {
+              "path": "DGS5_window-2024-10-30_2024-11-06_vintage-2024-11-07.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS5&cosd=2024-10-30&coed=2024-11-06&vintage_date=2024-11-07",
+              "requested_vintage_date": "2024-11-07",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": true,
+              "independent_value": 4.27,
+              "returned_start": "2024-10-30",
+              "returned_end": "2024-11-06"
+            }
+          ],
+          "earliest_tested_available_vintage": "2024-11-07",
+          "earliest_tested_available_value_pct": 4.27,
+          "current_Treasury_XML_value_pct": 4.27,
+          "prior_tested_vintages_target_absent": true,
+          "global_source_first_publication_proven": false,
+          "source_first_publication_date": null,
+          "ALFRED_release_date_basis": "CSV 的 as-of vintage 日期；未取得本次具体行的原始源发布时间或 realtime_start API 字段"
+        }
+      },
+      "checks": {
+        "start_historical_csv_available": true,
+        "start_all_downloaded_hashes_and_columns_match": true,
+        "start_previous_vintages_target_absent": true,
+        "start_historical_value_equals_current_XML": true,
+        "start_latest_observation_not_future_of_vintage": true,
+        "end_historical_csv_available": true,
+        "end_all_downloaded_hashes_and_columns_match": true,
+        "end_previous_vintages_target_absent": true,
+        "end_historical_value_equals_current_XML": true,
+        "end_latest_observation_not_future_of_vintage": true,
+        "historical_start_equals_frozen_task": true,
+        "historical_bps_equals_existing_reference": true
+      },
+      "findings": [
+        "最早可见日仅指所查询前一日/当日/次日 ALFRED vintage 的转变；不是全球首发或 Treasury 同日网页首发证明。",
+        "起点任务值为 observation day close 的冻结已给定数字；ALFRED 收录日在次日不撤销题面已给定 baseline。"
+      ],
+      "historical_start_pct": 3.49,
+      "historical_end_pct": 4.27,
+      "recomputed_bps": 78.0,
+      "difference_vs_existing_reference_bps": 0.0,
+      "formula": "100 * (earliest_tested_end_vintage_yield_pct - task.start_yield_pct)",
+      "pass_flag": true,
+      "status": "historical_vintage_verified"
+    },
+    {
+      "task_id": "t4-fomc-curve-20240918",
+      "entity_id": "UST7Y",
+      "series_id": "DGS7",
+      "unit": "bps_change",
+      "start_observation_date": "2024-09-19",
+      "end_observation_date": "2024-11-06",
+      "task_start_yield_pct": 3.6,
+      "existing_reference_value_bps": 77.0,
+      "endpoint_evidence": {
+        "start": {
+          "observation_date": "2024-09-19",
+          "probes": [
+            {
+              "path": "DGS7_window-2024-09-12_2024-09-19_vintage-2024-09-18.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS7&cosd=2024-09-12&coed=2024-09-19&vintage_date=2024-09-18",
+              "requested_vintage_date": "2024-09-18",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2024-09-12",
+              "returned_end": "2024-09-17"
+            },
+            {
+              "path": "DGS7_window-2024-09-12_2024-09-19_vintage-2024-09-19.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS7&cosd=2024-09-12&coed=2024-09-19&vintage_date=2024-09-19",
+              "requested_vintage_date": "2024-09-19",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2024-09-12",
+              "returned_end": "2024-09-18"
+            },
+            {
+              "path": "DGS7_window-2024-09-12_2024-09-19_vintage-2024-09-20.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS7&cosd=2024-09-12&coed=2024-09-19&vintage_date=2024-09-20",
+              "requested_vintage_date": "2024-09-20",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": true,
+              "independent_value": 3.6,
+              "returned_start": "2024-09-12",
+              "returned_end": "2024-09-19"
+            }
+          ],
+          "earliest_tested_available_vintage": "2024-09-20",
+          "earliest_tested_available_value_pct": 3.6,
+          "current_Treasury_XML_value_pct": 3.6,
+          "prior_tested_vintages_target_absent": true,
+          "global_source_first_publication_proven": false,
+          "source_first_publication_date": null,
+          "ALFRED_release_date_basis": "CSV 的 as-of vintage 日期；未取得本次具体行的原始源发布时间或 realtime_start API 字段"
+        },
+        "end": {
+          "observation_date": "2024-11-06",
+          "probes": [
+            {
+              "path": "DGS7_window-2024-10-30_2024-11-06_vintage-2024-11-05.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS7&cosd=2024-10-30&coed=2024-11-06&vintage_date=2024-11-05",
+              "requested_vintage_date": "2024-11-05",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2024-10-30",
+              "returned_end": "2024-11-04"
+            },
+            {
+              "path": "DGS7_window-2024-10-30_2024-11-06_vintage-2024-11-06.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS7&cosd=2024-10-30&coed=2024-11-06&vintage_date=2024-11-06",
+              "requested_vintage_date": "2024-11-06",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": false,
+              "independent_value": null,
+              "returned_start": "2024-10-30",
+              "returned_end": "2024-11-05"
+            },
+            {
+              "path": "DGS7_window-2024-10-30_2024-11-06_vintage-2024-11-07.csv",
+              "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS7&cosd=2024-10-30&coed=2024-11-06&vintage_date=2024-11-07",
+              "requested_vintage_date": "2024-11-07",
+              "status": "downloaded",
+              "hash_matches": true,
+              "vintage_column_matches": true,
+              "independent_target_present": true,
+              "independent_value": 4.37,
+              "returned_start": "2024-10-30",
+              "returned_end": "2024-11-06"
+            }
+          ],
+          "earliest_tested_available_vintage": "2024-11-07",
+          "earliest_tested_available_value_pct": 4.37,
+          "current_Treasury_XML_value_pct": 4.37,
+          "prior_tested_vintages_target_absent": true,
+          "global_source_first_publication_proven": false,
+          "source_first_publication_date": null,
+          "ALFRED_release_date_basis": "CSV 的 as-of vintage 日期；未取得本次具体行的原始源发布时间或 realtime_start API 字段"
+        }
+      },
+      "checks": {
+        "start_historical_csv_available": true,
+        "start_all_downloaded_hashes_and_columns_match": true,
+        "start_previous_vintages_target_absent": true,
+        "start_historical_value_equals_current_XML": true,
+        "start_latest_observation_not_future_of_vintage": true,
+        "end_historical_csv_available": true,
+        "end_all_downloaded_hashes_and_columns_match": true,
+        "end_previous_vintages_target_absent": true,
+        "end_historical_value_equals_current_XML": true,
+        "end_latest_observation_not_future_of_vintage": true,
+        "historical_start_equals_frozen_task": true,
+        "historical_bps_equals_existing_reference": true
+      },
+      "findings": [
+        "最早可见日仅指所查询前一日/当日/次日 ALFRED vintage 的转变；不是全球首发或 Treasury 同日网页首发证明。",
+        "起点任务值为 observation day close 的冻结已给定数字；ALFRED 收录日在次日不撤销题面已给定 baseline。"
+      ],
+      "historical_start_pct": 3.6,
+      "historical_end_pct": 4.37,
+      "recomputed_bps": 77.0,
+      "difference_vs_existing_reference_bps": 0.0,
+      "formula": "100 * (earliest_tested_end_vintage_yield_pct - task.start_yield_pct)",
+      "pass_flag": true,
+      "status": "historical_vintage_verified"
+    }
+  ],
+  "existing_input_hashes": [
+    {
+      "path": "./datasets/agenthon-t4-reference/inputs/units/t4-fomc-curve-20220728/task.json",
+      "sha256": "f4480b2de8b6b8b9da228937c6674597fab3782b4f2c2ef5afbae45825500dea"
+    },
+    {
+      "path": "./datasets/agenthon-t4-reference/inputs/units/t4-fomc-curve-20240918/task.json",
+      "sha256": "440db200c702d7ded6dcee9c6d80e4e6357293f796b3cd96c98a4643a8e64a56"
+    },
+    {
+      "path": "./datasets/agenthon-t4-reference/sources/treasury/yield_curve_2022.xml",
+      "sha256": "921bbfbba14d830dc830da44b57bfeef0dce248617215251946573469997eab4"
+    },
+    {
+      "path": "./datasets/agenthon-t4-reference/sources/treasury/yield_curve_2024.xml",
+      "sha256": "47f9e2042e2128210ad5d53fd6ee89bfcff661334e2f793782a1a39ca8db8dd4"
+    }
+  ]
+}

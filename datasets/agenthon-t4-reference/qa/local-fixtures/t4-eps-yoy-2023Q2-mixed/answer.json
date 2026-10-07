@@ -1,0 +1,151 @@
+{
+  "task_id": "t4-eps-yoy-2023Q2-mixed",
+  "schema_version": "3",
+  "target_type": "classification",
+  "entity_predictions": [
+    {
+      "entity_id": "AMD",
+      "interval": {
+        "level": 0.9,
+        "lo": -0.98,
+        "hi": 1.02
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 226,
+          "span_end": 250,
+          "claim": "输入表字段 prior_year_q_eps 的值为 0.27。"
+        }
+      ],
+      "point_forecast": 0.02,
+      "label": "down"
+    },
+    {
+      "entity_id": "AMGN",
+      "interval": {
+        "level": 0.9,
+        "lo": 1.5699999999999998,
+        "hi": 3.57
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 538,
+          "span_end": 562,
+          "claim": "输入表字段 prior_year_q_eps 的值为 2.45。"
+        }
+      ],
+      "point_forecast": 2.57,
+      "label": "up"
+    },
+    {
+      "entity_id": "DOW",
+      "interval": {
+        "level": 0.9,
+        "lo": -0.31999999999999995,
+        "hi": 1.6800000000000002
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 845,
+          "span_end": 869,
+          "claim": "输入表字段 prior_year_q_eps 的值为 2.26。"
+        }
+      ],
+      "point_forecast": 0.68,
+      "label": "down"
+    },
+    {
+      "entity_id": "HON",
+      "interval": {
+        "level": 0.9,
+        "lo": 1.2200000000000002,
+        "hi": 3.22
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 1174,
+          "span_end": 1198,
+          "claim": "输入表字段 prior_year_q_eps 的值为 1.84。"
+        }
+      ],
+      "point_forecast": 2.22,
+      "label": "up"
+    },
+    {
+      "entity_id": "IBM",
+      "interval": {
+        "level": 0.9,
+        "lo": 0.72,
+        "hi": 2.7199999999999998
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 1529,
+          "span_end": 1553,
+          "claim": "输入表字段 prior_year_q_eps 的值为 1.53。"
+        }
+      ],
+      "point_forecast": 1.72,
+      "label": "up"
+    },
+    {
+      "entity_id": "TMO",
+      "interval": {
+        "level": 0.9,
+        "lo": 2.51,
+        "hi": 4.51
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 1859,
+          "span_end": 1883,
+          "claim": "输入表字段 prior_year_q_eps 的值为 4.22。"
+        }
+      ],
+      "point_forecast": 3.51,
+      "label": "down"
+    }
+  ],
+  "submitted_reasons": [
+    {
+      "reason_id": "local_structure_fixture",
+      "premise": "amd-20230401 Table of Contents UNITED STATES SECURITIES AND EXCHANGE COMMISSION Washington, D.C. 20549   FORM 10-Q   (Mark One) ☒ QUARTERLY REPORT PURSUANT TO SECTION 13 OR 15 (d) OF THE SECURITIES EXCHANGE ACT OF 1934 For the quarterly per",
+      "mechanism": "该段历史资料提供输入上下文，本夹具只测试字段与引用解析。",
+      "answer_implication": "本地测试记录 AMD 的历史参考结果；该引用不用于推出事后结果。",
+      "scope": {
+        "entities": [
+          "AMD"
+        ]
+      },
+      "citations": [
+        {
+          "doc_id": "EDGAR_0000002488_10Q_20230503",
+          "span_start": 0,
+          "span_end": 240
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "research_fixture": true,
+    "synthetic_interval": true,
+    "interval_method": "数值结果中心左右加减固定 half_width；无数值真值或信用事件概率任务使用 [0,1]。这是结构测试区间，未经过校准。",
+    "synthetic_point_entities": [],
+    "synthetic_point_method": "上述实体的 point_forecast=0.5 是结构测试占位；事后 0/1 事件不被当作概率真值。",
+    "half_width": 1.0,
+    "reference_status_counts": {
+      "verified": 5,
+      "provisional": 1
+    },
+    "task_canonical_sha256": "300a064ce17c42367db59687a2dc82970d082f13c2bdccdc25361cdfe2273fd1",
+    "faithfulness": "not_evaluated",
+    "reasoning": "not_evaluated",
+    "purpose": "输入事实 claims 不声称支持历史结果；本夹具仅供离线研究。"
+  }
+}

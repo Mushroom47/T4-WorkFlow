@@ -1,0 +1,96 @@
+{
+  "schema_version": "0.1.0",
+  "checked_at": "2026-10-07T09:31:20.462539+00:00",
+  "goal_status": "blocked",
+  "goal_status_returned_at_epoch": 1791365372,
+  "same_blocking_condition_consecutive_goal_turns": 3,
+  "previous_goal_turn_classification": "progress",
+  "previous_goal_turn_evidence": {
+    "commit": "32f22878552bd2ce6ec735cf8bacb8bc85248892",
+    "reference_version": "0.1.1",
+    "tests_passed": 66
+  },
+  "current_goal_turn_classification": "progress",
+  "current_progress": [
+    "修复notebook当前与历史执行元数据混用",
+    "修复AMGN预告日期混入实际披露日期的审校绕过",
+    "完整71测试通过并实际重执行五个notebook代码单元"
+  ],
+  "requirements": [
+    {
+      "phase": 1,
+      "disposition": "scope_complete",
+      "evidence": [
+        "development-docs/agenthon-t4/01-参赛规则与时间表.md",
+        "development-docs/agenthon-t4/evidence/qa-report.json"
+      ]
+    },
+    {
+      "phase": 2,
+      "disposition": "scope_complete_with_explicit_provisional",
+      "evidence": [
+        "datasets/agenthon-t4-reference/inputs/source-manifest.json",
+        "datasets/agenthon-t4-reference/reference.jsonl",
+        "datasets/agenthon-t4-reference/qa/formula-audit.json"
+      ],
+      "tasks": 11,
+      "entities": 78,
+      "verified": 70,
+      "provisional": 8
+    },
+    {
+      "phase": 3,
+      "disposition": "scope_complete",
+      "evidence": [
+        "datasets/agenthon-t4-reference/qa/combined-test-run.json",
+        "datasets/agenthon-t4-reference/qa/summary.json",
+        "datasets/agenthon-t4-reference/qa/reference-audit.ipynb"
+      ],
+      "tests": 71,
+      "negative_controls": 8
+    },
+    {
+      "phase": 4,
+      "disposition": "incomplete_external_dependencies",
+      "official_score": null,
+      "submission_id": null
+    },
+    {
+      "phase": 5,
+      "disposition": "incomplete_requires_official_result",
+      "evidence": [
+        "development-docs/agenthon-t4/15-本地验收与评测待办.md"
+      ]
+    }
+  ],
+  "blockers": [
+    {
+      "condition": "主办方未确认固定回放诊断路径，也未确认无诊断路径以触发合规预测分支",
+      "evidence": {
+        "checked_at": "2026-10-07T09:31:20.462539+00:00",
+        "state": "OPEN",
+        "comment_count": 0,
+        "updated_at": "2026-10-07T08:06:49Z",
+        "official_reply_received": false
+      },
+      "url": "https://github.com/Agenthon-2026/track4-analysis-public/issues/26"
+    },
+    {
+      "condition": "真实团队登记、指定CodaBench账号与评测准入尚未核实",
+      "evidence": "官网要求已登录账号中的比赛链接和真实团队验证；用户相关问题仍待回复，三次CUA超时未返回UI，未据此认定账号未注册",
+      "url": "https://www.agenthon.net/guides/submission-format/"
+    }
+  ],
+  "not_blockers": [
+    "具体最低分偏好不妨碍取得首次有效官方成绩",
+    "已明确记录的8个provisional符合本地参考集阶段验收",
+    "Final reasoning、production NLI和私有outcome不属于已完成本地阶段的强制复跑项"
+  ],
+  "independent_required_work_remaining": false,
+  "goal_completed": false,
+  "permission_for_fixed_replay": "pending",
+  "official_score": null,
+  "submission_id": null,
+  "secrets_recorded": false,
+  "evidence_base": "项目根目录；全部路径相对此目录"
+}

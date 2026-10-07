@@ -1,0 +1,835 @@
+{
+  "schema_version": "0.1.0",
+  "source_repository": "https://github.com/Agenthon-2026/track4-analysis-public",
+  "source_commit": "1c744e1d6725340643a533f436517d72b53ca0e1",
+  "copied_at": "2026-10-07T08:06:27.740920+00:00",
+  "task_count": 11,
+  "entity_count": 78,
+  "units": [
+    {
+      "task_id": "t4-EXAMPLE-eps-beat",
+      "task_path": "units/t4-EXAMPLE-eps-beat/task.json",
+      "task_sha256": "ae33b39262e1af55c1c9eb63b8ab83aadcc55492b1be0a47b6d4fdad0383b97e",
+      "task_canonical_sha256": "edec54e3296316092c802344e41ab8f1523a62569c09bc14952624f10d068067",
+      "target_type": "classification",
+      "target_name": "eps_outcome",
+      "cutoff_date": "2024-03-15",
+      "resolution_date": "2024-05-05",
+      "entity_ids": [
+        "AAPL"
+      ],
+      "files": [
+        {
+          "path": "units/t4-EXAMPLE-eps-beat/card.toml",
+          "sha256": "afe5a46676ea7f8047b1343c78353b8860e8d39c62ada2242bbbd3f17f2d0752",
+          "bytes": 3456
+        },
+        {
+          "path": "units/t4-EXAMPLE-eps-beat/corpus/EDGAR_0000320193_10Q_20240202.json",
+          "sha256": "876957c8af7e34a66f714bf81fdbfae1796d6b377209a6ac868f2c18555fa08d",
+          "bytes": 1774
+        },
+        {
+          "path": "units/t4-EXAMPLE-eps-beat/corpus/EDGAR_0000320193_8K_20240201.json",
+          "sha256": "f01a10b8bc29bf3f4fa065d8d3bb90c96e58c43bdfb14a649a4e5ea355e8aa69",
+          "bytes": 1395
+        },
+        {
+          "path": "units/t4-EXAMPLE-eps-beat/manifest.json",
+          "sha256": "eae2fc1c2497c87112a4bef8471f8991457ace39c53f914e6ca14b163e41e1c4",
+          "bytes": 1784
+        },
+        {
+          "path": "units/t4-EXAMPLE-eps-beat/task.json",
+          "sha256": "ae33b39262e1af55c1c9eb63b8ab83aadcc55492b1be0a47b6d4fdad0383b97e",
+          "bytes": 2159
+        }
+      ]
+    },
+    {
+      "task_id": "t4-auction-btc-202411-us7",
+      "task_path": "units/t4-auction-btc-202411-us7/task.json",
+      "task_sha256": "6719117c6ad6d3187758abc2da923592eecb93fe2e53e23b9addfa5fbf7e6ac5",
+      "task_canonical_sha256": "4167418c67850ce37ec94162c4e144bd6cbf8542de110feabdd90fb8238f51bf",
+      "target_type": "regression",
+      "target_name": "bid_to_cover_ratio",
+      "cutoff_date": "2024-10-31",
+      "resolution_date": "2024-11-27",
+      "entity_ids": [
+        "AUC_10Y_20241105",
+        "AUC_20Y_20241120",
+        "AUC_2Y_20241125",
+        "AUC_30Y_20241106",
+        "AUC_3Y_20241104",
+        "AUC_5Y_20241126",
+        "AUC_7Y_20241127"
+      ],
+      "files": [
+        {
+          "path": "units/t4-auction-btc-202411-us7/card.toml",
+          "sha256": "2f0cb7ac7bbde4276097c351c5125cf41a45b462083e2a295f1d0f2f41537b67",
+          "bytes": 4283
+        },
+        {
+          "path": "units/t4-auction-btc-202411-us7/corpus/TDIRECT_AUCTIONS_10Y_20241031.json",
+          "sha256": "fbd1a51ec8c47ceeea4e7da13ec11ea5a01cb9d50021ac807ccef699ecc05dca",
+          "bytes": 2018
+        },
+        {
+          "path": "units/t4-auction-btc-202411-us7/corpus/TDIRECT_AUCTIONS_20Y_20241031.json",
+          "sha256": "99f631502250fd3f6b269ac48c419240324e448a1be318888df0ace38982a8ad",
+          "bytes": 2027
+        },
+        {
+          "path": "units/t4-auction-btc-202411-us7/corpus/TDIRECT_AUCTIONS_2Y_20241031.json",
+          "sha256": "46b6cc061ac88fa0997d513dd271f0167e407fd4af134282078a758138dd1fbc",
+          "bytes": 1848
+        },
+        {
+          "path": "units/t4-auction-btc-202411-us7/corpus/TDIRECT_AUCTIONS_30Y_20241031.json",
+          "sha256": "dd7e31d394d4ef43aa71a6c1367fc952103a0eefceb59c64e8429b2f7058f21c",
+          "bytes": 2029
+        },
+        {
+          "path": "units/t4-auction-btc-202411-us7/corpus/TDIRECT_AUCTIONS_3Y_20241031.json",
+          "sha256": "8a25a14dbcdf615c8952cff46b60367c6055178349c6bf92160a620ea8fa0059",
+          "bytes": 1846
+        },
+        {
+          "path": "units/t4-auction-btc-202411-us7/corpus/TDIRECT_AUCTIONS_5Y_20241031.json",
+          "sha256": "aef9356578f3b1b1fedfb2ff266298774851ead737a3df06440e57001b9bec8e",
+          "bytes": 1848
+        },
+        {
+          "path": "units/t4-auction-btc-202411-us7/corpus/TDIRECT_AUCTIONS_7Y_20241031.json",
+          "sha256": "b57d8c68d388c2d49cd58c0a17859c7dceee619efdeb028107fe8c5a0b8dd294",
+          "bytes": 1848
+        },
+        {
+          "path": "units/t4-auction-btc-202411-us7/corpus/TDIRECT_UPCOMING_20241030.json",
+          "sha256": "18a0281ab49a959425759fc1ded3efe94225b7584d238922202cf7b00da799b4",
+          "bytes": 1724
+        },
+        {
+          "path": "units/t4-auction-btc-202411-us7/corpus/manifest.json",
+          "sha256": "731ba53ed88199cad6137c378bc33377f807d68e0e0cc10fd618dfe1f98f5ad6",
+          "bytes": 4352
+        },
+        {
+          "path": "units/t4-auction-btc-202411-us7/manifest.json",
+          "sha256": "c7b53778fc14f7bc4587b13d143b5cb1191e7c725239261dc18667fb02bb6619",
+          "bytes": 5410
+        },
+        {
+          "path": "units/t4-auction-btc-202411-us7/task.json",
+          "sha256": "6719117c6ad6d3187758abc2da923592eecb93fe2e53e23b9addfa5fbf7e6ac5",
+          "bytes": 4732
+        }
+      ]
+    },
+    {
+      "task_id": "t4-cotpos-202411-us10",
+      "task_path": "units/t4-cotpos-202411-us10/task.json",
+      "task_sha256": "57fcc6ba6b774ce15353138705da1b62cc2caed224b1a68cf0c2dd0e7b75b935",
+      "task_canonical_sha256": "1639d559e7cd1d058a31b52ee5ee19e4b9b0ade4d1182a8758d768cc4933cd2b",
+      "target_type": "ranking",
+      "target_name": "net_positioning_change_pct_oi_rank",
+      "cutoff_date": "2024-10-31",
+      "resolution_date": "2024-12-02",
+      "entity_ids": [
+        "CORN_CBT",
+        "ES_SP500",
+        "EURO_FX",
+        "GOLD_CMX",
+        "JPY_CME",
+        "NATGAS_NYMEX",
+        "SILVER_CMX",
+        "UST_10Y",
+        "UST_2Y",
+        "WTI_NYMEX"
+      ],
+      "files": [
+        {
+          "path": "units/t4-cotpos-202411-us10/card.toml",
+          "sha256": "73ede468a3241bda309dfe018a2ce45eacfe10ee107a4c7b32ae9d0eb56bb1ec",
+          "bytes": 4602
+        },
+        {
+          "path": "units/t4-cotpos-202411-us10/corpus/COT_CORN_CBT_20241025.json",
+          "sha256": "3bb7cfdf3f2ba2b233a2df3b7872a987ec2a58177c17ecb5a44827c6b9546050",
+          "bytes": 3502
+        },
+        {
+          "path": "units/t4-cotpos-202411-us10/corpus/COT_ES_SP500_20241025.json",
+          "sha256": "3bae9bd72b07cd06e2b142a225b944a1e4d79c8a6f87f162e70292641b4f0a86",
+          "bytes": 3519
+        },
+        {
+          "path": "units/t4-cotpos-202411-us10/corpus/COT_EURO_FX_20241025.json",
+          "sha256": "c03df643931e491a6e5b5cdcc10eb7226e383cfc2feeb506fe87e2a2d38a6154",
+          "bytes": 3446
+        },
+        {
+          "path": "units/t4-cotpos-202411-us10/corpus/COT_GOLD_CMX_20241025.json",
+          "sha256": "099b809df424e2e31096612ccc344042ca7584f03bcec3054342c0271f4976ad",
+          "bytes": 3404
+        },
+        {
+          "path": "units/t4-cotpos-202411-us10/corpus/COT_JPY_CME_20241025.json",
+          "sha256": "2ae8f31bbde15234be268c7b95be7e15cd6c27872e45519ae552445ee914fa1a",
+          "bytes": 3448
+        },
+        {
+          "path": "units/t4-cotpos-202411-us10/corpus/COT_METHODOLOGY_20241025.json",
+          "sha256": "f33c80aa70a561b1c6a992c39fc2c31cc8126ea80f0561b17a85c716c61e3cae",
+          "bytes": 2349
+        },
+        {
+          "path": "units/t4-cotpos-202411-us10/corpus/COT_NATGAS_NYMEX_20241025.json",
+          "sha256": "71f00a62b7d5552e9f06b3038c2e657e0c4df3587b04a13f7a23c8e8772771ef",
+          "bytes": 3506
+        },
+        {
+          "path": "units/t4-cotpos-202411-us10/corpus/COT_SILVER_CMX_20241025.json",
+          "sha256": "3c31ac83e2fe4eb377705ed32551c5e9fc55c74010efd7ccb2ce870b167c651e",
+          "bytes": 3331
+        },
+        {
+          "path": "units/t4-cotpos-202411-us10/corpus/COT_UST_10Y_20241025.json",
+          "sha256": "2168bbcf1a353258082d434b5f0b0cf46504b583154e0cc0925ec0dcc45f2853",
+          "bytes": 3607
+        },
+        {
+          "path": "units/t4-cotpos-202411-us10/corpus/COT_UST_2Y_20241025.json",
+          "sha256": "9582a2e5c7fd295f613e2d41ddd4a9f44f79e131084569112f712512b11e6eae",
+          "bytes": 3662
+        },
+        {
+          "path": "units/t4-cotpos-202411-us10/corpus/COT_WTI_NYMEX_20241025.json",
+          "sha256": "0b771580d1ce727fc2cca2e2e0ff4da4c54827e8f45135412cfd15f93b21068c",
+          "bytes": 3565
+        },
+        {
+          "path": "units/t4-cotpos-202411-us10/corpus/MKT_SNAPSHOT_20241031.json",
+          "sha256": "45e35f05702ebff66674223647b232332f1f1c876be100be94b98119d88f8e4d",
+          "bytes": 2066
+        },
+        {
+          "path": "units/t4-cotpos-202411-us10/corpus/manifest.json",
+          "sha256": "ea86844d806c458e14abbf65f8b74d830ace56317f73fef78be45d62a2273b2e",
+          "bytes": 6271
+        },
+        {
+          "path": "units/t4-cotpos-202411-us10/manifest.json",
+          "sha256": "79dbbc702109e6d520a43e909eff1f57dceceab7c8d85e969fac289e51e55564",
+          "bytes": 7356
+        },
+        {
+          "path": "units/t4-cotpos-202411-us10/task.json",
+          "sha256": "57fcc6ba6b774ce15353138705da1b62cc2caed224b1a68cf0c2dd0e7b75b935",
+          "bytes": 6701
+        }
+      ]
+    },
+    {
+      "task_id": "t4-cpicomp-202410-us11",
+      "task_path": "units/t4-cpicomp-202410-us11/task.json",
+      "task_sha256": "0e63337df8e6d8190d8847458803a475f23e21da2109cd7c6279fddb409eb193",
+      "task_canonical_sha256": "44e9351eb2e32532eb7b9c352c8921ed6a2c14ba9532d9fd8e8404e3cbe8a855",
+      "target_type": "regression",
+      "target_name": "cpi_component_mom_first_print",
+      "cutoff_date": "2024-10-31",
+      "resolution_date": "2024-11-13",
+      "entity_ids": [
+        "CPI_ALLITEMS",
+        "CPI_APPAREL",
+        "CPI_CORE",
+        "CPI_ENERGY",
+        "CPI_FOOD",
+        "CPI_GASOLINE",
+        "CPI_MEDICAL",
+        "CPI_NEWVEH",
+        "CPI_SHELTER",
+        "CPI_TRANSPSVC",
+        "CPI_USEDCARS"
+      ],
+      "files": [
+        {
+          "path": "units/t4-cpicomp-202410-us11/card.toml",
+          "sha256": "7faed8cfcfe45eb5f6dd8af143bbddfdd78d173b7cf141d4898bb1dec051936b",
+          "bytes": 4452
+        },
+        {
+          "path": "units/t4-cpicomp-202410-us11/corpus/ALFRED_CPI_COMPONENTS_20241031.json",
+          "sha256": "06f7a846e55027c78cfac1012d165ac10298b167207a75911d168bbd7e8d961a",
+          "bytes": 3637
+        },
+        {
+          "path": "units/t4-cpicomp-202410-us11/corpus/BLS_CPI_RELEASE_20241010.json",
+          "sha256": "f1693a5c676a8640819880dc052e3429ad55c3654e4991a1749c98b9ac5dfd4d",
+          "bytes": 20075
+        },
+        {
+          "path": "units/t4-cpicomp-202410-us11/corpus/EIA_GASREGW_20241028.json",
+          "sha256": "499f821ea86267d81f4526391bfcb25f4f04e3d3cd178202c9fad84e9f7b20bc",
+          "bytes": 1751
+        },
+        {
+          "path": "units/t4-cpicomp-202410-us11/corpus/manifest.json",
+          "sha256": "68ae58bd184d6cb45dd68c732373dd4455eefce4f8b5913958016a11854f676c",
+          "bytes": 1762
+        },
+        {
+          "path": "units/t4-cpicomp-202410-us11/manifest.json",
+          "sha256": "71defe8e3be9ff874452b12c0ab3db0f13651c08d71b535422771cc4c4bc025b",
+          "bytes": 2994
+        },
+        {
+          "path": "units/t4-cpicomp-202410-us11/task.json",
+          "sha256": "0e63337df8e6d8190d8847458803a475f23e21da2109cd7c6279fddb409eb193",
+          "bytes": 6113
+        }
+      ]
+    },
+    {
+      "task_id": "t4-credit-event-2023",
+      "task_path": "units/t4-credit-event-2023/task.json",
+      "task_sha256": "670bdd187ffab6e5396685b4d9c0884f61b470c884cc5efe6a3daba1c6459310",
+      "task_canonical_sha256": "a20440e2cab7ba1fdbd165b261219cf01f3697abc2d74c0660731f77fd192498",
+      "target_type": "classification",
+      "target_name": "credit_event_12m",
+      "cutoff_date": "2023-03-31",
+      "resolution_date": "2024-03-31",
+      "entity_ids": [
+        "BBBY",
+        "BBY",
+        "M",
+        "ODFL",
+        "RAD",
+        "WBA",
+        "WE",
+        "YELL"
+      ],
+      "files": [
+        {
+          "path": "units/t4-credit-event-2023/card.toml",
+          "sha256": "95a45b8bbc551437b12d01c6700ccdc49fd149a8cc6f783bee29bd8708d53372",
+          "bytes": 4134
+        },
+        {
+          "path": "units/t4-credit-event-2023/corpus/EDGAR_0000084129_10Q_20230104.json",
+          "sha256": "8a1bf595924939a5a94fdf4982a74cab30461e387329119cdbb6971038c89d4f",
+          "bytes": 273002
+        },
+        {
+          "path": "units/t4-credit-event-2023/corpus/EDGAR_0000716006_10K_20230209.json",
+          "sha256": "c8dff7a2dfcdf1b2ffa957072bcf4b05906065376e2b922c0f570eb0d29bedf1",
+          "bytes": 350172
+        },
+        {
+          "path": "units/t4-credit-event-2023/corpus/EDGAR_0000764478_10K_20230317.json",
+          "sha256": "954f90f9fddb1cbfe66bb1d4abf3c47f13a66f37445885ec8a8cfdf428546c82",
+          "bytes": 295944
+        },
+        {
+          "path": "units/t4-credit-event-2023/corpus/EDGAR_0000794367_10K_20230324.json",
+          "sha256": "cb2b88650d6d9e292ab33464ce3c1cabfa40c8a9c304b1af11e2b44012b4d2b8",
+          "bytes": 312275
+        },
+        {
+          "path": "units/t4-credit-event-2023/corpus/EDGAR_0000878927_10K_20230222.json",
+          "sha256": "6572a74554a4315f1b75df56b7e52ce393354522503ecd8310cd6f0efe45338c",
+          "bytes": 250037
+        },
+        {
+          "path": "units/t4-credit-event-2023/corpus/EDGAR_0000886158_10Q_20230126.json",
+          "sha256": "86b06d54c4d2eddeafdb4efd85bb386bd7b663bb1d4840fe023fa14fce51dfc8",
+          "bytes": 194724
+        },
+        {
+          "path": "units/t4-credit-event-2023/corpus/EDGAR_0001618921_10Q_20230328.json",
+          "sha256": "8351be164eb76c46491b44d00f5cf04a8b8795807bcc313ca47e3b1fccba605b",
+          "bytes": 244328
+        },
+        {
+          "path": "units/t4-credit-event-2023/corpus/EDGAR_0001813756_10K_20230329.json",
+          "sha256": "91ae5c0115cbce52a896092640b60f04c7ddfa0ee4478d4e4a3afdea2489398b",
+          "bytes": 1073842
+        },
+        {
+          "path": "units/t4-credit-event-2023/corpus/manifest.json",
+          "sha256": "29b8fa110bf4c24739b61bf2d9c51dcf6f818e06f51e42c6d758d98f2ba11c42",
+          "bytes": 4508
+        },
+        {
+          "path": "units/t4-credit-event-2023/manifest.json",
+          "sha256": "6787df5fe0523e815d3e3f4e61b1d479b99cf2a4adb28b207200d316c0083a88",
+          "bytes": 5290
+        },
+        {
+          "path": "units/t4-credit-event-2023/task.json",
+          "sha256": "670bdd187ffab6e5396685b4d9c0884f61b470c884cc5efe6a3daba1c6459310",
+          "bytes": 4096
+        }
+      ]
+    },
+    {
+      "task_id": "t4-eps-growth-2024Q3-banks",
+      "task_path": "units/t4-eps-growth-2024Q3-banks/task.json",
+      "task_sha256": "7352decb68e25dd314b053582684633d76aee88fd693057a1d4b3f04cb3f8ce2",
+      "task_canonical_sha256": "722a45aa2f5ef844e438af3cb8252863a4ec8afbce45e0444d90144c55dd94d3",
+      "target_type": "regression",
+      "target_name": "eps_yoy_growth_pct",
+      "cutoff_date": "2024-10-10",
+      "resolution_date": "2024-10-24",
+      "entity_ids": [
+        "BAC",
+        "C",
+        "GS",
+        "JPM",
+        "MS",
+        "PNC",
+        "USB",
+        "WFC"
+      ],
+      "files": [
+        {
+          "path": "units/t4-eps-growth-2024Q3-banks/card.toml",
+          "sha256": "0ea7cc5de2595f5253e21d6ce9591d7645d397884aa13d609717442dcde4b0da",
+          "bytes": 4087
+        },
+        {
+          "path": "units/t4-eps-growth-2024Q3-banks/corpus/EDGAR_0000019617_10Q_20240802.json",
+          "sha256": "92dc7c97317f93a935978e52446f4b6c43c5fb3641ef3e7f127288555dd63a00",
+          "bytes": 740145
+        },
+        {
+          "path": "units/t4-eps-growth-2024Q3-banks/corpus/EDGAR_0000019617_8K_20240820.json",
+          "sha256": "c5b087f2286eca044fbae0f4ad510b7dd8f2c89f285085d1bd6be7f3988edc78",
+          "bytes": 6090
+        },
+        {
+          "path": "units/t4-eps-growth-2024Q3-banks/corpus/EDGAR_0000036104_10Q_20240806.json",
+          "sha256": "9201cdd0b9e533cec8bb59b51b1628e64aa4a8824aeb3c4ac58f10a7589d7222",
+          "bytes": 366637
+        },
+        {
+          "path": "units/t4-eps-growth-2024Q3-banks/corpus/EDGAR_0000036104_8K_20240912.json",
+          "sha256": "d0744827fb156fc73678241d2703ee05b4f0d65af3b9ecf18cf50e50fdf806b3",
+          "bytes": 6508
+        },
+        {
+          "path": "units/t4-eps-growth-2024Q3-banks/corpus/EDGAR_0000070858_10Q_20240730.json",
+          "sha256": "6668df209ff34a779f9224d19ae6271a3f4368384786da14d88b16c1405ecb6a",
+          "bytes": 524764
+        },
+        {
+          "path": "units/t4-eps-growth-2024Q3-banks/corpus/EDGAR_0000072971_10Q_20240801.json",
+          "sha256": "1ff52aafbce7bbc6906922f82a97e488a7833cb8eb2fbd1f502b664f8f4d6845",
+          "bytes": 550877
+        },
+        {
+          "path": "units/t4-eps-growth-2024Q3-banks/corpus/EDGAR_0000713676_10Q_20240802.json",
+          "sha256": "36967c4b2b5b9d31dc17c21fc3e41b89d4c6d80332320d0ccb64617b9b5774cc",
+          "bytes": 398223
+        },
+        {
+          "path": "units/t4-eps-growth-2024Q3-banks/corpus/EDGAR_0000831001_10Q_20240802.json",
+          "sha256": "ba4dac37f8fa53c417eeb5cc5875cdb111ff96a34321d79ee28331bd1918b089",
+          "bytes": 800424
+        },
+        {
+          "path": "units/t4-eps-growth-2024Q3-banks/corpus/EDGAR_0000831001_8K_20240910.json",
+          "sha256": "8fa73bd023ff57da2fc5eb4d60537176a9cff80339a8f060193b576725996115",
+          "bytes": 4977
+        },
+        {
+          "path": "units/t4-eps-growth-2024Q3-banks/corpus/EDGAR_0000886982_10Q_20240802.json",
+          "sha256": "f79be659575f4d8b961e0231c9b231e3e46c92aa6426c48d17ac5c2eef614265",
+          "bytes": 846647
+        },
+        {
+          "path": "units/t4-eps-growth-2024Q3-banks/corpus/EDGAR_0000886982_8K_20240919.json",
+          "sha256": "eb4d3d8e5404c88d4c2dbddfb0bab81d12673debf4c230fbfd7d353f3899a41a",
+          "bytes": 7279
+        },
+        {
+          "path": "units/t4-eps-growth-2024Q3-banks/corpus/EDGAR_0000895421_10Q_20240805.json",
+          "sha256": "e615a41b3127d32fa6aad82a04787704a7465087eedce4d39c6424c0e7dbe90b",
+          "bytes": 393434
+        },
+        {
+          "path": "units/t4-eps-growth-2024Q3-banks/corpus/manifest.json",
+          "sha256": "d5d93c13c5b449b786002a41acfc2cc1bb488713f80f2f21887e3dbc8b0a8c5d",
+          "bytes": 6678
+        },
+        {
+          "path": "units/t4-eps-growth-2024Q3-banks/manifest.json",
+          "sha256": "b339a55ca37cc039cc7633425e0130697a4ab2530312e63d08e850122d0b830e",
+          "bytes": 7460
+        },
+        {
+          "path": "units/t4-eps-growth-2024Q3-banks/task.json",
+          "sha256": "7352decb68e25dd314b053582684633d76aee88fd693057a1d4b3f04cb3f8ce2",
+          "bytes": 5478
+        }
+      ]
+    },
+    {
+      "task_id": "t4-eps-yoy-2023Q2-mixed",
+      "task_path": "units/t4-eps-yoy-2023Q2-mixed/task.json",
+      "task_sha256": "e3ae05a738bbab934d0d0cc9b206fe8112bcdbd18aff1f92b4eb81a8a50b3d12",
+      "task_canonical_sha256": "300a064ce17c42367db59687a2dc82970d082f13c2bdccdc25361cdfe2273fd1",
+      "target_type": "classification",
+      "target_name": "eps_yoy_direction",
+      "cutoff_date": "2023-07-14",
+      "resolution_date": "2023-08-02",
+      "entity_ids": [
+        "AMD",
+        "AMGN",
+        "DOW",
+        "HON",
+        "IBM",
+        "TMO"
+      ],
+      "files": [
+        {
+          "path": "units/t4-eps-yoy-2023Q2-mixed/card.toml",
+          "sha256": "d05b23bda9408bb0babf05027d5e8acaa908d220ce9cffcff1790d099c599384",
+          "bytes": 4121
+        },
+        {
+          "path": "units/t4-eps-yoy-2023Q2-mixed/corpus/EDGAR_0000002488_10Q_20230503.json",
+          "sha256": "c40d939f151d12c58b671e15e7e791a7e8ecff3b362442ed488ec734cacf744c",
+          "bytes": 193756
+        },
+        {
+          "path": "units/t4-eps-yoy-2023Q2-mixed/corpus/EDGAR_0000051143_10Q_20230425.json",
+          "sha256": "853ec9f8ea9b88489f49d8c0e841a21c351f77c0d2ef1df3e9de6ea4595a725d",
+          "bytes": 262560
+        },
+        {
+          "path": "units/t4-eps-yoy-2023Q2-mixed/corpus/EDGAR_0000097745_10Q_20230505.json",
+          "sha256": "c7c49fbbd70c09601ecd40ae11bdb4ef63a0fc72658c5f0418b83b859431b820",
+          "bytes": 96378
+        },
+        {
+          "path": "units/t4-eps-yoy-2023Q2-mixed/corpus/EDGAR_0000318154_10Q_20230428.json",
+          "sha256": "931868567048de7789a6a5121ec7cf6da9d21756704e4440bb8a16f95a2ac0da",
+          "bytes": 188641
+        },
+        {
+          "path": "units/t4-eps-yoy-2023Q2-mixed/corpus/EDGAR_0000773840_10Q_20230427.json",
+          "sha256": "8cd61567f1fa7546b6d277520d9f5d17fd9b48e334bf7552a74617c5f9fd0473",
+          "bytes": 126814
+        },
+        {
+          "path": "units/t4-eps-yoy-2023Q2-mixed/corpus/EDGAR_0001751788_10Q_20230426.json",
+          "sha256": "089ee420ac6fd462d4a5e74d5ec0233b3b3f32631adbf4be656593350fc83e76",
+          "bytes": 139853
+        },
+        {
+          "path": "units/t4-eps-yoy-2023Q2-mixed/corpus/manifest.json",
+          "sha256": "d02e51af18fac7d448a7406e688f0f5589eb47c4428711fef327b307a5aa9181",
+          "bytes": 3418
+        },
+        {
+          "path": "units/t4-eps-yoy-2023Q2-mixed/manifest.json",
+          "sha256": "4c651ee0e38397b5baa2a9e4859d9e7eef65a6def508daff9a5a21455467744b",
+          "bytes": 4200
+        },
+        {
+          "path": "units/t4-eps-yoy-2023Q2-mixed/task.json",
+          "sha256": "e3ae05a738bbab934d0d0cc9b206fe8112bcdbd18aff1f92b4eb81a8a50b3d12",
+          "bytes": 4902
+        }
+      ]
+    },
+    {
+      "task_id": "t4-fomc-curve-20220728",
+      "task_path": "units/t4-fomc-curve-20220728/task.json",
+      "task_sha256": "f4480b2de8b6b8b9da228937c6674597fab3782b4f2c2ef5afbae45825500dea",
+      "task_canonical_sha256": "5a1d9a4ec484edcf471aa440953ac2ad4e8d5b2e62e9d418d6c8ae7d67ec6eb3",
+      "target_type": "regression",
+      "target_name": "yield_change_bps_intermeeting",
+      "cutoff_date": "2022-07-28",
+      "resolution_date": "2022-09-20",
+      "entity_ids": [
+        "UST10Y",
+        "UST2Y",
+        "UST30Y",
+        "UST3Y",
+        "UST5Y",
+        "UST7Y"
+      ],
+      "files": [
+        {
+          "path": "units/t4-fomc-curve-20220728/card.toml",
+          "sha256": "773d5255527c7b272a8f88fbc6d3b3ddce4691e2261ff5648249cbc1270b91d1",
+          "bytes": 4330
+        },
+        {
+          "path": "units/t4-fomc-curve-20220728/corpus/FOMC_STATEMENT_20220727.json",
+          "sha256": "0c94cb8355516a7bc4e9efc6ec9956957f8d2caee1b16f53595665d9572605e9",
+          "bytes": 2568
+        },
+        {
+          "path": "units/t4-fomc-curve-20220728/corpus/RATES_SNAPSHOT_20220728.json",
+          "sha256": "9c917121c9171408c2813d2b0a897532cda1b1de9e4df3a68bcc9aa3ff6359ef",
+          "bytes": 1912
+        },
+        {
+          "path": "units/t4-fomc-curve-20220728/corpus/manifest.json",
+          "sha256": "4e57539091024b271c5802c650b1ac98eb1932f124db1b39b6e28c9e7f801e9b",
+          "bytes": 1143
+        },
+        {
+          "path": "units/t4-fomc-curve-20220728/manifest.json",
+          "sha256": "ab357fb5920092885fe11b53f8935c1eb8a625990d52f71462f1320698f686d5",
+          "bytes": 1925
+        },
+        {
+          "path": "units/t4-fomc-curve-20220728/task.json",
+          "sha256": "f4480b2de8b6b8b9da228937c6674597fab3782b4f2c2ef5afbae45825500dea",
+          "bytes": 4177
+        }
+      ]
+    },
+    {
+      "task_id": "t4-fomc-curve-20240918",
+      "task_path": "units/t4-fomc-curve-20240918/task.json",
+      "task_sha256": "440db200c702d7ded6dcee9c6d80e4e6357293f796b3cd96c98a4643a8e64a56",
+      "task_canonical_sha256": "26d836f11aa84a0d9355f13d774bce54b4519b40436b39f373c2f9091d509237",
+      "target_type": "regression",
+      "target_name": "yield_change_bps_intermeeting",
+      "cutoff_date": "2024-09-19",
+      "resolution_date": "2024-11-06",
+      "entity_ids": [
+        "UST10Y",
+        "UST2Y",
+        "UST30Y",
+        "UST3Y",
+        "UST5Y",
+        "UST7Y"
+      ],
+      "files": [
+        {
+          "path": "units/t4-fomc-curve-20240918/card.toml",
+          "sha256": "121fbacb91cbe6e77c892da47b1f96ba7b069f456aa852d751c3661c93a9aa14",
+          "bytes": 4461
+        },
+        {
+          "path": "units/t4-fomc-curve-20240918/corpus/FOMC_SEP_20240918.json",
+          "sha256": "9193d7332a8d455db0faa470f261a3f5a9fb8dde2de3eeeb4a35a754788f593b",
+          "bytes": 9303
+        },
+        {
+          "path": "units/t4-fomc-curve-20240918/corpus/FOMC_STATEMENT_20240918.json",
+          "sha256": "99f1cf71a58aba426d83e08fe542474ef018019023e8098ce623c265a3c14f8c",
+          "bytes": 2941
+        },
+        {
+          "path": "units/t4-fomc-curve-20240918/corpus/RATES_SNAPSHOT_20240919.json",
+          "sha256": "c2727fb28b0839a9fd3cd4fe145f3e0c3b88bb0ca5660984286dd60b141081ac",
+          "bytes": 2795
+        },
+        {
+          "path": "units/t4-fomc-curve-20240918/corpus/manifest.json",
+          "sha256": "f11efab815c1a179787c4a061179c9294a8c1bd6bbf8f1ce4b2c802e1318a96c",
+          "bytes": 1614
+        },
+        {
+          "path": "units/t4-fomc-curve-20240918/manifest.json",
+          "sha256": "94a8a23f26eca41aeac03ab322f127864369f78dfeed5ae629114a78940eb1cb",
+          "bytes": 2396
+        },
+        {
+          "path": "units/t4-fomc-curve-20240918/task.json",
+          "sha256": "440db200c702d7ded6dcee9c6d80e4e6357293f796b3cd96c98a4643a8e64a56",
+          "bytes": 4239
+        }
+      ]
+    },
+    {
+      "task_id": "t4-macrorev-20240930-us6",
+      "task_path": "units/t4-macrorev-20240930-us6/task.json",
+      "task_sha256": "47fbddf457b5ab9a848bd8b754a9dcd7b0888cfab703cfec43449029bd12dd62",
+      "task_canonical_sha256": "5ecdb42cc1f21c185b8a4c3c53210d3cd7ed8d1edf9f684e54211e93ba963eee",
+      "target_type": "classification",
+      "target_name": "next_estimate_revision_direction",
+      "cutoff_date": "2024-09-30",
+      "resolution_date": "2024-11-27",
+      "entity_ids": [
+        "DGORDER_2024-07_20241025",
+        "DGORDER_2024-08_20241025",
+        "HOUST_2024-07_20241018",
+        "INDPRO_2024-07_20241017",
+        "INDPRO_2024-08_20241017",
+        "PAYEMS_2024-07_20241004",
+        "PAYEMS_2024-08_20241004",
+        "PAYEMS_2024-08_20241101",
+        "PI_2024-07_20241031",
+        "PI_2024-08_20241127",
+        "RSAFS_2024-07_20241017",
+        "RSAFS_2024-08_20241115"
+      ],
+      "files": [
+        {
+          "path": "units/t4-macrorev-20240930-us6/card.toml",
+          "sha256": "afecc435290072b2385d303c76dadafc37deb6d7d97fc50173e9e693e0f858d6",
+          "bytes": 4612
+        },
+        {
+          "path": "units/t4-macrorev-20240930-us6/corpus/ALFRED_DGORDER_VINTAGES_20240930.json",
+          "sha256": "752ff18b9643c0f78bd70ef07824e19d2035e17b9dc9ebccfc11d56b5939a75b",
+          "bytes": 2924
+        },
+        {
+          "path": "units/t4-macrorev-20240930-us6/corpus/ALFRED_HOUST_VINTAGES_20240930.json",
+          "sha256": "0b08ef59b2535cdc67a79b1a8e025610cafeed63d59ba4d2ca1b88f072f373b4",
+          "bytes": 1900
+        },
+        {
+          "path": "units/t4-macrorev-20240930-us6/corpus/ALFRED_INDPRO_VINTAGES_20240930.json",
+          "sha256": "9bec6e2c79447d9e461db2cd23be2ba4fae456668b7d6b99e1a9ab761fff9973",
+          "bytes": 3639
+        },
+        {
+          "path": "units/t4-macrorev-20240930-us6/corpus/ALFRED_PAYEMS_VINTAGES_20240930.json",
+          "sha256": "6210b1169de01c9de59e14e003370c599946ab69f6f20bdf5c99e8da275c27d9",
+          "bytes": 2078
+        },
+        {
+          "path": "units/t4-macrorev-20240930-us6/corpus/ALFRED_PI_VINTAGES_20240930.json",
+          "sha256": "3677d16615f0f1755cfca0111d396bfeaca21555e94326ba8479aefbde7692ef",
+          "bytes": 2605
+        },
+        {
+          "path": "units/t4-macrorev-20240930-us6/corpus/ALFRED_RSAFS_VINTAGES_20240930.json",
+          "sha256": "5e5e1eb4327451741df4cd8b4e5efabeb09c5e0a9c248fef8bfde29313c96e56",
+          "bytes": 2126
+        },
+        {
+          "path": "units/t4-macrorev-20240930-us6/corpus/BLS_CES_PRELIM_BENCHMARK_20240821.json",
+          "sha256": "a2793561d529886fac47153b3b6aa1e562943684964142caa7aa7368f8482211",
+          "bytes": 11526
+        },
+        {
+          "path": "units/t4-macrorev-20240930-us6/corpus/manifest.json",
+          "sha256": "7e913d3e7dd6cd0c63e0fb960dfdb5cbfac1c35a08e9a815d9ed22de4fc1dbb6",
+          "bytes": 4811
+        },
+        {
+          "path": "units/t4-macrorev-20240930-us6/manifest.json",
+          "sha256": "18a7f7ec29f6cb2c401c05c3b58eff967035e477f090e49de10c673c10ed9681",
+          "bytes": 6205
+        },
+        {
+          "path": "units/t4-macrorev-20240930-us6/task.json",
+          "sha256": "47fbddf457b5ab9a848bd8b754a9dcd7b0888cfab703cfec43449029bd12dd62",
+          "bytes": 8397
+        }
+      ]
+    },
+    {
+      "task_id": "t4-postearn-20240201-megacap",
+      "task_path": "units/t4-postearn-20240201-megacap/task.json",
+      "task_sha256": "d9d422dba05d6e7e5e343f44b91bb39915b771f1859b595dddd636815b376461",
+      "task_canonical_sha256": "db8b94311f31cf4d4799cf76cfaaaa2863518529a9c3e5dc88ce3a93a376dbd2",
+      "target_type": "classification",
+      "target_name": "earnings_reaction",
+      "cutoff_date": "2024-01-31",
+      "resolution_date": "2024-02-02",
+      "entity_ids": [
+        "AAPL",
+        "AMZN",
+        "META"
+      ],
+      "files": [
+        {
+          "path": "units/t4-postearn-20240201-megacap/card.toml",
+          "sha256": "483da130b5fc309cfbd24df11a686b76ed5841ffa25a8c355c6d27ec9878ba44",
+          "bytes": 3994
+        },
+        {
+          "path": "units/t4-postearn-20240201-megacap/corpus/EDGAR_0000320193_10K_20231103.json",
+          "sha256": "6d74e43916740811b562539c5cce6d7bb1d30b7e261fb008b432ce1f83d5c5ae",
+          "bytes": 210132
+        },
+        {
+          "path": "units/t4-postearn-20240201-megacap/corpus/EDGAR_0000320193_8K_20231102.json",
+          "sha256": "a1cc0d6f776a5409b8c7b741753695e0d893ce981cad2cfe824e60ee7743aebe",
+          "bytes": 4333
+        },
+        {
+          "path": "units/t4-postearn-20240201-megacap/corpus/EDGAR_0001018724_10Q_20231027.json",
+          "sha256": "7a7f69970c8b5772ad7d64e602458e7e17b8a052e0a89ecf20ec610f10a08421",
+          "bytes": 183058
+        },
+        {
+          "path": "units/t4-postearn-20240201-megacap/corpus/EDGAR_0001018724_8K_20231101.json",
+          "sha256": "1aee06c3ce4e0b07a4e87871c5ff94a3f3ad2fabc54bbec010885a63c786ea75",
+          "bytes": 9438
+        },
+        {
+          "path": "units/t4-postearn-20240201-megacap/corpus/EDGAR_0001326801_10Q_20231026.json",
+          "sha256": "750e809edda9b1b01e54807aeab9901378f0c023698f2170c4ca89a4eb86ce69",
+          "bytes": 210547
+        },
+        {
+          "path": "units/t4-postearn-20240201-megacap/corpus/EDGAR_0001326801_8K_20240118.json",
+          "sha256": "7b186cd5ae9eb4abcfc0f4cfad5e49020f1ac2a516aec1855e3019063abf6cb8",
+          "bytes": 3386
+        },
+        {
+          "path": "units/t4-postearn-20240201-megacap/corpus/manifest.json",
+          "sha256": "3ad5d4852a24c18f47e2f23c89f7d557f5d6ca9e0a18e8f662228682c5ade173",
+          "bytes": 3420
+        },
+        {
+          "path": "units/t4-postearn-20240201-megacap/manifest.json",
+          "sha256": "38eecf6c2c206c799913c7f3145be88417799697eb1b343b8a6928711756d27e",
+          "bytes": 4202
+        },
+        {
+          "path": "units/t4-postearn-20240201-megacap/task.json",
+          "sha256": "d9d422dba05d6e7e5e343f44b91bb39915b771f1859b595dddd636815b376461",
+          "bytes": 3836
+        }
+      ]
+    }
+  ],
+  "license_files": [
+    {
+      "path": "LICENSE",
+      "sha256": "508a77d2e7b51d98adeed32648ad124b7b30241a8e70b2e72c99f92d8e5874d1",
+      "bytes": 1036
+    },
+    {
+      "path": "DATA-LICENSE.md",
+      "sha256": "34e11e3e26a0f198f91d09633528f0de1e0d093aa231715917ae035908eca945",
+      "bytes": 819
+    },
+    {
+      "path": "THIRD-PARTY-NOTICES.md",
+      "sha256": "8c844c8989f2849c9798d538870dab3f677d7350925575360287b9b2e87b1b7b",
+      "bytes": 3514
+    }
+  ],
+  "schemas": [
+    {
+      "path": "schemas/analysis.schema.json",
+      "sha256": "8a997f21a929f09596db805430839b281548ad0babab29bd1f3daa8456d38049",
+      "source_commit": "50fb2dc2b39c70f4cf81fcd269943782eddfaed0",
+      "source_repository": "https://github.com/Agenthon-2026/Agenthon2026-public",
+      "source_path": "common/qfbench2_common/schemas/analysis.schema.json"
+    },
+    {
+      "path": "schemas/LICENSE",
+      "sha256": "66c9546b918774f607326ad8fadd450a2c008e87d257307e20ce6e24e1d87b7d",
+      "source_commit": "50fb2dc2b39c70f4cf81fcd269943782eddfaed0",
+      "source_repository": "https://github.com/Agenthon-2026/Agenthon2026-public",
+      "source_path": "common/LICENSE"
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+[
+  {
+    "source_file": "spy-ssga-price-nav-history.xlsx",
+    "source_sha256": "7c8fe7c18144aa4eb961d6fb4bb5da5e2bf31762fd87a82fb20626f1cfe64729",
+    "sheet": "navhist",
+    "method": "bundled Python stdlib zipfile/XML read only; counted nonempty parseable Date rows",
+    "header": [
+      [
+        [
+          "A1",
+          "Fund Name:"
+        ],
+        [
+          "B1",
+          "State Street® SPDR® S&P 500® ETF Trust"
+        ]
+      ],
+      [
+        [
+          "A2",
+          "Ticker Symbol:"
+        ],
+        [
+          "B2",
+          "SPY"
+        ]
+      ],
+      [
+        [
+          "A4",
+          "Date"
+        ],
+        [
+          "B4",
+          "NAV"
+        ],
+        [
+          "C4",
+          "Shares Outstanding"
+        ],
+        [
+          "D4",
+          "Total Net Assets"
+        ]
+      ]
+    ],
+    "target_rows": [
+      [
+        [
+          "A675",
+          "02-Feb-2024"
+        ],
+        [
+          "B675",
+          "494.373354"
+        ],
+        [
+          "C675",
+          "9.94732116E8"
+        ],
+        [
+          "D675",
+          "4.9176905266177E11"
+        ]
+      ],
+      [
+        [
+          "A676",
+          "01-Feb-2024"
+        ],
+        [
+          "B676",
+          "489.131264"
+        ],
+        [
+          "C676",
+          "1.005132116E9"
+        ],
+        [
+          "D676",
+          "4.9164154267126E11"
+        ]
+      ]
+    ],
+    "first_data_row": [
+      [
+        "A5",
+        "06-Oct-2026"
+      ],
+      [
+        "B5",
+        "779.085569"
+      ],
+      [
+        "C5",
+        "1.051282116E9"
+      ],
+      [
+        "D5",
+        "8.1903872561939E11"
+      ]
+    ],
+    "last_data_row": [
+      [
+        "A5755",
+        "01-Dec-2003"
+      ],
+      [
+        "B5755",
+        "107.61"
+      ],
+      [
+        "C5755",
+        "-"
+      ],
+      [
+        "D5755",
+        "-"
+      ]
+    ],
+    "data_row_count": 5751
+  },
+  {
+    "source_file": "spy-ssga-premium-discount-history.xlsx",
+    "source_sha256": "95af267485df5a0f93964ba9a7e35a91ca5d03128f3030e593cb9feecb725625",
+    "sheet": "pdhist",
+    "method": "bundled Python stdlib zipfile/XML read only; counted nonempty parseable Date rows",
+    "header": [
+      [
+        [
+          "A1",
+          "Fund Name:"
+        ],
+        [
+          "B1",
+          "State Street® SPDR® S&P 500® ETF Trust"
+        ]
+      ],
+      [
+        [
+          "A2",
+          "Ticker Symbol:"
+        ],
+        [
+          "B2",
+          "SPY"
+        ]
+      ],
+      [
+        [
+          "A4",
+          "Date"
+        ],
+        [
+          "B4",
+          "Premium/Discount"
+        ]
+      ]
+    ],
+    "target_rows": [],
+    "first_data_row": [
+      [
+        "A5",
+        "06-Oct-2026"
+      ],
+      [
+        "B5",
+        "0.003778"
+      ]
+    ],
+    "last_data_row": [
+      [
+        "A445",
+        "02-Jan-2025"
+      ],
+      [
+        "B445",
+        "0.011313"
+      ]
+    ],
+    "data_row_count": 441
+  }
+]

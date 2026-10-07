@@ -1,0 +1,17 @@
+{
+  "executed_at": "2026-10-07T13:47:51.114752+00:00",
+  "command": [
+    "python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-q"
+  ],
+  "exit_code": 0,
+  "output": "----------------------------------------------------------------------\nRan 114 tests in 1.008s\n\nOK\n",
+  "reference_version": "0.2.0",
+  "reference_sha256": "9e5e94a3adabda35568f05168aaab308df194729126876790fb10f8b7500e326",
+  "scope": "隔离原件后的当前公开工具测试；不含平台评分"
+}

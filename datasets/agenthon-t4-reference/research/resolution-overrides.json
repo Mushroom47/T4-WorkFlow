@@ -1,0 +1,411 @@
+{
+  "schema_version": "0.2.0",
+  "base_reference_version": "0.1.1",
+  "records": [
+    {
+      "task_id": "t4-eps-yoy-2023Q2-mixed",
+      "entity_id": "AMGN",
+      "status": "provisional",
+      "quality": {
+        "fact_status": "verified",
+        "task_alignment": "ambiguous",
+        "first_publication_status": "unconfirmed",
+        "official_outcome_status": "unconfirmed",
+        "acceptance_scope": "June季度GAAP diluted EPS事实可核对；实际8/3公告晚于task resolution=8/2，预告7/31不能代替实际公告。等待官方#27说明日期字段，默认不纳入task一致性比较。",
+        "evidence": [
+          "sources/amgn-resolution/amgn-resolution-check.json"
+        ],
+        "clarification_url": "https://github.com/Agenthon-2026/track4-analysis-public/issues/27"
+      }
+    },
+    {
+      "task_id": "t4-postearn-20240201-megacap",
+      "entity_id": "AAPL",
+      "status": "verified",
+      "quality": {
+        "fact_status": "verified",
+        "task_alignment": "aligned",
+        "first_publication_status": "unconfirmed",
+        "official_outcome_status": "unconfirmed",
+        "acceptance_scope": "题卡指定Yahoo日收盘；2024-02-01至02-02同币种同交易日，priceHint=2规范为美分，核查有限窗口无除息/拆股/资本分配，减去SPY市场价格回报。非交易所逐笔收盘认证，不含全球首发修订链或官方outcome确认。",
+        "evidence": [
+          "sources/postearn-resolution/normalized-evidence.json",
+          "sources/postearn-resolution/verification-originals.json"
+        ]
+      },
+      "notes": [
+        "公开行情 vendor 的当前历史数据快照；raw response、请求 URL、获取时间与 SHA-256 已保存。published_at=null：无法确定该版本首次发布时间，不能宣称 first-published 数据。",
+        "题面 2024-01-31 close 仅为背景值；计算完全使用 2024-02-01 close → 2024-02-02 close 和 SPY，相同交易日。",
+        "按 close 得公司 -0.5405116130%、SPY 1.0527391660%、异常 -1.5932507790%；按 adjclose 异常 -1.5932471530%，差异 0.0000036260 个百分点，标签一致。",
+        "Yahoo 的历史 adjusted close 受后续公司行动回调；保留原始 close 和 adjclose，不能混用 price series。历史事实数据仅用于事后本地研究，不反馈给冻结预测语料。",
+        "0.2.0有限窗口原件审校157项通过；使用close比值有公司行动台账与题卡Yahoo来源支持。Yahoo Close按拆股调整，Adj Close额外反映分配；不称完全未调整价格。较高的全球首发/交易所逐笔门槛单列为未确认，不掩盖本地有限验收。"
+      ]
+    },
+    {
+      "task_id": "t4-postearn-20240201-megacap",
+      "entity_id": "AMZN",
+      "status": "verified",
+      "quality": {
+        "fact_status": "verified",
+        "task_alignment": "aligned",
+        "first_publication_status": "unconfirmed",
+        "official_outcome_status": "unconfirmed",
+        "acceptance_scope": "题卡指定Yahoo日收盘；2024-02-01至02-02同币种同交易日，priceHint=2规范为美分，核查有限窗口无除息/拆股/资本分配，减去SPY市场价格回报。非交易所逐笔收盘认证，不含全球首发修订链或官方outcome确认。",
+        "evidence": [
+          "sources/postearn-resolution/normalized-evidence.json",
+          "sources/postearn-resolution/verification-originals.json"
+        ]
+      },
+      "notes": [
+        "公开行情 vendor 的当前历史数据快照；raw response、请求 URL、获取时间与 SHA-256 已保存。published_at=null：无法确定该版本首次发布时间，不能宣称 first-published 数据。",
+        "题面 2024-01-31 close 仅为背景值；计算完全使用 2024-02-01 close → 2024-02-02 close 和 SPY，相同交易日。",
+        "按 close 得公司 7.8666499247%、SPY 1.0527391660%、异常 6.8139107587%；按 adjclose 异常 6.8139210713%，差异 0.0000103126 个百分点，标签一致。",
+        "Yahoo 的历史 adjusted close 受后续公司行动回调；保留原始 close 和 adjclose，不能混用 price series。历史事实数据仅用于事后本地研究，不反馈给冻结预测语料。",
+        "0.2.0有限窗口原件审校157项通过；使用close比值有公司行动台账与题卡Yahoo来源支持。Yahoo Close按拆股调整，Adj Close额外反映分配；不称完全未调整价格。较高的全球首发/交易所逐笔门槛单列为未确认，不掩盖本地有限验收。"
+      ]
+    },
+    {
+      "task_id": "t4-postearn-20240201-megacap",
+      "entity_id": "META",
+      "status": "verified",
+      "quality": {
+        "fact_status": "verified",
+        "task_alignment": "aligned",
+        "first_publication_status": "unconfirmed",
+        "official_outcome_status": "unconfirmed",
+        "acceptance_scope": "题卡指定Yahoo日收盘；2024-02-01至02-02同币种同交易日，priceHint=2规范为美分，核查有限窗口无除息/拆股/资本分配，减去SPY市场价格回报。非交易所逐笔收盘认证，不含全球首发修订链或官方outcome确认。",
+        "evidence": [
+          "sources/postearn-resolution/normalized-evidence.json",
+          "sources/postearn-resolution/verification-originals.json"
+        ]
+      },
+      "notes": [
+        "公开行情 vendor 的当前历史数据快照；raw response、请求 URL、获取时间与 SHA-256 已保存。published_at=null：无法确定该版本首次发布时间，不能宣称 first-published 数据。",
+        "题面 2024-01-31 close 仅为背景值；计算完全使用 2024-02-01 close → 2024-02-02 close 和 SPY，相同交易日。",
+        "按 close 得公司 20.3176452708%、SPY 1.0527391660%、异常 19.2649061048%；按 adjclose 异常 19.2649089193%，差异 0.0000028145 个百分点，标签一致。",
+        "Yahoo 的历史 adjusted close 受后续公司行动回调；保留原始 close 和 adjclose，不能混用 price series。历史事实数据仅用于事后本地研究，不反馈给冻结预测语料。",
+        "0.2.0有限窗口原件审校157项通过；使用close比值有公司行动台账与题卡Yahoo来源支持。Yahoo Close按拆股调整，Adj Close额外反映分配；不称完全未调整价格。较高的全球首发/交易所逐笔门槛单列为未确认，不掩盖本地有限验收。"
+      ]
+    },
+    {
+      "task_id": "t4-credit-event-2023",
+      "entity_id": "BBY",
+      "status": "verified",
+      "quality": {
+        "fact_status": "bounded_verified",
+        "task_alignment": "aligned",
+        "first_publication_status": "not_applicable",
+        "official_outcome_status": "unconfirmed",
+        "acceptance_scope": "观察窗2023-04-01至2024-03-31，题面历史母公司及母公司担保债务发行/借款主体；完整公开SEC申报名册、原文债务/实付核对与S&P公开年度违约名册的有限核查。法院索引未完成、保密/未评级/未披露小额迟付与全部非担保子公司未穷尽，不保证官方私有outcome一致。",
+        "coverage_limits": [
+          "court_national_index_not_queried",
+          "rating_nonpublic_unrated",
+          "minor_or_undisclosed_payment",
+          "subsidiary_definition",
+          "official_private_outcome",
+          "first_publication_snapshot"
+        ],
+        "entity_scope": {
+          "window_start_inclusive": "2023-04-01",
+          "window_end_inclusive": "2024-03-31",
+          "task_cik": "0000764478",
+          "entity": "题面历史母公司，以及母公司担保债务的发行/借款法律主体",
+          "bankruptcy_definition": "Chapter11/Chapter7申请；按实际petition/SEC报告日期区分，未以普通诉讼/债权人身份当作破产",
+          "payment_definition": "违约合同到期日与约定grace结束/认定日分别核查；无实际付款违约候选。资料支持公开披露债務核查，不保证一切未披露短时迟付。",
+          "distressed_exchange_definition": "必须有评级机构distressed exchange认定或明确事件材料；正常现金清偿、普通降级与窗口外交易均不计",
+          "sec_window_primary_count": 15,
+          "post_window_tail_count": 1,
+          "rating_registers": [
+            {
+              "source_id": "sp2023",
+              "coverage": "2023全年S&P公开评级违约Table8",
+              "pages": [
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31
+              ]
+            },
+            {
+              "source_id": "sp2024",
+              "coverage": "2024全年Table8用于筛查2024Q1；无本issuer匹配",
+              "pages": [
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30
+              ]
+            }
+          ],
+          "court_check_status": "incomplete_access_403_not_zero_results",
+          "broader_all_subsidiary_scope_verified": false,
+          "official_private_outcome_verified": false,
+          "limitations": [
+            "court_national_index_not_queried",
+            "rating_nonpublic_unrated",
+            "minor_or_undisclosed_payment",
+            "subsidiary_definition",
+            "official_private_outcome",
+            "first_publication_snapshot"
+          ]
+        },
+        "evidence": [
+          "sources/credit-resolution/resolution-checks.json"
+        ]
+      },
+      "method": "全窗SEC申报名册/原文+窗口后首个季度报告覆盖尾段，逐项核对存续债务、实际本金/利息支付和合同违约条件；S&P年度公开违约名册按issuer名称交叉核查；所有已发现候选经原文排除，在明示有限公开范围内接受no_event。",
+      "notes": [
+        "verified是本研究集有限公开核查状态，quality.fact_status=bounded_verified；不是官方outcome认证。",
+        "credit的reference_value保持null；no_event不是实际概率0。",
+        "有限公开核查的verified与positive原始事件确认程度不同，fact_status和coverage_limits必须随CSV/JSON一起使用。"
+      ]
+    },
+    {
+      "task_id": "t4-credit-event-2023",
+      "entity_id": "M",
+      "status": "verified",
+      "quality": {
+        "fact_status": "bounded_verified",
+        "task_alignment": "aligned",
+        "first_publication_status": "not_applicable",
+        "official_outcome_status": "unconfirmed",
+        "acceptance_scope": "观察窗2023-04-01至2024-03-31，题面历史母公司及母公司担保债务发行/借款主体；完整公开SEC申报名册、原文债务/实付核对与S&P公开年度违约名册的有限核查。法院索引未完成、保密/未评级/未披露小额迟付与全部非担保子公司未穷尽，不保证官方私有outcome一致。",
+        "coverage_limits": [
+          "court_national_index_not_queried",
+          "rating_nonpublic_unrated",
+          "minor_or_undisclosed_payment",
+          "subsidiary_definition",
+          "official_private_outcome",
+          "first_publication_snapshot"
+        ],
+        "entity_scope": {
+          "window_start_inclusive": "2023-04-01",
+          "window_end_inclusive": "2024-03-31",
+          "task_cik": "0000794367",
+          "entity": "题面历史母公司，以及母公司担保债务的发行/借款法律主体",
+          "bankruptcy_definition": "Chapter11/Chapter7申请；按实际petition/SEC报告日期区分，未以普通诉讼/债权人身份当作破产",
+          "payment_definition": "违约合同到期日与约定grace结束/认定日分别核查；无实际付款违约候选。资料支持公开披露债務核查，不保证一切未披露短时迟付。",
+          "distressed_exchange_definition": "必须有评级机构distressed exchange认定或明确事件材料；正常现金清偿、普通降级与窗口外交易均不计",
+          "sec_window_primary_count": 14,
+          "post_window_tail_count": 1,
+          "rating_registers": [
+            {
+              "source_id": "sp2023",
+              "coverage": "2023全年S&P公开评级违约Table8",
+              "pages": [
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31
+              ]
+            },
+            {
+              "source_id": "sp2024",
+              "coverage": "2024全年Table8用于筛查2024Q1；无本issuer匹配",
+              "pages": [
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30
+              ]
+            }
+          ],
+          "court_check_status": "incomplete_access_403_not_zero_results",
+          "broader_all_subsidiary_scope_verified": false,
+          "official_private_outcome_verified": false,
+          "limitations": [
+            "court_national_index_not_queried",
+            "rating_nonpublic_unrated",
+            "minor_or_undisclosed_payment",
+            "subsidiary_definition",
+            "official_private_outcome",
+            "first_publication_snapshot"
+          ]
+        },
+        "evidence": [
+          "sources/credit-resolution/resolution-checks.json"
+        ]
+      },
+      "method": "全窗SEC申报名册/原文+窗口后首个季度报告覆盖尾段，逐项核对存续债务、实际本金/利息支付和合同违约条件；S&P年度公开违约名册按issuer名称交叉核查；所有已发现候选经原文排除，在明示有限公开范围内接受no_event。",
+      "notes": [
+        "verified是本研究集有限公开核查状态，quality.fact_status=bounded_verified；不是官方outcome认证。",
+        "credit的reference_value保持null；no_event不是实际概率0。",
+        "有限公开核查的verified与positive原始事件确认程度不同，fact_status和coverage_limits必须随CSV/JSON一起使用。"
+      ]
+    },
+    {
+      "task_id": "t4-credit-event-2023",
+      "entity_id": "ODFL",
+      "status": "verified",
+      "quality": {
+        "fact_status": "bounded_verified",
+        "task_alignment": "aligned",
+        "first_publication_status": "not_applicable",
+        "official_outcome_status": "unconfirmed",
+        "acceptance_scope": "观察窗2023-04-01至2024-03-31，题面历史母公司及母公司担保债务发行/借款主体；完整公开SEC申报名册、原文债务/实付核对与S&P公开年度违约名册的有限核查。法院索引未完成、保密/未评级/未披露小额迟付与全部非担保子公司未穷尽，不保证官方私有outcome一致。",
+        "coverage_limits": [
+          "court_national_index_not_queried",
+          "rating_nonpublic_unrated",
+          "minor_or_undisclosed_payment",
+          "subsidiary_definition",
+          "official_private_outcome",
+          "first_publication_snapshot"
+        ],
+        "entity_scope": {
+          "window_start_inclusive": "2023-04-01",
+          "window_end_inclusive": "2024-03-31",
+          "task_cik": "0000878927",
+          "entity": "题面历史母公司，以及母公司担保债务的发行/借款法律主体",
+          "bankruptcy_definition": "Chapter11/Chapter7申请；按实际petition/SEC报告日期区分，未以普通诉讼/债权人身份当作破产",
+          "payment_definition": "违约合同到期日与约定grace结束/认定日分别核查；无实际付款违约候选。资料支持公开披露债務核查，不保证一切未披露短时迟付。",
+          "distressed_exchange_definition": "必须有评级机构distressed exchange认定或明确事件材料；正常现金清偿、普通降级与窗口外交易均不计",
+          "sec_window_primary_count": 21,
+          "post_window_tail_count": 1,
+          "rating_registers": [
+            {
+              "source_id": "sp2023",
+              "coverage": "2023全年S&P公开评级违约Table8",
+              "pages": [
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31
+              ]
+            },
+            {
+              "source_id": "sp2024",
+              "coverage": "2024全年Table8用于筛查2024Q1；无本issuer匹配",
+              "pages": [
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30
+              ]
+            }
+          ],
+          "court_check_status": "incomplete_access_403_not_zero_results",
+          "broader_all_subsidiary_scope_verified": false,
+          "official_private_outcome_verified": false,
+          "limitations": [
+            "court_national_index_not_queried",
+            "rating_nonpublic_unrated",
+            "minor_or_undisclosed_payment",
+            "subsidiary_definition",
+            "official_private_outcome",
+            "first_publication_snapshot"
+          ]
+        },
+        "evidence": [
+          "sources/credit-resolution/resolution-checks.json"
+        ]
+      },
+      "method": "全窗SEC申报名册/原文+窗口后首个季度报告覆盖尾段，逐项核对存续债务、实际本金/利息支付和合同违约条件；S&P年度公开违约名册按issuer名称交叉核查；所有已发现候选经原文排除，在明示有限公开范围内接受no_event。",
+      "notes": [
+        "verified是本研究集有限公开核查状态，quality.fact_status=bounded_verified；不是官方outcome认证。",
+        "credit的reference_value保持null；no_event不是实际概率0。",
+        "有限公开核查的verified与positive原始事件确认程度不同，fact_status和coverage_limits必须随CSV/JSON一起使用。"
+      ]
+    },
+    {
+      "task_id": "t4-credit-event-2023",
+      "entity_id": "WBA",
+      "status": "verified",
+      "quality": {
+        "fact_status": "bounded_verified",
+        "task_alignment": "aligned",
+        "first_publication_status": "not_applicable",
+        "official_outcome_status": "unconfirmed",
+        "acceptance_scope": "观察窗2023-04-01至2024-03-31，题面历史母公司及母公司担保债务发行/借款主体；完整公开SEC申报名册、原文债务/实付核对与S&P公开年度违约名册的有限核查。法院索引未完成、保密/未评级/未披露小额迟付与全部非担保子公司未穷尽，不保证官方私有outcome一致。",
+        "coverage_limits": [
+          "court_national_index_not_queried",
+          "rating_nonpublic_unrated",
+          "minor_or_undisclosed_payment",
+          "subsidiary_definition",
+          "official_private_outcome",
+          "first_publication_snapshot"
+        ],
+        "entity_scope": {
+          "window_start_inclusive": "2023-04-01",
+          "window_end_inclusive": "2024-03-31",
+          "task_cik": "0001618921",
+          "entity": "题面历史母公司，以及母公司担保债务的发行/借款法律主体",
+          "bankruptcy_definition": "Chapter11/Chapter7申请；按实际petition/SEC报告日期区分，未以普通诉讼/债权人身份当作破产",
+          "payment_definition": "违约合同到期日与约定grace结束/认定日分别核查；无实际付款违约候选。资料支持公开披露债務核查，不保证一切未披露短时迟付。",
+          "distressed_exchange_definition": "必须有评级机构distressed exchange认定或明确事件材料；正常现金清偿、普通降级与窗口外交易均不计",
+          "sec_window_primary_count": 20,
+          "post_window_tail_count": 1,
+          "rating_registers": [
+            {
+              "source_id": "sp2023",
+              "coverage": "2023全年S&P公开评级违约Table8",
+              "pages": [
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31
+              ]
+            },
+            {
+              "source_id": "sp2024",
+              "coverage": "2024全年Table8用于筛查2024Q1；无本issuer匹配",
+              "pages": [
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30
+              ]
+            }
+          ],
+          "court_check_status": "incomplete_access_403_not_zero_results",
+          "broader_all_subsidiary_scope_verified": false,
+          "official_private_outcome_verified": false,
+          "limitations": [
+            "court_national_index_not_queried",
+            "rating_nonpublic_unrated",
+            "minor_or_undisclosed_payment",
+            "subsidiary_definition",
+            "official_private_outcome",
+            "first_publication_snapshot"
+          ]
+        },
+        "evidence": [
+          "sources/credit-resolution/resolution-checks.json"
+        ]
+      },
+      "method": "全窗SEC申报名册/原文+窗口后首个季度报告覆盖尾段，逐项核对存续债务、实际本金/利息支付和合同违约条件；S&P年度公开违约名册按issuer名称交叉核查；所有已发现候选经原文排除，在明示有限公开范围内接受no_event。",
+      "notes": [
+        "verified是本研究集有限公开核查状态，quality.fact_status=bounded_verified；不是官方outcome认证。",
+        "credit的reference_value保持null；no_event不是实际概率0。",
+        "有限公开核查的verified与positive原始事件确认程度不同，fact_status和coverage_limits必须随CSV/JSON一起使用。"
+      ]
+    }
+  ]
+}

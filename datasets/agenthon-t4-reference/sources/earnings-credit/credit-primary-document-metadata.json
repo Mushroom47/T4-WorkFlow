@@ -1,0 +1,23 @@
+[
+  {
+    "name": "BBY_10K",
+    "url": "https://www.sec.gov/Archives/edgar/data/764478/000076447824000010/bby-20240203x10k.htm",
+    "source_sha256": "81a416bf4daefb5ed079f35facbdb31a1564530a5b29eb300e5e9633cf985999",
+    "bytes": 7128268,
+    "retrieved_at": "2026-10-07"
+  },
+  {
+    "name": "BBY_10Q",
+    "url": "https://www.sec.gov/Archives/edgar/data/764478/000076447824000022/bby-20240504x10q.htm",
+    "source_sha256": "80a325083142a1ca35c89bd9447f3a112436ec44022523081699ec0d89f209e5",
+    "bytes": 3596656,
+    "retrieved_at": "2026-10-07"
+  },
+  {
+    "name": "M_10K",
+    "url": "https://www.sec.gov/Archives/edgar/data/794367/000162828024012734/m-20240203.htm",
+    "source_sha256": "3448473d7eb3ad9a8f3720f563c31ce83147552c06ac2d6891b1e8af7fe55118",
+    "bytes": 2198731,
+    "retrieved_at": "2026-10-07"
+  }
+]

@@ -1,0 +1,4200 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_kind": "derived_summary_not_original_body",
+  "parser": "Python stdlib HTMLParser; omit hidden ix:header/ix:hidden/display:none/script/style; normalize whitespace; offsets in derived visible text",
+  "documents": [
+    {
+      "entity_id": "BBY",
+      "raw_path": "documents/BBY/2024-03-15-0000764478-24-000010-bby-20240203x10k.htm",
+      "role": "no_event_window_filing",
+      "form": "10-K",
+      "filingDate": "2024-03-15",
+      "reportDate": "2024-02-03",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 285450,
+      "parsed_visible_text_sha256": "85371ad6f03f9b7db71e08a4f8bf9dbc65ae9e9c64759527d6b9c47e706b8259",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 1,
+          "first_visible_text_offsets": [
+            244295
+          ]
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 5,
+          "first_visible_text_offsets": [
+            55965,
+            139699,
+            139799,
+            242601,
+            244244
+          ]
+        },
+        "covenant_compliance": {
+          "count": 1,
+          "first_visible_text_offsets": [
+            139640
+          ]
+        },
+        "interest_paid": {
+          "count": 1,
+          "first_visible_text_offsets": [
+            183878
+          ]
+        },
+        "debt_financing": {
+          "count": 15,
+          "first_visible_text_offsets": [
+            86481,
+            86749,
+            86870,
+            87046,
+            137074,
+            137771
+          ]
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "BBY",
+      "raw_path": "documents/BBY/2024-03-07-0000764478-24-000006-bby-20240305x8k.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2024-03-07",
+      "reportDate": "2024-03-05",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 6056,
+      "parsed_visible_text_sha256": "42850eeada7b4a733b134c9e4cc5ffbca0c2b9714aed6d853f033a090c478ec8",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "BBY",
+      "raw_path": "documents/BBY/2024-02-29-0000764478-24-000003-bby-20240229x8k.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2024-02-29",
+      "reportDate": "2024-02-29",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 3812,
+      "parsed_visible_text_sha256": "07d92b29036d6ae2b75d499036d8681ed94915cb5438abde6cee4af443e8828e",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "BBY",
+      "raw_path": "documents/BBY/2023-12-13-0000764478-23-000056-bby-20230328x8ka.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K/A",
+      "filingDate": "2023-12-13",
+      "reportDate": "2023-03-28",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 3045,
+      "parsed_visible_text_sha256": "dd4b5433b9872df4ce7f5e9d183bde23756ff4ebac0171bdc889cb037013085f",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "BBY",
+      "raw_path": "documents/BBY/2023-12-01-0000764478-23-000053-bby-20231028x10q.htm",
+      "role": "no_event_window_filing",
+      "form": "10-Q",
+      "filingDate": "2023-12-01",
+      "reportDate": "2023-10-28",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 85848,
+      "parsed_visible_text_sha256": "ce449747e0dcab4e85db5541ea9d45db1d1c28a4590193090dd0988fa2b85c35",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 11,
+          "first_visible_text_offsets": [
+            9398,
+            9519,
+            61500,
+            62441,
+            62491,
+            64081
+          ]
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "BBY",
+      "raw_path": "documents/BBY/2023-11-21-0000764478-23-000049-bby-20231121x8k.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2023-11-21",
+      "reportDate": "2023-11-21",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 3811,
+      "parsed_visible_text_sha256": "cd5dc01f2c0998e6b4c78f9e1b352616b4f6704071f60c89c414057819168f5a",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "BBY",
+      "raw_path": "documents/BBY/2023-09-12-0000764478-23-000046-bby-20230728x8ka.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K/A",
+      "filingDate": "2023-09-12",
+      "reportDate": "2023-07-28",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 3113,
+      "parsed_visible_text_sha256": "a71821c1751c0755000e0a4f7eaa950808cec9411a0400a268f4341e6fc0a0dc",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "BBY",
+      "raw_path": "documents/BBY/2023-09-01-0000764478-23-000041-bby-20230729x10q.htm",
+      "role": "no_event_window_filing",
+      "form": "10-Q",
+      "filingDate": "2023-09-01",
+      "reportDate": "2023-07-29",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 86333,
+      "parsed_visible_text_sha256": "b7e44c5a99adafc6a3e3659d670821145b1d793ad67df444497a14a45f5c9fec",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 11,
+          "first_visible_text_offsets": [
+            9311,
+            9432,
+            62211,
+            63169,
+            63219,
+            64802
+          ]
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "BBY",
+      "raw_path": "documents/BBY/2023-08-29-0000764478-23-000038-bby-20230829x8k.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2023-08-29",
+      "reportDate": "2023-08-29",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 3797,
+      "parsed_visible_text_sha256": "db0601a860461b977ec4440567b557dcf6148adbd2e589e24ab4bd3842e64dbe",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "BBY",
+      "raw_path": "documents/BBY/2023-08-01-0000764478-23-000035-bby-20230728x8k.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2023-08-01",
+      "reportDate": "2023-07-28",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 5132,
+      "parsed_visible_text_sha256": "49b53b336cbf7aee08273ebc43f4db6f5783a16a0eb1cfba34cbef33d082686e",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "BBY",
+      "raw_path": "documents/BBY/2023-06-16-0000764478-23-000027-bby-20230614x8k.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2023-06-16",
+      "reportDate": "2023-06-14",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 5801,
+      "parsed_visible_text_sha256": "a05f3232177082d7e5fce66286d505a9bd84d14f90b33d43083f3274283251f6",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "BBY",
+      "raw_path": "documents/BBY/2023-06-02-0000764478-23-000025-bby-20230429x10q.htm",
+      "role": "no_event_window_filing",
+      "form": "10-Q",
+      "filingDate": "2023-06-02",
+      "reportDate": "2023-04-29",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 81319,
+      "parsed_visible_text_sha256": "f06277d7bbbd8df34b10f778fd7822621dc0cc457358ee2bb49e4c11b9e25996",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 1,
+          "first_visible_text_offsets": [
+            24273
+          ]
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 1,
+          "first_visible_text_offsets": [
+            24223
+          ]
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 11,
+          "first_visible_text_offsets": [
+            8746,
+            8866,
+            57400,
+            58254,
+            58304,
+            60066
+          ]
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "BBY",
+      "raw_path": "documents/BBY/2023-05-25-0000764478-23-000019-bby-20230525x8k.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2023-05-25",
+      "reportDate": "2023-05-25",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 3779,
+      "parsed_visible_text_sha256": "180447397878bb5cdea8064a9d648e7e607aad53435a12967b9a789dae937937",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "BBY",
+      "raw_path": "documents/BBY/2023-04-27-0000764478-23-000016-bby-20230424x8k.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2023-04-27",
+      "reportDate": "2023-04-24",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 3803,
+      "parsed_visible_text_sha256": "bc5c429978cf83da303ab93c45dffbff7ea3b778de62edf626eec5dc74e3a837",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "BBY",
+      "raw_path": "documents/BBY/2023-04-13-0000764478-23-000012-bby-20230412x8k.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2023-04-13",
+      "reportDate": "2023-04-12",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 6548,
+      "parsed_visible_text_sha256": "979e6ca39f0edde39097cea21cf8816ebd875ec4de0b1fcd4250d59c658f0de1",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 1,
+          "first_visible_text_offsets": [
+            4894
+          ]
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 2,
+          "first_visible_text_offsets": [
+            3211,
+            4843
+          ]
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "BBY",
+      "raw_path": "documents/BBY/2024-06-07-0000764478-24-000022-bby-20240504x10q.htm",
+      "role": "no_event_window_tail_quarter",
+      "form": "10-Q",
+      "filingDate": "2024-06-07",
+      "reportDate": "2024-05-04",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 77632,
+      "parsed_visible_text_sha256": "0a19e43e78ab4b58176919e807e843b70ee8d30a1995ef579d796ac2d5b5a2e9",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 6,
+          "first_visible_text_offsets": [
+            8774,
+            8878,
+            55785,
+            56548,
+            56598,
+            67409
+          ]
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "M",
+      "raw_path": "documents/M/2024-03-22-0001628280-24-012734-m-20240203.htm",
+      "role": "no_event_window_filing",
+      "form": "10-K",
+      "filingDate": "2024-03-22",
+      "reportDate": "2024-02-03",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 301666,
+      "parsed_visible_text_sha256": "24aeed71add35163fdcea48faf9d42a1257226975e52e7fa3726600ee87dc02a",
+      "ticker_token_in_first_10000_visible_chars": false,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 1,
+          "first_visible_text_offsets": [
+            79411
+          ]
+        },
+        "payment_default_or_failure": {
+          "count": 1,
+          "first_visible_text_offsets": [
+            51689
+          ]
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 2,
+          "first_visible_text_offsets": [
+            93897,
+            224275
+          ]
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 1,
+          "first_visible_text_offsets": [
+            179549
+          ]
+        },
+        "debt_financing": {
+          "count": 11,
+          "first_visible_text_offsets": [
+            124526,
+            127986,
+            130051,
+            132546,
+            132920,
+            157644
+          ]
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "M",
+      "raw_path": "documents/M/2024-03-01-0000794367-24-000013-n-20240229.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2024-03-01",
+      "reportDate": "2024-02-29",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 2511,
+      "parsed_visible_text_sha256": "d1fd1cac6d03030f994687f4c0a590a081923afcb3293073b3437194665d4cc0",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "M",
+      "raw_path": "documents/M/2024-02-27-0001628280-24-007023-m-20240227.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2024-02-27",
+      "reportDate": "2024-02-27",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 5370,
+      "parsed_visible_text_sha256": "8fb388245253b2592386eb203d12734f5ed61ea6151299f96755457cb8e3edc7",
+      "ticker_token_in_first_10000_visible_chars": false,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "M",
+      "raw_path": "documents/M/2024-02-02-0000794367-24-000010-n-20240202.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2024-02-02",
+      "reportDate": "2024-02-02",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 5349,
+      "parsed_visible_text_sha256": "2702d068bd2322bf07b09aac5253d49cc08e5670a50d332c61feb94b430c687b",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "M",
+      "raw_path": "documents/M/2024-01-22-0000794367-24-000007-n-20240121.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2024-01-22",
+      "reportDate": "2024-01-21",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 3097,
+      "parsed_visible_text_sha256": "e3fffe3b4b38ec9ae6b1dffe2393ba71e50540a4632f0edeae81a4c39e0fc282",
+      "ticker_token_in_first_10000_visible_chars": false,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "M",
+      "raw_path": "documents/M/2023-11-28-0001628280-23-040057-m-20231028.htm",
+      "role": "no_event_window_filing",
+      "form": "10-Q",
+      "filingDate": "2023-11-28",
+      "reportDate": "2023-10-28",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 84266,
+      "parsed_visible_text_sha256": "384f6289a7a48444599b6ff39c4bef30fc68ca6207809622722b20edbdcbfb76",
+      "ticker_token_in_first_10000_visible_chars": false,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 1,
+          "first_visible_text_offsets": [
+            10923
+          ]
+        },
+        "debt_financing": {
+          "count": 4,
+          "first_visible_text_offsets": [
+            10368,
+            25225,
+            50470,
+            53680
+          ]
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "M",
+      "raw_path": "documents/M/2023-11-16-0001628280-23-039210-n-20231116.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2023-11-16",
+      "reportDate": "2023-11-16",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 3621,
+      "parsed_visible_text_sha256": "b6656b42f393402a52fea0daa996400345712372a541317a2d1207082e26b00b",
+      "ticker_token_in_first_10000_visible_chars": false,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "M",
+      "raw_path": "documents/M/2023-10-31-0000794367-23-000084-n-20231031.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2023-10-31",
+      "reportDate": "2023-10-31",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 2668,
+      "parsed_visible_text_sha256": "ae03c86dfccb71b11879689b3a7339427138ca5855ca96a2972acdc0a020150f",
+      "ticker_token_in_first_10000_visible_chars": false,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "M",
+      "raw_path": "documents/M/2023-08-25-0001628280-23-030657-m-20230729.htm",
+      "role": "no_event_window_filing",
+      "form": "10-Q",
+      "filingDate": "2023-08-25",
+      "reportDate": "2023-07-29",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 79403,
+      "parsed_visible_text_sha256": "13c6645a96b8a744ad5f1e61b632a3fcc1ea02176c1d08cd9b266fc96aa90b4e",
+      "ticker_token_in_first_10000_visible_chars": false,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 1,
+          "first_visible_text_offsets": [
+            10382
+          ]
+        },
+        "debt_financing": {
+          "count": 6,
+          "first_visible_text_offsets": [
+            9855,
+            10104,
+            25449,
+            49679,
+            51988,
+            52812
+          ]
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "M",
+      "raw_path": "documents/M/2023-08-22-0001628280-23-030169-n-20230822.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2023-08-22",
+      "reportDate": "2023-08-22",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 3610,
+      "parsed_visible_text_sha256": "5f124fa6a03bb3bd4538351afcd61cae104ade650eff775db850a6dd448e57f0",
+      "ticker_token_in_first_10000_visible_chars": false,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "M",
+      "raw_path": "documents/M/2023-06-06-0001628280-23-021104-m-20230429.htm",
+      "role": "no_event_window_filing",
+      "form": "10-Q",
+      "filingDate": "2023-06-06",
+      "reportDate": "2023-04-29",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 68134,
+      "parsed_visible_text_sha256": "a55c1312730463b8f2219fae2e2e7a89a655eb406c20ff2fa25efeccd22a4296",
+      "ticker_token_in_first_10000_visible_chars": false,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 1,
+          "first_visible_text_offsets": [
+            9371
+          ]
+        },
+        "debt_financing": {
+          "count": 6,
+          "first_visible_text_offsets": [
+            8845,
+            9094,
+            22680,
+            39817,
+            41949,
+            42830
+          ]
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "M",
+      "raw_path": "documents/M/2023-06-01-0001628280-23-020415-n-20230601.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2023-06-01",
+      "reportDate": "2023-06-01",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 3571,
+      "parsed_visible_text_sha256": "d9fef49dfde9c987a530b52c3b7d24d2173e619b5596e32df6c18f8ca96c485d",
+      "ticker_token_in_first_10000_visible_chars": false,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "M",
+      "raw_path": "documents/M/2023-05-26-0000794367-23-000061-n-20230525.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2023-05-26",
+      "reportDate": "2023-05-25",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 2598,
+      "parsed_visible_text_sha256": "9ea8fd30e24bcd76bcee7e4402cfb236c77f21317dc14be6107125009f72264f",
+      "ticker_token_in_first_10000_visible_chars": false,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "M",
+      "raw_path": "documents/M/2023-05-23-0000794367-23-000055-n-20230519.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2023-05-23",
+      "reportDate": "2023-05-19",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 4468,
+      "parsed_visible_text_sha256": "d3e537ea0afb445f2c0b4f70ffd43c4cff6ded406e425cdcc3483e841ec120a8",
+      "ticker_token_in_first_10000_visible_chars": false,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "M",
+      "raw_path": "documents/M/2024-05-30-0001628280-24-025853-m-20240504.htm",
+      "role": "no_event_window_tail_quarter",
+      "form": "10-Q",
+      "filingDate": "2024-05-30",
+      "reportDate": "2024-05-04",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 71033,
+      "parsed_visible_text_sha256": "2882dedc70285ec33715ff09ca6c6749276a4dbd3eb5ea9d58cc05b41096bed9",
+      "ticker_token_in_first_10000_visible_chars": false,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 1,
+          "first_visible_text_offsets": [
+            9192
+          ]
+        },
+        "debt_financing": {
+          "count": 5,
+          "first_visible_text_offsets": [
+            8765,
+            8920,
+            24961,
+            46137,
+            46672
+          ]
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "ODFL",
+      "raw_path": "documents/ODFL/2024-03-19-0000950170-24-033550-odfl-20240319.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2024-03-19",
+      "reportDate": "2024-03-19",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 2801,
+      "parsed_visible_text_sha256": "7ee1e77b00cd7e202d7de7e7db49e14f361422a8ece63e44eadc03c0a2591ac7",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "ODFL",
+      "raw_path": "documents/ODFL/2024-03-05-0000950170-24-025450-odfl-20240305.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2024-03-05",
+      "reportDate": "2024-03-05",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 2787,
+      "parsed_visible_text_sha256": "0de9f445866182e099f8a4a57c7677fcb799e4f12b439d187330a0084bfc4c48",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "ODFL",
+      "raw_path": "documents/ODFL/2024-02-26-0000950170-24-020176-odfl-20231231.htm",
+      "role": "no_event_window_filing",
+      "form": "10-K",
+      "filingDate": "2024-02-26",
+      "reportDate": "2023-12-31",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 214670,
+      "parsed_visible_text_sha256": "15dd6e8750300b43ccc6fb38b9837d64459ee691939c7e3fc50356f35ac4fc1d",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 4,
+          "first_visible_text_offsets": [
+            125797,
+            125819,
+            163128,
+            163150
+          ]
+        },
+        "covenant_compliance": {
+          "count": 1,
+          "first_visible_text_offsets": [
+            125896
+          ]
+        },
+        "interest_paid": {
+          "count": 1,
+          "first_visible_text_offsets": [
+            143795
+          ]
+        },
+        "debt_financing": {
+          "count": 6,
+          "first_visible_text_offsets": [
+            115368,
+            116257,
+            143142,
+            143403,
+            143474,
+            143927
+          ]
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "ODFL",
+      "raw_path": "documents/ODFL/2024-02-16-0000950170-24-016210-odfl-20240216.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2024-02-16",
+      "reportDate": "2024-02-16",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 3018,
+      "parsed_visible_text_sha256": "e7bf3b23c09598e0da9fe5dd0c245404a0b5255a8c4f0de56d25e3636617aae5",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "ODFL",
+      "raw_path": "documents/ODFL/2024-01-31-0000950170-24-009181-odfl-20240131.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2024-01-31",
+      "reportDate": "2024-01-31",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 2881,
+      "parsed_visible_text_sha256": "433a202f52a92303469661d32eddd341c30e04cea216a2259774f8a28c6b8b6a",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "ODFL",
+      "raw_path": "documents/ODFL/2023-12-05-0000950170-23-068262-odfl-20231205.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2023-12-05",
+      "reportDate": "2023-12-05",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 2800,
+      "parsed_visible_text_sha256": "f5abf7bcae76a2351dd1e1ce2cced4896f09512660aa56b0f53a53ce735c6fbd",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "ODFL",
+      "raw_path": "documents/ODFL/2023-11-06-0000950170-23-059408-odfl-20230930.htm",
+      "role": "no_event_window_filing",
+      "form": "10-Q",
+      "filingDate": "2023-11-06",
+      "reportDate": "2023-09-30",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 71363,
+      "parsed_visible_text_sha256": "31dc4c5299a2a5c0ef72376aeccb6105f0d49c722f7985a78e0c6374ab84117f",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 4,
+          "first_visible_text_offsets": [
+            23110,
+            23132,
+            53273,
+            53295
+          ]
+        },
+        "covenant_compliance": {
+          "count": 1,
+          "first_visible_text_offsets": [
+            53372
+          ]
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 5,
+          "first_visible_text_offsets": [
+            11503,
+            11676,
+            11738,
+            43540,
+            44730
+          ]
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "ODFL",
+      "raw_path": "documents/ODFL/2023-10-25-0000950170-23-055015-odfl-20231025.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2023-10-25",
+      "reportDate": "2023-10-25",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 2881,
+      "parsed_visible_text_sha256": "a64f51859915f7095a2709cfd6f3c8e86e4b6900125c39ed4569b1d95db57e3f",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "ODFL",
+      "raw_path": "documents/ODFL/2023-10-19-0000950170-23-054038-odfl-20231019.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2023-10-19",
+      "reportDate": "2023-10-19",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 2945,
+      "parsed_visible_text_sha256": "399804c244d515f6a85f83d5b4426b7582b757126f73b7bbc40ce06545e3f0ed",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "ODFL",
+      "raw_path": "documents/ODFL/2023-09-06-0000950170-23-046789-odfl-20230906.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2023-09-06",
+      "reportDate": "2023-09-06",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 2803,
+      "parsed_visible_text_sha256": "027df7801cd428d602b3b39874e469abccec04bcef4a401fd6f1d17dc5a26828",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "ODFL",
+      "raw_path": "documents/ODFL/2023-08-04-0000950170-23-038553-odfl-20230630.htm",
+      "role": "no_event_window_filing",
+      "form": "10-Q",
+      "filingDate": "2023-08-04",
+      "reportDate": "2023-06-30",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 69897,
+      "parsed_visible_text_sha256": "a0eb62218a35d468bbe7ac4b8772cb285938441f2f7f2f22a43cdb62dabec3fd",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 4,
+          "first_visible_text_offsets": [
+            22968,
+            22990,
+            51736,
+            51758
+          ]
+        },
+        "covenant_compliance": {
+          "count": 1,
+          "first_visible_text_offsets": [
+            51835
+          ]
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 5,
+          "first_visible_text_offsets": [
+            11430,
+            11599,
+            11661,
+            42402,
+            43212
+          ]
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "ODFL",
+      "raw_path": "documents/ODFL/2023-07-26-0000950170-23-034576-odfl-20230726.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2023-07-26",
+      "reportDate": "2023-07-26",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 2865,
+      "parsed_visible_text_sha256": "1065e70bc512a54d2eec2fbf0ed7603c90a261d33718cace7b2249b60173cdad",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "ODFL",
+      "raw_path": "documents/ODFL/2023-07-20-0000950170-23-033690-odfl-20230720.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2023-07-20",
+      "reportDate": "2023-07-20",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 2935,
+      "parsed_visible_text_sha256": "346cd849ecb0fd4f89f5fb618389eab59245b781168f07980fa1fdb8d6d47c84",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "ODFL",
+      "raw_path": "documents/ODFL/2023-06-26-0000950170-23-029863-odfl-20230622.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2023-06-26",
+      "reportDate": "2023-06-22",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 3905,
+      "parsed_visible_text_sha256": "ade2eced8105a5fdc77192983a8f9c38e98ca7cb8c885913ba1f1a7b4fe84017",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "ODFL",
+      "raw_path": "documents/ODFL/2023-06-05-0000950170-23-026441-odfl-20230605.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2023-06-05",
+      "reportDate": "2023-06-05",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 2784,
+      "parsed_visible_text_sha256": "58b1afba186231cb0dbb2cbc768a18489be1f44a5ddc7a277c6a475006b961e4",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "ODFL",
+      "raw_path": "documents/ODFL/2023-05-18-0000950170-23-022917-odfl-20230517.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2023-05-18",
+      "reportDate": "2023-05-17",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 3267,
+      "parsed_visible_text_sha256": "46932370870ca3381582a445e94308816735951d0a54745647ce45da0811f30b",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "ODFL",
+      "raw_path": "documents/ODFL/2023-05-18-0000950170-23-022911-odfl-20230228.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K/A",
+      "filingDate": "2023-05-18",
+      "reportDate": "2023-02-28",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 3394,
+      "parsed_visible_text_sha256": "897d14c4750e9b6a6da2e767335f1e5996e0c83903dfc16ddd0d0fc7d789f1eb",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "ODFL",
+      "raw_path": "documents/ODFL/2023-05-18-0000950170-23-022909-odfl-20230125.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K/A",
+      "filingDate": "2023-05-18",
+      "reportDate": "2023-01-25",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 3188,
+      "parsed_visible_text_sha256": "827b92797e28819940fb1ff7f91b5146b16925c7742bc35499bac4d290ccf48a",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "ODFL",
+      "raw_path": "documents/ODFL/2023-05-18-0000950170-23-022904-odfl-20230517.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2023-05-18",
+      "reportDate": "2023-05-17",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 5892,
+      "parsed_visible_text_sha256": "9634b0e1b6a1c80c7ac6c8689d00e45209d912c7912e26f3a19038ef1f3c45f8",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "ODFL",
+      "raw_path": "documents/ODFL/2023-05-08-0000950170-23-018765-odfl-20230331.htm",
+      "role": "no_event_window_filing",
+      "form": "10-Q",
+      "filingDate": "2023-05-08",
+      "reportDate": "2023-03-31",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 65368,
+      "parsed_visible_text_sha256": "8a04dc5eec739ddd4bb7a7a73395da9a4f2e79716602799135500db946e13ad5",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 4,
+          "first_visible_text_offsets": [
+            20890,
+            20912,
+            47275,
+            47297
+          ]
+        },
+        "covenant_compliance": {
+          "count": 1,
+          "first_visible_text_offsets": [
+            47374
+          ]
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 5,
+          "first_visible_text_offsets": [
+            9901,
+            10081,
+            10142,
+            38174,
+            39093
+          ]
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "ODFL",
+      "raw_path": "documents/ODFL/2023-04-26-0000950170-23-014592-odfl-20230426.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2023-04-26",
+      "reportDate": "2023-04-26",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 2870,
+      "parsed_visible_text_sha256": "d7f3696e177e8f2fc8d56844be7fd002f4bb176537bd73a88e80bd6d96be3a40",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "ODFL",
+      "raw_path": "documents/ODFL/2024-05-07-0000950170-24-054284-odfl-20240331.htm",
+      "role": "no_event_window_tail_quarter",
+      "form": "10-Q",
+      "filingDate": "2024-05-07",
+      "reportDate": "2024-03-31",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 64377,
+      "parsed_visible_text_sha256": "c082bab1ac69f73ef53b650fe8f1cc910ef334566692b4da6012ed2cd0297f77",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 4,
+          "first_visible_text_offsets": [
+            20284,
+            20306,
+            46362,
+            46384
+          ]
+        },
+        "covenant_compliance": {
+          "count": 1,
+          "first_visible_text_offsets": [
+            46461
+          ]
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 5,
+          "first_visible_text_offsets": [
+            9662,
+            9777,
+            9839,
+            36296,
+            37437
+          ]
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "WBA",
+      "raw_path": "documents/WBA/2024-03-28-0001193125-24-080799-d797051d8k.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2024-03-28",
+      "reportDate": "2024-03-27",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 4450,
+      "parsed_visible_text_sha256": "9a8ee0a91556a1c949f22fcd42d925ae51e2ddd4486d145ad1d5c5214c79b688",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "WBA",
+      "raw_path": "documents/WBA/2024-03-28-0001618921-24-000035-wba-20240229.htm",
+      "role": "no_event_window_filing",
+      "form": "10-Q",
+      "filingDate": "2024-03-28",
+      "reportDate": "2024-02-29",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 222939,
+      "parsed_visible_text_sha256": "50b3abfe3da43d38d0f21ddb75616a42e166ab20e38d58cc4bcb3f3544d61963",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 2,
+          "first_visible_text_offsets": [
+            55079,
+            201285
+          ]
+        },
+        "interest_paid": {
+          "count": 1,
+          "first_visible_text_offsets": [
+            55511
+          ]
+        },
+        "debt_financing": {
+          "count": 13,
+          "first_visible_text_offsets": [
+            14257,
+            14691,
+            55668,
+            55926,
+            56151,
+            197923
+          ]
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "WBA",
+      "raw_path": "documents/WBA/2024-03-28-0001193125-24-079608-d817592d8k.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2024-03-28",
+      "reportDate": "2024-03-28",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 4218,
+      "parsed_visible_text_sha256": "cfffe4a2ca9071ad5d6efc9ba127c83a37ac93bf212ec517b44a063cf5003b04",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "WBA",
+      "raw_path": "documents/WBA/2024-02-08-0001193125-24-028508-d751581d8k.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2024-02-08",
+      "reportDate": "2024-02-06",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 9782,
+      "parsed_visible_text_sha256": "8c7ead0b649d8b4d7c3ef7512d37c7cd112b488d0bc64077aeae50fc0fce6324",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "WBA",
+      "raw_path": "documents/WBA/2024-01-31-0001193125-24-021052-d701412d8k.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2024-01-31",
+      "reportDate": "2024-01-25",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 6531,
+      "parsed_visible_text_sha256": "6568395d44229580ced23cad833e419dd4a38406f09482b3248821bfbc18089d",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "WBA",
+      "raw_path": "documents/WBA/2024-01-04-0001618921-24-000004-wba-20231130.htm",
+      "role": "no_event_window_filing",
+      "form": "10-Q",
+      "filingDate": "2024-01-04",
+      "reportDate": "2023-11-30",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 181684,
+      "parsed_visible_text_sha256": "eac3a97567a5f3f408a0763c1ec1172c663d6735a9ee0ffb994f69431cf7ba40",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 2,
+          "first_visible_text_offsets": [
+            46548,
+            161554
+          ]
+        },
+        "interest_paid": {
+          "count": 1,
+          "first_visible_text_offsets": [
+            46980
+          ]
+        },
+        "debt_financing": {
+          "count": 12,
+          "first_visible_text_offsets": [
+            11549,
+            47126,
+            47384,
+            47609,
+            158352,
+            158394
+          ]
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "WBA",
+      "raw_path": "documents/WBA/2024-01-04-0001193125-24-001901-d605513d8k.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2024-01-04",
+      "reportDate": "2024-01-04",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 4202,
+      "parsed_visible_text_sha256": "03086ddf34735af85eabfa6a9310398f83fd6bf66c2c4eb54dd1435582910c2c",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "WBA",
+      "raw_path": "documents/WBA/2023-11-24-0001193125-23-282616-d545705d8k.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2023-11-24",
+      "reportDate": "2023-11-24",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 6945,
+      "parsed_visible_text_sha256": "db9471d0ea8cf2fa1b0826889aef9b500b4c4b9b17ac39d8ec972cd8de719195",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "WBA",
+      "raw_path": "documents/WBA/2023-10-30-0001193125-23-265359-d535453d8ka.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K/A",
+      "filingDate": "2023-10-30",
+      "reportDate": "2023-07-27",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 3794,
+      "parsed_visible_text_sha256": "ee57fd1fd09b9767e1426dd5005a4d6e3a94f430b81ba15fbcae1ecc47d0d914",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "WBA",
+      "raw_path": "documents/WBA/2023-10-12-0001618921-23-000062-wba-20230831.htm",
+      "role": "no_event_window_filing",
+      "form": "10-K",
+      "filingDate": "2023-10-12",
+      "reportDate": "2023-08-31",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 532892,
+      "parsed_visible_text_sha256": "ae4a5ce557cffcfbe2fea052752197bb4cdb39d59933f55704abd4e0d21c7731",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 2,
+          "first_visible_text_offsets": [
+            257616,
+            401830
+          ]
+        },
+        "interest_paid": {
+          "count": 2,
+          "first_visible_text_offsets": [
+            402132,
+            402254
+          ]
+        },
+        "debt_financing": {
+          "count": 13,
+          "first_visible_text_offsets": [
+            135263,
+            135704,
+            135763,
+            253459,
+            253498,
+            254291
+          ]
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "WBA",
+      "raw_path": "documents/WBA/2023-10-12-0001193125-23-254615-d558457d8k.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2023-10-12",
+      "reportDate": "2023-10-12",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 4235,
+      "parsed_visible_text_sha256": "d93681387490487fea3451480d5eccdb49823871966d25dd0982d5f80357b626",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "WBA",
+      "raw_path": "documents/WBA/2023-10-11-0001193125-23-253805-d559360d8k.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2023-10-11",
+      "reportDate": "2023-10-10",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 8224,
+      "parsed_visible_text_sha256": "4deb4c316245b4f111a621d28c4dc5935cdf983d1bbcc049ebf8d407e6d23189",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "WBA",
+      "raw_path": "documents/WBA/2023-09-22-0001193125-23-240570-d331934d8ka.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K/A",
+      "filingDate": "2023-09-22",
+      "reportDate": "2023-08-31",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 4328,
+      "parsed_visible_text_sha256": "e3423c81c5e1d051b6fe97605ccf98249b38079282deed3db7261daa3cd80986",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "WBA",
+      "raw_path": "documents/WBA/2023-09-01-0001193125-23-226884-d497068d8k.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2023-09-01",
+      "reportDate": "2023-08-31",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 7016,
+      "parsed_visible_text_sha256": "712ef5d7155223a97bfc359cec9c5e2ff7750a5c9c3eb031255bc9263211a841",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "WBA",
+      "raw_path": "documents/WBA/2023-08-10-0001193125-23-207773-d542330d8k.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2023-08-10",
+      "reportDate": "2023-08-09",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 8597,
+      "parsed_visible_text_sha256": "d61305a91431f4d996d12b2fadfd1cee6cd20ce88296c55dec5dcb348b1151f0",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 1,
+          "first_visible_text_offsets": [
+            5687
+          ]
+        },
+        "payment_default_or_failure": {
+          "count": 1,
+          "first_visible_text_offsets": [
+            5533
+          ]
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 3,
+          "first_visible_text_offsets": [
+            5362,
+            5453,
+            5541
+          ]
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "WBA",
+      "raw_path": "documents/WBA/2023-07-27-0001193125-23-196159-d532458d8k.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2023-07-27",
+      "reportDate": "2023-07-21",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 5924,
+      "parsed_visible_text_sha256": "3ff492e8d296b2ebe0b05705165d865a1b61f62228016f442c9a6c8ed55fb9b9",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "WBA",
+      "raw_path": "documents/WBA/2023-07-14-0001193125-23-187329-d506413d8k.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2023-07-14",
+      "reportDate": "2023-07-11",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 6980,
+      "parsed_visible_text_sha256": "c666703aeee3c8ebcbc2002ea3f6fb9687918e3f7c5e39a3002bc63389fefd7f",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "WBA",
+      "raw_path": "documents/WBA/2023-06-27-0001618921-23-000043-wba-20230531.htm",
+      "role": "no_event_window_filing",
+      "form": "10-Q",
+      "filingDate": "2023-06-27",
+      "reportDate": "2023-05-31",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 228792,
+      "parsed_visible_text_sha256": "e1673af0c1dffad597ff1f289106b59cb104475aeb052e7373b2bccf4887bc4b",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 2,
+          "first_visible_text_offsets": [
+            66730,
+            210123
+          ]
+        },
+        "interest_paid": {
+          "count": 1,
+          "first_visible_text_offsets": [
+            67127
+          ]
+        },
+        "debt_financing": {
+          "count": 7,
+          "first_visible_text_offsets": [
+            14623,
+            206483,
+            206525,
+            206635,
+            210173,
+            210213
+          ]
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "WBA",
+      "raw_path": "documents/WBA/2023-06-27-0001193125-23-175558-d504570d8k.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2023-06-27",
+      "reportDate": "2023-06-27",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 4198,
+      "parsed_visible_text_sha256": "d43014cdbe6478bc5c1e3beb456e951a70f0f83666525d6dcce0f2d353e795fc",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "WBA",
+      "raw_path": "documents/WBA/2023-05-26-0001193125-23-155537-d468351d8k.htm",
+      "role": "no_event_window_filing",
+      "form": "8-K",
+      "filingDate": "2023-05-26",
+      "reportDate": "2023-05-26",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 3606,
+      "parsed_visible_text_sha256": "4c7aab036a4b557f0a695b02cee97538d0c01184dd330a7e037c603c16fe95fd",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "WBA",
+      "raw_path": "documents/WBA/2024-06-27-0001618921-24-000065-wba-20240531.htm",
+      "role": "no_event_window_tail_quarter",
+      "form": "10-Q",
+      "filingDate": "2024-06-27",
+      "reportDate": "2024-05-31",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 226782,
+      "parsed_visible_text_sha256": "e802af5b8e688051c85d21b35338865231327fd95110c4d830397ca514f6edef",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "bankruptcy_or_receivership": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 2,
+          "first_visible_text_offsets": [
+            56519,
+            204240
+          ]
+        },
+        "interest_paid": {
+          "count": 1,
+          "first_visible_text_offsets": [
+            56834
+          ]
+        },
+        "debt_financing": {
+          "count": 13,
+          "first_visible_text_offsets": [
+            14067,
+            14505,
+            56982,
+            57240,
+            57465,
+            200574
+          ]
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "BBBY",
+      "raw_path": "documents/BBBY/2023-04-24-0001193125-23-111754-d465247d8k.htm",
+      "role": "verified_event_original_8k",
+      "form": "8-K",
+      "filingDate": "2023-04-24",
+      "reportDate": "2023-04-23",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 19913,
+      "parsed_visible_text_sha256": "cd576360e91250e2bac173b3d72fb9ea3f06a29e27b2f9926dd5cb467e766b9e",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 30,
+          "first_visible_text_offsets": [
+            2438,
+            2463,
+            2729,
+            2853,
+            6085,
+            6172
+          ]
+        },
+        "bankruptcy_or_receivership": {
+          "count": 29,
+          "first_visible_text_offsets": [
+            2170,
+            2184,
+            2221,
+            2486,
+            2508,
+            2538
+          ]
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 2,
+          "first_visible_text_offsets": [
+            7535,
+            7602
+          ]
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "BBBY",
+      "raw_path": "documents/BBBY/2023-04-24-0001193125-23-111754-d465247dex991.htm",
+      "role": "verified_event_press_release",
+      "form": "EX-99.1",
+      "filingDate": "2023-04-24",
+      "reportDate": "2023-04-23",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 7867,
+      "parsed_visible_text_sha256": "784df35f351a300e438bbe7fd66b1f304b5f7e77b823f5d988e680ca790c4eec",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": false,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 16,
+          "first_visible_text_offsets": [
+            96,
+            311,
+            527,
+            568,
+            1141,
+            2873
+          ]
+        },
+        "bankruptcy_or_receivership": {
+          "count": 4,
+          "first_visible_text_offsets": [
+            550,
+            602,
+            3135,
+            5280
+          ]
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "RAD",
+      "raw_path": "documents/RAD/2023-10-16-0001104659-23-109236-tm2328505d1_8k.htm",
+      "role": "verified_event_original_8k",
+      "form": "8-K",
+      "filingDate": "2023-10-16",
+      "reportDate": "2023-10-15",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 40015,
+      "parsed_visible_text_sha256": "ba6581d0d0a326396ef3346918461e9807efed93eac8f292c59060758fcefdfd",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 41,
+          "first_visible_text_offsets": [
+            2675,
+            2692,
+            2904,
+            4022,
+            4514,
+            5049
+          ]
+        },
+        "bankruptcy_or_receivership": {
+          "count": 43,
+          "first_visible_text_offsets": [
+            2367,
+            2381,
+            2419,
+            2755,
+            2794,
+            2848
+          ]
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 5,
+          "first_visible_text_offsets": [
+            17169,
+            17269,
+            21025,
+            21125,
+            26094
+          ]
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "RAD",
+      "raw_path": "documents/RAD/2023-10-16-0001104659-23-109413-tm2328535d1_8ka.htm",
+      "role": "verified_event_amended_8k",
+      "form": "8-K/A",
+      "filingDate": "2023-10-16",
+      "reportDate": "2023-10-15",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 40907,
+      "parsed_visible_text_sha256": "591742898bf7ddbaffb6f7499526afa69be3e116f2287961d20aae9163d17574",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 41,
+          "first_visible_text_offsets": [
+            3234,
+            3251,
+            3463,
+            4581,
+            5073,
+            5608
+          ]
+        },
+        "bankruptcy_or_receivership": {
+          "count": 43,
+          "first_visible_text_offsets": [
+            2926,
+            2940,
+            2978,
+            3314,
+            3353,
+            3407
+          ]
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 5,
+          "first_visible_text_offsets": [
+            17728,
+            17828,
+            21584,
+            21684,
+            26653
+          ]
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "WE",
+      "raw_path": "documents/WE/2023-11-07-0001193125-23-271902-d522028d8k.htm",
+      "role": "verified_event_original_8k",
+      "form": "8-K",
+      "filingDate": "2023-11-07",
+      "reportDate": "2023-11-06",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 23950,
+      "parsed_visible_text_sha256": "2ed4271538a2c33e29d7c3d89a692af2e8430597261535848fa7b676a835a22b",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 38,
+          "first_visible_text_offsets": [
+            3009,
+            3026,
+            3238,
+            4464,
+            4921,
+            6517
+          ]
+        },
+        "bankruptcy_or_receivership": {
+          "count": 24,
+          "first_visible_text_offsets": [
+            2712,
+            2726,
+            2764,
+            3089,
+            3128,
+            3182
+          ]
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 1,
+          "first_visible_text_offsets": [
+            10886
+          ]
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    },
+    {
+      "entity_id": "YELL",
+      "raw_path": "documents/YELL/2023-08-07-0001193125-23-204370-d483482d8k.htm",
+      "role": "verified_event_original_8k",
+      "form": "8-K",
+      "filingDate": "2023-08-07",
+      "reportDate": "2023-08-06",
+      "raw_sha256_matches": true,
+      "parsed_visible_text_chars": 15053,
+      "parsed_visible_text_sha256": "af42f58b562dbc11c4f552caf11802f8c0e7fd659a588432fb6b81a8cced5742",
+      "ticker_token_in_first_10000_visible_chars": true,
+      "cik_token_in_raw": true,
+      "keyword_checks": {
+        "chapter_11_or_7": {
+          "count": 25,
+          "first_visible_text_offsets": [
+            2262,
+            2287,
+            2551,
+            3027,
+            3996,
+            5577
+          ]
+        },
+        "bankruptcy_or_receivership": {
+          "count": 16,
+          "first_visible_text_offsets": [
+            2001,
+            2015,
+            2052,
+            2310,
+            2332,
+            2362
+          ]
+        },
+        "payment_default_or_failure": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "distressed_exchange_literal": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "default_generic": {
+          "count": 1,
+          "first_visible_text_offsets": [
+            4037
+          ]
+        },
+        "covenant_compliance": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "interest_paid": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        },
+        "debt_financing": {
+          "count": 0,
+          "first_visible_text_offsets": []
+        }
+      },
+      "semantic_warning": "关键词只产生可复核定位，不能自行判定真实事件；default 可能指合同假设、客户或供应商。"
+    }
+  ],
+  "keyword_patterns": {
+    "chapter_11_or_7": "chapter\\s+(?:11|7)\\b",
+    "bankruptcy_or_receivership": "\\b(?:bankrupt(?:cy)?|receivership)\\b",
+    "payment_default_or_failure": "\\b(?:payment\\s+defaults?|failed\\s+to\\s+pay|failure\\s+to\\s+pay|missed\\s+(?:interest|principal|payment))\\b",
+    "distressed_exchange_literal": "\\bdistressed\\s+(?:debt\\s+)?exchange\\b",
+    "default_generic": "\\b(?:defaults?|defaulted|defaulting)\\b",
+    "covenant_compliance": "\\bin\\s+compliance\\s+with\\s+all\\b",
+    "interest_paid": "\\b(?:interest\\s+paid|paid\\s+interest|cash\\s+paid\\s+for\\s+interest)\\b",
+    "debt_financing": "\\b(?:debt\\s+financing\\s+activities|financing\\s+activities|credit\\s+ratings?)\\b"
+  }
+}

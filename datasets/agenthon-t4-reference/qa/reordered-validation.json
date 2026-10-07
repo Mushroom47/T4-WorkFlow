@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "task_id": "t4-fomc-curve-20220728",
+  "entity_count": 6,
+  "task_canonical_sha256": "5a1d9a4ec484edcf471aa440953ac2ad4e8d5b2e62e9d418d6c8ae7d67ec6eb3",
+  "validation_scope": "冻结官方 JSON Schema 结构与本地引用语义检查",
+  "faithfulness": "not_evaluated",
+  "reasoning": "not_evaluated",
+  "reason_policy_scope": "仅检查引用、结构、已知拒绝短语及原文预算；不复刻官方 URI 遮蔽与理由评审",
+  "reason_warnings": [],
+  "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+}

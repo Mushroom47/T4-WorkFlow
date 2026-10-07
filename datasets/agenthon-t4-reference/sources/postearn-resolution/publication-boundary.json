@@ -1,0 +1,243 @@
+{
+  "generated_at": "2026-10-07T13:10:22.338891+00:00",
+  "public_candidates": [
+    "README.md",
+    "verify.py",
+    "normalized-evidence.json",
+    "verification-originals.json",
+    "verification-derived.json",
+    "evidence-manifest.json",
+    "publication-boundary.json",
+    "amazon-primary-facts.json",
+    "amazon-10k-primary-facts.json",
+    "yahoo-field-semantics.json"
+  ],
+  "new_upstream_original_files": [],
+  "original_permission_policy": "未确认许可的上游网页/行情JSON/XLSX不在本目录复制，不因本仓库license而重新授权。",
+  "upstream_permission_assessments": [
+    {
+      "path": "sources/earnings-credit/yahoo-AAPL-20240201-20240202.raw.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/earnings-credit/yahoo-AAPL-20240201-20240202.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/earnings-credit/yahoo-AMZN-20240201-20240202.raw.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/earnings-credit/yahoo-AMZN-20240201-20240202.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/earnings-credit/yahoo-META-20240201-20240202.raw.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/META?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/earnings-credit/yahoo-META-20240201-20240202.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/META?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/earnings-credit/yahoo-SPY-20240201-20240202.raw.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/earnings-credit/yahoo-SPY-20240201-20240202.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/postearn-supplement/apple-nasdaq-dividend.json",
+      "url": "https://api.nasdaq.com/api/quote/AAPL/dividends?assetclass=stocks",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/postearn-supplement/meta-nasdaq-dividend.json",
+      "url": "https://api.nasdaq.com/api/quote/META/dividends?assetclass=stocks",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/postearn-supplement/spy-ssga-distributions.xlsx",
+      "url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/spdr-etf-historical-distributions.xlsx",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/postearn-supplement/apple-dividend-page.html",
+      "url": "https://investor.apple.com/dividend-history/default.aspx",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/postearn-supplement/apple-ir-history.json",
+      "url": "https://investor.apple.com/feed/StockQuote.svc/GetStockQuoteHistoricalList?exchange=NASD&symbol=AAPL&pageSize=10&startDate=Feb-01-2024&endDate=Feb-02-2024",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/postearn-supplement/amazon-ir-feed.json",
+      "url": "https://ir.aboutamazon.com/feed/StockQuote.svc/GetStockQuoteHistoricalList?exchange=NASD&symbol=AMZN&pageSize=10&startDate=Feb-01-2024&endDate=Feb-02-2024",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/postearn-supplement/meta-ir-history.json",
+      "url": "https://investor.atmeta.com/feed/StockQuote.svc/GetStockQuoteHistoricalList?exchange=NASD&symbol=META&pageSize=10&startDate=Feb-01-2024&endDate=Feb-02-2024",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "sources/postearn-supplement/spy-tickertech-proxy.json",
+      "url": "https://investor.apple.com/feed/StockQuote.svc/GetStockQuoteHistoricalList?exchange=AMEX&symbol=SPY&pageSize=10&startDate=Feb-01-2024&endDate=Feb-02-2024",
+      "redistribution_permission": "unconfirmed",
+      "publish_original": false
+    },
+    {
+      "path": "inputs/units/t4-postearn-20240201-megacap/card.toml",
+      "url": "https://github.com/Agenthon-2026/track4-analysis-public/tree/1c744e1d6725340643a533f436517d72b53ca0e1",
+      "redistribution_permission": "CC-BY-4.0 per card; retain attribution",
+      "publish_original": true
+    },
+    {
+      "path": "inputs/units/t4-postearn-20240201-megacap/task.json",
+      "url": "https://github.com/Agenthon-2026/track4-analysis-public/tree/1c744e1d6725340643a533f436517d72b53ca0e1",
+      "redistribution_permission": "CC-BY-4.0 per card; retain attribution",
+      "publish_original": true
+    }
+  ],
+  "derived_content_scope": "原创中文说明和代码、8个目标收盘事实及同源调整值、少量公司行动事实与来源URL/hash；没有完整上游历史表、网页、图片、品牌标识、供应商代码或密钥。",
+  "legal_clearance_claimed": false,
+  "public_source_policy": {
+    "upstream_originals": [
+      {
+        "path": "sources/earnings-credit/yahoo-AAPL-20240201-20240202.raw.json",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+        "redistribution_permission": "unconfirmed",
+        "publish_original": false
+      },
+      {
+        "path": "sources/earnings-credit/yahoo-AAPL-20240201-20240202.json",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+        "redistribution_permission": "unconfirmed",
+        "publish_original": false
+      },
+      {
+        "path": "sources/earnings-credit/yahoo-AMZN-20240201-20240202.raw.json",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+        "redistribution_permission": "unconfirmed",
+        "publish_original": false
+      },
+      {
+        "path": "sources/earnings-credit/yahoo-AMZN-20240201-20240202.json",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+        "redistribution_permission": "unconfirmed",
+        "publish_original": false
+      },
+      {
+        "path": "sources/earnings-credit/yahoo-META-20240201-20240202.raw.json",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/META?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+        "redistribution_permission": "unconfirmed",
+        "publish_original": false
+      },
+      {
+        "path": "sources/earnings-credit/yahoo-META-20240201-20240202.json",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/META?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+        "redistribution_permission": "unconfirmed",
+        "publish_original": false
+      },
+      {
+        "path": "sources/earnings-credit/yahoo-SPY-20240201-20240202.raw.json",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+        "redistribution_permission": "unconfirmed",
+        "publish_original": false
+      },
+      {
+        "path": "sources/earnings-credit/yahoo-SPY-20240201-20240202.json",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+        "redistribution_permission": "unconfirmed",
+        "publish_original": false
+      },
+      {
+        "path": "sources/postearn-supplement/apple-nasdaq-dividend.json",
+        "url": "https://api.nasdaq.com/api/quote/AAPL/dividends?assetclass=stocks",
+        "redistribution_permission": "unconfirmed",
+        "publish_original": false
+      },
+      {
+        "path": "sources/postearn-supplement/meta-nasdaq-dividend.json",
+        "url": "https://api.nasdaq.com/api/quote/META/dividends?assetclass=stocks",
+        "redistribution_permission": "unconfirmed",
+        "publish_original": false
+      },
+      {
+        "path": "sources/postearn-supplement/spy-ssga-distributions.xlsx",
+        "url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/spdr-etf-historical-distributions.xlsx",
+        "redistribution_permission": "unconfirmed",
+        "publish_original": false
+      },
+      {
+        "path": "sources/postearn-supplement/apple-dividend-page.html",
+        "url": "https://investor.apple.com/dividend-history/default.aspx",
+        "redistribution_permission": "unconfirmed",
+        "publish_original": false
+      },
+      {
+        "path": "sources/postearn-supplement/apple-ir-history.json",
+        "url": "https://investor.apple.com/feed/StockQuote.svc/GetStockQuoteHistoricalList?exchange=NASD&symbol=AAPL&pageSize=10&startDate=Feb-01-2024&endDate=Feb-02-2024",
+        "redistribution_permission": "unconfirmed",
+        "publish_original": false
+      },
+      {
+        "path": "sources/postearn-supplement/amazon-ir-feed.json",
+        "url": "https://ir.aboutamazon.com/feed/StockQuote.svc/GetStockQuoteHistoricalList?exchange=NASD&symbol=AMZN&pageSize=10&startDate=Feb-01-2024&endDate=Feb-02-2024",
+        "redistribution_permission": "unconfirmed",
+        "publish_original": false
+      },
+      {
+        "path": "sources/postearn-supplement/meta-ir-history.json",
+        "url": "https://investor.atmeta.com/feed/StockQuote.svc/GetStockQuoteHistoricalList?exchange=NASD&symbol=META&pageSize=10&startDate=Feb-01-2024&endDate=Feb-02-2024",
+        "redistribution_permission": "unconfirmed",
+        "publish_original": false
+      },
+      {
+        "path": "sources/postearn-supplement/spy-tickertech-proxy.json",
+        "url": "https://investor.apple.com/feed/StockQuote.svc/GetStockQuoteHistoricalList?exchange=AMEX&symbol=SPY&pageSize=10&startDate=Feb-01-2024&endDate=Feb-02-2024",
+        "redistribution_permission": "unconfirmed",
+        "publish_original": false
+      },
+      {
+        "path": "inputs/units/t4-postearn-20240201-megacap/card.toml",
+        "url": "https://github.com/Agenthon-2026/track4-analysis-public/tree/1c744e1d6725340643a533f436517d72b53ca0e1",
+        "redistribution_permission": "CC-BY-4.0 per card; retain attribution",
+        "publish_original": true
+      },
+      {
+        "path": "inputs/units/t4-postearn-20240201-megacap/task.json",
+        "url": "https://github.com/Agenthon-2026/track4-analysis-public/tree/1c744e1d6725340643a533f436517d72b53ca0e1",
+        "redistribution_permission": "CC-BY-4.0 per card; retain attribution",
+        "publish_original": true
+      }
+    ],
+    "generated_artifacts": "本目录原创脚本、中文报告、事实释义及小型派生数值可交由主代理纳入公开候选；没有把完整上游内容重新许可。",
+    "unknown_license_action": "默认排除上游原件；仅保存来源URL、hash、bytes、定位和有限事实；不依据公开访问推断开放许可。"
+  }
+}

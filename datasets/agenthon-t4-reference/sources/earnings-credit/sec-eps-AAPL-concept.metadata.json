@@ -1,0 +1,12 @@
+{
+  "entity_id": "AAPL",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/EarningsPerShareDiluted.json",
+  "source_sha256": "d58cd0fce2baed8be20b7b6587917b03bb46c08fc0b527d53a4867cab9317acf",
+  "retrieved_at": "2026-10-07T08:14:19.836532+00:00",
+  "bytes": 48741,
+  "raw_path": "sec-eps-AAPL-concept.raw.json",
+  "tag": "EarningsPerShareDiluted",
+  "taxonomy": "us-gaap",
+  "unit": "USD/shares",
+  "observation_count": 338
+}

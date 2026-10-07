@@ -1,0 +1,1245 @@
+{
+  "schema_version": "0.1.0",
+  "group": "credit-resolution",
+  "created_at": "2026-10-07T13:32:13.013291+00:00",
+  "records": [
+    {
+      "task_id": "t4-credit-event-2023",
+      "entity_id": "BBY",
+      "reference_label": "no_event",
+      "reference_value": null,
+      "unit": "label",
+      "status": "verified",
+      "quality": {
+        "fact_status": "bounded_verified",
+        "official_alignment": "unknown",
+        "finite_public_acceptance_passed": true,
+        "failed_body_checks": []
+      },
+      "acceptance_scope": {
+        "window_start_inclusive": "2023-04-01",
+        "window_end_inclusive": "2024-03-31",
+        "task_cik": "0000764478",
+        "entity": "题面历史母公司，以及母公司担保债务的发行/借款法律主体",
+        "bankruptcy_definition": "Chapter11/Chapter7申请；按实际petition/SEC报告日期区分，未以普通诉讼/债权人身份当作破产",
+        "payment_definition": "违约合同到期日与约定grace结束/认定日分别核查；无实际付款违约候选。资料支持公开披露债務核查，不保证一切未披露短时迟付。",
+        "distressed_exchange_definition": "必须有评级机构distressed exchange认定或明确事件材料；正常现金清偿、普通降级与窗口外交易均不计",
+        "sec_window_primary_count": 15,
+        "post_window_tail_count": 1,
+        "rating_registers": [
+          {
+            "source_id": "sp2023",
+            "coverage": "2023全年S&P公开评级违约Table8",
+            "pages": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31
+            ]
+          },
+          {
+            "source_id": "sp2024",
+            "coverage": "2024全年Table8用于筛查2024Q1；无本issuer匹配",
+            "pages": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30
+            ]
+          }
+        ],
+        "court_check_status": "incomplete_access_403_not_zero_results",
+        "broader_all_subsidiary_scope_verified": false,
+        "official_private_outcome_verified": false,
+        "limitations": [
+          "court_national_index_not_queried",
+          "rating_nonpublic_unrated",
+          "minor_or_undisclosed_payment",
+          "subsidiary_definition",
+          "official_private_outcome",
+          "first_publication_snapshot"
+        ]
+      },
+      "method": "全窗SEC申报名册/原文+窗口后首个季度报告覆盖尾段，逐项核对存续债务、实际本金/利息支付和合同违约条件；S&P年度公开违约名册按issuer名称交叉核查；所有已发现候选经原文排除，在明示有限公开范围内接受no_event。",
+      "facts": [
+        {
+          "name": "存续票据本金",
+          "value": "500和650百万USD；到期2028/2030",
+          "source_id": "supplement:documents/BBY/2024-06-07-0000764478-24-000022-bby-20240504x10q.htm",
+          "locator": "Note6Debt"
+        },
+        {
+          "name": "FY2024实际付息",
+          "value": 51,
+          "source_id": "supplement:documents/BBY/2024-03-15-0000764478-24-000010-bby-20240203x10k.htm",
+          "locator": "现金流附表，单位USD百万"
+        },
+        {
+          "name": "期末评级",
+          "value": "2024-03-13BBB+/A3均Stable",
+          "source_id": "supplement:documents/BBY/2024-03-15-0000764478-24-000010-bby-20240203x10k.htm",
+          "locator": "DebtAndCapital"
+        }
+      ],
+      "event_candidates": [
+        {
+          "candidate": "2023-04-12新五年循环授信替换旧设施",
+          "disposition": "普通融资；年度与尾部报告未借款、票据本金原条件不变，全窗SEC无付款违约/破产实情，S&P公開违约名单无匹配",
+          "source_ids": [
+            "BBY-bby-20230412xex10_1.htm",
+            "supplement:documents/BBY/2024-03-15-0000764478-24-000010-bby-20240203x10k.htm",
+            "supplement:documents/BBY/2024-06-07-0000764478-24-000022-bby-20240504x10q.htm"
+          ]
+        },
+        {
+          "candidate": "合同payment/default/bankruptcy条款",
+          "disposition": "条件条款；未表述实际违约；本金与利息grace日期分开",
+          "source_ids": [
+            "BBY-bby-20230412xex10_1.htm",
+            "BBY-2011-indenture"
+          ]
+        }
+      ],
+      "checks": [
+        "bby-notes",
+        "bby-paid-interest",
+        "bby-rating",
+        "bby-borrowing",
+        "bby-contract",
+        "bby-note-grace",
+        "bby-whole-window-sec-roster",
+        "sp2023-table8-scope",
+        "sp2024-table8-scope"
+      ],
+      "remaining_gaps": [
+        "court_national_index_not_queried",
+        "rating_nonpublic_unrated",
+        "minor_or_undisclosed_payment",
+        "subsidiary_definition",
+        "official_private_outcome",
+        "first_publication_snapshot"
+      ],
+      "notes": [
+        "verified是本研究集有限公开核查状态，quality.fact_status=bounded_verified；不是官方outcome认证。",
+        "credit的reference_value保持null；no_event不是实际概率0。"
+      ]
+    },
+    {
+      "task_id": "t4-credit-event-2023",
+      "entity_id": "M",
+      "reference_label": "no_event",
+      "reference_value": null,
+      "unit": "label",
+      "status": "verified",
+      "quality": {
+        "fact_status": "bounded_verified",
+        "official_alignment": "unknown",
+        "finite_public_acceptance_passed": true,
+        "failed_body_checks": []
+      },
+      "acceptance_scope": {
+        "window_start_inclusive": "2023-04-01",
+        "window_end_inclusive": "2024-03-31",
+        "task_cik": "0000794367",
+        "entity": "题面历史母公司，以及母公司担保债务的发行/借款法律主体",
+        "bankruptcy_definition": "Chapter11/Chapter7申请；按实际petition/SEC报告日期区分，未以普通诉讼/债权人身份当作破产",
+        "payment_definition": "违约合同到期日与约定grace结束/认定日分别核查；无实际付款违约候选。资料支持公开披露债務核查，不保证一切未披露短时迟付。",
+        "distressed_exchange_definition": "必须有评级机构distressed exchange认定或明确事件材料；正常现金清偿、普通降级与窗口外交易均不计",
+        "sec_window_primary_count": 14,
+        "post_window_tail_count": 1,
+        "rating_registers": [
+          {
+            "source_id": "sp2023",
+            "coverage": "2023全年S&P公开评级违约Table8",
+            "pages": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31
+            ]
+          },
+          {
+            "source_id": "sp2024",
+            "coverage": "2024全年Table8用于筛查2024Q1；无本issuer匹配",
+            "pages": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30
+            ]
+          }
+        ],
+        "court_check_status": "incomplete_access_403_not_zero_results",
+        "broader_all_subsidiary_scope_verified": false,
+        "official_private_outcome_verified": false,
+        "limitations": [
+          "court_national_index_not_queried",
+          "rating_nonpublic_unrated",
+          "minor_or_undisclosed_payment",
+          "subsidiary_definition",
+          "official_private_outcome",
+          "first_publication_snapshot"
+        ]
+      },
+      "method": "全窗SEC申报名册/原文+窗口后首个季度报告覆盖尾段，逐项核对存续债务、实际本金/利息支付和合同违约条件；S&P年度公开违约名册按issuer名称交叉核查；所有已发现候选经原文排除，在明示有限公开范围内接受no_event。",
+      "facts": [
+        {
+          "name": "母公司/债务发行主体CIK",
+          "value": "794367/1026179",
+          "source_id": "M-subsidiary-submissions",
+          "locator": "SEC注册实体"
+        },
+        {
+          "name": "票据本金",
+          "value": 3007,
+          "source_id": "supplement:documents/M/2024-03-22-0001628280-24-012734-m-20240203.htm",
+          "locator": "Note6Financing，单位USD百万"
+        },
+        {
+          "name": "FY2023实际付息",
+          "value": 157,
+          "source_id": "supplement:documents/M/2024-03-22-0001628280-24-012734-m-20240203.htm",
+          "locator": "现金流附表，USD百万"
+        },
+        {
+          "name": "FY2023融资交易",
+          "value": "除ABL无其他重大债务融资",
+          "source_id": "supplement:documents/M/2024-03-22-0001628280-24-012734-m-20240203.htm",
+          "locator": "2023DebtFinancingActivities"
+        }
+      ],
+      "event_candidates": [
+        {
+          "candidate": "2022-03-08tender与新票据融资",
+          "disposition": "发生窗口外，不进入12个月label；2023无其他重大融资、尾部票据本金不变",
+          "source_ids": [
+            "supplement:documents/M/2024-03-22-0001628280-24-012734-m-20240203.htm",
+            "supplement:documents/M/2024-05-30-0001628280-24-025853-m-20240504.htm"
+          ]
+        },
+        {
+          "candidate": "2020MRH法律形式/州别转换与现行exchanged debentures名称",
+          "disposition": "法律继承/既有证券名称；不是2023窗口新交换，两个CIK是母子公司，不是ticker新旧母公司",
+          "source_ids": [
+            "supplement:documents/M/2024-03-22-0001628280-24-012734-m-20240203.htm",
+            "M-subsidiary-submissions",
+            "M-2022-joint-issuer-registration"
+          ]
+        },
+        {
+          "candidate": "S&P 2024研究p34历史AAA公司Macy’s违约提及",
+          "disposition": "1981–2024全部历史统计的例子，Table8是当年度事件名单，两者不能混同；未据历史段落赋2024信用事件",
+          "source_ids": [
+            "sp2024"
+          ]
+        },
+        {
+          "candidate": "风险段落银行receivership、消费者card迟付、期初银行信贷修订3/22/2023",
+          "disposition": "其他主体/假设或窗口外；未作为M自身破产/支付违约",
+          "source_ids": [
+            "supplement:documents/M/2024-03-22-0001628280-24-012734-m-20240203.htm"
+          ]
+        }
+      ],
+      "checks": [
+        "m-issuer-guarantee",
+        "m-transactions",
+        "m-paid-interest",
+        "m-tail-transactions",
+        "m-abl-grace",
+        "m-conversion",
+        "m-tail-notional",
+        "m-whole-window-sec-roster",
+        "m-parent-subsidiary-cik",
+        "sp2023-table8-scope",
+        "sp2024-table8-scope"
+      ],
+      "remaining_gaps": [
+        "court_national_index_not_queried",
+        "rating_nonpublic_unrated",
+        "minor_or_undisclosed_payment",
+        "subsidiary_definition",
+        "official_private_outcome",
+        "first_publication_snapshot"
+      ],
+      "notes": [
+        "verified是本研究集有限公开核查状态，quality.fact_status=bounded_verified；不是官方outcome认证。",
+        "credit的reference_value保持null；no_event不是实际概率0。"
+      ]
+    },
+    {
+      "task_id": "t4-credit-event-2023",
+      "entity_id": "ODFL",
+      "reference_label": "no_event",
+      "reference_value": null,
+      "unit": "label",
+      "status": "verified",
+      "quality": {
+        "fact_status": "bounded_verified",
+        "official_alignment": "unknown",
+        "finite_public_acceptance_passed": true,
+        "failed_body_checks": []
+      },
+      "acceptance_scope": {
+        "window_start_inclusive": "2023-04-01",
+        "window_end_inclusive": "2024-03-31",
+        "task_cik": "0000878927",
+        "entity": "题面历史母公司，以及母公司担保债务的发行/借款法律主体",
+        "bankruptcy_definition": "Chapter11/Chapter7申请；按实际petition/SEC报告日期区分，未以普通诉讼/债权人身份当作破产",
+        "payment_definition": "违约合同到期日与约定grace结束/认定日分别核查；无实际付款违约候选。资料支持公开披露债務核查，不保证一切未披露短时迟付。",
+        "distressed_exchange_definition": "必须有评级机构distressed exchange认定或明确事件材料；正常现金清偿、普通降级与窗口外交易均不计",
+        "sec_window_primary_count": 21,
+        "post_window_tail_count": 1,
+        "rating_registers": [
+          {
+            "source_id": "sp2023",
+            "coverage": "2023全年S&P公开评级违约Table8",
+            "pages": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31
+            ]
+          },
+          {
+            "source_id": "sp2024",
+            "coverage": "2024全年Table8用于筛查2024Q1；无本issuer匹配",
+            "pages": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30
+            ]
+          }
+        ],
+        "court_check_status": "incomplete_access_403_not_zero_results",
+        "broader_all_subsidiary_scope_verified": false,
+        "official_private_outcome_verified": false,
+        "limitations": [
+          "court_national_index_not_queried",
+          "rating_nonpublic_unrated",
+          "minor_or_undisclosed_payment",
+          "subsidiary_definition",
+          "official_private_outcome",
+          "first_publication_snapshot"
+        ]
+      },
+      "method": "全窗SEC申报名册/原文+窗口后首个季度报告覆盖尾段，逐项核对存续债务、实际本金/利息支付和合同违约条件；S&P年度公开违约名册按issuer名称交叉核查；所有已发现候选经原文排除，在明示有限公开范围内接受no_event。",
+      "facts": [
+        {
+          "name": "本金实付日期/金额",
+          "value": "2023-05-04支付20百万USD",
+          "source_id": "supplement:documents/ODFL/2024-02-26-0000950170-24-020176-odfl-20231231.htm",
+          "locator": "Note2LongTermDebt"
+        },
+        {
+          "name": "剩余本金",
+          "value": 80,
+          "source_id": "supplement:documents/ODFL/2024-05-07-0000950170-24-054284-odfl-20240331.htm",
+          "locator": "Note2，USD百万"
+        },
+        {
+          "name": "窗口终点合规日期",
+          "value": "2024-03-31",
+          "source_id": "supplement:documents/ODFL/2024-05-07-0000950170-24-054284-odfl-20240331.htm",
+          "locator": "GeneralDebtProvisions"
+        },
+        {
+          "name": "2023付息",
+          "value": 3.484,
+          "source_id": "supplement:documents/ODFL/2024-02-26-0000950170-24-020176-odfl-20231231.htm",
+          "locator": "现金流附表3484千USD转为百万"
+        }
+      ],
+      "event_candidates": [
+        {
+          "candidate": "2023-03-22Note/CreditAgreement修订",
+          "disposition": "窗口外；票据仍3.1%，5/4/2023按约实付首期2000万本金，期末余额8000万",
+          "source_ids": [
+            "ODFL-2023-note-amendment",
+            "ODFL-2023-credit-agreement",
+            "supplement:documents/ODFL/2024-02-26-0000950170-24-020176-odfl-20231231.htm"
+          ]
+        },
+        {
+          "candidate": "财报提及客户bankruptcy",
+          "disposition": "客户风险，不能把客户债务人事件归给ODFL；全部窗口8-K/8-K/A原文与债务Note未表述本issuer申请Chapter7/11",
+          "source_ids": [
+            "supplement:documents/ODFL/2024-02-26-0000950170-24-020176-odfl-20231231.htm",
+            "supplement:documents/ODFL/2024-05-07-0000950170-24-054284-odfl-20240331.htm"
+          ]
+        }
+      ],
+      "checks": [
+        "odfl-principal-payment",
+        "odfl-covenant-end",
+        "odfl-paid-interest",
+        "odfl-note-grace",
+        "odfl-whole-window-sec-roster",
+        "sp2023-table8-scope",
+        "sp2024-table8-scope"
+      ],
+      "remaining_gaps": [
+        "court_national_index_not_queried",
+        "rating_nonpublic_unrated",
+        "minor_or_undisclosed_payment",
+        "subsidiary_definition",
+        "official_private_outcome",
+        "first_publication_snapshot"
+      ],
+      "notes": [
+        "verified是本研究集有限公开核查状态，quality.fact_status=bounded_verified；不是官方outcome认证。",
+        "credit的reference_value保持null；no_event不是实际概率0。"
+      ]
+    },
+    {
+      "task_id": "t4-credit-event-2023",
+      "entity_id": "WBA",
+      "reference_label": "no_event",
+      "reference_value": null,
+      "unit": "label",
+      "status": "verified",
+      "quality": {
+        "fact_status": "bounded_verified",
+        "official_alignment": "unknown",
+        "finite_public_acceptance_passed": true,
+        "failed_body_checks": []
+      },
+      "acceptance_scope": {
+        "window_start_inclusive": "2023-04-01",
+        "window_end_inclusive": "2024-03-31",
+        "task_cik": "0001618921",
+        "entity": "题面历史母公司，以及母公司担保债务的发行/借款法律主体",
+        "bankruptcy_definition": "Chapter11/Chapter7申请；按实际petition/SEC报告日期区分，未以普通诉讼/债权人身份当作破产",
+        "payment_definition": "违约合同到期日与约定grace结束/认定日分别核查；无实际付款违约候选。资料支持公开披露债務核查，不保证一切未披露短时迟付。",
+        "distressed_exchange_definition": "必须有评级机构distressed exchange认定或明确事件材料；正常现金清偿、普通降级与窗口外交易均不计",
+        "sec_window_primary_count": 20,
+        "post_window_tail_count": 1,
+        "rating_registers": [
+          {
+            "source_id": "sp2023",
+            "coverage": "2023全年S&P公开评级违约Table8",
+            "pages": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31
+            ]
+          },
+          {
+            "source_id": "sp2024",
+            "coverage": "2024全年Table8用于筛查2024Q1；无本issuer匹配",
+            "pages": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30
+            ]
+          }
+        ],
+        "court_check_status": "incomplete_access_403_not_zero_results",
+        "broader_all_subsidiary_scope_verified": false,
+        "official_private_outcome_verified": false,
+        "limitations": [
+          "court_national_index_not_queried",
+          "rating_nonpublic_unrated",
+          "minor_or_undisclosed_payment",
+          "subsidiary_definition",
+          "official_private_outcome",
+          "first_publication_snapshot"
+        ]
+      },
+      "method": "全窗SEC申报名册/原文+窗口后首个季度报告覆盖尾段，逐项核对存续债务、实际本金/利息支付和合同违约条件；S&P年度公开违约名册按issuer名称交叉核查；所有已发现候选经原文排除，在明示有限公开范围内接受no_event。",
+      "facts": [
+        {
+          "name": "2023票据到期实付",
+          "value": "2023-11-17全额偿付850百万USD",
+          "source_id": "supplement:documents/WBA/2024-03-28-0001618921-24-000035-wba-20240229.htm",
+          "locator": "Note7Debt"
+        },
+        {
+          "name": "FY2024上半年实付利息",
+          "value": 301,
+          "source_id": "supplement:documents/WBA/2024-03-28-0001618921-24-000035-wba-20240229.htm",
+          "locator": "Interest，USD百万"
+        },
+        {
+          "name": "观察窗尾部评级",
+          "value": "2024-03-27MoodyBa2/S&PBBB-",
+          "source_id": "supplement:documents/WBA/2024-03-28-0001618921-24-000035-wba-20240229.htm",
+          "locator": "CreditRatings"
+        },
+        {
+          "name": "终止旧授信",
+          "value": "2023-08-09两旧循环贷款义务全额清偿",
+          "source_id": "supplement:documents/WBA/2023-10-12-0001618921-23-000062-wba-20230831.htm",
+          "locator": "Note8CreditFacilities"
+        }
+      ],
+      "event_candidates": [
+        {
+          "candidate": "2023-08-09融资替换、2021分期贷款清偿、2023到期850百万票据",
+          "disposition": "原文披露旧贷款义务全部清偿、850百万票据到期日全额实付；无债权减记或评级机构distressed exchange匹配",
+          "source_ids": [
+            "supplement:documents/WBA/2023-10-12-0001618921-23-000062-wba-20230831.htm",
+            "supplement:documents/WBA/2024-03-28-0001618921-24-000035-wba-20240229.htm",
+            "WBA-d542330dex101.htm",
+            "WBA-d542330dex102.htm"
+          ]
+        },
+        {
+          "candidate": "2023-10S&P/2023-12Moody降级",
+          "disposition": "BBB-/Ba2普通降级，不是D/SD或已认定distressed exchange；对公开评级名单完成交叉核查",
+          "source_ids": [
+            "supplement:documents/WBA/2024-03-28-0001618921-24-000035-wba-20240229.htm",
+            "sp2023",
+            "sp2024"
+          ]
+        },
+        {
+          "candidate": "WalgreenCo融资义务、其他集团子公司/已售公司",
+          "disposition": "WalgreenCo既有票据由WBA担保，纳入母公司信用传导范围；所有其他非担保集团公司事件未默认全部合并，仍保留官方实体口径问题",
+          "source_ids": [
+            "supplement:documents/WBA/2023-10-12-0001618921-23-000062-wba-20230831.htm",
+            "WBA-subs"
+          ]
+        }
+      ],
+      "checks": [
+        "wba-note-paid",
+        "wba-obligations-satisfied",
+        "wba-paid-interest",
+        "wba-ratings",
+        "wba-contract1-grace",
+        "wba-contract2-grace",
+        "wba-whole-window-sec-roster",
+        "sp2023-table8-scope",
+        "sp2024-table8-scope"
+      ],
+      "remaining_gaps": [
+        "court_national_index_not_queried",
+        "rating_nonpublic_unrated",
+        "minor_or_undisclosed_payment",
+        "subsidiary_definition",
+        "official_private_outcome",
+        "first_publication_snapshot"
+      ],
+      "notes": [
+        "verified是本研究集有限公开核查状态，quality.fact_status=bounded_verified；不是官方outcome认证。",
+        "credit的reference_value保持null；no_event不是实际概率0。"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "check_id": "bby-notes",
+      "entity_id": "BBY",
+      "kind": "body_regex_anchor",
+      "source_id": "supplement:documents/BBY/2024-06-07-0000764478-24-000022-bby-20240504x10q.htm",
+      "path": "../credit-supplement/documents/BBY/2024-06-07-0000764478-24-000022-bby-20240504x10q.htm",
+      "sha256": "80a325083142a1ca35c89bd9447f3a112436ec44022523081699ec0d89f209e5",
+      "normalization": "HTML可见文本，去隐藏iXBRL/script/style，连续空白合一；匹配偏移从0开始",
+      "regex": "Notes,\\s*4\\.45\\s*%.{0,80}500.{0,120}1\\.95\\s*%.{0,80}650",
+      "match_count": 1,
+      "first_offset": 24310,
+      "passed": true,
+      "interpretation": "两组票据本金500和650百万，尾部报告仍列示原到期年份及利率；不存在窗口内已披露交换。",
+      "normalization_note": "主审计HTML标签间以空格连接，iXBRL数值与%之间可有空白；匹配仅放宽显示空白，不改数值。"
+    },
+    {
+      "check_id": "bby-paid-interest",
+      "entity_id": "BBY",
+      "kind": "body_regex_anchor",
+      "source_id": "supplement:documents/BBY/2024-03-15-0000764478-24-000010-bby-20240203x10k.htm",
+      "path": "../credit-supplement/documents/BBY/2024-03-15-0000764478-24-000010-bby-20240203x10k.htm",
+      "sha256": "81a416bf4daefb5ed079f35facbdb31a1564530a5b29eb300e5e9633cf985999",
+      "normalization": "HTML可见文本，去隐藏iXBRL/script/style，连续空白合一；匹配偏移从0开始",
+      "regex": "Interest paid\\s*\\$\\s*51",
+      "match_count": 1,
+      "first_offset": 183878,
+      "passed": true,
+      "interpretation": "FY2024实际付息51百万；不是精准观察窗付息总额。"
+    },
+    {
+      "check_id": "bby-rating",
+      "entity_id": "BBY",
+      "kind": "body_regex_anchor",
+      "source_id": "supplement:documents/BBY/2024-03-15-0000764478-24-000010-bby-20240203x10k.htm",
+      "path": "../credit-supplement/documents/BBY/2024-03-15-0000764478-24-000010-bby-20240203x10k.htm",
+      "sha256": "81a416bf4daefb5ed079f35facbdb31a1564530a5b29eb300e5e9633cf985999",
+      "normalization": "HTML可见文本，去隐藏iXBRL/script/style，连续空白合一；匹配偏移从0开始",
+      "regex": "Standard.*?Poor.{0,30}BBB\\+.{0,30}Stable.{0,30}Moody.{0,25}A3",
+      "match_count": 1,
+      "first_offset": 2768,
+      "passed": true,
+      "interpretation": "2024-03-13发行人公开披露评级BBB+/A3，均Stable；辅助，不能单独证明全窗无违约。"
+    },
+    {
+      "check_id": "bby-borrowing",
+      "entity_id": "BBY",
+      "kind": "body_regex_anchor",
+      "source_id": "supplement:documents/BBY/2024-06-07-0000764478-24-000022-bby-20240504x10q.htm",
+      "path": "../credit-supplement/documents/BBY/2024-06-07-0000764478-24-000022-bby-20240504x10q.htm",
+      "sha256": "80a325083142a1ca35c89bd9447f3a112436ec44022523081699ec0d89f209e5",
+      "normalization": "HTML可见文本，去隐藏iXBRL/script/style，连续空白合一；匹配偏移从0开始",
+      "regex": "no borrowings outstanding.{0,160}May 4, 2024.{0,70}February 3, 2024",
+      "match_count": 2,
+      "first_offset": 24071,
+      "passed": true,
+      "interpretation": "尾部季度存续循环贷款无期末借款；结合全窗主文件与新协议，处置4/12融资候选。"
+    },
+    {
+      "check_id": "bby-contract",
+      "entity_id": "BBY",
+      "kind": "body_regex_anchor",
+      "source_id": "BBY-bby-20230412xex10_1.htm",
+      "path": "local-raw/BBY/bby-20230412xex10_1.htm",
+      "sha256": "4aa28998fa3a32eadeaf3812be77f681629616f901da94ea8274029a02a31909",
+      "normalization": "HTML可见文本，去隐藏iXBRL/script/style，连续空白合一；匹配偏移从0开始",
+      "regex": "failure shall continue unremedied for a period of three or more Business Days",
+      "match_count": 1,
+      "first_offset": 289405,
+      "passed": true,
+      "interpretation": "借款利息/费等3个工作日宽限；本金到期违约，条款是条件而非发生事实。"
+    },
+    {
+      "check_id": "bby-note-grace",
+      "entity_id": "BBY",
+      "kind": "body_regex_anchor",
+      "source_id": "BBY-2011-indenture",
+      "path": "local-raw/BBY/indenture-20110311.htm",
+      "sha256": "0dd35aabecc2f249ede588eed2c8c92e69538352340da7a31dff88b39164e079",
+      "normalization": "HTML可见文本，去隐藏iXBRL/script/style，连续空白合一；匹配偏移从0开始",
+      "regex": "installment of interest.{0,70}30 days",
+      "match_count": 1,
+      "first_offset": 88477,
+      "passed": true,
+      "interpretation": "票据基础契约Section501利息30日宽限；不能把应付日直接当发生/确认日。"
+    },
+    {
+      "check_id": "m-issuer-guarantee",
+      "entity_id": "M",
+      "kind": "body_regex_anchor",
+      "source_id": "supplement:documents/M/2024-03-22-0001628280-24-012734-m-20240203.htm",
+      "path": "../credit-supplement/documents/M/2024-03-22-0001628280-24-012734-m-20240203.htm",
+      "sha256": "3448473d7eb3ad9a8f3720f563c31ce83147552c06ac2d6891b1e8af7fe55118",
+      "normalization": "HTML可见文本，去隐藏iXBRL/script/style，连续空白合一；匹配偏移从0开始",
+      "regex": "100%-owned subsidiary.{0,120}fully and unconditionally guaranteed",
+      "match_count": 2,
+      "first_offset": 133468,
+      "passed": true,
+      "interpretation": "MRH债务由题面母公司完整担保；纳入有界信用传导范围。"
+    },
+    {
+      "check_id": "m-transactions",
+      "entity_id": "M",
+      "kind": "body_regex_anchor",
+      "source_id": "supplement:documents/M/2024-03-22-0001628280-24-012734-m-20240203.htm",
+      "path": "../credit-supplement/documents/M/2024-03-22-0001628280-24-012734-m-20240203.htm",
+      "sha256": "3448473d7eb3ad9a8f3720f563c31ce83147552c06ac2d6891b1e8af7fe55118",
+      "normalization": "HTML可见文本，去隐藏iXBRL/script/style，连续空白合一；匹配偏移从0开始",
+      "regex": "2023 Debt Financing Activities.{0,180}did not engage in other material debt financing activities",
+      "match_count": 1,
+      "first_offset": 224797,
+      "passed": true,
+      "interpretation": "财年除ABL外无其他重大债务融资。"
+    },
+    {
+      "check_id": "m-paid-interest",
+      "entity_id": "M",
+      "kind": "body_regex_anchor",
+      "source_id": "supplement:documents/M/2024-03-22-0001628280-24-012734-m-20240203.htm",
+      "path": "../credit-supplement/documents/M/2024-03-22-0001628280-24-012734-m-20240203.htm",
+      "sha256": "3448473d7eb3ad9a8f3720f563c31ce83147552c06ac2d6891b1e8af7fe55118",
+      "normalization": "HTML可见文本，去隐藏iXBRL/script/style，连续空白合一；匹配偏移从0开始",
+      "regex": "Interest paid\\s*\\$\\s*157",
+      "match_count": 1,
+      "first_offset": 179549,
+      "passed": true,
+      "interpretation": "FY2023实际付息157百万，非精确观察窗合计。"
+    },
+    {
+      "check_id": "m-tail-transactions",
+      "entity_id": "M",
+      "kind": "body_regex_anchor",
+      "source_id": "supplement:documents/M/2024-05-30-0001628280-24-025853-m-20240504.htm",
+      "path": "../credit-supplement/documents/M/2024-05-30-0001628280-24-025853-m-20240504.htm",
+      "sha256": "84ed4a50d8a740f47aaf7dfec1449737427ea0cbb3662bb2c2f64131601c801d",
+      "normalization": "HTML可见文本，去隐藏iXBRL/script/style，连续空白合一；匹配偏移从0开始",
+      "regex": "did not borrow or repay any debt, outside of capital lease activity.{0,90}13 weeks ended May 4, 2024",
+      "match_count": 1,
+      "first_offset": 24994,
+      "passed": true,
+      "interpretation": "尾部Note4明确13周内除资本租赁活动外无借款或偿债；结合Note6本金表排除尾部债务交换候选。"
+    },
+    {
+      "check_id": "m-abl-grace",
+      "entity_id": "M",
+      "kind": "body_regex_anchor",
+      "source_id": "M-2022-ABL-amendment",
+      "path": "local-raw/M/abl-amendment-20220303.htm",
+      "sha256": "eaf236a3bd73daae1fe1bf657ea742508e90d9366e5cc7279b69d6bd17b377fb",
+      "normalization": "HTML可见文本，去隐藏iXBRL/script/style，连续空白合一；匹配偏移从0开始",
+      "regex": "Non-Payment.{0,600}three \\(3\\) Business Days",
+      "match_count": 1,
+      "first_offset": 530276,
+      "passed": true,
+      "interpretation": "ABL Section8.01本金到期即违约，利息/费用3工作日宽限。"
+    },
+    {
+      "check_id": "m-conversion",
+      "entity_id": "M",
+      "kind": "body_regex_anchor",
+      "source_id": "supplement:documents/M/2024-03-22-0001628280-24-012734-m-20240203.htm",
+      "path": "../credit-supplement/documents/M/2024-03-22-0001628280-24-012734-m-20240203.htm",
+      "sha256": "3448473d7eb3ad9a8f3720f563c31ce83147552c06ac2d6891b1e8af7fe55118",
+      "normalization": "HTML可见文本，去隐藏iXBRL/script/style，连续空白合一；匹配偏移从0开始",
+      "regex": "June 3, 2020.{0,250}as successor to Macy.s Retail Holdings, Inc",
+      "match_count": 6,
+      "first_offset": 274354,
+      "passed": true,
+      "interpretation": "2020 Inc→LLC发生在观察窗前，债务附件确认法律继承关系；CIK未变为另一个母公司。"
+    },
+    {
+      "check_id": "odfl-principal-payment",
+      "entity_id": "ODFL",
+      "kind": "body_regex_anchor",
+      "source_id": "supplement:documents/ODFL/2024-02-26-0000950170-24-020176-odfl-20231231.htm",
+      "path": "../credit-supplement/documents/ODFL/2024-02-26-0000950170-24-020176-odfl-20231231.htm",
+      "sha256": "831582b00692b3b958b5ac666e10f88a35784322f37c0db7f1581b800c20e31b",
+      "normalization": "HTML可见文本，去隐藏iXBRL/script/style，连续空白合一；匹配偏移从0开始",
+      "regex": "first principal payment.{0,70}20\\.0 million was paid on May 4, 2023",
+      "match_count": 2,
+      "first_offset": 122810,
+      "passed": true,
+      "interpretation": "约定首期本金20百万于5/4/2023实际支付，四期余额80百万。"
+    },
+    {
+      "check_id": "odfl-covenant-end",
+      "entity_id": "ODFL",
+      "kind": "body_regex_anchor",
+      "source_id": "supplement:documents/ODFL/2024-05-07-0000950170-24-054284-odfl-20240331.htm",
+      "path": "../credit-supplement/documents/ODFL/2024-05-07-0000950170-24-054284-odfl-20240331.htm",
+      "sha256": "57860825d844e7da1a249edd42483e8c9af8a19eecd2bf506849115b2a27ae2d",
+      "normalization": "HTML可见文本，去隐藏iXBRL/script/style，连续空白合一；匹配偏移从0开始",
+      "regex": "in compliance with all covenants.{0,100}March 31, 2024",
+      "match_count": 1,
+      "first_offset": 46461,
+      "passed": true,
+      "interpretation": "窗口终点3/31季度全部债务契约合规；结合实际本金支付与贷款无余额。"
+    },
+    {
+      "check_id": "odfl-paid-interest",
+      "entity_id": "ODFL",
+      "kind": "body_regex_anchor",
+      "source_id": "supplement:documents/ODFL/2024-02-26-0000950170-24-020176-odfl-20231231.htm",
+      "path": "../credit-supplement/documents/ODFL/2024-02-26-0000950170-24-020176-odfl-20231231.htm",
+      "sha256": "831582b00692b3b958b5ac666e10f88a35784322f37c0db7f1581b800c20e31b",
+      "normalization": "HTML可见文本，去隐藏iXBRL/script/style，连续空白合一；匹配偏移从0开始",
+      "regex": "Interest paid\\s*\\$\\s*3,484",
+      "match_count": 1,
+      "first_offset": 143795,
+      "passed": true,
+      "interpretation": "2023全年付息3484千美元，即3.484百万；不是截去2023Q1后的精确窗口总额。"
+    },
+    {
+      "check_id": "odfl-note-grace",
+      "entity_id": "ODFL",
+      "kind": "body_regex_anchor",
+      "source_id": "ODFL-2023-note-amendment",
+      "path": "local-raw/ODFL/note-amendment-20230322.htm",
+      "sha256": "84812002f93cd5e1d24322cd75f9f3bac86e51eba471ceb7d4818eb8d9072805",
+      "normalization": "HTML可见文本，去隐藏iXBRL/script/style，连续空白合一；匹配偏移从0开始",
+      "regex": "payment of any interest.{0,65}more than 5 days",
+      "match_count": 1,
+      "first_offset": 100404,
+      "passed": true,
+      "interpretation": "NoteAgreement7A本金到期违约，利息超过5日才触发；3/22修订在窗口外。"
+    },
+    {
+      "check_id": "wba-note-paid",
+      "entity_id": "WBA",
+      "kind": "body_regex_anchor",
+      "source_id": "supplement:documents/WBA/2024-03-28-0001618921-24-000035-wba-20240229.htm",
+      "path": "../credit-supplement/documents/WBA/2024-03-28-0001618921-24-000035-wba-20240229.htm",
+      "sha256": "728f6f4cd503f08e016243b52c595ae9814390550d8b21f13fd3008098a1db6b",
+      "normalization": "HTML可见文本，去隐藏iXBRL/script/style，连续空白合一；匹配偏移从0开始",
+      "regex": "On November 17, 2023.{0,60}repaid the note in full",
+      "match_count": 1,
+      "first_offset": 48808,
+      "passed": true,
+      "interpretation": "850百万2023票据在到期日11/17全额支付。"
+    },
+    {
+      "check_id": "wba-obligations-satisfied",
+      "entity_id": "WBA",
+      "kind": "body_regex_anchor",
+      "source_id": "supplement:documents/WBA/2023-10-12-0001618921-23-000062-wba-20230831.htm",
+      "path": "../credit-supplement/documents/WBA/2023-10-12-0001618921-23-000062-wba-20230831.htm",
+      "sha256": "96584a1ebad86e8be2344148751e221ac88a9a03786e81305035a917e6507057",
+      "normalization": "HTML可见文本，去隐藏iXBRL/script/style，连续空白合一；匹配偏移从0开始",
+      "regex": "All outstanding obligations.{0,150}paid and satisfied in full",
+      "match_count": 2,
+      "first_offset": 397185,
+      "passed": true,
+      "interpretation": "8/9/2023结束的两笔旧循环授信均全部义务清偿，不是债权减记交换。"
+    },
+    {
+      "check_id": "wba-paid-interest",
+      "entity_id": "WBA",
+      "kind": "body_regex_anchor",
+      "source_id": "supplement:documents/WBA/2024-03-28-0001618921-24-000035-wba-20240229.htm",
+      "path": "../credit-supplement/documents/WBA/2024-03-28-0001618921-24-000035-wba-20240229.htm",
+      "sha256": "728f6f4cd503f08e016243b52c595ae9814390550d8b21f13fd3008098a1db6b",
+      "normalization": "HTML可见文本，去隐藏iXBRL/script/style，连续空白合一；匹配偏移从0开始",
+      "regex": "Interest paid.{0,70}301 million",
+      "match_count": 1,
+      "first_offset": 55511,
+      "passed": true,
+      "interpretation": "FY2024上半年度实际付息301百万，债务融资与偿债表覆盖窗口尾段。"
+    },
+    {
+      "check_id": "wba-ratings",
+      "entity_id": "WBA",
+      "kind": "body_regex_anchor",
+      "source_id": "supplement:documents/WBA/2024-03-28-0001618921-24-000035-wba-20240229.htm",
+      "path": "../credit-supplement/documents/WBA/2024-03-28-0001618921-24-000035-wba-20240229.htm",
+      "sha256": "728f6f4cd503f08e016243b52c595ae9814390550d8b21f13fd3008098a1db6b",
+      "normalization": "HTML可见文本，去隐藏iXBRL/script/style，连续空白合一；匹配偏移从0开始",
+      "regex": "Moody.s\\s*Ba2.{0,70}Standard.*?Poor.s\\s*BBB",
+      "match_count": 1,
+      "first_offset": 201507,
+      "passed": true,
+      "interpretation": "3/27/2024评级表仍Ba2/BBB-；普通降级不属于已定义信用事件。"
+    },
+    {
+      "check_id": "wba-contract1-grace",
+      "entity_id": "WBA",
+      "kind": "body_regex_anchor",
+      "source_id": "WBA-d542330dex101.htm",
+      "path": "local-raw/WBA/d542330dex101.htm",
+      "sha256": "c26740d1d6192194930a3885217f17b7603b8c3392c7eb028a4ea7fca4b36e77",
+      "normalization": "HTML可见文本，去隐藏iXBRL/script/style，连续空白合一；匹配偏移从0开始",
+      "regex": "Nonpayment.{0,260}five \\(5\\) Business Days",
+      "match_count": 1,
+      "first_offset": 185905,
+      "passed": true,
+      "interpretation": "8/9定期贷款协议Section7.02本金到期不付即违约，其他付款5工作日宽限。"
+    },
+    {
+      "check_id": "wba-contract2-grace",
+      "entity_id": "WBA",
+      "kind": "body_regex_anchor",
+      "source_id": "WBA-d542330dex102.htm",
+      "path": "local-raw/WBA/d542330dex102.htm",
+      "sha256": "7cf9d6c28feacf043526ce2c34f8e6ddb837756a8fd8afc8c36f3625b150c853",
+      "normalization": "HTML可见文本，去隐藏iXBRL/script/style，连续空白合一；匹配偏移从0开始",
+      "regex": "Nonpayment.{0,320}five \\(5\\) Business Days",
+      "match_count": 1,
+      "first_offset": 255627,
+      "passed": true,
+      "interpretation": "8/9循环协议Section7.02付款条件；7.04对MajorSubsidiary交叉违约有金额与grace阈值，不能视所有附属公司都与母公司事件等价。"
+    },
+    {
+      "check_id": "m-tail-notional",
+      "entity_id": "M",
+      "kind": "body_regex_anchor",
+      "source_id": "supplement:documents/M/2024-05-30-0001628280-24-025853-m-20240504.htm",
+      "path": "../credit-supplement/documents/M/2024-05-30-0001628280-24-025853-m-20240504.htm",
+      "sha256": "84ed4a50d8a740f47aaf7dfec1449737427ea0cbb3662bb2c2f64131601c801d",
+      "normalization": "HTML可见文本，去隐藏iXBRL/script/style，连续空白合一；匹配偏移从0开始",
+      "regex": "May 4, 2024.{0,5}3,007.{0,60}February 3, 2024.{0,5}3,007",
+      "match_count": 1,
+      "first_offset": 29414,
+      "passed": true,
+      "interpretation": "尾部Note6三个财期名义本金3007百万，核对年度后票据未新增交换。"
+    },
+    {
+      "check_id": "bby-whole-window-sec-roster",
+      "entity_id": "BBY",
+      "kind": "SEC_filing_roster",
+      "source_id": "supplement:BBY-submissions.raw.json",
+      "path": "../credit-supplement/BBY-submissions.raw.json",
+      "sha256": "b3e56d79c1462e4bd1848ee8716887ffbbd37b47ba8938d7a093988ceffab33a",
+      "expected_count": 15,
+      "actual_count": 15,
+      "accession_numbers": [
+        "0000764478-24-000010",
+        "0000764478-24-000006",
+        "0000764478-24-000003",
+        "0000764478-23-000056",
+        "0000764478-23-000053",
+        "0000764478-23-000049",
+        "0000764478-23-000046",
+        "0000764478-23-000041",
+        "0000764478-23-000038",
+        "0000764478-23-000035",
+        "0000764478-23-000027",
+        "0000764478-23-000025",
+        "0000764478-23-000019",
+        "0000764478-23-000016",
+        "0000764478-23-000012"
+      ],
+      "missing": [],
+      "extra": [],
+      "item_1_03_or_2_04_candidates": [],
+      "passed": true,
+      "interpretation": "这是元数据与归档覆盖检查；无Item1.03/2.04不单独证明事件没有发生。"
+    },
+    {
+      "check_id": "m-whole-window-sec-roster",
+      "entity_id": "M",
+      "kind": "SEC_filing_roster",
+      "source_id": "supplement:M-submissions.raw.json",
+      "path": "../credit-supplement/M-submissions.raw.json",
+      "sha256": "deb5f449a39b1010a9479252f2e4914abc1ec2a7a91d96faab670192ecc6de63",
+      "expected_count": 14,
+      "actual_count": 14,
+      "accession_numbers": [
+        "0001628280-24-012734",
+        "0000794367-24-000013",
+        "0001628280-24-007023",
+        "0000794367-24-000010",
+        "0000794367-24-000007",
+        "0001628280-23-040057",
+        "0001628280-23-039210",
+        "0000794367-23-000084",
+        "0001628280-23-030657",
+        "0001628280-23-030169",
+        "0001628280-23-021104",
+        "0001628280-23-020415",
+        "0000794367-23-000061",
+        "0000794367-23-000055"
+      ],
+      "missing": [],
+      "extra": [],
+      "item_1_03_or_2_04_candidates": [],
+      "passed": true,
+      "interpretation": "这是元数据与归档覆盖检查；无Item1.03/2.04不单独证明事件没有发生。"
+    },
+    {
+      "check_id": "odfl-whole-window-sec-roster",
+      "entity_id": "ODFL",
+      "kind": "SEC_filing_roster",
+      "source_id": "supplement:ODFL-submissions.raw.json",
+      "path": "../credit-supplement/ODFL-submissions.raw.json",
+      "sha256": "90c51efb21b8e7e464d132dea2492c25c1e4c01b6c024a2ac7c2807540442ffa",
+      "expected_count": 21,
+      "actual_count": 21,
+      "accession_numbers": [
+        "0000950170-24-033550",
+        "0000950170-24-025450",
+        "0000950170-24-020176",
+        "0000950170-24-016210",
+        "0000950170-24-009181",
+        "0000950170-23-068262",
+        "0000950170-23-059408",
+        "0000950170-23-055015",
+        "0000950170-23-054038",
+        "0000950170-23-046789",
+        "0000950170-23-038553",
+        "0000950170-23-034576",
+        "0000950170-23-033690",
+        "0000950170-23-029863",
+        "0000950170-23-026441",
+        "0000950170-23-022917",
+        "0000950170-23-022911",
+        "0000950170-23-022909",
+        "0000950170-23-022904",
+        "0000950170-23-018765",
+        "0000950170-23-014592"
+      ],
+      "missing": [],
+      "extra": [],
+      "item_1_03_or_2_04_candidates": [],
+      "passed": true,
+      "interpretation": "这是元数据与归档覆盖检查；无Item1.03/2.04不单独证明事件没有发生。"
+    },
+    {
+      "check_id": "wba-whole-window-sec-roster",
+      "entity_id": "WBA",
+      "kind": "SEC_filing_roster",
+      "source_id": "supplement:WBA-submissions.raw.json",
+      "path": "../credit-supplement/WBA-submissions.raw.json",
+      "sha256": "6c8d6ee0a1c37dc7e7a94b4c6b3540c0d2a80cbe3bd37f36588142bf6a5fd54b",
+      "expected_count": 20,
+      "actual_count": 20,
+      "accession_numbers": [
+        "0001193125-24-080799",
+        "0001618921-24-000035",
+        "0001193125-24-079608",
+        "0001193125-24-028508",
+        "0001193125-24-021052",
+        "0001618921-24-000004",
+        "0001193125-24-001901",
+        "0001193125-23-282616",
+        "0001193125-23-265359",
+        "0001618921-23-000062",
+        "0001193125-23-254615",
+        "0001193125-23-253805",
+        "0001193125-23-240570",
+        "0001193125-23-226884",
+        "0001193125-23-207773",
+        "0001193125-23-196159",
+        "0001193125-23-187329",
+        "0001618921-23-000043",
+        "0001193125-23-175558",
+        "0001193125-23-155537"
+      ],
+      "missing": [],
+      "extra": [],
+      "item_1_03_or_2_04_candidates": [],
+      "passed": true,
+      "interpretation": "这是元数据与归档覆盖检查；无Item1.03/2.04不单独证明事件没有发生。"
+    },
+    {
+      "check_id": "sp2023-table8-scope",
+      "kind": "primary_rating_agency_named_default_register",
+      "source_id": "sp2023",
+      "path": "local-raw/sp-2023-default-study.pdf",
+      "sha256": "7227aebd519dd2663e04b721260a56419e5729c322ce7ed17430dac50a956e47",
+      "published_at": "2024-03-28",
+      "table": "Table8",
+      "table_pages": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "scope": "2023年度S&P公开评级公司违约名单；保密名称和从未公开评级发行人不由此负向证明",
+      "entity_matches": {
+        "BBY": {
+          "Best Buy": 0
+        },
+        "M": {
+          "Macy": 0,
+          "Federated Department": 0,
+          "Macy’s Retail": 0,
+          "Macy's Retail": 0,
+          "Macy's Inventory": 0
+        },
+        "ODFL": {
+          "Old Dominion": 0
+        },
+        "WBA": {
+          "Walgreen": 0,
+          "Boots Alliance": 0,
+          "Alliance Boots": 0
+        }
+      },
+      "positive_control": {
+        "name": "Rite Aid",
+        "present": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "sp2024-table8-scope",
+      "kind": "primary_rating_agency_named_default_register",
+      "source_id": "sp2024",
+      "path": "local-raw/sp-2024-default-study.pdf",
+      "sha256": "2c048d4093f81fbb1e71284d8e411fe714623eebd6a011e863e20eec54e020ed",
+      "published_at": "2025-03-27",
+      "table": "Table8",
+      "table_pages": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "scope": "2024年度S&P公开评级公司违约名单；保密名称和从未公开评级发行人不由此负向证明",
+      "entity_matches": {
+        "BBY": {
+          "Best Buy": 0
+        },
+        "M": {
+          "Macy": 0,
+          "Federated Department": 0,
+          "Macy’s Retail": 0,
+          "Macy's Retail": 0,
+          "Macy's Inventory": 0
+        },
+        "ODFL": {
+          "Old Dominion": 0
+        },
+        "WBA": {
+          "Walgreen": 0,
+          "Boots Alliance": 0,
+          "Alliance Boots": 0
+        }
+      },
+      "positive_control": {
+        "name": "Hornblower HoldCo",
+        "present": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "m-parent-subsidiary-cik",
+      "entity_id": "M",
+      "kind": "SEC_legal_entity_mapping",
+      "sources": [
+        "M-subsidiary-submissions",
+        "M-2022-joint-issuer-registration",
+        "supplement:M-submissions.raw.json"
+      ],
+      "parent": {
+        "cik": "0000794367",
+        "name": "Macy's, Inc.",
+        "tickers": [
+          "M"
+        ]
+      },
+      "debt_subsidiary": {
+        "cik": "0001026179",
+        "name": "Macy's Retail Holdings LLC",
+        "formerNames": [
+          {
+            "name": "Macy's Retail Holdings Inc",
+            "from": "2007-08-28T00:00:00.000Z",
+            "to": "2018-12-07T00:00:00.000Z"
+          },
+          {
+            "name": "Federated Retail Holdings Inc",
+            "from": "2005-09-21T00:00:00.000Z",
+            "to": "2007-03-08T00:00:00.000Z"
+          },
+          {
+            "name": "MAY DEPARTMENT STORES CO /NY/",
+            "from": "1998-09-23T00:00:00.000Z",
+            "to": "2004-11-12T00:00:00.000Z"
+          }
+        ]
+      },
+      "joint_registration_has_both_names": true,
+      "subsidiary_window_filing_count": 0,
+      "passed": true,
+      "interpretation": "题面母公司与MRH两CIK为母子公司同时存在，2020法律形式转换在窗口外；不以当前ticker替换历史母公司。"
+    },
+    {
+      "check_id": "all-raw-sha256-bytes",
+      "kind": "archive_integrity",
+      "downloaded_source_count": 109,
+      "failed_source_count": 6,
+      "failures": [],
+      "passed": true
+    }
+  ],
+  "source_manifest": "evidence-manifest.json",
+  "limitations": [
+    {
+      "code": "court_national_index_not_queried",
+      "severity": "scope_limit",
+      "description": "全国PACER CaseLocator需账号；未付费/未登录。公开RECAP4查询403，结果数量未知，不能当作0事件。",
+      "urls": [
+        "https://pacer.uscourts.gov/help/faqs/what-pacer-case-locator",
+        "https://www.uscourts.gov/court-records/find-a-case-pacer"
+      ]
+    },
+    {
+      "code": "rating_nonpublic_unrated",
+      "severity": "scope_limit",
+      "description": "S&P Table8覆盖该机构公开评级违约实体，不能涵盖保密发行人或从未公开评级者；未声称Moody/Fitch完整历史台账已独立查询。ODFL公开SEC资料为私人票据，不假称评级名单对未评级者穷尽。"
+    },
+    {
+      "code": "minor_or_undisclosed_payment",
+      "severity": "scope_limit",
+      "description": "公开SEC披露为母公司、被担保/传导债务的公开重大事项；季度付息/本金实付及合规不保证不存在一切未披露短时付款迟延。按有限公开核查标准验收，不能把合同金额阈值重定义为题面阈值。"
+    },
+    {
+      "code": "subsidiary_definition",
+      "severity": "official_definition_open",
+      "description": "题面仅给母公司CIK未明示所有子公司事件归属。本验收纳入母公司担保/融资主体；没有将所有非担保子公司、已出售公司、同名品牌公司自动合并为母公司信用事件。"
+    },
+    {
+      "code": "official_private_outcome",
+      "severity": "not_claimed",
+      "description": "仅公开历史结果研究；没有获取/推断官方隐藏outcome或概率真值，没有正式官方评分。"
+    },
+    {
+      "code": "first_publication_snapshot",
+      "severity": "provenance_limit",
+      "description": "published_at由SEC申报日期或PDF封面确定；retrieved_at是真实当前获取时间。当前下载字节不证明原首发版本，S&P年度回顾可能修订。"
+    }
+  ],
+  "unresolved_access": [
+    {
+      "source_id": "BBY-recap-query",
+      "url": "https://www.courtlistener.com/?q=%22Best+Buy%22&type=r&filed_after=04%2F01%2F2023&filed_before=03%2F31%2F2024&order_by=dateFiled+desc",
+      "status": "failed",
+      "error": "HTTP Error 403: Forbidden",
+      "retrieved_at": "2026-10-07T13:14:43.822836+00:00"
+    },
+    {
+      "source_id": "M-recap-query",
+      "url": "https://www.courtlistener.com/?q=%22Macy%22&type=r&filed_after=04%2F01%2F2023&filed_before=03%2F31%2F2024&order_by=dateFiled+desc",
+      "status": "failed",
+      "error": "HTTP Error 403: Forbidden",
+      "retrieved_at": "2026-10-07T13:14:43.823463+00:00"
+    },
+    {
+      "source_id": "ODFL-recap-query",
+      "url": "https://www.courtlistener.com/?q=%22Old+Dominion+Freight+Line%22&type=r&filed_after=04%2F01%2F2023&filed_before=03%2F31%2F2024&order_by=dateFiled+desc",
+      "status": "failed",
+      "error": "HTTP Error 403: Forbidden",
+      "retrieved_at": "2026-10-07T13:14:43.823742+00:00"
+    },
+    {
+      "source_id": "WBA-recap-query",
+      "url": "https://www.courtlistener.com/?q=%22Walgreens%22&type=r&filed_after=04%2F01%2F2023&filed_before=03%2F31%2F2024&order_by=dateFiled+desc",
+      "status": "failed",
+      "error": "HTTP Error 403: Forbidden",
+      "retrieved_at": "2026-10-07T13:14:43.823969+00:00"
+    },
+    {
+      "source_id": "SP-2023Q2-components",
+      "url": "https://www.spglobal.com/_assets/documents/ratings/research/101580982.pdf",
+      "status": "failed",
+      "error": "HTTP Error 403: Forbidden",
+      "retrieved_at": "2026-10-07T13:14:44.736897+00:00"
+    },
+    {
+      "source_id": "RECAP-boundary",
+      "url": "https://courtlistener.com/recap/",
+      "status": "failed",
+      "error": "HTTP Error 403: Forbidden",
+      "retrieved_at": "2026-10-07T13:20:11.988496+00:00"
+    }
+  ],
+  "interpretation": "四项可按有限公开证据规则接受，官方私有outcome一致未知；单独完成法院与全评级台账穷尽并非此有限验收条件。"
+}

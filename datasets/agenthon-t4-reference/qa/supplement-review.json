@@ -1,0 +1,59 @@
+{
+  "schema_version": "0.1.0",
+  "checked_at": "2026-10-07T09:08:34.365842+00:00",
+  "reference_version": "0.1.1",
+  "reference_sha256": "de330cf2452f0c80b062d0e4a2294307c607f6d5bde943b122755fee33f18ec6",
+  "tool_sha256": "65afe5e1bfb79e50a69cb145439aa8206f0d2f648da82e2715fbadb88fca70b1",
+  "positive_label_downgrade_replay": [
+    {
+      "entity_id": "BBBY",
+      "mutation": "credit_event/verified改为no_event/provisional",
+      "expected_check": "reference_label_matches_original_event",
+      "check_value": false,
+      "global_audit_pass_flag": false,
+      "caught": true
+    },
+    {
+      "entity_id": "RAD",
+      "mutation": "credit_event/verified改为no_event/provisional",
+      "expected_check": "reference_label_matches_original_event",
+      "check_value": false,
+      "global_audit_pass_flag": false,
+      "caught": true
+    },
+    {
+      "entity_id": "WE",
+      "mutation": "credit_event/verified改为no_event/provisional",
+      "expected_check": "reference_label_matches_original_event",
+      "check_value": false,
+      "global_audit_pass_flag": false,
+      "caught": true
+    },
+    {
+      "entity_id": "YELL",
+      "mutation": "credit_event/verified改为no_event/provisional",
+      "expected_check": "reference_label_matches_original_event",
+      "check_value": false,
+      "global_audit_pass_flag": false,
+      "caught": true
+    }
+  ],
+  "core_results_comparison": {
+    "baseline_commit": "70191cc5f12678aa002d2db5f3e45e06c9520f40",
+    "fields": [
+      "task_id",
+      "entity_id",
+      "target_type",
+      "reference_value",
+      "reference_label",
+      "reference_rank",
+      "unit",
+      "status",
+      "task_canonical_sha256"
+    ],
+    "rows": 78,
+    "unchanged": true
+  },
+  "scope": "直接读取保存原件的离线审校与旧版核心字段比较；不获取私有outcome，不是官方评测",
+  "official_score": null
+}

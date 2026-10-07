@@ -1,0 +1,1418 @@
+{
+  "schema_version": "0.1.0",
+  "group": "earnings-credit",
+  "records": [
+    {
+      "task_id": "t4-EXAMPLE-eps-beat",
+      "entity_id": "AAPL",
+      "target_type": "classification",
+      "reference_label": "inline",
+      "reference_value": 1.53,
+      "unit": "USD/share",
+      "status": "verified",
+      "method": "取 Apple FY2024 第二季度 GAAP diluted EPS 1.53，与 task.json 给定 consensus 1.50 比较。beat 严格大于 1.575，miss 严格小于 1.425；1.53 位于区间内，因此 inline。reference_value 是实际季度 EPS，不是预测值。",
+      "inputs": [
+        {
+          "name": "reported_gaap_diluted_eps",
+          "value": 1.53,
+          "date": "2024-03-30",
+          "unit": "USD/share"
+        },
+        {
+          "name": "task_consensus_eps",
+          "value": 1.5,
+          "date": "2024-03-15",
+          "unit": "USD/share"
+        },
+        {
+          "name": "task_threshold_pct",
+          "value": 0.05,
+          "date": "2024-03-15",
+          "unit": "fraction"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.apple.com/newsroom/2024/05/apple-reports-second-quarter-results/",
+          "title": "Apple reports second quarter results",
+          "published_at": "2024-05-02",
+          "locator": "正文首段：FY2024 Q2、财季截至 2024-03-30、diluted EPS 1.53；不要用 FY2024 Q1 的 2.18。"
+        },
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/EarningsPerShareDiluted.json",
+          "title": "SEC Company Concept: Apple Inc., EarningsPerShareDiluted",
+          "published_at": null,
+          "locator": "us-gaap / EarningsPerShareDiluted / USD/shares：start=2023-12-31, end=2024-03-30, val=1.53；首次季度 10-Q accession=0000320193-24-000069，filed=2024-05-03。完整单指标 raw 为 sec-eps-AAPL-concept.raw.json，SHA-256=d58cd0fce2baed8be20b7b6587917b03bb46c08fc0b527d53a4867cab9317acf；可直接回读复算。"
+        }
+      ],
+      "notes": [
+        "公开历史披露的事实参考；不是组织者持有的官方 outcome。",
+        "仅作为事后本地研究/开发验证数据；不得加入冻结证据或用于生成该题正式预测。"
+      ]
+    },
+    {
+      "task_id": "t4-eps-yoy-2023Q2-mixed",
+      "entity_id": "AMD",
+      "target_type": "classification",
+      "reference_label": "down",
+      "reference_value": 0.02,
+      "unit": "USD/share",
+      "status": "verified",
+      "method": "取对应 June-2023 财季的单季 GAAP diluted EPS 0.02，按 task.json 给定 prior_year_q_eps 0.27 直接比较，得到 down。reference_value 是实际季度 EPS；相等时题面无标签，本组未出现相等值。",
+      "inputs": [
+        {
+          "name": "reported_gaap_diluted_eps",
+          "value": 0.02,
+          "date": "2023-07-01",
+          "unit": "USD/share"
+        },
+        {
+          "name": "task_prior_year_q_eps",
+          "value": 0.27,
+          "date": "2022-06-30",
+          "unit": "USD/share"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.amd.com/en/newsroom/press-releases/2023-8-1-amd-reports-second-quarter-2023-financial-results.html",
+          "title": "AMD Reports Second Quarter 2023 Financial Results",
+          "published_at": "2023-08-01",
+          "locator": "GAAP Quarterly Financial Results 表，Q2 2023 / Q2 2022，Diluted earnings per share：0.02 / 0.27；non-GAAP 0.58 不适用。"
+        },
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000002488/us-gaap/EarningsPerShareDiluted.json",
+          "title": "SEC Company Concept: ADVANCED MICRO DEVICES INC, EarningsPerShareDiluted",
+          "published_at": null,
+          "locator": "us-gaap / EarningsPerShareDiluted / USD/shares：start=2023-04-02, end=2023-07-01, val=0.02；首次季度 10-Q accession=0000002488-23-000139，filed=2023-08-02。完整单指标 raw 为 sec-eps-AMD-concept.raw.json，SHA-256=15436f232b8f49ef33d8cebf6ba7c4696048ef093290ef5f68ef48cb65e5c53a；可直接回读复算。 prior baseline 的原始季度观察值：start=2022-03-27, end=2022-06-25, val=0.27, accession=0000002488-22-000123, filed=2022-08-03。"
+        }
+      ],
+      "notes": [
+        "公开历史披露的事实参考；不是组织者持有的官方 outcome。",
+        "仅作为事后本地研究/开发验证数据；不得加入冻结证据或用于生成该题正式预测。",
+        "题面写 three months ended 2023-06-30；公司对应 June-2023 财季实际截至 2023-07-01。按相应 FY2023 Q2 单季值对照，保留此一日财历差异。"
+      ]
+    },
+    {
+      "task_id": "t4-eps-yoy-2023Q2-mixed",
+      "entity_id": "AMGN",
+      "target_type": "classification",
+      "reference_label": "up",
+      "reference_value": 2.57,
+      "unit": "USD/share",
+      "status": "provisional",
+      "method": "取对应 June-2023 财季的单季 GAAP diluted EPS 2.57，按 task.json 给定 prior_year_q_eps 2.45 直接比较，得到 up。reference_value 是实际季度 EPS；相等时题面无标签，本组未出现相等值。",
+      "inputs": [
+        {
+          "name": "reported_gaap_diluted_eps",
+          "value": 2.57,
+          "date": "2023-06-30",
+          "unit": "USD/share"
+        },
+        {
+          "name": "task_prior_year_q_eps",
+          "value": 2.45,
+          "date": "2022-06-30",
+          "unit": "USD/share"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.amgen.com/newsroom/press-releases/2023/08/amgen-reports-second-quarter-financial-results",
+          "title": "AMGEN REPORTS SECOND QUARTER FINANCIAL RESULTS",
+          "published_at": "2023-08-03",
+          "locator": "发布时间 2023-08-03；GAAP EPS 首段及 GAAP/Non-GAAP reconciliation，Three Months Ended June 30：2.57 / 2.45；六个月 7.86 不适用。"
+        },
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000318154/us-gaap/EarningsPerShareDiluted.json",
+          "title": "SEC Company Concept: Amgen Inc., EarningsPerShareDiluted",
+          "published_at": null,
+          "locator": "us-gaap / EarningsPerShareDiluted / USD/shares：start=2023-04-01, end=2023-06-30, val=2.57；首次季度 10-Q accession=0000318154-23-000053，filed=2023-08-04。完整单指标 raw 为 sec-eps-AMGN-concept.raw.json，SHA-256=44fda87915cfe7d797eb3d600fde86258fb8098832c87d395397cf4126600c60；可直接回读复算。 prior baseline 的原始季度观察值：start=2022-04-01, end=2022-06-30, val=2.45, accession=0000318154-22-000041, filed=2022-08-05。"
+        },
+        {
+          "url": "https://www.amgen.com/newsroom/press-releases/2023/07/amgen-announces-webcast-of-2023-second-quarter-financial-results",
+          "title": "AMGEN ANNOUNCES WEBCAST OF 2023 SECOND QUARTER FINANCIAL RESULTS",
+          "published_at": "2023-07-31",
+          "locator": "正文预告8月3日收市后发布；比题面resolution晚一天；原始正文保存sources/amgn-supplement/scheduled-release.raw.html。"
+        }
+      ],
+      "notes": [
+        "公开历史披露的事实参考；不是组织者持有的官方 outcome。",
+        "仅作为事后本地研究/开发验证数据；不得加入冻结证据或用于生成该题正式预测。",
+        "季度 EPS 2.57 的原始披露已核实，但公告实际在 2023-08-03，10-Q 在 2023-08-04；均晚于 task resolution_date 2023-08-02。题面 expected_report_date 2023-08-01 与真实日期不一致，历史季度比较可用，官方该截止日如何定 outcome 未知。"
+      ]
+    },
+    {
+      "task_id": "t4-eps-yoy-2023Q2-mixed",
+      "entity_id": "DOW",
+      "target_type": "classification",
+      "reference_label": "down",
+      "reference_value": 0.68,
+      "unit": "USD/share",
+      "status": "verified",
+      "method": "取对应 June-2023 财季的单季 GAAP diluted EPS 0.68，按 task.json 给定 prior_year_q_eps 2.26 直接比较，得到 down。reference_value 是实际季度 EPS；相等时题面无标签，本组未出现相等值。",
+      "inputs": [
+        {
+          "name": "reported_gaap_diluted_eps",
+          "value": 0.68,
+          "date": "2023-06-30",
+          "unit": "USD/share"
+        },
+        {
+          "name": "task_prior_year_q_eps",
+          "value": 2.26,
+          "date": "2022-06-30",
+          "unit": "USD/share"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://investors.dow.com/en/news/news-details/2023/Dow-reports-second-quarter-2023-results/default.aspx",
+          "title": "Dow reports second quarter 2023 results",
+          "published_at": "2023-07-25",
+          "locator": "Consolidated Statements of Income，Three Months Ended June 30 2023/2022，Earnings per common share — diluted：0.68 / 2.26；operating EPS 0.75 不适用。"
+        },
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001751788/us-gaap/EarningsPerShareDiluted.json",
+          "title": "SEC Company Concept: DOW INC., EarningsPerShareDiluted",
+          "published_at": null,
+          "locator": "us-gaap / EarningsPerShareDiluted / USD/shares：start=2023-04-01, end=2023-06-30, val=0.68；首次季度 10-Q accession=0001751788-23-000128，filed=2023-07-26。完整单指标 raw 为 sec-eps-DOW-concept.raw.json，SHA-256=a30ac9e0fba86bc51b2b43d386bbb5e23e4091c175514318ca03cf59c99b35a3；可直接回读复算。 prior baseline 的原始季度观察值：start=2022-04-01, end=2022-06-30, val=2.26, accession=0001751788-22-000123, filed=2022-07-22。"
+        }
+      ],
+      "notes": [
+        "公开历史披露的事实参考；不是组织者持有的官方 outcome。",
+        "仅作为事后本地研究/开发验证数据；不得加入冻结证据或用于生成该题正式预测。"
+      ]
+    },
+    {
+      "task_id": "t4-eps-yoy-2023Q2-mixed",
+      "entity_id": "HON",
+      "target_type": "classification",
+      "reference_label": "up",
+      "reference_value": 2.22,
+      "unit": "USD/share",
+      "status": "verified",
+      "method": "取对应 June-2023 财季的单季 GAAP diluted EPS 2.22，按 task.json 给定 prior_year_q_eps 1.84 直接比较，得到 up。reference_value 是实际季度 EPS；相等时题面无标签，本组未出现相等值。",
+      "inputs": [
+        {
+          "name": "reported_gaap_diluted_eps",
+          "value": 2.22,
+          "date": "2023-06-30",
+          "unit": "USD/share"
+        },
+        {
+          "name": "task_prior_year_q_eps",
+          "value": 1.84,
+          "date": "2022-06-30",
+          "unit": "USD/share"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.honeywell.com/us/en/news/press-releases/2023/07/honeywell-delivers-strong-second-quarter-results-and-raises-full-year-sales-segment-margin-and-adjusted-eps-guidance",
+          "title": "Honeywell Delivers Strong Second Quarter Results And Raises Full Year Sales, Segment Margin, And Adjusted EPS Guidance",
+          "published_at": "2023-07-27",
+          "locator": "Summary Financial Results：GAAP Earnings Per Share 2.22 / 1.84；adjusted EPS 2.23 / 2.10 不适用。Diluted 属性另由 SEC 原始季度 XBRL 核对。"
+        },
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000773840/us-gaap/EarningsPerShareDiluted.json",
+          "title": "SEC Company Concept: Honeywell International Inc, EarningsPerShareDiluted",
+          "published_at": null,
+          "locator": "us-gaap / EarningsPerShareDiluted / USD/shares：start=2023-04-01, end=2023-06-30, val=2.22；首次季度 10-Q accession=0000773840-23-000073，filed=2023-07-27。完整单指标 raw 为 sec-eps-HON-concept.raw.json，SHA-256=91667ff55623f86cc5718b4d45147e694a9cd3ee0815d4b04e573acc0876cf71；可直接回读复算。 prior baseline 的原始季度观察值：start=2022-04-01, end=2022-06-30, val=1.84, accession=0000773840-22-000054, filed=2022-07-28。"
+        }
+      ],
+      "notes": [
+        "公开历史披露的事实参考；不是组织者持有的官方 outcome。",
+        "仅作为事后本地研究/开发验证数据；不得加入冻结证据或用于生成该题正式预测。"
+      ]
+    },
+    {
+      "task_id": "t4-eps-yoy-2023Q2-mixed",
+      "entity_id": "IBM",
+      "target_type": "classification",
+      "reference_label": "up",
+      "reference_value": 1.72,
+      "unit": "USD/share",
+      "status": "verified",
+      "method": "取对应 June-2023 财季的单季 GAAP diluted EPS 1.72，按 task.json 给定 prior_year_q_eps 1.53 直接比较，得到 up。reference_value 是实际季度 EPS；相等时题面无标签，本组未出现相等值。",
+      "inputs": [
+        {
+          "name": "reported_gaap_diluted_eps",
+          "value": 1.72,
+          "date": "2023-06-30",
+          "unit": "USD/share"
+        },
+        {
+          "name": "task_prior_year_q_eps",
+          "value": 1.53,
+          "date": "2022-06-30",
+          "unit": "USD/share"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/51143/000005114323000021/ibm-20230630.htm",
+          "title": "IBM Form 10-Q, quarter ended June 30, 2023",
+          "published_at": "2023-07-25",
+          "locator": "Note 7 — Earnings Per Share of Common Stock，第 19 页；For the three months ended June 30，Assuming dilution — Total：2023 1.72 / 2022 1.53；2022 continuing operations 1.61 不能替代题面基准。"
+        },
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000051143/us-gaap/EarningsPerShareDiluted.json",
+          "title": "SEC Company Concept: INTERNATIONAL BUSINESS MACHINES CORP, EarningsPerShareDiluted",
+          "published_at": null,
+          "locator": "us-gaap / EarningsPerShareDiluted / USD/shares：start=2023-04-01, end=2023-06-30, val=1.72；首次季度 10-Q accession=0000051143-23-000021，filed=2023-07-25。完整单指标 raw 为 sec-eps-IBM-concept.raw.json，SHA-256=7b81dcc0a49349da6e8b4aee646ed9e5189d2e7d33dee9ba6beacd62dcc9dcc7；可直接回读复算。 prior baseline 的原始季度观察值：start=2022-04-01, end=2022-06-30, val=1.53, accession=0001558370-22-010985, filed=2022-07-25。"
+        }
+      ],
+      "notes": [
+        "公开历史披露的事实参考；不是组织者持有的官方 outcome。",
+        "仅作为事后本地研究/开发验证数据；不得加入冻结证据或用于生成该题正式预测。",
+        "使用含 discontinued operations 的 Total assuming dilution；题面 2022 基准 1.53 与原始 Note 7 一致，不能用 continuing operations 的 1.61 改写 baseline。"
+      ]
+    },
+    {
+      "task_id": "t4-eps-yoy-2023Q2-mixed",
+      "entity_id": "TMO",
+      "target_type": "classification",
+      "reference_label": "down",
+      "reference_value": 3.51,
+      "unit": "USD/share",
+      "status": "verified",
+      "method": "取对应 June-2023 财季的单季 GAAP diluted EPS 3.51，按 task.json 给定 prior_year_q_eps 4.22 直接比较，得到 down。reference_value 是实际季度 EPS；相等时题面无标签，本组未出现相等值。",
+      "inputs": [
+        {
+          "name": "reported_gaap_diluted_eps",
+          "value": 3.51,
+          "date": "2023-07-01",
+          "unit": "USD/share"
+        },
+        {
+          "name": "task_prior_year_q_eps",
+          "value": 4.22,
+          "date": "2022-06-30",
+          "unit": "USD/share"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://ir.thermofisher.com/investors/news-events/news/news-details/2023/Thermo-Fisher-Scientific-Reports-Second-Quarter-2023-Results/",
+          "title": "Thermo Fisher Scientific Reports Second Quarter 2023 Results",
+          "published_at": "2023-07-26",
+          "locator": "GAAP Earnings Results 和 Condensed Consolidated Statement of Income：Diluted EPS 3.51 / 4.22，季度实际截至 2023-07-01；adjusted 5.15 不适用。"
+        },
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000097745/us-gaap/EarningsPerShareDiluted.json",
+          "title": "SEC Company Concept: THERMO FISHER SCIENTIFIC INC., EarningsPerShareDiluted",
+          "published_at": null,
+          "locator": "us-gaap / EarningsPerShareDiluted / USD/shares：start=2023-04-02, end=2023-07-01, val=3.51；首次季度 10-Q accession=0000097745-23-000059，filed=2023-08-04。完整单指标 raw 为 sec-eps-TMO-concept.raw.json，SHA-256=447eae05d7460d87c66be24b882e5194361c822d539ddd1ec86aa8e64eb08d96；可直接回读复算。 prior baseline 的原始季度观察值：start=2022-04-03, end=2022-07-02, val=4.22, accession=0000097745-22-000047, filed=2022-08-05。"
+        }
+      ],
+      "notes": [
+        "公开历史披露的事实参考；不是组织者持有的官方 outcome。",
+        "仅作为事后本地研究/开发验证数据；不得加入冻结证据或用于生成该题正式预测。",
+        "题面写 three months ended 2023-06-30；公司对应 June-2023 财季实际截至 2023-07-01。按相应 FY2023 Q2 单季值对照，保留此一日财历差异。"
+      ]
+    },
+    {
+      "task_id": "t4-eps-growth-2024Q3-banks",
+      "entity_id": "BAC",
+      "target_type": "regression",
+      "reference_label": null,
+      "reference_value": -10.0,
+      "unit": "percent",
+      "status": "verified",
+      "method": "取截至 2024-09-30 三个月 GAAP diluted EPS 0.81，使用 task.json 给定基准 0.9，计算 (actual_eps - prior_year_q_eps) / prior_year_q_eps × 100。本组全部基准为正数；输出百分数而非比例。",
+      "inputs": [
+        {
+          "name": "reported_gaap_diluted_eps",
+          "value": 0.81,
+          "date": "2024-09-30",
+          "unit": "USD/share"
+        },
+        {
+          "name": "task_prior_year_q_eps",
+          "value": 0.9,
+          "date": "2023-09-30",
+          "unit": "USD/share"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/70858/000007085824000266/bac09302024ex992.htm",
+          "title": "Bank of America 3Q24 earnings presentation, Exhibit 99.2",
+          "published_at": "2024-10-15",
+          "locator": "第 2 页 / Summary Income Statement，3Q24 / 3Q23，Diluted earnings per share：0.81 / 0.90。"
+        },
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000070858/us-gaap/EarningsPerShareDiluted.json",
+          "title": "SEC Company Concept: BofA Finance LLC, EarningsPerShareDiluted",
+          "published_at": null,
+          "locator": "us-gaap / EarningsPerShareDiluted / USD/shares：start=2024-07-01, end=2024-09-30, val=0.81；首次季度 10-Q accession=0000070858-24-000280，filed=2024-10-29。完整单指标 raw 为 sec-eps-BAC-concept.raw.json，SHA-256=2133ba4c4365fb48817dd9557c0244519a99aced91693b3e6372c39f706da786；可直接回读复算。 prior baseline 的原始季度观察值：start=2023-07-01, end=2023-09-30, val=0.9, accession=0000070858-23-000272, filed=2023-10-31。"
+        }
+      ],
+      "notes": [
+        "公开历史披露的事实参考；不是组织者持有的官方 outcome。",
+        "仅作为事后本地研究/开发验证数据；不得加入冻结证据或用于生成该题正式预测。",
+        "首次业绩公告在 2024-10-11 至 2024-10-16，早于 resolution_date 2024-10-24；之后的 10-Q XBRL 仅用于交叉核对，没有把申报日误记为首次公告日。"
+      ]
+    },
+    {
+      "task_id": "t4-eps-growth-2024Q3-banks",
+      "entity_id": "C",
+      "target_type": "regression",
+      "reference_label": null,
+      "reference_value": -7.361963190184049,
+      "unit": "percent",
+      "status": "verified",
+      "method": "取截至 2024-09-30 三个月 GAAP diluted EPS 1.51，使用 task.json 给定基准 1.63，计算 (actual_eps - prior_year_q_eps) / prior_year_q_eps × 100。本组全部基准为正数；输出百分数而非比例。",
+      "inputs": [
+        {
+          "name": "reported_gaap_diluted_eps",
+          "value": 1.51,
+          "date": "2024-09-30",
+          "unit": "USD/share"
+        },
+        {
+          "name": "task_prior_year_q_eps",
+          "value": 1.63,
+          "date": "2023-09-30",
+          "unit": "USD/share"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.citigroup.com/rcs/citigpa/storage/public/Earnings/Q32024/2024pr-qtr3rslt.pdf",
+          "title": "Citigroup Reports Third Quarter 2024 Results",
+          "published_at": "2024-10-15",
+          "locator": "PDF 第 1 页，2024-10-15，EPS 1.51 对比 3Q23 1.63；Diluted 属性由 SEC 原始季度 XBRL 核对。"
+        },
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000831001/us-gaap/EarningsPerShareDiluted.json",
+          "title": "SEC Company Concept: Citigroup Inc, EarningsPerShareDiluted",
+          "published_at": null,
+          "locator": "us-gaap / EarningsPerShareDiluted / USD/shares：start=2024-07-01, end=2024-09-30, val=1.51；首次季度 10-Q accession=0000831001-24-000134，filed=2024-11-07。完整单指标 raw 为 sec-eps-C-concept.raw.json，SHA-256=23820b28db5ee74137fd4703a7baa9ec4e2d51065391919d7da75d35651add13；可直接回读复算。 prior baseline 的原始季度观察值：start=2023-07-01, end=2023-09-30, val=1.63, accession=0000831001-23-000132, filed=2023-11-03。"
+        }
+      ],
+      "notes": [
+        "公开历史披露的事实参考；不是组织者持有的官方 outcome。",
+        "仅作为事后本地研究/开发验证数据；不得加入冻结证据或用于生成该题正式预测。",
+        "首次业绩公告在 2024-10-11 至 2024-10-16，早于 resolution_date 2024-10-24；之后的 10-Q XBRL 仅用于交叉核对，没有把申报日误记为首次公告日。"
+      ]
+    },
+    {
+      "task_id": "t4-eps-growth-2024Q3-banks",
+      "entity_id": "GS",
+      "target_type": "regression",
+      "reference_label": null,
+      "reference_value": 53.56489945155393,
+      "unit": "percent",
+      "status": "verified",
+      "method": "取截至 2024-09-30 三个月 GAAP diluted EPS 8.4，使用 task.json 给定基准 5.47，计算 (actual_eps - prior_year_q_eps) / prior_year_q_eps × 100。本组全部基准为正数；输出百分数而非比例。",
+      "inputs": [
+        {
+          "name": "reported_gaap_diluted_eps",
+          "value": 8.4,
+          "date": "2024-09-30",
+          "unit": "USD/share"
+        },
+        {
+          "name": "task_prior_year_q_eps",
+          "value": 5.47,
+          "date": "2023-09-30",
+          "unit": "USD/share"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.goldmansachs.com/pressroom/press-releases/2024/2024-10-15-q3-results",
+          "title": "Goldman Sachs Reports 2024 Third Quarter Earnings Results",
+          "published_at": "2024-10-15",
+          "locator": "公告首段，quarter ended September 30, 2024，diluted EPS 8.40；同期 earnings PDF 第 1 页对照 3Q23 5.47。"
+        },
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000886982/us-gaap/EarningsPerShareDiluted.json",
+          "title": "SEC Company Concept: The Goldman Sachs Group, Inc., EarningsPerShareDiluted",
+          "published_at": null,
+          "locator": "us-gaap / EarningsPerShareDiluted / USD/shares：start=2024-07-01, end=2024-09-30, val=8.4；首次季度 10-Q accession=0000886982-24-000025，filed=2024-11-04。完整单指标 raw 为 sec-eps-GS-concept.raw.json，SHA-256=b8c3d05e883361ebd8543b3dfce7c0f40fda35a90cb1f604416f352a871b64db；可直接回读复算。 prior baseline 的原始季度观察值：start=2023-07-01, end=2023-09-30, val=5.47, accession=0000886982-23-000011, filed=2023-11-03。"
+        }
+      ],
+      "notes": [
+        "公开历史披露的事实参考；不是组织者持有的官方 outcome。",
+        "仅作为事后本地研究/开发验证数据；不得加入冻结证据或用于生成该题正式预测。",
+        "首次业绩公告在 2024-10-11 至 2024-10-16，早于 resolution_date 2024-10-24；之后的 10-Q XBRL 仅用于交叉核对，没有把申报日误记为首次公告日。"
+      ]
+    },
+    {
+      "task_id": "t4-eps-growth-2024Q3-banks",
+      "entity_id": "JPM",
+      "target_type": "regression",
+      "reference_label": null,
+      "reference_value": 0.9237875288683602,
+      "unit": "percent",
+      "status": "verified",
+      "method": "取截至 2024-09-30 三个月 GAAP diluted EPS 4.37，使用 task.json 给定基准 4.33，计算 (actual_eps - prior_year_q_eps) / prior_year_q_eps × 100。本组全部基准为正数；输出百分数而非比例。",
+      "inputs": [
+        {
+          "name": "reported_gaap_diluted_eps",
+          "value": 4.37,
+          "date": "2024-09-30",
+          "unit": "USD/share"
+        },
+        {
+          "name": "task_prior_year_q_eps",
+          "value": 4.33,
+          "date": "2023-09-30",
+          "unit": "USD/share"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961724000555/a3q24erfexhibit991narrative.htm",
+          "title": "JPMorgan Chase Reports Third-Quarter 2024 Financial Results",
+          "published_at": "2024-10-11",
+          "locator": "2024-10-11 Exhibit 99.1，NET INCOME OF $12.9 BILLION / $4.37 PER SHARE；Diluted 属性与 SEC XBRL 以及 earnings supplement Diluted EPS 行核对。"
+        },
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000019617/us-gaap/EarningsPerShareDiluted.json",
+          "title": "SEC Company Concept: JPMORGAN CHASE & CO, EarningsPerShareDiluted",
+          "published_at": null,
+          "locator": "us-gaap / EarningsPerShareDiluted / USD/shares：start=2024-07-01, end=2024-09-30, val=4.37；首次季度 10-Q accession=0000019617-24-000611，filed=2024-10-30。完整单指标 raw 为 sec-eps-JPM-concept.raw.json，SHA-256=39a48e8fed3c70d6a3adf5fd6f4fa529e10d1849dc918cfee2650b0d69cb7fc8；可直接回读复算。 prior baseline 的原始季度观察值：start=2023-07-01, end=2023-09-30, val=4.33, accession=0000019617-23-000524, filed=2023-11-01。"
+        }
+      ],
+      "notes": [
+        "公开历史披露的事实参考；不是组织者持有的官方 outcome。",
+        "仅作为事后本地研究/开发验证数据；不得加入冻结证据或用于生成该题正式预测。",
+        "首次业绩公告在 2024-10-11 至 2024-10-16，早于 resolution_date 2024-10-24；之后的 10-Q XBRL 仅用于交叉核对，没有把申报日误记为首次公告日。"
+      ]
+    },
+    {
+      "task_id": "t4-eps-growth-2024Q3-banks",
+      "entity_id": "MS",
+      "target_type": "regression",
+      "reference_label": null,
+      "reference_value": 36.231884057971016,
+      "unit": "percent",
+      "status": "verified",
+      "method": "取截至 2024-09-30 三个月 GAAP diluted EPS 1.88，使用 task.json 给定基准 1.38，计算 (actual_eps - prior_year_q_eps) / prior_year_q_eps × 100。本组全部基准为正数；输出百分数而非比例。",
+      "inputs": [
+        {
+          "name": "reported_gaap_diluted_eps",
+          "value": 1.88,
+          "date": "2024-09-30",
+          "unit": "USD/share"
+        },
+        {
+          "name": "task_prior_year_q_eps",
+          "value": 1.38,
+          "date": "2023-09-30",
+          "unit": "USD/share"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/895421/000089542124000484/a3q24msearningsrelease.htm",
+          "title": "Morgan Stanley Reports Third Quarter 2024",
+          "published_at": "2024-10-16",
+          "locator": "首段及 Financial Summary：diluted EPS 1.88 对比 1.38，Three Months Ended September 30 2024/2023。"
+        },
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000895421/us-gaap/EarningsPerShareDiluted.json",
+          "title": "SEC Company Concept: MORGAN STANLEY, EarningsPerShareDiluted",
+          "published_at": null,
+          "locator": "us-gaap / EarningsPerShareDiluted / USD/shares：start=2024-07-01, end=2024-09-30, val=1.88；首次季度 10-Q accession=0000895421-24-000491，filed=2024-11-04。完整单指标 raw 为 sec-eps-MS-concept.raw.json，SHA-256=ed8de86db84b91eca61826bfd35604582ccd31ef5be4b51eac9dd24f69249358；可直接回读复算。 prior baseline 的原始季度观察值：start=2023-07-01, end=2023-09-30, val=1.38, accession=0000895421-23-000441, filed=2023-11-03。"
+        }
+      ],
+      "notes": [
+        "公开历史披露的事实参考；不是组织者持有的官方 outcome。",
+        "仅作为事后本地研究/开发验证数据；不得加入冻结证据或用于生成该题正式预测。",
+        "首次业绩公告在 2024-10-11 至 2024-10-16，早于 resolution_date 2024-10-24；之后的 10-Q XBRL 仅用于交叉核对，没有把申报日误记为首次公告日。"
+      ]
+    },
+    {
+      "task_id": "t4-eps-growth-2024Q3-banks",
+      "entity_id": "PNC",
+      "target_type": "regression",
+      "reference_label": null,
+      "reference_value": -3.0555555555555554,
+      "unit": "percent",
+      "status": "verified",
+      "method": "取截至 2024-09-30 三个月 GAAP diluted EPS 3.49，使用 task.json 给定基准 3.6，计算 (actual_eps - prior_year_q_eps) / prior_year_q_eps × 100。本组全部基准为正数；输出百分数而非比例。",
+      "inputs": [
+        {
+          "name": "reported_gaap_diluted_eps",
+          "value": 3.49,
+          "date": "2024-09-30",
+          "unit": "USD/share"
+        },
+        {
+          "name": "task_prior_year_q_eps",
+          "value": 3.6,
+          "date": "2023-09-30",
+          "unit": "USD/share"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://investor.pnc.com/news-events/financial-press-releases/detail/639/pnc-reports-third-quarter-2024-net-income-of-1-5-billion-3-49-diluted-eps",
+          "title": "PNC Reports Third Quarter 2024 Net Income of $1.5 Billion, $3.49 Diluted EPS",
+          "published_at": "2024-10-15",
+          "locator": "Financial Results Summary，列 3Q24 / 2Q24 / 3Q23，Diluted earnings per common share：3.49 / 3.39 / 3.60；基准使用 3Q23。"
+        },
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000713676/us-gaap/EarningsPerShareDiluted.json",
+          "title": "SEC Company Concept: PNC Financial Services Group, Inc., EarningsPerShareDiluted",
+          "published_at": null,
+          "locator": "us-gaap / EarningsPerShareDiluted / USD/shares：start=2024-07-01, end=2024-09-30, val=3.49；首次季度 10-Q accession=0000713676-24-000081，filed=2024-11-01。完整单指标 raw 为 sec-eps-PNC-concept.raw.json，SHA-256=f92fe3a631659ab0423319adcdd8fb7fb4fe26cce69b93758012a4e370683375；可直接回读复算。 prior baseline 的原始季度观察值：start=2023-07-01, end=2023-09-30, val=3.6, accession=0000713676-23-000079, filed=2023-11-02。"
+        }
+      ],
+      "notes": [
+        "公开历史披露的事实参考；不是组织者持有的官方 outcome。",
+        "仅作为事后本地研究/开发验证数据；不得加入冻结证据或用于生成该题正式预测。",
+        "首次业绩公告在 2024-10-11 至 2024-10-16，早于 resolution_date 2024-10-24；之后的 10-Q XBRL 仅用于交叉核对，没有把申报日误记为首次公告日。"
+      ]
+    },
+    {
+      "task_id": "t4-eps-growth-2024Q3-banks",
+      "entity_id": "USB",
+      "target_type": "regression",
+      "reference_label": null,
+      "reference_value": 13.186813186813186,
+      "unit": "percent",
+      "status": "verified",
+      "method": "取截至 2024-09-30 三个月 GAAP diluted EPS 1.03，使用 task.json 给定基准 0.91，计算 (actual_eps - prior_year_q_eps) / prior_year_q_eps × 100。本组全部基准为正数；输出百分数而非比例。",
+      "inputs": [
+        {
+          "name": "reported_gaap_diluted_eps",
+          "value": 1.03,
+          "date": "2024-09-30",
+          "unit": "USD/share"
+        },
+        {
+          "name": "task_prior_year_q_eps",
+          "value": 0.91,
+          "date": "2023-09-30",
+          "unit": "USD/share"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/36104/000003610424000062/a3q24earningsrelease.htm",
+          "title": "U.S. Bancorp Reports Third Quarter 2024 Results",
+          "published_at": "2024-10-16",
+          "locator": "GAAP diluted EPS 行，3Q24 1.03 / 3Q23 0.91；剔除 notable items 后的 3Q23 1.05 不适用。"
+        },
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000036104/us-gaap/EarningsPerShareDiluted.json",
+          "title": "SEC Company Concept: US BANCORP \\DE\\, EarningsPerShareDiluted",
+          "published_at": null,
+          "locator": "us-gaap / EarningsPerShareDiluted / USD/shares：start=2024-07-01, end=2024-09-30, val=1.03；首次季度 10-Q accession=0000036104-24-000072，filed=2024-11-05。完整单指标 raw 为 sec-eps-USB-concept.raw.json，SHA-256=562214f55ce0ec284e2d94246314b6a35b853f0d8fe75e520c6bf003e028ede1；可直接回读复算。 prior baseline 的原始季度观察值：start=2023-07-01, end=2023-09-30, val=0.91, accession=0001193125-23-268341, filed=2023-11-01。"
+        }
+      ],
+      "notes": [
+        "公开历史披露的事实参考；不是组织者持有的官方 outcome。",
+        "仅作为事后本地研究/开发验证数据；不得加入冻结证据或用于生成该题正式预测。",
+        "首次业绩公告在 2024-10-11 至 2024-10-16，早于 resolution_date 2024-10-24；之后的 10-Q XBRL 仅用于交叉核对，没有把申报日误记为首次公告日。",
+        "3Q23 0.91 是 GAAP diluted EPS；剔除 notable items 的 1.05 属调整值，不替代任务基准。"
+      ]
+    },
+    {
+      "task_id": "t4-eps-growth-2024Q3-banks",
+      "entity_id": "WFC",
+      "target_type": "regression",
+      "reference_label": null,
+      "reference_value": -4.054054054054054,
+      "unit": "percent",
+      "status": "verified",
+      "method": "取截至 2024-09-30 三个月 GAAP diluted EPS 1.42，使用 task.json 给定基准 1.48，计算 (actual_eps - prior_year_q_eps) / prior_year_q_eps × 100。本组全部基准为正数；输出百分数而非比例。",
+      "inputs": [
+        {
+          "name": "reported_gaap_diluted_eps",
+          "value": 1.42,
+          "date": "2024-09-30",
+          "unit": "USD/share"
+        },
+        {
+          "name": "task_prior_year_q_eps",
+          "value": 1.48,
+          "date": "2023-09-30",
+          "unit": "USD/share"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/72971/000007297124000218/wfc3qer10-11x24ex991xrelea.htm",
+          "title": "Wells Fargo Reports Third Quarter 2024 Financial Results",
+          "published_at": "2024-10-11",
+          "locator": "Financial Results，Quarter ended Sept 30 2024/2023，Diluted earnings per common share：1.42 / 1.48。"
+        },
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000072971/us-gaap/EarningsPerShareDiluted.json",
+          "title": "SEC Company Concept: WELLS        FARGO & COMPANY/MN, EarningsPerShareDiluted",
+          "published_at": null,
+          "locator": "us-gaap / EarningsPerShareDiluted / USD/shares：start=2024-07-01, end=2024-09-30, val=1.42；首次季度 10-Q accession=0000072971-24-000243，filed=2024-10-31。完整单指标 raw 为 sec-eps-WFC-concept.raw.json，SHA-256=1e20e27e2c96f370b20dabf8d8cc6e1af5ec2904899c9b627fbe47866b92eaa6；可直接回读复算。 prior baseline 的原始季度观察值：start=2023-07-01, end=2023-09-30, val=1.48, accession=0000072971-23-000170, filed=2023-10-31。"
+        }
+      ],
+      "notes": [
+        "公开历史披露的事实参考；不是组织者持有的官方 outcome。",
+        "仅作为事后本地研究/开发验证数据；不得加入冻结证据或用于生成该题正式预测。",
+        "首次业绩公告在 2024-10-11 至 2024-10-16，早于 resolution_date 2024-10-24；之后的 10-Q XBRL 仅用于交叉核对，没有把申报日误记为首次公告日。"
+      ]
+    },
+    {
+      "task_id": "t4-credit-event-2023",
+      "entity_id": "BBBY",
+      "target_type": "classification",
+      "reference_label": "credit_event",
+      "reference_value": null,
+      "unit": "label",
+      "status": "verified",
+      "method": "核实 Chapter 11 申请日期落在 (2023-03-31, 2024-03-31] 内；任一合格事件足以确定 credit_event。reference_value 留空；信用事件历史标签不转换为预测概率或回归数值。",
+      "inputs": [
+        {
+          "name": "event_window_start_exclusive",
+          "value": "2023-03-31",
+          "date": "2023-03-31",
+          "unit": "date"
+        },
+        {
+          "name": "event_window_end_inclusive",
+          "value": "2024-03-31",
+          "date": "2024-03-31",
+          "unit": "date"
+        },
+        {
+          "name": "chapter_11_filing_date",
+          "value": "2023-04-23",
+          "date": "2023-04-23",
+          "unit": "date"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/886158/000119312523111754/d465247dex991.htm",
+          "title": "Bed Bath & Beyond Inc. Files Voluntary Chapter 11 Petitions",
+          "published_at": "2023-04-23",
+          "locator": "Exhibit 99.1 公告首段：2023-04-23，公司与部分子公司在美国新泽西州破产法院自愿申请 Chapter 11。"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/886158/000119312523111754/d465247d8k.htm",
+          "title": "BBBY 原始事件Form 8-K",
+          "published_at": "2023-04-24",
+          "locator": "Item 1.03；正文确认实际Chapter11申请日期；本地sources/credit-supplement/documents/BBBY/2023-04-24-0001193125-23-111754-d465247d8k.htm。"
+        }
+      ],
+      "notes": [
+        "来源披露公司及其指定子公司的 Chapter 11 petition；事件日期与 SEC 申报/公告日期分开记录。",
+        "公开历史事实参考，不是官方 outcome；不得反馈到冻结证据或正式预测流程。",
+        "新增sources/credit-supplement保存原始SEC正文与完整目录。四正例申请日期直接回读原始8-K；四no_event补齐70份观察窗内及4份尾部申报正文，但payment default/distressed exchange的全窗无事件仍未穷尽证明，保持暂定。"
+      ]
+    },
+    {
+      "task_id": "t4-credit-event-2023",
+      "entity_id": "BBY",
+      "target_type": "classification",
+      "reference_label": "no_event",
+      "reference_value": null,
+      "unit": "label",
+      "status": "provisional",
+      "method": "以完整窗口的 SEC 申报目录核对破产/违约相关 Item，再结合跨越窗口的年度及季度债务、授信、偿债或 covenant 披露，暂记 no_event。证据是连续公开披露与窗口检查的组合；未穷尽法院案卷及全部评级机构的 distressed exchange 记录，不能升级 verified。reference_value 留空；信用事件历史标签不转换为预测概率或回归数值。",
+      "inputs": [
+        {
+          "name": "event_window_start_exclusive",
+          "value": "2023-03-31",
+          "date": "2023-03-31",
+          "unit": "date"
+        },
+        {
+          "name": "event_window_end_inclusive",
+          "value": "2024-03-31",
+          "date": "2024-03-31",
+          "unit": "date"
+        },
+        {
+          "name": "reviewed_window_relevant_filings",
+          "value": 15,
+          "date": "2024-03-31",
+          "unit": "count"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/764478/000076447824000010/bby-20240203x10k.htm",
+          "title": "Best Buy Form 10-K, fiscal year ended February 3, 2024",
+          "published_at": "2024-03-15",
+          "locator": "MD&A — Sources of Liquidity / debt facility and credit ratings：2024-02-03 所有 financial covenants 合规；截至 2024-03-13 信用评级与上一年相同，S&P BBB+/Stable、Moody's A3/Stable；Note 8 — Debt 列示 2028/2030 notes。"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/764478/000076447824000022/bby-20240504x10q.htm",
+          "title": "Best Buy Form 10-Q, quarter ended May 4, 2024",
+          "published_at": "2024-06-07",
+          "locator": "Note 6 — Debt：截至 2024-05-04、2024-02-03、2023-04-29 五年循环授信未提款；2028/2030 notes 500/650 百万美元本金持续列示；该季度覆盖信用窗口尾部 2024-02-04 至 2024-03-31。"
+        },
+        {
+          "url": "https://data.sec.gov/submissions/CIK0000764478.json",
+          "title": "SEC submissions history: BBY",
+          "published_at": null,
+          "locator": "核对 (2023-03-31, 2024-03-31] 内 15 份 8-K/8-K/A/10-K/10-Q 的 filingDate、form、items，未发现 Item 1.03 或 2.04；含窗口后季度的 18 份记录及 archive feed 已保存。元数据检查不能排除未披露/非重大事件。"
+        }
+      ],
+      "notes": [
+        "无 positive event 检索结果本身不构成 no_event 证明；本条仅为可复核的 provisional 参考，评估必须单独显示此状态。",
+        "窗口末端使用截至 2024-03-31 或之后季度以覆盖财年结束后的空档；窗口后披露只用于历史参考，不属于 cutoff 前预测证据。",
+        "尚需补齐所有 rating-agency-recognized distressed debt exchange 的完整历史台账/法院案卷检查。",
+        "新增sources/credit-supplement保存原始SEC正文与完整目录。四正例申请日期直接回读原始8-K；四no_event补齐70份观察窗内及4份尾部申报正文，但payment default/distressed exchange的全窗无事件仍未穷尽证明，保持暂定。"
+      ]
+    },
+    {
+      "task_id": "t4-credit-event-2023",
+      "entity_id": "M",
+      "target_type": "classification",
+      "reference_label": "no_event",
+      "reference_value": null,
+      "unit": "label",
+      "status": "provisional",
+      "method": "以完整窗口的 SEC 申报目录核对破产/违约相关 Item，再结合跨越窗口的年度及季度债务、授信、偿债或 covenant 披露，暂记 no_event。证据是连续公开披露与窗口检查的组合；未穷尽法院案卷及全部评级机构的 distressed exchange 记录，不能升级 verified。reference_value 留空；信用事件历史标签不转换为预测概率或回归数值。",
+      "inputs": [
+        {
+          "name": "event_window_start_exclusive",
+          "value": "2023-03-31",
+          "date": "2023-03-31",
+          "unit": "date"
+        },
+        {
+          "name": "event_window_end_inclusive",
+          "value": "2024-03-31",
+          "date": "2024-03-31",
+          "unit": "date"
+        },
+        {
+          "name": "reviewed_window_relevant_filings",
+          "value": 14,
+          "date": "2024-03-31",
+          "unit": "count"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/794367/000162828024012734/m-20240203.htm",
+          "title": "Macy's Form 10-K, fiscal year ended February 3, 2024",
+          "published_at": "2024-03-22",
+          "locator": "Note 6 — Financing Activities，第 58 页 / 2023 Debt Financing Activities：除 ABL 借款外，FY2023 未发生其他重大债务融资活动；截至 2024-02-03 senior notes/debentures 继续列示。 第 29 页 Credit rating and outlook：截至 2024-02-03 Moody's Ba1、S&P BB+、Fitch BBB-，三者均 Stable；现金流补充信息列 FY2023 实付利息 157 百万美元。"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/794367/000162828024025853/m-20240504.htm",
+          "title": "Macy's Form 10-Q, quarter ended May 4, 2024",
+          "published_at": "2024-05-30",
+          "locator": "Note 4 — Financing Activities：截至 2024-05-04 的 13 周，除资本租赁外未借入或偿还债务；Debt Transactions：senior unsecured notes/debentures 本金在 2024-02-03 和 2024-05-04 均为 3,007 百万美元。季度涵盖 2024-03-31。"
+        },
+        {
+          "url": "https://data.sec.gov/submissions/CIK0000794367.json",
+          "title": "SEC submissions history: M",
+          "published_at": null,
+          "locator": "核对 (2023-03-31, 2024-03-31] 内 14 份 8-K/8-K/A/10-K/10-Q 的 filingDate、form、items，未发现 Item 1.03 或 2.04；含窗口后季度的 18 份记录及 archive feed 已保存。元数据检查不能排除未披露/非重大事件。"
+        }
+      ],
+      "notes": [
+        "无 positive event 检索结果本身不构成 no_event 证明；本条仅为可复核的 provisional 参考，评估必须单独显示此状态。",
+        "窗口末端使用截至 2024-03-31 或之后季度以覆盖财年结束后的空档；窗口后披露只用于历史参考，不属于 cutoff 前预测证据。",
+        "尚需补齐所有 rating-agency-recognized distressed debt exchange 的完整历史台账/法院案卷检查。",
+        "新增sources/credit-supplement保存原始SEC正文与完整目录。四正例申请日期直接回读原始8-K；四no_event补齐70份观察窗内及4份尾部申报正文，但payment default/distressed exchange的全窗无事件仍未穷尽证明，保持暂定。"
+      ]
+    },
+    {
+      "task_id": "t4-credit-event-2023",
+      "entity_id": "ODFL",
+      "target_type": "classification",
+      "reference_label": "no_event",
+      "reference_value": null,
+      "unit": "label",
+      "status": "provisional",
+      "method": "以完整窗口的 SEC 申报目录核对破产/违约相关 Item，再结合跨越窗口的年度及季度债务、授信、偿债或 covenant 披露，暂记 no_event。证据是连续公开披露与窗口检查的组合；未穷尽法院案卷及全部评级机构的 distressed exchange 记录，不能升级 verified。reference_value 留空；信用事件历史标签不转换为预测概率或回归数值。",
+      "inputs": [
+        {
+          "name": "event_window_start_exclusive",
+          "value": "2023-03-31",
+          "date": "2023-03-31",
+          "unit": "date"
+        },
+        {
+          "name": "event_window_end_inclusive",
+          "value": "2024-03-31",
+          "date": "2024-03-31",
+          "unit": "date"
+        },
+        {
+          "name": "reviewed_window_relevant_filings",
+          "value": 21,
+          "date": "2024-03-31",
+          "unit": "count"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/878927/000095017024020176/odfl-20231231.htm",
+          "title": "Old Dominion Freight Line Form 10-K, year ended December 31, 2023",
+          "published_at": "2024-02-26",
+          "locator": "MD&A — General Debt Provisions：截至 2023-12-31 期间所有债务 covenants 合规；Long-Term Debt：2023-05-04 按期偿还 20 百万美元 Series B notes 本金，余 80 百万美元。 现金流补充表列 FY2023 实付利息 3.484 百万美元，债务本金付款 20 百万美元。"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/878927/000095017024054284/odfl-20240331.htm",
+          "title": "Old Dominion Freight Line Form 10-Q, quarter ended March 31, 2024",
+          "published_at": "2024-05-07",
+          "locator": "MD&A — General Debt Provisions，第 14 页：截至 2024-03-31 期间所有 outstanding debt instruments covenants 合规；Series B notes 余 80 百万美元，循环授信未提款。该季期末恰为完整窗口终点。"
+        },
+        {
+          "url": "https://data.sec.gov/submissions/CIK0000878927.json",
+          "title": "SEC submissions history: ODFL",
+          "published_at": null,
+          "locator": "核对 (2023-03-31, 2024-03-31] 内 21 份 8-K/8-K/A/10-K/10-Q 的 filingDate、form、items，未发现 Item 1.03 或 2.04；含窗口后季度的 25 份记录及 archive feed 已保存。元数据检查不能排除未披露/非重大事件。"
+        }
+      ],
+      "notes": [
+        "无 positive event 检索结果本身不构成 no_event 证明；本条仅为可复核的 provisional 参考，评估必须单独显示此状态。",
+        "窗口末端使用截至 2024-03-31 或之后季度以覆盖财年结束后的空档；窗口后披露只用于历史参考，不属于 cutoff 前预测证据。",
+        "尚需补齐所有 rating-agency-recognized distressed debt exchange 的完整历史台账/法院案卷检查。",
+        "新增sources/credit-supplement保存原始SEC正文与完整目录。四正例申请日期直接回读原始8-K；四no_event补齐70份观察窗内及4份尾部申报正文，但payment default/distressed exchange的全窗无事件仍未穷尽证明，保持暂定。"
+      ]
+    },
+    {
+      "task_id": "t4-credit-event-2023",
+      "entity_id": "RAD",
+      "target_type": "classification",
+      "reference_label": "credit_event",
+      "reference_value": null,
+      "unit": "label",
+      "status": "verified",
+      "method": "核实 Chapter 11 申请日期落在 (2023-03-31, 2024-03-31] 内；任一合格事件足以确定 credit_event。reference_value 留空；信用事件历史标签不转换为预测概率或回归数值。",
+      "inputs": [
+        {
+          "name": "event_window_start_exclusive",
+          "value": "2023-03-31",
+          "date": "2023-03-31",
+          "unit": "date"
+        },
+        {
+          "name": "event_window_end_inclusive",
+          "value": "2024-03-31",
+          "date": "2024-03-31",
+          "unit": "date"
+        },
+        {
+          "name": "chapter_11_filing_date",
+          "value": "2023-10-15",
+          "date": "2023-10-15",
+          "unit": "date"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/84129/000110465923109413/tm2328535d1_8ka.htm",
+          "title": "Rite Aid Corporation Form 8-K/A, report date October 15, 2023",
+          "published_at": "2023-10-16",
+          "locator": "Item 1.03 Bankruptcy or Receivership：2023-10-15 公司与指定子公司向美国新泽西州破产法院提交 Chapter 11 petitions。该 8-K/A 于 10-16 提交，修订附件不改变事件日期。"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/84129/000110465923109236/tm2328505d1_8k.htm",
+          "title": "RAD 原始事件Form 8-K",
+          "published_at": "2023-10-16",
+          "locator": "Item 1.03；正文确认实际Chapter11申请日期；本地sources/credit-supplement/documents/RAD/2023-10-16-0001104659-23-109236-tm2328505d1_8k.htm。"
+        }
+      ],
+      "notes": [
+        "来源披露公司及其指定子公司的 Chapter 11 petition；事件日期与 SEC 申报/公告日期分开记录。",
+        "公开历史事实参考，不是官方 outcome；不得反馈到冻结证据或正式预测流程。",
+        "新增sources/credit-supplement保存原始SEC正文与完整目录。四正例申请日期直接回读原始8-K；四no_event补齐70份观察窗内及4份尾部申报正文，但payment default/distressed exchange的全窗无事件仍未穷尽证明，保持暂定。"
+      ]
+    },
+    {
+      "task_id": "t4-credit-event-2023",
+      "entity_id": "WBA",
+      "target_type": "classification",
+      "reference_label": "no_event",
+      "reference_value": null,
+      "unit": "label",
+      "status": "provisional",
+      "method": "以完整窗口的 SEC 申报目录核对破产/违约相关 Item，再结合跨越窗口的年度及季度债务、授信、偿债或 covenant 披露，暂记 no_event。证据是连续公开披露与窗口检查的组合；未穷尽法院案卷及全部评级机构的 distressed exchange 记录，不能升级 verified。reference_value 留空；信用事件历史标签不转换为预测概率或回归数值。",
+      "inputs": [
+        {
+          "name": "event_window_start_exclusive",
+          "value": "2023-03-31",
+          "date": "2023-03-31",
+          "unit": "date"
+        },
+        {
+          "name": "event_window_end_inclusive",
+          "value": "2024-03-31",
+          "date": "2024-03-31",
+          "unit": "date"
+        },
+        {
+          "name": "reviewed_window_relevant_filings",
+          "value": 20,
+          "date": "2024-03-31",
+          "unit": "count"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1618921/000161892123000062/wba-20230831.htm",
+          "title": "Walgreens Boots Alliance Form 10-K, year ended August 31, 2023",
+          "published_at": "2023-10-12",
+          "locator": "Note 8 — Debt / Debt covenants、MD&A Liquidity：截至 2023-08-31 所有 applicable financial covenants 合规，并列示 FY2023 借款、偿债、授信；完整年度覆盖信用窗口前半段。"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1618921/000161892124000035/wba-20240229.htm",
+          "title": "Walgreens Boots Alliance Form 10-Q, quarter ended February 29, 2024",
+          "published_at": "2024-03-28",
+          "locator": "Note 7 — Debt / Debt covenants：截至 2024-02-29 财务 covenants 合规；Credit ratings 披露 October 2023 S&P 降至 BBB-、December 2023 Moody's 降至 Ba2。评级下调本身不属于题面信用事件。 截至 2024-02-29 六个月实付利息 301 百万美元。"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1618921/000161892124000065/wba-20240531.htm",
+          "title": "Walgreens Boots Alliance Form 10-Q, quarter ended May 31, 2024",
+          "published_at": "2024-06-27",
+          "locator": "Note 7 — Debt / Debt covenants：截至 2024-05-31 所有 applicable financial covenants 合规；Interest：截至该日九个月实际支付利息 460 百万美元；Credit ratings 为 S&P BBB-/Negative、Moody's Ba2/Stable。该季覆盖 2024-03-31 窗口尾部。"
+        },
+        {
+          "url": "https://data.sec.gov/submissions/CIK0001618921.json",
+          "title": "SEC submissions history: WBA",
+          "published_at": null,
+          "locator": "核对 (2023-03-31, 2024-03-31] 内 20 份 8-K/8-K/A/10-K/10-Q 的 filingDate、form、items，未发现 Item 1.03 或 2.04；含窗口后季度的 23 份记录及 archive feed 已保存。元数据检查不能排除未披露/非重大事件。"
+        }
+      ],
+      "notes": [
+        "无 positive event 检索结果本身不构成 no_event 证明；本条仅为可复核的 provisional 参考，评估必须单独显示此状态。",
+        "窗口末端使用截至 2024-03-31 或之后季度以覆盖财年结束后的空档；窗口后披露只用于历史参考，不属于 cutoff 前预测证据。",
+        "尚需补齐所有 rating-agency-recognized distressed debt exchange 的完整历史台账/法院案卷检查。",
+        "S&P/Moody's 的评级下调与财务 covenant 合规不能单独排除付款违约或 distressed exchange。",
+        "新增sources/credit-supplement保存原始SEC正文与完整目录。四正例申请日期直接回读原始8-K；四no_event补齐70份观察窗内及4份尾部申报正文，但payment default/distressed exchange的全窗无事件仍未穷尽证明，保持暂定。"
+      ]
+    },
+    {
+      "task_id": "t4-credit-event-2023",
+      "entity_id": "WE",
+      "target_type": "classification",
+      "reference_label": "credit_event",
+      "reference_value": null,
+      "unit": "label",
+      "status": "verified",
+      "method": "核实 Chapter 11 申请日期落在 (2023-03-31, 2024-03-31] 内；任一合格事件足以确定 credit_event。reference_value 留空；信用事件历史标签不转换为预测概率或回归数值。",
+      "inputs": [
+        {
+          "name": "event_window_start_exclusive",
+          "value": "2023-03-31",
+          "date": "2023-03-31",
+          "unit": "date"
+        },
+        {
+          "name": "event_window_end_inclusive",
+          "value": "2024-03-31",
+          "date": "2024-03-31",
+          "unit": "date"
+        },
+        {
+          "name": "chapter_11_filing_date",
+          "value": "2023-11-06",
+          "date": "2023-11-06",
+          "unit": "date"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1813756/000119312523271902/d522028d8k.htm",
+          "title": "WeWork Inc. Form 8-K, report date November 6, 2023",
+          "published_at": "2023-11-07",
+          "locator": "Item 1.03 Bankruptcy or Receivership：2023-11-06 公司与若干直接/间接子公司在美国新泽西州破产法院申请 Chapter 11。"
+        }
+      ],
+      "notes": [
+        "来源披露公司及其指定子公司的 Chapter 11 petition；事件日期与 SEC 申报/公告日期分开记录。",
+        "公开历史事实参考，不是官方 outcome；不得反馈到冻结证据或正式预测流程。",
+        "新增sources/credit-supplement保存原始SEC正文与完整目录。四正例申请日期直接回读原始8-K；四no_event补齐70份观察窗内及4份尾部申报正文，但payment default/distressed exchange的全窗无事件仍未穷尽证明，保持暂定。"
+      ]
+    },
+    {
+      "task_id": "t4-credit-event-2023",
+      "entity_id": "YELL",
+      "target_type": "classification",
+      "reference_label": "credit_event",
+      "reference_value": null,
+      "unit": "label",
+      "status": "verified",
+      "method": "核实 Chapter 11 申请日期落在 (2023-03-31, 2024-03-31] 内；任一合格事件足以确定 credit_event。reference_value 留空；信用事件历史标签不转换为预测概率或回归数值。",
+      "inputs": [
+        {
+          "name": "event_window_start_exclusive",
+          "value": "2023-03-31",
+          "date": "2023-03-31",
+          "unit": "date"
+        },
+        {
+          "name": "event_window_end_inclusive",
+          "value": "2024-03-31",
+          "date": "2024-03-31",
+          "unit": "date"
+        },
+        {
+          "name": "chapter_11_filing_date",
+          "value": "2023-08-06",
+          "date": "2023-08-06",
+          "unit": "date"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/716006/000119312523204370/d483482d8k.htm",
+          "title": "Yellow Corporation Form 8-K, report date August 6, 2023",
+          "published_at": "2023-08-07",
+          "locator": "Item 1.03 Bankruptcy or Receivership：2023-08-06 公司与若干子公司在美国特拉华州破产法院申请 Chapter 11。Item 2.04 另披露由破产导致的债务违约/加速。"
+        }
+      ],
+      "notes": [
+        "来源披露公司及其指定子公司的 Chapter 11 petition；事件日期与 SEC 申报/公告日期分开记录。",
+        "公开历史事实参考，不是官方 outcome；不得反馈到冻结证据或正式预测流程。",
+        "新增sources/credit-supplement保存原始SEC正文与完整目录。四正例申请日期直接回读原始8-K；四no_event补齐70份观察窗内及4份尾部申报正文，但payment default/distressed exchange的全窗无事件仍未穷尽证明，保持暂定。"
+      ]
+    },
+    {
+      "task_id": "t4-postearn-20240201-megacap",
+      "entity_id": "AAPL",
+      "target_type": "classification",
+      "reference_label": "negative_reaction",
+      "reference_value": -1.5932507789575607,
+      "unit": "percent",
+      "status": "provisional",
+      "method": "使用公开 Yahoo Chart 数据集的两个纽约交易日收盘记录，按美分规范化浮点价格。窗口查询未返回 dividends/splits/capitalGains，因此以公司 (close_end/close_start−1)×100 减 SPY 同期收益作为无窗口分配时的 total-return 参考；另外用同一 Yahoo 来源的 adjclose 比值做一致性检查，不能当作独立第二行情源。阈值严格为 >+1% / <−1%，否则 flat。reference_value 是异常收益百分数。",
+      "inputs": [
+        {
+          "name": "company_close_start",
+          "value": 186.86,
+          "date": "2024-02-01",
+          "unit": "USD/share"
+        },
+        {
+          "name": "company_close_end",
+          "value": 185.85,
+          "date": "2024-02-02",
+          "unit": "USD/share"
+        },
+        {
+          "name": "spy_close_start",
+          "value": 489.2,
+          "date": "2024-02-01",
+          "unit": "USD/share"
+        },
+        {
+          "name": "spy_close_end",
+          "value": 494.35,
+          "date": "2024-02-02",
+          "unit": "USD/share"
+        },
+        {
+          "name": "company_adjclose_start",
+          "value": 184.6093292236328,
+          "date": "2024-02-01",
+          "unit": "USD/share"
+        },
+        {
+          "name": "company_adjclose_end",
+          "value": 183.61148071289062,
+          "date": "2024-02-02",
+          "unit": "USD/share"
+        },
+        {
+          "name": "spy_adjclose_start",
+          "value": 473.69830322265625,
+          "date": "2024-02-01",
+          "unit": "USD/share"
+        },
+        {
+          "name": "spy_adjclose_end",
+          "value": 478.68505859375,
+          "date": "2024-02-02",
+          "unit": "USD/share"
+        },
+        {
+          "name": "task_flat_threshold_abn_pct",
+          "value": 1.0,
+          "date": "2024-02-02",
+          "unit": "percent"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+          "title": "Yahoo Finance Chart historical daily dataset: AAPL",
+          "published_at": null,
+          "locator": "chart.result[0]：timestamp 按 exchangeTimezoneName=America/New_York 转为 2024-02-01、2024-02-02；indicators.quote[0].close 与 indicators.adjclose[0].adjclose 对应两个交易日；events=div,splits,capitalGains 的请求未返回窗口事件。"
+        },
+        {
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+          "title": "Yahoo Finance Chart historical daily dataset: SPY",
+          "published_at": null,
+          "locator": "相同两个交易日和 interval=1d；close 489.20 / 494.35，窗口未返回 distribution/split/capitalGains 事件。"
+        },
+        {
+          "url": "https://www.apple.com/newsroom/2024/02/apple-reports-first-quarter-results/",
+          "title": "Apple reports first quarter results",
+          "published_at": "2024-02-01",
+          "locator": "股息段：现金股息 0.24，record date 2024-02-12，payable 2024-02-15；公告日即 2 月 1 日不表示当天除息。"
+        },
+        {
+          "url": "https://investor.apple.com/feed/StockQuote.svc/GetStockQuoteHistoricalList?exchange=NASD&symbol=AAPL&pageSize=10&startDate=Feb-01-2024&endDate=Feb-02-2024",
+          "title": "发行人域名承载的第三方历史收盘展示",
+          "published_at": null,
+          "locator": "GetStockQuoteHistoricalListResult[]；HistoricalDate02/01/2024、02/02/2024；Last186.86、185.85；本地sources/postearn-supplement/apple-ir-history.json。"
+        },
+        {
+          "url": "https://investor.apple.com/feed/StockQuote.svc/GetStockQuoteHistoricalList?exchange=AMEX&symbol=SPY&pageSize=10&startDate=Feb-01-2024&endDate=Feb-02-2024",
+          "title": "Apple域名代理的SPY第三方行情请求",
+          "published_at": null,
+          "locator": "Apple域名Q4公开代理响应；请求symbol=SPY,exchange=AMEX；HistoricalDate02/01/2024、02/02/2024；Last489.20、494.35；缺少响应symbol元数据；本地sources/postearn-supplement/spy-tickertech-proxy.json。"
+        },
+        {
+          "url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/spdr-etf-historical-distributions.xlsx",
+          "title": "SSGA当前历史SPY分配表",
+          "published_at": null,
+          "locator": "dividend!A1:J1 表头；全部SPY行B9129:B9264；dividend!A9139:J9140目标窗口附近分配；本地sources/postearn-supplement/spy-ssga-distributions.xlsx。"
+        },
+        {
+          "url": "https://api.nasdaq.com/api/quote/AAPL/dividends?assetclass=stocks",
+          "title": "Nasdaq当前历史除息记录",
+          "published_at": null,
+          "locator": "data.dividends.rows[] exOrEffDate02/09/2024 amount$0.24 declaration02/01/2024 record02/12/2024 payment02/15/2024；本地sources/postearn-supplement/apple-nasdaq-dividend.json。"
+        }
+      ],
+      "notes": [
+        "公开行情 vendor 的当前历史数据快照；raw response、请求 URL、获取时间与 SHA-256 已保存。published_at=null：无法确定该版本首次发布时间，不能宣称 first-published 数据。",
+        "题面 2024-01-31 close 仅为背景值；计算完全使用 2024-02-01 close → 2024-02-02 close 和 SPY，相同交易日。",
+        "按 close 得公司 -0.5405116130%、SPY 1.0527391660%、异常 -1.5932507790%；按 adjclose 异常 -1.5932471530%，差异 0.0000036260 个百分点，标签一致。",
+        "total return 与 close return 的等同依赖本窗口无除息、拆股或资本收益分配的 vendor 事件记录；尚未完成交易所逐笔/官方收盘和完整公司行动台账的第二数据源核对，故 provisional。",
+        "Yahoo 的历史 adjusted close 受后续公司行动回调；保留原始 close 和 adjclose，不能混用 price series。历史事实数据仅用于事后本地研究，不反馈给冻结预测语料。",
+        "补证的四标的两天收盘展示按美分与Yahoo一致，但同类Q4/TickerTech服务上游独立性未证实，SPY代理响应无标的元数据；成交量有差异，不能称整条行情全部一致。SSGA分配表与Nasdaq除息记录补充窗口证据；SSGA NAV不可替代market close。完整公司行动及首发版本链仍未知，保持provisional。"
+      ]
+    },
+    {
+      "task_id": "t4-postearn-20240201-megacap",
+      "entity_id": "AMZN",
+      "target_type": "classification",
+      "reference_label": "positive_reaction",
+      "reference_value": 6.813910758675692,
+      "unit": "percent",
+      "status": "provisional",
+      "method": "使用公开 Yahoo Chart 数据集的两个纽约交易日收盘记录，按美分规范化浮点价格。窗口查询未返回 dividends/splits/capitalGains，因此以公司 (close_end/close_start−1)×100 减 SPY 同期收益作为无窗口分配时的 total-return 参考；另外用同一 Yahoo 来源的 adjclose 比值做一致性检查，不能当作独立第二行情源。阈值严格为 >+1% / <−1%，否则 flat。reference_value 是异常收益百分数。",
+      "inputs": [
+        {
+          "name": "company_close_start",
+          "value": 159.28,
+          "date": "2024-02-01",
+          "unit": "USD/share"
+        },
+        {
+          "name": "company_close_end",
+          "value": 171.81,
+          "date": "2024-02-02",
+          "unit": "USD/share"
+        },
+        {
+          "name": "spy_close_start",
+          "value": 489.2,
+          "date": "2024-02-01",
+          "unit": "USD/share"
+        },
+        {
+          "name": "spy_close_end",
+          "value": 494.35,
+          "date": "2024-02-02",
+          "unit": "USD/share"
+        },
+        {
+          "name": "company_adjclose_start",
+          "value": 159.27999877929688,
+          "date": "2024-02-01",
+          "unit": "USD/share"
+        },
+        {
+          "name": "company_adjclose_end",
+          "value": 171.80999755859375,
+          "date": "2024-02-02",
+          "unit": "USD/share"
+        },
+        {
+          "name": "spy_adjclose_start",
+          "value": 473.69830322265625,
+          "date": "2024-02-01",
+          "unit": "USD/share"
+        },
+        {
+          "name": "spy_adjclose_end",
+          "value": 478.68505859375,
+          "date": "2024-02-02",
+          "unit": "USD/share"
+        },
+        {
+          "name": "task_flat_threshold_abn_pct",
+          "value": 1.0,
+          "date": "2024-02-02",
+          "unit": "percent"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+          "title": "Yahoo Finance Chart historical daily dataset: AMZN",
+          "published_at": null,
+          "locator": "chart.result[0]：timestamp 按 exchangeTimezoneName=America/New_York 转为 2024-02-01、2024-02-02；indicators.quote[0].close 与 indicators.adjclose[0].adjclose 对应两个交易日；events=div,splits,capitalGains 的请求未返回窗口事件。"
+        },
+        {
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+          "title": "Yahoo Finance Chart historical daily dataset: SPY",
+          "published_at": null,
+          "locator": "相同两个交易日和 interval=1d；close 489.20 / 494.35，窗口未返回 distribution/split/capitalGains 事件。"
+        },
+        {
+          "url": "https://ir.aboutamazon.com/feed/StockQuote.svc/GetStockQuoteHistoricalList?exchange=NASD&symbol=AMZN&pageSize=10&startDate=Feb-01-2024&endDate=Feb-02-2024",
+          "title": "发行人域名承载的第三方历史收盘展示",
+          "published_at": null,
+          "locator": "GetStockQuoteHistoricalListResult[]；HistoricalDate02/01/2024、02/02/2024；Last159.28、171.81；本地sources/postearn-supplement/amazon-ir-feed.json。"
+        },
+        {
+          "url": "https://investor.apple.com/feed/StockQuote.svc/GetStockQuoteHistoricalList?exchange=AMEX&symbol=SPY&pageSize=10&startDate=Feb-01-2024&endDate=Feb-02-2024",
+          "title": "Apple域名代理的SPY第三方行情请求",
+          "published_at": null,
+          "locator": "Apple域名Q4公开代理响应；请求symbol=SPY,exchange=AMEX；HistoricalDate02/01/2024、02/02/2024；Last489.20、494.35；缺少响应symbol元数据；本地sources/postearn-supplement/spy-tickertech-proxy.json。"
+        },
+        {
+          "url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/spdr-etf-historical-distributions.xlsx",
+          "title": "SSGA当前历史SPY分配表",
+          "published_at": null,
+          "locator": "dividend!A1:J1 表头；全部SPY行B9129:B9264；dividend!A9139:J9140目标窗口附近分配；本地sources/postearn-supplement/spy-ssga-distributions.xlsx。"
+        }
+      ],
+      "notes": [
+        "公开行情 vendor 的当前历史数据快照；raw response、请求 URL、获取时间与 SHA-256 已保存。published_at=null：无法确定该版本首次发布时间，不能宣称 first-published 数据。",
+        "题面 2024-01-31 close 仅为背景值；计算完全使用 2024-02-01 close → 2024-02-02 close 和 SPY，相同交易日。",
+        "按 close 得公司 7.8666499247%、SPY 1.0527391660%、异常 6.8139107587%；按 adjclose 异常 6.8139210713%，差异 0.0000103126 个百分点，标签一致。",
+        "total return 与 close return 的等同依赖本窗口无除息、拆股或资本收益分配的 vendor 事件记录；尚未完成交易所逐笔/官方收盘和完整公司行动台账的第二数据源核对，故 provisional。",
+        "Yahoo 的历史 adjusted close 受后续公司行动回调；保留原始 close 和 adjclose，不能混用 price series。历史事实数据仅用于事后本地研究，不反馈给冻结预测语料。",
+        "补证的四标的两天收盘展示按美分与Yahoo一致，但同类Q4/TickerTech服务上游独立性未证实，SPY代理响应无标的元数据；成交量有差异，不能称整条行情全部一致。SSGA分配表与Nasdaq除息记录补充窗口证据；SSGA NAV不可替代market close。完整公司行动及首发版本链仍未知，保持provisional。"
+      ]
+    },
+    {
+      "task_id": "t4-postearn-20240201-megacap",
+      "entity_id": "META",
+      "target_type": "classification",
+      "reference_label": "positive_reaction",
+      "reference_value": 19.264906104798445,
+      "unit": "percent",
+      "status": "provisional",
+      "method": "使用公开 Yahoo Chart 数据集的两个纽约交易日收盘记录，按美分规范化浮点价格。窗口查询未返回 dividends/splits/capitalGains，因此以公司 (close_end/close_start−1)×100 减 SPY 同期收益作为无窗口分配时的 total-return 参考；另外用同一 Yahoo 来源的 adjclose 比值做一致性检查，不能当作独立第二行情源。阈值严格为 >+1% / <−1%，否则 flat。reference_value 是异常收益百分数。",
+      "inputs": [
+        {
+          "name": "company_close_start",
+          "value": 394.78,
+          "date": "2024-02-01",
+          "unit": "USD/share"
+        },
+        {
+          "name": "company_close_end",
+          "value": 474.99,
+          "date": "2024-02-02",
+          "unit": "USD/share"
+        },
+        {
+          "name": "spy_close_start",
+          "value": 489.2,
+          "date": "2024-02-01",
+          "unit": "USD/share"
+        },
+        {
+          "name": "spy_close_end",
+          "value": 494.35,
+          "date": "2024-02-02",
+          "unit": "USD/share"
+        },
+        {
+          "name": "company_adjclose_start",
+          "value": 391.0348205566406,
+          "date": "2024-02-01",
+          "unit": "USD/share"
+        },
+        {
+          "name": "company_adjclose_end",
+          "value": 470.4838562011719,
+          "date": "2024-02-02",
+          "unit": "USD/share"
+        },
+        {
+          "name": "spy_adjclose_start",
+          "value": 473.69830322265625,
+          "date": "2024-02-01",
+          "unit": "USD/share"
+        },
+        {
+          "name": "spy_adjclose_end",
+          "value": 478.68505859375,
+          "date": "2024-02-02",
+          "unit": "USD/share"
+        },
+        {
+          "name": "task_flat_threshold_abn_pct",
+          "value": 1.0,
+          "date": "2024-02-02",
+          "unit": "percent"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/META?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+          "title": "Yahoo Finance Chart historical daily dataset: META",
+          "published_at": null,
+          "locator": "chart.result[0]：timestamp 按 exchangeTimezoneName=America/New_York 转为 2024-02-01、2024-02-02；indicators.quote[0].close 与 indicators.adjclose[0].adjclose 对应两个交易日；events=div,splits,capitalGains 的请求未返回窗口事件。"
+        },
+        {
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+          "title": "Yahoo Finance Chart historical daily dataset: SPY",
+          "published_at": null,
+          "locator": "相同两个交易日和 interval=1d；close 489.20 / 494.35，窗口未返回 distribution/split/capitalGains 事件。"
+        },
+        {
+          "url": "https://investor.atmeta.com/investor-news/press-release-details/2024/Meta-Reports-Fourth-Quarter-and-Full-Year-2023-Results-Initiates-Quarterly-Dividend/default.aspx",
+          "title": "Meta Reports Fourth Quarter and Full Year 2023 Results; Initiates Quarterly Dividend",
+          "published_at": "2024-02-01",
+          "locator": "Meta Initiates Quarterly Dividend：首次季度股息 0.50，record date 2024-02-22，payable 2024-03-26；宣告股息不表示 2 月 2 日除息。"
+        },
+        {
+          "url": "https://investor.atmeta.com/feed/StockQuote.svc/GetStockQuoteHistoricalList?exchange=NASD&symbol=META&pageSize=10&startDate=Feb-01-2024&endDate=Feb-02-2024",
+          "title": "发行人域名承载的第三方历史收盘展示",
+          "published_at": null,
+          "locator": "GetStockQuoteHistoricalListResult[]；HistoricalDate02/01/2024、02/02/2024；Last394.78、474.99；本地sources/postearn-supplement/meta-ir-history.json。"
+        },
+        {
+          "url": "https://investor.apple.com/feed/StockQuote.svc/GetStockQuoteHistoricalList?exchange=AMEX&symbol=SPY&pageSize=10&startDate=Feb-01-2024&endDate=Feb-02-2024",
+          "title": "Apple域名代理的SPY第三方行情请求",
+          "published_at": null,
+          "locator": "Apple域名Q4公开代理响应；请求symbol=SPY,exchange=AMEX；HistoricalDate02/01/2024、02/02/2024；Last489.20、494.35；缺少响应symbol元数据；本地sources/postearn-supplement/spy-tickertech-proxy.json。"
+        },
+        {
+          "url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/spdr-etf-historical-distributions.xlsx",
+          "title": "SSGA当前历史SPY分配表",
+          "published_at": null,
+          "locator": "dividend!A1:J1 表头；全部SPY行B9129:B9264；dividend!A9139:J9140目标窗口附近分配；本地sources/postearn-supplement/spy-ssga-distributions.xlsx。"
+        },
+        {
+          "url": "https://api.nasdaq.com/api/quote/META/dividends?assetclass=stocks",
+          "title": "Nasdaq当前历史除息记录",
+          "published_at": null,
+          "locator": "data.dividends.rows[] exOrEffDate02/21/2024 amount$0.50 declaration02/01/2024 record02/22/2024 payment03/26/2024；本地sources/postearn-supplement/meta-nasdaq-dividend.json。"
+        }
+      ],
+      "notes": [
+        "公开行情 vendor 的当前历史数据快照；raw response、请求 URL、获取时间与 SHA-256 已保存。published_at=null：无法确定该版本首次发布时间，不能宣称 first-published 数据。",
+        "题面 2024-01-31 close 仅为背景值；计算完全使用 2024-02-01 close → 2024-02-02 close 和 SPY，相同交易日。",
+        "按 close 得公司 20.3176452708%、SPY 1.0527391660%、异常 19.2649061048%；按 adjclose 异常 19.2649089193%，差异 0.0000028145 个百分点，标签一致。",
+        "total return 与 close return 的等同依赖本窗口无除息、拆股或资本收益分配的 vendor 事件记录；尚未完成交易所逐笔/官方收盘和完整公司行动台账的第二数据源核对，故 provisional。",
+        "Yahoo 的历史 adjusted close 受后续公司行动回调；保留原始 close 和 adjclose，不能混用 price series。历史事实数据仅用于事后本地研究，不反馈给冻结预测语料。",
+        "补证的四标的两天收盘展示按美分与Yahoo一致，但同类Q4/TickerTech服务上游独立性未证实，SPY代理响应无标的元数据；成交量有差异，不能称整条行情全部一致。SSGA分配表与Nasdaq除息记录补充窗口证据；SSGA NAV不可替代market close。完整公司行动及首发版本链仍未知，保持provisional。"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "entity_id": "USB",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000036104/us-gaap/EarningsPerShareDiluted.json",
+  "source_sha256": "562214f55ce0ec284e2d94246314b6a35b853f0d8fe75e520c6bf003e028ede1",
+  "retrieved_at": "2026-10-07T08:14:25.378190+00:00",
+  "bytes": 32908,
+  "raw_path": "sec-eps-USB-concept.raw.json",
+  "tag": "EarningsPerShareDiluted",
+  "taxonomy": "us-gaap",
+  "unit": "USD/shares",
+  "observation_count": 225
+}

@@ -1,0 +1,12 @@
+{
+  "entity_id": "AMD",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000002488/us-gaap/EarningsPerShareDiluted.json",
+  "source_sha256": "15436f232b8f49ef33d8cebf6ba7c4696048ef093290ef5f68ef48cb65e5c53a",
+  "retrieved_at": "2026-10-07T08:14:25.229272+00:00",
+  "bytes": 42412,
+  "raw_path": "sec-eps-AMD-concept.raw.json",
+  "tag": "EarningsPerShareDiluted",
+  "taxonomy": "us-gaap",
+  "unit": "USD/shares",
+  "observation_count": 292
+}

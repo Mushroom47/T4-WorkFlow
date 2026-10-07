@@ -1,0 +1,23 @@
+{
+  "entity_id": "M",
+  "url": "https://data.sec.gov/submissions/CIK0000794367.json",
+  "source_sha256": "deb5f449a39b1010a9479252f2e4914abc1ec2a7a91d96faab670192ecc6de63",
+  "retrieved_at": "2026-10-07T08:17:26.966457+00:00",
+  "bytes": 163571,
+  "raw_path": "sec-submissions-M.raw.json",
+  "archive_files": [
+    {
+      "name": "CIK0000794367-submissions-001.json",
+      "filingCount": 2002,
+      "filingFrom": "2003-03-28",
+      "filingTo": "2016-04-05"
+    },
+    {
+      "name": "CIK0000794367-submissions-002.json",
+      "filingCount": 180,
+      "filingFrom": "1995-04-20",
+      "filingTo": "2003-03-27"
+    }
+  ],
+  "recent_oldest_date": "2016-04-06"
+}

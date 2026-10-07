@@ -1,0 +1,144 @@
+{
+  "task_id": "t4-fomc-curve-20220728",
+  "schema_version": "3",
+  "target_type": "regression",
+  "entity_predictions": [
+    {
+      "entity_id": "UST10Y",
+      "interval": {
+        "level": 0.9,
+        "lo": 88.0,
+        "hi": 90.0
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 72,
+          "span_end": 92,
+          "claim": "输入表字段 maturity_years 的值为 10。"
+        }
+      ],
+      "point_forecast": 89.0
+    },
+    {
+      "entity_id": "UST2Y",
+      "interval": {
+        "level": 0.9,
+        "lo": 110.0,
+        "hi": 112.0
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 293,
+          "span_end": 312,
+          "claim": "输入表字段 maturity_years 的值为 2。"
+        }
+      ],
+      "point_forecast": 111.0
+    },
+    {
+      "entity_id": "UST30Y",
+      "interval": {
+        "level": 0.9,
+        "lo": 56.0,
+        "hi": 58.0
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 512,
+          "span_end": 532,
+          "claim": "输入表字段 maturity_years 的值为 30。"
+        }
+      ],
+      "point_forecast": 57.0
+    },
+    {
+      "entity_id": "UST3Y",
+      "interval": {
+        "level": 0.9,
+        "lo": 112.0,
+        "hi": 114.0
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 733,
+          "span_end": 752,
+          "claim": "输入表字段 maturity_years 的值为 3。"
+        }
+      ],
+      "point_forecast": 113.0
+    },
+    {
+      "entity_id": "UST5Y",
+      "interval": {
+        "level": 0.9,
+        "lo": 105.0,
+        "hi": 107.0
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 951,
+          "span_end": 970,
+          "claim": "输入表字段 maturity_years 的值为 5。"
+        }
+      ],
+      "point_forecast": 106.0
+    },
+    {
+      "entity_id": "UST7Y",
+      "interval": {
+        "level": 0.9,
+        "lo": 99.0,
+        "hi": 101.0
+      },
+      "claims": [
+        {
+          "doc_id": "task",
+          "span_start": 1169,
+          "span_end": 1188,
+          "claim": "输入表字段 maturity_years 的值为 7。"
+        }
+      ],
+      "point_forecast": 100.0
+    }
+  ],
+  "submitted_reasons": [
+    {
+      "reason_id": "local_structure_fixture",
+      "premise": "Federal Reserve issues FOMC statement. For release at 2:00 p.m. EDT, July 27, 2022.\n\nRecent indicators of spending and production have softened. Nonetheless, job gains have been robust in recent months, and the unemployment rate has remaine",
+      "mechanism": "该段历史资料提供输入上下文，本夹具只测试字段与引用解析。",
+      "answer_implication": "本地测试记录 UST10Y 的历史参考结果；该引用不用于推出事后结果。",
+      "scope": {
+        "entities": [
+          "UST10Y"
+        ]
+      },
+      "citations": [
+        {
+          "doc_id": "FOMC_STATEMENT_20220727",
+          "span_start": 0,
+          "span_end": 240
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "research_fixture": true,
+    "synthetic_interval": true,
+    "interval_method": "数值结果中心左右加减固定 half_width；无数值真值或信用事件概率任务使用 [0,1]。这是结构测试区间，未经过校准。",
+    "synthetic_point_entities": [],
+    "synthetic_point_method": "上述实体的 point_forecast=0.5 是结构测试占位；事后 0/1 事件不被当作概率真值。",
+    "half_width": 1.0,
+    "reference_status_counts": {
+      "verified": 6
+    },
+    "task_canonical_sha256": "5a1d9a4ec484edcf471aa440953ac2ad4e8d5b2e62e9d418d6c8ae7d67ec6eb3",
+    "faithfulness": "not_evaluated",
+    "reasoning": "not_evaluated",
+    "purpose": "输入事实 claims 不声称支持历史结果；本夹具仅供离线研究。"
+  }
+}

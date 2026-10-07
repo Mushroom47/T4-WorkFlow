@@ -1,0 +1,11 @@
+{
+  "command": "python3 -m unittest discover -s tests -p test_reference_suite.py -v",
+  "executed_at": "2026-10-07T08:29:39.284697+00:00",
+  "python": "3.14.4 (main, Apr  7 2026, 13:13:20) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "exit_code": 0,
+  "tests_run": 50,
+  "result": "OK",
+  "test_file_sha256": "a448fc450cedf813517d6f071c897bc02232f08457767d707bc0e10219fb6854",
+  "tool_sha256": "5368cb3b700dee98292ff43f791ca6e72e617dd733f7885649f68b710bb09627",
+  "official_score": null
+}

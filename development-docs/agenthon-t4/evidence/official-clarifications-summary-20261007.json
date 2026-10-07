@@ -1,0 +1,455 @@
+{
+  "schema_version": "0.1.0",
+  "repository": "Agenthon-2026/track4-analysis-public",
+  "retrieved_at": "2026-10-07T08:05:13.624084+00:00",
+  "retrieval_date": "2026-10-07",
+  "timezone_note": "原 createdAt / updatedAt 保留 GitHub UTC；项目沟通默认 Asia/Hong_Kong。",
+  "retrieval_method": "只读 gh issue view 与 gh api；web 已读取对应公开 issue 页面，但该工具返回的 HTML 未包含评论正文。",
+  "integrity": [
+    {
+      "issue_number": 23,
+      "gh_command": [
+        "gh",
+        "issue",
+        "view",
+        "23",
+        "--repo",
+        "Agenthon-2026/track4-analysis-public",
+        "--json",
+        "number,title,body,state,url,createdAt,updatedAt,author,comments"
+      ],
+      "gh_json_sha256": "85038be6fe4c02c69db3dfe4a6efdd72c2b32352456408d2f47e5621d601398e",
+      "comments_api_command": [
+        "gh",
+        "api",
+        "repos/Agenthon-2026/track4-analysis-public/issues/23/comments?per_page=100"
+      ],
+      "comments_payload_sha256": "438fd28ef85ac9bab4c376ab4651cda1a3b5a301fc5ce57c1355c2ea9e50fe8e"
+    },
+    {
+      "issue_number": 24,
+      "gh_command": [
+        "gh",
+        "issue",
+        "view",
+        "24",
+        "--repo",
+        "Agenthon-2026/track4-analysis-public",
+        "--json",
+        "number,title,body,state,url,createdAt,updatedAt,author,comments"
+      ],
+      "gh_json_sha256": "dcc4305987da9aad6e8ffa4fce8c13ecfa3a83a2ab4ca3a91d2de054eda096ba",
+      "comments_api_command": [
+        "gh",
+        "api",
+        "repos/Agenthon-2026/track4-analysis-public/issues/24/comments?per_page=100"
+      ],
+      "comments_payload_sha256": "def8f1546d52148d3c80a279f628a525b21d1b62b2b3b2101c75bbc0731bf5ba"
+    },
+    {
+      "issue_number": 25,
+      "gh_command": [
+        "gh",
+        "issue",
+        "view",
+        "25",
+        "--repo",
+        "Agenthon-2026/track4-analysis-public",
+        "--json",
+        "number,title,body,state,url,createdAt,updatedAt,author,comments"
+      ],
+      "gh_json_sha256": "24ea419f095a4b634a5d1eab795b52f440aa0e45f28c7174c6bb2f75938a864b",
+      "comments_api_command": [
+        "gh",
+        "api",
+        "repos/Agenthon-2026/track4-analysis-public/issues/25/comments?per_page=100"
+      ],
+      "comments_payload_sha256": "d85fffbd48547829f17ee04446d76eeaf0fcfd4fbd6e48168d4c0524389035c4"
+    }
+  ],
+  "issues": [
+    {
+      "issue": {
+        "author": {
+          "id": "MDQ6VXNlcjI3NzY3OTMy",
+          "is_bot": false,
+          "login": "SebastianBoehler",
+          "name": "Sebastian Boehler"
+        },
+        "comments": [
+          {
+            "id": "IC_kwDOUHlzHM8AAAABZL43DA",
+            "author": {
+              "login": "PawPol"
+            },
+            "authorAssociation": "CONTRIBUTOR",
+            "createdAt": "2026-10-04T22:29:38Z",
+            "includesCreatedEdit": false,
+            "isMinimized": false,
+            "minimizedReason": "",
+            "reactionGroups": [],
+            "url": "https://github.com/Agenthon-2026/track4-analysis-public/issues/23#issuecomment-5985154828",
+            "viewerDidAuthor": false
+          }
+        ],
+        "createdAt": "2026-10-04T19:49:46Z",
+        "number": 23,
+        "state": "OPEN",
+        "title": "T4 performance calibration: component feedback and target-contract precedence",
+        "updatedAt": "2026-10-04T22:29:38Z",
+        "url": "https://github.com/Agenthon-2026/track4-analysis-public/issues/23"
+      },
+      "comments_api": [
+        {
+          "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/comments/5985154828",
+          "html_url": "https://github.com/Agenthon-2026/track4-analysis-public/issues/23#issuecomment-5985154828",
+          "issue_url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/23",
+          "id": 5985154828,
+          "user": {
+            "login": "PawPol",
+            "id": 27575674,
+            "url": "https://api.github.com/users/PawPol",
+            "html_url": "https://github.com/PawPol",
+            "type": "User",
+            "user_view_type": "public"
+          },
+          "created_at": "2026-10-04T22:29:38Z",
+          "updated_at": "2026-10-04T22:29:38Z",
+          "author_association": "CONTRIBUTOR",
+          "pin": null,
+          "reactions": {
+            "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/comments/5985154828/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+          },
+          "performed_via_github_app": null,
+          "minimized": null
+        }
+      ]
+    },
+    {
+      "issue": {
+        "author": {
+          "id": "U_kgDOEpjXxg",
+          "is_bot": false,
+          "login": "bram-wq",
+          "name": ""
+        },
+        "comments": [
+          {
+            "id": "IC_kwDOUHlzHM8AAAABZNd56Q",
+            "author": {
+              "login": "PawPol"
+            },
+            "authorAssociation": "CONTRIBUTOR",
+            "createdAt": "2026-10-05T01:58:15Z",
+            "includesCreatedEdit": false,
+            "isMinimized": false,
+            "minimizedReason": "",
+            "reactionGroups": [],
+            "url": "https://github.com/Agenthon-2026/track4-analysis-public/issues/24#issuecomment-5986810345",
+            "viewerDidAuthor": false
+          },
+          {
+            "id": "IC_kwDOUHlzHM8AAAABZbMKiw",
+            "author": {
+              "login": "PawPol"
+            },
+            "authorAssociation": "CONTRIBUTOR",
+            "createdAt": "2026-10-05T19:06:03Z",
+            "includesCreatedEdit": false,
+            "isMinimized": false,
+            "minimizedReason": "",
+            "reactionGroups": [],
+            "url": "https://github.com/Agenthon-2026/track4-analysis-public/issues/24#issuecomment-6001199755",
+            "viewerDidAuthor": false
+          },
+          {
+            "id": "IC_kwDOUHlzHM8AAAABZe6-Gg",
+            "author": {
+              "login": "bram-wq"
+            },
+            "authorAssociation": "NONE",
+            "createdAt": "2026-10-05T23:10:27Z",
+            "includesCreatedEdit": false,
+            "isMinimized": false,
+            "minimizedReason": "",
+            "reactionGroups": [],
+            "url": "https://github.com/Agenthon-2026/track4-analysis-public/issues/24#issuecomment-6005112346",
+            "viewerDidAuthor": false
+          },
+          {
+            "id": "IC_kwDOUHlzHM8AAAABZ11gWg",
+            "author": {
+              "login": "PawPol"
+            },
+            "authorAssociation": "CONTRIBUTOR",
+            "createdAt": "2026-10-07T01:48:40Z",
+            "includesCreatedEdit": false,
+            "isMinimized": false,
+            "minimizedReason": "",
+            "reactionGroups": [],
+            "url": "https://github.com/Agenthon-2026/track4-analysis-public/issues/24#issuecomment-6029140058",
+            "viewerDidAuthor": false
+          }
+        ],
+        "createdAt": "2026-10-05T01:36:07Z",
+        "number": 24,
+        "state": "OPEN",
+        "title": "Track 4: does development informed by the published units' realized outcomes make a submission ineligible for Final tasks?",
+        "updatedAt": "2026-10-07T01:48:40Z",
+        "url": "https://github.com/Agenthon-2026/track4-analysis-public/issues/24"
+      },
+      "comments_api": [
+        {
+          "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/comments/5986810345",
+          "html_url": "https://github.com/Agenthon-2026/track4-analysis-public/issues/24#issuecomment-5986810345",
+          "issue_url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/24",
+          "id": 5986810345,
+          "user": {
+            "login": "PawPol",
+            "id": 27575674,
+            "url": "https://api.github.com/users/PawPol",
+            "html_url": "https://github.com/PawPol",
+            "type": "User",
+            "user_view_type": "public"
+          },
+          "created_at": "2026-10-05T01:58:15Z",
+          "updated_at": "2026-10-05T01:58:15Z",
+          "author_association": "CONTRIBUTOR",
+          "pin": null,
+          "reactions": {
+            "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/comments/5986810345/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+          },
+          "performed_via_github_app": null,
+          "minimized": null
+        },
+        {
+          "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/comments/6001199755",
+          "html_url": "https://github.com/Agenthon-2026/track4-analysis-public/issues/24#issuecomment-6001199755",
+          "issue_url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/24",
+          "id": 6001199755,
+          "user": {
+            "login": "PawPol",
+            "id": 27575674,
+            "url": "https://api.github.com/users/PawPol",
+            "html_url": "https://github.com/PawPol",
+            "type": "User",
+            "user_view_type": "public"
+          },
+          "created_at": "2026-10-05T19:06:03Z",
+          "updated_at": "2026-10-05T19:06:03Z",
+          "author_association": "CONTRIBUTOR",
+          "pin": null,
+          "reactions": {
+            "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/comments/6001199755/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+          },
+          "performed_via_github_app": null,
+          "minimized": null
+        },
+        {
+          "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/comments/6005112346",
+          "html_url": "https://github.com/Agenthon-2026/track4-analysis-public/issues/24#issuecomment-6005112346",
+          "issue_url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/24",
+          "id": 6005112346,
+          "user": {
+            "login": "bram-wq",
+            "id": 312006598,
+            "url": "https://api.github.com/users/bram-wq",
+            "html_url": "https://github.com/bram-wq",
+            "type": "User",
+            "user_view_type": "public"
+          },
+          "created_at": "2026-10-05T23:10:27Z",
+          "updated_at": "2026-10-05T23:10:27Z",
+          "author_association": "NONE",
+          "pin": null,
+          "reactions": {
+            "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/comments/6005112346/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+          },
+          "performed_via_github_app": null,
+          "minimized": null
+        },
+        {
+          "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/comments/6029140058",
+          "html_url": "https://github.com/Agenthon-2026/track4-analysis-public/issues/24#issuecomment-6029140058",
+          "issue_url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/24",
+          "id": 6029140058,
+          "user": {
+            "login": "PawPol",
+            "id": 27575674,
+            "url": "https://api.github.com/users/PawPol",
+            "html_url": "https://github.com/PawPol",
+            "type": "User",
+            "user_view_type": "public"
+          },
+          "created_at": "2026-10-07T01:48:40Z",
+          "updated_at": "2026-10-07T01:48:40Z",
+          "author_association": "CONTRIBUTOR",
+          "pin": null,
+          "reactions": {
+            "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/comments/6029140058/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+          },
+          "performed_via_github_app": null,
+          "minimized": null
+        }
+      ]
+    },
+    {
+      "issue": {
+        "author": {
+          "id": "U_kgDOBq6O7Q",
+          "is_bot": false,
+          "login": "scarletthejiaqi",
+          "name": "Scarlett He"
+        },
+        "comments": [
+          {
+            "id": "IC_kwDOUHlzHM8AAAABZtzl3w",
+            "author": {
+              "login": "bram-wq"
+            },
+            "authorAssociation": "NONE",
+            "createdAt": "2026-10-06T16:27:30Z",
+            "includesCreatedEdit": false,
+            "isMinimized": false,
+            "minimizedReason": "",
+            "reactionGroups": [],
+            "url": "https://github.com/Agenthon-2026/track4-analysis-public/issues/25#issuecomment-6020720095",
+            "viewerDidAuthor": false
+          },
+          {
+            "id": "IC_kwDOUHlzHM8AAAABZ18kGw",
+            "author": {
+              "login": "PawPol"
+            },
+            "authorAssociation": "CONTRIBUTOR",
+            "createdAt": "2026-10-07T01:57:57Z",
+            "includesCreatedEdit": false,
+            "isMinimized": false,
+            "minimizedReason": "",
+            "reactionGroups": [],
+            "url": "https://github.com/Agenthon-2026/track4-analysis-public/issues/25#issuecomment-6029255707",
+            "viewerDidAuthor": false
+          }
+        ],
+        "createdAt": "2026-10-05T23:27:18Z",
+        "number": 25,
+        "state": "OPEN",
+        "title": "Track 4: naive-rule construction, interval truth on classification units, tie labels, Final resources",
+        "updatedAt": "2026-10-07T01:57:57Z",
+        "url": "https://github.com/Agenthon-2026/track4-analysis-public/issues/25"
+      },
+      "comments_api": [
+        {
+          "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/comments/6020720095",
+          "html_url": "https://github.com/Agenthon-2026/track4-analysis-public/issues/25#issuecomment-6020720095",
+          "issue_url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/25",
+          "id": 6020720095,
+          "user": {
+            "login": "bram-wq",
+            "id": 312006598,
+            "url": "https://api.github.com/users/bram-wq",
+            "html_url": "https://github.com/bram-wq",
+            "type": "User",
+            "user_view_type": "public"
+          },
+          "created_at": "2026-10-06T16:27:30Z",
+          "updated_at": "2026-10-06T16:27:30Z",
+          "author_association": "NONE",
+          "pin": null,
+          "reactions": {
+            "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/comments/6020720095/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+          },
+          "performed_via_github_app": null,
+          "minimized": null
+        },
+        {
+          "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/comments/6029255707",
+          "html_url": "https://github.com/Agenthon-2026/track4-analysis-public/issues/25#issuecomment-6029255707",
+          "issue_url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/25",
+          "id": 6029255707,
+          "user": {
+            "login": "PawPol",
+            "id": 27575674,
+            "url": "https://api.github.com/users/PawPol",
+            "html_url": "https://github.com/PawPol",
+            "type": "User",
+            "user_view_type": "public"
+          },
+          "created_at": "2026-10-07T01:57:57Z",
+          "updated_at": "2026-10-07T01:57:57Z",
+          "author_association": "CONTRIBUTOR",
+          "pin": null,
+          "reactions": {
+            "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/comments/6029255707/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+          },
+          "performed_via_github_app": null,
+          "minimized": null
+        }
+      ]
+    }
+  ],
+  "scope_note": "公开版只保留来源URL、日期、读取命令和原始快照hash；第三方issue/comments全文已从Git历史排除，中文事实释义见规则文档。hash指向本地原始快照，不能用来校验此摘要字节。"
+}

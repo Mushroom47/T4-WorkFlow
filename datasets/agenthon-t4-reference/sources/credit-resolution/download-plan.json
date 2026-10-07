@@ -1,0 +1,335 @@
+[
+  {
+    "id": "sp2023",
+    "url": "https://www.maalot.co.il/Publications/TS20240709142640.PDF",
+    "path": "local-raw/sp-2023-default-study.pdf",
+    "title": "S&P Global Ratings 2023 Annual Global Corporate Default And Rating Transition Study",
+    "published_at": "2024-03-28",
+    "locator": "年度全体公开评级违约名单及方法论；S&P旗下Maalot网站公开原件",
+    "kind": "primary_rating_agency_affiliate_pdf"
+  },
+  {
+    "id": "sp2024",
+    "url": "https://maalot.co.il/Publications/FTS20250331162126.pdf",
+    "path": "local-raw/sp-2024-default-study.pdf",
+    "title": "S&P Global Ratings 2024 Annual Global Corporate Default And Rating Transition Study",
+    "published_at": "2025-03-27",
+    "locator": "年度公开评级违约名单；按事件日取2024Q1；回顾研究仅供历史结果核查",
+    "kind": "primary_rating_agency_affiliate_pdf"
+  },
+  {
+    "id": "BBY-debt-index",
+    "url": "https://www.sec.gov/Archives/edgar/data/764478/000076447823000012/0000764478-23-000012-index.html",
+    "path": "local-raw/BBY/debt-index.html",
+    "title": "BBY债务相关SEC申报附件索引",
+    "published_at": "2023-04-13",
+    "locator": "SEC索引Document Format Files表，定位债务、担保、附属公司附件",
+    "kind": "sec_filing_index"
+  },
+  {
+    "id": "WBA-debt-index",
+    "url": "https://www.sec.gov/Archives/edgar/data/1618921/000119312523207773/0001193125-23-207773-index.html",
+    "path": "local-raw/WBA/debt-index.html",
+    "title": "WBA债务相关SEC申报附件索引",
+    "published_at": "2023-08-10",
+    "locator": "SEC索引Document Format Files表，定位债务、担保、附属公司附件",
+    "kind": "sec_filing_index"
+  },
+  {
+    "id": "M-debt-index",
+    "url": "https://www.sec.gov/Archives/edgar/data/794367/000162828024012734/0001628280-24-012734-index.html",
+    "path": "local-raw/M/debt-index.html",
+    "title": "M债务相关SEC申报附件索引",
+    "published_at": "2024-03-22",
+    "locator": "SEC索引Document Format Files表，定位债务、担保、附属公司附件",
+    "kind": "sec_filing_index"
+  },
+  {
+    "id": "ODFL-debt-index",
+    "url": "https://www.sec.gov/Archives/edgar/data/878927/000095017024020176/0000950170-24-020176-index.html",
+    "path": "local-raw/ODFL/debt-index.html",
+    "title": "ODFL债务相关SEC申报附件索引",
+    "published_at": "2024-02-26",
+    "locator": "SEC索引Document Format Files表，定位债务、担保、附属公司附件",
+    "kind": "sec_filing_index"
+  },
+  {
+    "id": "sec-current-tickers",
+    "url": "https://www.sec.gov/files/company_tickers.json",
+    "path": "local-raw/company_tickers.json",
+    "title": "SEC current company tickers snapshot",
+    "published_at": null,
+    "locator": "current M/WBA ticker mappings for sensitivity; current snapshot does not replace 2023 task CIK",
+    "kind": "sec_current_mapping"
+  },
+  {
+    "id": "BBY-bby-20230412xex10_1.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/764478/000076447823000012/bby-20230412xex10_1.htm",
+    "path": "local-raw/BBY/bby-20230412xex10_1.htm",
+    "title": "2 EX-10.1 bby-20230412xex10_1.htm EX-10.1 1167446",
+    "published_at": "2023-04-13",
+    "locator": "原始融资/附属公司附件；逐条核查发行主体、付款违约及宽限期限",
+    "kind": "sec_filing_exhibit"
+  },
+  {
+    "id": "WBA-d542330dex101.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/1618921/000119312523207773/d542330dex101.htm",
+    "path": "local-raw/WBA/d542330dex101.htm",
+    "title": "2 EX-10.1 d542330dex101.htm EX-10.1 602623",
+    "published_at": "2023-08-10",
+    "locator": "原始融资/附属公司附件；逐条核查发行主体、付款违约及宽限期限",
+    "kind": "sec_filing_exhibit"
+  },
+  {
+    "id": "WBA-d542330dex102.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/1618921/000119312523207773/d542330dex102.htm",
+    "path": "local-raw/WBA/d542330dex102.htm",
+    "title": "3 EX-10.2 d542330dex102.htm EX-10.2 735911",
+    "published_at": "2023-08-10",
+    "locator": "原始融资/附属公司附件；逐条核查发行主体、付款违约及宽限期限",
+    "kind": "sec_filing_exhibit"
+  },
+  {
+    "id": "M-m-20240203xex21.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/794367/000162828024012734/m-20240203xex21.htm",
+    "path": "local-raw/M/m-20240203xex21.htm",
+    "title": "3 EX-21 m-20240203xex21.htm EX-21 19773",
+    "published_at": "2024-03-22",
+    "locator": "原始融资/附属公司附件；逐条核查发行主体、付款违约及宽限期限",
+    "kind": "sec_filing_exhibit"
+  },
+  {
+    "id": "M-subsidiary-submissions",
+    "url": "https://data.sec.gov/submissions/CIK0001026179.json",
+    "path": "local-raw/M/retail-holdings-submissions.json",
+    "title": "M-subsidiary-submissions",
+    "published_at": null,
+    "locator": "issuer/历史债务合同法律条款；窗口外文件仅定义债务主体与付款/宽限条款",
+    "kind": "sec_filing_exhibit_or_mapping"
+  },
+  {
+    "id": "BBY-subs",
+    "url": "https://www.sec.gov/Archives/edgar/data/764478/000076447824000010/bby-20240203xex21_1.htm",
+    "path": "local-raw/BBY/subsidiaries.html",
+    "title": "BBY-subs",
+    "published_at": "2024-03-15",
+    "locator": "issuer/历史债务合同法律条款；窗口外文件仅定义债务主体与付款/宽限条款",
+    "kind": "sec_filing_exhibit_or_mapping"
+  },
+  {
+    "id": "WBA-annual-index",
+    "url": "https://www.sec.gov/Archives/edgar/data/1618921/000161892123000062/0001618921-23-000062-index.html",
+    "path": "local-raw/WBA/annual-index.html",
+    "title": "WBA-annual-index",
+    "published_at": "2023-10-12",
+    "locator": "issuer/历史债务合同法律条款；窗口外文件仅定义债务主体与付款/宽限条款",
+    "kind": "sec_filing_exhibit_or_mapping"
+  },
+  {
+    "id": "ODFL-2020-note-agreement",
+    "url": "https://www.sec.gov/Archives/edgar/data/878927/000156459020021054/odfl-ex416_458.htm",
+    "path": "local-raw/ODFL/note-purchase-agreement-20200504.htm",
+    "title": "ODFL-2020-note-agreement",
+    "published_at": "2020-05-05",
+    "locator": "issuer/历史债务合同法律条款；窗口外文件仅定义债务主体与付款/宽限条款",
+    "kind": "sec_filing_exhibit_or_mapping"
+  },
+  {
+    "id": "ODFL-2023-note-amendment",
+    "url": "https://www.sec.gov/Archives/edgar/data/878927/000095017023009357/odfl-ex4_17.htm",
+    "path": "local-raw/ODFL/note-amendment-20230322.htm",
+    "title": "ODFL-2023-note-amendment",
+    "published_at": "2023-03-23",
+    "locator": "issuer/历史债务合同法律条款；窗口外文件仅定义债务主体与付款/宽限条款",
+    "kind": "sec_filing_exhibit_or_mapping"
+  },
+  {
+    "id": "ODFL-2023-credit-agreement",
+    "url": "https://www.sec.gov/Archives/edgar/data/878927/000095017023009357/odfl-ex4_18.htm",
+    "path": "local-raw/ODFL/credit-agreement-20230322.htm",
+    "title": "ODFL-2023-credit-agreement",
+    "published_at": "2023-03-23",
+    "locator": "issuer/历史债务合同法律条款；窗口外文件仅定义债务主体与付款/宽限条款",
+    "kind": "sec_filing_exhibit_or_mapping"
+  },
+  {
+    "id": "M-2025-joint-issuer-index",
+    "url": "https://www.sec.gov/Archives/edgar/data/794367/000110465925058538/0001104659-25-058538-index.html",
+    "path": "local-raw/M/joint-issuer-index-2025.html",
+    "title": "M-2025-joint-issuer-index",
+    "published_at": "2025-06-11",
+    "locator": "issuer/历史债务合同法律条款；窗口外文件仅定义债务主体与付款/宽限条款",
+    "kind": "sec_filing_exhibit_or_mapping"
+  },
+  {
+    "id": "BBY-2011-indenture",
+    "url": "https://www.sec.gov/Archives/edgar/data/764478/000104746911001822/a2202436zex-4_1.htm",
+    "path": "local-raw/BBY/indenture-20110311.htm",
+    "title": "BBY-2011-indenture",
+    "published_at": "2011-03-08",
+    "locator": "issuer/历史债务合同法律条款；窗口外文件仅定义债务主体与付款/宽限条款",
+    "kind": "sec_filing_exhibit_or_mapping"
+  },
+  {
+    "id": "BBY-recap-query",
+    "url": "https://www.courtlistener.com/?q=%22Best+Buy%22&type=r&filed_after=04%2F01%2F2023&filed_before=03%2F31%2F2024&order_by=dateFiled+desc",
+    "path": "local-raw/BBY/recap-query.html",
+    "title": "CourtListener RECAP \"Best Buy\"全联邦案卷索引查询",
+    "published_at": null,
+    "locator": "公开RECAP非PACER完整库；检索期起诉/立案日期2023-04-01..2024-03-31，仅辅助，逐案区分债务人/债权人",
+    "kind": "public_court_index_nonexhaustive"
+  },
+  {
+    "id": "M-recap-query",
+    "url": "https://www.courtlistener.com/?q=%22Macy%22&type=r&filed_after=04%2F01%2F2023&filed_before=03%2F31%2F2024&order_by=dateFiled+desc",
+    "path": "local-raw/M/recap-query.html",
+    "title": "CourtListener RECAP \"Macy\"全联邦案卷索引查询",
+    "published_at": null,
+    "locator": "公开RECAP非PACER完整库；检索期起诉/立案日期2023-04-01..2024-03-31，仅辅助，逐案区分债务人/债权人",
+    "kind": "public_court_index_nonexhaustive"
+  },
+  {
+    "id": "ODFL-recap-query",
+    "url": "https://www.courtlistener.com/?q=%22Old+Dominion+Freight+Line%22&type=r&filed_after=04%2F01%2F2023&filed_before=03%2F31%2F2024&order_by=dateFiled+desc",
+    "path": "local-raw/ODFL/recap-query.html",
+    "title": "CourtListener RECAP \"Old Dominion Freight Line\"全联邦案卷索引查询",
+    "published_at": null,
+    "locator": "公开RECAP非PACER完整库；检索期起诉/立案日期2023-04-01..2024-03-31，仅辅助，逐案区分债务人/债权人",
+    "kind": "public_court_index_nonexhaustive"
+  },
+  {
+    "id": "WBA-recap-query",
+    "url": "https://www.courtlistener.com/?q=%22Walgreens%22&type=r&filed_after=04%2F01%2F2023&filed_before=03%2F31%2F2024&order_by=dateFiled+desc",
+    "path": "local-raw/WBA/recap-query.html",
+    "title": "CourtListener RECAP \"Walgreens\"全联邦案卷索引查询",
+    "published_at": null,
+    "locator": "公开RECAP非PACER完整库；检索期起诉/立案日期2023-04-01..2024-03-31，仅辅助，逐案区分债务人/债权人",
+    "kind": "public_court_index_nonexhaustive"
+  },
+  {
+    "id": "WBA-subs",
+    "url": "https://www.sec.gov/Archives/edgar/data/1618921/000161892123000062/a4q23exhibit21.htm",
+    "path": "local-raw/WBA/a4q23exhibit21.htm",
+    "title": "WBA fiscal2023 Exhibit21 subsidiaries",
+    "published_at": "2023-10-12",
+    "locator": "2023已合并子公司法律名称及司法辖区",
+    "kind": "sec_filing_exhibit"
+  },
+  {
+    "id": "SP-2023Q2-components",
+    "url": "https://www.spglobal.com/_assets/documents/ratings/research/101580982.pdf",
+    "path": "local-raw/rating-components-20230630.pdf",
+    "title": "S&P North America Corporate Rating Component Scores June30,2023",
+    "published_at": "2023-06-30",
+    "locator": "原件内实际日期需核对；评级截面及实际存续债务条款",
+    "kind": "primary_ratings_or_sec_exhibit"
+  },
+  {
+    "id": "BBY-2028-notes",
+    "url": "https://www.sec.gov/Archives/edgar/data/764478/000110465918059137/a18-31182_4ex4d1.htm",
+    "path": "local-raw/BBY/notes2028-supplement-20180927.htm",
+    "title": "2028票据利息日及默认条款",
+    "published_at": "2018-09-27",
+    "locator": "原件内实际日期需核对；评级截面及实际存续债务条款",
+    "kind": "primary_ratings_or_sec_exhibit"
+  },
+  {
+    "id": "BBY-2030-notes",
+    "url": "https://www.sec.gov/Archives/edgar/data/764478/000110465920111025/tm2031456d6_ex4-1.htm",
+    "path": "local-raw/BBY/notes2030-supplement-20201001.htm",
+    "title": "2030票据利息日及默认条款",
+    "published_at": "2020-10-01",
+    "locator": "原件内实际日期需核对；评级截面及实际存续债务条款",
+    "kind": "primary_ratings_or_sec_exhibit"
+  },
+  {
+    "id": "M-2022-joint-issuer-registration",
+    "url": "https://www.sec.gov/Archives/edgar/data/1026179/000110465922065287/tm2216233-1_s3asr.htm",
+    "path": "local-raw/M/joint-registration-20220526.htm",
+    "title": "Macy parent/MRH historical joint S-3ASR registration",
+    "published_at": "2022-05-26",
+    "locator": "2022联合registrants、CIK、担保、indenture；用于历史法律映射",
+    "kind": "sec_joint_registration"
+  },
+  {
+    "id": "M-2020-06-09-index",
+    "url": "https://www.sec.gov/Archives/edgar/data/794367/000079436720000078/0000794367-20-000078-index.html",
+    "path": "local-raw/M/2020-06-09-index.html",
+    "title": "M债务契约/修订原始索引",
+    "published_at": "2020-06-09",
+    "locator": "存续债务发行主体、担保、违约/宽限条款",
+    "kind": "sec_filing_index"
+  },
+  {
+    "id": "M-2022-03-03-index",
+    "url": "https://www.sec.gov/Archives/edgar/data/794367/000156459022008536/0001564590-22-008536-index.html",
+    "path": "local-raw/M/2022-03-03-index.html",
+    "title": "M债务契约/修订原始索引",
+    "published_at": "2022-03-03",
+    "locator": "存续债务发行主体、担保、违约/宽限条款",
+    "kind": "sec_filing_index"
+  },
+  {
+    "id": "M-2022-ABL-amendment",
+    "url": "https://www.sec.gov/Archives/edgar/data/794367/000156459022008536/m-ex101_6.htm",
+    "path": "local-raw/M/abl-amendment-20220303.htm",
+    "title": "Macy 2022 third amendment to ABL Credit Agreement",
+    "published_at": "2022-03-03",
+    "locator": "带完整现行ABL协议，借款主体、担保主体、付款违约定义和期限",
+    "kind": "sec_filing_exhibit"
+  },
+  {
+    "id": "M-2020-06-09-financing-index",
+    "url": "https://www.sec.gov/Archives/edgar/data/794367/000110465920071418/0001104659-20-071418-index.html",
+    "path": "local-raw/M/2020-financing-index.html",
+    "title": "Macy June2020 debt financing8K index",
+    "published_at": "2020-06-09",
+    "locator": "ABL及债务担保文档索引，issuer继承关系",
+    "kind": "sec_filing_index"
+  },
+  {
+    "id": "M-2020-tm2022011d1_ex4-1.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/794367/000110465920071418/tm2022011d1_ex4-1.htm",
+    "path": "local-raw/M/tm2022011d1_ex4-1.htm",
+    "title": " 2 EXHIBIT 4.1 tm2022011d1_ex4-1.htm EX-4.1 1654822 ",
+    "published_at": "2020-06-09",
+    "locator": "存续债务法律主体、担保和违约条款",
+    "kind": "sec_filing_exhibit"
+  },
+  {
+    "id": "M-2020-tm2022011d1_ex10-1.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/794367/000110465920071418/tm2022011d1_ex10-1.htm",
+    "path": "local-raw/M/tm2022011d1_ex10-1.htm",
+    "title": " 3 EXHIBIT 10.1 tm2022011d1_ex10-1.htm EX-10.1 1359197 ",
+    "published_at": "2020-06-09",
+    "locator": "存续债务法律主体、担保和违约条款",
+    "kind": "sec_filing_exhibit"
+  },
+  {
+    "id": "PACER-boundary",
+    "url": "https://pacer.uscourts.gov/help/faqs/what-pacer-case-locator",
+    "path": "local-raw/pacer-case-locator.html",
+    "title": "PACER national index coverage",
+    "published_at": null,
+    "locator": "法院公开索引与完整PACER访问边界",
+    "kind": "primary_court_or_index_operator_documentation"
+  },
+  {
+    "id": "Court-boundary",
+    "url": "https://www.uscourts.gov/court-records/find-a-case-pacer",
+    "path": "local-raw/court-pacer-access.html",
+    "title": "US Courts PACER account requirement",
+    "published_at": null,
+    "locator": "法院公开索引与完整PACER访问边界",
+    "kind": "primary_court_or_index_operator_documentation"
+  },
+  {
+    "id": "RECAP-boundary",
+    "url": "https://courtlistener.com/recap/",
+    "path": "local-raw/recap-scope.html",
+    "title": "Free Law Project RECAP coverage and search",
+    "published_at": null,
+    "locator": "法院公开索引与完整PACER访问边界",
+    "kind": "primary_court_or_index_operator_documentation"
+  }
+]

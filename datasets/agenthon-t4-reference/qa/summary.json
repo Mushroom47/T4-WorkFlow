@@ -1,0 +1,112 @@
+{
+  "output_root": "datasets/agenthon-t4-reference/qa",
+  "audit": {
+    "ok": true,
+    "records": 78,
+    "tasks": 11,
+    "status_counts": {
+      "verified": 70,
+      "provisional": 8
+    },
+    "input_hashes": "verified",
+    "reference_task_hashes": "verified",
+    "reference_schema": "verified",
+    "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+  },
+  "batch_validation": {
+    "ok": true,
+    "complete": true,
+    "task_count": 11,
+    "entity_count": 78,
+    "missing_tasks": []
+  },
+  "default_fixture_refusals": [
+    "t4-credit-event-2023",
+    "t4-eps-yoy-2023Q2-mixed",
+    "t4-postearn-20240201-megacap"
+  ],
+  "verified_only": {
+    "ok": true,
+    "complete": true,
+    "included": 70,
+    "numeric": 66,
+    "classification": 22
+  },
+  "include_provisional": {
+    "ok": true,
+    "complete": true,
+    "included": 78,
+    "numeric": 70,
+    "classification": 30
+  },
+  "partial_default": {
+    "exit_code": 2,
+    "ok": false,
+    "complete": false,
+    "missing_count": 10
+  },
+  "partial_allowed": {
+    "exit_code": 0,
+    "ok": true,
+    "complete": false,
+    "missing_count": 10
+  },
+  "reordered_actual_task_spans": {
+    "ok": true,
+    "exact_fragment_checks": 6
+  },
+  "warnings": {},
+  "source_sha256": {
+    "tools/reference_suite.py": "5368cb3b700dee98292ff43f791ca6e72e617dd733f7885649f68b710bb09627",
+    "tests/test_reference_suite.py": "a448fc450cedf813517d6f071c897bc02232f08457767d707bc0e10219fb6854"
+  },
+  "official_score": null,
+  "notice": "本地夹具管线检查，非预测能力或官方成绩",
+  "reference_version": "0.1.1",
+  "reference_sha256": "de330cf2452f0c80b062d0e4a2294307c607f6d5bde943b122755fee33f18ec6",
+  "current_combined_tests": 71,
+  "supplement_review": {
+    "core_result_rows_unchanged": 78,
+    "positive_label_downgrade_replays_caught": 4,
+    "new_auditor_tests": 21
+  },
+  "independent_audit": {
+    "records": 78,
+    "tasks": 11,
+    "reference_status_counts": {
+      "verified": 70,
+      "provisional": 8,
+      "unresolved": 0
+    },
+    "row_integrity_pass": 78,
+    "independent_numeric_calculation_pass": 70,
+    "independent_numeric_calculation_fail": 0,
+    "no_independent_numeric_calculation": 8,
+    "independent_positive_credit_events_confirmed": 4,
+    "designated_vintage_or_release_archive_supported": 46,
+    "provenance_class_counts": {
+      "current_historical_series_unknown_vintage": 13,
+      "dated_original_event_document": 4,
+      "dated_original_release_document": 7,
+      "designated_historical_vintage": 35,
+      "earliest_filing_xbrl_observation": 15,
+      "negative_proof_incomplete": 4
+    },
+    "hash_files_checked_against_prior_declaration": 379,
+    "hash_failures": 0,
+    "pass_flag": true,
+    "supplement_manifest_count": 4,
+    "supplement_validation_errors": 0,
+    "pass_flag_scope": "roster/字段/源哈希/已实现数值公式一致；不表示所有78行已证明首次发布或完整无事件",
+    "fit_ready_without_additional_provenance": false,
+    "negative_controls_pass": true
+  },
+  "earnings_date_review": {
+    "release_dates_separated_from_notice_filing_presentation": true,
+    "AMGN_release_vs_resolution": "release_after_resolution",
+    "AMGN_notice_date": "2023-07-31",
+    "AMGN_actual_release_date": "2023-08-03",
+    "AMGN_candidate_verified_upgrade_rejected": true,
+    "negative_control_cases": 8
+  }
+}

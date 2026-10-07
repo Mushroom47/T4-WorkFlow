@@ -1,0 +1,23 @@
+{
+  "command": "python3 -m unittest discover -s tests -v",
+  "executed_at": "2026-10-07T09:29:15.743984+00:00",
+  "python": "3.14.4 (main, Apr  7 2026, 13:13:20) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "exit_code": 0,
+  "tests_run": 71,
+  "result": "OK",
+  "test_files": {
+    "tests/test_reference_suite.py": "a448fc450cedf813517d6f071c897bc02232f08457767d707bc0e10219fb6854",
+    "tests/test_supplement_evidence.py": "5c38d380b11e5023a752ec85b8388142c4e21ee744f076491a14a41db29c05a7"
+  },
+  "tool_files": {
+    "tools/reference_suite.py": "5368cb3b700dee98292ff43f791ca6e72e617dd733f7885649f68b710bb09627",
+    "tools/audit_reference_data.py": "73ed316dd06dd344a2f7968b8df08f96e0fdcefe991739b3a6d6495060025c98",
+    "tools/build_reference_data.py": "7a96efae95db09698b4fcbbb9a40285148f0f2890bf6b8861b2c19e35e21e834"
+  },
+  "previous_run": {
+    "tests_run": 66,
+    "executed_at": "2026-10-07T09:05:04.190595+00:00",
+    "git_commit": "32f22878552bd2ce6ec735cf8bacb8bc85248892"
+  },
+  "official_score": null
+}

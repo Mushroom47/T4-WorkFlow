@@ -1,0 +1,16 @@
+{
+  "path": "amazon-10k-primary-facts.json",
+  "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000008/amzn-20231231.htm",
+  "retrieval_method": "web.run open/find parsed primary filing body",
+  "retrieved_at": "2026-10-07T13:10:22.338891+00:00",
+  "published_at": "2024-02-02",
+  "artifact_kind": "original_chinese_fact_note_not_HTTP_response",
+  "locator": "Note 1 / Common Stock Split，网页解析1411–1413行；Item 5 Market Information，673行",
+  "facts": [
+    "Amazon 2023 Form 10-K 的 Note 1 记载2022-05-27 effected20-for-1，年报每股资料追溯调整；不等同交易开始按拆股后价格计算的日期。",
+    "Item 5确认普通股在 Nasdaq Global Select Market 交易，symbol AMZN。"
+  ],
+  "direct_full_page_archived": false,
+  "first_release_version_obtained": false,
+  "original_redistribution_permission": "unconfirmed; SEC托管不自动授予发行人文件开放许可"
+}

@@ -1,0 +1,12 @@
+{
+  "entity_id": "GS",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000886982/us-gaap/EarningsPerShareDiluted.json",
+  "source_sha256": "b8c3d05e883361ebd8543b3dfce7c0f40fda35a90cb1f604416f352a871b64db",
+  "retrieved_at": "2026-10-07T08:14:24.042838+00:00",
+  "bytes": 33737,
+  "raw_path": "sec-eps-GS-concept.raw.json",
+  "tag": "EarningsPerShareDiluted",
+  "taxonomy": "us-gaap",
+  "unit": "USD/shares",
+  "observation_count": 230
+}

@@ -1,0 +1,10 @@
+{
+  "path": "fed-h15-about.html",
+  "url": "https://www.federalreserve.gov/releases/h15/about.htm",
+  "retrieved_at": "2026-10-07T08:49:48.732219+00:00",
+  "locator": "About：每个非假日工作日发布；页面Last Update 2017-01-03",
+  "published_at": null,
+  "byte_form": "原始HTML响应；当前说明，不是目标日历史公告",
+  "status": "download_failed",
+  "error": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)>"
+}

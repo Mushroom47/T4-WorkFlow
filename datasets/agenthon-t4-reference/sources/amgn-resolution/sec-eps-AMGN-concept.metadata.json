@@ -1,0 +1,12 @@
+{
+  "entity_id": "AMGN",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000318154/us-gaap/EarningsPerShareDiluted.json",
+  "source_sha256": "44fda87915cfe7d797eb3d600fde86258fb8098832c87d395397cf4126600c60",
+  "retrieved_at": "2026-10-07T08:14:25.557018+00:00",
+  "bytes": 46812,
+  "raw_path": "sec-eps-AMGN-concept.raw.json",
+  "tag": "EarningsPerShareDiluted",
+  "taxonomy": "us-gaap",
+  "unit": "USD/shares",
+  "observation_count": 324
+}

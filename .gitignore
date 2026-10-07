@@ -1,0 +1,26 @@
+# 本机与 Python 缓存
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# 凭据与本地私密配置
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+_private/
+.local/
+
+# 比赛证明及临时提交产物
+team-claim.json
+submission*.zip
+
+# 临时输出
+*.log
+tmp/

@@ -1,0 +1,2104 @@
+{
+  "ok": true,
+  "complete": true,
+  "tasks": [
+    {
+      "task_id": "t4-EXAMPLE-eps-beat",
+      "target_type": "classification",
+      "entity_count": 1,
+      "reference_status_counts": {
+        "verified": 1
+      },
+      "allow_provisional": true,
+      "included_count": 1,
+      "classification_count": 1,
+      "numeric_count": 1,
+      "numeric_excluded_reason_counts": {},
+      "classification_accuracy": 1.0,
+      "mean_absolute_error": 0.0,
+      "interval_coverage": 1.0,
+      "mean_interval_score_90": 2.0,
+      "official_interval_leg": "unknown",
+      "ranking": null,
+      "entities": [
+        {
+          "entity_id": "AAPL",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": true,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        }
+      ],
+      "validation": {
+        "ok": true,
+        "task_id": "t4-EXAMPLE-eps-beat",
+        "entity_count": 1,
+        "task_canonical_sha256": "edec54e3296316092c802344e41ab8f1523a62569c09bc14952624f10d068067",
+        "validation_scope": "冻结官方 JSON Schema 结构与本地引用语义检查",
+        "faithfulness": "not_evaluated",
+        "reasoning": "not_evaluated",
+        "reason_policy_scope": "仅检查引用、结构、已知拒绝短语及原文预算；不复刻官方 URI 遮蔽与理由评审",
+        "reason_warnings": [],
+        "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+      },
+      "metric_scope": "本地参考值的描述性比较；区间指标不等同于官方 interval leg 或校准结论",
+      "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+    },
+    {
+      "task_id": "t4-auction-btc-202411-us7",
+      "target_type": "regression",
+      "entity_count": 7,
+      "reference_status_counts": {
+        "verified": 7
+      },
+      "allow_provisional": true,
+      "included_count": 7,
+      "classification_count": 0,
+      "numeric_count": 7,
+      "numeric_excluded_reason_counts": {},
+      "classification_accuracy": null,
+      "mean_absolute_error": 0.0,
+      "interval_coverage": 1.0,
+      "mean_interval_score_90": 2.0,
+      "official_interval_leg": "unknown",
+      "ranking": null,
+      "entities": [
+        {
+          "entity_id": "AUC_10Y_20241105",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "AUC_20Y_20241120",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "AUC_2Y_20241125",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "AUC_30Y_20241106",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "AUC_3Y_20241104",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "AUC_5Y_20241126",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "AUC_7Y_20241127",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        }
+      ],
+      "validation": {
+        "ok": true,
+        "task_id": "t4-auction-btc-202411-us7",
+        "entity_count": 7,
+        "task_canonical_sha256": "4167418c67850ce37ec94162c4e144bd6cbf8542de110feabdd90fb8238f51bf",
+        "validation_scope": "冻结官方 JSON Schema 结构与本地引用语义检查",
+        "faithfulness": "not_evaluated",
+        "reasoning": "not_evaluated",
+        "reason_policy_scope": "仅检查引用、结构、已知拒绝短语及原文预算；不复刻官方 URI 遮蔽与理由评审",
+        "reason_warnings": [],
+        "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+      },
+      "metric_scope": "本地参考值的描述性比较；区间指标不等同于官方 interval leg 或校准结论",
+      "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+    },
+    {
+      "task_id": "t4-cotpos-202411-us10",
+      "target_type": "ranking",
+      "entity_count": 10,
+      "reference_status_counts": {
+        "verified": 10
+      },
+      "allow_provisional": true,
+      "included_count": 10,
+      "classification_count": 0,
+      "numeric_count": 10,
+      "numeric_excluded_reason_counts": {},
+      "classification_accuracy": null,
+      "mean_absolute_error": 0.0,
+      "interval_coverage": 1.0,
+      "mean_interval_score_90": 2.0000000000000004,
+      "official_interval_leg": "unknown",
+      "ranking": {
+        "complete_roster": true,
+        "spearman_rho": 1.0,
+        "predicted_order": [
+          "CORN_CBT",
+          "UST_2Y",
+          "WTI_NYMEX",
+          "NATGAS_NYMEX",
+          "UST_10Y",
+          "EURO_FX",
+          "ES_SP500",
+          "GOLD_CMX",
+          "SILVER_CMX",
+          "JPY_CME"
+        ],
+        "reference_order": [
+          "CORN_CBT",
+          "UST_2Y",
+          "WTI_NYMEX",
+          "NATGAS_NYMEX",
+          "UST_10Y",
+          "EURO_FX",
+          "ES_SP500",
+          "GOLD_CMX",
+          "SILVER_CMX",
+          "JPY_CME"
+        ],
+        "supplied_rank_order": null,
+        "ties": "Spearman 使用平均秩；展示排序的并列按 entity_id 稳定排列，不能视为唯一真值顺序"
+      },
+      "entities": [
+        {
+          "entity_id": "CORN_CBT",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.000000000000001,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "ES_SP500",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "EURO_FX",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "GOLD_CMX",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.000000000000001,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "JPY_CME",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "NATGAS_NYMEX",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "SILVER_CMX",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "UST_10Y",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "UST_2Y",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0000000000000004,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "WTI_NYMEX",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        }
+      ],
+      "validation": {
+        "ok": true,
+        "task_id": "t4-cotpos-202411-us10",
+        "entity_count": 10,
+        "task_canonical_sha256": "1639d559e7cd1d058a31b52ee5ee19e4b9b0ade4d1182a8758d768cc4933cd2b",
+        "validation_scope": "冻结官方 JSON Schema 结构与本地引用语义检查",
+        "faithfulness": "not_evaluated",
+        "reasoning": "not_evaluated",
+        "reason_policy_scope": "仅检查引用、结构、已知拒绝短语及原文预算；不复刻官方 URI 遮蔽与理由评审",
+        "reason_warnings": [],
+        "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+      },
+      "metric_scope": "本地参考值的描述性比较；区间指标不等同于官方 interval leg 或校准结论",
+      "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+    },
+    {
+      "task_id": "t4-cpicomp-202410-us11",
+      "target_type": "regression",
+      "entity_count": 11,
+      "reference_status_counts": {
+        "verified": 11
+      },
+      "allow_provisional": true,
+      "included_count": 11,
+      "classification_count": 0,
+      "numeric_count": 11,
+      "numeric_excluded_reason_counts": {},
+      "classification_accuracy": null,
+      "mean_absolute_error": 0.0,
+      "interval_coverage": 1.0,
+      "mean_interval_score_90": 2.0,
+      "official_interval_leg": "unknown",
+      "ranking": null,
+      "entities": [
+        {
+          "entity_id": "CPI_ALLITEMS",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "CPI_APPAREL",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "CPI_CORE",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "CPI_ENERGY",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "CPI_FOOD",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "CPI_GASOLINE",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "CPI_MEDICAL",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "CPI_NEWVEH",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "CPI_SHELTER",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "CPI_TRANSPSVC",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "CPI_USEDCARS",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        }
+      ],
+      "validation": {
+        "ok": true,
+        "task_id": "t4-cpicomp-202410-us11",
+        "entity_count": 11,
+        "task_canonical_sha256": "44e9351eb2e32532eb7b9c352c8921ed6a2c14ba9532d9fd8e8404e3cbe8a855",
+        "validation_scope": "冻结官方 JSON Schema 结构与本地引用语义检查",
+        "faithfulness": "not_evaluated",
+        "reasoning": "not_evaluated",
+        "reason_policy_scope": "仅检查引用、结构、已知拒绝短语及原文预算；不复刻官方 URI 遮蔽与理由评审",
+        "reason_warnings": [],
+        "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+      },
+      "metric_scope": "本地参考值的描述性比较；区间指标不等同于官方 interval leg 或校准结论",
+      "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+    },
+    {
+      "task_id": "t4-credit-event-2023",
+      "target_type": "classification",
+      "entity_count": 8,
+      "reference_status_counts": {
+        "verified": 8
+      },
+      "allow_provisional": true,
+      "included_count": 8,
+      "classification_count": 8,
+      "numeric_count": 0,
+      "numeric_excluded_reason_counts": {
+        "事后事件指示器不能作为预测概率真值": 8
+      },
+      "classification_accuracy": 1.0,
+      "mean_absolute_error": null,
+      "interval_coverage": null,
+      "mean_interval_score_90": null,
+      "official_interval_leg": "disabled_card",
+      "ranking": null,
+      "entities": [
+        {
+          "entity_id": "BBBY",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": true,
+          "absolute_error": null,
+          "interval_covered": null,
+          "interval_score_90": null,
+          "reference_value_kind": "label_only",
+          "numeric_excluded_reason": "事后事件指示器不能作为预测概率真值"
+        },
+        {
+          "entity_id": "BBY",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "bounded_verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "not_applicable",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "观察窗2023-04-01至2024-03-31，题面历史母公司及母公司担保债务发行/借款主体；完整公开SEC申报名册、原文债务/实付核对与S&P公开年度违约名册的有限核查。法院索引未完成、保密/未评级/未披露小额迟付与全部非担保子公司未穷尽，不保证官方私有outcome一致。",
+            "coverage_limits": [
+              "court_national_index_not_queried",
+              "rating_nonpublic_unrated",
+              "minor_or_undisclosed_payment",
+              "subsidiary_definition",
+              "official_private_outcome",
+              "first_publication_snapshot"
+            ],
+            "entity_scope": {
+              "window_start_inclusive": "2023-04-01",
+              "window_end_inclusive": "2024-03-31",
+              "task_cik": "0000764478",
+              "entity": "题面历史母公司，以及母公司担保债务的发行/借款法律主体",
+              "bankruptcy_definition": "Chapter11/Chapter7申请；按实际petition/SEC报告日期区分，未以普通诉讼/债权人身份当作破产",
+              "payment_definition": "违约合同到期日与约定grace结束/认定日分别核查；无实际付款违约候选。资料支持公开披露债務核查，不保证一切未披露短时迟付。",
+              "distressed_exchange_definition": "必须有评级机构distressed exchange认定或明确事件材料；正常现金清偿、普通降级与窗口外交易均不计",
+              "sec_window_primary_count": 15,
+              "post_window_tail_count": 1,
+              "rating_registers": [
+                {
+                  "source_id": "sp2023",
+                  "coverage": "2023全年S&P公开评级违约Table8",
+                  "pages": [
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31
+                  ]
+                },
+                {
+                  "source_id": "sp2024",
+                  "coverage": "2024全年Table8用于筛查2024Q1；无本issuer匹配",
+                  "pages": [
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30
+                  ]
+                }
+              ],
+              "court_check_status": "incomplete_access_403_not_zero_results",
+              "broader_all_subsidiary_scope_verified": false,
+              "official_private_outcome_verified": false,
+              "limitations": [
+                "court_national_index_not_queried",
+                "rating_nonpublic_unrated",
+                "minor_or_undisclosed_payment",
+                "subsidiary_definition",
+                "official_private_outcome",
+                "first_publication_snapshot"
+              ]
+            },
+            "evidence": [
+              "sources/credit-resolution/resolution-checks.json"
+            ]
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": true,
+          "absolute_error": null,
+          "interval_covered": null,
+          "interval_score_90": null,
+          "reference_value_kind": "label_only",
+          "numeric_excluded_reason": "事后事件指示器不能作为预测概率真值"
+        },
+        {
+          "entity_id": "M",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "bounded_verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "not_applicable",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "观察窗2023-04-01至2024-03-31，题面历史母公司及母公司担保债务发行/借款主体；完整公开SEC申报名册、原文债务/实付核对与S&P公开年度违约名册的有限核查。法院索引未完成、保密/未评级/未披露小额迟付与全部非担保子公司未穷尽，不保证官方私有outcome一致。",
+            "coverage_limits": [
+              "court_national_index_not_queried",
+              "rating_nonpublic_unrated",
+              "minor_or_undisclosed_payment",
+              "subsidiary_definition",
+              "official_private_outcome",
+              "first_publication_snapshot"
+            ],
+            "entity_scope": {
+              "window_start_inclusive": "2023-04-01",
+              "window_end_inclusive": "2024-03-31",
+              "task_cik": "0000794367",
+              "entity": "题面历史母公司，以及母公司担保债务的发行/借款法律主体",
+              "bankruptcy_definition": "Chapter11/Chapter7申请；按实际petition/SEC报告日期区分，未以普通诉讼/债权人身份当作破产",
+              "payment_definition": "违约合同到期日与约定grace结束/认定日分别核查；无实际付款违约候选。资料支持公开披露债務核查，不保证一切未披露短时迟付。",
+              "distressed_exchange_definition": "必须有评级机构distressed exchange认定或明确事件材料；正常现金清偿、普通降级与窗口外交易均不计",
+              "sec_window_primary_count": 14,
+              "post_window_tail_count": 1,
+              "rating_registers": [
+                {
+                  "source_id": "sp2023",
+                  "coverage": "2023全年S&P公开评级违约Table8",
+                  "pages": [
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31
+                  ]
+                },
+                {
+                  "source_id": "sp2024",
+                  "coverage": "2024全年Table8用于筛查2024Q1；无本issuer匹配",
+                  "pages": [
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30
+                  ]
+                }
+              ],
+              "court_check_status": "incomplete_access_403_not_zero_results",
+              "broader_all_subsidiary_scope_verified": false,
+              "official_private_outcome_verified": false,
+              "limitations": [
+                "court_national_index_not_queried",
+                "rating_nonpublic_unrated",
+                "minor_or_undisclosed_payment",
+                "subsidiary_definition",
+                "official_private_outcome",
+                "first_publication_snapshot"
+              ]
+            },
+            "evidence": [
+              "sources/credit-resolution/resolution-checks.json"
+            ]
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": true,
+          "absolute_error": null,
+          "interval_covered": null,
+          "interval_score_90": null,
+          "reference_value_kind": "label_only",
+          "numeric_excluded_reason": "事后事件指示器不能作为预测概率真值"
+        },
+        {
+          "entity_id": "ODFL",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "bounded_verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "not_applicable",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "观察窗2023-04-01至2024-03-31，题面历史母公司及母公司担保债务发行/借款主体；完整公开SEC申报名册、原文债务/实付核对与S&P公开年度违约名册的有限核查。法院索引未完成、保密/未评级/未披露小额迟付与全部非担保子公司未穷尽，不保证官方私有outcome一致。",
+            "coverage_limits": [
+              "court_national_index_not_queried",
+              "rating_nonpublic_unrated",
+              "minor_or_undisclosed_payment",
+              "subsidiary_definition",
+              "official_private_outcome",
+              "first_publication_snapshot"
+            ],
+            "entity_scope": {
+              "window_start_inclusive": "2023-04-01",
+              "window_end_inclusive": "2024-03-31",
+              "task_cik": "0000878927",
+              "entity": "题面历史母公司，以及母公司担保债务的发行/借款法律主体",
+              "bankruptcy_definition": "Chapter11/Chapter7申请；按实际petition/SEC报告日期区分，未以普通诉讼/债权人身份当作破产",
+              "payment_definition": "违约合同到期日与约定grace结束/认定日分别核查；无实际付款违约候选。资料支持公开披露债務核查，不保证一切未披露短时迟付。",
+              "distressed_exchange_definition": "必须有评级机构distressed exchange认定或明确事件材料；正常现金清偿、普通降级与窗口外交易均不计",
+              "sec_window_primary_count": 21,
+              "post_window_tail_count": 1,
+              "rating_registers": [
+                {
+                  "source_id": "sp2023",
+                  "coverage": "2023全年S&P公开评级违约Table8",
+                  "pages": [
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31
+                  ]
+                },
+                {
+                  "source_id": "sp2024",
+                  "coverage": "2024全年Table8用于筛查2024Q1；无本issuer匹配",
+                  "pages": [
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30
+                  ]
+                }
+              ],
+              "court_check_status": "incomplete_access_403_not_zero_results",
+              "broader_all_subsidiary_scope_verified": false,
+              "official_private_outcome_verified": false,
+              "limitations": [
+                "court_national_index_not_queried",
+                "rating_nonpublic_unrated",
+                "minor_or_undisclosed_payment",
+                "subsidiary_definition",
+                "official_private_outcome",
+                "first_publication_snapshot"
+              ]
+            },
+            "evidence": [
+              "sources/credit-resolution/resolution-checks.json"
+            ]
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": true,
+          "absolute_error": null,
+          "interval_covered": null,
+          "interval_score_90": null,
+          "reference_value_kind": "label_only",
+          "numeric_excluded_reason": "事后事件指示器不能作为预测概率真值"
+        },
+        {
+          "entity_id": "RAD",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": true,
+          "absolute_error": null,
+          "interval_covered": null,
+          "interval_score_90": null,
+          "reference_value_kind": "label_only",
+          "numeric_excluded_reason": "事后事件指示器不能作为预测概率真值"
+        },
+        {
+          "entity_id": "WBA",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "bounded_verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "not_applicable",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "观察窗2023-04-01至2024-03-31，题面历史母公司及母公司担保债务发行/借款主体；完整公开SEC申报名册、原文债务/实付核对与S&P公开年度违约名册的有限核查。法院索引未完成、保密/未评级/未披露小额迟付与全部非担保子公司未穷尽，不保证官方私有outcome一致。",
+            "coverage_limits": [
+              "court_national_index_not_queried",
+              "rating_nonpublic_unrated",
+              "minor_or_undisclosed_payment",
+              "subsidiary_definition",
+              "official_private_outcome",
+              "first_publication_snapshot"
+            ],
+            "entity_scope": {
+              "window_start_inclusive": "2023-04-01",
+              "window_end_inclusive": "2024-03-31",
+              "task_cik": "0001618921",
+              "entity": "题面历史母公司，以及母公司担保债务的发行/借款法律主体",
+              "bankruptcy_definition": "Chapter11/Chapter7申请；按实际petition/SEC报告日期区分，未以普通诉讼/债权人身份当作破产",
+              "payment_definition": "违约合同到期日与约定grace结束/认定日分别核查；无实际付款违约候选。资料支持公开披露债務核查，不保证一切未披露短时迟付。",
+              "distressed_exchange_definition": "必须有评级机构distressed exchange认定或明确事件材料；正常现金清偿、普通降级与窗口外交易均不计",
+              "sec_window_primary_count": 20,
+              "post_window_tail_count": 1,
+              "rating_registers": [
+                {
+                  "source_id": "sp2023",
+                  "coverage": "2023全年S&P公开评级违约Table8",
+                  "pages": [
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31
+                  ]
+                },
+                {
+                  "source_id": "sp2024",
+                  "coverage": "2024全年Table8用于筛查2024Q1；无本issuer匹配",
+                  "pages": [
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30
+                  ]
+                }
+              ],
+              "court_check_status": "incomplete_access_403_not_zero_results",
+              "broader_all_subsidiary_scope_verified": false,
+              "official_private_outcome_verified": false,
+              "limitations": [
+                "court_national_index_not_queried",
+                "rating_nonpublic_unrated",
+                "minor_or_undisclosed_payment",
+                "subsidiary_definition",
+                "official_private_outcome",
+                "first_publication_snapshot"
+              ]
+            },
+            "evidence": [
+              "sources/credit-resolution/resolution-checks.json"
+            ]
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": true,
+          "absolute_error": null,
+          "interval_covered": null,
+          "interval_score_90": null,
+          "reference_value_kind": "label_only",
+          "numeric_excluded_reason": "事后事件指示器不能作为预测概率真值"
+        },
+        {
+          "entity_id": "WE",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": true,
+          "absolute_error": null,
+          "interval_covered": null,
+          "interval_score_90": null,
+          "reference_value_kind": "label_only",
+          "numeric_excluded_reason": "事后事件指示器不能作为预测概率真值"
+        },
+        {
+          "entity_id": "YELL",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": true,
+          "absolute_error": null,
+          "interval_covered": null,
+          "interval_score_90": null,
+          "reference_value_kind": "label_only",
+          "numeric_excluded_reason": "事后事件指示器不能作为预测概率真值"
+        }
+      ],
+      "validation": {
+        "ok": true,
+        "task_id": "t4-credit-event-2023",
+        "entity_count": 8,
+        "task_canonical_sha256": "a20440e2cab7ba1fdbd165b261219cf01f3697abc2d74c0660731f77fd192498",
+        "validation_scope": "冻结官方 JSON Schema 结构与本地引用语义检查",
+        "faithfulness": "not_evaluated",
+        "reasoning": "not_evaluated",
+        "reason_policy_scope": "仅检查引用、结构、已知拒绝短语及原文预算；不复刻官方 URI 遮蔽与理由评审",
+        "reason_warnings": [],
+        "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+      },
+      "metric_scope": "本地参考值的描述性比较；区间指标不等同于官方 interval leg 或校准结论",
+      "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+    },
+    {
+      "task_id": "t4-eps-growth-2024Q3-banks",
+      "target_type": "regression",
+      "entity_count": 8,
+      "reference_status_counts": {
+        "verified": 8
+      },
+      "allow_provisional": true,
+      "included_count": 8,
+      "classification_count": 0,
+      "numeric_count": 8,
+      "numeric_excluded_reason_counts": {},
+      "classification_accuracy": null,
+      "mean_absolute_error": 0.0,
+      "interval_coverage": 1.0,
+      "mean_interval_score_90": 2.0,
+      "official_interval_leg": "unknown",
+      "ranking": null,
+      "entities": [
+        {
+          "entity_id": "BAC",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "C",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "GS",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "JPM",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "MS",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "PNC",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "USB",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "WFC",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        }
+      ],
+      "validation": {
+        "ok": true,
+        "task_id": "t4-eps-growth-2024Q3-banks",
+        "entity_count": 8,
+        "task_canonical_sha256": "722a45aa2f5ef844e438af3cb8252863a4ec8afbce45e0444d90144c55dd94d3",
+        "validation_scope": "冻结官方 JSON Schema 结构与本地引用语义检查",
+        "faithfulness": "not_evaluated",
+        "reasoning": "not_evaluated",
+        "reason_policy_scope": "仅检查引用、结构、已知拒绝短语及原文预算；不复刻官方 URI 遮蔽与理由评审",
+        "reason_warnings": [],
+        "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+      },
+      "metric_scope": "本地参考值的描述性比较；区间指标不等同于官方 interval leg 或校准结论",
+      "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+    },
+    {
+      "task_id": "t4-eps-yoy-2023Q2-mixed",
+      "target_type": "classification",
+      "entity_count": 6,
+      "reference_status_counts": {
+        "verified": 5,
+        "provisional": 1
+      },
+      "allow_provisional": true,
+      "included_count": 6,
+      "classification_count": 6,
+      "numeric_count": 6,
+      "numeric_excluded_reason_counts": {},
+      "classification_accuracy": 1.0,
+      "mean_absolute_error": 0.0,
+      "interval_coverage": 1.0,
+      "mean_interval_score_90": 2.0,
+      "official_interval_leg": "unknown",
+      "ranking": null,
+      "entities": [
+        {
+          "entity_id": "AMD",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": true,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "AMGN",
+          "reference_status": "provisional",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "ambiguous",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "June季度GAAP diluted EPS事实可核对；实际8/3公告晚于task resolution=8/2，预告7/31不能代替实际公告。等待官方#27说明日期字段，默认不纳入task一致性比较。",
+            "evidence": [
+              "sources/amgn-resolution/amgn-resolution-check.json"
+            ],
+            "clarification_url": "https://github.com/Agenthon-2026/track4-analysis-public/issues/27"
+          },
+          "inclusion_basis": "explicit_provisional",
+          "label_correct": true,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "DOW",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": true,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "HON",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": true,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "IBM",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": true,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 1.9999999999999998,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "TMO",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": true,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        }
+      ],
+      "validation": {
+        "ok": true,
+        "task_id": "t4-eps-yoy-2023Q2-mixed",
+        "entity_count": 6,
+        "task_canonical_sha256": "300a064ce17c42367db59687a2dc82970d082f13c2bdccdc25361cdfe2273fd1",
+        "validation_scope": "冻结官方 JSON Schema 结构与本地引用语义检查",
+        "faithfulness": "not_evaluated",
+        "reasoning": "not_evaluated",
+        "reason_policy_scope": "仅检查引用、结构、已知拒绝短语及原文预算；不复刻官方 URI 遮蔽与理由评审",
+        "reason_warnings": [],
+        "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+      },
+      "metric_scope": "本地参考值的描述性比较；区间指标不等同于官方 interval leg 或校准结论",
+      "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+    },
+    {
+      "task_id": "t4-fomc-curve-20220728",
+      "target_type": "regression",
+      "entity_count": 6,
+      "reference_status_counts": {
+        "verified": 6
+      },
+      "allow_provisional": true,
+      "included_count": 6,
+      "classification_count": 0,
+      "numeric_count": 6,
+      "numeric_excluded_reason_counts": {},
+      "classification_accuracy": null,
+      "mean_absolute_error": 0.0,
+      "interval_coverage": 1.0,
+      "mean_interval_score_90": 2.0,
+      "official_interval_leg": "unknown",
+      "ranking": null,
+      "entities": [
+        {
+          "entity_id": "UST10Y",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "UST2Y",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "UST30Y",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "UST3Y",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "UST5Y",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "UST7Y",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        }
+      ],
+      "validation": {
+        "ok": true,
+        "task_id": "t4-fomc-curve-20220728",
+        "entity_count": 6,
+        "task_canonical_sha256": "5a1d9a4ec484edcf471aa440953ac2ad4e8d5b2e62e9d418d6c8ae7d67ec6eb3",
+        "validation_scope": "冻结官方 JSON Schema 结构与本地引用语义检查",
+        "faithfulness": "not_evaluated",
+        "reasoning": "not_evaluated",
+        "reason_policy_scope": "仅检查引用、结构、已知拒绝短语及原文预算；不复刻官方 URI 遮蔽与理由评审",
+        "reason_warnings": [],
+        "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+      },
+      "metric_scope": "本地参考值的描述性比较；区间指标不等同于官方 interval leg 或校准结论",
+      "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+    },
+    {
+      "task_id": "t4-fomc-curve-20240918",
+      "target_type": "regression",
+      "entity_count": 6,
+      "reference_status_counts": {
+        "verified": 6
+      },
+      "allow_provisional": true,
+      "included_count": 6,
+      "classification_count": 0,
+      "numeric_count": 6,
+      "numeric_excluded_reason_counts": {},
+      "classification_accuracy": null,
+      "mean_absolute_error": 0.0,
+      "interval_coverage": 1.0,
+      "mean_interval_score_90": 2.0,
+      "official_interval_leg": "unknown",
+      "ranking": null,
+      "entities": [
+        {
+          "entity_id": "UST10Y",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "UST2Y",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "UST30Y",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "UST3Y",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "UST5Y",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "UST7Y",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": null,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        }
+      ],
+      "validation": {
+        "ok": true,
+        "task_id": "t4-fomc-curve-20240918",
+        "entity_count": 6,
+        "task_canonical_sha256": "26d836f11aa84a0d9355f13d774bce54b4519b40436b39f373c2f9091d509237",
+        "validation_scope": "冻结官方 JSON Schema 结构与本地引用语义检查",
+        "faithfulness": "not_evaluated",
+        "reasoning": "not_evaluated",
+        "reason_policy_scope": "仅检查引用、结构、已知拒绝短语及原文预算；不复刻官方 URI 遮蔽与理由评审",
+        "reason_warnings": [],
+        "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+      },
+      "metric_scope": "本地参考值的描述性比较；区间指标不等同于官方 interval leg 或校准结论",
+      "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+    },
+    {
+      "task_id": "t4-macrorev-20240930-us6",
+      "target_type": "classification",
+      "entity_count": 12,
+      "reference_status_counts": {
+        "verified": 12
+      },
+      "allow_provisional": true,
+      "included_count": 12,
+      "classification_count": 12,
+      "numeric_count": 12,
+      "numeric_excluded_reason_counts": {},
+      "classification_accuracy": 1.0,
+      "mean_absolute_error": 0.0,
+      "interval_coverage": 1.0,
+      "mean_interval_score_90": 2.0,
+      "official_interval_leg": "disabled_missing_truth",
+      "ranking": null,
+      "entities": [
+        {
+          "entity_id": "DGORDER_2024-07_20241025",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": true,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "DGORDER_2024-08_20241025",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": true,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "HOUST_2024-07_20241018",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": true,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "INDPRO_2024-07_20241017",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": true,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "INDPRO_2024-08_20241017",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": true,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "PAYEMS_2024-07_20241004",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": true,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "PAYEMS_2024-08_20241004",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": true,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "PAYEMS_2024-08_20241101",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": true,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "PI_2024-07_20241031",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": true,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "PI_2024-08_20241127",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": true,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "RSAFS_2024-07_20241017",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": true,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "RSAFS_2024-08_20241115",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "按已登记公开来源和题面定义进行本地历史结果核对；首次全球发布版本与官方私有outcome未确认。"
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": true,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        }
+      ],
+      "validation": {
+        "ok": true,
+        "task_id": "t4-macrorev-20240930-us6",
+        "entity_count": 12,
+        "task_canonical_sha256": "5ecdb42cc1f21c185b8a4c3c53210d3cd7ed8d1edf9f684e54211e93ba963eee",
+        "validation_scope": "冻结官方 JSON Schema 结构与本地引用语义检查",
+        "faithfulness": "not_evaluated",
+        "reasoning": "not_evaluated",
+        "reason_policy_scope": "仅检查引用、结构、已知拒绝短语及原文预算；不复刻官方 URI 遮蔽与理由评审",
+        "reason_warnings": [],
+        "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+      },
+      "metric_scope": "本地参考值的描述性比较；区间指标不等同于官方 interval leg 或校准结论",
+      "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+    },
+    {
+      "task_id": "t4-postearn-20240201-megacap",
+      "target_type": "classification",
+      "entity_count": 3,
+      "reference_status_counts": {
+        "verified": 3
+      },
+      "allow_provisional": true,
+      "included_count": 3,
+      "classification_count": 3,
+      "numeric_count": 3,
+      "numeric_excluded_reason_counts": {},
+      "classification_accuracy": 1.0,
+      "mean_absolute_error": 0.0,
+      "interval_coverage": 1.0,
+      "mean_interval_score_90": 2.0,
+      "official_interval_leg": "unknown",
+      "ranking": null,
+      "entities": [
+        {
+          "entity_id": "AAPL",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "题卡指定Yahoo日收盘；2024-02-01至02-02同币种同交易日，priceHint=2规范为美分，核查有限窗口无除息/拆股/资本分配，减去SPY市场价格回报。非交易所逐笔收盘认证，不含全球首发修订链或官方outcome确认。",
+            "evidence": [
+              "sources/postearn-resolution/normalized-evidence.json",
+              "sources/postearn-resolution/verification-originals.json"
+            ]
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": true,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "AMZN",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "题卡指定Yahoo日收盘；2024-02-01至02-02同币种同交易日，priceHint=2规范为美分，核查有限窗口无除息/拆股/资本分配，减去SPY市场价格回报。非交易所逐笔收盘认证，不含全球首发修订链或官方outcome确认。",
+            "evidence": [
+              "sources/postearn-resolution/normalized-evidence.json",
+              "sources/postearn-resolution/verification-originals.json"
+            ]
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": true,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        },
+        {
+          "entity_id": "META",
+          "reference_status": "verified",
+          "included": true,
+          "quality": {
+            "fact_status": "verified",
+            "task_alignment": "aligned",
+            "first_publication_status": "unconfirmed",
+            "official_outcome_status": "unconfirmed",
+            "acceptance_scope": "题卡指定Yahoo日收盘；2024-02-01至02-02同币种同交易日，priceHint=2规范为美分，核查有限窗口无除息/拆股/资本分配，减去SPY市场价格回报。非交易所逐笔收盘认证，不含全球首发修订链或官方outcome确认。",
+            "evidence": [
+              "sources/postearn-resolution/normalized-evidence.json",
+              "sources/postearn-resolution/verification-originals.json"
+            ]
+          },
+          "inclusion_basis": "local_verified",
+          "label_correct": true,
+          "absolute_error": 0.0,
+          "interval_covered": true,
+          "interval_score_90": 2.0,
+          "reference_value_kind": "numeric_outcome"
+        }
+      ],
+      "validation": {
+        "ok": true,
+        "task_id": "t4-postearn-20240201-megacap",
+        "entity_count": 3,
+        "task_canonical_sha256": "db8b94311f31cf4d4799cf76cfaaaa2863518529a9c3e5dc88ce3a93a376dbd2",
+        "validation_scope": "冻结官方 JSON Schema 结构与本地引用语义检查",
+        "faithfulness": "not_evaluated",
+        "reasoning": "not_evaluated",
+        "reason_policy_scope": "仅检查引用、结构、已知拒绝短语及原文预算；不复刻官方 URI 遮蔽与理由评审",
+        "reason_warnings": [],
+        "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+      },
+      "metric_scope": "本地参考值的描述性比较；区间指标不等同于官方 interval leg 或校准结论",
+      "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+    }
+  ],
+  "task_count": 11,
+  "expected_task_count": 11,
+  "missing_tasks": [],
+  "reference_version": "0.2.0",
+  "reference_sha256": "9e5e94a3adabda35568f05168aaab308df194729126876790fb10f8b7500e326"
+}

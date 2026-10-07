@@ -1,0 +1,239 @@
+{
+  "checked_at": "2026-10-07T07:59:47.861055+00:00",
+  "task_commit": "1c744e1d6725340643a533f436517d72b53ca0e1",
+  "expected_records": 19,
+  "actual_records": 19,
+  "unique_keys": 19,
+  "status_counts": {
+    "verified": 19
+  },
+  "yield_start_checks_passed": 12,
+  "auction_identity_checks_passed": 7,
+  "auction_dual_api_checks_passed": 7,
+  "auction_subtotal_ratio_checks_passed": 7,
+  "crosschecks": [
+    {
+      "task_id": "t4-fomc-curve-20220728",
+      "entity_id": "UST10Y",
+      "official_field": "BC_10YEAR",
+      "task_start_yield_pct": "2.68",
+      "official_start_yield_pct": "2.68",
+      "official_end_yield_pct": "3.57",
+      "reference_value_bps": 89.0,
+      "start_agrees": true
+    },
+    {
+      "task_id": "t4-fomc-curve-20220728",
+      "entity_id": "UST2Y",
+      "official_field": "BC_2YEAR",
+      "task_start_yield_pct": "2.85",
+      "official_start_yield_pct": "2.85",
+      "official_end_yield_pct": "3.96",
+      "reference_value_bps": 111.0,
+      "start_agrees": true
+    },
+    {
+      "task_id": "t4-fomc-curve-20220728",
+      "entity_id": "UST30Y",
+      "official_field": "BC_30YEAR",
+      "task_start_yield_pct": "3.02",
+      "official_start_yield_pct": "3.02",
+      "official_end_yield_pct": "3.59",
+      "reference_value_bps": 57.0,
+      "start_agrees": true
+    },
+    {
+      "task_id": "t4-fomc-curve-20220728",
+      "entity_id": "UST3Y",
+      "official_field": "BC_3YEAR",
+      "task_start_yield_pct": "2.81",
+      "official_start_yield_pct": "2.81",
+      "official_end_yield_pct": "3.94",
+      "reference_value_bps": 113.0,
+      "start_agrees": true
+    },
+    {
+      "task_id": "t4-fomc-curve-20220728",
+      "entity_id": "UST5Y",
+      "official_field": "BC_5YEAR",
+      "task_start_yield_pct": "2.69",
+      "official_start_yield_pct": "2.69",
+      "official_end_yield_pct": "3.75",
+      "reference_value_bps": 106.0,
+      "start_agrees": true
+    },
+    {
+      "task_id": "t4-fomc-curve-20220728",
+      "entity_id": "UST7Y",
+      "official_field": "BC_7YEAR",
+      "task_start_yield_pct": "2.69",
+      "official_start_yield_pct": "2.69",
+      "official_end_yield_pct": "3.69",
+      "reference_value_bps": 100.0,
+      "start_agrees": true
+    },
+    {
+      "task_id": "t4-fomc-curve-20240918",
+      "entity_id": "UST10Y",
+      "official_field": "BC_10YEAR",
+      "task_start_yield_pct": "3.73",
+      "official_start_yield_pct": "3.73",
+      "official_end_yield_pct": "4.42",
+      "reference_value_bps": 69.0,
+      "start_agrees": true
+    },
+    {
+      "task_id": "t4-fomc-curve-20240918",
+      "entity_id": "UST2Y",
+      "official_field": "BC_2YEAR",
+      "task_start_yield_pct": "3.59",
+      "official_start_yield_pct": "3.59",
+      "official_end_yield_pct": "4.27",
+      "reference_value_bps": 68.0,
+      "start_agrees": true
+    },
+    {
+      "task_id": "t4-fomc-curve-20240918",
+      "entity_id": "UST30Y",
+      "official_field": "BC_30YEAR",
+      "task_start_yield_pct": "4.06",
+      "official_start_yield_pct": "4.06",
+      "official_end_yield_pct": "4.60",
+      "reference_value_bps": 54.0,
+      "start_agrees": true
+    },
+    {
+      "task_id": "t4-fomc-curve-20240918",
+      "entity_id": "UST3Y",
+      "official_field": "BC_3YEAR",
+      "task_start_yield_pct": "3.47",
+      "official_start_yield_pct": "3.47",
+      "official_end_yield_pct": "4.20",
+      "reference_value_bps": 73.0,
+      "start_agrees": true
+    },
+    {
+      "task_id": "t4-fomc-curve-20240918",
+      "entity_id": "UST5Y",
+      "official_field": "BC_5YEAR",
+      "task_start_yield_pct": "3.49",
+      "official_start_yield_pct": "3.49",
+      "official_end_yield_pct": "4.27",
+      "reference_value_bps": 78.0,
+      "start_agrees": true
+    },
+    {
+      "task_id": "t4-fomc-curve-20240918",
+      "entity_id": "UST7Y",
+      "official_field": "BC_7YEAR",
+      "task_start_yield_pct": "3.6",
+      "official_start_yield_pct": "3.60",
+      "official_end_yield_pct": "4.37",
+      "reference_value_bps": 77.0,
+      "start_agrees": true
+    },
+    {
+      "task_id": "t4-auction-btc-202411-us7",
+      "entity_id": "AUC_10Y_20241105",
+      "cusip": "91282CLW9",
+      "auction_date": "2024-11-05",
+      "security_term": "10-Year",
+      "reopening": "No",
+      "treasurydirect_bid_to_cover": "2.580000",
+      "fiscaldata_bid_to_cover": "2.580000",
+      "subtotal_tendered": "108400632500",
+      "subtotal_accepted": "42000015800",
+      "calculated_ratio_rounded_2dp": "2.58",
+      "agree": true
+    },
+    {
+      "task_id": "t4-auction-btc-202411-us7",
+      "entity_id": "AUC_20Y_20241120",
+      "cusip": "912810UF3",
+      "auction_date": "2024-11-20",
+      "security_term": "20-Year",
+      "reopening": "No",
+      "treasurydirect_bid_to_cover": "2.340000",
+      "fiscaldata_bid_to_cover": "2.340000",
+      "subtotal_tendered": "37414422000",
+      "subtotal_accepted": "16000027500",
+      "calculated_ratio_rounded_2dp": "2.34",
+      "agree": true
+    },
+    {
+      "task_id": "t4-auction-btc-202411-us7",
+      "entity_id": "AUC_2Y_20241125",
+      "cusip": "91282CLY5",
+      "auction_date": "2024-11-25",
+      "security_term": "2-Year",
+      "reopening": "No",
+      "treasurydirect_bid_to_cover": "2.770000",
+      "fiscaldata_bid_to_cover": "2.770000",
+      "subtotal_tendered": "191460533600",
+      "subtotal_accepted": "69000148600",
+      "calculated_ratio_rounded_2dp": "2.77",
+      "agree": true
+    },
+    {
+      "task_id": "t4-auction-btc-202411-us7",
+      "entity_id": "AUC_30Y_20241106",
+      "cusip": "912810UE6",
+      "auction_date": "2024-11-06",
+      "security_term": "30-Year",
+      "reopening": "No",
+      "treasurydirect_bid_to_cover": "2.640000",
+      "fiscaldata_bid_to_cover": "2.640000",
+      "subtotal_tendered": "66042813700",
+      "subtotal_accepted": "25000064500",
+      "calculated_ratio_rounded_2dp": "2.64",
+      "agree": true
+    },
+    {
+      "task_id": "t4-auction-btc-202411-us7",
+      "entity_id": "AUC_3Y_20241104",
+      "cusip": "91282CLX7",
+      "auction_date": "2024-11-04",
+      "security_term": "3-Year",
+      "reopening": "No",
+      "treasurydirect_bid_to_cover": "2.600000",
+      "fiscaldata_bid_to_cover": "2.600000",
+      "subtotal_tendered": "150953589800",
+      "subtotal_accepted": "58000041300",
+      "calculated_ratio_rounded_2dp": "2.60",
+      "agree": true
+    },
+    {
+      "task_id": "t4-auction-btc-202411-us7",
+      "entity_id": "AUC_5Y_20241126",
+      "cusip": "91282CMA6",
+      "auction_date": "2024-11-26",
+      "security_term": "5-Year",
+      "reopening": "No",
+      "treasurydirect_bid_to_cover": "2.430000",
+      "fiscaldata_bid_to_cover": "2.430000",
+      "subtotal_tendered": "170192044400",
+      "subtotal_accepted": "70000107900",
+      "calculated_ratio_rounded_2dp": "2.43",
+      "agree": true
+    },
+    {
+      "task_id": "t4-auction-btc-202411-us7",
+      "entity_id": "AUC_7Y_20241127",
+      "cusip": "91282CLZ2",
+      "auction_date": "2024-11-27",
+      "security_term": "7-Year",
+      "reopening": "No",
+      "treasurydirect_bid_to_cover": "2.710000",
+      "fiscaldata_bid_to_cover": "2.710000",
+      "subtotal_tendered": "119184182200",
+      "subtotal_accepted": "44000008200",
+      "calculated_ratio_rounded_2dp": "2.71",
+      "agree": true
+    }
+  ],
+  "task_sha256": {
+    "t4-auction-btc-202411-us7": "6719117c6ad6d3187758abc2da923592eecb93fe2e53e23b9addfa5fbf7e6ac5",
+    "t4-fomc-curve-20220728": "f4480b2de8b6b8b9da228937c6674597fab3782b4f2c2ef5afbae45825500dea",
+    "t4-fomc-curve-20240918": "440db200c702d7ded6dcee9c6d80e4e6357293f796b3cd96c98a4643a8e64a56"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "path": "fed-h15-current.html",
+  "url": "https://www.federalreserve.gov/releases/h15/default.htm",
+  "retrieved_at": "2026-10-07T08:49:50.631219+00:00",
+  "locator": "Current Release：当前官方发布说明 daily Monday through Friday 4:15pm；不代表已取得2022/2024原稿",
+  "published_at": null,
+  "byte_form": "原始HTML响应；当前说明，不是目标日历史公告",
+  "sha256": "6a07eeec58394eba5b1a3343af4ae0480d73a4e17687bc1005da9d4602a90d51",
+  "bytes": 105946,
+  "http_status": 200,
+  "status": "downloaded"
+}

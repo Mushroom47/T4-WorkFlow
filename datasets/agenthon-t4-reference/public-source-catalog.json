@@ -1,0 +1,2236 @@
+{
+  "schema_version": "0.1.0",
+  "sources": [
+    {
+      "path": "sources/amgn-resolution/amgen-terms-of-use.raw.html",
+      "sha256": "e39fb04f58627fd6c2f918f1cde3af39dd07994ce2df85827f6c7d2350ccb827",
+      "bytes": 248719,
+      "url": "https://www.amgen.com/terms-of-use",
+      "byte_form": "raw",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/amgn-resolution/amgn-actual-release.raw.html",
+      "sha256": "8ca813159e53968b635e6d98d614c1582aa7ecb83f587e57c6add6c84441ffec",
+      "bytes": 943779,
+      "url": "https://www.amgen.com/newsroom/press-releases/2023/08/amgen-reports-second-quarter-financial-results",
+      "byte_form": "raw",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/amgn-resolution/amgn-scheduled-release.raw.html",
+      "sha256": "4c0eff6170456273256897f9409478929c8ad54cea0a59ea105a2d6c773ba114",
+      "bytes": 153274,
+      "url": "https://www.amgen.com/newsroom/press-releases/2023/07/amgen-announces-webcast-of-2023-second-quarter-financial-results",
+      "byte_form": "raw",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/amgn-resolution/issue-23-comments.raw.json",
+      "sha256": "438fd28ef85ac9bab4c376ab4651cda1a3b5a301fc5ce57c1355c2ea9e50fe8e",
+      "bytes": 3855,
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/23/comments?per_page=100",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/amgn-resolution/issue-23.raw.json",
+      "sha256": "abb590da92928867e444829b28c7f24b649ceed69d75f6d6b56db0b5915039f9",
+      "bytes": 4634,
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/23",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/amgn-resolution/issue-24-comments.raw.json",
+      "sha256": "def8f1546d52148d3c80a279f628a525b21d1b62b2b3b2101c75bbc0731bf5ba",
+      "bytes": 9446,
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/24/comments?per_page=100",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/amgn-resolution/issue-24.raw.json",
+      "sha256": "43d6bf75b029d2f4219fd18db5d411801337c5dda63b0e4130ac6c29c45f3a92",
+      "bytes": 4483,
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/24",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/amgn-resolution/issue-25-comments.raw.json",
+      "sha256": "d85fffbd48547829f17ee04446d76eeaf0fcfd4fbd6e48168d4c0524389035c4",
+      "bytes": 5854,
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/25/comments?per_page=100",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/amgn-resolution/issue-25.raw.json",
+      "sha256": "8c7afa6ccebcb41e171d6141c4a244cadd43eb77b4a3d560a7a447df3744b1d6",
+      "bytes": 4456,
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/25",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/amgn-resolution/issue-26-comments.raw.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2,
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/26/comments?per_page=100",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/amgn-resolution/issue-26.raw.json",
+      "sha256": "2b5992afc5891a2d178f1f05f30b75a661ab26f6a673832fe85c8fc91f6b0626",
+      "bytes": 4153,
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/26",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/amgn-resolution/issue-3-comments.raw.json",
+      "sha256": "900222a986b11ae89af0d51482c212d417813dffcc6e2af97ba5658d18c8e133",
+      "bytes": 6987,
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/3/comments?per_page=100",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/amgn-resolution/issue-3.raw.json",
+      "sha256": "1b99107f3fc7f625d05da6b7c68574b92232c7c33255ee66b182590303505564",
+      "bytes": 5872,
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/3",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/amgn-resolution/official-issues.raw.json",
+      "sha256": "ac578ecebf646eb01047dbbb85f41450285a56f16e64d865fe3dcff4c28c9c4f",
+      "bytes": 119622,
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues?state=all&per_page=100",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/amgn-resolution/official-licensing.raw.html",
+      "sha256": "d342983a262696f40408a44c1e70a28e3046180f02c0e17ab502f8653ea96cca",
+      "bytes": 17454,
+      "url": "https://www.agenthon.net/licensing/",
+      "byte_form": "raw",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/amgn-resolution/official-repo.raw.json",
+      "sha256": "90cd69719877caa97d4c6592ebb4f64856c57f6f8fc34d682a622a6e1bf14ffe",
+      "bytes": 7144,
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/amgn-resolution/official-rules.raw.html",
+      "sha256": "273ef5440aa43218e7a3b5423b8263276d6cece487d951e98b0929ec2c4d4e09",
+      "bytes": 22590,
+      "url": "https://www.agenthon.net/rules/",
+      "byte_form": "raw",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/amgn-resolution/official-terms.raw.html",
+      "sha256": "386f81882b49cdaaed2c1ae3cbd85688c28c5d96db4ea7ecbc0ddfa4863cf984",
+      "bytes": 19111,
+      "url": "https://www.agenthon.net/terms/",
+      "byte_form": "raw",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/amgn-resolution/official-tree.raw.json",
+      "sha256": "b133508c5cdaa3e7838dd57af5324b90b3f08dca27bf1e96a6a29ac7b5c52d4e",
+      "bytes": 81171,
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/git/trees/HEAD?recursive=1",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/amgn-resolution/official-unit-manifest.raw.json",
+      "sha256": "4c651ee0e38397b5baa2a9e4859d9e7eef65a6def508daff9a5a21455467744b",
+      "bytes": 4200,
+      "url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/contents/units/t4-eps-yoy-2023Q2-mixed/manifest.json?ref=1c744e1d6725340643a533f436517d72b53ca0e1",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/amgn-resolution/sec-eps-AMGN-concept.raw.json",
+      "sha256": "44fda87915cfe7d797eb3d600fde86258fb8098832c87d395397cf4126600c60",
+      "bytes": 46812,
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000318154/us-gaap/EarningsPerShareDiluted.json",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/amgn-supplement/actual-release.raw.html",
+      "sha256": "8ca813159e53968b635e6d98d614c1582aa7ecb83f587e57c6add6c84441ffec",
+      "bytes": 943779,
+      "url": "https://www.amgen.com/newsroom/press-releases/2023/08/amgen-reports-second-quarter-financial-results",
+      "byte_form": "raw",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/amgn-supplement/scheduled-release.raw.html",
+      "sha256": "4c0eff6170456273256897f9409478929c8ad54cea0a59ea105a2d6c773ba114",
+      "bytes": 153274,
+      "url": "https://www.amgen.com/newsroom/press-releases/2023/07/amgen-announces-webcast-of-2023-second-quarter-financial-results",
+      "byte_form": "raw",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-derived/BBY-2024-06-07-0000764478-24-000022-bby-20240504x10q.htm-visible.txt",
+      "sha256": "0a19e43e78ab4b58176919e807e843b70ee8d30a1995ef579d796ac2d5b5a2e9",
+      "bytes": 77969,
+      "url": null,
+      "byte_form": "derived_fulltext",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-derived/BBY-annual-visible.txt",
+      "sha256": "85371ad6f03f9b7db71e08a4f8bf9dbc65ae9e9c64759527d6b9c47e706b8259",
+      "bytes": 286574,
+      "url": null,
+      "byte_form": "derived_fulltext",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-derived/BBY-bby-20230412xex10_1.htm.txt",
+      "sha256": "92ac938c9b65ec19dbac792963864c6a1c4eafa7a05331b7ee276bf2de0bb305",
+      "bytes": 397372,
+      "url": null,
+      "byte_form": "derived_fulltext",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-derived/BBY-indenture-20110311.htm.txt",
+      "sha256": "eec69cc5f940bc73987ca09bbc770d665ca44f287acae11862beb06fa8bb2bb9",
+      "bytes": 194738,
+      "url": null,
+      "byte_form": "derived_fulltext",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-derived/BBY-notes2028-supplement-20180927.htm.txt",
+      "sha256": "f927b1438973677cb33e8eb649f8fb8d5b1f99ccd99f246900a1e109a312f5ec",
+      "bytes": 36744,
+      "url": null,
+      "byte_form": "derived_fulltext",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-derived/BBY-notes2030-supplement-20201001.htm.txt",
+      "sha256": "7a95cf92129647915b9dfb26b24ad65c1a8f930744adaee6d170cf9ce71e789e",
+      "bytes": 64449,
+      "url": null,
+      "byte_form": "derived_fulltext",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-derived/M-2024-05-30-0001628280-24-025853-m-20240504.htm-visible.txt",
+      "sha256": "2882dedc70285ec33715ff09ca6c6749276a4dbd3eb5ea9d58cc05b41096bed9",
+      "bytes": 71250,
+      "url": null,
+      "byte_form": "derived_fulltext",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-derived/M-abl-amendment-20220303.htm.txt",
+      "sha256": "04c868ac5c0fe3562907cfafd46a728f75c915721259ba4a1f94864681db6caa",
+      "bytes": 690851,
+      "url": null,
+      "byte_form": "derived_fulltext",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-derived/M-annual-visible.txt",
+      "sha256": "24aeed71add35163fdcea48faf9d42a1257226975e52e7fa3726600ee87dc02a",
+      "bytes": 302484,
+      "url": null,
+      "byte_form": "derived_fulltext",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-derived/M-debt-review.txt",
+      "sha256": "80770d98a51cbd8014258bc23a687a4ab04db172079c27aac936f18cf670203d",
+      "bytes": 8020,
+      "url": null,
+      "byte_form": "derived_fulltext",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-derived/M-joint-registration-20220526.htm.txt",
+      "sha256": "feef6d8b6ebef0894e8c824495caa2084bf28b343738d41a1fcd1416a6d08ab2",
+      "bytes": 89208,
+      "url": null,
+      "byte_form": "derived_fulltext",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-derived/M-m-20240203xex21.htm.txt",
+      "sha256": "7684ea02a39a093a83da0af614bf99eeae4429443079d252742f075ff3634cca",
+      "bytes": 1232,
+      "url": null,
+      "byte_form": "derived_fulltext",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-derived/ODFL-2024-05-07-0000950170-24-054284-odfl-20240331.htm-visible.txt",
+      "sha256": "c082bab1ac69f73ef53b650fe8f1cc910ef334566692b4da6012ed2cd0297f77",
+      "bytes": 64792,
+      "url": null,
+      "byte_form": "derived_fulltext",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-derived/ODFL-annual-visible.txt",
+      "sha256": "15dd6e8750300b43ccc6fb38b9837d64459ee691939c7e3fc50356f35ac4fc1d",
+      "bytes": 215770,
+      "url": null,
+      "byte_form": "derived_fulltext",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-derived/ODFL-credit-agreement-20230322.htm.txt",
+      "sha256": "64c645b4c4914aa38cf99382938a7c995009131cc38151fb9fb0e3ea8d1c22c8",
+      "bytes": 447063,
+      "url": null,
+      "byte_form": "derived_fulltext",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-derived/ODFL-debt-review.txt",
+      "sha256": "2bc0f601261db845ac7d8c4b902765c05e05dba3d28065693037dc02b82cd7b1",
+      "bytes": 7842,
+      "url": null,
+      "byte_form": "derived_fulltext",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-derived/ODFL-note-amendment-20230322.htm.txt",
+      "sha256": "1b7e21ef500603531c2d6f78bbdca2c90cd43600b44dc582a354320b402b44e3",
+      "bytes": 234407,
+      "url": null,
+      "byte_form": "derived_fulltext",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-derived/ODFL-note-purchase-agreement-20200504.htm.txt",
+      "sha256": "b0ee5052e43bd1ac7956ebcadbe1a6fe07852ca6459ea6fb2b0501cace7ec98d",
+      "bytes": 219682,
+      "url": null,
+      "byte_form": "derived_fulltext",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-derived/WBA-2024-03-28-0001193125-24-079608-d817592d8k.htm-visible.txt",
+      "sha256": "cfffe4a2ca9071ad5d6efc9ba127c83a37ac93bf212ec517b44a063cf5003b04",
+      "bytes": 4250,
+      "url": null,
+      "byte_form": "derived_fulltext",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-derived/WBA-2024-03-28-0001193125-24-080799-d797051d8k.htm-visible.txt",
+      "sha256": "9a8ee0a91556a1c949f22fcd42d925ae51e2ddd4486d145ad1d5c5214c79b688",
+      "bytes": 4482,
+      "url": null,
+      "byte_form": "derived_fulltext",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-derived/WBA-2024-03-28-0001618921-24-000035-wba-20240229.htm-visible.txt",
+      "sha256": "50b3abfe3da43d38d0f21ddb75616a42e166ab20e38d58cc4bcb3f3544d61963",
+      "bytes": 224579,
+      "url": null,
+      "byte_form": "derived_fulltext",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-derived/WBA-2024-06-27-0001618921-24-000065-wba-20240531.htm-visible.txt",
+      "sha256": "e802af5b8e688051c85d21b35338865231327fd95110c4d830397ca514f6edef",
+      "bytes": 228422,
+      "url": null,
+      "byte_form": "derived_fulltext",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-derived/WBA-a4q23exhibit21.htm.txt",
+      "sha256": "126d19fa6c8cff46afea0ad37ae1a687842028c915d34db4af07616c9e3e6ea7",
+      "bytes": 1597,
+      "url": null,
+      "byte_form": "derived_fulltext",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-derived/WBA-annual-visible.txt",
+      "sha256": "ae4a5ce557cffcfbe2fea052752197bb4cdb39d59933f55704abd4e0d21c7731",
+      "bytes": 535856,
+      "url": null,
+      "byte_form": "derived_fulltext",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-derived/WBA-d542330dex101.htm.txt",
+      "sha256": "c99fff7c54d138541d3272d4c90d576232c07be52662bc24f2cb892174cbbb3f",
+      "bytes": 305957,
+      "url": null,
+      "byte_form": "derived_fulltext",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-derived/WBA-d542330dex102.htm.txt",
+      "sha256": "414fdc648b48abff04412ea7b0d9d297411f72e2f61ab6697f81810d6633337f",
+      "bytes": 394615,
+      "url": null,
+      "byte_form": "derived_fulltext",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-derived/WBA-debt-review.txt",
+      "sha256": "16727709860e58d27853e51092f23128a090ba9f3c4b4b8916be9195d039b274",
+      "bytes": 11317,
+      "url": null,
+      "byte_form": "derived_fulltext",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-derived/sp-2023-layout.json",
+      "sha256": "8b2e5105c9c9e8afb471a75c69b4c482ab18227b9ee421a78f568ec1353b3ddd",
+      "bytes": 318533,
+      "url": null,
+      "byte_form": "derived_fulltext",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-derived/sp-2023-pages.json",
+      "sha256": "1860d4f5ea87446fd79152cd8707a08becc7a4d829bdbf7bfb53c5bfa7db8b6a",
+      "bytes": 187071,
+      "url": null,
+      "byte_form": "derived_fulltext",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-derived/sp-2024-layout.json",
+      "sha256": "091486912b4dc7ed59058a44df1e70b6ed4557b2c6140e24253df99bef436e5b",
+      "bytes": 325731,
+      "url": null,
+      "byte_form": "derived_fulltext",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-derived/sp-2024-pages.json",
+      "sha256": "ccc079738b64f5e351dcc2e06f8ac686f427d4055b098c255f46f994792db520",
+      "bytes": 188005,
+      "url": null,
+      "byte_form": "derived_fulltext",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-derived/sp2023-table8-24.png",
+      "sha256": "09009f7295fc5dadc48835eb39f9866ae8e2be6b8ec0a8dbc73beca1ad124635",
+      "bytes": 231995,
+      "url": null,
+      "byte_form": "derived_fulltext",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-derived/sp2024-table8-24.png",
+      "sha256": "823aa24790a59f24a1e1e3d0c238b633fea55659cfbedb80b3fab63129ac3d6a",
+      "bytes": 215296,
+      "url": null,
+      "byte_form": "derived_fulltext",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-raw/BBY/bby-20230412xex10_1.htm",
+      "sha256": "4aa28998fa3a32eadeaf3812be77f681629616f901da94ea8274029a02a31909",
+      "bytes": 1167564,
+      "url": "https://www.sec.gov/Archives/edgar/data/764478/000076447823000012/bby-20230412xex10_1.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-raw/BBY/debt-index.html",
+      "sha256": "1d3382cbe0b2db2b31af28a7c9e00dd84ebd946be507e89366026ec5c8a2ce6d",
+      "bytes": 10214,
+      "url": "https://www.sec.gov/Archives/edgar/data/764478/000076447823000012/0000764478-23-000012-index.html",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-raw/BBY/indenture-20110311.htm",
+      "sha256": "0dd35aabecc2f249ede588eed2c8c92e69538352340da7a31dff88b39164e079",
+      "bytes": 641629,
+      "url": "https://www.sec.gov/Archives/edgar/data/764478/000104746911001822/a2202436zex-4_1.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-raw/BBY/notes2028-supplement-20180927.htm",
+      "sha256": "aa6b5c1e8f4d8185a781441cc6a913c95a3351bda0ea5e43ddd86e03b9376714",
+      "bytes": 181919,
+      "url": "https://www.sec.gov/Archives/edgar/data/764478/000110465918059137/a18-31182_4ex4d1.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-raw/BBY/notes2030-supplement-20201001.htm",
+      "sha256": "146fa0538e2b438f3effaac12afad50d2fc740070d07d5419c60795209b795ab",
+      "bytes": 160621,
+      "url": "https://www.sec.gov/Archives/edgar/data/764478/000110465920111025/tm2031456d6_ex4-1.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-raw/BBY/subsidiaries.html",
+      "sha256": "6de5cb087656ca4b280f4c298ec8c40602c681265070bf37d28631ffe2652f2e",
+      "bytes": 61515,
+      "url": "https://www.sec.gov/Archives/edgar/data/764478/000076447824000010/bby-20240203xex21_1.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-raw/M/2020-06-09-index.html",
+      "sha256": "3ef2fa5168482ab2185382dd8b4dc2e9b2dfce08f3ab2d87176e4eefc827b222",
+      "bytes": 10968,
+      "url": "https://www.sec.gov/Archives/edgar/data/794367/000079436720000078/0000794367-20-000078-index.html",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-raw/M/2020-financing-index.html",
+      "sha256": "658e35d9f555aa011c395c9f7958587fac068b4dff5eb01ad3c59f56f5419772",
+      "bytes": 10662,
+      "url": "https://www.sec.gov/Archives/edgar/data/794367/000110465920071418/0001104659-20-071418-index.html",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-raw/M/2022-03-03-index.html",
+      "sha256": "9538f10a2125d44497d10d2084c610dd39b1ea7fe859deccccad3c7635a4137e",
+      "bytes": 9954,
+      "url": "https://www.sec.gov/Archives/edgar/data/794367/000156459022008536/0001564590-22-008536-index.html",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-raw/M/abl-amendment-20220303.htm",
+      "sha256": "eaf236a3bd73daae1fe1bf657ea742508e90d9366e5cc7279b69d6bd17b377fb",
+      "bytes": 1940111,
+      "url": "https://www.sec.gov/Archives/edgar/data/794367/000156459022008536/m-ex101_6.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-raw/M/debt-index.html",
+      "sha256": "318fe095d40e73dfe49f0c1b8fb2fd53d5ecf417122763152972560d52d80d5e",
+      "bytes": 13727,
+      "url": "https://www.sec.gov/Archives/edgar/data/794367/000162828024012734/0001628280-24-012734-index.html",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-raw/M/joint-issuer-index-2025.html",
+      "sha256": "52a37a5b22d227c46633d33b96e7badb4b6db9afd46e8347982b505d50b89986",
+      "bytes": 13530,
+      "url": "https://www.sec.gov/Archives/edgar/data/794367/000110465925058538/0001104659-25-058538-index.html",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-raw/M/joint-registration-20220526.htm",
+      "sha256": "efdb0827bde446f0bce442425c5b877fb91aae07e3b2b61f167494c06bacde56",
+      "bytes": 341307,
+      "url": "https://www.sec.gov/Archives/edgar/data/1026179/000110465922065287/tm2216233-1_s3asr.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-raw/M/m-20240203xex21.htm",
+      "sha256": "ac03de3ba8034f9a35abf6cdfd2a7a67486f7619c9515d321fb4078067383363",
+      "bytes": 19891,
+      "url": "https://www.sec.gov/Archives/edgar/data/794367/000162828024012734/m-20240203xex21.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-raw/M/retail-holdings-submissions.json",
+      "sha256": "90df6f9061f5264e646b586a1161766f58816965db968e3b06d9ac200cce35d3",
+      "bytes": 12189,
+      "url": "https://data.sec.gov/submissions/CIK0001026179.json",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-raw/M/tm2022011d1_ex10-1.htm",
+      "sha256": "99f26b9397b244f4df15a9c6be9e85f5e6e28c9c0ff27ac14cb4a3ab063367e9",
+      "bytes": 1359315,
+      "url": "https://www.sec.gov/Archives/edgar/data/794367/000110465920071418/tm2022011d1_ex10-1.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-raw/M/tm2022011d1_ex4-1.htm",
+      "sha256": "f4b76bd31b1c63879faafda66001014c5783f1338ebfd0229fac6013b3482194",
+      "bytes": 1654940,
+      "url": "https://www.sec.gov/Archives/edgar/data/794367/000110465920071418/tm2022011d1_ex4-1.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-raw/ODFL/credit-agreement-20230322.htm",
+      "sha256": "b40e9c6f2dbee903801c114011b9496de105f320fb5ba355362903804609a605",
+      "bytes": 1961804,
+      "url": "https://www.sec.gov/Archives/edgar/data/878927/000095017023009357/odfl-ex4_18.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-raw/ODFL/debt-index.html",
+      "sha256": "41e1f0e59d06248dd1d823553962373602aa161dab5351c25a9333aaadf39125",
+      "bytes": 11596,
+      "url": "https://www.sec.gov/Archives/edgar/data/878927/000095017024020176/0000950170-24-020176-index.html",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-raw/ODFL/note-amendment-20230322.htm",
+      "sha256": "84812002f93cd5e1d24322cd75f9f3bac86e51eba471ceb7d4818eb8d9072805",
+      "bytes": 1069212,
+      "url": "https://www.sec.gov/Archives/edgar/data/878927/000095017023009357/odfl-ex4_17.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-raw/ODFL/note-purchase-agreement-20200504.htm",
+      "sha256": "af73b8130a803bee47f84cd0296dbfbf46c266b06b92ad871e5cb3179485fd0b",
+      "bytes": 861706,
+      "url": "https://www.sec.gov/Archives/edgar/data/878927/000156459020021054/odfl-ex416_458.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-raw/WBA/a4q23exhibit21.htm",
+      "sha256": "31b48d66f78ea302bd6cf35763774b1524fc008d65204a439d3bef48fe50224b",
+      "bytes": 20031,
+      "url": "https://www.sec.gov/Archives/edgar/data/1618921/000161892123000062/a4q23exhibit21.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-raw/WBA/annual-index.html",
+      "sha256": "43c53c95e0865a01f11c804359a94ca8d9c4a3e09be431e92f46c6e27377818d",
+      "bytes": 16953,
+      "url": "https://www.sec.gov/Archives/edgar/data/1618921/000161892123000062/0001618921-23-000062-index.html",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-raw/WBA/d542330dex101.htm",
+      "sha256": "c26740d1d6192194930a3885217f17b7603b8c3392c7eb028a4ea7fca4b36e77",
+      "bytes": 602741,
+      "url": "https://www.sec.gov/Archives/edgar/data/1618921/000119312523207773/d542330dex101.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-raw/WBA/d542330dex102.htm",
+      "sha256": "7cf9d6c28feacf043526ce2c34f8e6ddb837756a8fd8afc8c36f3625b150c853",
+      "bytes": 736029,
+      "url": "https://www.sec.gov/Archives/edgar/data/1618921/000119312523207773/d542330dex102.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-raw/WBA/debt-index.html",
+      "sha256": "51c6428b1ff72acd4c0652a2dd261d09b88530c6a6733590283c853b85ad2f84",
+      "bytes": 10691,
+      "url": "https://www.sec.gov/Archives/edgar/data/1618921/000119312523207773/0001193125-23-207773-index.html",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-raw/company_tickers.json",
+      "sha256": "eb943bdc3d233f54644ba916f261651460a0b94f6fbf29dbf3c1788271b17bf9",
+      "bytes": 798727,
+      "url": "https://www.sec.gov/files/company_tickers.json",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-raw/court-pacer-access.html",
+      "sha256": "5f79bfda5621cc8df3cd7bb9dc8a20a5acfec84a18d0ad02ccabe2c33c73ddf0",
+      "bytes": 214987,
+      "url": "https://www.uscourts.gov/court-records/find-a-case-pacer",
+      "byte_form": "raw",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-raw/pacer-case-locator.html",
+      "sha256": "38bd4fc318429c802978016af0ab1a377de605dceb8a72e7fc26ab3aa189374b",
+      "bytes": 58420,
+      "url": "https://pacer.uscourts.gov/help/faqs/what-pacer-case-locator",
+      "byte_form": "raw",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-raw/sp-2023-default-study.pdf",
+      "sha256": "7227aebd519dd2663e04b721260a56419e5729c322ce7ed17430dac50a956e47",
+      "bytes": 6492796,
+      "url": "https://www.maalot.co.il/Publications/TS20240709142640.PDF",
+      "byte_form": "raw",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-resolution/local-raw/sp-2024-default-study.pdf",
+      "sha256": "2c048d4093f81fbb1e71284d8e411fe714623eebd6a011e863e20eec54e020ed",
+      "bytes": 6632395,
+      "url": "https://maalot.co.il/Publications/FTS20250331162126.pdf",
+      "byte_form": "raw",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/BBBY-submissions.raw.json",
+      "sha256": "0806d5536534dd303e3143774d7e9201a54c1d0d6b9193098ff7e098cae26f92",
+      "bytes": 162692,
+      "url": "https://data.sec.gov/submissions/CIK0000886158.json",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/BBY-submissions.raw.json",
+      "sha256": "b3e56d79c1462e4bd1848ee8716887ffbbd37b47ba8938d7a093988ceffab33a",
+      "bytes": 146495,
+      "url": "https://data.sec.gov/submissions/CIK0000764478.json",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/M-submissions.raw.json",
+      "sha256": "deb5f449a39b1010a9479252f2e4914abc1ec2a7a91d96faab670192ecc6de63",
+      "bytes": 163571,
+      "url": "https://data.sec.gov/submissions/CIK0000794367.json",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/ODFL-submissions.raw.json",
+      "sha256": "90c51efb21b8e7e464d132dea2492c25c1e4c01b6c024a2ac7c2807540442ffa",
+      "bytes": 154361,
+      "url": "https://data.sec.gov/submissions/CIK0000878927.json",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/RAD-submissions.raw.json",
+      "sha256": "7087f577d23dd94a95b186dac65a3922e2ae16a8bad7dc0795e36afd2825e7e8",
+      "bytes": 163224,
+      "url": "https://data.sec.gov/submissions/CIK0000084129.json",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/WBA-submissions.raw.json",
+      "sha256": "6c8d6ee0a1c37dc7e7a94b4c6b3540c0d2a80cbe3bd37f36588142bf6a5fd54b",
+      "bytes": 163138,
+      "url": "https://data.sec.gov/submissions/CIK0001618921.json",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/WE-submissions.raw.json",
+      "sha256": "f48c473623f91b8674e8ddb03f0419154605c9d7391bcb1a1d9836f95d483b3b",
+      "bytes": 84159,
+      "url": "https://data.sec.gov/submissions/CIK0001813756.json",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/YELL-submissions.raw.json",
+      "sha256": "a99f53e9403ea5fa3852f2d5f3677e77632da55613a9bed428bce8a7c8da6363",
+      "bytes": 164385,
+      "url": "https://data.sec.gov/submissions/CIK0000716006.json",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/BBBY/2023-04-24-0001193125-23-111754-d465247d8k.htm",
+      "sha256": "8edd4844eef01c0408a5c52ec0fd613fd1ffa0ebecc79e7e8dd10ef73a90be98",
+      "bytes": 52010,
+      "url": "https://www.sec.gov/Archives/edgar/data/886158/000119312523111754/d465247d8k.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/BBBY/2023-04-24-0001193125-23-111754-d465247dex991.htm",
+      "sha256": "924476f93b6ab51019730dff8546980d1ab4f33d07470212d86b507e4aa39782",
+      "bytes": 12004,
+      "url": "https://www.sec.gov/Archives/edgar/data/886158/000119312523111754/d465247dex991.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/BBY/2023-04-13-0000764478-23-000012-bby-20230412x8k.htm",
+      "sha256": "00a42a124d2bce847390d3f995b5d2b362464dc3bb66de108e81345782e71777",
+      "bytes": 100666,
+      "url": "https://www.sec.gov/Archives/edgar/data/764478/000076447823000012/bby-20230412x8k.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/BBY/2023-04-27-0000764478-23-000016-bby-20230424x8k.htm",
+      "sha256": "3c71e3943ac26c33691ca4c3e9c80089d99632c45b9f7a981167b31a272f68a8",
+      "bytes": 82874,
+      "url": "https://www.sec.gov/Archives/edgar/data/764478/000076447823000016/bby-20230424x8k.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/BBY/2023-05-25-0000764478-23-000019-bby-20230525x8k.htm",
+      "sha256": "94f17af18b663dfe9385bbf3a98b1f00860c33c5bf0cbafe1d3a32b4011b1b80",
+      "bytes": 76927,
+      "url": "https://www.sec.gov/Archives/edgar/data/764478/000076447823000019/bby-20230525x8k.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/BBY/2023-06-02-0000764478-23-000025-bby-20230429x10q.htm",
+      "sha256": "5e675778ea1968994b843813be949ca5d39c036ac555140a6079431c6869753f",
+      "bytes": 3699828,
+      "url": "https://www.sec.gov/Archives/edgar/data/764478/000076447823000025/bby-20230429x10q.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/BBY/2023-06-16-0000764478-23-000027-bby-20230614x8k.htm",
+      "sha256": "8962a29c0ea6a5291418cf1a211a937cd585d2890e72452cf3be1aac86fd78ba",
+      "bytes": 194928,
+      "url": "https://www.sec.gov/Archives/edgar/data/764478/000076447823000027/bby-20230614x8k.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/BBY/2023-08-01-0000764478-23-000035-bby-20230728x8k.htm",
+      "sha256": "3c0bf036191df06152dfe9d99292671b5f46e87643017d4199bb66aa01880bcf",
+      "bytes": 89953,
+      "url": "https://www.sec.gov/Archives/edgar/data/764478/000076447823000035/bby-20230728x8k.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/BBY/2023-08-29-0000764478-23-000038-bby-20230829x8k.htm",
+      "sha256": "e2559bcde3c0c3144f547d85b4325768ccd3cca5ce19680756dd3d969ad5ebb1",
+      "bytes": 76946,
+      "url": "https://www.sec.gov/Archives/edgar/data/764478/000076447823000038/bby-20230829x8k.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/BBY/2023-09-01-0000764478-23-000041-bby-20230729x10q.htm",
+      "sha256": "8a799708476ce40e5a487361d091c3a3b8a0feb681d3f546ce266e3c715c242b",
+      "bytes": 4949970,
+      "url": "https://www.sec.gov/Archives/edgar/data/764478/000076447823000041/bby-20230729x10q.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/BBY/2023-09-12-0000764478-23-000046-bby-20230728x8ka.htm",
+      "sha256": "9e56b646e0a2e1ca3084b64b895b207fd07d3372c6c227df79a62dfb013198d9",
+      "bytes": 73841,
+      "url": "https://www.sec.gov/Archives/edgar/data/764478/000076447823000046/bby-20230728x8ka.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/BBY/2023-11-21-0000764478-23-000049-bby-20231121x8k.htm",
+      "sha256": "f4d752c9ec216e31b9ee28169c5fa35650a833bc97e51ed721d6e126cefa8405",
+      "bytes": 76884,
+      "url": "https://www.sec.gov/Archives/edgar/data/764478/000076447823000049/bby-20231121x8k.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/BBY/2023-12-01-0000764478-23-000053-bby-20231028x10q.htm",
+      "sha256": "76c52b3ba8929fe31059c80ccda9418b29782db2b66009a9d65959d1278d96d6",
+      "bytes": 4924413,
+      "url": "https://www.sec.gov/Archives/edgar/data/764478/000076447823000053/bby-20231028x10q.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/BBY/2023-12-13-0000764478-23-000056-bby-20230328x8ka.htm",
+      "sha256": "23e8a78b8c7e958e210c402da9cbcd8669a63738ae8d1d404e02a17712f2a92e",
+      "bytes": 83482,
+      "url": "https://www.sec.gov/Archives/edgar/data/764478/000076447823000056/bby-20230328x8ka.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/BBY/2024-02-29-0000764478-24-000003-bby-20240229x8k.htm",
+      "sha256": "6d0405c9d7645825b330da70a66b5f96fb68b32cdd5eee7e0e1cdb8c9366c874",
+      "bytes": 76833,
+      "url": "https://www.sec.gov/Archives/edgar/data/764478/000076447824000003/bby-20240229x8k.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/BBY/2024-03-07-0000764478-24-000006-bby-20240305x8k.htm",
+      "sha256": "140d007a67f4f2077f60d85023a8d9c55b2289ad8898160a4885d7362346e596",
+      "bytes": 84877,
+      "url": "https://www.sec.gov/Archives/edgar/data/764478/000076447824000006/bby-20240305x8k.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/BBY/2024-03-15-0000764478-24-000010-bby-20240203x10k.htm",
+      "sha256": "81a416bf4daefb5ed079f35facbdb31a1564530a5b29eb300e5e9633cf985999",
+      "bytes": 7128268,
+      "url": "https://www.sec.gov/Archives/edgar/data/764478/000076447824000010/bby-20240203x10k.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/BBY/2024-06-07-0000764478-24-000022-bby-20240504x10q.htm",
+      "sha256": "80a325083142a1ca35c89bd9447f3a112436ec44022523081699ec0d89f209e5",
+      "bytes": 3596656,
+      "url": "https://www.sec.gov/Archives/edgar/data/764478/000076447824000022/bby-20240504x10q.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/M/2023-05-23-0000794367-23-000055-n-20230519.htm",
+      "sha256": "4a5a4271915295bced335458f0dea8bc8d4e3d2ed541ca6f4ce21c538b7053f6",
+      "bytes": 66742,
+      "url": "https://www.sec.gov/Archives/edgar/data/794367/000079436723000055/n-20230519.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/M/2023-05-26-0000794367-23-000061-n-20230525.htm",
+      "sha256": "7150d490d3e94913da9cf8b7824c0072e0174ebd9e5c8673900a0ef4fd6f7f5e",
+      "bytes": 29723,
+      "url": "https://www.sec.gov/Archives/edgar/data/794367/000079436723000061/n-20230525.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/M/2023-06-01-0001628280-23-020415-n-20230601.htm",
+      "sha256": "b4c8106ff55f2de1d549bce028b5c7fd8f5ff0db13358aaac4a9507c8cd8272c",
+      "bytes": 34026,
+      "url": "https://www.sec.gov/Archives/edgar/data/794367/000162828023020415/n-20230601.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/M/2023-06-06-0001628280-23-021104-m-20230429.htm",
+      "sha256": "dcefee19509a3f51813bee9aba26b8737278072c2d50e8be42f47e2b4969e326",
+      "bytes": 861916,
+      "url": "https://www.sec.gov/Archives/edgar/data/794367/000162828023021104/m-20230429.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/M/2023-08-22-0001628280-23-030169-n-20230822.htm",
+      "sha256": "5f9e7d2272f65678c5b8b11f9ed2ea433365284b27685c1d24266b1b76bab1d2",
+      "bytes": 26514,
+      "url": "https://www.sec.gov/Archives/edgar/data/794367/000162828023030169/n-20230822.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/M/2023-08-25-0001628280-23-030657-m-20230729.htm",
+      "sha256": "da36895191daf331a0ed32231078d18f3f2f05c9d5863cc7e2e1218f213767d3",
+      "bytes": 994309,
+      "url": "https://www.sec.gov/Archives/edgar/data/794367/000162828023030657/m-20230729.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/M/2023-10-31-0000794367-23-000084-n-20231031.htm",
+      "sha256": "7c5570e84ec31dc3d595ca25c1812ff018f889ccb28b777ed220cbea7221e89d",
+      "bytes": 21918,
+      "url": "https://www.sec.gov/Archives/edgar/data/794367/000079436723000084/n-20231031.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/M/2023-11-16-0001628280-23-039210-n-20231116.htm",
+      "sha256": "96d527897d59b2a2b2c0c866604acaddff7a4867c18697c088c2c5723772ae20",
+      "bytes": 26137,
+      "url": "https://www.sec.gov/Archives/edgar/data/794367/000162828023039210/n-20231116.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/M/2023-11-28-0001628280-23-040057-m-20231028.htm",
+      "sha256": "949a19f17c21b1b10d6fbc6c0ad0056ef1c5d42dd66461c96a088dd158edaa84",
+      "bytes": 1052862,
+      "url": "https://www.sec.gov/Archives/edgar/data/794367/000162828023040057/m-20231028.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/M/2024-01-22-0000794367-24-000007-n-20240121.htm",
+      "sha256": "918dc43cb84ef79ce8a763e1a171a84b5608423ac4f4709b94e37aa7f6386021",
+      "bytes": 25675,
+      "url": "https://www.sec.gov/Archives/edgar/data/794367/000079436724000007/n-20240121.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/M/2024-02-02-0000794367-24-000010-n-20240202.htm",
+      "sha256": "962c2f434413f4efa13825b60e48636032d49860b75bd56d6f05c10639ff27c6",
+      "bytes": 27573,
+      "url": "https://www.sec.gov/Archives/edgar/data/794367/000079436724000010/n-20240202.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/M/2024-02-27-0001628280-24-007023-m-20240227.htm",
+      "sha256": "a329345fb815ad323cc15d3ff5ff237f484da3fcd55aefcffd2a7af1e05179d4",
+      "bytes": 30832,
+      "url": "https://www.sec.gov/Archives/edgar/data/794367/000162828024007023/m-20240227.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/M/2024-03-01-0000794367-24-000013-n-20240229.htm",
+      "sha256": "cdd2f49ddaaf2120ea34c4772559db9555b071d94177458338b7f8f123e4ddfa",
+      "bytes": 21860,
+      "url": "https://www.sec.gov/Archives/edgar/data/794367/000079436724000013/n-20240229.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/M/2024-03-22-0001628280-24-012734-m-20240203.htm",
+      "sha256": "3448473d7eb3ad9a8f3720f563c31ce83147552c06ac2d6891b1e8af7fe55118",
+      "bytes": 2198731,
+      "url": "https://www.sec.gov/Archives/edgar/data/794367/000162828024012734/m-20240203.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/M/2024-05-30-0001628280-24-025853-m-20240504.htm",
+      "sha256": "84ed4a50d8a740f47aaf7dfec1449737427ea0cbb3662bb2c2f64131601c801d",
+      "bytes": 689144,
+      "url": "https://www.sec.gov/Archives/edgar/data/794367/000162828024025853/m-20240504.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/ODFL/2023-04-26-0000950170-23-014592-odfl-20230426.htm",
+      "sha256": "c31d4e3dcb5ce58b84009c3dc81c36a9f575d2afbbeeefee3eed1b5e94c03d1e",
+      "bytes": 65186,
+      "url": "https://www.sec.gov/Archives/edgar/data/878927/000095017023014592/odfl-20230426.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/ODFL/2023-05-08-0000950170-23-018765-odfl-20230331.htm",
+      "sha256": "bd5e96cddc26c5f4b55c09ee18940923b3b326a75dcc1a796acdbe6638e3e113",
+      "bytes": 1519689,
+      "url": "https://www.sec.gov/Archives/edgar/data/878927/000095017023018765/odfl-20230331.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/ODFL/2023-05-18-0000950170-23-022904-odfl-20230517.htm",
+      "sha256": "97a5f900fd7402679bc3d3f132a7c418ddf7945f6e9e1c75ccea227590583be0",
+      "bytes": 135428,
+      "url": "https://www.sec.gov/Archives/edgar/data/878927/000095017023022904/odfl-20230517.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/ODFL/2023-05-18-0000950170-23-022909-odfl-20230125.htm",
+      "sha256": "0acd084bbb5f4eb6a7b9dea699c059e0cb8e160072d23bddce1fd523c5c3b6e0",
+      "bytes": 59281,
+      "url": "https://www.sec.gov/Archives/edgar/data/878927/000095017023022909/odfl-20230125.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/ODFL/2023-05-18-0000950170-23-022911-odfl-20230228.htm",
+      "sha256": "b8422906210bb889a989bbe73c953bd243259e3c26e73c9b182df2fccc6bd52b",
+      "bytes": 59933,
+      "url": "https://www.sec.gov/Archives/edgar/data/878927/000095017023022911/odfl-20230228.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/ODFL/2023-05-18-0000950170-23-022917-odfl-20230517.htm",
+      "sha256": "5579683b334fce7a6a66eeb97954b66b2b0e6c593ea081b628fa2a628819e001",
+      "bytes": 61050,
+      "url": "https://www.sec.gov/Archives/edgar/data/878927/000095017023022917/odfl-20230517.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/ODFL/2023-06-05-0000950170-23-026441-odfl-20230605.htm",
+      "sha256": "d26837396125f2a3bb2e6f17117be79dd2e1376a0d57abd5b88d607892f99eaa",
+      "bytes": 58825,
+      "url": "https://www.sec.gov/Archives/edgar/data/878927/000095017023026441/odfl-20230605.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/ODFL/2023-06-26-0000950170-23-029863-odfl-20230622.htm",
+      "sha256": "f2b1d6ee267af3a7ffa988de5ff7f158cb91295c0fc1ffb87539fb701ca01211",
+      "bytes": 63845,
+      "url": "https://www.sec.gov/Archives/edgar/data/878927/000095017023029863/odfl-20230622.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/ODFL/2023-07-20-0000950170-23-033690-odfl-20230720.htm",
+      "sha256": "6edc0bc61581a4d1036cf5e6a6d2f3ac95e2e62b5408f88f5dda8b3273a862b1",
+      "bytes": 59388,
+      "url": "https://www.sec.gov/Archives/edgar/data/878927/000095017023033690/odfl-20230720.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/ODFL/2023-07-26-0000950170-23-034576-odfl-20230726.htm",
+      "sha256": "801346fef9965edcde77974587fccdbcfec29161fbbbebffaf22a7c88f0b3063",
+      "bytes": 65375,
+      "url": "https://www.sec.gov/Archives/edgar/data/878927/000095017023034576/odfl-20230726.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/ODFL/2023-08-04-0000950170-23-038553-odfl-20230630.htm",
+      "sha256": "7671bbb9f49aec853d062216d77433fd35bf240d2eee2b57e324d91709b73189",
+      "bytes": 1988456,
+      "url": "https://www.sec.gov/Archives/edgar/data/878927/000095017023038553/odfl-20230630.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/ODFL/2023-09-06-0000950170-23-046789-odfl-20230906.htm",
+      "sha256": "c6365f71cdb766e831bd9f8d9ca4227f85c31101fa5e78814e4e36b2285a8745",
+      "bytes": 58852,
+      "url": "https://www.sec.gov/Archives/edgar/data/878927/000095017023046789/odfl-20230906.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/ODFL/2023-10-19-0000950170-23-054038-odfl-20231019.htm",
+      "sha256": "3a4169d78df02fdf84970310594fb0a1eac069e2402ef0cdc7bc44cedd382374",
+      "bytes": 51679,
+      "url": "https://www.sec.gov/Archives/edgar/data/878927/000095017023054038/odfl-20231019.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/ODFL/2023-10-25-0000950170-23-055015-odfl-20231025.htm",
+      "sha256": "9a35f2ab99af151ac865266675ca1ad1ddf544ec0531333f570cfbb21bc099f6",
+      "bytes": 55930,
+      "url": "https://www.sec.gov/Archives/edgar/data/878927/000095017023055015/odfl-20231025.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/ODFL/2023-11-06-0000950170-23-059408-odfl-20230930.htm",
+      "sha256": "138de13d0040257395664fe6905e2f0ff7ae9108544fd7b2d8fb44ab48fd0347",
+      "bytes": 1711794,
+      "url": "https://www.sec.gov/Archives/edgar/data/878927/000095017023059408/odfl-20230930.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/ODFL/2023-12-05-0000950170-23-068262-odfl-20231205.htm",
+      "sha256": "d611160fe21335175295ebe673dfc2bda467ddc455f39e2172b35a16f204bc48",
+      "bytes": 41296,
+      "url": "https://www.sec.gov/Archives/edgar/data/878927/000095017023068262/odfl-20231205.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/ODFL/2024-01-31-0000950170-24-009181-odfl-20240131.htm",
+      "sha256": "111719063428552a8ad5ea24f6be867ef47723bd51d4e536df79e420a97f18ba",
+      "bytes": 46538,
+      "url": "https://www.sec.gov/Archives/edgar/data/878927/000095017024009181/odfl-20240131.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/ODFL/2024-02-16-0000950170-24-016210-odfl-20240216.htm",
+      "sha256": "5f85aed61eb6833911a46a3f25e592d36370fa751bba4cc4a9a65f63bf088520",
+      "bytes": 42088,
+      "url": "https://www.sec.gov/Archives/edgar/data/878927/000095017024016210/odfl-20240216.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/ODFL/2024-02-26-0000950170-24-020176-odfl-20231231.htm",
+      "sha256": "831582b00692b3b958b5ac666e10f88a35784322f37c0db7f1581b800c20e31b",
+      "bytes": 1927010,
+      "url": "https://www.sec.gov/Archives/edgar/data/878927/000095017024020176/odfl-20231231.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/ODFL/2024-03-05-0000950170-24-025450-odfl-20240305.htm",
+      "sha256": "b2ff3e7f1b62d13b62dbe55345f549fb31367bd4005352e535e8211cbbaccf9b",
+      "bytes": 41364,
+      "url": "https://www.sec.gov/Archives/edgar/data/878927/000095017024025450/odfl-20240305.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/ODFL/2024-03-19-0000950170-24-033550-odfl-20240319.htm",
+      "sha256": "ff50564e61d713e59e6ed1a89005deac83c18a00659ea763a5f706f2ba1a5b56",
+      "bytes": 42459,
+      "url": "https://www.sec.gov/Archives/edgar/data/878927/000095017024033550/odfl-20240319.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/ODFL/2024-05-07-0000950170-24-054284-odfl-20240331.htm",
+      "sha256": "57860825d844e7da1a249edd42483e8c9af8a19eecd2bf506849115b2a27ae2d",
+      "bytes": 914469,
+      "url": "https://www.sec.gov/Archives/edgar/data/878927/000095017024054284/odfl-20240331.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/RAD/2023-10-16-0001104659-23-109236-tm2328505d1_8k.htm",
+      "sha256": "dd268a32e6e889a522776a564a924aea28a04fb6e2c2b12b78752af4143f94b0",
+      "bytes": 89282,
+      "url": "https://www.sec.gov/Archives/edgar/data/84129/000110465923109236/tm2328505d1_8k.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/RAD/2023-10-16-0001104659-23-109413-tm2328535d1_8ka.htm",
+      "sha256": "822212fd09ac396b718f646ea7e95d5314129f499f238652f8ddf54b5255d387",
+      "bytes": 91807,
+      "url": "https://www.sec.gov/Archives/edgar/data/84129/000110465923109413/tm2328535d1_8ka.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/WBA/2023-05-26-0001193125-23-155537-d468351d8k.htm",
+      "sha256": "13b509095f15772b1c80821e22b5a03c37ea1b3514be9c21cb6385de9cc32083",
+      "bytes": 27022,
+      "url": "https://www.sec.gov/Archives/edgar/data/1618921/000119312523155537/d468351d8k.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/WBA/2023-06-27-0001193125-23-175558-d504570d8k.htm",
+      "sha256": "68b48729cb66b7b2fc024c83a1ca5dc9ef26b595ff727d1dbb4fe4dcbf025fa3",
+      "bytes": 28636,
+      "url": "https://www.sec.gov/Archives/edgar/data/1618921/000119312523175558/d504570d8k.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/WBA/2023-06-27-0001618921-23-000043-wba-20230531.htm",
+      "sha256": "797045cfe8d2b426ae7e83098ea6a84d261062ffe4469102b082a963bb6737bf",
+      "bytes": 2785380,
+      "url": "https://www.sec.gov/Archives/edgar/data/1618921/000161892123000043/wba-20230531.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/WBA/2023-07-14-0001193125-23-187329-d506413d8k.htm",
+      "sha256": "839be5f308d351d485e52268cd60358007391f07d091fd25e44e277a6b43c1d2",
+      "bytes": 34890,
+      "url": "https://www.sec.gov/Archives/edgar/data/1618921/000119312523187329/d506413d8k.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/WBA/2023-07-27-0001193125-23-196159-d532458d8k.htm",
+      "sha256": "84270419031d48cd29da3cf6fef118df16475ea71e34873370470b1804c7abb6",
+      "bytes": 31869,
+      "url": "https://www.sec.gov/Archives/edgar/data/1618921/000119312523196159/d532458d8k.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/WBA/2023-08-10-0001193125-23-207773-d542330d8k.htm",
+      "sha256": "d035dfc9ca40e00281a36c585b105b286a7edd8312a0838724d3da5e8a76bb13",
+      "bytes": 35998,
+      "url": "https://www.sec.gov/Archives/edgar/data/1618921/000119312523207773/d542330d8k.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/WBA/2023-09-01-0001193125-23-226884-d497068d8k.htm",
+      "sha256": "a6251e49937687afc63c3cd50c11552ed97457dc4382a718c83d28718173bdea",
+      "bytes": 34521,
+      "url": "https://www.sec.gov/Archives/edgar/data/1618921/000119312523226884/d497068d8k.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/WBA/2023-09-22-0001193125-23-240570-d331934d8ka.htm",
+      "sha256": "c8a08a25c27c3f4e0acf26d72952b9bf4a65d627d39ba8b87e229d2b8c2cb1cc",
+      "bytes": 27373,
+      "url": "https://www.sec.gov/Archives/edgar/data/1618921/000119312523240570/d331934d8ka.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/WBA/2023-10-11-0001193125-23-253805-d559360d8k.htm",
+      "sha256": "4a37a5804795b61acf6308827067d500ef97af9368e60d0b9d47f5ba64c8e26b",
+      "bytes": 37465,
+      "url": "https://www.sec.gov/Archives/edgar/data/1618921/000119312523253805/d559360d8k.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/WBA/2023-10-12-0001193125-23-254615-d558457d8k.htm",
+      "sha256": "543c9679be59471db092be9753c5befc05229e50d47cd95bf580d52470ddcc75",
+      "bytes": 27980,
+      "url": "https://www.sec.gov/Archives/edgar/data/1618921/000119312523254615/d558457d8k.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/WBA/2023-10-12-0001618921-23-000062-wba-20230831.htm",
+      "sha256": "96584a1ebad86e8be2344148751e221ac88a9a03786e81305035a917e6507057",
+      "bytes": 3831256,
+      "url": "https://www.sec.gov/Archives/edgar/data/1618921/000161892123000062/wba-20230831.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/WBA/2023-10-30-0001193125-23-265359-d535453d8ka.htm",
+      "sha256": "ee6431ac7f658291d6e9247db641d632b0c8e16ffffd0691d9946157874bb4e7",
+      "bytes": 30086,
+      "url": "https://www.sec.gov/Archives/edgar/data/1618921/000119312523265359/d535453d8ka.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/WBA/2023-11-24-0001193125-23-282616-d545705d8k.htm",
+      "sha256": "c35339915f8dc67393c35d833d22a1248fbefb831d66eeadb6dc76155e6baf0c",
+      "bytes": 34574,
+      "url": "https://www.sec.gov/Archives/edgar/data/1618921/000119312523282616/d545705d8k.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/WBA/2024-01-04-0001193125-24-001901-d605513d8k.htm",
+      "sha256": "8fb76e4065cc87c04ed1e3685d2dd1d5d8edc436dc05af27745cf458e3ce8b55",
+      "bytes": 30131,
+      "url": "https://www.sec.gov/Archives/edgar/data/1618921/000119312524001901/d605513d8k.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/WBA/2024-01-04-0001618921-24-000004-wba-20231130.htm",
+      "sha256": "ae947299b92bcbfbc71f342912f7cd33a1103eb0cd127cbf16f14203fe61eea3",
+      "bytes": 1876685,
+      "url": "https://www.sec.gov/Archives/edgar/data/1618921/000161892124000004/wba-20231130.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/WBA/2024-01-31-0001193125-24-021052-d701412d8k.htm",
+      "sha256": "7d7ccdb1c7a29a07fdacde384a3c303636b90215cc135ff01fde670934122d87",
+      "bytes": 48106,
+      "url": "https://www.sec.gov/Archives/edgar/data/1618921/000119312524021052/d701412d8k.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/WBA/2024-02-08-0001193125-24-028508-d751581d8k.htm",
+      "sha256": "2f0870884c26cfadf76a5d56704d55ab29696de94851cd8e81f7fb056281e267",
+      "bytes": 37995,
+      "url": "https://www.sec.gov/Archives/edgar/data/1618921/000119312524028508/d751581d8k.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/WBA/2024-03-28-0001193125-24-079608-d817592d8k.htm",
+      "sha256": "ad5766af92d00f18c746963f2f0ae72a565481bf089043643b7799a84c67be16",
+      "bytes": 29708,
+      "url": "https://www.sec.gov/Archives/edgar/data/1618921/000119312524079608/d817592d8k.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/WBA/2024-03-28-0001193125-24-080799-d797051d8k.htm",
+      "sha256": "ad58924f090b8a1c8b2f2c0b8d220224a95fac9e8311e11cae806b5ebaac1300",
+      "bytes": 31419,
+      "url": "https://www.sec.gov/Archives/edgar/data/1618921/000119312524080799/d797051d8k.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/WBA/2024-03-28-0001618921-24-000035-wba-20240229.htm",
+      "sha256": "728f6f4cd503f08e016243b52c595ae9814390550d8b21f13fd3008098a1db6b",
+      "bytes": 2550151,
+      "url": "https://www.sec.gov/Archives/edgar/data/1618921/000161892124000035/wba-20240229.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/WBA/2024-06-27-0001618921-24-000065-wba-20240531.htm",
+      "sha256": "4e1cc7117cee958afb81370c5026027f6b76916725dd2fd9ba92d9b64f634471",
+      "bytes": 2573306,
+      "url": "https://www.sec.gov/Archives/edgar/data/1618921/000161892124000065/wba-20240531.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/WE/2023-11-07-0001193125-23-271902-d522028d8k.htm",
+      "sha256": "3e12e2ef58276847376a12294e44bfbb4695f506b466b388bcfb0433b8323dce",
+      "bytes": 67251,
+      "url": "https://www.sec.gov/Archives/edgar/data/1813756/000119312523271902/d522028d8k.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/credit-supplement/documents/YELL/2023-08-07-0001193125-23-204370-d483482d8k.htm",
+      "sha256": "ba3bcd37b07b8653d4d6570daf63d1901bdd6b4ab2b92c3e244f3f691f455885",
+      "bytes": 46443,
+      "url": "https://www.sec.gov/Archives/edgar/data/716006/000119312523204370/d483482d8k.htm",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/earnings-credit/nasdaq-AAPL-20240201-20240202.json",
+      "sha256": "0d9a6e7aff0c9174e18f07d14e87c10c969378703268eba986c7c9fef02d8aab",
+      "bytes": 553,
+      "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2024-02-01&todate=2024-02-02&limit=10",
+      "byte_form": "sanitized_wrapper",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/earnings-credit/nasdaq-AMZN-20240201-20240202.json",
+      "sha256": "bcdd1e2e6cbd372e791683fea5d34d143827195637293aee0668f653228162da",
+      "bytes": 553,
+      "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2024-02-01&todate=2024-02-02&limit=10",
+      "byte_form": "sanitized_wrapper",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/earnings-credit/nasdaq-META-20240201-20240202.json",
+      "sha256": "9f2caf4fc743fa013825b09d9d2127f510f8556d0222e1e263ad75199731d4d1",
+      "bytes": 553,
+      "url": "https://api.nasdaq.com/api/quote/META/historical?assetclass=stocks&fromdate=2024-02-01&todate=2024-02-02&limit=10",
+      "byte_form": "sanitized_wrapper",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/earnings-credit/nasdaq-SPY-20240201-20240202.json",
+      "sha256": "80fd866a2b2002cb44045a640921b59910b742b3b7bc243ea69550fede897c04",
+      "bytes": 548,
+      "url": "https://api.nasdaq.com/api/quote/SPY/historical?assetclass=etf&fromdate=2024-02-01&todate=2024-02-02&limit=10",
+      "byte_form": "sanitized_wrapper",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/earnings-credit/sec-eps-AAPL-concept.raw.json",
+      "sha256": "d58cd0fce2baed8be20b7b6587917b03bb46c08fc0b527d53a4867cab9317acf",
+      "bytes": 48741,
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/EarningsPerShareDiluted.json",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/earnings-credit/sec-eps-AMD-concept.raw.json",
+      "sha256": "15436f232b8f49ef33d8cebf6ba7c4696048ef093290ef5f68ef48cb65e5c53a",
+      "bytes": 42412,
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000002488/us-gaap/EarningsPerShareDiluted.json",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/earnings-credit/sec-eps-AMGN-concept.raw.json",
+      "sha256": "44fda87915cfe7d797eb3d600fde86258fb8098832c87d395397cf4126600c60",
+      "bytes": 46812,
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000318154/us-gaap/EarningsPerShareDiluted.json",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/earnings-credit/sec-eps-BAC-concept.raw.json",
+      "sha256": "2133ba4c4365fb48817dd9557c0244519a99aced91693b3e6372c39f706da786",
+      "bytes": 34567,
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000070858/us-gaap/EarningsPerShareDiluted.json",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/earnings-credit/sec-eps-C-concept.raw.json",
+      "sha256": "23820b28db5ee74137fd4703a7baa9ec4e2d51065391919d7da75d35651add13",
+      "bytes": 52500,
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000831001/us-gaap/EarningsPerShareDiluted.json",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/earnings-credit/sec-eps-DOW-concept.raw.json",
+      "sha256": "a30ac9e0fba86bc51b2b43d386bbb5e23e4091c175514318ca03cf59c99b35a3",
+      "bytes": 14117,
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001751788/us-gaap/EarningsPerShareDiluted.json",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/earnings-credit/sec-eps-GS-concept.raw.json",
+      "sha256": "b8c3d05e883361ebd8543b3dfce7c0f40fda35a90cb1f604416f352a871b64db",
+      "bytes": 33737,
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000886982/us-gaap/EarningsPerShareDiluted.json",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/earnings-credit/sec-eps-HON-concept.raw.json",
+      "sha256": "91667ff55623f86cc5718b4d45147e694a9cd3ee0815d4b04e573acc0876cf71",
+      "bytes": 46843,
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000773840/us-gaap/EarningsPerShareDiluted.json",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/earnings-credit/sec-eps-IBM-concept.raw.json",
+      "sha256": "7b81dcc0a49349da6e8b4aee646ed9e5189d2e7d33dee9ba6beacd62dcc9dcc7",
+      "bytes": 33379,
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000051143/us-gaap/EarningsPerShareDiluted.json",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/earnings-credit/sec-eps-JPM-concept.raw.json",
+      "sha256": "39a48e8fed3c70d6a3adf5fd6f4fa529e10d1849dc918cfee2650b0d69cb7fc8",
+      "bytes": 34440,
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000019617/us-gaap/EarningsPerShareDiluted.json",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/earnings-credit/sec-eps-MS-concept.raw.json",
+      "sha256": "ed8de86db84b91eca61826bfd35604582ccd31ef5be4b51eac9dd24f69249358",
+      "bytes": 45580,
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000895421/us-gaap/EarningsPerShareDiluted.json",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/earnings-credit/sec-eps-PNC-concept.raw.json",
+      "sha256": "f92fe3a631659ab0423319adcdd8fb7fb4fe26cce69b93758012a4e370683375",
+      "bytes": 33776,
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000713676/us-gaap/EarningsPerShareDiluted.json",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/earnings-credit/sec-eps-TMO-concept.raw.json",
+      "sha256": "447eae05d7460d87c66be24b882e5194361c822d539ddd1ec86aa8e64eb08d96",
+      "bytes": 51743,
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000097745/us-gaap/EarningsPerShareDiluted.json",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/earnings-credit/sec-eps-USB-concept.raw.json",
+      "sha256": "562214f55ce0ec284e2d94246314b6a35b853f0d8fe75e520c6bf003e028ede1",
+      "bytes": 32908,
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000036104/us-gaap/EarningsPerShareDiluted.json",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/earnings-credit/sec-eps-WFC-concept.raw.json",
+      "sha256": "1e20e27e2c96f370b20dabf8d8cc6e1af5ec2904899c9b627fbe47866b92eaa6",
+      "bytes": 33302,
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000072971/us-gaap/EarningsPerShareDiluted.json",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/earnings-credit/sec-submissions-BBY.raw.json",
+      "sha256": "b3e56d79c1462e4bd1848ee8716887ffbbd37b47ba8938d7a093988ceffab33a",
+      "bytes": 146495,
+      "url": "https://data.sec.gov/submissions/CIK0000764478.json",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/earnings-credit/sec-submissions-M.raw.json",
+      "sha256": "deb5f449a39b1010a9479252f2e4914abc1ec2a7a91d96faab670192ecc6de63",
+      "bytes": 163571,
+      "url": "https://data.sec.gov/submissions/CIK0000794367.json",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/earnings-credit/sec-submissions-ODFL.raw.json",
+      "sha256": "90c51efb21b8e7e464d132dea2492c25c1e4c01b6c024a2ac7c2807540442ffa",
+      "bytes": 154361,
+      "url": "https://data.sec.gov/submissions/CIK0000878927.json",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/earnings-credit/sec-submissions-WBA.raw.json",
+      "sha256": "6c8d6ee0a1c37dc7e7a94b4c6b3540c0d2a80cbe3bd37f36588142bf6a5fd54b",
+      "bytes": 163138,
+      "url": "https://data.sec.gov/submissions/CIK0001618921.json",
+      "byte_form": "raw",
+      "fetch_allowed": true,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/earnings-credit/yahoo-AAPL-20240201-20240202.json",
+      "sha256": "7511831250ffa19118f559966db09e2343eed2ea2f2b823721d39e345d1ff4e4",
+      "bytes": 3374,
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "byte_form": "sanitized_wrapper",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/earnings-credit/yahoo-AAPL-20240201-20240202.raw.json",
+      "sha256": "32ef6a4d56f606cbb1ff076161071e90028f03f5dc8a445133887e0a2a73233d",
+      "bytes": 1399,
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "byte_form": "raw",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/earnings-credit/yahoo-AMZN-20240201-20240202.json",
+      "sha256": "8988ea4959f9fc3b69f894605eb25169248447ee7d388baedefb541caf8fda2b",
+      "bytes": 3383,
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "byte_form": "sanitized_wrapper",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/earnings-credit/yahoo-AMZN-20240201-20240202.raw.json",
+      "sha256": "1bbc2f7451ba73c1e84a21344d94eb2bf24d2b2529541dae1b93bc55bd8dcf60",
+      "bytes": 1408,
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "byte_form": "raw",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/earnings-credit/yahoo-META-20240201-20240202.json",
+      "sha256": "09b67ff5feebdbc9090d18a920be82788d9ea11bcf15534e4cc05d3a307f0383",
+      "bytes": 3388,
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/META?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "byte_form": "sanitized_wrapper",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/earnings-credit/yahoo-META-20240201-20240202.raw.json",
+      "sha256": "c6277669914f4c4cadaabc208632d44ae051f0e8dec13ddc7d8efb89f56946a0",
+      "bytes": 1413,
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/META?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "byte_form": "raw",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/earnings-credit/yahoo-SPY-20240201-20240202.json",
+      "sha256": "645db52c6fde926eb0dcdccbe086ff348730acc064a88fbaa5411a998b270ae7",
+      "bytes": 3421,
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "byte_form": "sanitized_wrapper",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/earnings-credit/yahoo-SPY-20240201-20240202.raw.json",
+      "sha256": "f5b806d21349f916e114273a5740c5e5c222043e656e73f2977a48534f62961d",
+      "bytes": 1448,
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?period1=1706745600&period2=1707091200&interval=1d&events=div%2Csplits%2CcapitalGains",
+      "byte_form": "raw",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/postearn-supplement/amazon-ir-feed.json",
+      "sha256": "7710f32cfb1b6e6c754c6fa9f30957f5ab7eb48f9f65bd294d549da3f57ede86",
+      "bytes": 271,
+      "url": "https://ir.aboutamazon.com/feed/StockQuote.svc/GetStockQuoteHistoricalList?exchange=NASD&symbol=AMZN&pageSize=10&startDate=Feb-01-2024&endDate=Feb-02-2024",
+      "byte_form": "raw",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/postearn-supplement/apple-dividend-page.html",
+      "sha256": "9b98898072d9282c94aed8fc85ed3c07c40e0ee78e8a1436d8d5c83e5fbbae87",
+      "bytes": 203613,
+      "url": "https://investor.apple.com/dividend-history/default.aspx",
+      "byte_form": "raw",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/postearn-supplement/apple-ir-history.json",
+      "sha256": "5b0e240829bb64da3ee0ded4cf17b180349196a3cf7032193f2e84a748f9fbeb",
+      "bytes": 288,
+      "url": "https://investor.apple.com/feed/StockQuote.svc/GetStockQuoteHistoricalList?exchange=NASD&symbol=AAPL&pageSize=10&startDate=Feb-01-2024&endDate=Feb-02-2024",
+      "byte_form": "raw",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/postearn-supplement/apple-nasdaq-dividend.json",
+      "sha256": "21c36a00312494a67684ca1d51aff41ba5b31c31abd869e465f5137c0133114d",
+      "bytes": 13587,
+      "url": "https://api.nasdaq.com/api/quote/AAPL/dividends?assetclass=stocks",
+      "byte_form": "raw",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/postearn-supplement/apple-nasdaq-usdates.json",
+      "sha256": "6e2f2e9c39fbb5df0048f3056a97b5e8aeec5909858b299dc6f474b8f81853d2",
+      "bytes": 165,
+      "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=02%2F01%2F2024&todate=02%2F02%2F2024&limit=5000",
+      "byte_form": "sanitized_wrapper",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/postearn-supplement/apple-stock-page.html",
+      "sha256": "47f1694492cd1c62c89cdcee2915300d4d796f632e47143ec105bb3d831d7dff",
+      "bytes": 177157,
+      "url": "https://investor.apple.com/stock-price/default.aspx",
+      "byte_form": "raw",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/postearn-supplement/meta-ir-history.json",
+      "sha256": "3c0ec64d78055fcaaae2f617df290d03455535c741cdacfffdf3669e05fa0444",
+      "bytes": 269,
+      "url": "https://investor.atmeta.com/feed/StockQuote.svc/GetStockQuoteHistoricalList?exchange=NASD&symbol=META&pageSize=10&startDate=Feb-01-2024&endDate=Feb-02-2024",
+      "byte_form": "raw",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/postearn-supplement/meta-nasdaq-dividend.json",
+      "sha256": "d9e82fa631bbfd0ec58c56f63183b12ebfaab437b12a7cf67fc64cf227493366",
+      "bytes": 2405,
+      "url": "https://api.nasdaq.com/api/quote/META/dividends?assetclass=stocks",
+      "byte_form": "raw",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/postearn-supplement/meta-stock-page.html",
+      "sha256": "93ddffd803b29b2aa214885d9083ac56ae78af97b2ba51afa930a97d7866b4d3",
+      "bytes": 66284,
+      "url": "https://investor.atmeta.com/stock-info/default.aspx",
+      "byte_form": "raw",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/postearn-supplement/q4-api-widget.js",
+      "sha256": "4ccb465f9caa6de36da953c16274e2a2ce530b51163c82a66f0237d4e28421b8",
+      "bytes": 18349,
+      "url": "https://widgets.q4app.com/widgets/q4.api.1.12.18.min.js",
+      "byte_form": "raw",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/postearn-supplement/q4-historical-widget.js",
+      "sha256": "0aa0a4ba4c3ad2c1f7fd84d0ff017e8f70ed4d36815cafe9c50724053a195f88",
+      "bytes": 11591,
+      "url": "https://widgets.q4app.com/widgets/q4.historical-range.2.2.1.min.js",
+      "byte_form": "raw",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/postearn-supplement/spy-product-page.html",
+      "sha256": "61c89970fdc68562cdcbfbe783ce9ecbb0cf586fbf1822e7d993f7181e3626da",
+      "bytes": 233841,
+      "url": "https://www.ssga.com/us/en/individual/etfs/spdr-sp-500-etf-trust-spy",
+      "byte_form": "raw",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/postearn-supplement/spy-ssga-distributions.xlsx",
+      "sha256": "b162dd17027d1128f2209e312b0f634960daa78319dafe0ab821ab0b7e77ce23",
+      "bytes": 581242,
+      "url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/spdr-etf-historical-distributions.xlsx",
+      "byte_form": "raw",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/postearn-supplement/spy-ssga-premium-discount-history.xlsx",
+      "sha256": "95af267485df5a0f93964ba9a7e35a91ca5d03128f3030e593cb9feecb725625",
+      "bytes": 30580,
+      "url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/pdhist-us-en-spy.xlsx",
+      "byte_form": "raw",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/postearn-supplement/spy-ssga-price-nav-history.xlsx",
+      "sha256": "7c8fe7c18144aa4eb961d6fb4bb5da5e2bf31762fd87a82fb20626f1cfe64729",
+      "bytes": 277619,
+      "url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/navhist-us-en-spy.xlsx",
+      "byte_form": "raw",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/postearn-supplement/spy-tickertech-proxy.json",
+      "sha256": "6b7b49589b9a57b39f277e1c30ff9d862d6e3bc7b7bb02b865e94c0861d13af9",
+      "bytes": 268,
+      "url": "https://investor.apple.com/feed/StockQuote.svc/GetStockQuoteHistoricalList?exchange=AMEX&symbol=SPY&pageSize=10&startDate=Feb-01-2024&endDate=Feb-02-2024",
+      "byte_form": "raw",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    },
+    {
+      "path": "sources/postearn-supplement/ssga-distributions-page.html",
+      "sha256": "a9cf30699d6800d2b55a4e6a3baa67bbaab0654e444f4e6db3111f7d6bc0b48f",
+      "bytes": 79216,
+      "url": "https://www.ssga.com/us/en/individual/resources/documents/etf-dividend-distributions",
+      "byte_form": "raw",
+      "fetch_allowed": false,
+      "redistribution": "local_only",
+      "reason": "上游原始表达或完整响应的再分发许可未确认；仅保留本地，公开来源定位与派生事实。"
+    }
+  ],
+  "notice": "路径相对dataset；缓存仅本地。wrapper不是原始HTTP字节，禁止当作直接下载原件。下载必须依提供方条款；hash变化不能覆盖冻结证据。"
+}

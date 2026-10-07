@@ -1,0 +1,14 @@
+{
+  "url": "https://ir.aboutamazon.com/faqs/default.aspx",
+  "retrieved_at": "2026-10-07T08:54:25.766149+00:00",
+  "artifact_kind": "translated_evidence_note_not_original_response",
+  "retrieval_method": "web.run search indexed body; web.run open只显示FAQ标题/导航",
+  "published_at": null,
+  "locator": "Does Amazon distribute dividends? / When did Amazon stock split?；仅搜索索引正文",
+  "facts": [
+    "搜索索引的 Amazon IR FAQ 声明截至页面当前版本从未宣告或支付普通股现金股息；原页面全文直接下载403，打开解析未展示该正文。",
+    "搜索索引说明20-for-1拆股发生于2022年，FAQ使用2022-06-03 effective与2022-05-27 record。不将这些日期偷换为当日市场开始按拆股价交易日。"
+  ],
+  "original_raw_download_status": "HTTP403；未本地归档原始响应，见fetch-page-index.json",
+  "limit": "这些备注是已见公开来源的中文释义；本文件 hash 仅对应备注，不代表原网页字节或首次发布版本。"
+}

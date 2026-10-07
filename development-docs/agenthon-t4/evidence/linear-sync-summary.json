@@ -1,0 +1,25 @@
+{
+  "scope": "公开版只保留内部阶段编号；Workspace/Team UUID、私有卡片链接和详细协作记录仅本地保存。",
+  "phases": [
+    {
+      "phase": 1,
+      "issue": "CHE-949"
+    },
+    {
+      "phase": 2,
+      "issue": "CHE-950"
+    },
+    {
+      "phase": 3,
+      "issue": "CHE-951"
+    },
+    {
+      "phase": 4,
+      "issue": "CHE-952"
+    },
+    {
+      "phase": 5,
+      "issue": "CHE-953"
+    }
+  ]
+}

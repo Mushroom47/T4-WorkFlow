@@ -1,0 +1,27 @@
+{
+  "artifact_kind": "derived_review_not_original_source",
+  "scope": "仅复核筛选出的 bankruptcy/receivership/payment-failure 明显候选；不是全来源穷尽事件审计。",
+  "reviews": [
+    {
+      "entity_id": "BBY",
+      "raw_path": "documents/BBY/2024-03-15-0000764478-24-000010-bby-20240203x10k.htm",
+      "locator": "Note 8 Debt / Five-Year Facility Agreement；body-checks payment_default_or_failure offset 244295",
+      "disposition": "failure to pay 的出现是在授信协议的 customary default provisions 定义中；不是披露发生了付款违约。类似条款另见 2023-04-13 8-K 与 2023-06-02 10-Q。",
+      "qualified_credit_event_proven": false
+    },
+    {
+      "entity_id": "M",
+      "raw_path": "documents/M/2024-03-22-0001628280-24-012734-m-20240203.htm",
+      "locator": "Risk factors；body-checks receivership offset 79411，missed payment offset 51689",
+      "disposition": "receivership 段为其他银行未来进入接管状态的假设；missed payment 是信用卡消费者逾期收费规则。两者没有说明 Macy’s 自身申请破产或债务付款违约。",
+      "qualified_credit_event_proven": false
+    },
+    {
+      "entity_id": "WBA",
+      "raw_path": "documents/WBA/2023-08-10-0001193125-23-207773-d542330d8k.htm",
+      "locator": "Item 1.01 Credit Agreements；body-checks bankruptcy_or_receivership offset 5687",
+      "disposition": "bankruptcy、payment defaults 列在新增 credit agreements 的违约触发条款中；正文没有将其叙述为已经发生的 WBA 事件。",
+      "qualified_credit_event_proven": false
+    }
+  ]
+}

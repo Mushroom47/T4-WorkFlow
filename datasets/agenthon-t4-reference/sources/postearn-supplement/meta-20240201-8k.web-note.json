@@ -1,0 +1,13 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000010/meta-20240201.htm",
+  "retrieved_at": "2026-10-07T08:54:25.766149+00:00",
+  "artifact_kind": "translated_evidence_note_not_original_response",
+  "retrieval_method": "web.run open parsed body",
+  "published_at": "2024-02-01",
+  "locator": "Item8.01；8-K签名Date February1,2024",
+  "facts": [
+    "Meta 董事会2024-02-01宣告每股0.50美元现金股息，登记日2024-02-22、支付日2024-03-26。公告日期不是除息日期。"
+  ],
+  "original_raw_download_status": "HTTP403；未本地归档原始响应，见fetch-page-index.json",
+  "limit": "这些备注是已见公开来源的中文释义；本文件 hash 仅对应备注，不代表原网页字节或首次发布版本。"
+}

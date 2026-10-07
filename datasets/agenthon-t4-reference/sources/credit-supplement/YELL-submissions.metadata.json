@@ -1,0 +1,9 @@
+{
+  "entity_id": "YELL",
+  "url": "https://data.sec.gov/submissions/CIK0000716006.json",
+  "source_sha256": "a99f53e9403ea5fa3852f2d5f3677e77632da55613a9bed428bce8a7c8da6363",
+  "retrieved_at": "2026-10-07T08:43:59.272024+00:00",
+  "raw_path": "YELL-submissions.raw.json",
+  "name": "Yellow Corp",
+  "cik": "0000716006"
+}

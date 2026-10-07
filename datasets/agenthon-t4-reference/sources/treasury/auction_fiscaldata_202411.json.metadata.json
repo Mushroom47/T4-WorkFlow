@@ -1,0 +1,9 @@
+{
+  "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/od/auctions_query?filter=auction_date:gte:2024-11-01,auction_date:lte:2024-11-30&page%5Bsize%5D=100",
+  "fetched_at": "2026-10-07T07:56:11.967778+00:00",
+  "status": 200,
+  "content_type": "application/json",
+  "sha256": "e6b7b42dc5d8ae27246c6e718faf24fa96c5599e1a5992bb3f87a45f19123817",
+  "bytes": 133580,
+  "evidence_file": "auction_fiscaldata_202411.json"
+}

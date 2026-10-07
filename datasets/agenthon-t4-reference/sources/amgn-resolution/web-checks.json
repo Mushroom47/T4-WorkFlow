@@ -1,0 +1,42 @@
+{
+  "checked_at": "2026-10-07T13:14:07.983101+00:00",
+  "method": "web tool读取；以下为中文研究摘要，不是HTTP原始响应",
+  "records": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815423000053/amgn-20230630.htm",
+      "status": "read_via_web",
+      "locator": "Condensed Consolidated Statements of Income：Three months ended June30 2023/2022列Diluted；并列six-month EPS不同",
+      "finding": "季度diluted EPS 2.57/2.45；半年7.86/5.13，不能混用。"
+    },
+    {
+      "url": "https://www.sec.gov/about/privacy-information",
+      "status": "read_via_web",
+      "locator": "Website Dissemination，weblines147-149",
+      "finding": "SEC说明其网站public information可以复制分发并建议标注SEC来源，不授予SEC标志商标使用权。"
+    },
+    {
+      "url": "https://www.amgen.com/terms-of-use",
+      "status": "web_timeout_HTTP_original_saved_via_curl",
+      "locator": "Section3；Effective Date2024-02-20",
+      "finding": "只允许自身使用，公共/商业使用及AI/自动采集需书面授权。"
+    },
+    {
+      "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000318154/us-gaap/EarningsPerShareDiluted.json",
+      "status": "web_tool_not_accessible_existing_original_available",
+      "locator": "完整原始APIJSON由既有资料复制，retrieved_at沿用原下载记录",
+      "finding": "不是本轮新的成功HTTP取回。"
+    },
+    {
+      "url": "https://www.amgen.com/newsroom/press-releases/2023/07/amgen-announces-webcast-of-2023-second-quarter-financial-results",
+      "status": "web_first_read_then_positioned_open_timeout",
+      "locator": "已有保存HTTP原件回读成功",
+      "finding": "没有将后续web超时计为新原件。"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815423000053/0000318154-23-000053-index.html",
+      "status": "web_internal_error",
+      "locator": "无正文",
+      "finding": "失败，无原始字节。"
+    }
+  ]
+}
