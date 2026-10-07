@@ -1,6 +1,6 @@
 {
   "updated_at": "2026-10-08",
-  "scope": "公开版保留内部阶段编号与已回读状态；Workspace/Team UUID、私有卡片链接和详细协作记录仅本地保存。",
+  "scope": "公开版保留内部阶段编号及同连接器回读状态；真实账号入口/官方评分仍未完成，完整私有协作回读仅本地。",
   "phases": [
     {
       "phase": 1,
@@ -41,5 +41,7 @@
   "public_skipped_tests": 1,
   "rule_document_updated": true,
   "candidate_container_passed": true,
-  "candidate_ci_run": "https://github.com/Mushroom47/T4-WorkFlow/actions/runs/37664798590"
+  "candidate_ci_run": "https://github.com/Mushroom47/T4-WorkFlow/actions/runs/37665785245",
+  "public_snapshot_commit": "106571dec88aa5c48baebd1a08b405e5a3ebc8d4",
+  "anonymous_public_check_passed": true
 }

@@ -1,0 +1,161 @@
+{
+  "schema_version": "0.1.0",
+  "checked_at": "2026-10-07T18:21:17.339652+00:00",
+  "mode": "anonymous_public_HTTPS_fresh_clone_no_private_cache",
+  "repository_url": "https://github.com/Mushroom47/T4-WorkFlow.git",
+  "expected_commit": "106571dec88aa5c48baebd1a08b405e5a3ebc8d4",
+  "observed_commit": "106571dec88aa5c48baebd1a08b405e5a3ebc8d4",
+  "anonymous_snapshot_directory": "/tmp/t4-021-anonymous-knq_l3i8/repo",
+  "credential_boundary": {
+    "terminal_prompt_disabled": true,
+    "credential_helper_disabled_by_command": true,
+    "http_extraHeader_empty_by_command": true,
+    "system_and_global_git_config_disabled": true,
+    "askpass_disabled": true,
+    "inherited_environment_allowlist": [
+      "PATH",
+      "LANG",
+      "LC_ALL",
+      "TMPDIR",
+      "SSL_CERT_FILE",
+      "SSL_CERT_DIR"
+    ],
+    "private_evidence_cache_used": false
+  },
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "-c",
+        "credential.helper=",
+        "-c",
+        "http.extraHeader=",
+        "ls-remote",
+        "https://github.com/Mushroom47/T4-WorkFlow.git",
+        "refs/heads/main"
+      ],
+      "working_directory": null,
+      "returncode": 0,
+      "stdout": "106571dec88aa5c48baebd1a08b405e5a3ebc8d4\trefs/heads/main\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-c",
+        "credential.helper=",
+        "-c",
+        "http.extraHeader=",
+        "clone",
+        "--depth",
+        "1",
+        "--branch",
+        "main",
+        "https://github.com/Mushroom47/T4-WorkFlow.git",
+        "/tmp/t4-021-anonymous-knq_l3i8/repo"
+      ],
+      "working_directory": null,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "Cloning into '/tmp/t4-021-anonymous-knq_l3i8/repo'...\n"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "working_directory": "/tmp/t4-021-anonymous-knq_l3i8/repo",
+      "returncode": 0,
+      "stdout": "106571dec88aa5c48baebd1a08b405e5a3ebc8d4\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "tools/reference_suite.py",
+        "audit"
+      ],
+      "working_directory": "/tmp/t4-021-anonymous-knq_l3i8/repo",
+      "returncode": 0,
+      "stdout": "{\n  \"ok\": true,\n  \"records\": 78,\n  \"tasks\": 11,\n  \"status_counts\": {\n    \"verified\": 78\n  },\n  \"quality_counts\": {\n    \"fact_status\": {\n      \"verified\": 74,\n      \"bounded_verified\": 4\n    },\n    \"task_alignment\": {\n      \"aligned\": 78\n    },\n    \"first_publication_status\": {\n      \"unconfirmed\": 74,\n      \"not_applicable\": 4\n    },\n    \"official_outcome_status\": {\n      \"unconfirmed\": 78\n    }\n  },\n  \"input_hashes\": \"verified\",\n  \"reference_task_hashes\": \"verified\",\n  \"reference_schema\": \"verified\",\n  \"notice\": \"仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain=v1",
+        "--untracked-files=all"
+      ],
+      "working_directory": "/tmp/t4-021-anonymous-knq_l3i8/repo",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "checks": {
+    "anonymous_clone_succeeded": true,
+    "remote_main_matches_expected": true,
+    "cloned_HEAD_matches_expected": true,
+    "reference_suite_audit_pass": true,
+    "dataset_manifest_510_entries_match_hashes_and_bytes": true,
+    "dataset_manifest_exact_file_set": true,
+    "reference_hash_matches_manifest": true,
+    "reference_version_0_2_1": true,
+    "all_78_verified": true,
+    "all_223_local_only_catalog_paths_absent": true,
+    "working_tree_clean": true
+  },
+  "pass_flag": true,
+  "reference_sha256": "7ab6d8ab80c9fe7f9b99d1ae023792b8f862eb7d48d84557e0e8c83eb1aa9621",
+  "dataset_manifest_sha256": "1eb9640ad9b997d1130934057106d0cb672dc09f0517d567e680388779b84a6c",
+  "dataset_manifest_file_count": 510,
+  "dataset_manifest_errors": [],
+  "dataset_manifest_unlisted_files": [],
+  "local_only_catalog_count": 223,
+  "unexpected_present_local_only_paths": [],
+  "reference_suite_audit": {
+    "ok": true,
+    "records": 78,
+    "tasks": 11,
+    "status_counts": {
+      "verified": 78
+    },
+    "quality_counts": {
+      "fact_status": {
+        "verified": 74,
+        "bounded_verified": 4
+      },
+      "task_alignment": {
+        "aligned": 78
+      },
+      "first_publication_status": {
+        "unconfirmed": 74,
+        "not_applicable": 4
+      },
+      "official_outcome_status": {
+        "unconfirmed": 78
+      }
+    },
+    "input_hashes": "verified",
+    "reference_task_hashes": "verified",
+    "reference_schema": "verified",
+    "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
+  },
+  "limitations": [
+    "此次仅轻量复现；未重复全量单测、未运行需要隔离原件的完整公式审校或官方评测。",
+    "223项结论针对catalog列明路径；许可明确的官方冻结输入副本可能与其中原始下载副本同字节。"
+  ],
+  "repository_visibility": "PUBLIC",
+  "official_score": null,
+  "submission_id": null,
+  "code_and_dataset_snapshot_commit": "106571dec88aa5c48baebd1a08b405e5a3ebc8d4",
+  "ci_run_url": "https://github.com/Mushroom47/T4-WorkFlow/actions/runs/37665785245",
+  "ci_status": "completed",
+  "ci_conclusion": "success",
+  "container_task_count": 11,
+  "container_entity_count": 78,
+  "container_report_sha256": "ee360e77ff5adb08f7f81d27b27b8bcb27fdb807bd6954ff5a49df8a85dd3dc7",
+  "notice": "此证据针对已匿名克隆并由CI实际验证的106571d代码/数据快照；后续补充本证据的文档提交不改变该快照。真正官方评分仍未完成。"
+}
