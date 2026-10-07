@@ -38,10 +38,13 @@ def main():
     if config.get("Volumes") or config.get("Labels", {}).get("qfbench2.interface_version") != "2.0":
         raise RuntimeError("镜像含VOLUME或缺interface_version=2.0")
     runtime_user = f"{os.getuid()}:{os.getgid()}"
+    if os.getuid() == 0:
+        raise RuntimeError("预检须使用非root宿主用户，以同一UID运行容器")
     runtime = ["docker", "run", "--rm", "--platform", "linux/amd64", "--user", runtime_user, "--network", "none",
                "--read-only", "--cap-drop", "ALL", "--security-opt", "no-new-privileges",
-               "--pids-limit", "64", "--memory", "1g", "--cpus", "2",
-               "--tmpfs", "/tmp:rw,nosuid,size=64m"]
+               "--pids-limit", "64", "--ulimit", "nproc=64:64", "--ulimit", "nofile=1024:1024",
+               "--memory", "1g", "--memory-swap", "1g", "--cpus", "2",
+               "--tmpfs", "/tmp:rw,nosuid,nodev,noexec,size=64m"]
     probe = "import pathlib,json;print(json.dumps([str(p.relative_to('/app')) for p in pathlib.Path('/app').rglob('*') if p.is_file()]))"
     paths = json.loads(subprocess.check_output(runtime + ["--entrypoint", "python", args.image, "-c", probe], text=True))
     forbidden = {"reference.jsonl", "reference.csv", "outcome.json", "naive_answer.json", "task.json", "answer.json"}
@@ -78,6 +81,7 @@ def main():
               "image_id_kind": "本地image config digest，不能冒充registry manifest digest",
               "platform": "linux/amd64", "network": "none", "rootfs": "read-only",
               "runtime_user": runtime_user,
+              "runtime_flags": runtime[2:],
               "volumes": config.get("Volumes"), "interface_version": "2.0",
               "image_app_files": paths, "forbidden_reference_files": [],
               "task_count": len(results), "entity_count": sum(r["validation"]["entity_count"] for r in results),
