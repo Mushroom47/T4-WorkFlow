@@ -3,8 +3,7 @@
   "records": 78,
   "tasks": 11,
   "status_counts": {
-    "verified": 77,
-    "provisional": 1
+    "verified": 78
   },
   "quality_counts": {
     "fact_status": {
@@ -12,8 +11,7 @@
       "bounded_verified": 4
     },
     "task_alignment": {
-      "aligned": 77,
-      "ambiguous": 1
+      "aligned": 78
     },
     "first_publication_status": {
       "unconfirmed": 74,

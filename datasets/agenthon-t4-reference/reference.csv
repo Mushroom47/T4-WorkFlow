@@ -45,7 +45,7 @@ t4-eps-growth-2024Q3-banks,PNC,regression,,-3.0555555555555554,,percent,verified
 t4-eps-growth-2024Q3-banks,USB,regression,,13.186813186813186,,percent,verified,verified,aligned,unconfirmed,unconfirmed
 t4-eps-growth-2024Q3-banks,WFC,regression,,-4.054054054054054,,percent,verified,verified,aligned,unconfirmed,unconfirmed
 t4-eps-yoy-2023Q2-mixed,AMD,classification,down,0.02,,USD/share,verified,verified,aligned,unconfirmed,unconfirmed
-t4-eps-yoy-2023Q2-mixed,AMGN,classification,up,2.57,,USD/share,provisional,verified,ambiguous,unconfirmed,unconfirmed
+t4-eps-yoy-2023Q2-mixed,AMGN,classification,up,2.57,,USD/share,verified,verified,aligned,unconfirmed,unconfirmed
 t4-eps-yoy-2023Q2-mixed,DOW,classification,down,0.68,,USD/share,verified,verified,aligned,unconfirmed,unconfirmed
 t4-eps-yoy-2023Q2-mixed,HON,classification,up,2.22,,USD/share,verified,verified,aligned,unconfirmed,unconfirmed
 t4-eps-yoy-2023Q2-mixed,IBM,classification,up,1.72,,USD/share,verified,verified,aligned,unconfirmed,unconfirmed

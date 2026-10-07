@@ -1,0 +1,38 @@
+name: 第四赛道候选容器预检
+
+on:
+  push:
+    branches: [main]
+    paths: ["agent/**", "tools/**", "tests/**", "datasets/**", ".github/workflows/candidate-preflight.yml"]
+  pull_request:
+    paths: ["agent/**", "tools/**", "tests/**", "datasets/**", ".github/workflows/candidate-preflight.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  container:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: 读取当前提交
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: 运行测试与参考集审校
+        run: |
+          PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -q
+          PYTHONDONTWRITEBYTECODE=1 python3 tools/reference_suite.py audit
+      - name: 构建固定基础镜像的linux/amd64候选
+        run: docker build --platform linux/amd64 -f agent/Dockerfile -t t4-development:ci agent
+      - name: 对全部公开题进行真实断网只读容器预检
+        run: PYTHONDONTWRITEBYTECODE=1 python3 tools/run_candidate_preflight.py --image t4-development:ci --output "$RUNNER_TEMP/t4-candidate-preflight"
+      - name: 保存输出与验证报告
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: t4-candidate-preflight-${{ github.sha }}
+          path: ${{ runner.temp }}/t4-candidate-preflight/
+          if-no-files-found: warn
+          retention-days: 7

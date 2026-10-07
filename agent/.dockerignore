@@ -1,0 +1,14 @@
+**
+!Dockerfile
+!.dockerignore
+!analyze.py
+!candidate.py
+!baseline_agent/
+!baseline_agent/*.py
+!contracts/
+!contracts/*.py
+!LICENSE.upstream
+!THIRD-PARTY-NOTICES.md
+!upstream-manifest.json
+**/__pycache__/**
+**/*.py[cod]

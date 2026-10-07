@@ -140,8 +140,7 @@
     "synthetic_point_method": "上述实体的 point_forecast=0.5 是结构测试占位；事后 0/1 事件不被当作概率真值。",
     "half_width": 1.0,
     "reference_status_counts": {
-      "verified": 5,
-      "provisional": 1
+      "verified": 6
     },
     "task_canonical_sha256": "300a064ce17c42367db59687a2dc82970d082f13c2bdccdc25361cdfe2273fd1",
     "faithfulness": "not_evaluated",

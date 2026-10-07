@@ -1,0 +1,208 @@
+{
+  "ok": true,
+  "source_commit": "1c744e1d6725340643a533f436517d72b53ca0e1",
+  "scorer_version": "5.2.2",
+  "python": "3.14.4 (main, Apr  7 2026, 13:13:20) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "packages": {
+    "qfbench2-common": "2.5.1",
+    "jsonschema": "4.26.0",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1"
+  },
+  "schema_sha256": "8a997f21a929f09596db805430839b281548ad0babab29bd1f3daa8456d38049",
+  "tasks": [
+    {
+      "task_id": "t4-EXAMPLE-eps-beat",
+      "entity_count": 1,
+      "schema_pass": true,
+      "alignment_pass": true,
+      "claim_findings": [
+        {
+          "entity_id": "unit",
+          "claim_index": -1,
+          "code": "claim_tokens_unchecked",
+          "message": "needs tokenizer: no judge tokenizer is installed here, so the 400-judge-token claim cap was not checked"
+        }
+      ],
+      "reason_findings": [],
+      "deterministic_pass": true
+    },
+    {
+      "task_id": "t4-auction-btc-202411-us7",
+      "entity_count": 7,
+      "schema_pass": true,
+      "alignment_pass": true,
+      "claim_findings": [
+        {
+          "entity_id": "unit",
+          "claim_index": -1,
+          "code": "claim_tokens_unchecked",
+          "message": "needs tokenizer: no judge tokenizer is installed here, so the 400-judge-token claim cap was not checked"
+        }
+      ],
+      "reason_findings": [],
+      "deterministic_pass": true
+    },
+    {
+      "task_id": "t4-cotpos-202411-us10",
+      "entity_count": 10,
+      "schema_pass": true,
+      "alignment_pass": true,
+      "claim_findings": [
+        {
+          "entity_id": "unit",
+          "claim_index": -1,
+          "code": "claim_tokens_unchecked",
+          "message": "needs tokenizer: no judge tokenizer is installed here, so the 400-judge-token claim cap was not checked"
+        }
+      ],
+      "reason_findings": [],
+      "deterministic_pass": true
+    },
+    {
+      "task_id": "t4-cpicomp-202410-us11",
+      "entity_count": 11,
+      "schema_pass": true,
+      "alignment_pass": true,
+      "claim_findings": [
+        {
+          "entity_id": "unit",
+          "claim_index": -1,
+          "code": "claim_tokens_unchecked",
+          "message": "needs tokenizer: no judge tokenizer is installed here, so the 400-judge-token claim cap was not checked"
+        }
+      ],
+      "reason_findings": [],
+      "deterministic_pass": true
+    },
+    {
+      "task_id": "t4-credit-event-2023",
+      "entity_count": 8,
+      "schema_pass": true,
+      "alignment_pass": true,
+      "claim_findings": [
+        {
+          "entity_id": "unit",
+          "claim_index": -1,
+          "code": "claim_tokens_unchecked",
+          "message": "needs tokenizer: no judge tokenizer is installed here, so the 400-judge-token claim cap was not checked"
+        }
+      ],
+      "reason_findings": [],
+      "deterministic_pass": true
+    },
+    {
+      "task_id": "t4-eps-growth-2024Q3-banks",
+      "entity_count": 8,
+      "schema_pass": true,
+      "alignment_pass": true,
+      "claim_findings": [
+        {
+          "entity_id": "unit",
+          "claim_index": -1,
+          "code": "claim_tokens_unchecked",
+          "message": "needs tokenizer: no judge tokenizer is installed here, so the 400-judge-token claim cap was not checked"
+        }
+      ],
+      "reason_findings": [],
+      "deterministic_pass": true
+    },
+    {
+      "task_id": "t4-eps-yoy-2023Q2-mixed",
+      "entity_count": 6,
+      "schema_pass": true,
+      "alignment_pass": true,
+      "claim_findings": [
+        {
+          "entity_id": "unit",
+          "claim_index": -1,
+          "code": "claim_tokens_unchecked",
+          "message": "needs tokenizer: no judge tokenizer is installed here, so the 400-judge-token claim cap was not checked"
+        }
+      ],
+      "reason_findings": [],
+      "deterministic_pass": true
+    },
+    {
+      "task_id": "t4-fomc-curve-20220728",
+      "entity_count": 6,
+      "schema_pass": true,
+      "alignment_pass": true,
+      "claim_findings": [
+        {
+          "entity_id": "unit",
+          "claim_index": -1,
+          "code": "claim_tokens_unchecked",
+          "message": "needs tokenizer: no judge tokenizer is installed here, so the 400-judge-token claim cap was not checked"
+        }
+      ],
+      "reason_findings": [],
+      "deterministic_pass": true
+    },
+    {
+      "task_id": "t4-fomc-curve-20240918",
+      "entity_count": 6,
+      "schema_pass": true,
+      "alignment_pass": true,
+      "claim_findings": [
+        {
+          "entity_id": "unit",
+          "claim_index": -1,
+          "code": "claim_tokens_unchecked",
+          "message": "needs tokenizer: no judge tokenizer is installed here, so the 400-judge-token claim cap was not checked"
+        }
+      ],
+      "reason_findings": [],
+      "deterministic_pass": true
+    },
+    {
+      "task_id": "t4-macrorev-20240930-us6",
+      "entity_count": 12,
+      "schema_pass": true,
+      "alignment_pass": true,
+      "claim_findings": [
+        {
+          "entity_id": "unit",
+          "claim_index": -1,
+          "code": "claim_tokens_unchecked",
+          "message": "needs tokenizer: no judge tokenizer is installed here, so the 400-judge-token claim cap was not checked"
+        }
+      ],
+      "reason_findings": [],
+      "deterministic_pass": true
+    },
+    {
+      "task_id": "t4-postearn-20240201-megacap",
+      "entity_count": 3,
+      "schema_pass": true,
+      "alignment_pass": true,
+      "claim_findings": [
+        {
+          "entity_id": "unit",
+          "claim_index": -1,
+          "code": "claim_tokens_unchecked",
+          "message": "needs tokenizer: no judge tokenizer is installed here, so the 400-judge-token claim cap was not checked"
+        }
+      ],
+      "reason_findings": [],
+      "deterministic_pass": true
+    }
+  ],
+  "task_count": 11,
+  "entity_count": 78,
+  "missing_tasks": [],
+  "claim_findings_counts": {
+    "claim_tokens_unchecked": 11
+  },
+  "official_evaluation": false,
+  "official_score": null,
+  "not_executed": [
+    "production NLI contradiction",
+    "judge 400-token cap",
+    "Final reasoning grader",
+    "private outcome/naive scoring",
+    "官方平台评测"
+  ],
+  "notice": "只执行公开官方代码的本地确定性检查；fixture自测不证明预测能力。",
+  "reference_version": "0.2.1"
+}

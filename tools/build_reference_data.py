@@ -13,7 +13,7 @@ import zipfile
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "datasets/agenthon-t4-reference"
 COMMIT = "1c744e1d6725340643a533f436517d72b53ca0e1"
-REFERENCE_VERSION = "0.2.0"
+REFERENCE_VERSION = "0.2.1"
 REPO = "https://github.com/Agenthon-2026/track4-analysis-public"
 
 

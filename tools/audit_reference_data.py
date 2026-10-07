@@ -28,6 +28,8 @@ from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_DATA = ROOT / "datasets/agenthon-t4-reference"
+AMGN_DATE_CLARIFICATION_URL = (
+    "https://github.com/Agenthon-2026/track4-analysis-public/issues/27#issuecomment-6041356736")
 
 
 def read_json(path):
@@ -115,6 +117,21 @@ def earnings_source_dates(sources):
             role = "declared_other_source_dates"
         dates[role].add(published)
     return {key: sorted(values) for key, values in dates.items()}
+
+
+def amgn_original_dateline(text, *, schedule_notice=False):
+    """只解析本次保存的 AMGN Q2 公告/预告原件，不从参考项声明推断日期。"""
+    action = (r"today announced that it will report its second quarter financial results"
+              if schedule_notice else r"today announced financial results for the second quarter of 2023")
+    pattern = (r"THOUSAND OAKS,\s*Calif\.\s*,\s*"
+               r"(?P<date>[A-Z][a-z]+\.?\s+\d{1,2},\s+\d{4})"
+               r"\s*/PRNewswire/\s*--\s*Amgen\s*\(NASDAQ:\s*AMGN\)\s*" + action)
+    dates = []
+    for match in re.finditer(pattern, text):
+        value = match.group("date")
+        format_string = "%b. %d, %Y" if "." in value else "%B %d, %Y"
+        dates.append(datetime.strptime(value, format_string).date().isoformat())
+    return only(sorted(set(dates)), "AMGN原件的公司/季度/公告角色dateline")
 
 
 def pdf_ascii_text(path):
@@ -658,7 +675,36 @@ class Auditor:
             result["first_publication_status"] = "按原始申报 accession/filed 选单季观察值；业绩首稿正文未离线复核"
             result["provenance_class"] = "earliest_filing_xbrl_observation"
             findings.append("保存 SEC API 可复核 GAAP 单季数值与申报版本；10-Q 申报日不能替代首次 earnings 公告日。")
-            if result["date_semantics"]["release_vs_resolution"] == "release_after_resolution":
+            if tid == "t4-eps-yoy-2023Q2-mixed" and row["entity_id"] == "AMGN":
+                # #27 明确指定季度的结果不受 resolution/expected report 截止。
+                # 仍直接读原件保留日期事实，不能用 7/31 的预告替代 8/3 公告。
+                directory = self.sources / "amgn-resolution"
+                actual_path = directory / "amgn-actual-release.raw.html"
+                notice_path = directory / "amgn-scheduled-release.raw.html"
+                actual_date = amgn_original_dateline(visible_html_text(actual_path.read_text(encoding="utf-8")))
+                notice_date = amgn_original_dateline(visible_html_text(notice_path.read_text(encoding="utf-8")), schedule_notice=True)
+                checks["actual_release_date_matches_original_dateline"] = published == [actual_date]
+                checks["schedule_notice_date_matches_original_dateline"] = source_dates["declared_schedule_notice_dates"] == [notice_date]
+                checks["clarified_single_quarter_target"] = intended == "2023-06-30"
+                quality = row.get("quality", {})
+                checks["quality_fact_status_verified"] = quality.get("fact_status") == "verified"
+                checks["quality_task_semantics_aligned"] = quality.get("task_alignment") == "aligned"
+                checks["first_publication_separate_and_unknown"] = quality.get("first_publication_status") == "unconfirmed"
+                checks["official_outcome_alignment_not_claimed"] = quality.get("official_outcome_status") == "unconfirmed"
+                result["date_semantics"].update(
+                    original_actual_release_date=actual_date, original_schedule_notice_date=notice_date,
+                    declared_release_vs_resolution=result["date_semantics"]["release_vs_resolution"],
+                    release_vs_resolution="release_after_resolution" if actual_date > task["resolution_date"] else "release_on_or_before_resolution",
+                    expected_report_date=entity.get("expected_report_date"),
+                    resolution_date_role="context_only", expected_report_date_role="entity_table_context_only",
+                    cutoff_date_role="prediction_citations_only_not_result_sources",
+                    date_contract_clarification_url=AMGN_DATE_CLARIFICATION_URL,
+                    date_contract_clarification_published_at="2026-10-07T15:42:04Z")
+                result["first_publication_status"] = "原始SEC季度申报观察值及当前保存issuer日期原件；未取得2023年HTTP字节或完整首发修订链"
+                ev.extend([self.evidence(actual_path, "AMGN/2023Q2 已实际公布结果的 issuer dateline；不以参考published_at推断"),
+                           self.evidence(notice_path, "AMGN/2023Q2 将于随后日期公布结果的预告dateline；与实际公告分开")])
+                findings.append("官方#27明确本题 resolution/expected report 仅为context，目标是指定June季度GAAP diluted EPS；8/3晚于8/2的日期事实保留且不要求provisional。cutoff只约束推理引用，结果来源允许cutoff后；未比对私有outcome，首发版本仍未证明。")
+            elif result["date_semantics"]["release_vs_resolution"] == "release_after_resolution":
                 checks["late_release_kept_provisional"] = row["status"] == "provisional"
                 findings.append("实际业绩公告晚于题面 resolution；预告网页日期不替代实际披露日，必须保持 provisional 并保留官方 outcome 日期口径歧义。")
         elif tid == "t4-postearn-20240201-megacap":
@@ -889,7 +935,7 @@ class Auditor:
                 "EPS SEC 原始申报季度观察值与题面 prior 分开；过滤快照的 source_sha256 不是过滤副本字节哈希。",
                 "收益率补证直接读取三个相邻历史vintage；ALFRED可见日不等于Treasury全球首发时点。",
                 "补证清单内research_checks保持研究记录范围；脱敏副本hash只核对保存字节，不回读已删除的原始HTTP响应。",
-                "AMGN 2023Q2 实际 earnings release 晚于 task resolution；维持 provisional 并保留 outcome 日期定义歧义。",
+                "AMGN 2023Q2 实际8/3公告晚于题面8/2；官方#27已澄清resolution/expected report为context，指定季度结果对齐且可默认纳入。首发版本与私有outcome仍未确认。",
                 "信用负例按有限公开核查范围验收；无事件非穷尽保证，不能把本次 pass_flag 解读为 proof complete。",
                 "Yahoo 日线开盘 timestamp 只定位交易日，历史 NY 时区独立换算；无 vendor events 不等于完整公司行动证明。"],
             "hash_failures": hash_failures, "declared_but_unpreserved_sources": self.declared_missing,
@@ -938,12 +984,14 @@ def negative_controls(auditor, reference):
     if amgn:
         rows = copy.deepcopy(original)
         target = next(r for r in rows if r["task_id"] == amgn["task_id"] and r["entity_id"] == "AMGN")
-        target["status"] = "verified"
+        for source in target["sources"]:
+            if "/2023/08/amgen-reports-second-quarter-financial-results" in source["url"]:
+                source["published_at"] = "2023-07-31"
         report = auditor.audit(reference, rows)
         result = next(r for r in report["records"] if r["task_id"] == target["task_id"] and r["entity_id"] == "AMGN")
-        caught = result["checks"].get("late_release_kept_provisional") is False and not report["summary"]["pass_flag"]
+        caught = result["checks"].get("actual_release_date_matches_original_dateline") is False and not report["summary"]["pass_flag"]
         controls.append({"name": "AMGN预告掩盖实际延后披露", "task_id": target["task_id"], "entity_id": "AMGN",
-                         "expected_failed_check": "late_release_kept_provisional", "caught": caught})
+                         "expected_failed_check": "actual_release_date_matches_original_dateline", "caught": caught})
     return {"mode": "memory_only_negative_controls", "cases": controls, "pass_flag": all(x["caught"] for x in controls)}
 
 

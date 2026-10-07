@@ -12,6 +12,7 @@ TOOL = Path(__file__).resolve().parents[1] / "tools/audit_reference_data.py"
 SPEC = importlib.util.spec_from_file_location("audit_reference_data", TOOL)
 MODULE = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(MODULE)
+PRIVATE_CACHE = TOOL.parents[1] / ".local/private-evidence"
 
 
 class SupplementEvidenceTests(unittest.TestCase):
@@ -204,25 +205,80 @@ class EarningsSourceDateTests(unittest.TestCase):
         self.assertEqual(dates["declared_filing_dates"], [])
         self.assertEqual(dates["declared_presentation_dates"], [])
 
-    def test_saved_amgn_notice_cannot_bypass_late_release_constraint(self):
+    def test_amgn_original_dateline_rejects_wrong_company_or_date_role(self):
+        actual = ("THOUSAND OAKS, Calif. , Aug. 3, 2023 /PRNewswire/ -- Amgen (NASDAQ:AMGN) "
+                  "today announced financial results for the second quarter of 2023.")
+        notice = ("THOUSAND OAKS, Calif. , July 31, 2023 /PRNewswire/ -- Amgen (NASDAQ:AMGN) "
+                  "today announced that it will report its second quarter financial results on August 3, 2023.")
+        self.assertEqual(MODULE.amgn_original_dateline(actual), "2023-08-03")
+        self.assertEqual(MODULE.amgn_original_dateline(notice, schedule_notice=True), "2023-07-31")
+        for text in (notice, actual.replace("NASDAQ:AMGN", "NASDAQ:OTHER"),
+                     actual.replace("second quarter of 2023", "first quarter of 2023")):
+            with self.subTest(text=text), self.assertRaises(ValueError):
+                MODULE.amgn_original_dateline(text)
+        with self.assertRaises(ValueError):
+            MODULE.amgn_original_dateline(actual, schedule_notice=True)
+
+    @unittest.skipUnless(PRIVATE_CACHE.is_dir(), "实际SEC/IR原件需本地隔离证据缓存；公开套件不伪造原件")
+    def test_saved_amgn_clarification_keeps_actual_date_and_allows_aligned_verified(self):
+        from tools.public_sources import materialized_dataset
         data = TOOL.parents[1] / "datasets/agenthon-t4-reference"
         task_id = "t4-eps-yoy-2023Q2-mixed"
         rows = [json.loads(line) for line in (data / "reference.jsonl").read_text().splitlines()]
         row = next(row for row in rows if row["task_id"] == task_id and row["entity_id"] == "AMGN")
         task = json.loads((data / "inputs/units" / task_id / "task.json").read_text())
         entity = next(entity for entity in task["entities"] if entity["entity_id"] == "AMGN")
-        auditor = MODULE.Auditor(data)
-        for status, accepted in (("verified", False), ("provisional", True)):
-            with self.subTest(status=status):
+        overrides = json.loads((data / "research/resolution-overrides.json").read_text())["records"]
+        override = next(item for item in overrides if item["task_id"] == task_id and item["entity_id"] == "AMGN")
+        with materialized_dataset(data, PRIVATE_CACHE) as effective:
+            auditor = MODULE.Auditor(effective)
+            for status in ("verified", "provisional"):
                 candidate = copy.deepcopy(row)
                 candidate["status"] = status
+                candidate["quality"] = copy.deepcopy(override["quality"])
                 result = auditor.calculate(candidate, task, entity)
                 self.assertEqual(result["computed_value"], 2.57)
                 self.assertEqual(result["computed_label"], "up")
                 self.assertEqual(result["date_semantics"]["declared_release_dates"], ["2023-08-03"])
                 self.assertEqual(result["date_semantics"]["declared_schedule_notice_dates"], ["2023-07-31"])
                 self.assertEqual(result["date_semantics"]["release_vs_resolution"], "release_after_resolution")
-                self.assertIs(result["checks"]["late_release_kept_provisional"], accepted)
+                self.assertNotIn("late_release_kept_provisional", result["checks"])
+                self.assertTrue(all(result["checks"].values()))
+                self.assertEqual(result["date_semantics"]["resolution_date_role"], "context_only")
+                self.assertEqual(result["date_semantics"]["expected_report_date"], "2023-08-01")
+                self.assertEqual(result["date_semantics"]["original_actual_release_date"], "2023-08-03")
+                self.assertFalse(result["proof_complete"])
+            # 将预告日期冒用为实际公告日期，必须由保存原件抓住；不再把合法升级当错误。
+            candidate = copy.deepcopy(row)
+            candidate["status"] = "verified"
+            candidate["quality"] = copy.deepcopy(override["quality"])
+            for source in candidate["sources"]:
+                if "/2023/08/amgen-reports-second-quarter-financial-results" in source["url"]:
+                    source["published_at"] = "2023-07-31"
+            result = auditor.calculate(candidate, task, entity)
+            self.assertFalse(result["checks"]["actual_release_date_matches_original_dateline"])
+            self.assertEqual(result["date_semantics"]["original_actual_release_date"], "2023-08-03")
+            self.assertTrue(result["checks"]["schedule_notice_date_matches_original_dateline"])
+            self.assertEqual(result["date_semantics"]["release_vs_resolution"], "release_after_resolution")
+            self.assertEqual(result["date_semantics"]["declared_release_vs_resolution"], "release_on_or_before_resolution")
+
+    def test_amgn_clarification_does_not_remove_other_eps_date_guards(self):
+        auditor = MODULE.Auditor.__new__(MODULE.Auditor)
+        observations = [{"start": "2023-04-01", "end": "2023-06-30", "val": 3.0,
+                         "form": "10-Q", "filed": "2023-08-04", "accn": "synthetic"},
+                        {"start": "2022-04-01", "end": "2022-06-30", "val": 2.0,
+                         "form": "10-Q", "filed": "2022-08-04", "accn": "synthetic-prior"}]
+        auditor.eps_observations = lambda symbol: (observations, {}, "明确合成测试")
+        task = {"cutoff_date": "2023-07-14", "resolution_date": "2023-08-02"}
+        entity = {"quarter_reported": "2023-06-30", "prior_year_quarter": "2022-06-30", "prior_year_q_eps": 2.0}
+        row = {"task_id": "t4-eps-yoy-2023Q2-mixed", "entity_id": "SYNTHETIC",
+               "target_type": "classification", "reference_value": 3.0, "reference_label": "up", "sources": [
+            {"title": "Synthetic reports second quarter results", "url": "https://example.test/release",
+             "published_at": "2023-08-03"}]}
+        for status, accepted in (("verified", False), ("provisional", True)):
+            row["status"] = status
+            result = auditor.calculate(row, task, entity)
+            self.assertIs(result["checks"]["late_release_kept_provisional"], accepted)
 
 
 if __name__ == "__main__":

@@ -34,6 +34,12 @@ QUALITY_ENUMS = {
 
 
 def quality_eligible(row: dict[str, Any]) -> bool:
+    """按事实与任务对齐纳入；首发版本和私有 outcome 确认仍是独立维度。
+
+    AMGN 日期口径见官方 #27（2026-10-07）：resolution/expected report 是
+    context，不限制指定季度的结果证据。cutoff 约束预测引用，不能套到
+    reference.sources 的事后结果来源；引用截止仍由 validate 独立检查。
+    """
     quality = row.get("quality")
     return quality is not None and (quality["fact_status"] in {"verified", "bounded_verified"}
                                and quality["task_alignment"] == "aligned")

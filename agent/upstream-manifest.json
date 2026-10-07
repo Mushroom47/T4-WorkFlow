@@ -1,0 +1,57 @@
+{
+  "schema_version": "1",
+  "upstream_repository": "https://github.com/Agenthon-2026/track4-analysis-public",
+  "upstream_commit": "1c744e1d6725340643a533f436517d72b53ca0e1",
+  "license": "MIT",
+  "files": [
+    {
+      "path": "baseline_agent/__init__.py",
+      "upstream_path": "baselines/baseline_agent/__init__.py",
+      "sha256": "db6d8eef21ec94b5cb9344c6738351d662704d7a1cef4440d9323f587caed402",
+      "bytes": 1074,
+      "modified": false
+    },
+    {
+      "path": "baseline_agent/cli.py",
+      "upstream_path": "baselines/baseline_agent/cli.py",
+      "sha256": "24d6f404ea0228a2a138ffd50df489ca1a0994ba905185f51e837f4cf9cf33d5",
+      "bytes": 8361,
+      "modified": false
+    },
+    {
+      "path": "baseline_agent/indexer.py",
+      "upstream_path": "baselines/baseline_agent/indexer.py",
+      "sha256": "b3c5267b779f8ab1e736394984b152dab9f7c1d6c81d7e5855bfca53cd365d46",
+      "bytes": 1477,
+      "modified": false
+    },
+    {
+      "path": "baseline_agent/retriever.py",
+      "upstream_path": "baselines/baseline_agent/retriever.py",
+      "sha256": "2a5c889400afa2ffda2c17024df208e94ebeb8d26d449468baefa7e8fa07a9b4",
+      "bytes": 1740,
+      "modified": false
+    },
+    {
+      "path": "baseline_agent/reader.py",
+      "upstream_path": "baselines/baseline_agent/reader.py",
+      "sha256": "dfcf91b36743d11162dffec79153db44b7e5d62ece932629ca276ad0e6c4a460",
+      "bytes": 4469,
+      "modified": false
+    },
+    {
+      "path": "baseline_agent/formatter.py",
+      "upstream_path": "baselines/baseline_agent/formatter.py",
+      "sha256": "c59d8aa7b3b316798c45cee1e436e9f5dc05cad02e3366afadb531805376fc93",
+      "bytes": 3864,
+      "modified": false
+    },
+    {
+      "path": "LICENSE.upstream",
+      "upstream_path": "LICENSE",
+      "sha256": "508a77d2e7b51d98adeed32648ad124b7b30241a8e70b2e72c99f92d8e5874d1",
+      "bytes": 1036,
+      "modified": false
+    }
+  ]
+}

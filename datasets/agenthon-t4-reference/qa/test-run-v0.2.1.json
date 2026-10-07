@@ -1,0 +1,17 @@
+{
+  "executed_at": "2026-10-07T17:37:50.301370+00:00",
+  "command": [
+    "python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-q"
+  ],
+  "exit_code": 0,
+  "output": "----------------------------------------------------------------------\nRan 155 tests in 3.115s\n\nOK\n",
+  "reference_version": "0.2.1",
+  "reference_sha256": "7ab6d8ab80c9fe7f9b99d1ae023792b8f862eb7d48d84557e0e8c83eb1aa9621",
+  "scope": "当前工作区全部测试；其中1个AMGN原件集成测试在公开无缓存环境明确跳过，另外154项不依赖缓存。"
+}

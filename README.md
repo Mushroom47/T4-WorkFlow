@@ -7,13 +7,14 @@ Agenthon 2026 第四赛道 T4 Explainability 的规则资料与本地实验准�
 - 已完成官方公开规则、输入输出契约、评分机制、运行环境、数据与模型政策的研究和中文文档整理。
 - 已建立参赛要求检查清单和 Linear 阶段规划。
 - 已公开发布到 [Mushroom47/T4-WorkFlow](https://github.com/Mushroom47/T4-WorkFlow)，匿名克隆的114项测试与507份清单文件核对通过；旧历史保留私有归档。
-- 用户已确认整体方案并启用 goal 持续执行。公开11题/78实体输入已冻结；参考集0.2.0：77 verified/1 provisional；事实维度74 verified/4 bounded_verified，114项测试与11题本地结构链通过。
+- 用户已确认整体方案并启用 goal 持续执行。公开11题/78实体输入已冻结；参考集0.2.1：78 verified/0 provisional；事实维度74 verified/4 bounded_verified。本机155项测试通过，公开环境154项可独立运行，1项原件集成测试需合法本地缓存。
 - 已向官方发出 [诊断评测问询 #26](https://github.com/Agenthon-2026/track4-analysis-public/issues/26)；真实官方分数尚未取得。
 
 ## 文档入口
 
 | 入口 | 内容 |
 | --- | --- |
+| [官方答复闭环与评测候选](development-docs/agenthon-t4/18-官方答复闭环与评测候选.md) | 最新0.2.1、78条默认纳入、合规候选与真实评测剩余依赖 |
 | [暂定项收敛与公开发布](development-docs/agenthon-t4/17-暂定项收敛与公开发布.md) | 最新质量、字段、复现命令、许可隔离和未完成项 |
 | [项目文档索引](development-docs/00-README.md) | 本地文档组织与任务入口 |
 | [本地验收与评测待办](development-docs/agenthon-t4/15-本地验收与评测待办.md) | 首版数据、工具验证与官网评分待办 |
@@ -43,7 +44,7 @@ python3 development-docs/agenthon-t4/evidence/check_documents.py
 
 ## 使用参考数据
 
-同事优先取 `datasets/agenthon-t4-reference/reference.jsonl`、`reference.csv`、该目录 README 与最新收敛报告；JSONL有完整quality、acceptance_scope及来源，CSV便于浏览。四条信用bounded_verified须随覆盖限制使用；AMGN季度事实已确认，但日期合同待官方#27，默认比较排除。
+同事优先取 `datasets/agenthon-t4-reference/reference.jsonl`、`reference.csv`、该目录 README 与最新收敛报告；JSONL有完整quality、acceptance_scope及来源，CSV便于浏览。四条信用bounded_verified须随覆盖限制使用；AMGN季度事实与日期合同已确认，默认比较纳入；首次发布与私有outcome仍不自动确认。
 
 ```bash
 python3 -m unittest discover -s tests -q
@@ -52,3 +53,5 @@ python3 datasets/agenthon-t4-reference/sources/postearn-resolution/verify.py
 ```
 
 全原件审计需使用者按提供方条款取得原件并通过 `public-source-catalog.json` 校验。本地缓存不随仓库分享；公开派生自检不称原件审计。官方实际评分仍未取得。
+
+常规Development候选已在 `agent/` 准备，运行时只读本次task/corpus，不携带参考结果。真实Linux容器预检由仓库CI执行，实际结果见18号报告；官网分数仍未取得。

@@ -1,0 +1,50 @@
+{
+  "schema_version": "0.1.0",
+  "task_id": "t4-eps-yoy-2023Q2-mixed",
+  "entity_id": "AMGN",
+  "source": {
+    "url": "https://github.com/Agenthon-2026/track4-analysis-public/issues/27#issuecomment-6041356736",
+    "api_url": "https://api.github.com/repos/Agenthon-2026/track4-analysis-public/issues/comments/6041356736",
+    "author": "PawPol",
+    "author_association": "CONTRIBUTOR",
+    "published_at": "2026-10-07T15:42:04Z",
+    "updated_at": "2026-10-07T15:42:04Z",
+    "retrieved_at": "2026-10-07T17:17:55.523934+00:00",
+    "comment_body_sha256": "60bf5875e5bc23e6528222f9dd406338bf84edcad450003716ce0a477c0cf5c4",
+    "hash_scope": "取回时在内存对GitHub comment.body的UTF-8字节及完整API响应字节分别计算；全文未落盘，本文件是原创摘要，不能将这两个上游hash当成本地可回读原件hash。",
+    "raw_response_preserved": false,
+    "retrieval_command": [
+      "gh",
+      "api",
+      "repos/Agenthon-2026/track4-analysis-public/issues/comments/6041356736"
+    ],
+    "response_payload_sha": "c34ed087bc4b49aee67b0392a184ebe8ab84608d86a3c172e7b12dc5e8cef856"
+  },
+  "summary": [
+    "主办方确认AMGN实际公告为2023-08-03、8-K同日、10-Q为2023-08-04；题面expected_report_date与resolution_date均早于实际披露，日期填写有误。",
+    "cutoff_date约束提交推理中的引用段落；resolution_date用于说明预测horizon，expected_report_date仅为实体表列。scorer不读取后两字段，因此不会因公司实际报告晚于resolution而丢弃或区别处理该实体。",
+    "本题prompt与label_assertions指向June-2023单季度GAAP diluted EPS，与实体表prior_year_q_eps比较。point及interval均使用同一季度EPS；card来源指向SEC XBRL的EarningsPerShareDiluted。",
+    "结果目标为该指定季度实际披露的EPS。主办方讨论修正日期，若公开资源变更会在issue说明；日期修正不会改变评分。"
+  ],
+  "contract": {
+    "resolution_date_role": "context_only",
+    "expected_report_date_role": "entity_table_context_only",
+    "cutoff_date_role": "prediction_citations_only_not_result_sources",
+    "outcome_quarter_end": "2023-06-30",
+    "late_actual_release_does_not_exclude_target": true
+  },
+  "acceptance": {
+    "fact_status": "verified",
+    "task_alignment": "aligned",
+    "status": "verified",
+    "first_publication_status": "unconfirmed",
+    "official_outcome_status": "unconfirmed",
+    "official_outcome_compared": false
+  },
+  "limitations": [
+    "这是公开任务口径解释，未读取、请求或比对组织者私有outcome，也不是组织者对本地重建数值或标签的确认。",
+    "本摘要没有把结果来源限制在cutoff前；提交的引用截止仍需独立验证。",
+    "保留原冻结task日期和字节，不声明日期修正已经发布；本地数值/方向未变化。",
+    "首发HTTP历史字节与完整修订链仍未证明，不能由这次日期澄清升级first_publication_status。"
+  ]
+}

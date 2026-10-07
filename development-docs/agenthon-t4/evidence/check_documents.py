@@ -137,7 +137,7 @@ for (key, actual), expected in zip(formula_examples.items(), expected_formulas):
         errors.append(f"公式例子错误：{key}")
 
 report = {
-    "date": "2026-10-07", "timezone": "Asia/Hong_Kong",
+    "date": datetime.now(hong_kong).date().isoformat(), "timezone": "Asia/Hong_Kong",
     "scope": "仅文档/来源/示例语法静态检查；非参赛程序或官方评测",
     "status": "passed" if not errors else "failed", "counts": counts,
     "time_conversions": converted, "formula_examples": formula_examples,

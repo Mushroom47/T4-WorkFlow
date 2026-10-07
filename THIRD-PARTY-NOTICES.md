@@ -11,3 +11,5 @@ Yahoo、Nasdaq、企业 IR/Q4、SSGA、S&P 和补抓的发行人 SEC 申报全�
 官网规则允许公开参与者自己的作品，同时要求遵守各资源实际许可与第三方权利：[Licensing Policy](https://www.agenthon.net/licensing/)。比赛正式程序的截止日、训练和推理政策仍独立适用，本地研究参考库不等于合法的参赛查表程序。
 
 `qa/reordered-task.json` 是用于字段顺序验证的官方 task 修改副本，继承原 task 的 CC-BY-4.0 归属与 attribution；顶层 MIT 不覆盖该文件。
+
+`agent/baseline_agent/` 的六个 Python 文件复制自上述固定官方 commit 的 minimal stdlib baseline，保留其 MIT 许可及逐文件 hash，见 `agent/LICENSE.upstream`、`agent/THIRD-PARTY-NOTICES.md` 和 `agent/upstream-manifest.json`。`agent/contracts/task_table.py` 依据同一官方任务表格式适配；本项目新增的输入校验、入口与容器脚本按顶层许可发布。候选镜像只复制代码与这些许可文件。

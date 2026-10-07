@@ -697,5 +697,29 @@ class ReferenceSuiteTests(unittest.TestCase):
             self.assertEqual(report["missing_tasks"], [])
 
 
+class ClarifiedAMGNReferenceTests(unittest.TestCase):
+    def test_aligned_amgn_is_included_by_default_with_post_cutoff_result_sources(self):
+        suite = ReferenceSuite(DEFAULT_ROOT)
+        task_id = "t4-eps-yoy-2023Q2-mixed"
+        row = copy.deepcopy(suite.by_key[(task_id, "AMGN")])
+        overrides = json.loads((DEFAULT_ROOT / "research/resolution-overrides.json").read_text())["records"]
+        override = next(item for item in overrides if (item["task_id"], item["entity_id"]) == (task_id, "AMGN"))
+        row["status"], row["quality"] = override["status"], copy.deepcopy(override["quality"])
+        ReferenceSuite._record_shape(row, 1)
+        suite.by_key[(task_id, "AMGN")] = row
+        task = suite.load_unit(task_id)["task"]
+        self.assertTrue(any(s["published_at"] and s["published_at"] > task["cutoff_date"] for s in row["sources"]))
+        answer = suite.fixture(task_id)
+        report = suite.compare(answer)
+        result = next(item for item in report["entities"] if item["entity_id"] == "AMGN")
+        self.assertEqual((row["reference_value"], row["reference_label"]), (2.57, "up"))
+        self.assertTrue(result["included"])
+        self.assertEqual(result["inclusion_basis"], "local_verified")
+        self.assertEqual(result["quality"]["task_alignment"], "aligned")
+        self.assertEqual(result["quality"]["first_publication_status"], "unconfirmed")
+        self.assertEqual(result["quality"]["official_outcome_status"], "unconfirmed")
+        self.assertEqual(report["included_count"], len(task["entities"]))
+
+
 if __name__ == "__main__":
     unittest.main()

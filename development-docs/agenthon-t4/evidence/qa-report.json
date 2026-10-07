@@ -1,15 +1,15 @@
 {
-  "date": "2026-10-07",
+  "date": "2026-10-08",
   "timezone": "Asia/Hong_Kong",
   "scope": "仅文档/来源/示例语法静态检查；非参赛程序或官方评测",
   "status": "passed",
   "counts": {
-    "markdown_files": 20,
-    "local_links": 53,
+    "markdown_files": 21,
+    "local_links": 63,
     "json_examples": 4,
     "python_examples": 7,
-    "github_source_links": 54,
-    "source_hashes": 37
+    "github_source_links": 57,
+    "source_hashes": 46
   },
   "time_conversions": {
     "registration_development_close": "2026-10-13 19:59",

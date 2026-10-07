@@ -1,0 +1,232 @@
+{
+  "candidate": "stdlib-development-v1",
+  "units": [
+    {
+      "task_id": "t4-EXAMPLE-eps-beat",
+      "returncode": 0,
+      "elapsed_seconds": 0.06258,
+      "entities": 1,
+      "claims": 1,
+      "task_row_claims": 1,
+      "max_claim_chars": 160,
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "<项目根目录>/agent/analyze.py",
+        "analyze",
+        "--task",
+        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-EXAMPLE-eps-beat/task.json",
+        "--corpus",
+        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-EXAMPLE-eps-beat/corpus",
+        "--out",
+        "/tmp/t4-candidate-dev-20261008/answers/t4-EXAMPLE-eps-beat/answer.json"
+      ]
+    },
+    {
+      "task_id": "t4-auction-btc-202411-us7",
+      "returncode": 0,
+      "elapsed_seconds": 0.06299,
+      "entities": 7,
+      "claims": 7,
+      "task_row_claims": 0,
+      "max_claim_chars": 160,
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "<项目根目录>/agent/analyze.py",
+        "analyze",
+        "--task",
+        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-auction-btc-202411-us7/task.json",
+        "--corpus",
+        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-auction-btc-202411-us7/corpus",
+        "--out",
+        "/tmp/t4-candidate-dev-20261008/answers/t4-auction-btc-202411-us7/answer.json"
+      ]
+    },
+    {
+      "task_id": "t4-cotpos-202411-us10",
+      "returncode": 0,
+      "elapsed_seconds": 0.062761,
+      "entities": 10,
+      "claims": 10,
+      "task_row_claims": 0,
+      "max_claim_chars": 160,
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "<项目根目录>/agent/analyze.py",
+        "analyze",
+        "--task",
+        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-cotpos-202411-us10/task.json",
+        "--corpus",
+        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-cotpos-202411-us10/corpus",
+        "--out",
+        "/tmp/t4-candidate-dev-20261008/answers/t4-cotpos-202411-us10/answer.json"
+      ]
+    },
+    {
+      "task_id": "t4-cpicomp-202410-us11",
+      "returncode": 0,
+      "elapsed_seconds": 0.065537,
+      "entities": 11,
+      "claims": 11,
+      "task_row_claims": 0,
+      "max_claim_chars": 160,
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "<项目根目录>/agent/analyze.py",
+        "analyze",
+        "--task",
+        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-cpicomp-202410-us11/task.json",
+        "--corpus",
+        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-cpicomp-202410-us11/corpus",
+        "--out",
+        "/tmp/t4-candidate-dev-20261008/answers/t4-cpicomp-202410-us11/answer.json"
+      ]
+    },
+    {
+      "task_id": "t4-credit-event-2023",
+      "returncode": 0,
+      "elapsed_seconds": 0.14029,
+      "entities": 8,
+      "claims": 8,
+      "task_row_claims": 0,
+      "max_claim_chars": 160,
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "<项目根目录>/agent/analyze.py",
+        "analyze",
+        "--task",
+        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-credit-event-2023/task.json",
+        "--corpus",
+        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-credit-event-2023/corpus",
+        "--out",
+        "/tmp/t4-candidate-dev-20261008/answers/t4-credit-event-2023/answer.json"
+      ]
+    },
+    {
+      "task_id": "t4-eps-growth-2024Q3-banks",
+      "returncode": 0,
+      "elapsed_seconds": 0.190338,
+      "entities": 8,
+      "claims": 8,
+      "task_row_claims": 0,
+      "max_claim_chars": 160,
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "<项目根目录>/agent/analyze.py",
+        "analyze",
+        "--task",
+        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-eps-growth-2024Q3-banks/task.json",
+        "--corpus",
+        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-eps-growth-2024Q3-banks/corpus",
+        "--out",
+        "/tmp/t4-candidate-dev-20261008/answers/t4-eps-growth-2024Q3-banks/answer.json"
+      ]
+    },
+    {
+      "task_id": "t4-eps-yoy-2023Q2-mixed",
+      "returncode": 0,
+      "elapsed_seconds": 0.08764,
+      "entities": 6,
+      "claims": 6,
+      "task_row_claims": 0,
+      "max_claim_chars": 160,
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "<项目根目录>/agent/analyze.py",
+        "analyze",
+        "--task",
+        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-eps-yoy-2023Q2-mixed/task.json",
+        "--corpus",
+        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-eps-yoy-2023Q2-mixed/corpus",
+        "--out",
+        "/tmp/t4-candidate-dev-20261008/answers/t4-eps-yoy-2023Q2-mixed/answer.json"
+      ]
+    },
+    {
+      "task_id": "t4-fomc-curve-20220728",
+      "returncode": 0,
+      "elapsed_seconds": 0.056884,
+      "entities": 6,
+      "claims": 6,
+      "task_row_claims": 0,
+      "max_claim_chars": 160,
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "<项目根目录>/agent/analyze.py",
+        "analyze",
+        "--task",
+        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-fomc-curve-20220728/task.json",
+        "--corpus",
+        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-fomc-curve-20220728/corpus",
+        "--out",
+        "/tmp/t4-candidate-dev-20261008/answers/t4-fomc-curve-20220728/answer.json"
+      ]
+    },
+    {
+      "task_id": "t4-fomc-curve-20240918",
+      "returncode": 0,
+      "elapsed_seconds": 0.056878,
+      "entities": 6,
+      "claims": 6,
+      "task_row_claims": 0,
+      "max_claim_chars": 160,
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "<项目根目录>/agent/analyze.py",
+        "analyze",
+        "--task",
+        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-fomc-curve-20240918/task.json",
+        "--corpus",
+        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-fomc-curve-20240918/corpus",
+        "--out",
+        "/tmp/t4-candidate-dev-20261008/answers/t4-fomc-curve-20240918/answer.json"
+      ]
+    },
+    {
+      "task_id": "t4-macrorev-20240930-us6",
+      "returncode": 0,
+      "elapsed_seconds": 0.058615,
+      "entities": 12,
+      "claims": 12,
+      "task_row_claims": 0,
+      "max_claim_chars": 160,
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "<项目根目录>/agent/analyze.py",
+        "analyze",
+        "--task",
+        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-macrorev-20240930-us6/task.json",
+        "--corpus",
+        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-macrorev-20240930-us6/corpus",
+        "--out",
+        "/tmp/t4-candidate-dev-20261008/answers/t4-macrorev-20240930-us6/answer.json"
+      ]
+    },
+    {
+      "task_id": "t4-postearn-20240201-megacap",
+      "returncode": 0,
+      "elapsed_seconds": 0.0741,
+      "entities": 3,
+      "claims": 3,
+      "task_row_claims": 0,
+      "max_claim_chars": 160,
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "<项目根目录>/agent/analyze.py",
+        "analyze",
+        "--task",
+        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-postearn-20240201-megacap/task.json",
+        "--corpus",
+        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-postearn-20240201-megacap/corpus",
+        "--out",
+        "/tmp/t4-candidate-dev-20261008/answers/t4-postearn-20240201-megacap/answer.json"
+      ]
+    }
+  ],
+  "unit_count": 11,
+  "entity_count": 78,
+  "elapsed_seconds": 0.919706,
+  "official_evaluation": false,
+  "official_score": null,
+  "reference_data_used": false,
+  "external_data_used": false
+}

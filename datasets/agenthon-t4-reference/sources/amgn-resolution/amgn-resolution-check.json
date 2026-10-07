@@ -90,7 +90,7 @@
   "schedule_notice_date": "2023-07-31",
   "scheduled_and_actual_release_date": "2023-08-03",
   "facts_status": "verified",
-  "official_task_date_contract_status": "awaiting_organizer_clarification",
+  "official_task_date_contract_status": "aligned_by_public_clarification",
   "official_outcome_compared": false,
   "checks": {
     "official_HEAD_matches_frozen_baseline": true,
@@ -105,7 +105,10 @@
     "schedule_notice_before_resolution": true,
     "amgen_terms_reserve_public_use_and_automated_collection": true,
     "all_preserved_source_hashes_and_bytes_match": true,
-    "issue26_has_no_comments_at_retrieval": true
+    "issue26_has_no_comments_at_retrieval": true,
+    "public_clarification_defines_dates_as_context": true,
+    "specified_quarter_target_unchanged": true,
+    "private_outcome_not_compared": true
   },
   "source_hash_checks": [
     {
@@ -266,9 +269,25 @@
   ],
   "limitations": [
     "已存当前issuer原始URL正文和earliest saved SEC observation支持历史事实，但本次并未取得当年HTTP字节快照；不能把完整修订链或全球最早公开时点称为已证明。",
-    "task prompt与label assertions明确June季度而没有明写before resolution；该事实不能替主办方决定resolution字段是否是硬截止。",
+    "旧核查曾将resolution是否硬截止列为未确认；官方#27已明确其为context。保留原题面日期，不声明公开task修正版已发布或私有outcome已比对。",
     "只回读3/23/24/25/26相关issue完整评论及全部公开issue正文；没有声称逐条检查所有issue评论。",
     "下载SEC10-Q正文、SEC网站说明与新submissions均HTTP403；10-Q正文只由web阅读确认，没有伪造保存字节哈希。",
     "Amgen网站§3有公共使用和自动采集限制；该目录原始issuer材料不能因为公开可读或顶层MIT就直接进入公开包。"
-  ]
+  ],
+  "historical_date_contract_check": {
+    "checked_at": "2026-10-07T13:14:07.982018+00:00",
+    "official_task_date_contract_status": "awaiting_organizer_clarification",
+    "scope": "保留主办方回复前的研究判断；后续公开解释已解除该歧义，不覆盖原取回/事实核验时间。"
+  },
+  "date_contract_updated_at": "2026-10-07T17:27:54.274312+00:00",
+  "task_alignment": "aligned",
+  "status": "verified",
+  "first_publication_status": "unconfirmed",
+  "official_outcome_status": "unconfirmed",
+  "official_clarification": {
+    "url": "https://github.com/Agenthon-2026/track4-analysis-public/issues/27#issuecomment-6041356736",
+    "published_at": "2026-10-07T15:42:04Z",
+    "summary_path": "official-clarification-20261007.json",
+    "comment_body_sha256": "60bf5875e5bc23e6528222f9dd406338bf84edcad450003716ce0a477c0cf5c4"
+  }
 }

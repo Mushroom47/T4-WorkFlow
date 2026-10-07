@@ -5,18 +5,25 @@
     {
       "task_id": "t4-eps-yoy-2023Q2-mixed",
       "entity_id": "AMGN",
-      "status": "provisional",
+      "status": "verified",
       "quality": {
         "fact_status": "verified",
-        "task_alignment": "ambiguous",
+        "task_alignment": "aligned",
         "first_publication_status": "unconfirmed",
         "official_outcome_status": "unconfirmed",
-        "acceptance_scope": "June季度GAAP diluted EPS事实可核对；实际8/3公告晚于task resolution=8/2，预告7/31不能代替实际公告。等待官方#27说明日期字段，默认不纳入task一致性比较。",
+        "acceptance_scope": "June-2023单季度GAAP diluted EPS事实已由SEC原始观察值核对。官方#27（2026-10-07）明确resolution_date/expected_report_date仅为context，实际8/3晚于题面8/2不影响指定季度目标；保留7/31预告与8/3实际公告日期，默认纳入本地task一致性比较。首发版本及私有outcome仍未确认。",
         "evidence": [
-          "sources/amgn-resolution/amgn-resolution-check.json"
+          "sources/amgn-resolution/amgn-resolution-check.json",
+          "sources/amgn-resolution/official-clarification-20261007.json"
         ],
-        "clarification_url": "https://github.com/Agenthon-2026/track4-analysis-public/issues/27"
-      }
+        "clarification_url": "https://github.com/Agenthon-2026/track4-analysis-public/issues/27#issuecomment-6041356736",
+        "clarification_published_at": "2026-10-07T15:42:04Z"
+      },
+      "notes": [
+        "公开历史披露的事实参考；不是组织者持有的官方outcome。",
+        "仅作为事后本地研究/开发验证数据；不加入预测运行时冻结证据，不作历史答案查表。",
+        "季度EPS 2.57实际公告2023-08-03，10-Q于2023-08-04；题面resolution_date=2023-08-02与expected_report_date=2023-08-01保留原字节。官方#27已明确后两日期是context，实际晚披露不改变指定季度目标；本地事实和task口径均已确认，首发版本及私有outcome未确认。"
+      ]
     },
     {
       "task_id": "t4-postearn-20240201-megacap",

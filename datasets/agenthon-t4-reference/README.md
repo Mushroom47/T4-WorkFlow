@@ -2,7 +2,7 @@
 
 本目录保存十个公开 Development 练习题及一个 EXAMPLE 的 78 个实体参考结果。它是独立重建的本地研究资料，没有主办方私有 outcome 或 naive answers；官方评分尚未取得。
 
-当前参考版本 **0.2.0**，77 verified / 1 provisional / 0 unresolved。四个信用负例为有明确范围的 bounded_verified；AMGN历史EPS事实已确认，task日期歧义单列并默认排除。完整变更与测试见[暂定项收敛与公开发布](../../development-docs/agenthon-t4/17-暂定项收敛与公开发布.md)。核心数值和标签未改变，首次发布和官方私有outcome不因本地验收而自动确认。
+当前参考版本 **0.2.1**，78 verified / 0 provisional / 0 unresolved。四个信用负例为有明确范围的 bounded_verified；AMGN历史EPS事实及官方task日期解释已确认，默认纳入。完整变更与测试见[官方答复闭环与评测候选](../../development-docs/agenthon-t4/18-官方答复闭环与评测候选.md)。核心数值和标签未改变，首次发布和官方私有outcome不因本地验收而自动确认。
 
 ## 文件与使用顺序
 
@@ -44,6 +44,6 @@ GAAP/adjusted EPS、持续经营/总利润、reference month/vintage、总回报
 
 复制的官方输入保留 [LICENSE](inputs/LICENSE)、[DATA-LICENSE](inputs/DATA-LICENSE.md) 和 [THIRD-PARTY-NOTICES](inputs/THIRD-PARTY-NOTICES.md)。逐文件 manifest 许可优先，不能把这些原始来源概括为本项目重新授权。外部结果来源的权利归其提供方；223份许可未确认原件/完整提取仅本地保留。顶层MIT不覆盖第三方材料，详见顶层THIRD-PARTY-NOTICES。
 
-当前合并状态为77 verified / 1 provisional / 0 unresolved；78键完整覆盖。四独立质量字段见JSONL的quality和CSV末四列。使用及测试命令见 [本地验收报告](../../development-docs/agenthon-t4/15-本地验收与评测待办.md)。
+当前合并状态为78 verified / 0 provisional / 0 unresolved；78键完整覆盖。四独立质量字段见JSONL的quality和CSV末四列。使用及测试命令见 [本地验收报告](../../development-docs/agenthon-t4/15-本地验收与评测待办.md)。
 
-公开派生自检无需缓存；全原件审计命令为 `python3 tools/audit_reference_data.py --private-sources .local/private-evidence --self-check`。原件合法取得后放入cache/sources/...相对布局并核对catalog的hash。缺原件时工具明确失败，不把元数据当原件。research四组文件为0.1.1基线，resolution-overrides.json是0.2.0更新，reference.jsonl为当前权威合并入口。
+公开派生自检无需缓存；全原件审计命令为 `python3 tools/audit_reference_data.py --private-sources .local/private-evidence --self-check`。原件合法取得后放入cache/sources/...相对布局并核对catalog的hash。缺原件时工具明确失败，不把元数据当原件。research四组文件为0.1.1基线，resolution-overrides.json是当前质量覆盖更新，reference.jsonl为当前权威合并入口。

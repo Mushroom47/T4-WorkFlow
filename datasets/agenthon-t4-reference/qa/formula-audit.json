@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "audited_at": "2026-10-07T13:48:29.815087+00:00",
+  "audited_at": "2026-10-07T17:46:21.418192+00:00",
   "mode": "offline_legally_acquired_sources",
   "official_outcome_compared": false,
   "environment": {
@@ -9,12 +9,12 @@
     "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
     "working_directory": "项目根目录",
     "command": "python3 tools/audit_reference_data.py --private-sources <本地证据缓存> --self-check",
-    "script_sha256": "db837c9a64f5fd100df923cd93c092c83ea74b02c128bf4e973ee587c6f691ef",
+    "script_sha256": "d016179e48d5d11624a40bb137bc9ee165225032e86eabe50687cfdb50acff1e",
     "third_party_dependencies": []
   },
   "input": {
     "reference_path": "reference.jsonl",
-    "reference_sha256": "9e5e94a3adabda35568f05168aaab308df194729126876790fb10f8b7500e326",
+    "reference_sha256": "7ab6d8ab80c9fe7f9b99d1ae023792b8f862eb7d48d84557e0e8c83eb1aa9621",
     "source_manifest_sha256": "36d61f0a20eeb2fd7f2a567383405e5656a0877a381722b97bd21e8e26a41b24",
     "source_commit": "1c744e1d6725340643a533f436517d72b53ca0e1"
   },
@@ -22,8 +22,8 @@
     "records": 78,
     "tasks": 11,
     "reference_status_counts": {
-      "verified": 77,
-      "provisional": 1,
+      "verified": 78,
+      "provisional": 0,
       "unresolved": 0
     },
     "row_integrity_pass": 78,
@@ -68,7 +68,7 @@
     "EPS SEC 原始申报季度观察值与题面 prior 分开；过滤快照的 source_sha256 不是过滤副本字节哈希。",
     "收益率补证直接读取三个相邻历史vintage；ALFRED可见日不等于Treasury全球首发时点。",
     "补证清单内research_checks保持研究记录范围；脱敏副本hash只核对保存字节，不回读已删除的原始HTTP响应。",
-    "AMGN 2023Q2 实际 earnings release 晚于 task resolution；维持 provisional 并保留 outcome 日期定义歧义。",
+    "AMGN 2023Q2 实际8/3公告晚于题面8/2；官方#27已澄清resolution/expected report为context，指定季度结果对齐且可默认纳入。首发版本与私有outcome仍未确认。",
     "信用负例按有限公开核查范围验收；无事件非穷尽保证，不能把本次 pass_flag 解读为 proof complete。",
     "Yahoo 日线开盘 timestamp 只定位交易日，历史 NY 时区独立换算；无 vendor events 不等于完整公司行动证明。"
   ],
@@ -127,7 +127,7 @@
   "supplementary_evidence": [
     {
       "manifest": "sources/amgn-resolution/evidence-manifest.json",
-      "manifest_sha256": "c4ecad5147f1b0b4499e85c6f253aeb9343d97cb2b33032323768af3e6de0d05",
+      "manifest_sha256": "8684470ed42071483b50d6d0072fb2a963fa081d74645544b41c243559a2a6de",
       "preserved_source_count": 31,
       "research_checks": {
         "official_HEAD_matches_frozen_baseline": true,
@@ -142,11 +142,14 @@
         "schedule_notice_before_resolution": true,
         "amgen_terms_reserve_public_use_and_automated_collection": true,
         "all_preserved_source_hashes_and_bytes_match": true,
-        "issue26_has_no_comments_at_retrieval": true
+        "issue26_has_no_comments_at_retrieval": true,
+        "public_clarification_defines_dates_as_context": true,
+        "specified_quarter_target_unchanged": true,
+        "private_outcome_not_compared": true
       },
       "limitations": [
         "已存当前issuer原始URL正文和earliest saved SEC observation支持历史事实，但本次并未取得当年HTTP字节快照；不能把完整修订链或全球最早公开时点称为已证明。",
-        "task prompt与label assertions明确June季度而没有明写before resolution；该事实不能替主办方决定resolution字段是否是硬截止。",
+        "旧日期合同歧义已由官方#27公开解释解除；原冻结日期与历史取回记录仍保留，未比对私有outcome或证明全球首发版本。",
         "只回读3/23/24/25/26相关issue完整评论及全部公开issue正文；没有声称逐条检查所有issue评论。",
         "下载SEC10-Q正文、SEC网站说明与新submissions均HTTP403；10-Q正文只由web阅读确认，没有伪造保存字节哈希。",
         "Amgen网站§3有公共使用和自动采集限制；该目录原始issuer材料不能因为公开可读或顶层MIT就直接进入公开包。"
@@ -4346,12 +4349,12 @@
       "urls": [
         "https://www.amgen.com/newsroom/press-releases/2023/08/amgen-reports-second-quarter-financial-results"
       ],
-      "used_in_independent_calculation": false
+      "used_in_independent_calculation": true
     },
     {
       "path": "sources/amgn-resolution/amgn-resolution-check.json",
-      "bytes": 7382,
-      "actual_sha256": "fc034791f8814369b11023ccdabd537a9b5669f97bb100a3fc3816c781fb44b7",
+      "bytes": 8419,
+      "actual_sha256": "cdee79b755f6d5f41a49658777d7ab2e85f9f40610bc67932bc09e07852cb67e",
       "declarations": [
         {
           "expected_sha256": null,
@@ -4381,12 +4384,12 @@
       "urls": [
         "https://www.amgen.com/newsroom/press-releases/2023/07/amgen-announces-webcast-of-2023-second-quarter-financial-results"
       ],
-      "used_in_independent_calculation": false
+      "used_in_independent_calculation": true
     },
     {
       "path": "sources/amgn-resolution/evidence-manifest.json",
-      "bytes": 30482,
-      "actual_sha256": "c4ecad5147f1b0b4499e85c6f253aeb9343d97cb2b33032323768af3e6de0d05",
+      "bytes": 31167,
+      "actual_sha256": "8684470ed42071483b50d6d0072fb2a963fa081d74645544b41c243559a2a6de",
       "declarations": [
         {
           "expected_sha256": null,
@@ -4713,6 +4716,20 @@
       "used_in_independent_calculation": false
     },
     {
+      "path": "sources/amgn-resolution/official-clarification-20261007.json",
+      "bytes": 3005,
+      "actual_sha256": "1419cd9d1a05f4d9d130a0f3fe60b033de1ebcb67c8e507d2126d6dc789c029e",
+      "declarations": [
+        {
+          "expected_sha256": null,
+          "hash_match": null,
+          "basis": "本次离线指纹；没有既有哈希时不构成下载完整性证明"
+        }
+      ],
+      "urls": [],
+      "used_in_independent_calculation": false
+    },
+    {
       "path": "sources/amgn-resolution/official-docs--ARTIFACT-POLICY.md",
       "bytes": 4190,
       "actual_sha256": "ddb292d371325473d02da5e70418f10ad0ecbefab9d1b67463f51b3ea68e62e9",
@@ -4959,8 +4976,8 @@
     },
     {
       "path": "sources/amgn-resolution/report.md",
-      "bytes": 7688,
-      "actual_sha256": "0f0bd18b3ac4568165903c3a7f71c2930fa6aa5ace41447a40f89483ebf72c7e",
+      "bytes": 8190,
+      "actual_sha256": "046f99d22e74ad2e798b61e44df8e2d1c98794d6ba6d45f628b2e004680d9fc3",
       "declarations": [
         {
           "expected_sha256": null,
@@ -20204,7 +20221,7 @@
     {
       "task_id": "t4-eps-yoy-2023Q2-mixed",
       "entity_id": "AMGN",
-      "reference_status": "provisional",
+      "reference_status": "verified",
       "reference_value": 2.57,
       "reference_label": "up",
       "checks": {
@@ -20221,7 +20238,13 @@
         "GAAP_diluted_tag": true,
         "prior_original_SEC_matches_task_baseline": true,
         "non_tie_label_defined": true,
-        "late_release_kept_provisional": true,
+        "actual_release_date_matches_original_dateline": true,
+        "schedule_notice_date_matches_original_dateline": true,
+        "clarified_single_quarter_target": true,
+        "quality_fact_status_verified": true,
+        "quality_task_semantics_aligned": true,
+        "first_publication_separate_and_unknown": true,
+        "official_outcome_alignment_not_claimed": true,
         "reference_value_matches_original_source_calculation": true,
         "reference_label_matches_calculation": true
       },
@@ -20297,15 +20320,31 @@
             true,
             true
           ]
+        },
+        {
+          "path": "sources/amgn-resolution/amgn-actual-release.raw.html",
+          "sha256": "8ca813159e53968b635e6d98d614c1582aa7ecb83f587e57c6add6c84441ffec",
+          "locator": "AMGN/2023Q2 已实际公布结果的 issuer dateline；不以参考published_at推断",
+          "declared_hash_matches": [
+            true
+          ]
+        },
+        {
+          "path": "sources/amgn-resolution/amgn-scheduled-release.raw.html",
+          "sha256": "4c0eff6170456273256897f9409478929c8ad54cea0a59ea105a2d6c773ba114",
+          "locator": "AMGN/2023Q2 将于随后日期公布结果的预告dateline；与实际公告分开",
+          "declared_hash_matches": [
+            true
+          ]
         }
       ],
       "findings": [
         "保存 SEC API 可复核 GAAP 单季数值与申报版本；10-Q 申报日不能替代首次 earnings 公告日。",
-        "实际业绩公告晚于题面 resolution；预告网页日期不替代实际披露日，必须保持 provisional 并保留官方 outcome 日期口径歧义。"
+        "官方#27明确本题 resolution/expected report 仅为context，目标是指定June季度GAAP diluted EPS；8/3晚于8/2的日期事实保留且不要求provisional。cutoff只约束推理引用，结果来源允许cutoff后；未比对私有outcome，首发版本仍未证明。"
       ],
       "proof_complete": false,
       "provenance_class": "earliest_filing_xbrl_observation",
-      "first_publication_status": "按原始申报 accession/filed 选单季观察值；业绩首稿正文未离线复核",
+      "first_publication_status": "原始SEC季度申报观察值及当前保存issuer日期原件；未取得2023年HTTP字节或完整首发修订链",
       "date_semantics": {
         "cutoff_date": "2023-07-14",
         "resolution_date": "2023-08-02",
@@ -20322,7 +20361,16 @@
         "declared_presentation_dates": [],
         "declared_other_source_dates": [],
         "release_date_scope": "按已登记来源标题/URL区分公告、预告、申报和演示；声明日期不自动证明首次发布",
-        "release_vs_resolution": "release_after_resolution"
+        "release_vs_resolution": "release_after_resolution",
+        "original_actual_release_date": "2023-08-03",
+        "original_schedule_notice_date": "2023-07-31",
+        "declared_release_vs_resolution": "release_after_resolution",
+        "expected_report_date": "2023-08-01",
+        "resolution_date_role": "context_only",
+        "expected_report_date_role": "entity_table_context_only",
+        "cutoff_date_role": "prediction_citations_only_not_result_sources",
+        "date_contract_clarification_url": "https://github.com/Agenthon-2026/track4-analysis-public/issues/27#issuecomment-6041356736",
+        "date_contract_clarification_published_at": "2026-10-07T15:42:04Z"
       },
       "calculation_pass": true,
       "pass_flag": true
@@ -28221,7 +28269,7 @@
         "name": "AMGN预告掩盖实际延后披露",
         "task_id": "t4-eps-yoy-2023Q2-mixed",
         "entity_id": "AMGN",
-        "expected_failed_check": "late_release_kept_provisional",
+        "expected_failed_check": "actual_release_date_matches_original_dateline",
         "caught": true
       }
     ],

@@ -138,6 +138,6 @@
   "task_count": 11,
   "expected_task_count": 11,
   "missing_tasks": [],
-  "reference_version": "0.2.0",
-  "reference_sha256": "9e5e94a3adabda35568f05168aaab308df194729126876790fb10f8b7500e326"
+  "reference_version": "0.2.1",
+  "reference_sha256": "7ab6d8ab80c9fe7f9b99d1ae023792b8f862eb7d48d84557e0e8c83eb1aa9621"
 }

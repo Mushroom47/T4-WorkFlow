@@ -588,7 +588,10 @@
     "schedule_notice_before_resolution": true,
     "amgen_terms_reserve_public_use_and_automated_collection": true,
     "all_preserved_source_hashes_and_bytes_match": true,
-    "issue26_has_no_comments_at_retrieval": true
+    "issue26_has_no_comments_at_retrieval": true,
+    "public_clarification_defines_dates_as_context": true,
+    "specified_quarter_target_unchanged": true,
+    "private_outcome_not_compared": true
   },
   "hash_readback": [
     {
@@ -749,7 +752,7 @@
   ],
   "limitations": [
     "已存当前issuer原始URL正文和earliest saved SEC observation支持历史事实，但本次并未取得当年HTTP字节快照；不能把完整修订链或全球最早公开时点称为已证明。",
-    "task prompt与label assertions明确June季度而没有明写before resolution；该事实不能替主办方决定resolution字段是否是硬截止。",
+    "旧日期合同歧义已由官方#27公开解释解除；原冻结日期与历史取回记录仍保留，未比对私有outcome或证明全球首发版本。",
     "只回读3/23/24/25/26相关issue完整评论及全部公开issue正文；没有声称逐条检查所有issue评论。",
     "下载SEC10-Q正文、SEC网站说明与新submissions均HTTP403；10-Q正文只由web阅读确认，没有伪造保存字节哈希。",
     "Amgen网站§3有公共使用和自动采集限制；该目录原始issuer材料不能因为公开可读或顶层MIT就直接进入公开包。"
@@ -758,6 +761,17 @@
     "amgn-resolution-check.json",
     "web-checks.json",
     "report.md",
-    "official-questions-draft.md"
+    "official-questions-draft.md",
+    "official-clarification-20261007.json"
+  ],
+  "derived_report_hashes": [
+    {
+      "path": "official-clarification-20261007.json",
+      "sha256": "1419cd9d1a05f4d9d130a0f3fe60b033de1ebcb67c8e507d2126d6dc789c029e",
+      "bytes": 3005,
+      "byte_form": "original_summary",
+      "upstream_url": "https://github.com/Agenthon-2026/track4-analysis-public/issues/27#issuecomment-6041356736",
+      "scope": "原创摘要的本地字节hash；上游全文未保存，不计入下载原件或独立公式复算数量。"
+    }
   ]
 }
