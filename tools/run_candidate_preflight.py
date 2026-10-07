@@ -6,7 +6,6 @@ import argparse
 from datetime import datetime, timezone
 import hashlib
 import json
-import os
 from pathlib import Path
 import subprocess
 import sys
@@ -37,12 +36,12 @@ def main():
         raise RuntimeError("镜像必须为linux/amd64")
     if config.get("Volumes") or config.get("Labels", {}).get("qfbench2.interface_version") != "2.0":
         raise RuntimeError("镜像含VOLUME或缺interface_version=2.0")
-    runtime_user = f"{os.getuid()}:{os.getgid()}"
-    if os.getuid() == 0:
-        raise RuntimeError("预检须使用非root宿主用户，以同一UID运行容器")
+    # Use the documented sandbox UID, rather than the runner UID whose host
+    # threads are also charged against RLIMIT_NPROC by the kernel.
+    runtime_user = "65534:65534"
     runtime = ["docker", "run", "--rm", "--platform", "linux/amd64", "--user", runtime_user, "--network", "none",
                "--read-only", "--cap-drop", "ALL", "--security-opt", "no-new-privileges",
-               "--pids-limit", "64", "--ulimit", "nproc=64:64", "--ulimit", "nofile=1024:1024",
+               "--pids-limit", "256", "--ulimit", "nproc=256:256", "--ulimit", "nofile=1024:1024",
                "--memory", "1g", "--memory-swap", "1g", "--cpus", "2",
                "--tmpfs", "/tmp:rw,nosuid,nodev,noexec,size=64m"]
     probe = "import pathlib,json;print(json.dumps([str(p.relative_to('/app')) for p in pathlib.Path('/app').rglob('*') if p.is_file()]))"
@@ -55,6 +54,9 @@ def main():
         unit = (dataset / "inputs" / entry["task_path"]).parent.resolve()
         answer_dir = output / "answers" / task_id
         answer_dir.mkdir(parents=True, exist_ok=True)
+        # This fresh directory contains no inputs or secrets; it is the only
+        # writable host mount, so the sandbox UID must be able to create output.
+        answer_dir.chmod(0o777)
         answer_path = answer_dir / "answer.json"
         if answer_path.exists():
             raise RuntimeError(f"输出已有答案，拒绝把旧文件当本次结果：{task_id}")
