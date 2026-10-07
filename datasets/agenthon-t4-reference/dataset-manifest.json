@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "reference_version": "0.2.1",
-  "created_at": "2026-10-07T17:55:46.809412+00:00",
+  "created_at": "2026-10-07T18:17:03.661257+00:00",
   "task_count": 11,
   "entity_count": 78,
   "status_counts": {
@@ -769,8 +769,8 @@
     },
     {
       "path": "qa/test-run-v0.2.1.json",
-      "sha256": "c03a262fb956458c4dfbe6baa2c71160760c3a5c8368e3819c6f679e9ce332ef",
-      "bytes": 570
+      "sha256": "e0201b40a0adc2a55c26d3928942546f0a0bfe9eb1a5c10a67efc0b5e8481861",
+      "bytes": 1325
     },
     {
       "path": "qa/test-run.json",

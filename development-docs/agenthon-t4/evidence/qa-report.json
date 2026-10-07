@@ -5,7 +5,7 @@
   "status": "passed",
   "counts": {
     "markdown_files": 21,
-    "local_links": 63,
+    "local_links": 65,
     "json_examples": 4,
     "python_examples": 7,
     "github_source_links": 57,

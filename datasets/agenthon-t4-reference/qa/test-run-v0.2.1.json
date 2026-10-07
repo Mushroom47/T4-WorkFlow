@@ -1,5 +1,5 @@
 {
-  "executed_at": "2026-10-07T17:37:50.301370+00:00",
+  "recorded_at": "2026-10-07T18:07:42.642354+00:00",
   "command": [
     "python3",
     "-m",
@@ -9,9 +9,29 @@
     "tests",
     "-q"
   ],
+  "environment": {
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
   "exit_code": 0,
-  "output": "----------------------------------------------------------------------\nRan 155 tests in 3.115s\n\nOK\n",
+  "output": "----------------------------------------------------------------------\nRan 158 tests in 3.540s\n\nOK\n",
   "reference_version": "0.2.1",
   "reference_sha256": "7ab6d8ab80c9fe7f9b99d1ae023792b8f862eb7d48d84557e0e8c83eb1aa9621",
-  "scope": "当前工作区全部测试；其中1个AMGN原件集成测试在公开无缓存环境明确跳过，另外154项不依赖缓存。"
+  "scope": "本机全部158项通过，无skip；公开无缓存环境157项执行，1项AMGN原件集成测试明确跳过。recorded_at为保存已观察到的真实测试输出时间，不推定执行结束时间。",
+  "previous_run": {
+    "executed_at": "2026-10-07T17:37:50.301370+00:00",
+    "command": [
+      "python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-q"
+    ],
+    "exit_code": 0,
+    "output": "----------------------------------------------------------------------\nRan 155 tests in 3.115s\n\nOK\n",
+    "reference_version": "0.2.1",
+    "reference_sha256": "7ab6d8ab80c9fe7f9b99d1ae023792b8f862eb7d48d84557e0e8c83eb1aa9621",
+    "scope": "当前工作区全部测试；其中1个AMGN原件集成测试在公开无缓存环境明确跳过，另外154项不依赖缓存。"
+  }
 }

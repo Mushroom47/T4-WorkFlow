@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07",
+  "updated_at": "2026-10-08",
   "scope": "公开版保留内部阶段编号与已回读状态；Workspace/Team UUID、私有卡片链接和详细协作记录仅本地保存。",
   "phases": [
     {
@@ -32,5 +32,14 @@
   "implementation_document_updated": true,
   "release_comments_read_back": true,
   "official_score": null,
-  "submission_id": null
+  "submission_id": null,
+  "checked_at": "2026-10-07T18:17:03.405366+00:00",
+  "reference_version": "0.2.1",
+  "reference_default_included": 78,
+  "test_count": 158,
+  "public_executed_tests": 157,
+  "public_skipped_tests": 1,
+  "rule_document_updated": true,
+  "candidate_container_passed": true,
+  "candidate_ci_run": "https://github.com/Mushroom47/T4-WorkFlow/actions/runs/37664798590"
 }

@@ -1,18 +1,73 @@
 {
-  "candidate": "stdlib-development-v1",
-  "checked_at": "2026-10-07T18:07:43.604874+00:00",
-  "source_commit": "78d9b1bc8643d08ed6616ec8b3833f7bd3284aa6",
-  "units": [
+  "checked_at": "2026-10-07T18:10:58.217165+00:00",
+  "image_id": "sha256:4dbe9079e7255370e42a00cb52f8bf9fa37e99a8a5d8e8e63833b9696bb1a0d1",
+  "image_id_kind": "本地image config digest，不能冒充registry manifest digest",
+  "platform": "linux/amd64",
+  "network": "none",
+  "rootfs": "read-only",
+  "runtime_user": "65534:65534",
+  "runtime_flags": [
+    "--rm",
+    "--platform",
+    "linux/amd64",
+    "--user",
+    "65534:65534",
+    "--network",
+    "none",
+    "--read-only",
+    "--cap-drop",
+    "ALL",
+    "--security-opt",
+    "no-new-privileges",
+    "--pids-limit",
+    "256",
+    "--ulimit",
+    "nproc=256:256",
+    "--ulimit",
+    "nofile=1024:1024",
+    "--memory",
+    "1g",
+    "--memory-swap",
+    "1g",
+    "--cpus",
+    "2",
+    "--tmpfs",
+    "/tmp:rw,nosuid,nodev,noexec,size=64m"
+  ],
+  "volumes": null,
+  "interface_version": "2.0",
+  "forbidden_reference_files": [],
+  "task_count": 11,
+  "entity_count": 78,
+  "default_reference_included_count": 78,
+  "reference_sha256": "7ab6d8ab80c9fe7f9b99d1ae023792b8f862eb7d48d84557e0e8c83eb1aa9621",
+  "passed": true,
+  "official_score": null,
+  "submission_id": null,
+  "notice": "真实容器的本地契约预检和参考比较；非官方数值评分、完整sandbox gate或生产NLI验收。",
+  "image_app_files": [
+    "LICENSE.upstream",
+    "THIRD-PARTY-NOTICES.md",
+    "upstream-manifest.json",
+    "candidate.py",
+    "analyze.py",
+    "contracts/task_table.py",
+    "contracts/__init__.py",
+    "baseline_agent/indexer.py",
+    "baseline_agent/cli.py",
+    "baseline_agent/formatter.py",
+    "baseline_agent/reader.py",
+    "baseline_agent/retriever.py",
+    "baseline_agent/__init__.py"
+  ],
+  "task_summaries": [
     {
       "task_id": "t4-EXAMPLE-eps-beat",
-      "returncode": 0,
-      "elapsed_seconds": 0.059908,
-      "entities": 1,
-      "claims": 1,
-      "task_row_claims": 1,
-      "max_claim_chars": 160,
+      "exit_code": 0,
+      "wall_seconds": 0.39119816999999557,
       "answer_sha256": "f15c2e22c70160875d26d277f449f18aadd0fc2842e5baed46f2e3316fa1fe7d",
-      "host_validation": {
+      "input_bytes_unchanged": true,
+      "validation": {
         "ok": true,
         "task_id": "t4-EXAMPLE-eps-beat",
         "entity_count": 1,
@@ -23,29 +78,15 @@
         "reason_policy_scope": "仅检查引用、结构、已知拒绝短语及原文预算；不复刻官方 URI 遮蔽与理由评审",
         "reason_warnings": [],
         "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
-      },
-      "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
-        "<项目根目录>/agent/analyze.py",
-        "analyze",
-        "--task",
-        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-EXAMPLE-eps-beat/task.json",
-        "--corpus",
-        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-EXAMPLE-eps-beat/corpus",
-        "--out",
-        "<项目根目录>/.local/continuation-20261008/candidate-current/answers/t4-EXAMPLE-eps-beat/answer.json"
-      ]
+      }
     },
     {
       "task_id": "t4-auction-btc-202411-us7",
-      "returncode": 0,
-      "elapsed_seconds": 0.061534,
-      "entities": 7,
-      "claims": 7,
-      "task_row_claims": 0,
-      "max_claim_chars": 160,
+      "exit_code": 0,
+      "wall_seconds": 0.3796804660000035,
       "answer_sha256": "fc480502dc2bc5955d3e4f24eef73cfd60de8d56a6a75060f77525ef9f741dee",
-      "host_validation": {
+      "input_bytes_unchanged": true,
+      "validation": {
         "ok": true,
         "task_id": "t4-auction-btc-202411-us7",
         "entity_count": 7,
@@ -56,29 +97,15 @@
         "reason_policy_scope": "仅检查引用、结构、已知拒绝短语及原文预算；不复刻官方 URI 遮蔽与理由评审",
         "reason_warnings": [],
         "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
-      },
-      "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
-        "<项目根目录>/agent/analyze.py",
-        "analyze",
-        "--task",
-        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-auction-btc-202411-us7/task.json",
-        "--corpus",
-        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-auction-btc-202411-us7/corpus",
-        "--out",
-        "<项目根目录>/.local/continuation-20261008/candidate-current/answers/t4-auction-btc-202411-us7/answer.json"
-      ]
+      }
     },
     {
       "task_id": "t4-cotpos-202411-us10",
-      "returncode": 0,
-      "elapsed_seconds": 0.064394,
-      "entities": 10,
-      "claims": 10,
-      "task_row_claims": 0,
-      "max_claim_chars": 160,
+      "exit_code": 0,
+      "wall_seconds": 0.39993029600000085,
       "answer_sha256": "2e8c6891e752d8903e7b178f5f57b3509f8c09fc4d39daede77b7bc0d30343e3",
-      "host_validation": {
+      "input_bytes_unchanged": true,
+      "validation": {
         "ok": true,
         "task_id": "t4-cotpos-202411-us10",
         "entity_count": 10,
@@ -89,29 +116,15 @@
         "reason_policy_scope": "仅检查引用、结构、已知拒绝短语及原文预算；不复刻官方 URI 遮蔽与理由评审",
         "reason_warnings": [],
         "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
-      },
-      "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
-        "<项目根目录>/agent/analyze.py",
-        "analyze",
-        "--task",
-        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-cotpos-202411-us10/task.json",
-        "--corpus",
-        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-cotpos-202411-us10/corpus",
-        "--out",
-        "<项目根目录>/.local/continuation-20261008/candidate-current/answers/t4-cotpos-202411-us10/answer.json"
-      ]
+      }
     },
     {
       "task_id": "t4-cpicomp-202410-us11",
-      "returncode": 0,
-      "elapsed_seconds": 0.066282,
-      "entities": 11,
-      "claims": 11,
-      "task_row_claims": 0,
-      "max_claim_chars": 160,
+      "exit_code": 0,
+      "wall_seconds": 0.381327811999995,
       "answer_sha256": "7e8c60e796fc7ee8252554cc886bed15cb5562d8e70f24ad5a037613db94dc8d",
-      "host_validation": {
+      "input_bytes_unchanged": true,
+      "validation": {
         "ok": true,
         "task_id": "t4-cpicomp-202410-us11",
         "entity_count": 11,
@@ -122,29 +135,15 @@
         "reason_policy_scope": "仅检查引用、结构、已知拒绝短语及原文预算；不复刻官方 URI 遮蔽与理由评审",
         "reason_warnings": [],
         "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
-      },
-      "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
-        "<项目根目录>/agent/analyze.py",
-        "analyze",
-        "--task",
-        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-cpicomp-202410-us11/task.json",
-        "--corpus",
-        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-cpicomp-202410-us11/corpus",
-        "--out",
-        "<项目根目录>/.local/continuation-20261008/candidate-current/answers/t4-cpicomp-202410-us11/answer.json"
-      ]
+      }
     },
     {
       "task_id": "t4-credit-event-2023",
-      "returncode": 0,
-      "elapsed_seconds": 0.150078,
-      "entities": 8,
-      "claims": 8,
-      "task_row_claims": 0,
-      "max_claim_chars": 160,
+      "exit_code": 0,
+      "wall_seconds": 0.5291967140000011,
       "answer_sha256": "377049485f7031eb990452ea834f2e6ae8f6a5dfb311c901c157f663f45d997d",
-      "host_validation": {
+      "input_bytes_unchanged": true,
+      "validation": {
         "ok": true,
         "task_id": "t4-credit-event-2023",
         "entity_count": 8,
@@ -155,29 +154,15 @@
         "reason_policy_scope": "仅检查引用、结构、已知拒绝短语及原文预算；不复刻官方 URI 遮蔽与理由评审",
         "reason_warnings": [],
         "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
-      },
-      "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
-        "<项目根目录>/agent/analyze.py",
-        "analyze",
-        "--task",
-        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-credit-event-2023/task.json",
-        "--corpus",
-        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-credit-event-2023/corpus",
-        "--out",
-        "<项目根目录>/.local/continuation-20261008/candidate-current/answers/t4-credit-event-2023/answer.json"
-      ]
+      }
     },
     {
       "task_id": "t4-eps-growth-2024Q3-banks",
-      "returncode": 0,
-      "elapsed_seconds": 0.202803,
-      "entities": 8,
-      "claims": 8,
-      "task_row_claims": 0,
-      "max_claim_chars": 160,
+      "exit_code": 0,
+      "wall_seconds": 0.6057635919999953,
       "answer_sha256": "efd3b9e100e0c8a5bc7e038f9cd83517454664d1b402e49ba863303db1b68f00",
-      "host_validation": {
+      "input_bytes_unchanged": true,
+      "validation": {
         "ok": true,
         "task_id": "t4-eps-growth-2024Q3-banks",
         "entity_count": 8,
@@ -188,29 +173,15 @@
         "reason_policy_scope": "仅检查引用、结构、已知拒绝短语及原文预算；不复刻官方 URI 遮蔽与理由评审",
         "reason_warnings": [],
         "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
-      },
-      "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
-        "<项目根目录>/agent/analyze.py",
-        "analyze",
-        "--task",
-        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-eps-growth-2024Q3-banks/task.json",
-        "--corpus",
-        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-eps-growth-2024Q3-banks/corpus",
-        "--out",
-        "<项目根目录>/.local/continuation-20261008/candidate-current/answers/t4-eps-growth-2024Q3-banks/answer.json"
-      ]
+      }
     },
     {
       "task_id": "t4-eps-yoy-2023Q2-mixed",
-      "returncode": 0,
-      "elapsed_seconds": 0.092931,
-      "entities": 6,
-      "claims": 6,
-      "task_row_claims": 0,
-      "max_claim_chars": 160,
+      "exit_code": 0,
+      "wall_seconds": 0.4222623470000002,
       "answer_sha256": "977b1f2e6c388643d1172dfcfedb96f68656a403283d126c4c2f38c7206c312f",
-      "host_validation": {
+      "input_bytes_unchanged": true,
+      "validation": {
         "ok": true,
         "task_id": "t4-eps-yoy-2023Q2-mixed",
         "entity_count": 6,
@@ -221,29 +192,15 @@
         "reason_policy_scope": "仅检查引用、结构、已知拒绝短语及原文预算；不复刻官方 URI 遮蔽与理由评审",
         "reason_warnings": [],
         "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
-      },
-      "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
-        "<项目根目录>/agent/analyze.py",
-        "analyze",
-        "--task",
-        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-eps-yoy-2023Q2-mixed/task.json",
-        "--corpus",
-        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-eps-yoy-2023Q2-mixed/corpus",
-        "--out",
-        "<项目根目录>/.local/continuation-20261008/candidate-current/answers/t4-eps-yoy-2023Q2-mixed/answer.json"
-      ]
+      }
     },
     {
       "task_id": "t4-fomc-curve-20220728",
-      "returncode": 0,
-      "elapsed_seconds": 0.058581,
-      "entities": 6,
-      "claims": 6,
-      "task_row_claims": 0,
-      "max_claim_chars": 160,
+      "exit_code": 0,
+      "wall_seconds": 0.3814692720000039,
       "answer_sha256": "0809c95e0a980d4b484e37ea90a48eefa24829413aa3890c0df802879b008b2b",
-      "host_validation": {
+      "input_bytes_unchanged": true,
+      "validation": {
         "ok": true,
         "task_id": "t4-fomc-curve-20220728",
         "entity_count": 6,
@@ -254,29 +211,15 @@
         "reason_policy_scope": "仅检查引用、结构、已知拒绝短语及原文预算；不复刻官方 URI 遮蔽与理由评审",
         "reason_warnings": [],
         "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
-      },
-      "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
-        "<项目根目录>/agent/analyze.py",
-        "analyze",
-        "--task",
-        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-fomc-curve-20220728/task.json",
-        "--corpus",
-        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-fomc-curve-20220728/corpus",
-        "--out",
-        "<项目根目录>/.local/continuation-20261008/candidate-current/answers/t4-fomc-curve-20220728/answer.json"
-      ]
+      }
     },
     {
       "task_id": "t4-fomc-curve-20240918",
-      "returncode": 0,
-      "elapsed_seconds": 0.059774,
-      "entities": 6,
-      "claims": 6,
-      "task_row_claims": 0,
-      "max_claim_chars": 160,
+      "exit_code": 0,
+      "wall_seconds": 0.38305343399999714,
       "answer_sha256": "42277f0f3f030bb695bc695048a250e5e445d165789b2207f7b0a55e0bd1d318",
-      "host_validation": {
+      "input_bytes_unchanged": true,
+      "validation": {
         "ok": true,
         "task_id": "t4-fomc-curve-20240918",
         "entity_count": 6,
@@ -287,29 +230,15 @@
         "reason_policy_scope": "仅检查引用、结构、已知拒绝短语及原文预算；不复刻官方 URI 遮蔽与理由评审",
         "reason_warnings": [],
         "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
-      },
-      "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
-        "<项目根目录>/agent/analyze.py",
-        "analyze",
-        "--task",
-        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-fomc-curve-20240918/task.json",
-        "--corpus",
-        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-fomc-curve-20240918/corpus",
-        "--out",
-        "<项目根目录>/.local/continuation-20261008/candidate-current/answers/t4-fomc-curve-20240918/answer.json"
-      ]
+      }
     },
     {
       "task_id": "t4-macrorev-20240930-us6",
-      "returncode": 0,
-      "elapsed_seconds": 0.062176,
-      "entities": 12,
-      "claims": 12,
-      "task_row_claims": 0,
-      "max_claim_chars": 160,
+      "exit_code": 0,
+      "wall_seconds": 0.38716788100000343,
       "answer_sha256": "e38ca710c285227ada318c902dd67ec53196965277125118f4c726899992e208",
-      "host_validation": {
+      "input_bytes_unchanged": true,
+      "validation": {
         "ok": true,
         "task_id": "t4-macrorev-20240930-us6",
         "entity_count": 12,
@@ -320,29 +249,15 @@
         "reason_policy_scope": "仅检查引用、结构、已知拒绝短语及原文预算；不复刻官方 URI 遮蔽与理由评审",
         "reason_warnings": [],
         "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
-      },
-      "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
-        "<项目根目录>/agent/analyze.py",
-        "analyze",
-        "--task",
-        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-macrorev-20240930-us6/task.json",
-        "--corpus",
-        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-macrorev-20240930-us6/corpus",
-        "--out",
-        "<项目根目录>/.local/continuation-20261008/candidate-current/answers/t4-macrorev-20240930-us6/answer.json"
-      ]
+      }
     },
     {
       "task_id": "t4-postearn-20240201-megacap",
-      "returncode": 0,
-      "elapsed_seconds": 0.07907,
-      "entities": 3,
-      "claims": 3,
-      "task_row_claims": 0,
-      "max_claim_chars": 160,
+      "exit_code": 0,
+      "wall_seconds": 0.4018301770000008,
       "answer_sha256": "da631f9be3eb2a0aba08b457752ffeeda90cf49f4fe25450ee8b008371b36bb3",
-      "host_validation": {
+      "input_bytes_unchanged": true,
+      "validation": {
         "ok": true,
         "task_id": "t4-postearn-20240201-megacap",
         "entity_count": 3,
@@ -353,28 +268,35 @@
         "reason_policy_scope": "仅检查引用、结构、已知拒绝短语及原文预算；不复刻官方 URI 遮蔽与理由评审",
         "reason_warnings": [],
         "notice": "仅供本地研究与结构测试；未执行官方评分、NLI 或理由评审。"
-      },
-      "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
-        "<项目根目录>/agent/analyze.py",
-        "analyze",
-        "--task",
-        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-postearn-20240201-megacap/task.json",
-        "--corpus",
-        "<项目根目录>/datasets/agenthon-t4-reference/inputs/units/t4-postearn-20240201-megacap/corpus",
-        "--out",
-        "<项目根目录>/.local/continuation-20261008/candidate-current/answers/t4-postearn-20240201-megacap/answer.json"
-      ]
+      }
     }
   ],
-  "task_count": 11,
-  "entity_count": 78,
-  "claim_count": 78,
-  "task_row_claim_count": 1,
-  "reference_sha256": "7ab6d8ab80c9fe7f9b99d1ae023792b8f862eb7d48d84557e0e8c83eb1aa9621",
-  "passed": true,
-  "probability_method": "未校准中性0.5/[0,1]；二分类平局按题面词表顺序",
-  "official_score": null,
-  "submission_id": null,
-  "notice": "实际本机11题入口与宿主结构预检；容器运行/官方评分另外记录。旧修复前报告本地保留。"
+  "code_snapshot_commit": "0e53a4b3d647e225d7b41ac873013ed82f4b9cfa",
+  "ci_run_url": "https://github.com/Mushroom47/T4-WorkFlow/actions/runs/37664798590",
+  "ci_status": "completed",
+  "ci_conclusion": "success",
+  "artifact_report_sha256": "abb97e3a608498cbbd241cae40a422b7ab55b99005ac96d4fa9353e1973df7c2",
+  "maximum_unit_seconds": 0.6057635919999953,
+  "prior_runs": [
+    {
+      "run_id": 37663039120,
+      "status": "failure",
+      "reason": "cap-drop ALL后宿主输出目录权限不匹配；未取得完整输出"
+    },
+    {
+      "run_id": 37663474916,
+      "status": "failure",
+      "reason": "信用事件概率区间越界；候选已按公开题面修复并增加3回归"
+    },
+    {
+      "run_id": 37664344415,
+      "status": "success",
+      "scope": "旧限制组合11/78通过；之后补无swap/noexec/FD/nproc限制"
+    },
+    {
+      "run_id": 37664600755,
+      "status": "failure",
+      "reason": "RLIMIT_NPROC按宿主UID累计runner线程，Python启动resource temporarily unavailable；改官方65534独立UID及256额度"
+    }
+  ]
 }

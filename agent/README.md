@@ -26,6 +26,8 @@ docker run --rm --platform linux/amd64 --network none \
   --task /input/task.json --corpus /input/corpus --out /output/answer.json
 ```
 
-该 Dockerfile 的构建和真实容器运行结果需单独记录。正式提交还需要实际团队账号、团队证明、镜像 digest 与平台 metadata，以及主办方对提交路线的确认。schema、官方确定性引用规则、judge tokenizer token 上限、NLI faithfulness 和官方比赛评测是不同检查；本地结构检查不等于 Production 或官方 outcome 对齐。
+实际Linux CI已完成全部11题/78实体的65534非root、断网、只读运行，并回读容器输出做官方公开schema/alignment/确定性引用检查；命令和限制见 [18号报告](../development-docs/agenthon-t4/18-官方答复闭环与评测候选.md)。可通过 `python3 tools/run_candidate_preflight.py --image t4-stdlib-development:local --output /tmp/t4-new-preflight` 复现，该全新输出目录只将每题目录开放给sandbox UID。概率题输出中性0.5/[0,1]，41项候选测试通过。来源和无学习产物声明见 [ARTIFACT_PROVENANCE.md](ARTIFACT_PROVENANCE.md)。
+
+正式提交还需要实际团队账号、团队证明、已发布镜像digest与平台metadata，以及适用提交路线。schema、官方确定性引用规则、judge tokenizer token上限、NLI faithfulness和官方比赛评测是不同检查；本地结构检查不等于Production或官方outcome对齐。
 
 源码来源与修改边界见 [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md)。
