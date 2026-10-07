@@ -104,6 +104,25 @@ def _calendar(value: object, field: str) -> str:
     return value
 
 
+def is_probability_target(task: dict) -> bool:
+    """Read probability units from the task, never from resolved event labels.
+
+    The frozen credit task declares its probability output in the prompt rather
+    than a machine-readable unit field. Accept that explicit point_forecast
+    declaration and explicit unit fields; do not key on task/entity identifiers.
+    """
+    target = task.get("target", {})
+    for value in (target.get("unit"), target.get("units"), task.get("prediction_unit")):
+        if isinstance(value, str) and value.lower() in {"probability", "probability_0_1"}:
+            return True
+    prompt = task.get("prompt", "")
+    if not isinstance(prompt, str):
+        return False
+    return bool(re.search(
+        r"\bpoint_forecast\s*(?:=|:|is)\s*(?:your\s+)?(?:predicted\s+)?probability\b"
+        r"|\bprobability\s+point_forecast\b", prompt, re.IGNORECASE))
+
+
 def validate_task(task: dict) -> tuple[str, str, list[str] | None]:
     _finite_tree(task)
     if not isinstance(task.get("task_id"), str) or not task["task_id"].strip():
@@ -221,6 +240,9 @@ def validate_answer(answer: dict, task: dict, docs: list[ScopedDoc]) -> None:
             raise CandidateInputError("Output prediction/interval must be finite numbers")
         if interval["level"] != 0.9 or interval["lo"] > interval["hi"]:
             raise CandidateInputError("Output requires a 90% ordered interval")
+        if is_probability_target(task) and not (
+                0.0 <= interval["lo"] <= row["point_forecast"] <= interval["hi"] <= 1.0):
+            raise CandidateInputError("Probability point and interval must be ordered within [0,1]")
         if not isinstance(row.get("claims"), list) or not row["claims"]:
             raise CandidateInputError("Every output entity requires a claim")
         for claim in row["claims"]:
@@ -260,6 +282,7 @@ def run(task_path: Path, corpus_dir: Path, out_path: Path) -> dict:
     table, ranges = task_table_text(task)
     predictions = []
     corpus_claims = 0
+    probability_target = is_probability_target(task)
     for entity in task["entities"]:
         eid = entity["entity_id"]
         eligible = [d.indexed for d in docs if d.admits(eid) and d.indexed.doc_date <= cutoff]
@@ -279,6 +302,14 @@ def run(task_path: Path, corpus_dir: Path, out_path: Path) -> dict:
                      "span_end": start + len(text), "claim": text}
             span_text = ""
         pred = predict_entity(entity, span_text, labels=labels)
+        if probability_target:
+            # An uninformed numeric band has no meaning outside a probability's
+            # domain. State complete uncertainty rather than treating a past
+            # EPS figure or a default zero as an event probability. At p=0.5 a
+            # binary classification is tied; declared vocabulary order resolves
+            # that tie deterministically, without any outcome lookup or fit.
+            pred = {"label": labels[0] if labels else pred["label"],
+                    "point_forecast": 0.5, "lo": 0.0, "hi": 1.0}
         predictions.append(build_entity_prediction(eid, pred["label"], pred["point_forecast"],
                                                   pred["lo"], pred["hi"], [claim]))
     answer = build_answer(task["task_id"], predictions,
@@ -288,6 +319,8 @@ def run(task_path: Path, corpus_dir: Path, out_path: Path) -> dict:
         target_type=target_type)
     answer["notes"] = {"candidate": "stdlib-development-v1", "calibration": "not_fitted",
                        "reasons": "not_submitted", "external_data": "none"}
+    if probability_target:
+        answer["notes"]["probability_method"] = "Uncalibrated neutral 0.5; full [0,1] interval; first-label tie break"
     validate_answer(answer, task, docs)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     payload = json.dumps(answer, ensure_ascii=False, allow_nan=False, indent=2) + "\n"

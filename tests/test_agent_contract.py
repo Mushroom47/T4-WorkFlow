@@ -6,12 +6,13 @@ import subprocess
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
 AGENT = ROOT / "agent"
 UNITS = ROOT / "datasets/agenthon-t4-reference/inputs/units"
 sys.path.insert(0, str(AGENT))
-from candidate import CandidateInputError, load_corpus, run, validate_answer
+from candidate import CandidateInputError, is_probability_target, load_corpus, run, validate_answer
 from contracts.task_table import task_table_text
 
 
@@ -69,6 +70,57 @@ class AgentContractTests(unittest.TestCase):
             run(task, task.parent / "corpus", a)
             run(task, task.parent / "corpus", b)
             self.assertEqual(a.read_bytes(), b.read_bytes())
+
+    def test_frozen_credit_probability_output_passes_suite_without_reference_answers(self):
+        # ReferenceSuite.validate uses input manifests/schema/corpus only. Its
+        # constructor normally also loads reference records for comparison;
+        # intercept that exact file as empty so this regression cannot see them.
+        from tools.reference_suite import ReferenceSuite
+        data = UNITS.parents[1]
+        task_path = UNITS / "t4-credit-event-2023/task.json"
+        original_read_text = Path.read_text
+        reads = []
+        def input_only_read(path, *args, **kwargs):
+            if path.resolve() == (data / "reference.jsonl").resolve():
+                return ""
+            reads.append(path)
+            return original_read_text(path, *args, **kwargs)
+        with tempfile.TemporaryDirectory() as temp:
+            answer = run(task_path, task_path.parent / "corpus", Path(temp) / "answer.json")
+            with patch.object(Path, "read_text", input_only_read):
+                suite = ReferenceSuite(data)
+                result = suite.validate(answer)
+            self.assertTrue(result["ok"])
+            self.assertEqual(result["entity_count"], 8)
+            self.assertEqual(suite.records, [])
+            self.assertNotIn(data / "reference.jsonl", reads)
+            for row in answer["entity_predictions"]:
+                self.assertEqual(row["point_forecast"], 0.5)
+                self.assertEqual(row["interval"], {"level": 0.9, "lo": 0.0, "hi": 1.0})
+                self.assertEqual(row["label"], "credit_event")  # 0.5 tie, task vocabulary order.
+
+    def test_probability_validation_rejects_outside_center_and_bounds(self):
+        task_path = UNITS / "t4-credit-event-2023/task.json"
+        task = json.loads(task_path.read_text())
+        docs = load_corpus(task_path.parent / "corpus")
+        with tempfile.TemporaryDirectory() as temp:
+            for point, lo, hi in ((-0.01, 0.0, 1.0), (1.01, 0.0, 1.0),
+                                  (0.5, -0.01, 1.0), (0.5, 0.0, 1.01), (0.5, 0.6, 1.0)):
+                with self.subTest(point=point, lo=lo, hi=hi):
+                    answer = run(task_path, task_path.parent / "corpus", Path(temp) / "answer.json")
+                    row = answer["entity_predictions"][0]
+                    row["point_forecast"] = point
+                    row["interval"].update(lo=lo, hi=hi)
+                    with self.assertRaisesRegex(CandidateInputError, "Probability"):
+                        validate_answer(answer, task, docs)
+
+    def test_probability_detection_reads_contract_not_task_ids(self):
+        self.assertTrue(is_probability_target({"task_id": "unknown-new-unit",
+            "target": {"type": "classification"},
+            "prompt": "point_forecast = your predicted PROBABILITY of an event (0 to 1)."}))
+        self.assertTrue(is_probability_target({"target": {"type": "regression", "unit": "probability"}}))
+        self.assertFalse(is_probability_target({"family": "credit_event", "target": {"name": "credit_event_12m"}}))
+        self.assertFalse(is_probability_target({"prompt": "point_forecast is a dollar amount, not a probability."}))
 
     def test_missing_index_uses_own_task_row(self):
         task_path = UNITS / "t4-EXAMPLE-eps-beat/task.json"
